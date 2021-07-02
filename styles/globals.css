@@ -5,21 +5,21 @@ body {
   font-family: 'Raleway', sans-serif;
   padding: 1em 2em;
   font-size: 1rem;
-  background: #222;
-  color: #aaa
+  background: rgb(255, 255, 255);
+  color: #222;
 }
 
 a {
-  display: block;
-  border-radius: 50%;
-  color: #888;
+  color: #38A6FF;
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
+a:hover{
+  color: #38A6FF;;
+  border-bottom: 1px solid #38A6FF;
+  opacity: 0.1;
+  transition-duration: 1s;
+  }
 
 img {
   display: block;
@@ -48,7 +48,7 @@ nav ul{
   display: table;
   margin: 0 auto;
   padding: 0 ;
-  width: 37%;
+  width: 62%;
   text-align: center;
   }
   nav li{
@@ -59,13 +59,15 @@ nav ul{
   display: block;
   width: 100%;
   text-decoration: none;
-  color: #555;
+  color: #38A6FF;
   padding-bottom: 5px;
   }
   nav li.current{
   border-bottom: 3px solid #92D050;
   }
   nav li:hover{
-  color: #E7DA66;
-  border-bottom: 3px solid #F0E475;
+  color: #38A6FF;
+  border-bottom: 1px solid #38A6FF;
   }
+
+  

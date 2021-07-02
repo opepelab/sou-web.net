@@ -30,15 +30,16 @@ export default function Index() {
           <li><Link href="/">TOP</Link></li>
         </ul>
       </nav>
+      <div className="flex-container">
+      <Link href="https://www.linkedin.com/in/s-watanabe-a25157205">
+        <Image src="/images/note.png" width={100} height={100} />
+      </Link>
+      </div>
       
-      JavaScript React Next.js Node.js/Currently learning.<br></br>
-      discuss for adjusting on frequently.
-      
-      <h5>
-        <Link href="document">
-          <a>document</a>
-        </Link>
-      </h5>
+       Welcome to my life
+      <br />
+
+        メールが開けない場合GmailのURL✩マークの横にあるプロトコルハンドラを許可してください.
       </main>
 
 
