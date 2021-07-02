@@ -32,10 +32,10 @@ export default function Layout({ children, home }) {
           <Link href="/">
             <Image
               priority
-              src="/images/profile3.png"
+              src="/images/profile.jpg"
               className={utilStyles.borderCircle}
-              height={144}
-              width={144}
+              height={280}
+              width={280}
               alt={name}
             />
             </Link>
