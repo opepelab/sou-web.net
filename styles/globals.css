@@ -23,15 +23,12 @@ a:hover{
 img {
   display: block;
   border-radius: 50%;
-  width:  6rem; 
-  height: 6rem;
   object-fit: cover;
 }
 
 img:hover {
   cursor: pointer;
   opacity: 0.1;
-  transition-duration: 1s;
 }
 
 .flex-container {
