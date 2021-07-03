@@ -30,7 +30,7 @@ export default function Index() {
         </ul>
       </nav>
       
-      JavaScript React Next.js Node.js/Currently learning.<br></br>
+      JavaScript React Next.js Node.js/TypeScript,SaSS/Currently learning.<br></br>
       discuss for adjusting on frequently.
       
       <h5>

@@ -3,9 +3,6 @@ body {
   word-break : break-all;
   text-align: center;
   font-family: 'Raleway', sans-serif;
-  display: flex;
-  flex-flow: column;
-  min-height: 100vh;
   padding: 1em 2em;
   font-size: 1rem;
   background: rgb(255, 255, 255);
