@@ -38,22 +38,21 @@ img:hover {
 }
 
 nav ul{
-  word-wrap: normal;
   display: flex;
 	flex-flow: row;
 	justify-content: center;
   grid-gap: 40px;
   margin: 0 auto;
   padding: 0 ;
-  width: 100%;
+  width: 150%;
   }
   nav li{
     list-style-type: none;
-    width: 100px;
+    width: 120px;
   }
   nav a{
   display: block;
-  width: 100%;
+  width: 150%;
   text-decoration: none;
   color: #38A6FF;
   padding-bottom: 5px;
