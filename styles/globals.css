@@ -44,15 +44,15 @@ nav ul{
   grid-gap: 40px;
   margin: 0 auto;
   padding: 0 ;
-  width: 150%;
+  width: 80%;
   }
   nav li{
     list-style-type: none;
-    width: 120px;
+    width: 100px;
   }
   nav a{
   display: block;
-  width: 150%;
+  width: 80%;
   text-decoration: none;
   color: #38A6FF;
   padding-bottom: 5px;
