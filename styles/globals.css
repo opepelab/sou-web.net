@@ -38,15 +38,17 @@ img:hover {
 }
 
 nav ul{
-  display: table;
+  display: flex;
+	flex-flow: row;
+	justify-content: center;
+  grid-gap: 40px;
   margin: 0 auto;
   padding: 0 ;
-  width: 62%;
-  text-align: center;
+  width: 100%;
   }
   nav li{
-  display: table-cell;
-  min-width: 50px;
+    list-style-type: none;
+    width: 100px;
   }
   nav a{
   display: block;
