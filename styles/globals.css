@@ -38,6 +38,7 @@ img:hover {
 }
 
 nav ul{
+  word-wrap: normal;
   display: flex;
 	flex-flow: row;
 	justify-content: center;
