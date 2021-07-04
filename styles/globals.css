@@ -2,7 +2,7 @@ html,
 body {
   word-break : break-all;
   text-align: center;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   padding: 1em 2em;
   font-size: 1rem;
   background: rgb(255, 255, 255);
@@ -39,7 +39,7 @@ nav ul{
   display: flex;
 	flex-flow: row;
 	justify-content: center;
-  grid-gap: 40px;
+  grid-gap: 24px;
   margin: 0 auto;
   padding: 0 ;
   width: 100%;
@@ -60,5 +60,3 @@ nav ul{
   color: #38A6FF;
   border-bottom: 1px solid #38A6FF;
   }
-
-  

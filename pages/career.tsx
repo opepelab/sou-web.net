@@ -26,7 +26,9 @@ export default function Index() {
       </div>
       <nav>
         <ul>
-          <li><Link href="/">TOP</Link></li>
+        <li><Link href="career">Career</Link></li>
+        <li><Link href="/">TOP</Link></li>
+        <li><Link href="access">Access</Link></li>
         </ul>
       </nav>
       

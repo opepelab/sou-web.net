@@ -26,18 +26,23 @@ export default function Index() {
       </div>
       <nav>
         <ul>
-          <li><Link href="/">TOP</Link></li>
+        <li><Link href="career">Career</Link></li>
+        <li><Link href="/">TOP</Link></li>
+        <li><Link href="access">Access</Link></li>
         </ul>
       </nav>
+      <h4>Sosial</h4>
       <Link href="https://com.nicovideo.jp/community/co1568349">
         niconico
       </Link>
       <br />
-
       <Link href="https://www.facebook.com/opepelabFacebook">  
         Facebook
       </Link>
       <br />
+      <Link href="https://note.com/opepelab/">  
+        note
+      </Link>
 
       </main>
  

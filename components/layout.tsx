@@ -5,7 +5,7 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
 const name = 'S.watana'
-export const siteTitle = 'S.watanabe WEB'
+export const siteTitle = 'S.Watanabe WEB'
 
 export default function Layout({ children, home }) {
   return (
@@ -30,7 +30,7 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-          <Link href="/">
+          <Link href="https://note.com/opepelab/">
             <Image
               priority
               src="/images/profile.png"

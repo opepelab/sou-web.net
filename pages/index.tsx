@@ -27,15 +27,15 @@ export default function Index() {
       <nav>
         <ul>
           <li><Link href="career">Career</Link></li>
-          <li><Link href="about">About</Link></li>
+          <li><Link href="/">TOP</Link></li>
           <li><Link href="access">Access</Link></li>
         </ul>
       </nav>
-      ようこそ、こちらのWEB appは私のコンピュータサイエンスの活動内容や技術を載せています,
+      ようこそ、こちらのWEB appは私のコンピュータサイエンスの活動内容や技術を載せています.
       <h4>プロフィール</h4>
-        出身と住まい：東京都<br />
-        生年月日：1994/11/02 戌年<br />
-        趣味：プログラミング,筋トレ<br />
+        出身住まい：日本 東京都<br />
+        生年：1994年生まれ 戌年<br />
+        趣味：読書 お絵かき 音楽<br />
         </main>
     </Layout>
   )
