@@ -12,17 +12,17 @@ export default function Index() {
       </Head>
       <main>
       <div className="flex-container">
-      <a href="https://github.com/opepelab">
+      <Link href="https://github.com/opepelab">
         <Image src="/images/gitx.png" width={100} height={100} />
-      </a>
+      </Link>
       <table width="4%"></table>
-      <a href="https://opepelab.org">
+      <Link href="https://opepelab.org">
         <Image src="/images/wpss.png" width={100} height={100} />
-      </a>
+      </Link>
       <table width="4%"></table>
-      <a href="https://www.linkedin.com/in/s-watanabe-a25157205">
+      <Link href="https://www.linkedin.com/in/s-watanabe-a25157205">
         <Image src="/images/linkedx.png" width={100} height={100} />
-      </a>
+      </Link>
       </div>
       <nav>
         <ul>

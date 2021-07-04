@@ -14,13 +14,17 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover:active {
   opacity: 0.1;
   }
 
 img {
   display: block;
   border-radius: 50%;
+}
+
+img:hover {
+  cursor: pointer;
 }
 
 
@@ -52,7 +56,7 @@ nav ul{
   color: #38A6FF;
   padding-bottom: 5px;
   }
-  nav li:hover{
+  nav li:hover:active {
   color: #38A6FF;
   border-bottom: 1px solid #38A6FF;
   }
