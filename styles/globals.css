@@ -14,9 +14,8 @@ a {
   text-decoration: none;
 }
 
-a:hover{
-  color: #38A6FF;;
-  border-bottom: 1px solid #38A6FF;
+a:hover {
+  opacity: 0.1;
   }
 
 img {
@@ -24,10 +23,6 @@ img {
   border-radius: 50%;
 }
 
-img:hover {
-  cursor: pointer;
-  opacity: 0.1;
-}
 
 .flex-container {
   height: 160px;
@@ -56,9 +51,6 @@ nav ul{
   text-decoration: none;
   color: #38A6FF;
   padding-bottom: 5px;
-  }
-  nav li.current{
-  border-bottom: 3px solid #92D050;
   }
   nav li:hover{
   color: #38A6FF;

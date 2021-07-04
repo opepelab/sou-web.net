@@ -12,18 +12,17 @@ export default function Index() {
       </Head>
       <main>
       <div className="flex-container">
-      
-      <Link href="https://github.com/opepelab">
+      <a href="https://github.com/opepelab">
         <Image src="/images/gitx.png" width={100} height={100} />
-      </Link>
+      </a>
       <table width="4%"></table>
-      <Link href="https://opepelab.org">
+      <a href="https://opepelab.org">
         <Image src="/images/wpss.png" width={100} height={100} />
-      </Link>
+      </a>
       <table width="4%"></table>
-      <Link href="https://www.linkedin.com/in/s-watanabe-a25157205">
+      <a href="https://www.linkedin.com/in/s-watanabe-a25157205">
         <Image src="/images/linkedx.png" width={100} height={100} />
-      </Link>
+      </a>
       </div>
       <nav>
         <ul>
@@ -32,7 +31,6 @@ export default function Index() {
           <li><Link href="access">Access</Link></li>
         </ul>
       </nav>
-      
       ようこそ、こちらのWEB appは私のコンピュータサイエンスの活動内容や技術を載せています,
       <h4>プロフィール</h4>
         出身と住まい：東京都<br />
