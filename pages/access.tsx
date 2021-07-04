@@ -13,15 +13,15 @@ export default function Index() {
       <div className="flex-container">
       
       <Link href="https://github.com/opepelab">
-        <Image src="/images/gitx.png" width={100} height={100} />
+        <a target="_blank"><Image src="/images/gitx.png" width={100} height={100} /></a>
       </Link>
       <table width="4%"></table>
       <Link href="https://opepelab.org">
-        <Image src="/images/wpss.png" width={100} height={100} />
+      <a target="_blank"><Image src="/images/wpss.png" width={100} height={100} /></a>
       </Link>
       <table width="4%"></table>
       <Link href="https://www.linkedin.com/in/s-watanabe-a25157205">
-        <Image src="/images/linkedx.png" width={100} height={100} />
+        <a target="_blank"><Image src="/images/linkedx.png" width={100} height={100} /></a>
       </Link>
       </div>
       <nav>
@@ -33,15 +33,15 @@ export default function Index() {
       </nav>
       <h4>Sosial</h4>
       <Link href="https://com.nicovideo.jp/community/co1568349">
-        niconico
+      <a target="_blank">niconico</a>
       </Link>
       <br />
-      <Link href="https://www.facebook.com/opepelabFacebook">  
-        Facebook
+      <Link href="https://www.facebook.com/opepelab/">  
+      <a target="_blank">Facebook</a>
       </Link>
       <br />
       <Link href="https://note.com/opepelab/">  
-        note
+      <a target="_blank">note</a>
       </Link>
 
       </main>
