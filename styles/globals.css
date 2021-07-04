@@ -17,7 +17,6 @@ a {
 a:hover{
   color: #38A6FF;;
   border-bottom: 1px solid #38A6FF;
-  opacity: 0.1;
   }
 
 img {
@@ -35,6 +34,7 @@ img:hover {
 	display: flex;
   align-items: center;
   justify-content: center;
+  grid-gap: 40px;
 }
 
 nav ul{
@@ -49,6 +49,7 @@ nav ul{
   nav li{
     list-style-type: none;
     width: 100px;
+    white-space: nowrap;
   }
   nav a{
   display: block;
