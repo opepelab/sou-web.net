@@ -11,14 +11,4 @@ const HelloCounter: React.FC = () => {
             <button onClick={() => setCount(count - 1)}>-</button>
         </div>
     );
-};
-
-const HelloMessageFunction: React.FC = () => <div>Hellow redimpulz</div>;
-export default function Index() {
-    return (
-        <div>
-            <HelloCounter />
-            <HelloMessageFunction />
-        </div>
-    );
-    }
+}

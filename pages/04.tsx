@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 //propsの型定義
 type Props = {
     name: string;
@@ -16,4 +15,4 @@ export default function Index() {
             <HelloMassage name="redimpulz" />
         </div>
     );
-};
+}
