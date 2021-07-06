@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import Styles from '../styles/Home.module.css';
 
 export default function Access() {
@@ -7,19 +6,20 @@ export default function Access() {
     <div>
       <Head>
         <title>Access - S.watana</title>
+        <meta name="description" content="アクセス"/>
       </Head>
       <main>
-      <Link href="https://com.nicovideo.jp/community/co1568349">
-        <a target="_blank">niconico</a>
-      </Link>
+        <a href="https://com.nicovideo.jp/community/co1568349" target="_blank">
+          niconico
+        </a>
       <br />
-      <Link href="https://www.facebook.com/opepelab/">  
-        <a target="_blank">Facebook</a>
-      </Link>
+      <a href="https://www.facebook.com/opepelab/"target="_blank">
+        Facebook
+      </a>
       <br />
-      <Link href="https://note.com/opepelab/">  
-        <a target="_blank">note</a>
-      </Link>
+      <a href="https://note.com/opepelab/" target="_blank">  
+        note
+      </a>
       </main>
     </div>
   )

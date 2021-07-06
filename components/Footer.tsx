@@ -1,24 +1,22 @@
-import Link from 'next/link'
 import Image from 'next/image'
 
-// + Pct for Under
-
+// + Pct for Under ピクチャーを内包
 const Footer = () => {
     return(
         <div>
             <footer>
-                <div className="flex-container">
-                    <Link href="https://github.com/opepelab">
-                        <Image src="/images/twi.png" width={30} height={30} />
-                    </Link>
-                    <table width="2%"></table>
-                    <Link href="">
-                        <Image src="/images/you.png" width={30} height={30} />
-                    </Link>
-                    <table width="2%"></table>
-                    <Link href="https://www.linkedin.com/in/s-watanabe-a25157205">
-                        <Image src="/images/linkedx.png" width={30} height={30} />
-                    </Link>
+                <div className="flex-container">                      
+                        <Image src="/SVG/react.svg" width={50} height={50} />
+                        <table width="2%"></table>
+                        <Image src="/SVG/nextjs.svg" width={50} height={50} />
+                        <table width="2%"></table>
+                        <Image src="/SVG/facebook.svg" width={50} height={50} />
+                        <table width="2%"></table>
+                        <Image src="/SVG/html5.svg" width={50} height={50} />
+                        <table width="2%"></table>
+                        <Image src="/SVG/css3.svg" width={50} height={50} />
+                        <table width="2%"></table>
+                        <Image src="/SVG/python3.svg" width={50} height={50} />
                 </div>
                 <h5>Copyright 2021 <a href="mailto:ocelot2828@gmail.com">su</a> inc.</h5>
             </footer>

@@ -49,14 +49,12 @@ a:hover:active {
   opacity: 0.1;
   }
 
-img {
+.img1 {
   display: block;
   border-radius: 50%;
-}
-
-img:hover {
   cursor: pointer;
 }
+
 
 
 .flex-container {

@@ -6,7 +6,7 @@ export default function Document() {
     <div className="container">
       <Head>
         <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="reference"/>
       </Head>
 
       <main>
