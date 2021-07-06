@@ -208,5 +208,5 @@ export default function Document() {
         }
       `}</style>
     </div>
-  )
+  );
 }
