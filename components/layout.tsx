@@ -4,7 +4,7 @@ import Navbar from './Navbar'
 import PictureHigh from './PictureHigh'
 // すべてのコンポーネントをこのファイルが作動する starting components this file.
 const Layout = ({ children }) => {
-    return(
+    return (
       <div>
         <Metatxt />
         <PictureHigh />
