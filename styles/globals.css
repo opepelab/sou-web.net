@@ -1,12 +1,43 @@
 html,
 body {
-  word-break : break-all;
+  word-break: break-all;
   text-align: center;
+  width: 1000px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: auto;
+  margin-left: auto;
   font-family: 'Noto Sans JP', sans-serif;
   padding: 1em 2em;
   font-size: 1rem;
-  background: rgb(255, 255, 255);
-  color: #222;
+  background: #f2f2f2;
+  color: #333;
+}
+.logo {
+  text-align: left;
+  }
+
+header {
+  margin: 20px ;
+  padding: 0px 0px;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #eaeaea;
+}
+
+h5 {
+  bottom: 0;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  padding: 30px;
+  margin-top: 60px;
+  bottom: 0;
+  color: #777;
+  border-top: 1px solid #eaeaea;
 }
 
 a {
@@ -29,27 +60,27 @@ img:hover {
 
 
 .flex-container {
-  height: 160px;
 	display: flex;
   align-items: center;
   justify-content: center;
 }
 
-nav ul{
+
+nav ul {
   display: flex;
 	flex-flow: row;
-	justify-content: center;
-  grid-gap: 24px;
+	justify-content: flex-end;
+  grid-gap: 20px;
   margin: 0 auto;
   padding: 0 ;
   width: 100%;
   }
-  nav li{
+  nav li {
     list-style-type: none;
     width: 100px;
     white-space: nowrap;
   }
-  nav a{
+  nav a {
   display: block;
   width: 100%;
   text-decoration: none;
@@ -57,6 +88,10 @@ nav ul{
   padding-bottom: 5px;
   }
   nav li:hover:active {
-  color: #38A6FF;
   border-bottom: 1px solid #38A6FF;
   }
+
+  .logo {
+  text-align: left;
+  }
+
