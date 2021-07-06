@@ -1,5 +1,6 @@
 import Link from 'next/link'
 
+// 上のなんか並んでるやつ
 const Navbar = () => {
     return(     
         <header> 
