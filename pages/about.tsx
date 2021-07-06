@@ -4,7 +4,7 @@ import Styles from '../styles/Home.module.css';
 import Image from 'next/image'
 
 
-export default function Index() {
+export default function About() {
   return (
     <div className="container">
       <Head>
