@@ -5,7 +5,7 @@ import PictureHigh from './PictureHigh'
 // すべてのコンポーネントをこのファイルが作動する starting components this file.
 const Layout = ({ children }) => {
     return (
-      <div>
+      <div className="content">
         <Metatxt />
         <PictureHigh />
         <Navbar />
