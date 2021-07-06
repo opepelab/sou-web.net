@@ -12,7 +12,7 @@ const Navbar = () => {
                             <li><Link href="career"><a>Career</a></Link></li>
                             <li><Link href="access"><a>Access</a></Link></li>
                             <li><Link href="active"><a>Active Log</a></Link></li>
-                            <li><Link href="https://opepelab.org/"><a>News Blog</a></Link></li>
+                            <li><Link href="https://opepelab.org/"><a target="brank">News Blog</a></Link></li>
                             
                         </ul>
                 </div>

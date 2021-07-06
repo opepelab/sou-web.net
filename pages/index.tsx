@@ -18,5 +18,5 @@ export default function Index() {
           趣味：読書 お絵かき 音楽<br />
         </main>
     </div>
-  )
+  );
 }

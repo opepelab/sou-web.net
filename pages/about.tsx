@@ -16,5 +16,5 @@ export default function Index() {
         ネコが・・・
         </main>
     </div>
-  )
+  );
 }
