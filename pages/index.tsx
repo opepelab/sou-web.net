@@ -2,7 +2,6 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Styles from '../styles/Home.module.css';
 
-export const config = { amp: 'hybrid' }
 export default function Index() {
   return (
     <div className="container">
