@@ -16,5 +16,5 @@ export default function Index() {
         </Link>  
       </main>
     </div>
-  )
+  );
 }

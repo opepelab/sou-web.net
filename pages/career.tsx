@@ -24,5 +24,5 @@ export default function Career() {
       </h5>
       </main>
     </div>
-  )
+  );
 }
