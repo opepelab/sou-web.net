@@ -22,5 +22,5 @@ export default function Access() {
       </a>
       </main>
     </div>
-  )
+  );
 }
