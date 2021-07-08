@@ -1,10 +1,9 @@
 import Head from 'next/head';
 // 静的なメタタグ管理,動的なメタタグは該当部分に'next/head'で差し込み
 const Metatxt = () => {
-    return(
+    return (
         <Head>
-            <link rel="icon" href="/react.ico" />
-            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            <link rel="icon" href="/react.ico" />            
             <meta name="robots" content="noindex,nofollow" />
         </Head>
     );

@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 // + Pct for Under ピクチャーを内包
 const Footer = () => {
-    return(
+    return (
         <div>
             <footer>
                 <div className="flex-container">                      

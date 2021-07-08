@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 // 上に来るアイコンはこのファイル
 const PictureHigh = () => {
-    return(
+    return (
 
         <div className="flex-container">
             <Link href="https://github.com/opepelab">
