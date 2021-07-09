@@ -8,7 +8,6 @@ export default function Index() {
       <Head>
         <title>TOP - S.watana</title>
         <meta name="description" content="トップページ"/>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
         <main>
           こちらのウェブアプリは私のコンピュータサイエンスの活動内容や技術を載せています.
@@ -20,3 +19,5 @@ export default function Index() {
     </div>
   );
 }
+
+export const config = { amp: 'hybrid' }
