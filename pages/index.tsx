@@ -19,5 +19,3 @@ export default function Index() {
     </div>
   );
 }
-
-export const config = { amp: 'hybrid' }
