@@ -41,6 +41,11 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  transform: translateY(-20px);
+  transition-duration: 1s;
+}
+
 a:hover:active {
   opacity: 0.1;
   }
