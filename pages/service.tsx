@@ -7,7 +7,7 @@ export default function Index() {
   return (
     <div className="container">
       <Head>
-        <title>Active Log - S.watana</title>
+        <title>Service - S.watana</title>
         <meta name="description" content="アクティブなコード"/>
       </Head>
       <main>
