@@ -11,7 +11,7 @@ export default function Document() {
 
       <main>
         <h1 className="Layout">
-        <Link href="/">Next.js + TypeScript(ES6)</Link>
+        <Link href="/">Welcome Engine!!</Link>
         </h1>
 
         <p className="description">

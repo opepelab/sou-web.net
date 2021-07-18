@@ -1,4 +1,3 @@
-import Image from 'next/image'
 
 // + Pct for Under ピクチャーを内包
 const Footer = () => {
@@ -6,19 +5,13 @@ const Footer = () => {
         <div>
             <footer>
                 <div className="flex-container">                      
-                        <Image src="/SVG/react.svg" width={50} height={50} />
-                        <table width="2%"></table>
-                        <Image src="/SVG/nextjs.svg" width={50} height={50} />
-                        <table width="2%"></table>
-                        <Image src="/SVG/facebook.svg" width={50} height={50} />
-                        <table width="2%"></table>
-                        <Image src="/SVG/html5.svg" width={50} height={50} />
-                        <table width="2%"></table>
-                        <Image src="/SVG/css3.svg" width={50} height={50} />
-                        <table width="2%"></table>
-                        <Image src="/SVG/python3.svg" width={50} height={50} />
+                        <img className="Maru Zoom" src="/SVG/react.svg" width={50} height={50} />
+                        <img className="Maru Zoom" src="/SVG/nextjs.svg" width={50} height={50} />
+                        <img className="Maru Zoom" src="/SVG/html5.svg" width={50} height={50} />
+                        <img className="Maru Zoom" src="/SVG/css3.svg" width={50} height={50} />
+                        <img className="Maru Zoom" src="/SVG/python3.svg" width={50} height={50} />
                 </div>
-                <h5>Copyright 2021 <a href="mailto:ocelot2828@gmail.com">su</a> inc.</h5>
+                <h5>Copyright 2021 <a href="/">su</a> inc.</h5>
             </footer>
         </div>
     );

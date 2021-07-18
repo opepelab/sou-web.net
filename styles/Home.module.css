@@ -8,11 +8,10 @@
 }
 .btn {
   display: block;
-  width: 1000px;
-  margin: auto 0;
-  padding: auto 0;
+  margin: 0 auto;
+  width: 500px;
   background: #4979ff;
   border-radius: 4px;
   color: white;
-  text-align: center;
+
 }

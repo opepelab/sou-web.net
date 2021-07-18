@@ -2,7 +2,7 @@ html,
 body {
   word-break: break-all;
   text-align: center;
-  width: 1000px;
+  width: 1920;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-right: auto;
@@ -16,24 +16,30 @@ body {
 .logo {
   text-align: left;
   }
+  
+  h5 {
+    white-space: nowrap;
+  }
 
-header {
-  margin: 20px ;
-  padding: 0px 0px;
-	display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid #eaeaea;
-}
+  header {
+    margin: 20px ;
+    padding: 0px 0px;
+	  display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav{
+    border-bottom: 1px solid #eaeaea;
+  }
+  
 
 footer {
-  display: block;
-  text-align: center;
   padding: 30px;
   margin-top: 60px;
+  border-top: 1px solid #eaeaea;
   bottom: 0;
   color: #777;
-  border-top: 1px solid #eaeaea;
 }
 
 a {
@@ -41,27 +47,38 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  transform: translateY(-20px);
-  transition-duration: 1s;
-}
 
-a:hover:active {
-  opacity: 0.1;
+  
+.Nlink:hover {
+  border-bottom: 1px solid #38A6FF;
   }
 
-.img1 {
+.Toumei:hover {
+    opacity: 0.3;
+    }
+
+
+.Maru {
   display: block;
   border-radius: 50%;
-  cursor: pointer;
 }
 
+.ZoomS:hover {
+  transform: scale(1.5);
+  transition-duration: 0.5s;
+}
+
+.Zoom:hover {
+    transform: scale(2.2);
+    transition-duration: 0.5s;
+  }
 
 
 .flex-container {
 	display: flex;
   align-items: center;
   justify-content: center;
+  grid-column-gap: 2%;
 }
 
 
@@ -86,20 +103,16 @@ nav ul {
   color: #38A6FF;
   padding-bottom: 5px;
   }
-  nav li:hover:active {
-  border-bottom: 1px solid #38A6FF;
-  }
 
-  .logo {
-  text-align: left;
-  }
-
-
-  @media not all and (min-width: 600px) {
-
-
-
-
-
-    
+  
+  @media (max-width: 428px) {
+    .resp {
+      resize: both;
+      width: 100%;
+      zoom: 140%;
+    }
+    .scroll {
+      overflow: scroll;
+      width: 200px;
+    }
   }

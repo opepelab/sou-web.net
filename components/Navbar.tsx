@@ -4,19 +4,15 @@ import Link from 'next/link'
 const Navbar = () => {
     return (     
         <header> 
-            <nav>     
-                <div className="flex-container">           
-                        <ul>
-                            <li><Link href="/"><a>Home</a></Link></li>
-                            <li><Link href="about"><a>About</a></Link></li>
-                            <li><Link href="career"><a>Career</a></Link></li>
-                            <li><Link href="access"><a>Access</a></Link></li>
-                            <li><Link href="active"><a>Active Log</a></Link></li>
-                            <li><Link href="https://opepelab.org/"><a target="brank">News Blog</a></Link></li>
-                            
-                        </ul>
-                </div>
-            </nav>    
+            <nav>           
+                <ul className="scroll">
+                    <li><Link href="/"><a className="Nlink">Home</a></Link></li>
+                    <li><Link href="about"><a className="Nlink">About</a></Link></li>
+                    <li><Link href="access"><a className="Nlink">Access</a></Link></li>
+                    <li><Link href="skills"><a className="Nlink">Skills</a></Link></li>
+                    <li><Link href="service"><a className="Nlink">Service</a></Link></li>
+                </ul>
+            </nav>  
         </header>
         
     );

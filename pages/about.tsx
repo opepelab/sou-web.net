@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Styles from '../styles/Home.module.css';
-import Image from 'next/image'
 
 
 export default function About() {
@@ -12,9 +11,12 @@ export default function About() {
         <meta name="description" content="彼について"/>
       </Head>
       <main>
-      <Image src="/images/a.jpg" width={80} height={80} />
-        ネコが・・・
-        </main>
+        パーツ事に軽量な方がいい<br />
+        より高速に動く物を好む<br />
+        それがコードであるなら最短で最高率を好む<br />
+        もしシステムなら堅牢かつ物理的にもそうであることは言うまでもない<br />
+        一体として柔軟な動きが可能であるべき。<br />
+      </main>
     </div>
   );
 }
