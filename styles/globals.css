@@ -2,14 +2,11 @@ html,
 body {
   word-break: break-all;
   text-align: center;
-  width: 1920;
-  margin-top: 0px;
-  margin-bottom: 0px;
   margin-right: auto;
   margin-left: auto;
   font-family: 'Noto Sans JP', sans-serif;
   padding: 1em 2em;
-  font-size: 1rem;
+  font-size: 0.94rem;
   background: #f2f2f2;
   color: #333;
 }
