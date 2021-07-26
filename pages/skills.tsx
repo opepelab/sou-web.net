@@ -1,8 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Styles from '../styles/Home.module.css';
 
-export default function Career() {
+const Skills: React.FC = () => {
   return (
     <div className="container">
       <Head>
@@ -30,3 +29,5 @@ export default function Career() {
     </div>
   );
 }
+
+export default Skills

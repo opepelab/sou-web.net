@@ -1,6 +1,5 @@
-import Link from 'next/link'
 // 上に来るアイコンはこのファイル
-const PictureHigh = () => {
+const PictureHigh: React.FC = () => {
     return (
 
         <div className="flex-container">

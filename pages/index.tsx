@@ -1,8 +1,6 @@
 import Head from 'next/head';
-import Link from 'next/link';
-import Styles from '../styles/Home.module.css';
 
-export default function Index() {
+const Index: React.FC = () => {
   return (
     <div className="container">
       <Head>
@@ -19,3 +17,5 @@ export default function Index() {
     </div>
   );
 }
+
+export default Index;

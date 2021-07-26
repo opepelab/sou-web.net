@@ -1,9 +1,7 @@
 import Head from 'next/head';
-import Link from 'next/link';
-import Styles from '../styles/Home.module.css';
 
 
-export default function About() {
+const About: React.FC = () => {
   return (
     <div className="container">
       <Head>
@@ -20,3 +18,5 @@ export default function About() {
     </div>
   );
 }
+
+export default About;

@@ -1,7 +1,6 @@
 import Head from 'next/head';
-import Styles from '../styles/Home.module.css';
 
-export default function Access() {
+const Access: React.FC = () => {
   return (
     <div>
       <Head>
@@ -36,3 +35,5 @@ export default function Access() {
     </div>
   );
 }
+
+export default Access;

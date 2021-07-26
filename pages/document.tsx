@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
-export default function Document() {
+const Document: React.FC = () => {
   return (
     <div className="container">
       <Head>
@@ -210,3 +210,5 @@ export default function Document() {
     </div>
   );
 }
+
+export default Document;

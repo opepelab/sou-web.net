@@ -3,9 +3,9 @@ import Footer from './Footer'
 import Navbar from './Navbar'
 import PictureHigh from './PictureHigh'
 // すべてのコンポーネントをこのファイルが作動する starting components this file.
-const Layout = ({ children }) => {
+const Layout: React.FC = ({ children }) => {
     return (
-      <div className="resp">
+      <div className="content">
         <Metatxt />
         <PictureHigh />
         <Navbar />

@@ -1,6 +1,5 @@
-
 // + Pct for Under ピクチャーを内包
-const Footer = () => {
+const Footer: React.FC = () => {
     return (
         <div>
             <footer>

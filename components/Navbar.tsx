@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 // 上のなんか並んでるやつ
-const Navbar = () => {
+const Navbar: React.FC = () => {
     return (     
         <header> 
             <nav>           

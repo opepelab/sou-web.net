@@ -1,6 +1,6 @@
 import Head from 'next/head';
 // 静的なメタタグ管理,動的なメタタグは該当部分に'next/head'で差し込み
-const Metatxt = () => {
+const Metatxt: React.FC = () => {
     return (
         <Head>
             <link rel="icon" href="/react.ico" />
