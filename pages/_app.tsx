@@ -9,4 +9,4 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }): JSX.Element => {
     </Layout>
   );
 }
-export default MyApp
+export default MyApp;
