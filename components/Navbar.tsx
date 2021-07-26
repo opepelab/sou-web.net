@@ -11,6 +11,7 @@ const Navbar: React.FC = () => {
                     <li><Link href="skills"><a className="Nlink">Skills</a></Link></li>
                     <li><Link href="access"><a className="Nlink">Access</a></Link></li>
                     <li><Link href="service"><a className="Nlink">Service</a></Link></li>
+                    <li><Link href="Controller"><a className="Nlink">Controller</a></Link></li>
                 </ul>
             </nav>  
         </header>

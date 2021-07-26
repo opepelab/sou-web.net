@@ -1,5 +1,5 @@
-import Head from 'next/head';
-import Link from 'next/link';
+import Head from 'next/head'
+import Link from 'next/link'
 
 const Skills: React.FC = () => {
   return (
@@ -30,4 +30,4 @@ const Skills: React.FC = () => {
   );
 }
 
-export default Skills
+export default Skills;
