@@ -15,13 +15,13 @@ const Skills: React.FC = () => {
         Vue(Nuxt.js)<br />
         <br />
         <b>now loading...</b><br />
-        Rust(C C+)<br>
-        Clojure<br>
-        Haskell<br>
-        Python(Deep node AI)<br>
-        Angular<br>
-        React Native<br>
-        Kotolin,Swift<br>
+        Rust(C C+)<br />
+        Clojure<br />
+        Haskell<br />
+        Python(Deep node AI)<br />
+        Angular<br />
+        React Native<br />
+        Kotolin,Swift<br />
         <h5>
           <Link href="document">
             <a>document</a>
