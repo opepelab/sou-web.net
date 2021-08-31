@@ -7,7 +7,7 @@ import Sidebar from './Sidebar'
 // すべてのコンポーネントをこのファイルが作動する starting components this file.
 const Layout: React.FC = ({ children }) => {
     return (
-      <div className="resp">
+      <div className="resp body">
         <Metatxt />
         <Header />
         <PictureHigh />

@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Skills: React.FC = () => {
   return (
-    <div className="container">
+    <div>
       <Head>
         <title>Skills - S.watana</title>
         <meta name="description" content="私の習得ルート"/>

@@ -1,15 +1,25 @@
 html,
 body {
+  font-family: "Sawarabi Gothic";
   word-break: break-all;
   text-align: center;
   margin-right: auto;
   margin-left: auto;
-  font-family: 'Noto Sans JP', sans-serif;
   padding: 1em 2em;
-  font-size: 0.94rem;
+  font-size: 0.95rem;
   background: #f2f2f2;
   color: #666;
 }
+.left {
+  position: absolute;
+  left: 457px;
+  top: 4px;
+  border-right: solid 28px #6b77ac;
+  border-top: solid 28px #95a1d3;
+  border-left: solid 28px #a7b3e7;
+  border-bottom: solid 28px #7883b4;
+}
+
 #title {
   cursor: none;
 }
@@ -53,11 +63,10 @@ h2 {
 
 .navSide{
   position: absolute;
-  justify-content: left;
   width: 400px;
   height: 300px;
-  transform: scale(0.5);
-  top: 50px;
+  transform: scale(0.6);
+  top: 135px;
   left: 350px;
 }
 
@@ -68,10 +77,10 @@ h2 {
 
 .hako {
   list-style: none;
-  font-size: 1.6em;
+  font-size: 1.2em;
   box-sizing: border-box;
   border: 1px solid #606b9b;
-  margin: 6px;
+  margin: 7px;
   padding: 20px;
 }
 
@@ -131,11 +140,16 @@ a {
   grid-column-gap: 2%;
 }
 
+
+
+
 .footer {
-margin-top: 50px;
+  margin-top: 60px;
+  margin-left: 23%;
+  margin-right: 23%;
 }
 
-nav ul {
+/* nav ul {
   display: flex;
 	flex-flow: row;
 	justify-content: center;
@@ -155,7 +169,7 @@ nav ul {
   text-decoration: none;
   color: #38A6FF;
   padding-bottom: 5px;
-  }
+  } */
 
   
   @media (max-width: 428px) {
@@ -164,18 +178,21 @@ nav ul {
       width: 100%;
       zoom: 100%;
     }
-    .scroll {
-      overflow: scroll;
-      width: 200px;
+
+    .flex-container {
+    grid-column-gap: 6%;
     }
     .navSide{
-      left: -250px;
+      left: -260px;
       top: 150px;
       text-align: right;
     }
-
+    .navSide :hover{
+      transform: scale(1);
+    }
     .migi :hover {
-      transform: translateX(1%);
+      transform: translateX(-25%);
+      transition-duration: 0.8s;  
     }
     /* .nav{
       display: none;
