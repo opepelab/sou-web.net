@@ -8,6 +8,8 @@ const Skills: React.FC = () => {
         <title>Skills - S.watana</title>
         <meta name="description" content="私の習得ルート"/>
       </Head>
+      <h2>Skills</h2>
+      <div className="triangle-bottom" />
       <main>
         HTML,CSS<br />
         <b>TypeScript</b><br />

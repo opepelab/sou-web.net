@@ -8,12 +8,78 @@ body {
   padding: 1em 2em;
   font-size: 0.94rem;
   background: #f2f2f2;
-  color: #333;
+  color: #666;
 }
-.logo {
-  text-align: left;
-  }
-  
+#title {
+  cursor: none;
+}
+
+h1 a:visited {
+  color: #666;
+}
+
+header h1 {
+  font-family: adobe-arabic, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  position: fixed;
+  top: -19px;
+}
+
+h1 {
+  border-top: 0px solid #828ec0;
+  border-bottom: 5px solid #5d699e;
+  border-left: 1px solid #606b9b;
+  border-right: 5px solid #8995c9;
+  width: 463px;
+}
+
+h2 {
+  font-family: adobe-arabic, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+  border-bottom: 1px solid #eaeaea;
+  width: 30%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.triangle-bottom {
+  display: inline-block;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #eaeaea transparent transparent transparent;
+}
+
+.navSide{
+  position: absolute;
+  justify-content: left;
+  width: 400px;
+  height: 300px;
+  transform: scale(0.5);
+  top: 50px;
+  left: 350px;
+}
+
+.navSide :hover{
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+}
+
+.hako {
+  list-style: none;
+  font-size: 1.6em;
+  box-sizing: border-box;
+  border: 1px solid #606b9b;
+  margin: 6px;
+  padding: 20px;
+}
+
+.migi :hover {
+  transform: translateX(17%);
+  transition-duration: 0.75s;
+}
+
   h5 {
     white-space: nowrap;
   }
@@ -26,21 +92,8 @@ body {
     justify-content: center;
   }
 
-  nav{
-    border-bottom: 1px solid #eaeaea;
-  }
-  
-
-footer {
-  padding: 30px;
-  margin-top: 60px;
-  border-top: 1px solid #eaeaea;
-  bottom: 0;
-  color: #777;
-}
-
 a {
-  color: #38A6FF;
+  color: #7077d8;
   text-decoration: none;
 }
 
@@ -78,6 +131,9 @@ a {
   grid-column-gap: 2%;
 }
 
+.footer {
+margin-top: 50px;
+}
 
 nav ul {
   display: flex;
@@ -106,10 +162,38 @@ nav ul {
     .resp {
       resize: both;
       width: 100%;
-      zoom: 140%;
+      zoom: 100%;
     }
     .scroll {
       overflow: scroll;
       width: 200px;
     }
+    .navSide{
+      left: -250px;
+      top: 150px;
+      text-align: right;
+    }
+
+    .migi :hover {
+      transform: translateX(1%);
+    }
+    /* .nav{
+      display: none;
+    }
+    .navSide{
+      visibility: visible;
+      position: absolute;
+      left: -40px;
+    }
+    li {
+      list-style: none;
+      box-sizing: border-box;
+      border: 1px solid #ff6464;
+      background-color: rgb(252, 170, 122);
+      margin: 3px;
+      padding: 3px;
+    }
+    .migi :hover {
+      transform: translateX(-20px);
+    } */
   }

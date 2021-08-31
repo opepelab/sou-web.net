@@ -5,7 +5,7 @@ const Navbar: React.FC = () => {
     return (     
         <header> 
             <nav>           
-                <ul className="scroll">
+                <ul className="scroll nav">
                     <li><Link href="/"><a className="Nlink">Home</a></Link></li>
                     <li><Link href="about"><a className="Nlink">About</a></Link></li>
                     <li><Link href="skills"><a className="Nlink">Skills</a></Link></li>

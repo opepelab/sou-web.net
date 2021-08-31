@@ -3,6 +3,7 @@ import Head from 'next/head';
 const Metatxt: React.FC = () => {
     return (
         <Head>
+            <link rel="stylesheet" href="https://use.typekit.net/qev6edb.css"></link>
             <link rel="icon" href="/favicon.ico" />
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             <meta name="robots" content="noindex,nofollow" />

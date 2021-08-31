@@ -3,7 +3,7 @@ const Footer: React.FC = () => {
     return (
         <div>
             <footer>
-                <div className="flex-container">                      
+                <div className="flex-container footer">                      
                         <img className="Maru Zoom" src="/SVG/react.svg" width={50} height={50} />
                         <img className="Maru Zoom" src="/SVG/nextjs.svg" width={50} height={50} />
                         <img className="Maru Zoom" src="/SVG/html5.svg" width={50} height={50} />

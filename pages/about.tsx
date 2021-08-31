@@ -8,7 +8,10 @@ const About: React.FC = () => {
         <title>About - S.watana</title>
         <meta name="description" content="彼について"/>
       </Head>
+      <h2>About</h2>
+      <div className="triangle-bottom" />
       <main>
+        <h3>「設計思想」</h3>
         パーツ事に軽量な方がいい<br />
         より高速に動く物を好む<br />
         それがコードであるなら最短で最高率を好む<br />

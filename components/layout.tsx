@@ -1,14 +1,17 @@
 import Metatxt from './Metatxt'
+import Header from './Header'
 import Footer from './Footer'
 import Navbar from './Navbar'
 import PictureHigh from './PictureHigh'
+import Sidebar from './Sidebar'
 // すべてのコンポーネントをこのファイルが作動する starting components this file.
 const Layout: React.FC = ({ children }) => {
     return (
-      <div className="content">
+      <div className="resp">
         <Metatxt />
+        <Header />
         <PictureHigh />
-        <Navbar />
+        <Sidebar />
         { children }
         <Footer />
       </div> 

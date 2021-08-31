@@ -7,9 +7,15 @@ const Access: React.FC = () => {
         <title>Access - S.watana</title>
         <meta name="description" content="アクセス"/>
       </Head>
+      <h2>Access</h2>
+      <div className="triangle-bottom" />
       <main>
       <a href="https://www.facebook.com/opepelab/" target="_blank">
         Facebook
+      </a>
+      <br />
+      <a href="https://www.linkedin.com/in/s-watanabe-a25157205" target="_blank">
+        LinkdIn
       </a>
       <br />
       <a href="https://qiita.com/S_watana" target="_blank">
