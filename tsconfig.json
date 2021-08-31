@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES2018",
+    "target": "ES2021",
     "lib": [
       "dom",
       "dom.iterable",
@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components"  ],
+, "components", "pages/api/mail.js", "pages/api/mail.js", "pages/api/mail.js"  ],
   "exclude": [
     "node_modules"
   ]
