@@ -12,20 +12,13 @@ body {
 }
 .left {
   position: absolute;
-  left: 457px;
-  top: 4px;
-  border-right: solid 28px #6b77ac;
-  border-top: solid 28px #95a1d3;
-  border-left: solid 28px #a7b3e7;
-  border-bottom: solid 28px #7883b4;
+  left: 482px;
+  top: 32px;
+  border: solid 3px #eaeaea;
 }
 
 #title {
   cursor: none;
-}
-
-h1 a:visited {
-  color: #666;
 }
 
 header h1 {
@@ -37,11 +30,12 @@ header h1 {
 }
 
 h1 {
-  border-top: 0px solid #828ec0;
-  border-bottom: 5px solid #5d699e;
-  border-left: 1px solid #606b9b;
-  border-right: 5px solid #8995c9;
-  width: 463px;
+  border-bottom: 1px solid #eaeaea;
+  width: 400px;
+}
+
+h1 :hover {
+ color: #38A6FF;
 }
 
 h2 {
@@ -63,11 +57,10 @@ h2 {
 
 .navSide{
   position: absolute;
-  width: 400px;
-  height: 300px;
-  transform: scale(0.6);
-  top: 135px;
-  left: 350px;
+  width: 200px;
+  height: 100px;
+  top: 190px;
+  left: 440px;
 }
 
 .navSide :hover{
@@ -77,16 +70,16 @@ h2 {
 
 .hako {
   list-style: none;
-  font-size: 1.2em;
+  font-size: 1em;
   box-sizing: border-box;
   border: 1px solid #606b9b;
-  margin: 7px;
-  padding: 20px;
+  margin: 4px;
+  padding: 12px;
 }
 
 .migi :hover {
   transform: translateX(17%);
-  transition-duration: 0.75s;
+  transition-duration: 0.5s;
 }
 
   h5 {
@@ -122,13 +115,8 @@ a {
   border-radius: 50%;
 }
 
-.ZoomS:hover {
-  transform: scale(1.5);
-  transition-duration: 0.5s;
-}
-
 .Zoom:hover {
-    transform: scale(2.2);
+    transform: scale(2);
     transition-duration: 0.5s;
   }
 
@@ -183,7 +171,7 @@ a {
     grid-column-gap: 6%;
     }
     .navSide{
-      left: -260px;
+      left: -132px;
       top: 150px;
       text-align: right;
     }
