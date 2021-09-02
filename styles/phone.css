@@ -15,8 +15,8 @@
 .humberger {
     z-index: 3;
     position: fixed;
-    right: 15px;
-    top: 15px;
+    right: 5px;
+    top: 16px;
     height: 20px;
     width: 28px;
     display: inline-block;
@@ -40,23 +40,33 @@
   }
 
 .bg {
-    background-color: #f2f2f2;
     display: none;
     position: fixed;
     width:20%;
     height:20%;
-    right: -20px;
-    top: -10px;
+    right: -30px;
+    top: -8px;
     margin: 4px;
-    padding: 12px;
+    padding: 14px;
 }
+
+a :hover {
+    color: #7077d8;
+    text-decoration: none;
+    transform: translateX(-17%);
+    transition-duration: 0.5s;
+  }
 
 
 .tate{
     list-style: none;
     color: #666;
-    padding: 10px;
-    font-size: 1.2em;
+    margin-top: 12px;
+    font-size: 1rem;
+}
+
+.tate :hover {
+
 }
 
 #ms {
