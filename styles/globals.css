@@ -22,6 +22,7 @@ body {
 }
 
 header h1 {
+  z-index: 1;
   font-family: adobe-arabic, sans-serif;
   font-weight: 400;
   font-style: italic;
@@ -83,6 +84,8 @@ h2 {
 }
 
   header {
+    z-index: 2;
+    position: relative;
     margin: 20px ;
     padding: 0px 0px;
 	  display: flex;
@@ -118,6 +121,8 @@ a {
 
 
 .flex-container {
+  z-index: 2;
+  position: relative;
 	display: flex;
   align-items: center;
   justify-content: center;
@@ -128,6 +133,8 @@ a {
 
 
 .footer {
+  z-index: 2;
+  position: relative;
   margin-top: 60px;
   margin-left: 23%;
   margin-right: 23%;
@@ -173,6 +180,7 @@ a {
       left: -132px;
       top: 150px;
       text-align: right;
+      display: none;
     }
     .navSide :hover{
       transform: scale(1);
@@ -200,4 +208,8 @@ a {
     .migi :hover {
       transform: translateX(-20px);
     } */
+  }
+
+  .sumaho {
+    display: none;
   }
