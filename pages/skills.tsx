@@ -20,9 +20,7 @@ const Skills: React.FC = () => {
         Rust(C C+)<br />
         Clojure<br />
         Haskell<br />
-        Python(Deep node AI)<br />
-        Angular<br />
-        React Native<br />
+        Python(AI)<br />
         Kotolin,Swift<br />
         <h5>
           <Link href="document">
