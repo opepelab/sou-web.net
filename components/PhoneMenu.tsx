@@ -1,8 +1,3 @@
-import React, { useState } from 'react';
-import Link from 'next/link'
-import { slide as Menu } from "react-burger-menu";
-
-
 
 const PhoneMenu: React.FC = () => {
     return (     
