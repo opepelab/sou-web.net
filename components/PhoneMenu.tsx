@@ -1,8 +1,12 @@
+import React, { useState } from 'react';
 import Link from 'next/link'
+import { slide as Menu } from "react-burger-menu";
+
+
 
 const PhoneMenu: React.FC = () => {
     return (     
-        <div className="sumaho">
+        <div className="none">
             <input type="checkbox" id="checkBtn" className="checkHidden" />
                 <label htmlFor="checkBtn">
                 <div className="humberger">
@@ -12,12 +16,13 @@ const PhoneMenu: React.FC = () => {
                 </label>
             <nav className="bg">
                 <div id="ms">
-                <Link href="/" ><a><li className="tate">Home</li></a></Link>
-                <Link href="about"><a><li className="tate">About</li></a></Link>
-                <Link href="skills"><a><li className="tate">Skill</li></a></Link>
-                <Link href="access"><a><li className="tate">SNS</li></a></Link>
-                <Link href="service"><a><li className="tate">Prod</li></a></Link>
-                <Link href="design"><a><li className="tate">Artis</li></a></Link>
+                <label htmlFor="checkBtn">
+                <a href="about"><li className="tate">ABOUT</li></a>
+                <a href="access"><li className="tate">ACCESS</li></a>
+                <a href="skills"><li className="tate">SKILL SET</li></a>
+                <a href="service"><li className="tate">SERVICE</li></a>
+                <a href="design"><li className="tate">DESIGN</li></a>
+                </label>
                 </div>  
             </nav>
         </div>

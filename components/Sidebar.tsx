@@ -13,7 +13,7 @@ const Sidebar: React.FC = () => {
         <Link href="design"><a><div className="migi"><li className="hako">Design</li></div></a></Link>
         </ul>
         </div>  
-);
+    );
 }
 
 export default Sidebar;

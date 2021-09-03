@@ -13,32 +13,37 @@ body {
 .left {
   position: absolute;
   left: 482px;
-  top: 65px;
-  border: solid 3px #e0dbdb;
+  top: 64px;
+  border: solid 3px #777777;
 }
 
 #title {
-  cursor: none;
+  position: fixed;
+  cursor: pointer;
   background-color: #f0ebeb;
+  padding: 16px;
+  border-bottom: 1px solid #eaeaea;
+  width: 100%;
 }
 
+
 header h1 {
-  z-index: 3;
   font-family: adobe-arabic, sans-serif;
   font-weight: 400;
   font-style: italic;
-  position: fixed;
-  top: -19px;
+  top: -20px;
 }
 
-h1 {
-  border-bottom: 1px solid #eaeaea;
-  width: 100%;
+
+.dark {
+  color: #666;
+  left: 30px;
 }
 
 h1 :hover {
  color: #38A6FF;
 }
+
 
 h2 {
   font-family: adobe-arabic, sans-serif;
@@ -74,7 +79,7 @@ h2 {
   list-style: none;
   font-size: 1em;
   box-sizing: border-box;
-  border: 1px solid #606b9b;
+  border: 1px solid #eaeaea;
   margin: 4px;
   padding: 12px;
 }
@@ -99,15 +104,14 @@ a {
   text-decoration: none;
 }
 
+.humberger {
+  display: none;
+}
 
   
 .Nlink:hover {
   border-bottom: 1px solid #38A6FF;
   }
-
-.Toumei:hover {
-    opacity: 0.3;
-    }
 
 
 .Maru {
@@ -122,7 +126,7 @@ a {
 
 
 .flex-container {
-  z-index: 2;
+  z-index: 0;
   position: relative;
 	display: flex;
   align-items: center;
@@ -134,13 +138,14 @@ a {
 
 
 .footer {
-  z-index: 2;
+  z-index: 3;
   position: absolute;
-  bottom: 0%;
+  bottom: -120px;
   left:0%;
   right: 0%;
   padding-top: 20px;
   background: #f0ebeb;
+  border-top: solid 1px #eaeaea;
 }
 
 /* nav ul {
@@ -174,15 +179,17 @@ a {
     }
     .left {
       display: none;
+      left: 0px;
       }
 
     .flex-container {
     grid-column-gap: 6%;
     }
     .navSide{
-      left: -132px;
-      top: 150px;
+      left: -140px;
+      top: 72px;
       text-align: right;
+      display: none;
     }
     .navSide :hover{
       transform: scale(1);
@@ -191,6 +198,18 @@ a {
       transform: translateX(-25%);
       transition-duration: 0.8s;  
     }
+
+    .hako {
+      font-size: 0.8rem;
+      margin-top: 20px;
+      padding: 10 px;
+
+    }
+
+    h2 {
+      width: 100%;
+    }
+
     /* .nav{
       display: none;
     }
@@ -212,6 +231,6 @@ a {
     } */
   }
 
-  .sumaho {
-    display: none;
-  }
+.none {
+  display: none;
+}

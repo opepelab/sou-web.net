@@ -1,14 +1,13 @@
+import Link from 'next/link'
 const Header: React.FC = () => {
     return (
         <div>
             <img className="left" src="/images/ore.png" width={148} height={100} />
-        <div className="flex-container">
             <label htmlFor="checkBtn">     
                 <header>
-                    <h1 id="title"><a href="/">Sou Watanabe</a></h1>
+                    <h1 id="title"><Link href="/"><a  className="dark">Watanabe S.</a></Link></h1>
                 </header>
             </label>
-        </div>
         </div>
     );
 }
