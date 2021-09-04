@@ -8,9 +8,9 @@ type Props = {
 const Menu: React.FC<Props> = ({ open, setOpen }) => {
     return (     
         <div>
-            <nav className="MenuList">
-                    <button type="button" aria-expanded={open} onClick={() => setOpen(!open)}>
-                        <div id="ms">
+            <div className="MenuList">
+                    <nav aria-expanded={open} onClick={() => setOpen(!open)}>
+                        <div id="Pmoji">
                             <Link href="/about">
                                 <a>
                                     <li className="tate">ABOUT</li>
@@ -36,10 +36,10 @@ const Menu: React.FC<Props> = ({ open, setOpen }) => {
                                     <li className="tate">DESIGN</li>
                                 </a>
                             </Link>
-                    </div>
-                     </button>
+                        </div>
+                    </nav>
                 
-            </nav>
+            </div>
 
         </div>
     );

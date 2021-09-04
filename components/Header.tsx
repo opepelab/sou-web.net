@@ -13,9 +13,11 @@ const Header: React.FC<Props> = ({ open, setOpen }) => {
                 <header>
                     <h1 id="title"><Link href="/"><a  className="dark">Watanabe S.</a></Link></h1>
                 </header>
-                <div className="Line">
-                    <div />
-                    <div />
+            </div>
+            <div className="Line">
+                <div aria-expanded={open} onClick={() => setOpen(!open)}>
+                    <span />
+                    <span />
                 </div>
             </div>
         </div>
