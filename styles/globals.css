@@ -23,6 +23,7 @@ body {
   padding: 16px;
   border-bottom: 1px solid #eaeaea;
   width: 100%;
+  cursor: pointer;
 }
 
 
@@ -137,7 +138,7 @@ a {
 
 
 .footer {
-  z-index: 3;
+  z-index: 0;
   position: absolute;
   bottom: -120px;
   left:0%;

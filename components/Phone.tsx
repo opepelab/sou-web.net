@@ -1,5 +1,5 @@
 
-const PhoneMenu: React.FC = () => {
+const Phone: React.FC = () => {
     return (     
         <div className="none">
             <input type="checkbox" id="checkBtn" className="checkHidden" />
@@ -12,11 +12,11 @@ const PhoneMenu: React.FC = () => {
             <nav className="bg">
                 <div id="ms">
                 <label htmlFor="checkBtn">
-                <a href="about"><li className="tate">ABOUT</li></a>
-                <a href="access"><li className="tate">ACCESS</li></a>
-                <a href="skills"><li className="tate">SKILL SET</li></a>
-                <a href="service"><li className="tate">SERVICE</li></a>
-                <a href="design"><li className="tate">DESIGN</li></a>
+                    <a href="about"><li className="tate">ABOUT</li></a>
+                    <a href="access"><li className="tate">ACCESS</li></a>
+                    <a href="skills"><li className="tate">SKILL SET</li></a>
+                    <a href="service"><li className="tate">SERVICE</li></a>
+                    <a href="design"><li className="tate">DESIGN</li></a>
                 </label>
                 </div>  
             </nav>
@@ -24,4 +24,4 @@ const PhoneMenu: React.FC = () => {
     );
 }
 
-export default PhoneMenu;
+export default Phone;

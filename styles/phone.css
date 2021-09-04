@@ -1,58 +1,66 @@
 
-@media (max-width: 428px) {
+/* @media (max-width: 428px) { */
 
-.none {
-  display: block;
-}
 
-#checkBtn:checked ~ nav {
-    display: block;
-    animation: 0.25s feed;
-}
-
-.checkHidden {
-    display: none;
-    position: absolute;
-    left: -1200px;
-}
-
-.humberger {
+.Line {
     z-index: 3;
     position: fixed;
-    right: 15px;
-    top: 30px;
-    height: 20px;
-    width: 28px;
+    width: 50px;
+    height: 50px;
+    right: 5px;
+    top: 0px;
     display: inline-block;
     box-sizing: border-box;
-
+    cursor: pointer;
   }
-.humberger div {
-    position: relative;
-    left: 0px;
+.Line div {
+    position: absolute;
     height: 5px;
-    width: 28px;
+    width: 40px;
     background-color: #666;
     border-radius: 2px;
   }
-.humberger div:nth-of-type(1) {
+.Line div:nth-of-type(1) {
+    bottom: 20px;
+  }
+.Line div:nth-of-type(2) {
     bottom: 10px;
   }
-.humberger div:nth-of-type(2) {
-    bottom: 0px;
-    transform: rotateX(20)
-  }
 
-.bg {
-    display: none;
-    z-index: 1;
-    position: absolute;
-    background: #f0ebeb;
-    width:100%;
-    height:100%;
-    left: 0px;
-    top: 10px;
+
+.Line[aria-expanded='true'] { 
+  visibility: hidden;
 }
+
+.MenuList {
+  list-style: none;
+  position: absolute;
+  right: 50px;
+  visibility: hidden;
+}
+
+.MenuList [aria-expanded='true'] {
+  z-index: 1;
+  position: fixed;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background: #f0ebeb;
+  cursor: pointer;
+  visibility: visible;
+  animation: 0.25s feed;
+
+}
+
+
+
+button {
+  border: none;
+  background: transparent;
+}
+
 
 a :hover {
     color: #7077d8;
@@ -66,16 +74,20 @@ a :hover {
     font-style: normal;
     list-style: none;
     color: #666;
-    margin-top: 15px;
-    font-size: 2rem;
+    margin-top: 20px;
+    font-size: 3rem;
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
 #ms {
-    position: fixed;
+    z-index: 3;
+    position: relative;
     left: 0%;
     right: 0%;
-    top: 25%;
+    top: -5%;
 }
 
 @keyframes feed {
@@ -84,4 +96,4 @@ a :hover {
   }
 
 
-}
+/* } */
