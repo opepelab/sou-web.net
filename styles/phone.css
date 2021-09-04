@@ -58,13 +58,13 @@ button {
 
 .MenuList [aria-expanded='true'] {
   z-index: 1;
-  position: absolute;
+  position: fixed;
+  background: #f0ebeb;
   left: 0%;
   right: 0%;
   top: 0%;
   width: 100%;
   height: 100%;
-  background: #f0ebeb;
   opacity: 0.95;
   visibility: visible;
   animation: 0.25s feed;
