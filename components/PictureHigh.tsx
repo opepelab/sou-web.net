@@ -1,7 +1,7 @@
 // 上に来るアイコンはこのファイル
 const PictureHigh: React.FC = () => {
     return (
-        <div className="flex-container">
+        <div className="flex-container top">
             <a className="maru" href="https://github.com/opepelab" target="_blank">
                 <img className="Maru Zoom" src="/images/gitbaju.svg" width={70} height={70} />
             </a>

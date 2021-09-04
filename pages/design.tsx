@@ -8,7 +8,7 @@ const Design: React.FC = () => {
         <title>Design - S.watana</title>
         <meta name="description" content="アクティブなコード"/>
       </Head>
-      <h2>Design</h2>
+      <h2>DESIGN</h2>
       <div className="triangle-bottom" />
       <main>
         font: さらわびゴシック Adobe Arabic Regular <br />

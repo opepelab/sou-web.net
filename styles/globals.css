@@ -13,7 +13,7 @@ body {
 .left {
   position: absolute;
   left: 482px;
-  top: 64px;
+  top: 82px;
   border: solid 3px #777777;
 }
 
@@ -66,7 +66,7 @@ h2 {
   position: absolute;
   width: 200px;
   height: 100px;
-  top: 190px;
+  top: 210px;
   left: 440px;
 }
 
@@ -132,6 +132,10 @@ a {
   align-items: center;
   justify-content: center;
   grid-column-gap: 2%;
+}
+
+.top {
+  margin-top: 40px;
 }
 
 

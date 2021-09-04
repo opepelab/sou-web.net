@@ -8,7 +8,7 @@ const Service: React.FC = () => {
         <title>Service - S.watana</title>
         <meta name="description" content="アクティブなコード"/>
       </Head>
-      <h2>Service</h2>
+      <h2>SERVICE</h2>
       <div className="triangle-bottom" />
       <main>
       <a href="https://github.com/opepelab/C-x9/blob/main/C-x9.c" target="_blank">入力に9掛けて9個出力(C言語)</a><br />
