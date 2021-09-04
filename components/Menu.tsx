@@ -1,11 +1,12 @@
 import Link from 'next/link'
+import React from 'react';
 
 type Props = {
     open: boolean;
-    setOpen: Function;
+    setOpen: any;
 };
 
-const Menu: React.FC<Props> = ({ open, setOpen }) => {
+export const Menu: React.FC<Props> = ({ open, setOpen }) => {
     return (     
         <div>
             <div className="MenuList">

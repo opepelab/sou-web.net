@@ -15,7 +15,7 @@ type Props = {
 };
 
 // すべてのコンポーネントをこのファイルが作動する starting components this file.
-const Layout: React.FC<Props> = ({ children }) => {
+export const Layout: React.FC<Props> = ({ children }) => {
   const [open, setOpen] = useState(false);
 
     return (

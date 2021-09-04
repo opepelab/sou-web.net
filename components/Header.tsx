@@ -1,11 +1,12 @@
 import Link from 'next/link'
+import React from 'react';
 
 type Props = {
     open: boolean;
-    setOpen: Function;
+    setOpen: any;
 };
 
-const Header: React.FC<Props> = ({ open, setOpen }) => {
+export const Header: React.FC<Props> = ({ open, setOpen }) => {
     return (
         <div>
             <img className="left" src="/images/ore.png" width={148} height={100} />

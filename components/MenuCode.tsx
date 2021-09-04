@@ -2,7 +2,7 @@ import React from 'react';
 
 type Props = {
     open: boolean;
-    setOpen: Function;
+    setOpen: any;
 };
 
 
