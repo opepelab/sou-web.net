@@ -11,9 +11,17 @@ const Design: React.FC = () => {
       <h2>DESIGN</h2>
       <div className="triangle-bottom" />
       <main>
-        font: さらわびゴシック Adobe Arabic Regular <br />
-        Windows 10
-        バージョン管理 Git
+        「Font」<br /> 
+        JA: さらわびゴシック EN: Adobe Arabic Regular <br />
+        <br />
+        「制作環境」<br />
+        Git<br />
+        Visual Studio Code<br />
+        TypeScript<br />
+        Eslint<br />
+        Chrome<br />
+        Vercel<br />
+
       </main>
     </div>
   );

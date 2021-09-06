@@ -83,13 +83,10 @@ a :hover {
     font-family: adobe-arabic, sans-serif;
     font-weight: 400;
     font-style: normal;
-    list-style: none;
     color: #666;
+    list-style: none;
     margin-top: 20px;
     font-size: 3rem;
-    width: 160px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
@@ -98,7 +95,8 @@ a :hover {
     top: 20%;
     left: 0%;
     right: 0%;
-    width: 160px;
+    display: block;
+    width: 152px;
     margin-left: auto;
     margin-right: auto;
 }

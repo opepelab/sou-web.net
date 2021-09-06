@@ -11,31 +11,31 @@ const Access: React.FC = () => {
       <div className="triangle-bottom" />
       <main>
       <a href="https://www.facebook.com/opepelab/" target="_blank">
-        Facebook
+      <li className="hako2">Facebook</li>
       </a>
       <br />
       <a href="https://www.linkedin.com/in/s-watanabe-a25157205" target="_blank">
-        LinkdIn
+        <li className="hako2">LinkdIn</li>
       </a>
       <br />
       <a href="https://qiita.com/S_watana" target="_blank">
-        Qiita
+        <li className="hako2">Qiita</li>
       </a>
       <br />
       <a href="https://opepelab.org/" target="brank">
-      WorldPress
+        <li className="hako2">WorldPress</li>
       </a>
       <br />
       <a href="https://www.pixiv.net/users/10729947" target="_blank">
-        pixiv
+      <li className="hako2">pixiv</li>
       </a>
       <br />
       <a href="https://note.com/opepelab/" target="_blank">  
-        note
+      <li className="hako2">note</li>
       </a>
        <br /> 
       <a href="https://com.nicovideo.jp/community/co1568349" target="_blank">
-        niconico
+      <li className="hako2">niconico</li>
       </a>
       </main>
     </div>

@@ -79,6 +79,22 @@ h2 {
   padding: 12px;
 }
 
+.hako2 {
+  font-size: 1rem;
+  list-style: none;
+  display: inline-block;
+  border: 1px solid #eaeaea;
+  width: 200px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a :hover {
+  transform: scale(1.5);
+  transition-duration: 0.5s;
+}
+
 .migi :hover {
   transform: translateX(17%);
   transition-duration: 0.5s;

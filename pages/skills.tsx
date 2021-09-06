@@ -11,19 +11,19 @@ const Skills: React.FC = () => {
       <h2>SKILL SET</h2>
       <div className="triangle-bottom" />
       <main>
-        <h3>「My Language」</h3>
-        <b>TypeScript</b><br />
-        <b>HTML CSS</b><br />
-        <b>Python</b><br />
+        TypeScript<br />
+        HTML CSS<br />
+        Python<br />
         <br />
         <b>now loading...</b><br />
-        Rust(C C+)<br />
+        Rust(C C+ C++)<br />
         Clojure<br />
         Haskell<br />
-        Kotolin,Swift<br />
+        Scala<br />
+        Swift<br />
         <h5>
           <Link href="document">
-            <a>document</a>
+            <a>Next.js document</a>
           </Link>
         </h5>
       </main>
