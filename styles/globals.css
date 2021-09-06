@@ -12,7 +12,7 @@ body {
 }
 .left {
   position: absolute;
-  left: 482px;
+  left: 25.2%;
   top: 82px;
   border: solid 3px #777777;
 }
@@ -34,11 +34,6 @@ header h1 {
   top: -20px;
 }
 
-
-.dark {
-  color: #666;
-  left: 30px;
-}
 
 h1 :hover {
  color: #38A6FF;
@@ -63,11 +58,11 @@ h2 {
 }
 
 .navSide{
-  position: absolute;
+  position: fixed;
   width: 200px;
   height: 100px;
   top: 210px;
-  left: 440px;
+  left: 23%;
 }
 
 .navSide :hover{
@@ -139,17 +134,18 @@ a {
 }
 
 
-
+.wrapper {
+  display: flex;
+    flex-direction: column;
+  min-height: 100vh;
+}
 
 .footer {
-  z-index: ;
-  position: absolute;
-  bottom: -120px;
+  z-index: 0;
+  position: relative;
   left:0%;
   right: 0%;
-  padding-top: 20px;
-  background: #f0ebeb;
-  border-top: solid 1px #eaeaea;
+  padding-top: 100px;
 }
 
 /* nav ul {

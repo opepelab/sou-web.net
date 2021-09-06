@@ -12,14 +12,14 @@ export const Menu: React.FC<Props> = ({ open, setOpen }) => {
             <div className="MenuList">
                     <nav aria-expanded={open} onClick={() => setOpen(!open)}>
                         <div id="Pmoji">
+                            <Link href="/">
+                                <a>
+                                    <li className="tate">HOME</li>
+                                </a>
+                            </Link>
                             <Link href="/about">
                                 <a>
                                     <li className="tate">ABOUT</li>
-                                </a>
-                            </Link>
-                            <Link href="/access">
-                                <a>
-                                    <li className="tate">ACCESS</li>
                                 </a>
                             </Link>
                             <Link href="/skills">
@@ -27,14 +27,14 @@ export const Menu: React.FC<Props> = ({ open, setOpen }) => {
                                     <li className="tate">SKILL SET</li>
                                 </a>
                             </Link>
-                            <Link href="/service">
-                                <a>
-                                    <li className="tate">SERVICE</li>
-                                </a>
-                            </Link>
                             <Link href="/design">
                                 <a>
                                     <li className="tate">DESIGN</li>
+                                </a>
+                            </Link>
+                            <Link href="/access">
+                                <a>
+                                    <li className="tate">ACCESS</li>
                                 </a>
                             </Link>
                         </div>

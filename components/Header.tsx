@@ -12,7 +12,7 @@ export const Header: React.FC<Props> = ({ open, setOpen }) => {
             <img className="left" src="/images/ore.png" width={148} height={100} />
             <div aria-expanded={open} onClick={() => setOpen(!open)}>
                 <header>
-                    <h1 id="title"><Link href="/"><a  className="dark">Watanabe S.</a></Link></h1>
+                    <h1 id="title"><Link href="/"><a>Watanabe S.</a></Link></h1>
                 </header>
             </div>
             <div className="Line">
