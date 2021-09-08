@@ -19,7 +19,7 @@ const Skills: React.FC = () => {
         <br />
         <br />
         <b>now loading...</b><br />
-        ( C　&nbsp;C+　C++ C# Rust )<br />
+        ( C　C+　C++ C# Rust )<br />
         <s>Clojure</s><br />
         <s>Scala</s><br />
         <s>Haskell</s><br />
