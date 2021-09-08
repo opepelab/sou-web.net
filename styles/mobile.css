@@ -6,7 +6,7 @@
 
 
 .Line {
-    z-index: 3;
+    z-index: 4;
     position: fixed;
     right: 55px;
     top: 45px;
@@ -53,7 +53,7 @@
 }
 
 .MenuList [aria-expanded='true'] {
-  z-index: 1;
+  z-index: 3;
   position: fixed;
   background: #f0ebeb;
   left: 0%;

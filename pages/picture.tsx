@@ -1,11 +1,10 @@
 import Head from 'next/head'
 
-
 const Picture: React.FC = () => {
   return (
-    <div className="container">
+    <div id="pic">
       <Head>
-        <title>Picture - S.watana</title>
+        <title>Picture Watanabe S.</title>
         <meta name="description" content="アクティブなコード"/>
       </Head>
       <h2>Picture</h2>

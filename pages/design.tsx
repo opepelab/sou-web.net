@@ -3,9 +3,9 @@ import Head from 'next/head'
 
 const Design: React.FC = () => {
   return (
-    <div className="container">
+    <div>
       <Head>
-        <title>Design - S.watana</title>
+        <title>Design Watanabe S.</title>
         <meta name="description" content="アクティブなコード"/>
       </Head>
       <h2>DESIGN</h2>
@@ -20,7 +20,7 @@ const Design: React.FC = () => {
         Visual Studio Code<br />
         TypeScript<br />
         Eslint<br />
-        Chrome<br />
+        Edge/Chrome/Safari<br />
         Vercel<br />
 
       </main>

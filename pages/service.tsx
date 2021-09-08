@@ -3,9 +3,9 @@ import Head from 'next/head'
 
 const Service: React.FC = () => {
   return (
-    <div className="container">
+    <div>
       <Head>
-        <title>Service - S.watana</title>
+        <title>Service Watanabe S.</title>
         <meta name="description" content="アクティブなコード"/>
       </Head>
       <h2>SERVICE</h2>

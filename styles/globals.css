@@ -31,7 +31,7 @@ a.black {
 
 
 .bgg {
-  z-index: 3;
+  z-index: 4;
   position: fixed;
   background-color: #f0ebeb;
   padding: 16px;
@@ -107,7 +107,7 @@ h2 {
   padding: 10px;
   margin-left: auto;
   margin-right: auto;
-  background: #eeefff;
+  background: #f2f2f2;
 }
 
 .box :hover {
@@ -136,7 +136,10 @@ h2 {
   margin: 10px;
 }
 
-
+#pic {
+  z-index: 2;
+  position: relative;
+}
 
 
 .size {
@@ -168,10 +171,14 @@ h2 {
 }
 
 .Pb {
-  z-index: 3;
+  font-family: adobe-arabic, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  z-index: 5;
   position: fixed;
+  font-size: 1.4rem;
   top: 15px;
-  left: 32.5%;
+  right: 30%;
 }
 
 

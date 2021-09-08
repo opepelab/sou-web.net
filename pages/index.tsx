@@ -2,9 +2,9 @@ import Head from 'next/head'
 
 const Index: React.FC = () => {
   return (
-    <div className="container">
+    <div>
       <Head>
-        <title>TOP - S.watana</title>
+        <title>TOP Watanabe S.</title>
         <meta name="description" content="トップページ"/>
       </Head>
       <h2>HOME</h2>
