@@ -63,11 +63,7 @@
   height: 200%;
   opacity: 0.95;
   visibility: visible;
-  animation: 0.5s feed;
-}
-
-.MenuList [aria-expanded='false'] {
-  animation: 0.5s feed;
+  animation: 0.25s feed;
 }
 
 .h1 {

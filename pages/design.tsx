@@ -15,7 +15,7 @@ const Design: React.FC = () => {
         JA: Google さらわびゴシック<br />
         EN: Adobe Arabic Regular<br />
         <br />
-        「制作環境」<br />
+        「Development Environment」<br />
         Git<br />
         Visual Studio Code<br />
         TypeScript<br />
