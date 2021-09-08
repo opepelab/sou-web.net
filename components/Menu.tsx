@@ -8,9 +8,8 @@ type Props = {
 
 export const Menu: React.FC<Props> = ({ open, setOpen }) => {
     return (     
-        <div>
             <div className="MenuList">
-                    <nav aria-expanded={open} onClick={() => setOpen(!open)}>
+                    <div aria-expanded={open} onClick={() => setOpen(!open)}>
                         <div id="Pmoji">
                             <Link href="/">
                                 <a>
@@ -38,11 +37,9 @@ export const Menu: React.FC<Props> = ({ open, setOpen }) => {
                                 </a>
                             </Link>
                         </div>
-                    </nav>
+                    </div>
                 
             </div>
-
-        </div>
     );
 };
 

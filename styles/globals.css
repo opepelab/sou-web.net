@@ -90,8 +90,8 @@ h2 {
   margin-right: auto;
 }
 
-a :hover {
-  transform: scale(1.5);
+.box :hover {
+  transform: scale(1.4);
   transition-duration: 0.5s;
 }
 
@@ -157,6 +157,10 @@ a {
 }
 
 .footer {
+  z-index: 0;
+  position: relative;
+  left:0%;
+  right: 0%;
   padding-top: 100px;
 }
 
