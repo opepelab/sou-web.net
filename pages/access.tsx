@@ -23,7 +23,7 @@ const Access: React.FC = () => {
       </a>
       <br />
       <a className="box" href="https://opepelab.org/" target="brank">
-        <li className="hako2">WorldPress</li>
+        <li className="hako2">Blog</li>
       </a>
       <br />
       <a className="box" href="https://www.pixiv.net/users/10729947" target="_blank">

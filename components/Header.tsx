@@ -9,12 +9,9 @@ type Props = {
 export const Header: React.FC<Props> = ({ open, setOpen }) => {
     return (
         <div>
-            <img className="left" src="/images/ore.png" width={148} height={100} />
-            <div aria-expanded={open} onClick={() => setOpen(!open)}>
-                <header>
-                    <h1 id="title"><Link href="/"><a>Watanabe S.</a></Link></h1>
+                <header className="bgg">
+                    <h1 className="h1"><Link href="/"><a className="black">Watanabe S.</a></Link></h1>
                 </header>
-            </div>
             <div className="Line">
                 <div aria-expanded={open} onClick={() => setOpen(!open)}>
                     <span />

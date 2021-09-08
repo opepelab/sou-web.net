@@ -3,16 +3,19 @@ import Link from 'next/link'
 // 上のなんか並んでるやつ
 const Navbar: React.FC = () => {
     return (     
-        <header> 
+        <header>
+            <div className="Pb">
             <nav>           
-                <ul className="scroll nav">
-                    <li><Link href="/"><a className="Nlink">Home</a></Link></li>
-                    <li><Link href="about"><a className="Nlink">About</a></Link></li>
-                    <li><Link href="skills"><a className="Nlink">Skills</a></Link></li>
-                    <li><Link href="access"><a className="Nlink">Access</a></Link></li>
-                    <li><Link href="service"><a className="Nlink">Service</a></Link></li>
+                <ul>
+                    <Link href="/"><a><li>HOME</li></a></Link>
+                    <Link href="about"><a><li>ABOUT</li></a></Link>
+                    <Link href="skills"><a><li>SKILL SET</li></a></Link>
+                    <Link href="design"><a><li>DESIGN</li></a></Link>
+                    <Link href="access"><a><li>ACCESS</li></a></Link>
+                    <Link href="picture"><a><li>PICTURE</li></a></Link>
                 </ul>
             </nav>  
+            </div>
         </header>
         
     );

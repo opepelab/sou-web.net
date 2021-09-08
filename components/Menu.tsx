@@ -36,6 +36,11 @@ export const Menu: React.FC<Props> = ({ open, setOpen }) => {
                                     <li className="tate">ACCESS</li>
                                 </a>
                             </Link>
+                            <Link href="/picture">
+                                <a>
+                                    <li className="tate">PICTURE</li>
+                                </a>
+                            </Link>
                         </div>
                     </div>
             </div>

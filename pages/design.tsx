@@ -12,7 +12,8 @@ const Design: React.FC = () => {
       <div className="triangle-bottom" />
       <main>
         「Font」<br /> 
-        JA: さらわびゴシック EN: Adobe Arabic Regular <br />
+        JA: Google さらわびゴシック<br />
+        EN: Adobe Arabic Regular<br />
         <br />
         「制作環境」<br />
         Git<br />

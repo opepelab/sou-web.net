@@ -23,6 +23,7 @@ export const Layout: React.FC<Props> = ({ children }) => {
         <Metatxt />
         <Header open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />
+        <Navbar />
         <PictureHigh />
         <Sidebar />
         { children }

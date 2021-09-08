@@ -2,12 +2,13 @@ import Link from 'next/link'
 
 const NotFound: React.FC = () => {
     return (
-        <div className="not-found">
+        <div>
             <h2>
-                That page cannot be found.
+                This page is not found.
             </h2>
+        <div className="triangle-bottom" />
         <p>
-            Go back to the <Link href="/"><a>Homepage</a></Link>
+            Go To <Link href="/"><a>HOMEPAGE</a></Link>
         </p>
         </div>
     );
