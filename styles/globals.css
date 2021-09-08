@@ -157,10 +157,6 @@ a {
 }
 
 .footer {
-  z-index: 0;
-  position: relative;
-  left:0%;
-  right: 0%;
   padding-top: 100px;
 }
 
