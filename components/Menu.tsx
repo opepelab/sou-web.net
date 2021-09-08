@@ -38,7 +38,6 @@ export const Menu: React.FC<Props> = ({ open, setOpen }) => {
                             </Link>
                         </div>
                     </div>
-                
             </div>
     );
 };
