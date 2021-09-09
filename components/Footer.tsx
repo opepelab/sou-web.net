@@ -20,8 +20,7 @@ const Footer: React.FC = () => {
                         <img className="Maru Zoom" src="/SVG/python3.svg" width={50} height={50} />
                         </a>
                 </div>
-                <h5>i will non regret, eternally.<br />
-                Copyright © 2021 <a href="/">Watanabe S.</a> Ltd.</h5>
+                <a className="black" href="/"><h5 className="inblo">Copyright © 2021 Watanabe S. Ltd.<br />I will not regret for eternity.</h5></a> 
             </footer>
         </div>
     );

@@ -1,5 +1,5 @@
 
-@media (max-width: 428px) {
+@media (max-width: 1284px) {
 
 
 
@@ -8,16 +8,16 @@
 .Line {
     z-index: 4;
     position: fixed;
-    right: 55px;
-    top: 45px;
+    right: 64px;
+    top: 52px;
     display: inline-block;
     cursor: pointer;
   }
 .Line span {
     display: block;
     position: absolute;
-    height: 5px;
-    width: 40px;
+    height: 6px;
+    width: 36px;
     background-color: #666;
     border-radius: 2px;
   }
@@ -70,13 +70,13 @@
   position: fixed;
   left: 0%;
   right: 0%;
-  top: -8px;
+  top: 0px;
   }
 
-  .Pb {
+  .disableN {
     display:none;
   }
-
+/* 変更 */
 
 
 .tate{
@@ -85,7 +85,7 @@
     font-style: normal;
     color: #666;
     list-style: none;
-    margin-top: 25px;
+    margin-top: 25%;
     font-size: 3rem;
 }
 
@@ -93,9 +93,9 @@
 #Pmoji {
     position: fixed;
     top: 12%;
+    bottom: 20%;
     left: 0%;
     right: 0%;
-    display: block;
     width: 155px;
     margin-left: auto;
     margin-right: auto;

@@ -7,7 +7,7 @@ const Index: React.FC = () => {
         <title>TOP Watanabe S.</title>
         <meta name="description" content="トップページ"/>
       </Head>
-      <h2>HOME</h2>
+      <h2>Watanabe S.</h2>
       <div className="triangle-bottom" />
         <main>
           このウェブアプリは私のコンピュータサイエンスの活動内容や記録を載せています。

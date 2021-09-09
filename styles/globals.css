@@ -22,11 +22,25 @@ a :hover {
 }
 
 a.black :hover {
-  color: #666;
+  color: #47686E;
+  transform: rotateY(360deg) rotateX(360deg);
+  transition-duration: 1s;
 }
 
 a.black {
   color: #666;
+}
+
+a.scale :hover {
+  color: #47686E;
+  transform: scale(1.35);
+  transition-duration: 0.2s;
+}
+
+a.scalemigi :hover {
+  color: #47686E;
+  transform: translateX(2000px) rotateY(360deg) rotateX(360deg);
+  transition-duration: 2s;
 }
 
 
@@ -37,21 +51,31 @@ a.black {
   padding: 16px;
   border-bottom: 1px solid #eaeaea;
   width: 100%;
-  height: 20px;
+  height: 36px;
   top: 0px;
   left: 0px;
+}
+
+.disableN {
+  font-family: adobe-arabic, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  z-index: 5;
+  position: fixed;
+  font-size: 1.4rem;
+  top: 24px;
+  right: 30%;
 }
 
 
 .h1 {
   font-family: adobe-arabic, sans-serif;
   font-weight: 400;
-  font-style: italic;
-  top: -10px;
-  left: 480px;
+  font-style: normal;
+  top: 0px;
+  left: 580px;
   position: fixed;
 }
-
 
 .MenuList {
   display: none;
@@ -158,7 +182,7 @@ h2 {
 }
 
 .top {
-  margin-top: 40px;
+  margin-top: 80px;
 }
 
 
@@ -170,22 +194,15 @@ h2 {
   padding-top: 100px;
 }
 
-.Pb {
-  font-family: adobe-arabic, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  z-index: 5;
-  position: fixed;
-  font-size: 1.4rem;
-  top: 15px;
-  right: 30%;
+.inblo {
+  display: inline-block;
 }
 
 
 nav ul {
   display: flex;
 	justify-content: center;
-  grid-gap: 16px;
+  grid-gap: 13px;
   margin: auto;
   padding: auto;
   width: 100%;

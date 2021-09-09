@@ -11,7 +11,7 @@ const Skills: React.FC = () => {
       <h2>SKILL SET</h2>
       <div className="triangle-bottom" />
       <main>
-        <h4>「 Organizing ownership 」</h4>
+        <h4>「 Organizing ownership. 」</h4>
         TypeScript<br />
         React.JSX<br />
         HTML CSS<br />
@@ -24,7 +24,7 @@ const Skills: React.FC = () => {
         ( C C+ C++ C# Rust )<br />
         <s>Clojure</s><br />
         <s>Scala</s><br />
-        <s>Haskell</s><br />
+        Haskell<br />
         <br />
         <h4>「 e-Typing Score 」</h4>
         Professor
@@ -34,8 +34,6 @@ const Skills: React.FC = () => {
         <br /><br />
         <h4>「 Sequential Write 」</h4>
         2500～3700moji/h 
-
-
       </main>
     </div>
   );
