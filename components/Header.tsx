@@ -10,7 +10,7 @@ export const Header: React.FC<Props> = ({ open, setOpen }) => {
     return (
         <div>
                 <header className="bgg">
-                    <Link href="/"><a className="black"><h1 className="h1">Watanabe S.</h1></a></Link>
+                    <Link href="/"><a className="black"><h1 className="h1 inblo">Watanabe S.</h1></a></Link>
                 </header>
             <div className="Line">
                 <div aria-expanded={open} onClick={() => setOpen(!open)}>

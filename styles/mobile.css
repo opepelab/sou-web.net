@@ -1,5 +1,5 @@
 
-@media (max-width: 1284x) {
+@media screen and (max-width: 1284px) {
 
 
 
@@ -16,8 +16,8 @@
 .Line span {
     display: block;
     position: absolute;
-    height: 6px;
-    width: 36px;
+    height: 5px;
+    width: 40px;
     background-color: #666;
     border-radius: 2px;
   }
@@ -71,12 +71,14 @@
   left: 0%;
   right: 0%;
   top: 0px;
+  width: 110px;
+  margin-left: auto;
+  margin-right: auto;
   }
 
   .disableN {
     display:none;
   }
-/* 変更 */
 
 
 .tate{
