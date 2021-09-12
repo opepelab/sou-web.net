@@ -2,10 +2,11 @@ import React, { useState, ReactNode } from 'react';
 import Metatxt from './Metatxt'
 import Header from './Header'
 import Menu from './Menu'
-import Footer from './Footer'
 import Navbar from './Navbar'
 import PictureHigh from './PictureHigh'
-import Sidebar from './Sidebar'
+import Footer from './Footer'
+
+
 
 
 
@@ -19,16 +20,17 @@ export const Layout: React.FC<Props> = ({ children }) => {
   const [open, setOpen] = useState(false);
 
     return (
-      <div className="resp body">
+      <>
         <Metatxt />
+      <div className="resp">  
         <Header open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />
         <Navbar />
         <PictureHigh />
-        <Sidebar />
         { children }
         <Footer />
       </div> 
+      </>
     );
 }
 

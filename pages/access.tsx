@@ -4,10 +4,10 @@ const Access: React.FC = () => {
   return (
     <div>
       <Head>
-        <title>Access Watanabe S.</title>
+        <title>Link Watanabe S.</title>
         <meta name="description" content="アクセス"/>
       </Head>
-      <h2>ACCESS</h2>
+      <h2>LINK</h2>
       <div className="triangle-bottom" />
       <main>
         <a className="box" href="https://www.facebook.com/opepelab/" target="_blank">

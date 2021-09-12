@@ -14,8 +14,10 @@ export const Header: React.FC<Props> = ({ open, setOpen }) => {
                 </header>
             <div className="Line">
                 <div aria-expanded={open} onClick={() => setOpen(!open)}>
+                    <div className="en">
                     <span />
                     <span />
+                    </div>
                 </div>
             </div>
         </div>

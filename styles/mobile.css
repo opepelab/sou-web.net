@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 1284px) {
+@media screen and (max-width: 1780px) {
 
 
 
@@ -61,9 +61,13 @@
   top: 0%;
   width: 100%;
   height: 200%;
-  opacity: 0.95;
+  background-color: rgba(240, 235, 235, 0.8);
   visibility: visible;
   animation: 0.25s feed;
+}
+
+ .en {
+  border: 10px;
 }
 
 .h1 {
@@ -87,20 +91,18 @@
     font-style: normal;
     color: #666;
     list-style: none;
-    margin-top: 25%;
+    white-space: nowrap;
     font-size: 3rem;
+    padding: 10px;
 }
 
 
 #Pmoji {
     position: fixed;
-    top: 12%;
-    bottom: 20%;
-    left: 0%;
-    right: 0%;
-    width: 155px;
-    margin-left: auto;
-    margin-right: auto;
+    inset: 0;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
 }
 
 @keyframes feed {

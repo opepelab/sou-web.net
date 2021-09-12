@@ -34,7 +34,7 @@ export const Menu: React.FC<Props> = ({ open, setOpen }) => {
                             </Link>
                             <Link href="/access">
                                 <a>
-                                    <li className="tate">ACCESS</li>
+                                    <li className="tate">LINK</li>
                                 </a>
                             </Link>
                         </div>

@@ -24,7 +24,7 @@ a :hover {
 a.black :hover {
   color: #47686E;
   transform: rotateY(360deg) rotateX(360deg);
-  transition-duration: 1s;
+  transition-duration: 1.4s;
 }
 
 a.black {
@@ -33,14 +33,10 @@ a.black {
 
 a.scale :hover {
   color: #47686E;
-  transform: scale(1.35);
-  transition-duration: 0.2s;
-}
-
-a.scalemigi :hover {
-  color: #47686E;
-  transform: translateX(2000px) rotateY(360deg) rotateX(360deg);
-  transition-duration: 2s;
+  transform: scale(1.2);
+  transition-duration: 0.1s;
+  border-bottom: solid 1px #47686E;
+  cursor: pointer;
 }
 
 
@@ -63,8 +59,8 @@ a.scalemigi :hover {
   z-index: 5;
   position: fixed;
   font-size: 1.4rem;
-  top: 24px;
-  right: 30%;
+  top: 0%;
+  left: 40%;
 }
 
 
@@ -88,7 +84,7 @@ h2 {
   font-style: normal;
   font-size: 2em;
   border-bottom: 1px solid #eaeaea;
-  width: 30%;
+  width: 40%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -99,28 +95,6 @@ h2 {
   border-color: #eaeaea transparent transparent transparent;
 }
 
-.navSide{
-  position: fixed;
-  width: 200px;
-  height: 100px;
-  top: 210px;
-  left: 23%;
-  display: none;
-}
-
-.navSide :hover{
-  transform: scale(1.2);
-  transition-duration: 0.5s;
-}
-
-.hako {
-  list-style: none;
-  font-size: 1em;
-  box-sizing: border-box;
-  border: 1px solid #eaeaea;
-  margin: 4px;
-  padding: 12px;
-}
 
 .hako2 {
   font-size: 1rem;
@@ -136,12 +110,7 @@ h2 {
 
 .box :hover {
   transform: scale(1.4);
-  transition-duration: 0.5s;
-}
-
-.migi :hover {
-  transform: translateX(17%);
-  transition-duration: 0.5s;
+  transition-duration: 0.1s;
 }
 
 .Maru {
@@ -151,7 +120,7 @@ h2 {
 
 .Zoom:hover {
     transform: scale(2);
-    transition-duration: 0.5s;
+    transition-duration: 0.75s;
   }
 
 .pm {
@@ -160,15 +129,16 @@ h2 {
   margin: 10px;
 }
 
-#pic {
-  z-index: 2;
-  position: relative;
-}
 
 
 .size {
   width: 214px;
   height: 302px;
+}
+
+#pic {
+  z-index: 2;
+  position: relative;
 }
 
 
@@ -199,88 +169,50 @@ h2 {
 }
 
 
-nav ul {
+  nav ul {
   display: flex;
 	justify-content: center;
-  grid-gap: 13px;
-  margin: auto;
-  padding: auto;
-  width: 100%;
+  grid-gap: 60px;
   }
   nav li {
     list-style-type: none;
-    width: 100px;
     white-space: nowrap;
   }
   nav a {
-  display: block;
-  width: 100%;
-  text-decoration: none;
+  display: inline-block;
   color: #666;
-  padding-bottom: 15px;
   }
-
   
   @media (max-width: 428px) {
     .resp {
-      resize: both;
       width: 100%;
       zoom: 100%;
     }
-    .left {
-      display: none;
-      left: 0px;
-      }
 
     .flex-container {
     grid-column-gap: 6%;
     }
-    .navSide{
-      left: -140px;
-      top: 72px;
-      text-align: right;
-      display: none;
-    }
-    .navSide :hover{
-      transform: scale(1);
-    }
-    .migi :hover {
-      transform: translateX(-25%);
-      transition-duration: 0.8s;  
-    }
 
-    .hako {
-      font-size: 0.8rem;
-      margin-top: 20px;
-      padding: 10 px;
-
-    }
 
     h2 {
       width: 100%;
     }
+  }
+  
 
-    /* .nav{
-      display: none;
-    }
-    .navSide{
-      visibility: visible;
-      position: absolute;
-      left: -40px;
-    }
-    li {
-      list-style: none;
-      box-sizing: border-box;
-      border: 1px solid #ff6464;
-      background-color: rgb(252, 170, 122);
-      margin: 3px;
-      padding: 3px;
-    }
-    .migi :hover {
-      transform: translateX(-20px);
-    } */
+
+  
+    /* スクロールバー変更 */
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
   }
 
-.none {
-  display: none;
+  ::-webkit-scrollbar-track {
+    background: linear-gradient(#f0ebeb, #f2f2f2);
+}
+
+  ::-webkit-scrollbar-thumb {
+  background: #8b8b8b;
+  border-radius: 2px;
 }

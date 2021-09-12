@@ -11,7 +11,7 @@ const Skills: React.FC = () => {
       <h2>SKILL SET</h2>
       <div className="triangle-bottom" />
       <main>
-        <h4>「 Organizing ownership. 」</h4>
+        <h4>「 Must 」</h4>
         TypeScript<br />
         React.JSX<br />
         HTML CSS<br />
@@ -20,8 +20,8 @@ const Skills: React.FC = () => {
         <Link href="architects"><a><h5>architects fairy</h5></a></Link>
         <br />
         <br />
-        <b>now loading...</b><br />
-        ( C C+ C++ C# Rust )<br />
+        <h4>「 Iffy 」</h4>
+        ( C <s>C+ C++ C# Rust</s> )<br />
         <s>Clojure</s><br />
         <s>Scala</s><br />
         Haskell<br />

@@ -7,7 +7,7 @@ const Picture: React.FC = () => {
         <title>Picture Watanabe S.</title>
         <meta name="description" content="アクティブなコード"/>
       </Head>
-      <h2>Picture</h2>
+      <h2>PICTURE</h2>
       <div className="triangle-bottom" />
       <main>
       <img className="Zoom pm size" src="/picture/haruka.jpg" width={214} height={302} />

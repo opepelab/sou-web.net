@@ -11,11 +11,12 @@ const Design: React.FC = () => {
       <h2>DESIGN</h2>
       <div className="triangle-bottom" />
       <main>
-        「Font」<br /> 
+        <b>「Font」</b><br /> 
         JA: Google さらわびゴシック<br />
         EN: Adobe Arabic Regular<br />
         <br />
-        「Development Environment」<br />
+        <b>「Development Environment」</b><br />
+        Windows<br />
         Git<br />
         Visual Studio Code<br />
         TypeScript<br />
