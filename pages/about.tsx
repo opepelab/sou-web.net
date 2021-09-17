@@ -12,7 +12,7 @@ const About: React.FC = () => {
       <div className="triangle-bottom" />
       <main>
         <h3>「私について」</h3>
-        まず学歴について、子供の頃最初から学校に行ってませんでした。<br />
+        まず学歴について、子供の頃最初から学校に行かなかったです。<br />
         大人になってから文科認定の世界で言うhigh school認定しました。<br />
         universityへの憧れはありますが、残念なことに日本の学問への興味はありません。<br />
         <br /><br />

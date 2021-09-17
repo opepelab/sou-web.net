@@ -37,20 +37,20 @@
 
 .Line [aria-expanded='true'] span:nth-of-type(1) { 
   transform: rotate(-45deg) translateY(3.5px) translateX(-3.5px) scale(1.2) ;
-  transition-duration: 0.25s;
+  transition-duration: 0.5s;
 }
 
 .Line [aria-expanded='true'] span:nth-of-type(2) { 
   transform: rotate(45deg) translateY(-3.5px) translateX(-3.5px) scale(1.2) ;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
 
 .Line [aria-expanded='false'] span:nth-of-type(1) { 
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
 
 .Line [aria-expanded='false'] span:nth-of-type(2) { 
-  transition-duration: 0.25s;
+  transition-duration: 0.5s;
 }
 
 .Line [aria-expanded='true'] {
@@ -59,6 +59,7 @@
 
 .Line [aria-expanded='false'] {
   background: #f0ebeb;
+  transition-duration: 1s;
 }
 
 .MenuList {
@@ -77,9 +78,8 @@
   height: 200%;
   background-color: rgba(240, 235, 235, 0.8);
   visibility: visible;
-  animation: 0.25s feed;
+  animation: 0.5s feed;
 }
-
 
 
 .h1 {
@@ -121,6 +121,4 @@
     from { opacity: 0; }
     to { opacity: 1; }
   }
-
-
 }
