@@ -27,7 +27,7 @@ const Skills: React.FC = () => {
         <s>Haskell</s><br />
         <br />
         <h4>「 e-Typing Score 」</h4>
-        Professor
+        Ninja~Professor
         <br /><br />
         <h4>「 Sequential Read 」</h4>
         54000moji/h
