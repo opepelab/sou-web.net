@@ -24,7 +24,7 @@ const Skills: React.FC = () => {
         ( C <s>C+ C++ C# Rust</s> )<br />
         <s>Clojure</s><br />
         <s>Scala</s><br />
-        Haskell<br />
+        <s>Haskell</s><br />
         <br />
         <h4>「 e-Typing Score 」</h4>
         Professor

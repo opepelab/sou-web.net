@@ -16,8 +16,6 @@
     top: 8px;
     display: inline-block;
     cursor: pointer;
-    border-radius: 10%;
-    border: solid 1px #666;
   }
 .Line span {
     display: block;
@@ -51,14 +49,6 @@
 
 .Line [aria-expanded='false'] span:nth-of-type(2) { 
   transition-duration: 1s;
-}
-
-.Line [aria-expanded='true'] {
-  background: #f0ebeb;
-}
-
-.Line [aria-expanded='false'] {
-  background: #f0ebeb;
 }
 
 .MenuList {

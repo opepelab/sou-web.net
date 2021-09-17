@@ -26,14 +26,15 @@ const Access: React.FC = () => {
           <li className="hako2">Blog</li>
         </a>
       <br />
-        <a className="box" href="https://www.pixiv.net/users/10729947" target="_blank">
-          <li className="hako2">pixiv</li>
-        </a>
-      <br />
+
         <a className="box" href="https://note.com/opepelab/" target="_blank">  
           <li className="hako2">note</li>
         </a>
-       <br /> 
+      <br />
+        <a className="box" href="https://www.pixiv.net/users/10729947" target="_blank">
+          <li className="hako2">pixiv</li>
+        </a>
+      <br /> 
         <a className="box" href="https://com.nicovideo.jp/community/co1568349" target="_blank">
           <li className="hako2">niconico</li>
         </a>
