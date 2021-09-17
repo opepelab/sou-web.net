@@ -33,7 +33,7 @@ const Skills: React.FC = () => {
         54000moji/h
         <br /><br />
         <h4>「 Sequential Write 」</h4>
-        2500～3700moji/h 
+        2500～3700moji/h<br />
       </main>
     </div>
   );

@@ -12,12 +12,12 @@
 .Line {
     z-index: 4;
     position: fixed;
-    right: 8px;
-    top: 8px;
+    right: 6px;
+    top: 6px;
     display: inline-block;
     cursor: pointer;
-    background: #f2f2f2;
     border-radius: 20%;
+    border: solid 2px #666;
   }
 .Line span {
     display: block;
@@ -55,6 +55,11 @@
 
 .Line [aria-expanded='true'] {
   background: #f0ebeb;
+  transition-duration: 0.5s;
+}
+
+.Line [aria-expanded='false'] {
+  transition-duration: 0.5s;
 }
 
 .MenuList {

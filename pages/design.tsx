@@ -11,11 +11,11 @@ const Design: React.FC = () => {
       <h2>DESIGN</h2>
       <div className="triangle-bottom" />
       <main>
-        <b>「Font」</b><br /> 
+        <h4>「Font」</h4><br /> 
         JA: Google さらわびゴシック<br />
         EN: Adobe Arabic Regular<br />
         <br />
-        <b>「Development Environment」</b><br />
+        <h4>「Development Environment」</h4><br />
         Windows<br />
         Git<br />
         Visual Studio Code<br />
@@ -23,7 +23,13 @@ const Design: React.FC = () => {
         Eslint<br />
         Edge/Chrome/Safari<br />
         Vercel<br />
-
+        <h4>「Art Work」</h4>
+          Cintiq 24 Pro<br />
+          Intuos 5 Lage<br />
+          PowerMate<br />
+          Game Sir Z1 R<br />
+          CLIPSTUDIO<br />
+          SAI2<br />
       </main>
     </div>
   );
