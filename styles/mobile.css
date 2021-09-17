@@ -2,27 +2,33 @@
 @media screen and (max-width: 1780px) {
 
 
-
-
+.en {
+  padding-top: 34px;
+  padding-bottom: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
 
 .Line {
     z-index: 4;
     position: fixed;
-    right: 64px;
-    top: 52px;
+    right: 8px;
+    top: 8px;
     display: inline-block;
     cursor: pointer;
+    background: #f2f2f2;
+    border-radius: 20%;
   }
 .Line span {
     display: block;
-    position: absolute;
+    position: relative;
     height: 5px;
-    width: 40px;
+    width: 44px;
     background-color: #666;
-    border-radius: 2px;
+    border-radius: 4px;
   }
 .Line span:nth-of-type(1) {
-    bottom: 20px;
+    bottom: 15px;
   }
 .Line span:nth-of-type(2) {
     bottom: 10px;
@@ -30,12 +36,12 @@
 
 
 .Line [aria-expanded='true'] span:nth-of-type(1) { 
-  transform: rotate(-45deg) translateX(-7px);
+  transform: rotate(-45deg) translateY(3.5px) translateX(-3.5px) scale(1.4) ;
   transition-duration: 0.25s;
 }
 
 .Line [aria-expanded='true'] span:nth-of-type(2) { 
-  transform: rotate(45deg) translateX(-7px);
+  transform: rotate(45deg) translateY(-3.5px) translateX(-3.5px) scale(1.4) ;
   transition-duration: 1s;
 }
 
@@ -45,6 +51,10 @@
 
 .Line [aria-expanded='false'] span:nth-of-type(2) { 
   transition-duration: 0.25s;
+}
+
+.Line [aria-expanded='true'] {
+  background: #f0ebeb;
 }
 
 .MenuList {
@@ -66,9 +76,7 @@
   animation: 0.25s feed;
 }
 
- .en {
-  border: 10px;
-}
+
 
 .h1 {
   position: fixed;

@@ -9,15 +9,15 @@ type Props = {
 export const Header: React.FC<Props> = ({ open, setOpen }) => {
     return (
         <div>
-                <header className="bgg">
-                    <Link href="/"><a className="black"><h1 className="h1 inblo">Watanabe S.</h1></a></Link>
-                </header>
+            <header className="bgg">
+                <Link href="/"><a className="black"><h1 className="h1 inblo">Watanabe S.</h1></a></Link>
+            </header>
             <div className="Line">
                 <div aria-expanded={open} onClick={() => setOpen(!open)}>
-                    <div className="en">
-                    <span />
-                    <span />
-                    </div>
+                        <div className="en">
+                            <span />
+                            <span />
+                        </div>
                 </div>
             </div>
         </div>
