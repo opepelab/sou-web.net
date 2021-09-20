@@ -73,7 +73,7 @@ button {
 }
 
 
-.h1 {
+h1 {
   position: fixed;
   left: 0%;
   right: 0%;
@@ -122,7 +122,7 @@ button {
     transform: scale(1.1);
     transition-duration: 0.1s;
     animation: 2s feed;
-    color: rgb(70, 140, 140);
+    color: #47686E;
   }
 
 }

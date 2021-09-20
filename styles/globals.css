@@ -23,7 +23,7 @@ a :hover {
 
 a.black :hover {
   color: #47686E;
-  transform: rotateY(360deg) rotateX(360deg);
+  transform: rotateY(720deg) rotateX(360deg);
   transition-duration: 1.4s;
 }
 
@@ -38,6 +38,20 @@ a.scale :hover {
   border-bottom: solid 1px #47686E;
   cursor: pointer;
   animation: 2s feed;
+}
+
+h1 {
+  font-family: adobe-arabic, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: fixed;
+  top: 0px;
+  left: 580px;
+}
+
+h1 a {
+  color: rgb(218, 200, 200);
+  display: inline-block;
 }
 
 
@@ -65,19 +79,13 @@ a.scale :hover {
 }
 
 
-.h1 {
-  font-family: adobe-arabic, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  top: 0px;
-  left: 580px;
-  position: fixed;
-}
-
 .MenuList {
   display: none;
 }
 
+#TitleColor {
+  color: #47686E;
+}
 
 h2 {
   font-family: adobe-arabic, sans-serif;
@@ -234,7 +242,7 @@ p:hover {
   transform: scale(1.2);
   transition-duration: 0.1s;
   animation: 2s feed;
-  color: rgb(70, 140, 140);
+  color: #47686E;
 }
 
 #p2 {
