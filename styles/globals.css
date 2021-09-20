@@ -40,7 +40,7 @@ a.scale :hover {
   animation: 2s feed;
 }
 
-h1 {
+.h1 {
   font-family: adobe-arabic, sans-serif;
   font-weight: 400;
   font-style: normal;
