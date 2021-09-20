@@ -12,24 +12,24 @@ const Design: React.FC = () => {
       <div className="triangle-bottom" />
       <main>
         <h4>「Font」</h4>
-          <p id="p2">JA: Google さらわびゴシック</p>
-          <p id="p2">EN: Adobe Arabic Regular</p>
+          <p>JA: Google さらわびゴシック</p>
+          <p>EN: Adobe Arabic Regular</p>
         <br />
         <h4>「Development Environment」</h4>
-          <p id="p2">Windows</p>
-          <p id="p2">Git</p>
-          <p id="p2">Visual Studio Code</p>
-          <p id="p2">TypeScript</p>
-          <p id="p2">Eslint</p>
-          <p id="p2">Edge/Chrome/Safari</p>
-          <p id="p2">Vercel</p>
+          <p>Windows</p>
+          <p>Git</p>
+          <p>Visual Studio Code</p>
+          <p>TypeScript</p>
+          <p>Eslint</p>
+          <p>Edge/Chrome/Safari</p>
+          <p>Vercel</p>
         <br />
         <h4>「Art Work」</h4>
-          <p id="p2">Wacom Cintiq Pro, Intuos Lage</p>
-          <p id="p2">PowerMate</p>
-          <p id="p2">Game Sir Z1 R</p>
-          <p id="p2">CLIPSTUDIO</p>
-          <p id="p2">SAI2</p>
+          <p>Wacom Cintiq Pro, Intuos Lage</p>
+          <p>PowerMate</p>
+          <p>Game Sir Z1 R</p>
+          <p>CLIPSTUDIO</p>
+          <p>SAI2</p>
       </main>
     </div>
   );

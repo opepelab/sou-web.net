@@ -239,7 +239,7 @@ h2 {
 
 p {
   font-size: 0.95rem;
-  margin-top: 30px;
+  margin: auto;
 }
 
 p:hover {
@@ -247,8 +247,4 @@ p:hover {
   transition-duration: 0.1s;
   animation: 2s feed;
   color: #47686E;
-}
-
-#p2 {
-  margin: auto;
 }
