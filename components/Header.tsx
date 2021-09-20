@@ -13,7 +13,8 @@ export const Header: React.FC<Props> = ({ open, setOpen }) => {
                 <Link href="/"><a className="black"><h1 className="h1 inblo">Watanabe S.</h1></a></Link>
             </header>
             <div className="Line">
-                <button aria-expanded={open} onClick={() => setOpen(!open)}>
+                <button aria-expanded={open} onClick={() => setOpen(!open)}
+                    aria-label="Toggle mobile navigation visibility">
                         <span />
                         <span />
                 </button>
