@@ -72,8 +72,11 @@ button {
   animation: 0.5s feed;
 }
 
+a#c2 :hover {
+  color: #47686E;
+}
 
-.h1 {
+h1 {
   position: fixed;
   left: 0%;
   right: 0%;

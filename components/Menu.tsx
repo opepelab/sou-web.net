@@ -13,27 +13,27 @@ export const Menu: React.FC<Props> = ({ open, setOpen }) => {
                     <div aria-expanded={open} onClick={() => setOpen(!open)}>
                         <div id="Pmoji">
                             <Link href="/about">
-                                <a>
+                                <a id="c2">
                                     <li className="tate">ABOUT</li>
                                 </a>
                             </Link>
                             <Link href="/skills">
-                                <a>
+                                <a id="c2">
                                     <li className="tate">SKILL SET</li>
                                 </a>
                             </Link>
                             <Link href="/design">
-                                <a>
+                                <a id="c2">
                                     <li className="tate">DESIGN</li>
                                 </a>
                             </Link>
                             <Link href="/picture">
-                                <a>
+                                <a id="c2">
                                     <li className="tate">PICTURE</li>
                                 </a>
                             </Link>
                             <Link href="/access">
-                                <a>
+                                <a id="c2">
                                     <li className="tate">LINK</li>
                                 </a>
                             </Link>
