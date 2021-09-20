@@ -1,37 +1,39 @@
 
 @media screen and (max-width: 1780px) {
 
-
-.en {
+button {
+  border: none;
+  background: transparent;
   padding-top: 34px;
   padding-bottom: 8px;
   padding-left: 4px;
   padding-right: 4px;
+  cursor: pointer;
 }
 
 .Line {
-    z-index: 4;
-    position: fixed;
-    right: 8px;
-    top: 8px;
-    display: inline-block;
-    cursor: pointer;
-  }
+  display: inline-block;
+  z-index: 4;
+  position: fixed;
+  right: 8px;
+  top: 8px;
+}
 .Line span {
-    display: block;
-    position: relative;
-    height: 5px;
-    width: 44px;
-    background-color: #666;
-    border-radius: 4px;
-  }
-.Line span:nth-of-type(1) {
-    bottom: 15px;
-  }
-.Line span:nth-of-type(2) {
-    bottom: 10px;
-  }
+  display: block;
+  position: relative;
+  height: 5px;
+  width: 44px;
+  background-color: #666;
+  border-radius: 4px;
+}
 
+.Line span:nth-of-type(1) {
+  bottom: 15px;
+}
+
+.Line span:nth-of-type(2) {
+  bottom: 10px;
+}
 
 .Line [aria-expanded='true'] span:nth-of-type(1) { 
   transform: rotate(-45deg) translateY(3.5px) translateX(-3.5px) scale(1.2) ;
@@ -124,3 +126,5 @@
   }
 
 }
+
+
