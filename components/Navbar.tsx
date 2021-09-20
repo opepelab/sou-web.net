@@ -7,11 +7,11 @@ const Navbar: React.FC = () => {
             <div className="disableN">
             <nav>           
                 <ul>
-                    <a className="scale"><Link href="about"><li>ABOUT</li></Link></a>
-                    <a className="scale"><Link href="skills"><li>SKILL SET</li></Link></a>
-                    <a className="scale"><Link href="design"><li>DESIGN</li></Link></a>
-                    <a className="scale"><Link href="picture"><li>PICTURE</li></Link></a>
-                    <a className="scale"><Link href="access"><li>LINK</li></Link></a>
+                    <li><a className="scale"><Link href="about">ABOUT</Link></a></li>
+                    <li><a className="scale"><Link href="skills">SKILL SET</Link></a></li>
+                    <li><a className="scale"><Link href="design">DESIGN</Link></a></li>
+                    <li><a className="scale"><Link href="picture">PICTURE</Link></a></li>
+                    <li><a className="scale"><Link href="access">LINK</Link></a></li>
                 </ul>
             </nav>  
             </div>

@@ -37,6 +37,7 @@ a.scale :hover {
   transition-duration: 0.1s;
   border-bottom: solid 1px #47686E;
   cursor: pointer;
+  animation: 2s feed;
 }
 
 
@@ -213,4 +214,13 @@ h2 {
   ::-webkit-scrollbar-thumb {
   background: #8b8b8b;
   border-radius: 2px;
+}
+
+@keyframes feed {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+p {
+  margin: auto;
 }
