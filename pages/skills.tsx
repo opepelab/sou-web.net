@@ -12,28 +12,27 @@ const Skills: React.FC = () => {
       <div className="triangle-bottom" />
       <main>
         <h4>「 Must 」</h4>
-        TypeScript<br />
-        React.JSX<br />
-        HTML CSS<br />
-        Python<br />
+        <p>TypeScript</p>
+        <p>React.JSX</p>
+        <p>HTML CSS</p>
+        <p>Python</p>
         <Link href="https://nextjs.org/docs"><a><h5>Next.js document</h5></a></Link>
         <Link href="architects"><a><h5>architects fairy</h5></a></Link>
-        <br />
-        <br />
+
         <h4>「 Iffy 」</h4>
-        ( C <s>C+ C++ C# Rust</s> )<br />
-        <s>Clojure</s><br />
-        <s>Scala</s><br />
-        <s>Haskell</s><br />
-        <br />
+        <p>( C <s>C+ C++ C# Rust</s> )</p>
+        <p><s>Clojure</s></p>
+        <p><s>Scala</s></p>
+        <p><s>Haskell</s></p>
+
         <h4>「 e-Typing Score 」</h4>
-        Ninja~Professor
-        <br /><br />
+        <p>Ninja~Professor</p>
+
         <h4>「 Sequential Read 」</h4>
-        54000moji/h
-        <br /><br />
+        <p>54000moji/h</p>
+
         <h4>「 Sequential Write 」</h4>
-        2500～3700moji/h<br />
+        <p>2500～3700moji/h</p>
       </main>
     </div>
   );

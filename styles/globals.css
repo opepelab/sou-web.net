@@ -5,7 +5,7 @@ body {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
-  padding: 1em;
+  padding: 0.5em;
   font-size: 0.95rem;
   background: #f2f2f2;
   color: #666;
@@ -124,7 +124,7 @@ h2 {
   }
 
 .pm {
-  border-radius: 5%;
+  border-radius: 5px;
   border: solid 3px #777777;
   margin: 10px;
 }
@@ -204,7 +204,7 @@ h2 {
     /* スクロールバー変更 */
   ::-webkit-scrollbar {
     width: 4px;
-    height: 4px;
+    height: 0px;
   }
 
   ::-webkit-scrollbar-track {
@@ -222,5 +222,13 @@ h2 {
 }
 
 p {
+  font-size: 0.95rem;
   margin: auto;
+}
+
+p:hover {
+  transform: scale(1.2);
+  transition-duration: 0.1s;
+  animation: 2s feed;
+  color: rgb(221, 92, 92);
 }
