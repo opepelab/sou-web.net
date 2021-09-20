@@ -11,7 +11,7 @@ body {
   color: #666;
 }
 
-.h1 {
+h1 {
   font-family: adobe-arabic, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -23,6 +23,12 @@ body {
 h1 a {
   color: rgb(220, 200, 200);
   display: inline-block;
+}
+
+a.scaleh1 :hover {
+  color: #47686E;
+  transition-duration: 2s;
+  border-bottom: solid 1px rgb(220, 200, 200);
 }
 
 a {
@@ -51,12 +57,6 @@ a.scale :hover {
   transition-duration: 0.1s;
   border-bottom: solid 1px #47686E;
   animation: 2s feed;
-}
-
-a.scaleh1 :hover {
-  color: #47686E;
-  transition-duration: 1s;
-  border-bottom: solid 1px #47686E;
 }
 
 .bgg {
