@@ -14,7 +14,7 @@ const Index: React.FC = () => {
           <h3>プロフィール</h3>
           <p id="p2">出身住まい：日本 東京都</p>
           <p id="p2">生年：1994年生まれ 戌年</p>
-          <p id="p2">趣味：読書 音楽</p>
+          <p id="p2">趣味：読書 音楽 Python</p>
         </main>
     </div>
   );
