@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 1780px) {
+@media screen and (max-width: 740px) {
 
 button {
   border: none;
@@ -50,6 +50,11 @@ button {
 }
 
 .Line [aria-expanded='false'] span:nth-of-type(2) { 
+  transition-duration: 1s;
+}
+
+.Line :hover {
+  transform: rotate(-360deg);
   transition-duration: 1s;
 }
 

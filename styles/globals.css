@@ -16,14 +16,15 @@ h1 {
   font-family: adobe-arabic, sans-serif;
   font-weight: 400;
   font-style: normal;
-  position: fixed;
-  top: 0px;
-  left: 580px;
+  z-index: 5;
+  position: relative;
+  display: inline-block;
+  top: -16px;
+  left: -60px;
 }
 
 h1 a {
   color: rgb(220, 200, 200);
-  display: inline-block;
 }
 
 a.scaleh1 :hover {
@@ -77,10 +78,11 @@ a.scale :hover {
   font-weight: 400;
   font-style: normal;
   z-index: 5;
-  position: fixed;
+  position: relative;
+  display: inline-block;
   font-size: 1.4rem;
-  top: 0%;
-  left: 40.08%;
+  top: -18px;
+  left: 22px;
 }
 
 
