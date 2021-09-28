@@ -53,11 +53,6 @@ button {
   transition-duration: 1s;
 }
 
-.Line :hover {
-  transform: rotate(-360deg);
-  transition-duration: 1s;
-}
-
 .MenuList {
   visibility: collapse;
   display: block;
