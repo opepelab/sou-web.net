@@ -24,6 +24,11 @@ const Design: React.FC = () => {
           <p>Edge/Chrome/Safari</p>
           <p>Vercel</p>
         <br />
+        <p>「ハンバーガーメニューの実装方法」</p>
+        <p>RyusouさんのBlogを参考にさせて頂きました。</p>
+        <p>とても詳しくReactのHooksについて説明されているので、</p>
+        <p>Reactを開拓してる人にはオススメだと思います。</p>
+        <br/>
         <h4>「Art Work」</h4>
           <p>Wacom Cintiq Pro, Intuos Lage</p>
           <p>PowerMate</p>
