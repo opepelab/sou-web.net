@@ -3,10 +3,10 @@ import React from 'react';
 
 type Props = {
     open: boolean;
-    setOpen: any;
+    setOpen: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-export const Header: React.FC<Props> = ({ open, setOpen }) => {
+const Header: React.FC<Props> = ({ open, setOpen }) => {
     return (
         <div>
             <header className="bgg">

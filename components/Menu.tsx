@@ -3,10 +3,10 @@ import React from 'react';
 
 type Props = {
     open: boolean;
-    setOpen: any;
+    setOpen: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-export const Menu: React.FC<Props> = ({ open, setOpen }) => {
+const Menu: React.FC<Props> = ({ open, setOpen }) => {
     return (     
             <div className="MenuList">
             {/* 表示させとくから先に書く次のコードで新たに上書きして真偽値を書き換えて描写 */}
