@@ -29,11 +29,12 @@ const Design: React.FC = () => {
         <p>とても詳しくReactのHooksについて説明されているので、</p>
         <p>Reactを開拓してる人にはオススメだと思います。</p>
         <br/>
-        <h4>「Art Work」</h4>
-          <p>Wacom Cintiq Pro, Intuos Lage</p>
+        <h4>「DESIGN Work」</h4>
+          <p>Wacom Cintiq Pro, Intuos SL</p>
           <p>PowerMate</p>
           <p>Game Sir Z1 R</p>
           <p>CLIPSTUDIO</p>
+          <p>Photosohp CS6</p>
           <p>SAI2</p>
       </main>
     </div>

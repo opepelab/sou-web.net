@@ -12,9 +12,7 @@ const Skills: React.FC = () => {
       <div className="triangle-bottom" />
       <main>
         <h4>「 Must 」</h4>
-        <p>TypeScript</p>
-        <p>React.JSX</p>
-        <p>HTML CSS</p>
+        <p>TypeScript/React.JSX/HTML CSS</p>
         <p>Python</p>
         <Link href="https://nextjs.org/docs"><a><h5>Next.js document</h5></a></Link>
         <Link href="architects"><a><h5>architects fairy</h5></a></Link>

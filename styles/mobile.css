@@ -37,20 +37,20 @@ button {
 
 .Line [aria-expanded='true'] span:nth-of-type(1) { 
   transform: rotate(45deg) translateY(3.5px) translateX(3.5px) scale(1.2);
-  transition-duration: 1s;
+  transition-duration: 0.2s;
 }
 
 .Line [aria-expanded='true'] span:nth-of-type(2) { 
   transform: rotate(-45deg) translateY(-3.5px) translateX(3.5px) scale(1.2);
-  transition-duration: 0.5s;
+  transition-duration: 0.2s;
 }
 
 .Line [aria-expanded='false'] span:nth-of-type(1) { 
-  transition-duration: 0.5s;
+  transition-duration: 0.2s;
 }
 
 .Line [aria-expanded='false'] span:nth-of-type(2) { 
-  transition-duration: 1s;
+  transition-duration: 0.2s;
 }
 
 .MenuList {

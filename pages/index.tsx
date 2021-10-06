@@ -10,7 +10,7 @@ const Index: React.FC = () => {
       <h2 id="TitleColor">Watanabe S.</h2>
       <div className="triangle-bottom" />
         <main>
-          <p>このウェブアプリは私のコンピュータサイエンスの活動内容や記録を載せています。</p>
+          <p>このサイトは私のコンピュータサイエンスの活動内容や記録を載せています。</p>
           <h3>プロフィール</h3>
           <p id="p2">出身住まい：日本 東京都</p>
           <p id="p2">生年：1994年生まれ 戌年</p>
