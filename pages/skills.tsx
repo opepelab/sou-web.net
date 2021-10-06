@@ -24,7 +24,7 @@ const Skills: React.FC = () => {
         <p><s>Haskell</s></p>
 
         <h4>「 e-Typing Score 」</h4>
-        <p>Ninja~Professor</p>
+        <p>Best Professor</p>
 
         <h4>「 Sequential Read 」</h4>
         <p>54000moji/h</p>

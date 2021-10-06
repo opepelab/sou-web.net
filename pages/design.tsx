@@ -36,6 +36,7 @@ const Design: React.FC = () => {
           <p>CLIPSTUDIO</p>
           <p>Photosohp CS6</p>
           <p>SAI2</p>
+          <p>Eizo ColorEdge CS2410</p>
       </main>
     </div>
   );

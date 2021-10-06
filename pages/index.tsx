@@ -10,11 +10,13 @@ const Index: React.FC = () => {
       <h2 id="TitleColor">Watanabe S.</h2>
       <div className="triangle-bottom" />
         <main>
-          <p>このサイトは私のコンピュータサイエンスの活動内容や記録を載せています。</p>
+        <img className="Zoom pm" src="/images/ore.png" width={110} height={75} />
+          <p>ここは私のコンピュータサイエンスの活動内容や記録を載せています。</p>
           <h3>プロフィール</h3>
-          <p id="p2">出身住まい：日本 東京都</p>
-          <p id="p2">生年：1994年生まれ 戌年</p>
-          <p id="p2">趣味：読書 音楽 Python</p>
+          <p>出身住まい：日本 東京都</p>
+          <p>生年：1994年生まれ 戌年</p>
+          <p>趣味：読書 音楽 CS</p>
+          <p>宜しくお願いします(৹˃ᗝ˂৹)</p>
         </main>
     </div>
   );
