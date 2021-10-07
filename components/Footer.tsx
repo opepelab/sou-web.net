@@ -5,19 +5,19 @@ const Footer: React.FC = () => {
             <footer>
                 <div className="flex-container">        
                 
-                        <a href="https://docs.python.org/ja/3/reference/index.html">
+                        <a href="https://typescript-jp.gitbook.io/deep-dive/">
                             <img className="Zoom" src="/SVG/TypeScript.svg" width={50} height={50} />
                         </a>   
 
-                        <a href="https://ja.reactjs.org/docs/getting-started.html">
+                        <a href="https://ja.reactjs.org/docs/getting-started.html/">
                             <img className="Zoom" src="/SVG/Next.svg" width={50} height={50} />
                         </a>
                         
-                        <a href="https://developer.mozilla.org/ja/docs/Learn/Getting_started_with_the_web/HTML_basics">
+                        <a href="https://developer.mozilla.org/ja/docs/Learn/Getting_started_with_the_web/HTML_basics/">
                         <img className="Zoom" src="/SVG/html5.svg" width={50} height={50} />
                         </a>
 
-                        <a href="https://developer.mozilla.org/ja/docs/Learn/Getting_started_with_the_web/CSS_basics">
+                        <a href="https://developer.mozilla.org/ja/docs/Learn/Getting_started_with_the_web/CSS_basics/">
                             <img className="Zoom" src="/SVG/css3.svg" width={50} height={50} />
                         </a>
 
