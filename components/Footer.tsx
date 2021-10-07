@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
                             <img className="Zoom" src="/SVG/TypeScript.svg" width={50} height={50} />
                         </a>   
 
-                        <a href="https://ja.reactjs.org/docs/getting-started.html/">
+                        <a href="https://nextjs.org/docs/">
                             <img className="Zoom" src="/SVG/Next.svg" width={50} height={50} />
                         </a>
                         
