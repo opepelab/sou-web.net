@@ -10,7 +10,6 @@ const Index: React.FC = () => {
       <h2 id="TitleColor">Watanabe S.</h2>
       <div className="triangle-bottom" />
         <main>
-        <img className="Zoom pm" src="/images/ore.png" width={110} height={75} />
           <p>私のコンピュータサイエンスの活動内容や記録を載せています。</p>
           <h3>プロフィール</h3>
           <p>出身住まい：日本 東京都</p>
