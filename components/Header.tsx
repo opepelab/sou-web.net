@@ -15,10 +15,11 @@ const Header: React.FC<Props> = ({ open, setOpen }) => {
                     <nav>           
                         <ul>
                             <li><a className="scale"><Link href="about">ABOUT</Link></a></li>
-                            <li><a className="scale"><Link href="skills">SKILL SET</Link></a></li>
-                            <li><a className="scale"><Link href="design">DESIGN</Link></a></li>
+                            <li><a className="scale"><Link href="https://opepelab.org/">BLOG</Link></a></li>
                             <li><a className="scale"><Link href="picture">PICTURE</Link></a></li>
+                            <li><a className="scale"><Link href="design">DESIGN SKILL</Link></a></li>
                             <li><a className="scale"><Link href="access">LINK</Link></a></li>
+
                         </ul>
                     </nav>  
                 </div>

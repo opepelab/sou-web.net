@@ -8,7 +8,7 @@ body {
   padding: 0.5em;
   font-size: 0.95rem;
   background: #fdfdfd;
-  color: #666;
+  color: rgb(184, 184, 184);
   cursor: text;
 }
 
@@ -64,7 +64,7 @@ a.scale :hover {
 .bgg {
   z-index: 4;
   position: fixed;
-  background-color: #f0ebeb;
+  background-color: #ffffff;
   padding: 16px;
   border-bottom: 1px solid #eaeaea;
   width: 100%;
@@ -82,7 +82,7 @@ a.scale :hover {
   display: inline-block;
   font-size: 1.4rem;
   top: -18px;
-  left: 22px;
+  left: -12px;
 }
 
 
@@ -120,7 +120,7 @@ h2 {
   padding: 10px;
   margin-left: auto;
   margin-right: auto;
-  background: #f2f2f2;
+  background: #ffffff;
 }
 
 .box :hover {
@@ -249,5 +249,5 @@ p:hover {
   transform: scale(1.2);
   transition-duration: 0.1s;
   animation: 1.2s feed;
-  color: #47686E;
+  color: #ff8585;
 }

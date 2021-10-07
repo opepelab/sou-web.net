@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
                         <img className="Maru Zoom" src="/SVG/python3.svg" width={50} height={50} />
                         </a>
                 </div>
-                <a className="black" href="/"><h5 className="inblo">Copyright © 2021 Watanabe S. Ltd.</h5></a> 
+                <a className="black" href="/"><h5 className="inblo">Copyright © 2021 Watanabe S. inc.</h5></a> 
             </footer>
         </div>
     );

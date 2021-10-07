@@ -22,10 +22,6 @@ const Access: React.FC = () => {
           <li className="hako2">Qiita</li>
         </a>
         <br />
-        <a className="box" href="https://opepelab.org/" target="brank">
-          <li className="hako2">Blog</li>
-        </a>
-        <br />
         <a className="box" href="https://www.pixiv.net/users/10729947" target="_blank">
           <li className="hako2">pixiv</li>
         </a>

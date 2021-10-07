@@ -17,19 +17,19 @@ const Menu: React.FC<Props> = ({ open, setOpen }) => {
                                     <li className="tate">ABOUT</li>
                                 </a>
                             </Link>
-                            <Link href="/skills">
+                            <Link href="https://opepelab.org/">
                                 <a id="c2">
-                                    <li className="tate">SKILL SET</li>
-                                </a>
-                            </Link>
-                            <Link href="/design">
-                                <a id="c2">
-                                    <li className="tate">DESIGN</li>
+                                    <li className="tate">BLOG</li>
                                 </a>
                             </Link>
                             <Link href="/picture">
                                 <a id="c2">
                                     <li className="tate">PICTURE</li>
+                                </a>
+                            </Link>
+                            <Link href="/design">
+                                <a id="c2">
+                                    <li className="tate">DESIGN SKILL</li>
                                 </a>
                             </Link>
                             <Link href="/access">
