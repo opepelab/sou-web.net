@@ -3,10 +3,10 @@ import { GetStaticProps } from 'next';
 
 
 
-const Blog = ( posts: { title: null | undefined; }[] ) => {
+const Blog = ( posts: number[] ) => {
   return (
     <ul>
-      {posts.map((post: { title: null | undefined; }) => (<li>{post.title}</li>))}
+      {posts.map(post => (<li>{post}</li>))}
     </ul>
   );
 }
