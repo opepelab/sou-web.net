@@ -61,13 +61,12 @@ button {
 .MenuList [aria-expanded='true'] {
   z-index: 3;
   position: fixed;
-  background: #f0ebeb;
+  background-color: rgba(255, 247, 247, 0.95);
   left: 0%;
   right: 0%;
   top: 0%;
   width: 100%;
   height: 200%;
-  background-color: rgba(255, 255, 255, 0.8);
   visibility: visible;
   animation: 0.5s feed;
 }
