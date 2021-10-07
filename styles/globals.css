@@ -30,7 +30,7 @@ h1 a {
 a.scaleh1 :hover {
   color: #47686E;
   transition-duration: 2s;
-  border-bottom: solid 1px rgb(255, 248, 248);
+  border-bottom: solid 1px rgb(236, 219, 219);
 }
 
 a {
