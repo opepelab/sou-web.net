@@ -5,7 +5,7 @@ const Architects: React.FC = () => {
   return (
     <div>
       <Head>
-        <title>Skills Watanabe S.</title>
+        <title>ネタのページ Watanabe S.</title>
         <meta name="description" content="私の習得ルート"/>
       </Head>
       <h2>HIDE PAGE</h2>
