@@ -4,7 +4,7 @@ const Footer: React.FC = () => {
         <div className="footer">
             <footer>
                 <div className="flex-container">        
-                
+
                         <a href="https://typescript-jp.gitbook.io/deep-dive/">
                             <img className="Zoom" src="/SVG/TypeScript.svg" width={50} height={50} />
                         </a>
