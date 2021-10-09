@@ -1,13 +1,13 @@
 import Head from 'next/head'
 
-const Picture: React.FC = () => {
+const ArtWork: React.FC = () => {
   return (
     <div id="pic">
       <Head>
-        <title>Picture Watanabe S.</title>
+        <title>ArtWork Watanabe S.</title>
         <meta name="description" content="アクティブなコード"/>
       </Head>
-      <h2>PICTURE</h2>
+      <h2>ArtWork</h2>
       <div className="triangle-bottom" />
       <main>
       <img className="Zoom pm" src="/picture/haruka.png" width={214} height={302} />
@@ -18,4 +18,4 @@ const Picture: React.FC = () => {
   );
 }
 
-export default Picture;
+export default ArtWork;

@@ -7,7 +7,7 @@ const Access: React.FC = () => {
         <title>Link Watanabe S.</title>
         <meta name="description" content="アクセス"/>
       </Head>
-      <h2>LINK</h2>
+      <h2>Root Link</h2>
       <div className="triangle-bottom" />
       <main>
       <a className="box" href="https://opepelab.org/" target="_blank">

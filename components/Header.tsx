@@ -14,12 +14,11 @@ const Header: React.FC<Props> = ({ open, setOpen }) => {
                 <div className="disableN">
                     <nav>           
                         <ul>
-                            <Link href="/about"><a className="scale"><li>ABOUT</li></a></Link>
-                            <Link href="/blog"><a className="scale"><li>BLOG</li></a></Link>
-                            <Link href="/picture"><a className="scale"><li>PICTURE</li></a></Link>
-                            <Link href="/design"><a className="scale"><li>DESIGN SKILL</li></a></Link>
-                            <Link href="/access"><a className="scale"><li>LINK</li></a></Link>
-
+                            <Link href="/about"><a className="scale"><li>About</li></a></Link>
+                            <Link href="/artwork"><a className="scale"><li>Artwork</li></a></Link>
+                            <Link href="/articles"><a className="scale"><li>Articles</li></a></Link>
+                            <Link href="/devenvi"><a className="scale"><li>Dev Envi</li></a></Link>
+                            <Link href="/access"><a className="scale"><li>Links</li></a></Link>
                         </ul>
                     </nav>  
                 </div>

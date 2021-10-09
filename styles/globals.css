@@ -197,18 +197,7 @@ h2 {
       width: 100%;
       zoom: 100%;
     }
-
-    .flex-container {
-    grid-column-gap: 6%;
-    }
-
-
-    h2 {
-      width: 100%;
-    }
   }
-  
-
 
   
     /* スクロールバー変更 */

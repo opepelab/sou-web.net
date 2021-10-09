@@ -1,14 +1,14 @@
 import { client } from "../../libs/client";
 import Date from '../../components/date';
+import styles from './midasi.module.css';
 
 
 export default function BlogId({ blog }) {
   return (
     <div>
     <main>
-      <h2>{blog.title}</h2>
-      
-      <h5><Date dateString={blog.publishedAt}/></h5>
+      <h2 className={styles.h2}>{blog.title}</h2>
+      <h5 className={styles.h5}><Date dateString={blog.publishedAt}/></h5>
       <div className="triangle-bottom" />
       <p>{blog.body}</p>
     </main>

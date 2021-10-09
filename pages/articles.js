@@ -3,14 +3,15 @@ import { client } from "../libs/client";
 import Date from '../components/date';
 import Head from 'next/head';
 
+
 export default function Home({ blog }) {
   return (
     <div>
       <Head>
-        <title>記事一覧 Watanabe S.</title>
+        <title>Articles Watanabe S.</title>
         <meta name="description" content="getStaticProps"/>
       </Head>
-      <h2>my logs</h2>
+      <h2>Articles</h2>
       <div className="triangle-bottom" />
       <div>
         {blog.map((blog) => (

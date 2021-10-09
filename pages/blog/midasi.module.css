@@ -1,0 +1,16 @@
+.h2 {
+  font-family: "Sawarabi Gothic";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  border: none;
+  margin-bottom: 0px;
+}
+  
+
+.h5 {
+  border-bottom: 1px solid #eaeaea;
+  width: 40%;
+  margin-right: auto;
+  margin-left: auto;
+}
