@@ -10,6 +10,10 @@ const Access: React.FC = () => {
       <h2>LINK</h2>
       <div className="triangle-bottom" />
       <main>
+      <a className="box" href="https://opepelab.org/" target="_blank">
+          <li className="hako2">WordPress</li>
+        </a>
+        <br />
         <a className="box" href="https://www.facebook.com/opepelab/" target="_blank">
           <li className="hako2">Facebook</li>
         </a>

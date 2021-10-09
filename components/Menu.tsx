@@ -17,7 +17,7 @@ const Menu: React.FC<Props> = ({ open, setOpen }) => {
                                     <li className="tate">ABOUT</li>
                                 </a>
                             </Link>
-                            <Link href="https://opepelab.org/">
+                            <Link href="/blog">
                                 <a id="c2">
                                     <li className="tate">BLOG</li>
                                 </a>
