@@ -10,7 +10,7 @@ export default function BlogId({ blog }) {
       <h2 className={styles.h2}>{blog.title}</h2>
       <h5 className={styles.h5}><Date dateString={blog.publishedAt}/></h5>
       <div className="triangle-bottom" />
-      <p>{blog.body}</p>
+      <div>{blog.body}</div>
     </main>
     </div>
   );
