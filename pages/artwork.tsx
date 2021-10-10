@@ -11,7 +11,7 @@ const ArtWork: React.FC = () => {
       <div className="triangle-bottom" />
       <main>
       <img className="Zoom pm" src="/picture/haruka.png" width={214} height={302} />
-      <img className="Zoom pm" src="/picture/watas.png" width={214} height={302} />
+      <img className="Zoom pm" src="/picture/jett.png" width={350} height={364} />
       <img className="Zoom pm" src="/picture/otoko.png" width={255} height={404} />
       </main>
     </div>
