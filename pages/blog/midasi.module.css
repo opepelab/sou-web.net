@@ -9,8 +9,11 @@
   
 
 .h5 {
+  font-weight: 400;
+  font-style: normal;
   border-bottom: 1px solid #eaeaea;
   width: 40%;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 24px;
 }
