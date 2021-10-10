@@ -8,10 +8,10 @@ export default function Home({ blog }) {
   return (
     <div>
       <Head>
-        <title>Articles Watanabe S.</title>
+        <title>Blog Watanabe S.</title>
         <meta name="description" content="getStaticProps"/>
       </Head>
-      <h2>Articles</h2>
+      <h2>Blog</h2>
       <div className="triangle-bottom" />
       <div>
         {blog.map((blog) => (

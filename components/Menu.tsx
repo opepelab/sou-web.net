@@ -22,9 +22,9 @@ const Menu: React.FC<Props> = ({ open, setOpen }) => {
                                     <li className="tate">ArtWork</li>
                                 </a>
                             </Link>
-                            <Link href="/articles">
+                            <Link href="/blog">
                                 <a id="c2">
-                                    <li className="tate">Articles</li>
+                                    <li className="tate">Blog</li>
                                 </a>
                             </Link>
                             <Link href="/devenvi">

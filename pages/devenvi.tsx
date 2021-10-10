@@ -9,7 +9,7 @@ const DevEnvi: React.FC = () => {
         <meta name="description" content="アクティブなコード"/>
       </Head>
       <main>
-      <h2>Design</h2>
+      <h2>Dev Envi</h2>
       <div className="triangle-bottom" />
           <p>Wacom Cintiq Pro, Intuos SL</p>
           <p>PowerMate</p>
@@ -24,7 +24,6 @@ const DevEnvi: React.FC = () => {
           <br />
           <h2>Engine</h2>
       <div className="triangle-bottom" />
-          <h4>「Development Environment」</h4>
           <p>TypeScript/React.Tsx/HTML CSS</p>
           <p>Windows</p>
           <p>Git</p>
