@@ -5,6 +5,8 @@
   font-size: 1rem;
   border: none;
   margin-bottom: 0px;
+  white-space: nowrap;
+  width: 100%;
 }
   
 
