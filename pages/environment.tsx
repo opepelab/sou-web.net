@@ -5,7 +5,7 @@ const DevEnvi: React.FC = () => {
   return (
     <div>
       <Head>
-        <title>environment - sou</title>
+        <title>envi - sou</title>
         <meta name="description" content="アクティブなコード"/>
       </Head>
       <main>

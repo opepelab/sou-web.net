@@ -14,7 +14,7 @@ const Menu: React.FC<Props> = ({ open, setOpen }) => {
                         <div id="Pmoji">
                             <Link href="/about">
                                 <a id="c2">
-                                    <li className="tate">About</li>
+                                    <li className="tate">ABOUT</li>
                                 </a>
                             </Link>
                             <Link href="/artwork">
@@ -27,7 +27,7 @@ const Menu: React.FC<Props> = ({ open, setOpen }) => {
                                     <li className="tate">BLOG</li>
                                 </a>
                             </Link>
-                            <Link href="/devenvi">
+                            <Link href="/environment">
                                 <a id="c2">
                                     <li className="tate">ENVIRONMENT</li>
                                 </a>
