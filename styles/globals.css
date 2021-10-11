@@ -34,7 +34,7 @@ a.scaleh1 :hover {
 }
 
 a {
-  color: #eca9ae;
+  color:rgb(255, 150, 150);
   text-decoration: none;
 }
 
@@ -82,7 +82,7 @@ a.scale :hover {
   display: inline-block;
   font-size: 1.4rem;
   top: -18px;
-  left: 55px;
+  left: 0px;
 }
 
 
@@ -130,8 +130,7 @@ h2 {
 }
 
 .Maru {
-  display: block;
-  border-radius: 50%;
+  border-radius: 20%;
 }
 
 .Zoom:hover {
@@ -254,3 +253,42 @@ li {
   margin: 20px;
   cursor: pointer;
 }
+
+form {
+  position: relative;
+  color:rgb(255, 150, 150);
+}
+
+input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  outline: none;
+  width: 300px;
+  height: 20px;
+}
+
+textarea {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  resize: none;
+  border: none;
+  outline: none;
+  width: 400px;
+  height: 300px;
+}
+
+#massage {
+  display: inline-block;
+  padding: 0%;
+  border: solid 2px;
+  cursor: pointer;
+  background: none;
+  color:rgb(255, 150, 150);
+  width: 100px;
+  height: 40px
+}
+
+

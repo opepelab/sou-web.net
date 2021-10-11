@@ -22,17 +22,12 @@ const Menu: React.FC<Props> = ({ open, setOpen }) => {
                                     <li className="tate">ARTWORK</li>
                                 </a>
                             </Link>
-                            <Link href="/blog">
-                                <a id="c2">
-                                    <li className="tate">BLOG</li>
-                                </a>
-                            </Link>
                             <Link href="/environment">
                                 <a id="c2">
                                     <li className="tate">ENVIRONMENT</li>
                                 </a>
                             </Link>
-                            <Link href="/access">
+                            <Link href="/links">
                                 <a id="c2">
                                     <li className="tate">LINKS</li>
                                 </a>

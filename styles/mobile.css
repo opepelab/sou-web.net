@@ -124,6 +124,16 @@ h1 {
     transform: scale(1.1);
   }
 
+  input {
+    width: 200px;
+    height: 20px;
+  }
+  
+  textarea {
+    width: 280px;
+    height: 300px;
+  }
+
 }
 
 
