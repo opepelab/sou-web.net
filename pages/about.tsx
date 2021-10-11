@@ -5,7 +5,7 @@ const About: React.FC = () => {
   return (
     <div>
       <Head>
-        <title>ABOUT Watanabe S.</title>
+        <title>about - sou</title>
         <meta name="description" content="彼について"/>
       </Head>
       <h2>ABOUT</h2>
