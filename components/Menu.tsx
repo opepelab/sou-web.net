@@ -29,7 +29,7 @@ const Menu: React.FC<Props> = ({ open, setOpen }) => {
                             </Link>
                             <Link href="/devenvi">
                                 <a id="c2">
-                                    <li className="tate">Dev Envi</li>
+                                    <li className="tate">ENVIRONMENT</li>
                                 </a>
                             </Link>
                             <Link href="/access">

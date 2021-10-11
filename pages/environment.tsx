@@ -5,12 +5,13 @@ const DevEnvi: React.FC = () => {
   return (
     <div>
       <Head>
-        <title>Design Watanabe S.</title>
+        <title>ENVIRONMENT Watanabe S.</title>
         <meta name="description" content="アクティブなコード"/>
       </Head>
       <main>
-      <h2>Dev Envi</h2>
+      <h2>ENVIRONMENT</h2>
       <div className="triangle-bottom" />
+      <h3>DESIGN</h3>
           <p>Wacom Cintiq Pro, Intuos SL</p>
           <p>PowerMate</p>
           <p>Game Sir Z1 R</p>
@@ -22,8 +23,7 @@ const DevEnvi: React.FC = () => {
           <br />
           <br />
           <br />
-          <h2>Engine</h2>
-      <div className="triangle-bottom" />
+          <h3>ENGINE</h3>
           <p>TypeScript/React.Tsx/HTML CSS</p>
           <p>Windows</p>
           <p>Git</p>
@@ -32,8 +32,7 @@ const DevEnvi: React.FC = () => {
           <p>Eslint</p>
           <p>Edge/Chrome/Safari</p>
           <p>Vercel</p>
-          <h4>「 Typing Best Score 」</h4>
-          <p>Professor</p>
+          <p>Typing Score : Professor</p>
       </main>
     </div>
   );

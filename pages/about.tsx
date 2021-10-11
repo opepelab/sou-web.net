@@ -5,10 +5,10 @@ const About: React.FC = () => {
   return (
     <div>
       <Head>
-        <title>About Watanabe S.</title>
+        <title>ABOUT Watanabe S.</title>
         <meta name="description" content="彼について"/>
       </Head>
-      <h2>About</h2>
+      <h2>ABOUT</h2>
       <div className="triangle-bottom" />
       <main>
         <h3>「私について」</h3>
@@ -18,18 +18,9 @@ const About: React.FC = () => {
         <p>大人になってから国家資格である文部科学省の高認資格を取りました。</p>
         <p>海外の大学への憧れはあるのですが現状は目指していません。</p>
         <p>一度見たものをずっと記憶してしまうという特性を持っています。</p>
-
-
-        <br />
-        <h3>「サイトのアーキテクト」</h3>
-        <p>Facebookが元のReactのフレームワークNext.jsとJavaScriptで構築しています。</p>
-        <p>ワンボタンコピペしかしてませんキレイなコードが好きです。</p>
-        <p>素直にググれる</p>
-        <p>折れない心</p>
-        <p>諦めないことと気合</p>
         
         <br />
-        
+    
         <h3>「設計思想」</h3>
         <h4>スタイルについて</h4>
         <p>カッコよく、美しく、シンプルなモノ。</p>

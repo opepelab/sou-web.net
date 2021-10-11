@@ -82,7 +82,7 @@ a.scale :hover {
   display: inline-block;
   font-size: 1.4rem;
   top: -18px;
-  left: -12px;
+  left: 55px;
 }
 
 
@@ -181,7 +181,7 @@ h2 {
   nav ul {
   display: flex;
 	justify-content: center;
-  grid-gap: 60px;
+  grid-gap: 69px;
   }
   nav li {
     list-style-type: none;
