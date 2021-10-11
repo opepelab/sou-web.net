@@ -4,7 +4,7 @@ const Index: React.FC = () => {
   return (
     <div>
       <Head>
-        <title>TOP Watanabe S.</title>
+        <title>sou</title>
         <meta name="description" content="トップページ"/>
       </Head>
       <h2 id="TitleColor">Watanabe S.</h2>

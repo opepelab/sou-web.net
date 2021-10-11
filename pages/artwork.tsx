@@ -4,7 +4,7 @@ const ArtWork: React.FC = () => {
   return (
     <div id="pic">
       <Head>
-        <title>ARTWORK Watanabe S.</title>
+        <title>artwork - sou</title>
         <meta name="description" content="アクティブなコード"/>
       </Head>
       <h2>ARTWORK</h2>

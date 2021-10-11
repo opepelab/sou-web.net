@@ -8,7 +8,7 @@ export default function Home({ blog }) {
   return (
     <div>
       <Head>
-        <title>BLOG Watanabe S.</title>
+        <title>blog - sou</title>
         <meta name="description" content="getStaticProps"/>
       </Head>
       <h2>BLOG</h2>

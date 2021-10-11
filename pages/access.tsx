@@ -4,7 +4,7 @@ const Access: React.FC = () => {
   return (
     <div>
       <Head>
-        <title>LINKS Watanabe S.</title>
+        <title>links - sou</title>
         <meta name="description" content="アクセス"/>
       </Head>
       <h2>LINKS</h2>
