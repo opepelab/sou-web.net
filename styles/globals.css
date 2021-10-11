@@ -100,7 +100,8 @@ h2 {
   font-style: normal;
   font-size: 2em;
   border-bottom: 1px solid #eaeaea;
-  width: 40%;
+  white-space: nowrap;
+  width: 50%;
   margin-right: auto;
   margin-left: auto;
 }
