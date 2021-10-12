@@ -1,7 +1,6 @@
 import { client } from "../../libs/client";
 import Date from '../../components/date';
 import styles from './midasi.module.css';
-import '../../styles/microh2h3.css'
 
 
 export default function BlogId({ blog }) {

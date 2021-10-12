@@ -132,11 +132,11 @@ a#c2 :hover {
     width: 280px;
     height: 300px;
   }
-  .h1class {
+  h1 {
     width: 200px;
   }
 
-  .h2class {
+  h2 {
     width: 260px;
   }
 

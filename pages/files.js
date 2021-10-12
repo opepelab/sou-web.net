@@ -18,7 +18,7 @@ export default function Home({ blog }) {
           <li key={blog.id}>
             <Link href={`/blog/${blog.id}`}>
               <div className="yohaku">
-                  <h2 className="h2classList">{blog.title}</h2>
+                  <p>{blog.title}</p>
                   <h6><Date dateString={blog.publishedAt}/></h6>
               </div>
             </Link>
