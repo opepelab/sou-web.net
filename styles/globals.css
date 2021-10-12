@@ -133,6 +133,11 @@ h2 {
     transition-duration: 0.4s;
   }
 
+.PZoom:hover {
+  transform: scale(2);
+  transition-duration: 1s;
+}
+
 .pm {
   border-radius: 5px;
   border: solid 3px #777777;

@@ -115,6 +115,10 @@ h1 {
     to { opacity: 1; }
   }
 
+  .PZoom:hover {
+    transform: scale(1.6);
+    transition-duration: 2s;
+  }
 
   p {
     font-size: 0.75rem;
