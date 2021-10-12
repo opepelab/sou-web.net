@@ -243,21 +243,12 @@ p:hover {
   color: #ffaaaa;
 }
 
-.h2classList {
-  font-weight: 400;
-  font-size: 0.95rem;
+.margin0 {
   margin: 0px;
+}
+
+.pinkLinks {
   color:rgb(255, 150, 150);
-  margin: 0px;
-}
-
-h5 {
-  margin: 0px;
-  font-size: 1rem;
-}
-
-h6 {
-  margin: 0px;
 }
 
 li {
@@ -306,8 +297,6 @@ textarea {
   height: 40px
 }
 
-.pinkLinks {
-  color:rgb(255, 150, 150);
-}
+
 
 
