@@ -134,8 +134,8 @@ h2 {
 }
 
 .Zoom:hover {
-    transform: scale(2);
-    transition-duration: 0.75s;
+    transform: scale(1.25);
+    transition-duration: 0.4s;
   }
 
 .pm {
@@ -157,7 +157,7 @@ h2 {
 	display: flex;
   align-items: center;
   justify-content: center;
-  grid-column-gap: 2%;
+  grid-column-gap: 1%;
 }
 
 .top {
