@@ -14,15 +14,15 @@ const Contact: React.FC  = () => {
                 <label htmlFor="name">
                 Name
                 </label><br/>
-                    <input type="text" name="name" required />
+                    <input type="text" name="name" aria-label="Name area" required />
                 <label htmlFor="email">
                 Mail
                 </label>
-                    <input type="text" name="email" required />
+                    <input type="text" name="email" aria-label="Mail address area" required />
                 <label htmlFor="massage">
                 Message
                 </label><br />
-                    <textarea name="massage" required></textarea>
+                    <textarea name="massage" aria-label="Massage area" required />
                     <br />
                 <button id="massage" type="submit">
                     Send mail

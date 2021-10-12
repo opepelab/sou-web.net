@@ -24,7 +24,7 @@ const Header: React.FC<Props> = ({ open, setOpen }) => {
             </header>
             <div className="Line">
                 <button aria-expanded={open} onClick={() => setOpen(!open)}
-                    aria-label="Toggle mobile navigation visibility">
+                    aria-label="Toggle mobile navigation menu">
                         <span />
                         <span />
                 </button>
