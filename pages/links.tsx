@@ -7,27 +7,23 @@ const Links: React.FC = () => {
         <title>links - sou</title>
         <meta name="description" content="アクセス"/>
       </Head>
-      <h2>LINKS</h2>
+      <h1>Links</h1>
       <div className="triangle-bottom" />
       <main>
         <a href="https://github.com/opepelab" target="_blank">
-          <li><p>Git Hub</p></li>
+          <p>Git Hub</p>
         </a>
-        <br />
         <a href="https://opepelab.org/" target="_blank">
-          <li><p>WordPress(Blog)</p></li>
+          <p>WordPress(Blog)</p>
         </a>
-        <br />
         <a href="https://www.linkedin.com/in/s-watanabe-a25157205" target="_blank">
-          <li><p>LinkdIn</p></li>
+          <p>LinkdIn</p>
         </a>
-          <br />
         <a href="https://www.pixiv.net/users/10729947" target="_blank">
-          <li><p>pixiv</p></li>
+          <p>pixiv</p>
         </a>
-        <br />
         <a href="https://com.nicovideo.jp/community/co1568349" target="_blank">
-          <li><p>Live</p></li>
+          <p>Live</p>
         </a>
       </main>
     </div>

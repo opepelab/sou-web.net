@@ -14,22 +14,22 @@ const Menu: React.FC<Props> = ({ open, setOpen }) => {
                         <div id="Pmoji">
                             <Link href="/about">
                                 <a id="c2">
-                                    <li className="tate">ABOUT</li>
+                                    <li className="tate">About</li>
                                 </a>
                             </Link>
                             <Link href="/artwork">
                                 <a id="c2">
-                                    <li className="tate">ARTWORK</li>
+                                    <li className="tate">ArtWrok</li>
                                 </a>
                             </Link>
                             <Link href="/environment">
                                 <a id="c2">
-                                    <li className="tate">ENVIRONMENT</li>
+                                    <li className="tate">Environment</li>
                                 </a>
                             </Link>
                             <Link href="/links">
                                 <a id="c2">
-                                    <li className="tate">LINKS</li>
+                                    <li className="tate">Links</li>
                                 </a>
                             </Link>
                         </div>

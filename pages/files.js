@@ -11,17 +11,15 @@ export default function Home({ blog }) {
         <title>Files - sou</title>
         <meta name="description" content="getStaticProps"/>
       </Head>
-      <h2>Files</h2>
+      <h1>Files</h1>
       <div className="triangle-bottom" />
       <div>
         {blog.map((blog) => (
           <li key={blog.id}>
             <Link href={`/blog/${blog.id}`}>
               <div className="yohaku">
-                <p>
-                  <h5>{blog.title}</h5>
+                  <p className="marg0">{blog.title}</p>
                   <h6><Date dateString={blog.publishedAt}/></h6>
-                </p>
               </div>
             </Link>
           </li>

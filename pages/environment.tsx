@@ -9,7 +9,7 @@ const DevEnvi: React.FC = () => {
         <meta name="description" content="アクティブなコード"/>
       </Head>
       <main>
-      <h2>ENVIRONMENT</h2>
+      <h1>Environment</h1>
       <div className="triangle-bottom" />
       <h3>DESIGN</h3>
           <p>Wacom Cintiq Pro, Intuos SL</p>

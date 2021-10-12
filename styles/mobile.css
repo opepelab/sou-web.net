@@ -75,11 +75,11 @@ a#c2 :hover {
   color: #47686E;
 }
 
-h1 {
+.TopLogo {
   position: fixed;
   left: 0%;
   right: 0%;
-  top: 0px;
+  top: 20px;
   width: 110px;
   margin-left: auto;
   margin-right: auto;
@@ -91,13 +91,10 @@ h1 {
 
 
 .tate{
-    font-family: adobe-arabic, sans-serif;
-    font-weight: 400;
-    font-style: normal;
     color: #666;
     list-style: none;
     white-space: nowrap;
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 10px;
 }
 
@@ -118,10 +115,6 @@ h1 {
   .PZoom:hover {
     transform: scale(1.6);
     transition-duration: 2s;
-  }
-
-  p {
-    font-size: 0.75rem;
   }
 
   p:hover {

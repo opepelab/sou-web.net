@@ -1,12 +1,13 @@
-.h2 {
+.h1 {
   font-family: "Sawarabi Gothic";
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 1.2rem;
   border: none;
   margin-bottom: 0px;
-  white-space: nowrap;
+  white-space: normal;
   width: 100%;
+  color: rgb(255, 150, 150);
 }
   
 
@@ -18,4 +19,13 @@
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 24px;
+}
+
+@media screen and (max-width: 740px) {
+
+
+.BodyBlog {
+  text-align: left;
+}
+
 }

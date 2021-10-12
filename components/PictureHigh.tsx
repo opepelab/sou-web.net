@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const PictureHigh: React.FC = () => {
     return (
-        <div className="flex-container top">
+        <div className="flex-container MargTop">
             <Link href="/files">
                 <a><img className="Zoom" src="/images/folder.svg" width={70} height={70} /></a>
             </Link>

@@ -5,12 +5,10 @@ const NotFound: React.FC = () => {
     return (
         <div>
             <Head>
-                <title>404 Watanabe S.</title>
+                <title>404 - sou</title>
                 <meta name="description" content="存在しないページ"/>
             </Head>
-            <h2>
-                This page is not found.
-            </h2>
+            <h1>This page is not found.</h1>
                 <div className="triangle-bottom" />
             <p>
                 Go To <Link href="/"><a>HOMEPAGE</a></Link>
