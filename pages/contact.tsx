@@ -8,7 +8,7 @@ const Contact: React.FC  = () => {
                 <title>contact - sou</title>
                 <meta name="description" content="コンタクト"/>
             </Head>
-            <h2>Contact</h2>
+            <h1 className="h1class">Contact</h1>
             <div className="triangle-bottom" />
             <form action="https://formspree.io/f/xyylvaok" method="POST">
                 <label htmlFor="name">

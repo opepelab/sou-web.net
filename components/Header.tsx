@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import ActiveLink from '../components/ActiveLink'
 import React from 'react';
 
 type Props = {
@@ -10,14 +10,14 @@ const Header: React.FC<Props> = ({ open, setOpen }) => {
     return (
         <div>
             <header className="bgg">
-                <div className="TopLogo"><a className="scaleh1"><Link href="/">Watanabe S.</Link></a></div>
+                <ActiveLink href="/" activeClassName="colorState"><a className="scaleh1 TopLogo"><div>Watanabe S.</div></a></ActiveLink>
                 <div className="disableN">
                     <nav>           
                         <ul>
-                            <Link href="/about"><a className="scale"><li>About</li></a></Link>
-                            <Link href="/artwork"><a className="scale"><li>ArtWork</li></a></Link>
-                            <Link href="/environment"><a className="scale"><li>Environment</li></a></Link>
-                            <Link href="/links"><a className="scale"><li>Links</li></a></Link>
+                            <ActiveLink href="/about" activeClassName="borderState"><a className="scale"><li>About</li></a></ActiveLink>
+                            <ActiveLink href="/artwork" activeClassName="borderState"><a className="scale"><li>ArtWork</li></a></ActiveLink>
+                            <ActiveLink href="/environment" activeClassName="borderState"><a className="scale"><li>Environment</li></a></ActiveLink>
+                            <ActiveLink href="/links" activeClassName="borderState"><a className="scale"><li>Links</li></a></ActiveLink>
                         </ul>
                     </nav>  
                 </div>

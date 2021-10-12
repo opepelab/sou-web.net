@@ -7,7 +7,7 @@ const Index: React.FC = () => {
         <title>sou</title>
         <meta name="description" content="トップページ"/>
       </Head>
-      <h1 id="TitleColor">Watanabe S.</h1>
+      <h1 className="h1class TitleColor">Watanabe S.</h1>
       <div className="triangle-bottom" />
         <main>
           <p>私のコンピュータサイエンスの活動内容や記録を載せています。</p>

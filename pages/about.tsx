@@ -8,10 +8,10 @@ const About: React.FC = () => {
         <title>about - sou</title>
         <meta name="description" content="彼について"/>
       </Head>
-      <h1>About</h1>
+      <h1 className="h1class">About</h1>
       <div className="triangle-bottom" />
       <main>
-        <h3>「私について」</h3>
+        <h2 className="h2class">「私について」</h2>
         <p>学歴について、</p>
         <p>幼少から学校に行けず家で勉強していました。</p>
         <p>友達と呼べる人も唯一1人くらいしかなかったです。</p>
@@ -21,14 +21,14 @@ const About: React.FC = () => {
         
         <br />
     
-        <h3>「設計思想」</h3>
-        <h4>スタイルについて</h4>
+        <h2 className="h2class">「設計思想」</h2>
+        <h3>スタイルについて</h3>
         <p>カッコよくて美しくシンプルなモノ。</p>
         <p>元々デザインすることが好きだったためCSSを書くのは好きです。</p>
 
         <br />
 
-        <h4>コードについて</h4>
+        <h3 className="h3class">コードについて</h3>
         <p>より高速に動く軽量なコードが好きです。</p>
         <p>最小限かつ最大限の役割を果たすことが前提だと思っています。</p>
         <p>あとは意味を付けられない動きや動作はあまり好きではないです。</p>
@@ -40,7 +40,7 @@ const About: React.FC = () => {
 
         <h4>敬意と感謝</h4>
         <p>子供の頃からAppleやMicrosoftの製品が手元にあったこと、</p>
-        <p>この時代と生んでくれた父と母に感謝しています。</p>
+        <p>この時代と生んでくれた@父と母に感謝しています。</p>
       </main>
     </div>
   );

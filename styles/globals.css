@@ -9,7 +9,6 @@ body {
   font-size: 0.95rem;
   background: #fafafa;
   color: rgb(170, 170, 170);
-  cursor: text;
 }
 
 .TopLogo {
@@ -25,7 +24,7 @@ body {
   left: -60px;
 }
 
-.TopLogo a {
+a {
   color: rgb(236, 219, 219);
 }
 
@@ -36,7 +35,6 @@ a.scaleh1 :hover {
 }
 
 a {
-  color:rgb(255, 150, 150);
   text-decoration: none;
 }
 
@@ -54,8 +52,16 @@ a.scale :hover {
   color: #47686E;
   transform: scale(1.2);
   transition-duration: 0.1s;
-  border-bottom: solid 1px #47686E;
   animation: 2s feed;
+}
+
+.borderState {
+  color: #47686E;
+  border-bottom: solid 1px #47686E;
+}
+
+.colorState{
+  color:#47686E;
 }
 
 .bgg {
@@ -87,15 +93,8 @@ a.scale :hover {
   display: none;
 }
 
-#TitleColor {
-  font-family: adobe-arabic, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2rem;
-  color: #47686E;
-}
 
-h1 {
+.h1class {
   font-family: adobe-arabic, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -108,23 +107,33 @@ h1 {
   margin-left: auto;
 }
 
+.h2class {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  color: rgb(170, 170, 170);
+  border-bottom: 1px solid #eaeaea;
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.h3class {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1rem;
+}
+
+.TitleColor {
+  color: #47686E;
+}
+
 .triangle-bottom {
   display: inline-block;
   border-style: solid;
   border-width: 10px;
   border-color: #eaeaea transparent transparent transparent;
-}
-
-.hako2 {
-  font-size: 1rem;
-  list-style: none;
-  display: inline-block;
-  border: 1px solid #eaeaea;
-  width: 180px;
-  padding: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  background: #ffffff;
 }
 
 .Maru {
@@ -234,7 +243,10 @@ p:hover {
   color: #ffaaaa;
 }
 
-.marg0 {
+.h2classList {
+  font-weight: 400;
+  font-size: 0.95rem;
+  margin: 0px;
   color:rgb(255, 150, 150);
   margin: 0px;
 }
@@ -292,6 +304,10 @@ textarea {
   color:rgb(255, 150, 150);
   width: 100px;
   height: 40px
+}
+
+.pinkLinks {
+  color:rgb(255, 150, 150);
 }
 
 

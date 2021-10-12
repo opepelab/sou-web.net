@@ -1,5 +1,5 @@
 import React, { useState, ReactNode } from 'react';
-import Metatxt from './Metatxt'
+import StaticMeta from './StaticMeta'
 import Header from './Header'
 import Menu from './Menu'
 import PictureHigh from './PictureHigh'
@@ -14,7 +14,7 @@ const Layout: React.FC<Props> = ({ children }) => {
 
     return (
       <>
-        <Metatxt />
+        <StaticMeta />
       <div className="resp">  
         <Header open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />

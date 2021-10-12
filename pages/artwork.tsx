@@ -7,7 +7,7 @@ const ArtWork: React.FC = () => {
         <title>artwork - sou</title>
         <meta name="description" content="アクティブなコード"/>
       </Head>
-      <h1>ArtWork</h1>
+      <h1 className="h1class">ArtWork</h1>
       <div className="triangle-bottom" />
       <main>
       <img className="PZoom pm" src="/picture/haruka.png" width={255} height={358} />

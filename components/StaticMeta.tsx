@@ -1,6 +1,6 @@
 import Head from 'next/head';
-// 静的なメタタグ管理,動的なメタタグは該当部分に'next/head'で差し込み
-const Metatxt: React.FC = () => {
+// 静的なメタタグ管理
+const StaticMeta: React.FC = () => {
     return (
         <Head>
             <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet" />
@@ -12,4 +12,4 @@ const Metatxt: React.FC = () => {
     );
 } 
 
-export default Metatxt;
+export default StaticMeta;
