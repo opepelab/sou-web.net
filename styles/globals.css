@@ -124,11 +124,6 @@ h2 {
   background: #ffffff;
 }
 
-.box :hover {
-  transform: scale(1.4);
-  transition-duration: 0.1s;
-}
-
 .Maru {
   border-radius: 20%;
 }
