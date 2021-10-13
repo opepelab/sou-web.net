@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
                         <img className="Zoom" src="/SVG/css3.svg" width={50} height={50} />
                     </a>
                 </div>
-                <a className="black" href="/"><h6 className="inblo">Copyright © 2021 Watanabe S. inc.</h6></a> 
+                <a className="black" href="/"><h6 className="inblo">Copyright © 2021 Sou/W. inc.</h6></a> 
             </footer>
         </div>
     );
