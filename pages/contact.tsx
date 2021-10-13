@@ -8,26 +8,28 @@ const Contact: React.FC  = () => {
                 <title>contact - sou</title>
                 <meta name="description" content="コンタクト"/>
             </Head>
-            <h1 className="h1class">Contact</h1>
-            <div className="triangle-bottom" />
-            <form action="https://formspree.io/f/xyylvaok" method="POST">
-                <label htmlFor="name">
-                Name
-                </label><br/>
+            <main>
+            <h1>Contact</h1>
+                <div className="triangle-bottom" />
+                <form action="https://formspree.io/f/xyylvaok" method="POST">
+                    <label htmlFor="name">
+                        Name
+                    </label><br/>
                     <input type="text" name="name" aria-label="Name area" required />
-                <label htmlFor="email">
-                Mail
-                </label>
+                    <label htmlFor="email">
+                        Mail
+                    </label>
                     <input type="text" name="email" aria-label="Mail address area" required />
-                <label htmlFor="massage">
-                Message
-                </label><br />
+                    <label htmlFor="massage">
+                        Message
+                    </label><br />
                     <textarea name="massage" aria-label="Massage area" required />
                     <br />
-                <button id="massage" type="submit">
-                    Send mail
-                </button>
+                    <button id="massageButton" type="submit">
+                        Send mail
+                    </button>
             </form>
+            </main>
         </div>   
     )
 }

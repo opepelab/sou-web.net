@@ -7,7 +7,7 @@ const Links: React.FC = () => {
         <title>links - sou</title>
         <meta name="description" content="リンク"/>
       </Head>
-      <h1 className="h1class">Links</h1>
+      <h1>Links</h1>
       <div className="triangle-bottom" />
       <main>
         <div className="inblo">

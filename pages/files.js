@@ -11,7 +11,7 @@ export default function Home({ blog }) {
         <title>Files - sou</title>
         <meta name="description" content="getStaticProps"/>
       </Head>
-      <h1 className="h1class">Files</h1>
+      <h1>Files</h1>
       <div className="triangle-bottom" />
       <div>
         {blog.map((blog) => (

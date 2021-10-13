@@ -8,7 +8,7 @@ const NotFound: React.FC = () => {
                 <title>404 - sou</title>
                 <meta name="description" content="存在しないページ"/>
             </Head>
-            <h1 className="h1class">This page is not found.</h1>
+            <h1>This page is not found.</h1>
                 <div className="triangle-bottom" />
             <p>
                 Go To <Link href="/"><a>HOMEPAGE</a></Link>

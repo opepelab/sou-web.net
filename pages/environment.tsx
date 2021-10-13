@@ -9,10 +9,10 @@ const DevEnvi: React.FC = () => {
         <meta name="description" content="アクティブなコード"/>
       </Head>
       <main>
-        <h1 className="h1class">Environment</h1>
+        <h1>Environment</h1>
         <div className="triangle-bottom" />
         <br /><br /><br />
-        <h2 className="h2class">DESIGN</h2>
+        <h2>DESIGN</h2>
           <p>Wacom Cintiq Pro, Intuos SL</p>
           <p>PowerMate</p>
           <p>Game Sir Z1 R</p>
@@ -21,7 +21,7 @@ const DevEnvi: React.FC = () => {
           <p>SAI2</p>
           <p>Eizo ColorEdge CS2410</p>
           <br /><br /><br />
-        <h2 className="h2class">ENGINE</h2>
+        <h2>ENGINE</h2>
           <p>TypeScript/React.Tsx/HTML CSS</p>
           <p>Windows</p>
           <p>Git</p>
