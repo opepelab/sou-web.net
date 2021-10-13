@@ -2,12 +2,12 @@ import Head from 'next/head'
 
 const Index: React.FC = () => {
   return (
-    <div>
+    <div className="inblo">
       <Head>
         <title>sou</title>
         <meta name="description" content="トップページ"/>
       </Head>
-      <main className="inblo">
+      <main>
       <h1 className="TitleColor">Sou/W.</h1>
       <div className="triangle-bottom" />
         <p>私のコンピュータサイエンスの活動内容や記録を載せています。</p>

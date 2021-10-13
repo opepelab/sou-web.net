@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 const NotFound: React.FC = () => {
     return (
-        <div>
+        <div className="inblo">
             <Head>
                 <title>404 - sou</title>
                 <meta name="description" content="存在しないページ"/>

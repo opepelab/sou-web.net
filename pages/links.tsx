@@ -2,7 +2,7 @@ import Head from 'next/head'
 
 const Links: React.FC = () => {
   return (
-    <div>
+    <div className="inblo">
       <Head>
         <title>links - sou</title>
         <meta name="description" content="リンク"/>
@@ -10,7 +10,6 @@ const Links: React.FC = () => {
       <main>
       <h1>Links</h1>
       <div className="triangle-bottom" />
-        <div className="inblo">
           <a className="pinkLinks" href="https://github.com/opepelab" target="_blank">
             <p>GitHub</p>
           </a>
@@ -26,7 +25,6 @@ const Links: React.FC = () => {
           <a className="pinkLinks" href="https://com.nicovideo.jp/community/co1568349" target="_blank">
             <p>Live</p>
           </a>
-        </div>
       </main>
     </div>
   );

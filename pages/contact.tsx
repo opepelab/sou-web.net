@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 const Contact: React.FC  = () => {
     return (
-        <div>
+        <div className="inblo">
             <Head>
                 <title>contact - sou</title>
                 <meta name="description" content="コンタクト"/>

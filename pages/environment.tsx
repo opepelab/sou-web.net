@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 const DevEnvi: React.FC = () => {
   return (
-    <div>
+    <div className="inblo">
       <Head>
         <title>envi - sou</title>
         <meta name="description" content="アクティブなコード"/>

@@ -2,12 +2,12 @@ import Head from 'next/head'
 
 const ArtWork: React.FC = () => {
   return (
-    <div id="pic">
+    <div id="pic" className="inblo">
       <Head>
         <title>artwork - sou</title>
         <meta name="description" content="アクティブなコード"/>
       </Head>
-      <main className="inblo">
+      <main>
         <h1>ArtWork</h1>
         <div className="triangle-bottom" />
         <div>

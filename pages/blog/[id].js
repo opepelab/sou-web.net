@@ -5,7 +5,7 @@ import styles from './midasi.module.css';
 
 export default function BlogId({ blog }) {
   return (
-    <div>
+    <div className="inblo">
       <main>
         <h1 className={styles.h1}>{blog.title}</h1>
         <div className={styles.Time2}><Date dateString={blog.publishedAt} /></div>

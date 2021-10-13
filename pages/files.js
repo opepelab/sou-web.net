@@ -6,7 +6,7 @@ import Head from 'next/head';
 
 export default function Home({ blog }) {
   return (
-    <div>
+    <div className="inblo">
       <Head>
         <title>Files - sou</title>
         <meta name="description" content="getStaticProps"/>
@@ -17,7 +17,7 @@ export default function Home({ blog }) {
         {blog.map((blog) => (
           <li key={blog.id}>
             <Link href={`/blog/${blog.id}`}>
-              <div className="yohaku inblo">
+              <div className="yohaku">
                   <h2 className="h2List margin0 pinkLinks">{blog.title}</h2>
                   <div className="margin0 Time1"><Date dateString={blog.publishedAt}/></div>
               </div>

@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 const Architects: React.FC = () => {
   return (
-    <div>
+    <div className="inblo">
       <Head>
         <title>ネタのページ Watanabe S.</title>
         <meta name="description" content="私の習得ルート"/>
