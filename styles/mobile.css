@@ -119,6 +119,7 @@ a#c2 :hover {
     transition-duration: 2s;
   }
 
+
   p:hover {
     transform: scale(1.1);
   }

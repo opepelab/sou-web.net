@@ -12,7 +12,7 @@ const Links: React.FC = () => {
       <main>
         <div className="inblo">
         <a className="pinkLinks" href="https://github.com/opepelab" target="_blank">
-          <p>Git Hub</p>
+          <p>GitHub</p>
         </a>
         <a className="pinkLinks" href="https://opepelab.org/" target="_blank">
           <p>WordPress(Blog)</p>

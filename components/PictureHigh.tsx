@@ -1,15 +1,15 @@
-import Link from 'next/link'
+import ActiveLink from '../components/ActiveLink'
 
 const PictureHigh: React.FC = () => {
     return (
         <div className="flex-container MargTop">
-            <Link href="/files">
+            <ActiveLink href="/files" activeClassName="hideState">
                 <a><img className="Zoom" src="/images/folder.svg" width={70} height={70} /></a>
-            </Link>
+            </ActiveLink>
                  <img className="Maru Zoom" src="/images/orei.png" width={117} height={120} />
-            <Link href="/contact">
+            <ActiveLink href="/contact" activeClassName="hideState">
                  <a><img className="Zoom" src="/images/gm.ico" width={70} height={70} /></a>
-            </Link>
+            </ActiveLink>
         </div>
     );
 }

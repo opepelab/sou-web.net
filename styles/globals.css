@@ -1,4 +1,5 @@
 html {
+  font-size: 95%;
   overflow: scroll;
 }
 body {
@@ -55,7 +56,15 @@ a.scale :hover {
 
 .colorState {
   opacity: 0.4;
+  transform: scale(1);
   transition-duration: 0.2s;
+  pointer-events: none;
+}
+
+.hideState {
+  transform: scale(2);
+  opacity: 0;
+  transition-duration: 0.6s;
   pointer-events: none;
 }
 
@@ -136,8 +145,8 @@ h3 {
 }
 
 .Zoom:hover {
-    transform: scale(1.25);
-    transition-duration: 0.4s;
+    transform: scale(1.18);
+    transition-duration: 0.2s;
   }
 
 .PZoom:hover {
@@ -234,7 +243,7 @@ p:hover {
 }
 
 .MargTop {
-  margin-top: 80px;
+  margin-top: 88px;
 }
 
 .margin0 {
