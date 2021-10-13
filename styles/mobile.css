@@ -2,7 +2,7 @@
 @media screen and (max-width: 740px) {
 
 body {
-  width: 90%;
+  width: 92%;
 }
 
 button {
@@ -100,7 +100,7 @@ a#c2 :hover {
   font-style: normal;
   color: #666;
   white-space: nowrap;
-  font-size: 3rem;
+  font-size: 48px;
   padding: 10px;
 }
 

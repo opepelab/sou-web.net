@@ -1,5 +1,5 @@
 html {
-  font-size: 95%;
+  font-size: 100%;
   overflow: scroll;
 }
 body {
@@ -10,7 +10,7 @@ body {
   margin-left: auto;
   width: 50%;
   padding: 0.5em;
-  font-size: 0.95rem;
+  font-size: 14px;
   background: #fafafa;
   color: rgb(170, 170, 170);
 }
@@ -19,13 +19,13 @@ body {
   font-family: adobe-arabic, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 2rem;
+  font-size: 30px;
   z-index: 5;
   position: relative;
   display: inline-block;
   white-space: nowrap;
-  top: -16px;
-  left: -60px;
+  top: -18px;
+  left: -30px;
 }
 
 a {
@@ -81,9 +81,9 @@ a.scale :hover {
   z-index: 5;
   position: relative;
   display: inline-block;
-  font-size: 1.5rem;
-  top: -16px;
-  left: 6px;
+  font-size: 24px;
+  top: -18px;
+  left: 12px;
 }
 
 
@@ -96,7 +96,7 @@ h1 {
   font-family: adobe-arabic, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 2rem;
+  font-size: 32px;
   color: #666;
   border-bottom: 1px solid #eaeaea;
   white-space: nowrap;
@@ -108,7 +108,7 @@ h1 {
 h2 {
   font-weight: 400;
   font-style: normal;
-  font-size: 1.2rem;
+  font-size: 20px;
   white-space: nowrap;
   color: rgb(170, 170, 170);
   border-bottom: 1px solid #eaeaea;
@@ -120,7 +120,7 @@ h2 {
 h3 {
   font-weight: 400;
   font-style: normal;
-  font-size: 1.1rem;
+  font-size: 16px;
 }
 
 .TitleColor {
@@ -187,7 +187,7 @@ h3 {
   nav ul {
   display: flex;
 	justify-content: center;
-  grid-gap: 70px;
+  grid-gap: 80px;
   }
   nav li {
     white-space: nowrap;
@@ -255,7 +255,7 @@ p:hover {
 .h2List {
   font-weight: 400;
   font-style: normal;
-  font-size: 0.95rem;
+  font-size: 14px;
   border: none;
   white-space: normal;
   margin-right: auto;
@@ -266,7 +266,7 @@ p:hover {
 .Time1 {
   font-weight: 700;
   font-style: normal;
-  font-size: 0.6rem;
+  font-size: 10px;
 }
 
 li {
