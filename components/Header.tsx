@@ -10,14 +10,14 @@ const Header: React.FC<Props> = ({ open, setOpen }) => {
     return (
         <div>
             <header className="bgg">
-                <ActiveLink href="/" activeClassName="colorState"><a className="scaleh1 TopLogo"><div>Watanabe S.</div></a></ActiveLink>
+                <ActiveLink href="/" activeClassName="colorState"><a className="scaleh1 TopLogo"><div>Sou/W.</div></a></ActiveLink>
                 <div className="disableN">
                     <nav>           
                         <ul>
-                            <ActiveLink href="/about" activeClassName="borderState"><a className="scale"><li>About</li></a></ActiveLink>
-                            <ActiveLink href="/artwork" activeClassName="borderState"><a className="scale"><li>ArtWork</li></a></ActiveLink>
-                            <ActiveLink href="/environment" activeClassName="borderState"><a className="scale"><li>Environment</li></a></ActiveLink>
-                            <ActiveLink href="/links" activeClassName="borderState"><a className="scale"><li>Links</li></a></ActiveLink>
+                            <ActiveLink href="/about" activeClassName="colorState"><a className="scale"><li>About</li></a></ActiveLink>
+                            <ActiveLink href="/artwork" activeClassName="colorState"><a className="scale"><li>ArtWork</li></a></ActiveLink>
+                            <ActiveLink href="/environment" activeClassName="colorState"><a className="scale"><li>Environment</li></a></ActiveLink>
+                            <ActiveLink href="/links" activeClassName="colorState"><a className="scale"><li>Links</li></a></ActiveLink>
                         </ul>
                     </nav>  
                 </div>
