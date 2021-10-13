@@ -8,7 +8,7 @@ export default function BlogId({ blog }) {
     <div>
     <main>
       <h1 className={styles.h1}>{blog.title}</h1>
-      <h5 className={styles.h5}><Date dateString={blog.publishedAt} /></h5>
+      <div className={styles.Time2}><Date dateString={blog.publishedAt} /></div>
       <div className="triangle-bottom" />
       <div className={styles.BodyBlog} dangerouslySetInnerHTML={{__html: `${blog.body}`,}} />
     </main>

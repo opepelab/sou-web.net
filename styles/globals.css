@@ -172,9 +172,7 @@ h3 {
   grid-column-gap: 1%;
 }
 
-.MargTop {
-  margin-top: 80px;
-}
+
 
 
 .footer {
@@ -185,9 +183,7 @@ h3 {
   padding-top: 100px;
 }
 
-.inblo {
-  display: inline-block;
-}
+
 
 
   nav ul {
@@ -243,12 +239,37 @@ p:hover {
   color: #ffaaaa;
 }
 
+.MargTop {
+  margin-top: 80px;
+}
+
 .margin0 {
   margin: 0px;
 }
 
 .pinkLinks {
   color:rgb(255, 150, 150);
+}
+
+.inblo {
+  display: inline-block;
+}
+
+.h2List {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.95rem;
+  border: none;
+  white-space: normal;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+.Time1 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.6rem;
 }
 
 li {

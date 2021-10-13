@@ -10,6 +10,7 @@ const Links: React.FC = () => {
       <h1 className="h1class">Links</h1>
       <div className="triangle-bottom" />
       <main>
+        <div className="inblo">
         <a className="pinkLinks" href="https://github.com/opepelab" target="_blank">
           <p>Git Hub</p>
         </a>
@@ -25,6 +26,7 @@ const Links: React.FC = () => {
         <a className="pinkLinks" href="https://com.nicovideo.jp/community/co1568349" target="_blank">
           <p>Live</p>
         </a>
+        </div>
       </main>
     </div>
   );

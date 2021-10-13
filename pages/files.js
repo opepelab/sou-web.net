@@ -17,9 +17,9 @@ export default function Home({ blog }) {
         {blog.map((blog) => (
           <li key={blog.id}>
             <Link href={`/blog/${blog.id}`}>
-              <div className="yohaku">
-                  <p className="margin0 pinkLinks">{blog.title}</p>
-                  <h6 className="margin0"><Date dateString={blog.publishedAt}/></h6>
+              <div className="yohaku inblo">
+                  <h2 className="h2List margin0 pinkLinks">{blog.title}</h2>
+                  <div className="margin0 Time1"><Date dateString={blog.publishedAt}/></div>
               </div>
             </Link>
           </li>
