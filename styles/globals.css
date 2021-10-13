@@ -112,7 +112,7 @@ h2 {
   white-space: nowrap;
   color: rgb(170, 170, 170);
   border-bottom: 1px solid #eaeaea;
-  width: 40%;
+  display: inline-block;
   margin-right: auto;
   margin-left: auto;
 }

@@ -10,7 +10,7 @@ const DevEnvi: React.FC = () => {
       </Head>
       <main>
         <h1>Environment</h1>
-        <div className="triangle-bottom" />
+        <div className="triangle-bottom" /><br />
         <h2>DESIGN</h2>
         <p>Wacom Cintiq Pro, Intuos SL</p>
         <p>PowerMate</p>
