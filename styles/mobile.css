@@ -118,11 +118,15 @@ a#c2 :hover {
     to { opacity: 1; }
   }
 
-  .PZoom:hover {
+  .PZoom-in {
+    transition-duration: 1s;
+  }
+  
+  .PZoom-in:active {
     transform: scale(1.6);
-    transition-duration: 2s;
   }
 
+/* ブログとコンタクトのスケール再定義 */
   .Zoom:hover {
     transform: scale(1);
   }

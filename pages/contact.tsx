@@ -28,7 +28,7 @@ const Contact: React.FC  = () => {
                     <button id="massageButton" type="submit">
                         Send mail
                     </button>
-            </form>
+                </form>
             </main>
         </div>   
     )

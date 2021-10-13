@@ -7,9 +7,9 @@ const Index: React.FC = () => {
         <title>sou</title>
         <meta name="description" content="トップページ"/>
       </Head>
-      <main>
-        <h1 className="TitleColor">Sou/W.</h1>
-        <div className="triangle-bottom" />
+      <main className="inblo">
+      <h1 className="TitleColor">Sou/W.</h1>
+      <div className="triangle-bottom" />
         <p>私のコンピュータサイエンスの活動内容や記録を載せています。</p>
         <h2>プロフィール</h2>
         <p>性別 男性</p>
@@ -20,7 +20,7 @@ const Index: React.FC = () => {
         <p>血液型 O型</p>
         <p>4タイプ 法則</p>
         <p>趣味 読書 倫理</p>
-        </main>
+      </main>
     </div>
   );
 }

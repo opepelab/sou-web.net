@@ -11,9 +11,9 @@ export default function Home({ blog }) {
         <title>Files - sou</title>
         <meta name="description" content="getStaticProps"/>
       </Head>
-      <h1>Files</h1>
-      <div className="triangle-bottom" />
-      <div>
+      <main>
+        <h1>Files</h1>
+        <div className="triangle-bottom" />
         {blog.map((blog) => (
           <li key={blog.id}>
             <Link href={`/blog/${blog.id}`}>
@@ -24,7 +24,7 @@ export default function Home({ blog }) {
             </Link>
           </li>
         ))}
-      </div>
+      </main>
     </div>
   );
 }

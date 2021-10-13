@@ -15,7 +15,7 @@ const Layout: React.FC<Props> = ({ children }) => {
     return (
       <>
         <StaticMeta />
-      <div className="over">  
+      <div className="resp">  
         <Header open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />
         <PictureHigh />
