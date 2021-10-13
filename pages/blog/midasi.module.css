@@ -24,9 +24,12 @@
 
 @media screen and (max-width: 740px) {
 
-
 .BodyBlog {
   text-align: left;
+}
+
+.Time2 {
+  width: 250px;
 }
 
 }
