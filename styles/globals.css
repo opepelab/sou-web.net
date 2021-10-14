@@ -33,11 +33,6 @@ a {
   text-decoration: none;
 }
 
-a.scaleh1 :hover {
-  color: #47686E;
-  border-bottom: solid 3px #47686E;
-}
-
 a.black :hover {
   color: #47686E;
   transform: rotateY(720deg) rotateX(360deg);
@@ -60,6 +55,20 @@ a.scale :hover {
   transform: scale(1);
   transition-duration: 0.2s;
   pointer-events: none;
+}
+
+.hideState {
+  opacity: 0;
+  transform: scale(1.6);
+  transition-duration: 0.5s;
+  pointer-events: none;
+}
+
+a.scaleh1 :hover {
+  color: #47686E;
+  transform: scale(1.1);
+  transition-duration: 0.1s;
+  animation: 2s feed;
 }
 
 .bgg {

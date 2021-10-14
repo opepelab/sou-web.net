@@ -10,7 +10,7 @@ const Header: React.FC<Props> = ({ open, setOpen }) => {
     return (
         <div>
             <header className="bgg">
-                <ActiveLink href="/" activeClassName="colorState"><a className="scaleh1 TopLogo"><div>Sou/W.</div></a></ActiveLink>
+                <ActiveLink href="/" activeClassName="hideState"><a className="scaleh1 TopLogo"><div>Sou/W.</div></a></ActiveLink>
                 <div className="disableN">
                     <nav>           
                         <ul>
