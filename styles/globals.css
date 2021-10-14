@@ -148,21 +148,18 @@ h3 {
   border-radius: 50%;
 }
 
+/* 小物のズーム */
 .Zoom:hover {
     transform: scale(1.1);
     transition-duration: 0.2s;
   }
 
-img {
-  border-radius: 5px;
-}
+
 
 /* 写真のズーム */
 .PZoom-in {
   transition-duration: 1s;
 }
-
-
 
 .PZoom-in:active {
   transform: scale(2);
@@ -177,8 +174,8 @@ img {
   cursor: Zoom-in;
 }
 
-.pm {
-  margin: 10px;
+.PM {
+  border: thin solid black;
 }
 
 
