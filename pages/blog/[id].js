@@ -6,7 +6,7 @@ import Head from 'next/head';
 
 export default function BlogId({ blog }) {
   return (
-    <div className="inblo">
+    <div className="inblo textLeft">
       <Head>
         <title>{blog.title} - sou</title>
         <meta name="description" content={blog.description} />
