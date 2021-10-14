@@ -156,6 +156,10 @@ h3 {
   user-select: none;
 }
 
+.eventsNone {
+  pointer-events: none;
+}
+
 .cursorIn {
   cursor: Zoom-in;
 }
