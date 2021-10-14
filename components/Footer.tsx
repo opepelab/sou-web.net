@@ -5,11 +5,11 @@ const Footer: React.FC = () => {
             <footer>
                 <div className="flex-container">
                     <a href="https://developer.mozilla.org/ja/docs/Learn/Getting_started_with_the_web/HTML_basics/">
-                        <img className="Zoom" src="/SVG/html5.svg" width={50} height={50} />
+                        <img className="Zoom" src="/SVG/HT.svg" width={40} height={40} />
                     </a>
 
                     <a href="https://developer.mozilla.org/ja/docs/Learn/Getting_started_with_the_web/CSS_basics/">
-                        <img className="Zoom" src="/SVG/css3.svg" width={50} height={50} />
+                        <img className="Zoom" src="/SVG/CS.svg" width={40} height={40} />
                     </a>  
 
                     <a href="https://typescript-jp.gitbook.io/deep-dive/">
@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
                     </a>
 
                     <a href="https://nextjs.org/docs/">
-                        <img className="Zoom" src="/SVG/Next.svg" width={50} height={50} />
+                        <img className="Zoom" src="/SVG/NE.svg" width={45} height={45} />
                     </a>
                         
 
