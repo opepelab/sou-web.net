@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-const ArtWork: React.FC = () => {
+const Picture: React.FC = () => {
   return (
     <div id="pic" className="inblo selectNone">
       <Head>
@@ -8,8 +8,7 @@ const ArtWork: React.FC = () => {
         <meta name="description" content="アクティブなコード"/>
       </Head>
       <main>
-        <h1>ArtWork</h1>
-        <div className="triangle-bottom" />
+        <h1>Picture</h1>
         <div className="cursorIn">
           <img className="PZoom-in  pm" src="/picture/haruka.svg" width={255} height={358} />
           <img className="PZoom-in  pm" src="/picture/jett.svg" width={255} height={269} />
@@ -20,4 +19,4 @@ const ArtWork: React.FC = () => {
   );
 }
 
-export default ArtWork;
+export default Picture;

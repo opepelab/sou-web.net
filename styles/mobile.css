@@ -5,6 +5,11 @@ body {
   width: 92%;
 }
 
+.bgg {
+ opacity: 0.8;
+}
+
+
 button {
   border: none;
   background: transparent;
@@ -20,7 +25,7 @@ button {
   z-index: 4;
   position: fixed;
   right: 8px;
-  top: 7px;
+  bottom: 7px;
 }
 .Line span {
   display: block;
@@ -146,7 +151,7 @@ a#c2 :hover {
     height: 300px;
   }
   h1 {
-    width: 250px;
+    width: 100%;
   }
 
   h2 {

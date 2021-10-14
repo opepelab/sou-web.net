@@ -17,14 +17,14 @@ const Menu: React.FC<Props> = ({ open, setOpen }) => {
                                     <li className="tate">About</li>
                                 </a>
                             </Link>
-                            <Link href="/artwork">
-                                <a id="c2">
-                                    <li className="tate">ArtWrok</li>
-                                </a>
-                            </Link>
                             <Link href="/environment">
                                 <a id="c2">
-                                    <li className="tate">Environment</li>
+                                    <li className="tate">Env</li>
+                                </a>
+                            </Link>
+                            <Link href="/picture">
+                                <a id="c2">
+                                    <li className="tate">Picture</li>
                                 </a>
                             </Link>
                             <Link href="/links">

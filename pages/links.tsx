@@ -8,23 +8,33 @@ const Links: React.FC = () => {
         <meta name="description" content="リンク"/>
       </Head>
       <main>
-      <h1>Links</h1>
-      <div className="triangle-bottom" />
+        <h1>Links</h1>
+        <div className="triangle-bottom" />
+        <div className="margin16">
           <a className="pinkLinks" href="https://github.com/opepelab" target="_blank">
-            <p>GitHub</p>
+            GitHub 
           </a>
+        </div>
+        <div className="margin16">
           <a className="pinkLinks" href="https://opepelab.org/" target="_blank">
-            <p>WordPress(Blog)</p>
+            WordPress(Blog)
           </a>
+        </div>
+        <div className="margin16">
           <a className="pinkLinks" href="https://www.linkedin.com/in/s-watanabe-a25157205" target="_blank">
-            <p>LinkdIn</p>
+            LinkdIn
           </a>
+        </div>
+        <div className="margin16">
           <a className="pinkLinks" href="https://www.pixiv.net/users/10729947" target="_blank">
-            <p>pixiv</p>
+            pixiv
           </a>
+        </div>
+        <div className="margin16">
           <a className="pinkLinks" href="https://com.nicovideo.jp/community/co1568349" target="_blank">
-            <p>Live</p>
+            Live
           </a>
+        </div>
       </main>
     </div>
   );

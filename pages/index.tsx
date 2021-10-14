@@ -2,23 +2,29 @@ import Head from 'next/head'
 
 const Index: React.FC = () => {
   return (
-    <div className="inblo">
+    <div className="inblo textLeft">
       <Head>
         <title>sou</title>
         <meta name="description" content="トップページ"/>
       </Head>
       <main>
-      <h1 className="TitleColor">Sou/W.</h1>
-      <div className="triangle-bottom" />
-        <p>性別 男性</p>
-        <p>出身住まい 日本 東京都</p>
-        <p>生年 1994年11月2日生まれ</p>
-        <p>星座 さそり座</p>
-        <p>十二支 戌年</p>
-        <p>血液型 O型</p>
-        <p>4タイプ 法則</p>
-        <p>趣味 読書 倫理 ゲーム</p>
-        <p>タイピングスコア プロフェッサー</p>
+        <h1 className="TitleColor">Sou/W.</h1>
+        <dl>
+          <dt>性別</dt>
+          <dd>男性</dd><br/>
+          <dt>Birthday</dt>
+          <dd>2nd November 1994</dd><br/>
+          <dt>Sign</dt>
+          <dd>Scorpio</dd><br/>
+          <dt>十二支 </dt>
+          <dd>戌年 (Dog)</dd><br/>
+          <dt>血液型</dt>
+          <dd>O型</dd><br/>
+          <dt>4タイプ </dt>
+          <dd>法則</dd><br/>
+          <dt>趣味</dt>
+          <dd>趣味 読書 倫理 ゲーム</dd>
+        </dl>
       </main>
     </div>
   );

@@ -3,20 +3,30 @@ import Head from 'next/head';
 
 const About: React.FC = () => {
   return (
-    <div className="inblo">
+    <div className="inblo textLeft">
       <Head>
         <title>about - sou</title>
         <meta name="description" content="彼について"/>
       </Head>
       <main>
         <h1>About</h1>
-        <div className="triangle-bottom" /><br />
-        <p>name : Sou Watanabe</p>
-        <p>handle : opera</p>
-        <p>job : Front End Developer, Illustrator</p>
-        <h4>敬意と感謝</h4>
-        <p>子供の頃からコンピュータが手元にあったこと</p>
-        <p>この時代と生んでくれた母と父に感謝します。</p>
+        <dl>
+          <dt>Name</dt>
+          <dd>Sou Watanabe</dd>
+          <br/>
+          <dt>HN</dt>
+          <dd>opera</dd>
+          <br/>
+          <dt>Country</dt>
+          <dd>Japan Tokyo</dd>
+          <br/>
+          <dt>Job</dt>
+          <dd>Front End Developer, Illustrator</dd>
+          <br/>
+          <dt>敬意と感謝</dt>
+          <dd>子供の頃からコンピュータが手元にあったこと</dd>
+          <dd>この時代と生んでくれた母と父に感謝します。</dd>
+        </dl>
       </main>
     </div>
   );

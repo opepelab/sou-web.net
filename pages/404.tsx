@@ -12,7 +12,7 @@ const NotFound: React.FC = () => {
             <h1>This page does not exist</h1>
                 <div className="triangle-bottom" />
                 <div>
-                    <Link href="/"><a className="pinkLinks">Go To Back</a></Link>
+                    <Link href="/"><a className="scale"><li>Go To Back</li></a></Link>
                 </div>
             </main>
         </div>
