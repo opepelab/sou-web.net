@@ -9,7 +9,7 @@ export default function BlogId({ blog }) {
     <div className="inblo">
       <Head>
         <title>{blog.title}</title>
-        <meta content={blog.description}/>
+        <meta name="description" content={blog.description} />
       </Head>
       <main>
         <h1 className={styles.h1}>{blog.title}</h1>
