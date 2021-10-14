@@ -1,4 +1,5 @@
-// + Pct for Under ピクチャーを内包
+import Link from 'next/link'
+
 const Footer: React.FC = () => {
     return (
         <div className="footer">
@@ -30,7 +31,7 @@ const Footer: React.FC = () => {
                         
 
                 </div>
-                <a className="black" href="/"><h6 className="inblo">Copyright © 2021 Sou/W. inc.</h6></a> 
+                <Link href="/"><a className="scale"><h6 className="inblo">Copyright © 2021 Sou/W. inc.</h6></a></Link>
             </footer>
         </div>
     );
