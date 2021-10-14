@@ -149,11 +149,11 @@ h3 {
 
 .PZoom-in:active {
   transform: scale(2);
-  pointer-events: none;
 }
 
 .cursorIn {
-  cursor: zoom-in;
+  cursor: Zoom-in;
+  user-select: none;
 }
 
 .pm {
