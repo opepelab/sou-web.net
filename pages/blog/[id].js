@@ -1,15 +1,20 @@
 import { client } from "../../libs/client";
 import Date from '../../components/date';
 import styles from './midasi.module.css';
+import Head from 'next/head';
 
 
 export default function BlogId({ blog }) {
   return (
     <div className="inblo">
+      <Head>
+        <title>{blog.title}</title>
+        <meta content={blog.description}/>
+      </Head>
       <main>
         <h1 className={styles.h1}>{blog.title}</h1>
         <div className={styles.Time2}><Date dateString={blog.publishedAt} /></div>
-        <div className="triangle-bottom" /><br />
+        <div className="triangle-bottom" />
         <div className={styles.BodyBlog} dangerouslySetInnerHTML={{__html: `${blog.body}`,}} />
       </main>
     </div>
