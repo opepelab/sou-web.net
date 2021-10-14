@@ -1,6 +1,7 @@
 html {
   font-size: 100%;
   overflow: scroll;
+  user-select: none;
 }
 body {
   font-family: "Sawarabi Gothic";
@@ -138,7 +139,7 @@ h3 {
 }
 
 .Zoom:hover {
-    transform: scale(1.18);
+    transform: scale(1.1);
     transition-duration: 0.2s;
   }
 
@@ -152,11 +153,7 @@ h3 {
   pointer-events: none;
 }
 
-.selectNone {
-  user-select: none;
-}
-
-.eventsNone {
+.eventsNone :hover {
   pointer-events: none;
 }
 
