@@ -152,9 +152,12 @@ h3 {
   pointer-events: none;
 }
 
+.selectNone {
+  user-select: none;
+}
+
 .cursorIn {
   cursor: Zoom-in;
-  user-select: none;
 }
 
 .pm {
