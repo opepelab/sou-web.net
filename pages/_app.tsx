@@ -6,7 +6,7 @@ import '../styles/mobile.css'
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }): JSX.Element => {
   return (
     <Layout>
-      <Component {...pageProps} />
+      <Component className="selectNone" {...pageProps} />
     </Layout>
   );
 }
