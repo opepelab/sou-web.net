@@ -30,10 +30,10 @@ dd {
 .basyo {
   z-index: -1;
   position: fixed;
-  opacity: 0.15;
-  left: 0%;
-  right: 0%;
-  bottom: -5px;
+  transform: scale(1.2);
+  opacity: 0.4;
+  left: 300px;
+  bottom: 45px;
 }
 
 .TopLogo {

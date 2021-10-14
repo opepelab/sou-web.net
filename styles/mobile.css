@@ -9,6 +9,10 @@ body {
  opacity: 0.8;
 }
 
+.basyo {
+  left: -100px;
+}
+
 
 button {
   border: none;
@@ -68,7 +72,7 @@ button {
 }
 
 .MenuList [aria-expanded='true'] {
-  z-index: 3;
+  z-index: 4;
   position: fixed;
   background-color: rgba(58, 73, 89, 0.8);
   left: 0%;
