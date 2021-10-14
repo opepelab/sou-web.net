@@ -12,22 +12,23 @@ const Contact: React.FC  = () => {
             <h1>Contact</h1>
                 <div className="triangle-bottom" />
                 <form action="https://formspree.io/f/xyylvaok" method="POST">
-                    <label htmlFor="name">
-                        Name
-                    </label><br/>
-                    <input type="text" name="name" aria-label="Name area" required />
-                    <label htmlFor="email">
-                        Mail
-                    </label>
-                    <input type="text" name="email" aria-label="Mail address area" required />
-                    <label htmlFor="massage">
-                        Message
-                    </label><br />
-                    <textarea name="massage" aria-label="Massage area" required />
-                    <br />
+                    <div>
+                        <label htmlFor="name">Name</label>
+                        <input type="text" name="name" aria-label="Name area" required />
+                    </div>
+                    <div className="margin10">
+                        <label htmlFor="email">Mail</label>
+                        <input type="text" name="email" aria-label="Mail address area" required />
+                    </div>
+                    <div className="margin10">
+                        <label htmlFor="massage">Message</label>
+                        <textarea name="massage" aria-label="Massage area" required />
+                    </div>
+                    <div className="margin16">
                     <button id="massageButton" type="submit">
                         Send mail
                     </button>
+                    </div>
                 </form>
             </main>
         </div>   

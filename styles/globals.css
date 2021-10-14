@@ -252,6 +252,14 @@ p:hover {
   margin: 0px;
 }
 
+.margin10 {
+  margin-top: 10px;
+}
+
+.margin16 {
+  margin: 16px;
+}
+
 .pinkLinks {
   color:rgb(255, 150, 150);
 }
@@ -323,6 +331,8 @@ textarea {
   width: 100px;
   height: 40px
 }
+
+
 
 
 
