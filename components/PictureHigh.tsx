@@ -9,7 +9,7 @@ const PictureHigh: React.FC = () => {
             <table width="3%" />
                 <img className="Maru Zoom" src="/images/orei.png" width={147} height={150} />
             <table width="3%" />
-            <ActiveLink href="/files" activeClassName="colorState">
+            <ActiveLink href="/paper" activeClassName="colorState">
                 <a><img className="Zoom" src="/images/feather.svg" width={70} height={70} /></a>
             </ActiveLink>
 

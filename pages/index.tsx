@@ -10,7 +10,7 @@ const Index: React.FC = () => {
       <main>
       <h1 className="TitleColor">Sou/W.</h1>
       <div className="triangle-bottom" />
-        <p>私のコンピュータサイエンスの活動内容や記録を載せています。</p>
+        <p>私たちの活動内容や記録を載せています。</p>
         <h2>プロフィール</h2>
         <p>性別 男性</p>
         <p>出身住まい 日本 東京都</p>
@@ -19,7 +19,7 @@ const Index: React.FC = () => {
         <p>十二支 戌年</p>
         <p>血液型 O型</p>
         <p>4タイプ 法則</p>
-        <p>趣味 読書 倫理</p>
+        <p>趣味 読書 倫理 ゲーム</p>
       </main>
     </div>
   );

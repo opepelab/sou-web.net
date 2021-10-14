@@ -5,12 +5,13 @@ const DevEnvi: React.FC = () => {
   return (
     <div className="inblo">
       <Head>
-        <title>envi - sou</title>
+        <title>environment - sou</title>
         <meta name="description" content="アクティブなコード"/>
       </Head>
       <main>
         <h1>Environment</h1>
-        <div className="triangle-bottom" /><br />
+        <div className="triangle-bottom" />
+        <p>私の環境</p>
         <h2>DESIGN</h2>
         <p>Wacom Cintiq Pro, Intuos SL</p>
         <p>PowerMate</p>

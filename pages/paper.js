@@ -8,11 +8,11 @@ export default function Home({ blog }) {
   return (
     <div className="inblo">
       <Head>
-        <title>Files - sou</title>
+        <title>paper - sou</title>
         <meta name="description" content="getStaticProps"/>
       </Head>
       <main>
-        <h1>Files</h1>
+        <h1>Paper</h1>
         <div className="triangle-bottom" />
         {blog.map((blog) => (
           <li key={blog.id}>
