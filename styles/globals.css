@@ -27,6 +27,14 @@ dd {
   margin: 0px;
 }
 
+.basyo {
+  z-index: -1;
+  position: fixed;
+  opacity: 0.16;
+  left: 0%;
+  right: 0%;
+  bottom: -5px;
+}
 
 .TopLogo {
   font-family: adobe-arabic, sans-serif;
@@ -38,7 +46,7 @@ dd {
   display: inline-block;
   white-space: nowrap;
   top: -18px;
-  left: -30px;
+  left: -40px;
 }
 
 a {
@@ -180,13 +188,13 @@ h3 {
 
 
 #pic {
-  z-index: 2;
+  z-index: 3;
   position: relative;
 }
 
 
 .flex-container {
-  z-index: 0;
+  z-index: 2;
   position: relative;
 	display: flex;
   align-items: center;
@@ -198,7 +206,7 @@ h3 {
 
 
 .footer {
-  z-index: 0;
+  z-index: 2;
   position: relative;
   left:0%;
   right: 0%;

@@ -1,5 +1,6 @@
 import React, { useState, ReactNode } from 'react';
 import StaticMeta from './StaticMeta'
+import Gazo from './Gazo'
 import Header from './Header'
 import Menu from './Menu'
 import PictureHigh from './PictureHigh'
@@ -15,6 +16,7 @@ const Layout: React.FC<Props> = ({ children }) => {
     return (
       <>
         <StaticMeta />
+        <Gazo />
         <Header open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />
         <PictureHigh />
