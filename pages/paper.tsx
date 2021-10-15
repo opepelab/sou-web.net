@@ -8,7 +8,7 @@ type Props = {
 }
 
 
-const Home: React.FC<Props> = ({ blog }) => {
+const Paper: React.FC<Props> = ({ blog }) => {
   return (
     <div className="inblo">
       <Head>
@@ -44,4 +44,4 @@ export async function getStaticProps () {
   };
 };
 
-export default Home;
+export default Paper;

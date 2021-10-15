@@ -20,7 +20,7 @@ const Id: React.FC<Props> = ({ blog }) => {
         <h1 className={styles.h1}>{blog.title}</h1>
         <div className={styles.Time2}><Date dateString={blog.publishedAt} /></div>
         <div className="triangle-bottom" />
-        <div className={styles.BodyBlog} dangerouslySetInnerHTML={{__html: `${blog.body}`,}} />
+        <div className={styles.BodyBlog} dangerouslySetInnerHTML={{__html: blog.body}} />
       </main>
     </div>
   );
