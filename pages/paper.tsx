@@ -7,10 +7,11 @@ import { GetStaticProps } from "next";
 type Props = {
   title: string;
   publishedAt: string;
+  blog: any;
 }
 
 
-const Home: React.FC<Props> = (props, blog) => {
+const Home: React.FC<Props> = ({blog}) => {
   return (
     <div className="inblo">
       <Head>
@@ -24,8 +25,8 @@ const Home: React.FC<Props> = (props, blog) => {
           <li key={blog.id}>
             <Link href={`/blog/${blog.id}`}>
               <div className="yohaku">
-                  <h2 className="h2List margin0 pinkLinks">{props.title}</h2>
-                  <div className="margin0 Time1"><Date dateString={props.publishedAt}/></div>
+                  <h2 className="h2List margin0 pinkLinks">{blog.title}</h2>
+                  <div className="margin0 Time1"><Date dateString={blog.publishedAt}/></div>
               </div>
             </Link>
           </li>

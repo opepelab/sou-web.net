@@ -14,21 +14,21 @@ type Props ={
   description: string;
   body: string;
   publishedAt: string;
+  blog: any;
 }
 
 
-const BlogId: React.FC<Props> = (props) => {
+const BlogId: React.FC<Props> = ({ blog }) => {
   return (
     <div className="inblo textLeft">
       <Head>
-        <title>{props.title} - sou</title>
-        <meta name="description" content={props.description} />
+        <title>{blog.title} - sou</title>
+        <meta name="description" content={blog.description} />
       </Head>
       <main>
-        <h1 className={styles.h1}>{props.title}</h1>
-        <div className={styles.Time2}><Date dateString={props.publishedAt} /></div>
+        <h1 className={styles.h1}>{blog.title}</h1>
         <div className="triangle-bottom" />
-        <div className={styles.BodyBlog} dangerouslySetInnerHTML={{__html: `${props.body}`,}} />
+        <div className={styles.BodyBlog} dangerouslySetInnerHTML={{__html: `${blog.body}`,}} />
       </main>
     </div>
   );
@@ -42,7 +42,7 @@ export const getStaticPaths: GetStaticPaths<Params> = async () => {
 };
 
 // データをテンプレートに受け渡す部分の処理を記述します
-export const getStaticProps = async (context: GetStaticPropsContext<Params>) => {
+export const getStaticProps  = async (context: GetStaticPropsContext<Params>) => {
   const id = context.params?.contentId
   const data = await client.get({ endpoint: "blog", contentId: id });
 
