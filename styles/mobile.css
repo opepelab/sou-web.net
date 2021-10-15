@@ -84,10 +84,6 @@ button {
   animation: 0.1s feed;
 }
 
-a#c2 :hover {
-  color: #47686E;
-}
-
 .TopLogo {
   position: fixed;
   left: 0%;

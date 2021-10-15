@@ -173,10 +173,6 @@ h3 {
   pointer-events: none;
 }
 
-.eventsNone {
-  pointer-events: none;
-}
-
 .cursorIn {
   cursor: Zoom-in;
 }

@@ -13,22 +13,22 @@ const Menu: React.FC<Props> = ({ open, setOpen }) => {
                     <div aria-expanded={open} onClick={() => setOpen(!open)}>
                         <div id="Pmoji">
                             <Link href="/about">
-                                <a id="c2">
+                                <a>
                                     <li className="tate">About</li>
                                 </a>
                             </Link>
                             <Link href="/environment">
-                                <a id="c2">
+                                <a>
                                     <li className="tate">Env</li>
                                 </a>
                             </Link>
                             <Link href="/picture">
-                                <a id="c2">
+                                <a>
                                     <li className="tate">Picture</li>
                                 </a>
                             </Link>
                             <Link href="/links">
-                                <a id="c2">
+                                <a>
                                     <li className="tate">Links</li>
                                 </a>
                             </Link>
