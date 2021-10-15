@@ -23,7 +23,7 @@ const Index: React.FC = () => {
           <dt>4タイプ </dt>
           <dd>法則</dd><br/>
           <dt>趣味</dt>
-          <dd>趣味 読書 倫理 ゲーム</dd>
+          <dd>読書 倫理 ゲーム</dd>
         </dl>
       </main>
     </div>
