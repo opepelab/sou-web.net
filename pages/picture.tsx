@@ -4,8 +4,8 @@ const Picture: React.FC = () => {
   return (
     <div id="pic" className="inblo">
       <Head>
-        <title>artwork - sou</title>
-        <meta name="description" content="アクティブなコード"/>
+        <title>picture - sou</title>
+        <meta name="description" content="イラスト"/>
       </Head>
       <main>
         <h1>Picture</h1>

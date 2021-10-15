@@ -9,7 +9,7 @@ export default function Home({ blog }) {
     <div className="inblo">
       <Head>
         <title>paper - sou</title>
-        <meta name="description" content="getStaticProps"/>
+        <meta name="description" content="ブログ"/>
       </Head>
       <main>
         <h1>Paper</h1>

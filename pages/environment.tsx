@@ -6,7 +6,7 @@ const DevEnvi: React.FC = () => {
     <div className="inblo textLeft">
       <Head>
         <title>environment - sou</title>
-        <meta name="description" content="アクティブなコード"/>
+        <meta name="description" content="環境"/>
       </Head>
       <main>
         <h1>Design</h1>

@@ -5,7 +5,7 @@ const Index: React.FC = () => {
     <div className="inblo textLeft">
       <Head>
         <title>sou</title>
-        <meta name="description" content="トップページ"/>
+        <meta name="description" content="トップ"/>
       </Head>
       <main>
         <h1 className="TitleColor">Sou/W.</h1>

@@ -6,7 +6,7 @@ const About: React.FC = () => {
     <div className="inblo textLeft">
       <Head>
         <title>about - sou</title>
-        <meta name="description" content="彼について"/>
+        <meta name="description" content="私について"/>
       </Head>
       <main>
         <h1>About</h1>
