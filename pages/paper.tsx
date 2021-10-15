@@ -2,9 +2,15 @@ import Link from "next/link";
 import { client } from "../libs/client";
 import Date from '../components/date';
 import Head from 'next/head';
+import { GetStaticProps } from "next";
+
+type Props = {
+  title: string;
+  publishedAt: string;
+}
 
 
-export default function Home({ blog }) {
+const Home: React.FC<Props> = (props, blog) => {
   return (
     <div className="inblo">
       <Head>
@@ -14,12 +20,12 @@ export default function Home({ blog }) {
       <main>
         <h1>Paper</h1>
         <div className="triangle-bottom" />
-        {blog.map((blog) => (
+        {blog.map((blog: any) => (
           <li key={blog.id}>
             <Link href={`/blog/${blog.id}`}>
               <div className="yohaku">
-                  <h2 className="h2List margin0 pinkLinks">{blog.title}</h2>
-                  <div className="margin0 Time1"><Date dateString={blog.publishedAt}/></div>
+                  <h2 className="h2List margin0 pinkLinks">{props.title}</h2>
+                  <div className="margin0 Time1"><Date dateString={props.publishedAt}/></div>
               </div>
             </Link>
           </li>
@@ -30,8 +36,8 @@ export default function Home({ blog }) {
 }
 
 // データをテンプレートに受け渡す部分の処理を記述します
-export const getStaticProps = async () => {
-  const data = await client.get({ endpoint: "blog" });
+export const getStaticProps: GetStaticProps = async () => {
+  const data: any = await client.get({ endpoint: "blog" });
 
   return {
     props: {
@@ -39,3 +45,5 @@ export const getStaticProps = async () => {
     },
   };
 };
+
+export default Home;
