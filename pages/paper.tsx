@@ -2,16 +2,13 @@ import Link from "next/link";
 import { client } from "../libs/client";
 import Date from '../components/date';
 import Head from 'next/head';
-import { GetStaticProps } from "next";
 
 type Props = {
-  title: string;
-  publishedAt: string;
   blog: any;
 }
 
 
-const Home: React.FC<Props> = ({blog}) => {
+const Home: React.FC<Props> = ({ blog }) => {
   return (
     <div className="inblo">
       <Head>
@@ -37,7 +34,7 @@ const Home: React.FC<Props> = ({blog}) => {
 }
 
 // データをテンプレートに受け渡す部分の処理を記述します
-export const getStaticProps: GetStaticProps = async () => {
+export async function getStaticProps () {
   const data: any = await client.get({ endpoint: "blog" });
 
   return {
