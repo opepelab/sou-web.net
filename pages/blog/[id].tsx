@@ -1,15 +1,28 @@
 import { client } from "../../libs/client";
-import Date from '../../components/date';
+import Date from '../../date';
 import styles from './midasi.module.css';
 import Head from 'next/head';
+import { GetStaticPaths } from "next";
 
 
 type Props = {
-  blog: any;
+  blog: {
+    body: string;
+    description: string;
+    publishedAt: string;
+    title: string;
+  }
 }
 
+type Content = {
+  id: number;
+  publishedAt: string;
+  title: string;
+  body: string;
+  description: string;
+}
 
-const Id: React.FC<Props> = ({ blog }) => {
+const Id = ({ blog }: Props) => {
   return (
     <div className="inblo textLeft">
       <Head>
@@ -26,10 +39,12 @@ const Id: React.FC<Props> = ({ blog }) => {
   );
 }
 
+
+
 // 静的生成のためのパスを指定します
-export async function getStaticPaths ()  {
-  const data: any = await client.get({ endpoint: "blog" });
-  const paths = data.contents.map((content: any) => `/blog/${content.id}`);
+export const getStaticPaths: GetStaticPaths<{ paths: string }> = async () => {
+  const data = await client.get<{ contents: Content[] }>({ endpoint: "blog" });
+  const paths = data.contents.map((content) => `/blog/${content.id}`);
   return { paths, fallback: false };
 };
 

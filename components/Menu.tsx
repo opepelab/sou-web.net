@@ -12,14 +12,14 @@ const Menu: React.FC<Props> = ({ open, setOpen }) => {
             {/* 表示させとくから先に書く次のコードで新たに上書きして真偽値を書き換えて描写 */}
                     <div aria-expanded={open} onClick={() => setOpen(!open)}>
                         <div id="Pmoji">
-                            <Link href="/about">
+                            <Link href="/detail">
                                 <a>
-                                    <li className="tate">About</li>
+                                    <li className="tate">Detail</li>
                                 </a>
                             </Link>
-                            <Link href="/environment">
+                            <Link href="/links">
                                 <a>
-                                    <li className="tate">Env</li>
+                                    <li className="tate">Links</li>
                                 </a>
                             </Link>
                             <Link href="/picture">
@@ -27,9 +27,9 @@ const Menu: React.FC<Props> = ({ open, setOpen }) => {
                                     <li className="tate">Picture</li>
                                 </a>
                             </Link>
-                            <Link href="/links">
+                            <Link href="/environment">
                                 <a>
-                                    <li className="tate">Links</li>
+                                    <li className="tate">Env</li>
                                 </a>
                             </Link>
                         </div>

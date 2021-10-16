@@ -1,14 +1,15 @@
 import Link from "next/link";
 import { client } from "../libs/client";
-import Date from '../components/date';
+import Date from '../date';
 import Head from 'next/head';
 
-type Props = {
-  blog: any;
+type Content = {
+    publishedAt: string;
+    title: string;
+    id: number;
 }
 
-
-const Paper: React.FC<Props> = ({ blog }) => {
+const Paper = ({ blog }: any) => {
   return (
     <div className="inblo">
       <Head>
@@ -18,15 +19,11 @@ const Paper: React.FC<Props> = ({ blog }) => {
       <main>
         <h1>Paper</h1>
         <div className="triangle-bottom" />
-        {blog.map((blog: any) => (
-          <li key={blog.id}>
-            <Link href={`/blog/${blog.id}`}>
-              <div className="yohaku">
-                  <h2 className="h2List margin0 pinkLinks">{blog.title}</h2>
-                  <div className="margin0 Time1"><Date dateString={blog.publishedAt}/></div>
-              </div>
-            </Link>
-          </li>
+        {blog.map((blog: Content) => (
+          <dl key={blog.id}>
+                <dt><Date dateString={blog.publishedAt}/></dt>
+                <dd><Link href={`/blog/${blog.id}`}><a>{blog.title}</a></Link></dd>
+          </dl>
         ))}
       </main>
     </div>
@@ -35,7 +32,7 @@ const Paper: React.FC<Props> = ({ blog }) => {
 
 // データをテンプレートに受け渡す部分の処理を記述します
 export async function getStaticProps () {
-  const data: any = await client.get({ endpoint: "blog" });
+  const data = await client.get<{ contents: Content[] }>({ endpoint: "blog" });
 
   return {
     props: {

@@ -6,7 +6,7 @@ body {
 }
 
 .bgg {
- opacity: 0.8;
+ opacity: 1;
 }
 
 .basyo {
@@ -28,15 +28,15 @@ button {
   display: inline-block;
   z-index: 5;
   position: fixed;
-  right: 8px;
-  bottom: 7px;
+  right: 20px;
+  bottom: 20px;
 }
 .Line span {
   display: block;
   position: relative;
   height: 5px;
   width: 44px;
-  background-color: #000000;
+  background-color: rgb(215,228,255);
   border-radius: 4px;
 }
 
@@ -74,7 +74,7 @@ button {
 .MenuList [aria-expanded='true'] {
   z-index: 4;
   position: fixed;
-  background-color: rgba(58, 73, 89, 0.8);
+  background-color: rgba(16, 20, 29, 0.8);
   left: 0%;
   right: 0%;
   top: 0%;
@@ -100,12 +100,8 @@ button {
 
 
 .tate{
-  font-family: adobe-arabic, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #C2F2F2;
   white-space: nowrap;
-  font-size: 48px;
+  font-size: 24px;
   padding: 10px;
 }
 
