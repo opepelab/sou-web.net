@@ -31,7 +31,7 @@ const Paper = ({blog}: Props) => {
         {blog.map((props: All) => (
           <dl key={props.id}>
                 <dt><Date dateString={props.publishedAt}/></dt>
-                <dd><Link href={`/blog/${props.id}`}><a>{props.title}</a></Link></dd>
+                <dd className="redLinks"><Link href={`/blog/${props.id}`}><a>{props.title}</a></Link></dd>
           </dl>
         ))}
       </main>

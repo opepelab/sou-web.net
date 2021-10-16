@@ -10,7 +10,6 @@ const PictureHigh = () => {
             <ActiveLink href="/paper" activeClassName="colorState">
                 <a><img className="Zoom" src="/images/feather.svg" width={70} height={70} /></a>
             </ActiveLink>
-
         </div>
     );
 }
