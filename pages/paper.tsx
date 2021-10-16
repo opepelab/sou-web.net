@@ -8,7 +8,7 @@ import Head from 'next/head';
 export type Props = {
   blog: {
     blog: All;
-    map: any;
+    map: StringConstructor;
   }
 }
 

@@ -9,7 +9,7 @@ const Links = () => {
       </Head>
       <main>
         <h1>Links</h1>
-        <dd className="triangle-bottom" />
+        <div className="triangle-bottom" />
         <dl>
           <dd>
             <a className="redLinks" href="https://github.com/opepelab" target="_blank">
