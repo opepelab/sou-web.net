@@ -7,7 +7,6 @@ import Head from 'next/head';
 
 export type Props = {
   blog: {
-    blog: All;
     map: StringConstructor;
   }
 }
@@ -28,10 +27,10 @@ const Paper = ({blog}: Props) => {
       <main>
         <h1>Paper</h1>
         <div className="triangle-bottom" />
-        {blog.map((props: All) => (
-          <dl key={props.id}>
-                <dt><Date dateString={props.publishedAt}/></dt>
-                <dd className="redLinks"><Link href={`/blog/${props.id}`}><a>{props.title}</a></Link></dd>
+        {blog.map((blog: All) => (
+          <dl key={blog.id}>
+                <dt><Date dateString={blog.publishedAt}/></dt>
+                <dd className="redLinks"><Link href={`/blog/${blog.id}`}><a>{blog.title}</a></Link></dd>
           </dl>
         ))}
       </main>

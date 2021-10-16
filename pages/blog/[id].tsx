@@ -16,7 +16,6 @@ type Props = {
 
 type All = {
   id: string;
-  blog: Props;
 }
 
 
@@ -37,7 +36,7 @@ const Id = ({ blog }: Props | InferGetStaticPropsType<typeof getStaticProps>) =>
   );
 }
 
-export const getStaticPaths: GetStaticPaths<{paths: string}> = async () => {
+export const getStaticPaths: GetStaticPaths = async () => {
   const data = await client.get<{ contents: All[] }>({ endpoint: "blog" });
   const paths = data.contents.map((content) => `/blog/${content.id}`);
   return { 
@@ -49,7 +48,7 @@ export const getStaticPaths: GetStaticPaths<{paths: string}> = async () => {
 
 export const getStaticProps = async (context: { params: { id: string } }) => {
   const id = context.params.id;
-  const data = await client.get<All>({ endpoint: "blog", contentId: id });
+  const data = await client.get({ endpoint: "blog", contentId: id });
 
   return {
     props: {
