@@ -30,7 +30,7 @@ const Paper = ({blog}: Props) => {
         {blog.map((blog: All) => (
           <dl key={blog.id}>
                 <dt><Date dateString={blog.publishedAt}/></dt>
-                <dd className="redLinks"><Link href={`/blog/${blog.id}`}><a>{blog.title}</a></Link></dd>
+                <dd><Link href={`/blog/${blog.id}`}><a className="redLinks">{blog.title}</a></Link></dd>
           </dl>
         ))}
       </main>
