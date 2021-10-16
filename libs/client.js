@@ -4,5 +4,3 @@ export const client = createClient({
   serviceDomain: 'sou',
   apiKey: process.env.API_KEY,
 });
-
-export default client;
