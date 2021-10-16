@@ -1,4 +1,4 @@
-import { GetStaticPaths } from "next";
+import { GetStaticPaths, InferGetStaticPropsType } from 'next'
 import { client } from "../../libs/client";
 import Date from '../../date';
 import styles from './midasi.module.css';
@@ -22,7 +22,7 @@ type All = {
   description: string;
 }
 
-const Id = ({ blog }: Props) => {
+const Id = ({ blog }: Props | InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <div className="inblo textLeft">
       <Head>
