@@ -2,14 +2,23 @@ import Link from "next/link";
 import { client } from "../libs/client";
 import Date from '../date';
 import Head from 'next/head';
+import { GetStaticProps } from "next";
+
+export type Props = {
+  blog: {
+    publishedAt: string;
+    title: string;
+    id: string;
+  }
+}
 
 type Content = {
     publishedAt: string;
     title: string;
-    id: number;
+    id: string;
 }
 
-const Paper = ({ blog }: any) => {
+const Paper = ({blog}: any) => {
   return (
     <div className="inblo">
       <Head>
@@ -19,10 +28,10 @@ const Paper = ({ blog }: any) => {
       <main>
         <h1>Paper</h1>
         <div className="triangle-bottom" />
-        {blog.map((blog: Content) => (
-          <dl key={blog.id}>
-                <dt><Date dateString={blog.publishedAt}/></dt>
-                <dd><Link href={`/blog/${blog.id}`}><a>{blog.title}</a></Link></dd>
+        {blog.map((all: Content) => (
+          <dl key={all.id}>
+                <dt><Date dateString={all.publishedAt}/></dt>
+                <dd><Link href={`/blog/${all.id}`}><a>{all.title}</a></Link></dd>
           </dl>
         ))}
       </main>
@@ -30,8 +39,7 @@ const Paper = ({ blog }: any) => {
   );
 }
 
-// データをテンプレートに受け渡す部分の処理を記述します
-export async function getStaticProps () {
+export const getStaticProps: GetStaticProps = async () => {
   const data = await client.get<{ contents: Content[] }>({ endpoint: "blog" });
 
   return {

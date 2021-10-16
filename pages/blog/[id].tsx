@@ -4,7 +4,6 @@ import styles from './midasi.module.css';
 import Head from 'next/head';
 import { GetStaticPaths } from "next";
 
-
 type Props = {
   blog: {
     body: string;
@@ -14,12 +13,13 @@ type Props = {
   }
 }
 
-type Content = {
-  id: number;
+type all = {
+  id: string;
   publishedAt: string;
   title: string;
   body: string;
   description: string;
+  params: string;
 }
 
 const Id = ({ blog }: Props) => {
@@ -39,19 +39,18 @@ const Id = ({ blog }: Props) => {
   );
 }
 
-
-
-// 静的生成のためのパスを指定します
-export const getStaticPaths: GetStaticPaths<{ paths: string }> = async () => {
-  const data = await client.get<{ contents: Content[] }>({ endpoint: "blog" });
+export const getStaticPaths: GetStaticPaths<{paths: string}> = async () => {
+  const data = await client.get<{ contents: all[] }>({ endpoint: "blog" });
   const paths = data.contents.map((content) => `/blog/${content.id}`);
-  return { paths, fallback: false };
-};
+  return { 
+    paths, 
+    fallback: false 
+  }
+}
 
-// データをテンプレートに受け渡す部分の処理を記述します
-export async function getStaticProps(context: { params: { id: string } }) {
+export const getStaticProps = async (context: { params: { id: string } }) => {
   const id = context.params.id;
-  const data = await client.get({ endpoint: "blog", contentId: id });
+  const data = await client.get<all>({ endpoint: "blog", contentId: id });
 
   return {
     props: {
