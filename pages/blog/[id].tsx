@@ -1,25 +1,25 @@
+import { GetStaticPaths } from "next";
 import { client } from "../../libs/client";
 import Date from '../../date';
 import styles from './midasi.module.css';
 import Head from 'next/head';
-import { GetStaticPaths } from "next";
+
 
 type Props = {
   blog: {
-    body: string;
-    description: string;
     publishedAt: string;
     title: string;
+    body: string;
+    description: string;
   }
 }
 
-type all = {
+type All = {
   id: string;
   publishedAt: string;
   title: string;
   body: string;
   description: string;
-  params: string;
 }
 
 const Id = ({ blog }: Props) => {
@@ -40,7 +40,7 @@ const Id = ({ blog }: Props) => {
 }
 
 export const getStaticPaths: GetStaticPaths<{paths: string}> = async () => {
-  const data = await client.get<{ contents: all[] }>({ endpoint: "blog" });
+  const data = await client.get<{ contents: All[] }>({ endpoint: "blog" });
   const paths = data.contents.map((content) => `/blog/${content.id}`);
   return { 
     paths, 
@@ -48,9 +48,10 @@ export const getStaticPaths: GetStaticPaths<{paths: string}> = async () => {
   }
 }
 
+
 export const getStaticProps = async (context: { params: { id: string } }) => {
   const id = context.params.id;
-  const data = await client.get<all>({ endpoint: "blog", contentId: id });
+  const data = await client.get<All>({ endpoint: "blog", contentId: id });
 
   return {
     props: {

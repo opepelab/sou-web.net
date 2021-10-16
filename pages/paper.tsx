@@ -1,24 +1,26 @@
-import Link from "next/link";
+import { GetStaticProps } from "next";
 import { client } from "../libs/client";
 import Date from '../date';
+import Link from "next/link";
 import Head from 'next/head';
-import { GetStaticProps } from "next";
+
 
 export type Props = {
   blog: {
     publishedAt: string;
     title: string;
     id: string;
+    map: any;
   }
 }
 
-type Content = {
+type All = {
     publishedAt: string;
     title: string;
     id: string;
 }
 
-const Paper = ({blog}: any) => {
+const Paper = ({blog}: Props) => {
   return (
     <div className="inblo">
       <Head>
@@ -28,10 +30,10 @@ const Paper = ({blog}: any) => {
       <main>
         <h1>Paper</h1>
         <div className="triangle-bottom" />
-        {blog.map((all: Content) => (
-          <dl key={all.id}>
-                <dt><Date dateString={all.publishedAt}/></dt>
-                <dd><Link href={`/blog/${all.id}`}><a>{all.title}</a></Link></dd>
+        {blog.map((props: All) => (
+          <dl key={props.id}>
+                <dt><Date dateString={props.publishedAt}/></dt>
+                <dd><Link href={`/blog/${props.id}`}><a>{props.title}</a></Link></dd>
           </dl>
         ))}
       </main>
@@ -40,7 +42,7 @@ const Paper = ({blog}: any) => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const data = await client.get<{ contents: Content[] }>({ endpoint: "blog" });
+  const data = await client.get<{ contents: All[] }>({ endpoint: "blog" });
 
   return {
     props: {
