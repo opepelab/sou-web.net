@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Head from 'next/head';
 
-const NotFound: React.FC = () => {
+const NotFound = () => {
     return (
         <div className="inblo">
             <Head>

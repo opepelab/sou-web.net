@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 
-const Contact: React.FC  = () => {
+const Contact = () => {
     return (
         <div className="inblo">
             <Head>

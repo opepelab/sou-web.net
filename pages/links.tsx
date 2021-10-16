@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-const Links: React.FC = () => {
+const Links = () => {
   return (
     <div className="inblo">
       <Head>

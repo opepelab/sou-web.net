@@ -1,6 +1,6 @@
 import Head from 'next/head';
 // 静的なメタタグ管理
-const StaticMeta: React.FC = () => {
+const StaticMeta = () => {
     return (
         <Head>
             <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet" />

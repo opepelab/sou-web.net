@@ -16,11 +16,9 @@ type Props = {
 
 type All = {
   id: string;
-  publishedAt: string;
-  title: string;
-  body: string;
-  description: string;
+  blog: Props;
 }
+
 
 const Id = ({ blog }: Props | InferGetStaticPropsType<typeof getStaticProps>) => {
   return (

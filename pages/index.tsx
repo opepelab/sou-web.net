@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-const Index: React.FC = () => {
+const Index = () => {
   return (
     <div className="inblo">
       <Head>

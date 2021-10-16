@@ -1,12 +1,11 @@
 import Link from 'next/link'
-import React from 'react';
 
 type Props = {
     open: boolean;
     setOpen: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const Menu: React.FC<Props> = ({ open, setOpen }) => {
+const Menu = ({ open, setOpen }: Props) => {
     return (     
             <div className="MenuList">
             {/* 表示させとくから先に書く次のコードで新たに上書きして真偽値を書き換えて描写 */}

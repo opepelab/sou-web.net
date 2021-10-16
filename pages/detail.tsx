@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
 
-const About: React.FC = () => {
+const About = () => {
   return (
     <div className="inblo">
       <Head>

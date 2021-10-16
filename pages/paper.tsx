@@ -7,9 +7,7 @@ import Head from 'next/head';
 
 export type Props = {
   blog: {
-    publishedAt: string;
-    title: string;
-    id: string;
+    blog: All;
     map: any;
   }
 }

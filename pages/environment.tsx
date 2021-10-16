@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 
-const DevEnvi: React.FC = () => {
+const DevEnvi = () => {
   return (
     <div className="inblo">
       <Head>

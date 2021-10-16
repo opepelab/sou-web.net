@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-const Picture: React.FC = () => {
+const Picture = () => {
   return (
     <div id="pic" className="inblo">
       <Head>

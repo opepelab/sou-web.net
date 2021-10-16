@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-const Gazo: React.FC = () => {
+const Gazo = () => {
     return (
         <div className="basyo">
         <Image src="/images/Git.png" width={600} height={600} />
