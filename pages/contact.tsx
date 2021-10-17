@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Head from 'next/head'
 
 
-const Contact: React.FC = () => {
+const Contact: React.FC<HTMLTextAreaElement> = () => {
     return (
         <motion.div className="inblo"
         initial={{ opacity: 0 }}
@@ -25,7 +25,8 @@ const Contact: React.FC = () => {
                         <dd><input type="text" name="email" aria-label="Mail address area" required /></dd>
 
                         <dt><label htmlFor="massage">Message</label></dt>
-                        <dd><textarea name="massage" aria-label="Massage area" required /></dd>
+                        <dd><textarea name="massage" aria-label="Massage area" required 
+                        /></dd>
                         <dd><button id="massageButton" type="submit">Send mail</button></dd>
                     </dl>
                 </form>
