@@ -133,10 +133,9 @@ button {
 
 .marginTop {
   position: relative;
-  margin-top: -10px;
+  margin-top: -8px;
   margin-bottom: -20px;
-  margin-left: 20px;
-  left: -20%;
+  left: -22%;
   white-space: nowrap;
 }
 
