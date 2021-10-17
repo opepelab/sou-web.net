@@ -16,6 +16,15 @@ body {
   color: rgb(215,228,255);
 }
 
+.Home {
+  font-family: 'Herr Von Muellerhoff', cursive;
+  font-weight: 400;
+  font-size: 50px;
+  top: 200px;
+  margin-top: 180px;
+  border: none;
+}
+
 .textLeft {
   text-align: left;
 }
@@ -62,13 +71,6 @@ a.scale :hover {
   pointer-events: none;
 }
 
-.hideState {
-  transform: scale(0);
-  transition-duration: 0.15s;
-  pointer-events: none;
-}
-
-
 .bgg {
   z-index: 4;
   position: fixed;
@@ -86,7 +88,7 @@ a.scale :hover {
   display: inline-block;
   font-size: 14px;
   top: -6px;
-  left: -45px;
+  left: -40px;
 }
 
 
@@ -117,15 +119,18 @@ h3 {
   font-size: 16px;
 }
 
-.Title {
-  font-style: italic;
-}
-
 .triangle-bottom {
   display: inline-block;
   border-style: solid;
   border-width: 5px;
   border-color: rgb(215,228,255) transparent transparent transparent;
+}
+
+.triangle-top {
+  display: inline-block;
+  border-style: solid;
+  border-width: 5px;
+  border-color: transparent transparent rgb(215,228,255) transparent;
 }
 
 .Maru {
@@ -175,8 +180,9 @@ h3 {
   align-items: center;
   justify-content: center;
   grid-column-gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 
 
 
@@ -249,8 +255,6 @@ p:hover {
 .redLinks {
   color:#BC2E50;
 }
-
-
 
 .inblo {
   display: inline-block;

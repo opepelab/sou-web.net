@@ -86,9 +86,8 @@ button {
 
 .tate{
   white-space: nowrap;
-  font-size: 24px;
-  padding: 5px;
-  text-align: left;
+  font-size: 34px;
+  margin: 20px;
 }
 
 .border {
@@ -134,6 +133,12 @@ button {
 
 .marginTop {
   margin-top: 20px;
+}
+
+.logo {
+  z-index: 5;
+  border-radius: 50%;
+  position: relative;
 }
 
 }

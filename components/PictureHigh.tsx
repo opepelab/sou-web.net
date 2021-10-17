@@ -4,11 +4,13 @@ const PictureHigh: React.FC = () => {
     return (
         <div className="flex-container marginTop">
             <ActiveLink href="/contact" activeClassName="colorState">
-                <a><img className="Zoom" src="/images/letter.svg" width={70} height={70} /></a>
+                <a>Mail</a>
             </ActiveLink>
-            <table width="3%" />
+            <table width="2%" />
+            <img className="Maru" src="/images/jett.svg" width={70} height={70} />
+            <table width="2%" />
             <ActiveLink href="/blog" activeClassName="colorState">
-                <a><img className="Zoom" src="/images/feather.svg" width={70} height={70} /></a>
+                <a>Post</a>
             </ActiveLink>
         </div>
     );
