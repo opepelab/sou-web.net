@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link'
 
 
-const NotFound = () => {
+const NotFound: React.FC = () => {
     return (
         <motion.div className="inblo"
         initial={{ opacity: 0 }}

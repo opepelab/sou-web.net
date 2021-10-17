@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Head from 'next/head'
 
 
-const Index = () => {
+const Index: React.FC = () => {
   return (
     <motion.div className="inblo"
     initial={{ opacity: 0 }}

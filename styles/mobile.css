@@ -11,13 +11,13 @@ body {
 
 button {
   border: none;
-  background: rgba(16, 20, 29, 0.5);
+  background: #BC2E50;
   border-radius: 20%;
   padding-top: 34px;
   padding-bottom: 8px;
   padding-left: 8px;
   padding-right: 8px;
-  cursor: pointer;
+  opacity: 0.5;
 }
 
 .Line {
@@ -25,16 +25,15 @@ button {
   z-index: 5;
   position: fixed;
   right: 20px;
-  bottom: 200px;
+  top: 20px;
 }
 .Line span {
   display: block;
   position: relative;
   height: 2px;
   width: 30px;
-  background-color: #BC2E50;
+  background-color: #fff;
   border-radius: 4px;
-  opacity: 0.4;
 }
 
 .Line span:nth-of-type(1) {

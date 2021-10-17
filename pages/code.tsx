@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 
-const Architects = () => {
+const Architects: React.FC = () => {
   return (
     <div className="inblo">
       <Head>

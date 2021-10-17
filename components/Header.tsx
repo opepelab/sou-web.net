@@ -6,7 +6,7 @@ type Props = {
     setOpen: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const Header = ({ open, setOpen }: Props) => {
+const Header: React.FC<Props> = ({ open, setOpen }) => {
     return (
         <div>
             <header className="bgg">

@@ -1,6 +1,6 @@
 import ActiveLink from '../components/ActiveLink'
 
-const PictureHigh = () => {
+const PictureHigh: React.FC = () => {
     return (
         <div className="flex-container marginTop">
             <ActiveLink href="/contact" activeClassName="colorState">

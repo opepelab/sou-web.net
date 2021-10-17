@@ -1,9 +1,11 @@
-import { GetStaticPaths, InferGetStaticPropsType } from 'next'
+import { GetStaticPaths, GetStaticProps } from 'next'
 import { client } from "../../libs/client";
 import Date from '../../date';
 import styles from './midasi.module.css';
 import Head from 'next/head';
 import { motion } from "framer-motion";
+
+
 
 type ContentId = {
   id: string;
@@ -18,9 +20,9 @@ type Content = {
   }
 }
 
-const Id = ({ blog }: Content | InferGetStaticPropsType<typeof getStaticProps>) => {
+const Id: React.FC<Content> = ({ blog }) => {
   return (
-    <motion.div className="inblo" id="pic"
+    <motion.div className="inblo textLeft" id="pic"
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration: 1 }}
@@ -49,9 +51,22 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 
-export const getStaticProps = async (context: { params: ContentId }) => {
+export const getStaticProps: GetStaticProps = async (context) => {
+ 
+  if (!context.params) {
+    return {
+      notFound: true,
+    };
+  }
   const id = context.params.id;
-  const data = await client.get({ endpoint: "blog", contentId: id });
+
+
+  if (typeof id !== "string") {
+    return {
+      notFound: true,
+    }
+  }
+  const data = await client.get<Content>({ endpoint: "blog", contentId: id });
 
   return {
     props: {

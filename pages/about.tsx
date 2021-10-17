@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 
 
-const About = () => {
+const About: React.FC = () => {
   return (
     <motion.div className="inblo"
       initial={{ opacity: 0 }}

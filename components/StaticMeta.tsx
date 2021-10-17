@@ -1,6 +1,6 @@
 import Head from 'next/head';
 // 静的なメタタグ管理
-const StaticMeta = () => {
+const StaticMeta: React.FC = () => {
     return (
         <Head>
             <link rel="icon" href="/azur.ico" />

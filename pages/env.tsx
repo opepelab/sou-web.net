@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 
 
-const Env = () => {
+const Env: React.FC = () => {
   return (
     <motion.div className="inblo"
     initial={{ opacity: 0 }}

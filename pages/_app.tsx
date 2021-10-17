@@ -5,7 +5,7 @@ import '../styles/globals.css'
 import '../styles/mobile.css'
 
 
-const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
+const MyApp: React.FC<AppProps> = ({ Component, pageProps, router } ): JSX.Element => {
   return (
     <Layout>
       <AnimatePresence exitBeforeEnter>

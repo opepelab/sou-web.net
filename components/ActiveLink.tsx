@@ -1,9 +1,9 @@
 // Qiitaの@TK-Cさんより Git Hub@remy氏
+import React, { ReactNode, Children } from 'react';
 import { withRouter } from 'next/router'
 import Link from 'next/link'
-import React, { Children } from 'react'
 
-const ActiveLink = ({ router, children, ...props }: any) => {
+const ActiveLink = ({ router, children, ...props }: any | ReactNode): JSX.Element  => {
   const child = Children.only(children)
 
   let className = child.props.className || ''

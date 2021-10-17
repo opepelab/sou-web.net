@@ -19,7 +19,7 @@ type Content = {
     id: string;
 }
 
-const Blog = ({blog}: Map) => {
+const Blog: React.FC<Map> = ({blog}) => {
   return (
     <motion.div className="inblo"
     initial={{ opacity: 0 }}

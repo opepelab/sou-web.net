@@ -5,7 +5,7 @@ type Props = {
     setOpen: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const Menu = ({ open, setOpen }: Props) => {
+const Menu: React.FC<Props> = ({ open, setOpen }) => {
     return (     
             <div className="MenuList">
             {/* 表示させとくから先に書く次のコードで新たに上書きして真偽値を書き換えて描写 */}

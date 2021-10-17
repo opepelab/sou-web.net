@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Head from 'next/head'
 
 
-const Picture = () => {
+const Picture: React.FC = () => {
   return (
     <motion.div className="inblo" id="pic"
     initial={{ opacity: 0 }}
