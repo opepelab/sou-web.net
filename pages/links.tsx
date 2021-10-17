@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import Head from 'next/head'
 
-
 const Links: React.FC = () => {
   return (
     <motion.div className="inblo"

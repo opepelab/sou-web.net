@@ -86,7 +86,7 @@ button {
 
 .tate{
   white-space: nowrap;
-  font-size: 34px;
+  font-size: 24px;
   margin: 20px;
 }
 
@@ -117,9 +117,7 @@ button {
   }
 
 /* ブログとコンタクトのスケール再定義 */
-  .Zoom:hover {
-    transform: scale(1);
-  }
+
 
   input {
     width: 200px;
@@ -131,16 +129,28 @@ button {
     height: 300px;
   }
 
+  /* Topヘッダーモビ */
+
 .marginTop {
-  margin-top: 20px;
-}
-
-.logo {
-  z-index: 5;
-  border-radius: 50%;
+  margin-top: -10px;
+  margin-bottom: -20px;
+  margin-left: 35px;
   position: relative;
+  left: -24%;
+  white-space: nowrap;
 }
 
+.flex-container {
+  grid-gap: 20px;
+}
+
+.Maru {
+  transform: scale(0.6);
+} 
+
+.leftLow {
+  transform: translateX(-15px);
+}
 }
 
 

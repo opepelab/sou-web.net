@@ -11,7 +11,7 @@ const Menu: React.FC<Props> = ({ open, setOpen }) => {
             {/* 表示させとくから先に書く次のコードで新たに上書きして真偽値を書き換えて描写 */}
                     <div aria-expanded={open} onClick={() => setOpen(!open)}>
                         <div id="Pmoji">
-                            <Link href="/"><a><li className="tate border">Home</li></a></Link>
+                            <Link href="/"><a><li className="tate border redLinks">Home</li></a></Link>
                             <Link href="/about"><a><li className="tate">About</li></a></Link>
                             <Link href="/links"><a><li className="tate">Links</li></a></Link>
                             <Link href="/picture"><a><li className="tate">Picture</li></a></Link>
