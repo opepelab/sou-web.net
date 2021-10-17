@@ -27,11 +27,11 @@ const Blog: React.FC<Map> = ({blog}) => {
     transition={{ duration: 1 }}
     >
       <Head>
-        <title>blog - sou</title>
-        <meta name="description" content="ブログ"/>
+        <title>log - sou</title>
+        <meta name="description" content="ログ"/>
       </Head>
       <main>
-        <h1>Blog</h1>
+        <h1>log</h1>
         <div className="triangle-bottom" />
         {blog.map((props: Content) => (
           <dl key={props.id}>

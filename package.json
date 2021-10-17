@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "classnames": "^2.2.6",
+    "classnames": "^2.3.1",
     "date-fns": "^2.25.0",
     "framer-motion": "^4.1.17",
     "microcms-js-sdk": "^1.2.0",
@@ -18,15 +18,15 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@types/node": "^15.12.5",
+    "@types/node": "^16.11.1",
     "@types/nodemailer": "^6.4.4",
-    "@types/react": "^17.0.11",
-    "@types/react-dom": "^17.0.8",
-    "@typescript-eslint/eslint-plugin": "^4.28.1",
-    "@typescript-eslint/parser": "^4.28.1",
-    "eslint": "7.29.0",
-    "eslint-config-next": "11.0.1",
-    "typescript": "^4.3.4"
+    "@types/react": "^17.0.30",
+    "@types/react-dom": "^17.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "8.0.1",
+    "eslint-config-next": "11.1.2",
+    "typescript": "^4.4.4"
   },
   "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
   "main": ".eslintrc.js",

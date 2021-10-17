@@ -1,7 +1,7 @@
 // Qiitaの@TK-Cさんより Git Hub@remy氏
 import { withRouter } from 'next/router';
 import Link from 'next/link';
-import React, { Children, ReactNode } from 'react';
+import React, { Children } from 'react';
 
 const ActiveLink = ({ router, children, ...props }: any) => {
   const child = Children.only(children);

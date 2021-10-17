@@ -13,7 +13,7 @@ const Index: React.FC = () => {
         <meta name="description" content="トップ"/>
       </Head>
       <main>
-        <h1 className="Home">Sou Watanabe</h1>
+        <h1 className="Home">Sou Wab</h1>
       </main>
     </motion.div>
   );
