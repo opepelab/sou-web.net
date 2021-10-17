@@ -2,25 +2,21 @@
 @media screen and (max-width: 740px) {
 
 body {
-  width: 92%;
+  width: 90%;
 }
 
 .bgg {
- opacity: 1;
+ display: none;
 }
-
-.basyo {
-  left: -100px;
-}
-
 
 button {
   border: none;
-  background: transparent;
+  background: rgba(16, 20, 29, 0.5);
+  border-radius: 20%;
   padding-top: 34px;
   padding-bottom: 8px;
-  padding-left: 4px;
-  padding-right: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
   cursor: pointer;
 }
 
@@ -29,15 +25,16 @@ button {
   z-index: 5;
   position: fixed;
   right: 20px;
-  bottom: 20px;
+  bottom: 200px;
 }
 .Line span {
   display: block;
   position: relative;
-  height: 5px;
-  width: 44px;
-  background-color: rgb(215,228,255);
+  height: 2px;
+  width: 30px;
+  background-color: #BC2E50;
   border-radius: 4px;
+  opacity: 0.4;
 }
 
 .Line span:nth-of-type(1) {
@@ -49,21 +46,21 @@ button {
 }
 
 .Line [aria-expanded='true'] span:nth-of-type(1) { 
-  transform: rotate(45deg) translateY(3.5px) translateX(3.5px) scale(1.2);
-  transition-duration: 0.2s;
+  transform: rotate(45deg) translateY(2.5px) translateX(2.5px) scale(1.2);
+  transition-duration: 0.1s;
 }
 
 .Line [aria-expanded='true'] span:nth-of-type(2) { 
-  transform: rotate(-45deg) translateY(-3.5px) translateX(3.5px) scale(1.2);
-  transition-duration: 0.2s;
+  transform: rotate(-45deg) translateY(-2.5px) translateX(2.5px) scale(1.2);
+  transition-duration: 0.1s;
 }
 
 .Line [aria-expanded='false'] span:nth-of-type(1) { 
-  transition-duration: 0.2s;
+  transition-duration: 0.1s;
 }
 
 .Line [aria-expanded='false'] span:nth-of-type(2) { 
-  transition-duration: 0.2s;
+  transition-duration: 0.1s;
 }
 
 .MenuList {
@@ -75,24 +72,13 @@ button {
   z-index: 4;
   position: fixed;
   background-color: rgba(16, 20, 29, 0.8);
-  left: 0%;
-  right: 0%;
-  top: 0%;
+  left: 0px;
+  top: 0px;
   width: 100%;
-  height: 200%;
+  height: 100%;
   visibility: visible;
   animation: 0.1s feed;
 }
-
-.TopLogo {
-  position: fixed;
-  left: 0%;
-  right: 0%;
-  top: 20px;
-  width: 110px;
-  margin-left: auto;
-  margin-right: auto;
-  }
 
   .disableN {
     display:none;
@@ -102,7 +88,12 @@ button {
 .tate{
   white-space: nowrap;
   font-size: 24px;
-  padding: 10px;
+  padding: 5px;
+  text-align: left;
+}
+
+.border {
+  border-bottom: solid 1px rgb(215,228,255);
 }
 
 
@@ -132,11 +123,6 @@ button {
     transform: scale(1);
   }
 
-
-  p:hover {
-    transform: scale(1.1);
-  }
-
   input {
     width: 200px;
     height: 20px;
@@ -146,13 +132,10 @@ button {
     width: 280px;
     height: 300px;
   }
-  h1 {
-    width: 100%;
-  }
 
-  h2 {
-    width: 100%;
-  }
+.marginTop {
+  margin-top: 20px;
+}
 
 }
 

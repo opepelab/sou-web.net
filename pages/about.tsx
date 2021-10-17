@@ -5,11 +5,11 @@ const About = () => {
   return (
     <div className="inblo">
       <Head>
-        <title>detail - sou</title>
+        <title>about - sou</title>
         <meta name="description" content="私について"/>
       </Head>
       <main>
-        <h1>Detail</h1>
+        <h1>About</h1>
         <div className="triangle-bottom" />
         <dl>
           <dt>Name</dt>

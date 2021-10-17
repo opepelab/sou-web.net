@@ -1,6 +1,5 @@
 import React, { useState, ReactNode } from 'react';
 import StaticMeta from './StaticMeta'
-import Gazo from './Gazo'
 import Header from './Header'
 import Menu from './Menu'
 import PictureHigh from './PictureHigh'

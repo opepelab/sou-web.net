@@ -10,14 +10,16 @@ const Header = ({ open, setOpen }: Props) => {
     return (
         <div>
             <header className="bgg">
-                <ActiveLink href="/" activeClassName="hideState"><a className="scale TopLogo"><div>Sou/Wv.</div></a></ActiveLink>
                 <div className="disableN">
                     <nav>           
                         <ul>
-                            <ActiveLink href="/detail" activeClassName="colorState"><a className="scale"><li>Detail</li></a></ActiveLink>
+                            <ActiveLink href="/" activeClassName="colorState"><a className="scale"><div>Home</div></a></ActiveLink>
+                            <ActiveLink href="/about" activeClassName="colorState"><a className="scale"><li>About</li></a></ActiveLink>
                             <ActiveLink href="/links" activeClassName="colorState"><a className="scale"><li>Links</li></a></ActiveLink>
+                            <ActiveLink href="/contact" activeClassName="colorState"><a className="scale"><li>Contact</li></a></ActiveLink>
+                            <ActiveLink href="/blog" activeClassName="colorState"><a className="scale"><li>Blog</li></a></ActiveLink>
                             <ActiveLink href="/picture" activeClassName="colorState"><a className="scale"><li>Picture</li></a></ActiveLink>
-                            <ActiveLink href="/environment" activeClassName="colorState"><a className="scale"><li>Env</li></a></ActiveLink>
+                            <ActiveLink href="/env" activeClassName="colorState"><a className="scale"><li>Env</li></a></ActiveLink>
                         </ul>
                     </nav>  
                 </div>

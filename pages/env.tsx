@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 
-const DevEnvi = () => {
+const Env = () => {
   return (
     <div className="inblo">
       <Head>
@@ -12,15 +12,6 @@ const DevEnvi = () => {
         <h1>Env</h1>
         <div className="triangle-bottom" />
         <dl>
-          <h2>Design</h2>
-          <dt>Tablet</dt>
-          <dd>Cintiq Pro, Intuos SL</dd>
-          <dt>Software</dt>
-          <dd>Photosohp, SAI2, CLIPSTUDIO</dd>
-          <dt>Display</dt>
-          <dd>ColorEdge CS2410</dd>
-          <br/>
-          <h2>Computer</h2>
           <dt>OS</dt>
           <dd>Windows</dd>
           <dt>Version</dt>
@@ -39,4 +30,4 @@ const DevEnvi = () => {
   );
 }
 
-export default DevEnvi;
+export default Env;

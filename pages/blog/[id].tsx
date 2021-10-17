@@ -1,11 +1,15 @@
-import { GetStaticPaths, InferGetStaticPropsType } from 'next'
+import { GetStaticPaths, InferGetStaticPropsType, GetStaticProps } from 'next'
 import { client } from "../../libs/client";
 import Date from '../../date';
 import styles from './midasi.module.css';
 import Head from 'next/head';
 
 
-type Props = {
+type ContentId = {
+  id: string;
+}
+
+type Content = {
   blog: {
     publishedAt: string;
     title: string;
@@ -14,12 +18,7 @@ type Props = {
   }
 }
 
-type All = {
-  id: string;
-}
-
-
-const Id = ({ blog }: Props | InferGetStaticPropsType<typeof getStaticProps>) => {
+const Id = ({ blog }: Content | InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <div className="inblo textLeft">
       <Head>
@@ -37,7 +36,7 @@ const Id = ({ blog }: Props | InferGetStaticPropsType<typeof getStaticProps>) =>
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const data = await client.get<{ contents: All[] }>({ endpoint: "blog" });
+  const data = await client.get<{ contents: ContentId[] }>({ endpoint: "blog" });
   const paths = data.contents.map((content) => `/blog/${content.id}`);
   return { 
     paths, 
@@ -46,7 +45,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 
-export const getStaticProps = async (context: { params: { id: string } }) => {
+export const getStaticProps = async (context: { params: ContentId }) => {
   const id = context.params.id;
   const data = await client.get({ endpoint: "blog", contentId: id });
 

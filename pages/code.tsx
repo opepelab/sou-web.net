@@ -16,6 +16,13 @@ const Architects = () => {
       Solid State Drive : M.2 2280 NVMe Gen5x4 <br />
       Random Access Memory : DDR5 12,600MHz 128GBx4<br />
       Central Processing Unit : Intel</p>
+      <h2>Design</h2>
+          <dt>Tablet</dt>
+          <dd>Cintiq Pro, Intuos SL</dd>
+          <dt>Software</dt>
+          <dd>Photosohp, SAI2, CLIPSTUDIO</dd>
+          <dt>Display</dt>
+          <dd>ColorEdge CS2410</dd>
       </main>
     </div>
   );
