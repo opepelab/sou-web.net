@@ -1,12 +1,16 @@
 import {AppProps} from 'next/app'
 import Layout from '../components/layout'
+import { AnimatePresence } from "framer-motion";
 import '../styles/globals.css'
 import '../styles/mobile.css'
 
-const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
+
+const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
   return (
     <Layout>
-      <Component {...pageProps} />
+      <AnimatePresence exitBeforeEnter>
+      <Component {...pageProps} key={router.route} />
+      </AnimatePresence>
     </Layout>
   );
 }

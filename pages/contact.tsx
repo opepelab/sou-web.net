@@ -1,9 +1,14 @@
+import { motion } from "framer-motion";
 import Head from 'next/head'
 
 
 const Contact = () => {
     return (
-        <div className="inblo">
+        <motion.div className="inblo"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        >
             <Head>
                 <title>contact - sou</title>
                 <meta name="description" content="コンタクト"/>
@@ -25,7 +30,7 @@ const Contact = () => {
                     </dl>
                 </form>
             </main>
-        </div>   
+        </motion.div>   
     )
 }
 

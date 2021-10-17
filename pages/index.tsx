@@ -1,8 +1,14 @@
+import { motion } from "framer-motion";
 import Head from 'next/head'
+
 
 const Index = () => {
   return (
-    <div className="inblo">
+    <motion.div className="inblo"
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 1 }}
+    >
       <Head>
         <title>sou</title>
         <meta name="description" content="トップ"/>
@@ -23,7 +29,7 @@ const Index = () => {
           <dd>読書 倫理 ゲーム</dd>
         </dl>
       </main>
-    </div>
+    </motion.div>
   );
 }
 

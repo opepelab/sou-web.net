@@ -1,8 +1,10 @@
 import { GetStaticProps } from "next";
+import { motion } from "framer-motion";
 import { client } from "../libs/client";
 import Date from '../date';
-import Link from "next/link";
 import Head from 'next/head';
+import Link from "next/link";
+
 
 
 export type Map = {
@@ -19,7 +21,11 @@ type Content = {
 
 const Blog = ({blog}: Map) => {
   return (
-    <div className="inblo">
+    <motion.div className="inblo"
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 1 }}
+    >
       <Head>
         <title>blog - sou</title>
         <meta name="description" content="ブログ"/>
@@ -34,7 +40,7 @@ const Blog = ({blog}: Map) => {
           </dl>
         ))}
       </main>
-    </div>
+    </motion.div>
   );
 }
 

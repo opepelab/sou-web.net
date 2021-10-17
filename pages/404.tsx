@@ -1,9 +1,15 @@
-import Link from 'next/link'
+import { motion } from "framer-motion";
 import Head from 'next/head';
+import Link from 'next/link'
+
 
 const NotFound = () => {
     return (
-        <div className="inblo">
+        <motion.div className="inblo"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        >
             <Head>
                 <title>404 - sou</title>
                 <meta name="description" content="存在しないページ"/>
@@ -15,7 +21,7 @@ const NotFound = () => {
                     <Link href="/"><a className="scale"><li>Go To Back</li></a></Link>
                 </div>
             </main>
-        </div>
+        </motion.div>
     );
 }
 

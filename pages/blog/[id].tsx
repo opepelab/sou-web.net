@@ -1,9 +1,9 @@
-import { GetStaticPaths, InferGetStaticPropsType, GetStaticProps } from 'next'
+import { GetStaticPaths, InferGetStaticPropsType } from 'next'
 import { client } from "../../libs/client";
 import Date from '../../date';
 import styles from './midasi.module.css';
 import Head from 'next/head';
-
+import { motion } from "framer-motion";
 
 type ContentId = {
   id: string;
@@ -20,7 +20,11 @@ type Content = {
 
 const Id = ({ blog }: Content | InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
-    <div className="inblo textLeft">
+    <motion.div className="inblo" id="pic"
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 1 }}
+    >
       <Head>
         <title>{blog.title} - sou</title>
         <meta name="description" content={blog.description} />
@@ -31,7 +35,7 @@ const Id = ({ blog }: Content | InferGetStaticPropsType<typeof getStaticProps>) 
         <div className="triangle-bottom" />
         <div className={styles.BodyBlog} dangerouslySetInnerHTML={{__html: blog.body}} />
       </main>
-    </div>
+    </motion.div>
   );
 }
 

@@ -1,9 +1,15 @@
+import { motion } from "framer-motion";
 import Head from 'next/head'
+
 
 
 const Env = () => {
   return (
-    <div className="inblo">
+    <motion.div className="inblo"
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 1 }}
+    >
       <Head>
         <title>environment - sou</title>
         <meta name="description" content="環境"/>
@@ -26,7 +32,7 @@ const Env = () => {
           <dd>Vercel</dd>
         </dl>
       </main>
-    </div>
+    </motion.div>
   );
 }
 

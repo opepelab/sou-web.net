@@ -1,9 +1,15 @@
+import { motion } from "framer-motion";
 import Head from 'next/head';
+
 
 
 const About = () => {
   return (
-    <div className="inblo">
+    <motion.div className="inblo"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
       <Head>
         <title>about - sou</title>
         <meta name="description" content="私について"/>
@@ -25,7 +31,7 @@ const About = () => {
           この時代と生んでくれた母と父に感謝します。</dd>
         </dl>
       </main>
-    </div>
+    </motion.div>
   );
 }
 

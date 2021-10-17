@@ -1,8 +1,14 @@
+import { motion } from "framer-motion";
 import Head from 'next/head'
+
 
 const Picture = () => {
   return (
-    <div id="pic" className="inblo">
+    <motion.div className="inblo" id="pic"
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 1 }}
+    >
       <Head>
         <title>picture - sou</title>
         <meta name="description" content="イラスト"/>
@@ -14,7 +20,7 @@ const Picture = () => {
           <div className="PZoom-in margin10 border2 cursorIn"><img className="PM" src="/picture/haruka.png" width={255} height={360} /></div>  
           <div className="PZoom-in margin10 border2 cursorIn"><img className="PM" src="/picture/otoko.png" width={255} height={403} /></div> 
       </main>
-    </div>
+    </motion.div>
   );
 }
 
