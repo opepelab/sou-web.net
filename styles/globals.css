@@ -28,11 +28,11 @@ body {
   z-index: 2;
   position: relative;
 	display: flex;
-  align-items: center;
+  top: 12px;
   justify-content: center;
   white-space: nowrap;
   grid-gap: 50px;
-  top: 12px;
+
 }
 
 .Logo {
