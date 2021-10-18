@@ -7,7 +7,7 @@ type Props = {
 
 const Menu: React.FC<Props> = ({ open, setOpen }) => {
     return (     
-            <div className="MenuList inblo">
+            <div className="MenuList">
             {/* 表示させとくから先に書く次のコードで新たに上書きして真偽値を書き換えて描写 */}
                     <div aria-expanded={open} onClick={() => setOpen(!open)}>
                         <div id="Pmoji">
