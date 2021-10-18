@@ -49,11 +49,13 @@ body {
   font-weight: 400;
   font-style: italic;
   font-size: 50px;
-  position: fixed;
-  inset: 0;
-  margin: auto;
-  width: fit-content;
-  height: fit-content;
+  margin: 0;
+  position: absolute;          
+  top: 50%;
+  transform: translate(0, -50%);     
+  left: 0%;
+  right: 0%;
+  border: none;
 }
 
 .hikki {
@@ -140,8 +142,7 @@ h1 {
   white-space: nowrap;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 54px;
-
+  margin-top: 73px;
 }
 
 h2 {
