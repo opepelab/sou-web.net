@@ -5,7 +5,7 @@ import Head from 'next/head';
 
 const About: React.FC = () => {
   return (
-    <motion.div className="inblo footerFix"
+    <motion.div className="inblo textLeft footerFix"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -26,7 +26,7 @@ const About: React.FC = () => {
           <dd>Japan Tokyo</dd>
           <dt>Job</dt>
           <dd>Front End Developer, Illustrator</dd>
-          <dt>敬意と感謝</dt>
+          <dt>Thanks</dt>
           <dd>子供の頃からコンピュータが手元にあったこと<br/>
           この時代と生んでくれた母と父に感謝します。</dd>
         </dl>

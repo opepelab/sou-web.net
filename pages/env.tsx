@@ -5,7 +5,7 @@ import Head from 'next/head'
 
 const Env: React.FC = () => {
   return (
-    <motion.div className="inblo footerFix"
+    <motion.div className="inblo textLeft footerFix"
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration: 1 }}

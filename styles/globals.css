@@ -70,6 +70,7 @@ body {
 
 dt {
   font-size: 10px;
+  margin-bottom: -5px;
 }
 dd {
   margin-left: 0px;
@@ -127,7 +128,7 @@ a.scale :hover {
   display: inline-block;
   font-size: 14px;
   top: -6px;
-  left: -40px;
+  left: -32px;
 }
 
 
