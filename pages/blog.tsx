@@ -21,7 +21,7 @@ type Content = {
 
 const Blog: React.FC<Map> = ({blog}) => {
   return (
-    <motion.div className="inblo"
+    <motion.div className="inblo footerFix"
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration: 1 }}

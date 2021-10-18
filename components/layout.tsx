@@ -2,7 +2,8 @@ import React, { useState, ReactNode } from 'react';
 import StaticMeta from './StaticMeta'
 import Header from './Header'
 import Menu from './Menu'
-import PictureHigh from './PictureHigh'
+import Logo from './Logo'
+import NextText from './NextText'
 import Footer from './Footer'
 
 type Props = {
@@ -15,11 +16,13 @@ const Layout: React.FC<Props> = ({ children }) => {
     return (
       <>
         <StaticMeta />
+        <Logo />
         <Header open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />
-        <PictureHigh />
+        <NextText />
         { children }
         <Footer />
+
       </>
     );
 }

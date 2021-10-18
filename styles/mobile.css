@@ -13,8 +13,8 @@ button {
   border: none;
   background: #BC2E50;
   border-radius: 20%;
-  padding-top: 34px;
-  padding-bottom: 8px;
+  padding-top: 31px;
+  padding-bottom: 5px;
   padding-left: 8px;
   padding-right: 8px;
   opacity: 0.5;
@@ -24,14 +24,14 @@ button {
   display: inline-block;
   z-index: 5;
   position: fixed;
-  right: 20px;
-  top: 20px;
+  right: 14px;
+  top: 14px;
 }
 .Line span {
   display: block;
   position: relative;
   height: 2px;
-  width: 30px;
+  width: 24px;
   background-color: #fff;
   border-radius: 4px;
 }
@@ -131,24 +131,25 @@ button {
 
   /* Topヘッダーモビ */
 
-.marginTop {
-  position: relative;
-  margin-top: -8px;
-  margin-bottom: -20px;
-  left: -22%;
-  white-space: nowrap;
+h1 {
+  margin-top: 120px;
 }
 
 .flex-container {
+  position: absolute;
   grid-gap: 20px;
+  top: 14px;
+  left: 72px;
 }
 
 .Maru {
-  transform: scale(0.6);
+  transform: scale(0.8);
 } 
 
-.leftLow {
-  transform: translateX(-15px);
+.Logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 }
 

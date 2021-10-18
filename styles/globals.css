@@ -1,5 +1,5 @@
 html {
-  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
   overflow: scroll;
   user-select: none;
 }
@@ -10,41 +10,61 @@ body {
   margin-right: auto;
   margin-left: auto;
   width: 50%;
-  padding: 0.5em;
   font-size: 14px;
   background: rgb(24,29,41);
   color: rgb(215,228,255);
 }
 
+.textLeft {
+  text-align: left;
+}
+
 .marginTop {
-  margin-top: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .flex-container {
   z-index: 2;
+  position: relative;
 	display: flex;
   align-items: center;
   justify-content: center;
-  grid-gap: 4%;
-  transform: translateX(-20px);
+  white-space: nowrap;
+  grid-gap: 50px;
+  top: 12px;
+}
+
+.Logo {
+  position: relative;
+  top: 62px;
+  left: -130px;
+  width: 50px;
+  height: 50px;
 }
 
 
 .Home {
   font-family: 'Herr Von Muellerhoff', cursive;
   font-weight: 400;
+  font-style: italic;
   font-size: 50px;
-  top: 200px;
-  margin-top: 100%;
-  margin-bottom: 100%;
-  border: none;
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+}
+
+.hikki {
+  font-family: 'Herr Von Muellerhoff', cursive;
+  font-weight: 700;
+  font-style: italic;
 }
 
 
 
-.textLeft {
-  text-align: left;
-}
+
 
 dt {
   font-size: 10px;
@@ -120,6 +140,8 @@ h1 {
   white-space: nowrap;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 54px;
+
 }
 
 h2 {
@@ -191,13 +213,18 @@ h3 {
 }
 
 
-
-
-
-.footer {
-  z-index: 2;
-  position: relative;
+.footerFix {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
 }
+
+
+footer {
+  margin-top: auto;
+}
+
+
 
 
 
