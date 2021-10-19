@@ -32,7 +32,7 @@ const Contact: React.FC<HTMLTextAreaElement> = () => {
                 </form>
             </main>
         </motion.div>   
-    )
+    );
 }
 
 
