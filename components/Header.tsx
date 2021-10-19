@@ -15,9 +15,9 @@ const Header: React.FC<Props> = ({ open, setOpen }) => {
                         <ul>
                             <ActiveLink href="/" activeClassName="colorState"><a className="scale"><div>Home</div></a></ActiveLink>
                             <ActiveLink href="/about" activeClassName="colorState"><a className="scale"><li>About</li></a></ActiveLink>
-                            <ActiveLink href="/env" activeClassName="colorState"><a className="scale"><li>Env</li></a></ActiveLink>
                             <ActiveLink href="/links" activeClassName="colorState"><a className="scale"><li>Links</li></a></ActiveLink>
                             <ActiveLink href="/picture" activeClassName="colorState"><a className="scale"><li>Picture</li></a></ActiveLink>
+                            <ActiveLink href="/env" activeClassName="colorState"><a className="scale"><li>Env</li></a></ActiveLink>
                         </ul>
                     </nav>  
                 </div>
