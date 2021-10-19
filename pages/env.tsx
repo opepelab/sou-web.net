@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Head from 'next/head'
-
+import Layout from '../components/layout'
 
 
 const Env: React.FC = () => {
@@ -9,7 +9,7 @@ const Env: React.FC = () => {
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration: 1 }}
-    >
+    ><Layout home={false}>
       <Head>
         <title>environment - sou</title>
         <meta name="description" content="環境"/>
@@ -32,6 +32,7 @@ const Env: React.FC = () => {
           <dd>Vercel</dd>
         </dl>
       </main>
+      </Layout>
     </motion.div>
   );
 }

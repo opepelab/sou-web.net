@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Head from 'next/head';
-
+import Layout from '../components/layout'
 
 
 const About: React.FC = () => {
@@ -9,7 +9,7 @@ const About: React.FC = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-    >
+    ><Layout home={false}>
       <Head>
         <title>about - sou</title>
         <meta name="description" content="私について"/>
@@ -31,6 +31,7 @@ const About: React.FC = () => {
           この時代と生んでくれた母と父に感謝します。</dd>
         </dl>
       </main>
+      </Layout>
     </motion.div>
   );
 }

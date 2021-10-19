@@ -77,18 +77,6 @@ dd {
   margin-bottom: 20px;
 }
 
-.TopLogo {
-  font-weight: 400;
-  font-style: italic;
-  font-size: 20px;
-  z-index: 5;
-  position: relative;
-  display: inline-block;
-  white-space: nowrap;
-  top: -6px;
-  left: -230px;
-}
-
 a {
   color: rgb(215,228,255);
   text-decoration: none;
@@ -165,13 +153,6 @@ h3 {
   border-style: solid;
   border-width: 5px;
   border-color: rgb(215,228,255) transparent transparent transparent;
-}
-
-.triangle-top {
-  display: inline-block;
-  border-style: solid;
-  border-width: 5px;
-  border-color: transparent transparent rgb(215,228,255) transparent;
 }
 
 .Maru {

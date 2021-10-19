@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Head from 'next/head'
-
+import Layout from '../components/layout'
 
 const Contact: React.FC<HTMLTextAreaElement> = () => {
     return (
@@ -8,7 +8,7 @@ const Contact: React.FC<HTMLTextAreaElement> = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        >
+        ><Layout home={false}>
             <Head>
                 <title>contact - sou</title>
                 <meta name="description" content="コンタクト"/>
@@ -31,6 +31,7 @@ const Contact: React.FC<HTMLTextAreaElement> = () => {
                     </dl>
                 </form>
             </main>
+            </Layout>
         </motion.div>   
     );
 }

@@ -1,0 +1,67 @@
+@import "setting";
+@import "parts";
+@import "scrollbar";
+
+html {
+    -webkit-text-size-adjust: $r100;
+    overflow: scroll;
+    user-select: none;
+  }
+body {
+    font-family: $Google;
+    word-break: break-all;
+    text-align: center;
+    @include LRauto;
+    width: $r50;
+    font-size: 14px;
+    background: $BG;
+    color: $ST;
+}
+
+li {
+    list-style-type: none;
+  }
+  
+nav {
+    @include NAV;
+}
+
+dt {
+    font-size: $p10;
+    margin-bottom: -5px;
+}
+dd {
+    margin-left: $p0;
+    margin-bottom: $p20;
+}
+  
+a {
+    color: rgb(215,228,255);
+    text-decoration: none;
+}
+  
+a.scale :hover {
+    @include Hover;
+}
+
+p:hover {
+    @include Hover;
+  }
+
+h1 {
+    @include H1H2;
+    margin-top: 100px;
+  }
+  
+h2 {
+    @include H1H2;
+}
+  
+h3 {
+    @include H3;
+}
+
+@keyframes feed {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

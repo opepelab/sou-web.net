@@ -4,7 +4,7 @@ import { client } from "../libs/client";
 import Date from '../date';
 import Head from 'next/head';
 import Link from "next/link";
-
+import Layout from '../components/layout'
 
 
 export type Map = {
@@ -21,16 +21,16 @@ type Content = {
 
 const Blog: React.FC<Map> = ({blog}) => {
   return (
-    <motion.div className="textLeft"
+    <motion.div
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration: 1 }}
-    >
+    ><Layout home={false}>
       <Head>
         <title>log - sou</title>
         <meta name="description" content="ログ"/>
       </Head>
-      <main>
+      <main className="textLeft">
         <h1>log</h1>
         <div className="triangle-bottom" />
         {blog.map((props: Content) => (
@@ -40,6 +40,7 @@ const Blog: React.FC<Map> = ({blog}) => {
           </dl>
         ))}
       </main>
+      </Layout>
     </motion.div>
   );
 }

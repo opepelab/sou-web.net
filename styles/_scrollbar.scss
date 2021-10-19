@@ -1,0 +1,14 @@
+    /* スクロールバー変更 */
+    ::-webkit-scrollbar {
+        width: 4px;
+        height: $p0;
+      }
+    
+      ::-webkit-scrollbar-track {
+        background: linear-gradient(#eaeaea);
+    }
+    
+      ::-webkit-scrollbar-thumb {
+      background: #8b8b8b;
+      border-radius: 2px;
+    }

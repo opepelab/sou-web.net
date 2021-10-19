@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Head from 'next/head'
-
+import Layout from '../components/layout'
 
 const Picture: React.FC = () => {
   return (
@@ -8,7 +8,7 @@ const Picture: React.FC = () => {
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration: 1 }}
-    >
+    ><Layout home={false}>
       <Head>
         <title>picture - sou</title>
         <meta name="description" content="イラスト"/>
@@ -20,6 +20,7 @@ const Picture: React.FC = () => {
           <div className="PZoom-in margin10 border2 cursorIn"><img className="PM" src="/picture/haruka.png" width={255} height={360} /></div>  
           <div className="PZoom-in margin10 border2 cursorIn"><img className="PM" src="/picture/otoko.png" width={255} height={403} /></div> 
       </main>
+      </Layout>
     </motion.div>
   );
 }
