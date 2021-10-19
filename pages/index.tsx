@@ -8,6 +8,7 @@ const Index: React.FC = () => {
     animate={{ opacity: 1 }}
     transition={{ duration: 1 }}
     >
+
       <Head>
         <title>sou</title>
         <meta name="description" content="トップ"/>
