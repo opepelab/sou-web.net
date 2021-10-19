@@ -16,15 +16,14 @@ const Layout: React.FC<Props> = ({ children }) => {
     return (
       <>
         <StaticMeta />
-        <Logo />
         <Header open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />
+        <Logo />
         <NextText />
-        <span  className="inblo footerFix">
+        <div  className="inblo footerFix">
         { children }
-        </span>
+        </div>
         <Footer />
-
       </>
     );
 }

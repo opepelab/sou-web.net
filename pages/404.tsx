@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const NotFound: React.FC = () => {
     return (
-        <motion.div className="inblo footerFix"
+        <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}

@@ -9,7 +9,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps, router } ): JSX.Eleme
   return (
     <Layout>
       <AnimatePresence exitBeforeEnter>
-      <Component {...pageProps} key={router.route} />
+        <Component {...pageProps} key={router.route} />
       </AnimatePresence>
     </Layout>
   );
