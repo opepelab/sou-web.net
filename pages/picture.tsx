@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 const Picture: React.FC = () => {
   return (
-    <motion.div className="inblo footerFix" id="pic"
+    <motion.div
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration: 1 }}

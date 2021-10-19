@@ -208,13 +208,6 @@ h3 {
   border: thin solid black;
 }
 
-
-#pic {
-  z-index: 3;
-  position: relative;
-}
-
-
 .footerFix {
   display: flex;
   flex-direction: column;
@@ -225,8 +218,6 @@ h3 {
 footer {
   margin-top: auto;
 }
-
-
 
 
 

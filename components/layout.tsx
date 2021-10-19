@@ -20,7 +20,9 @@ const Layout: React.FC<Props> = ({ children }) => {
         <Header open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />
         <NextText />
+        <span  className="inblo footerFix">
         { children }
+        </span>
         <Footer />
 
       </>

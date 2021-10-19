@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 const Contact: React.FC<HTMLTextAreaElement> = () => {
     return (
-        <motion.div className="inblo footerFix"
+        <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
