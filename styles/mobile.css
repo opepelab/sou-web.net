@@ -24,8 +24,8 @@ button {
   display: inline-block;
   z-index: 5;
   position: fixed;
-  right: 14px;
-  top: 14px;
+  right: 15px;
+  top: 15px;
 }
 .Line span {
   display: block;
@@ -139,7 +139,7 @@ h1 {
   position: absolute;
   grid-gap: 20px;
   top: 14px;
-  left: 72px;
+  left: 74px;
 }
 
 .Maru {

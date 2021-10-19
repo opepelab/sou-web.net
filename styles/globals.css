@@ -329,6 +329,7 @@ input {
   height: 20px;
   background: #fffed5;
   border-radius: 5px;
+  margin-top: 5px;
 }
 
 textarea {
@@ -343,6 +344,7 @@ textarea {
   overflow: auto;
   background: #fffed5;
   border-radius: 5px;
+  margin-top: 5px;
 }
 
 #massageButton {
