@@ -27,7 +27,15 @@ const Env: React.FC = () => {
           <dd>Edge/Chrome/Safari</dd>
           <dt>Host</dt>
           <dd>Vercel</dd>
-        </dl>
+          <br/>
+        <h2>「 デザイン環境 」</h2>
+          <dt>Tablet</dt>
+          <dd>Cintiq Pro</dd>
+          <dt>Software</dt>
+          <dd>Photosohp. SAI2. CLIPSTUDIO</dd>
+          <dt>Display</dt>
+          <dd>ColorEdge CS2410</dd>
+          </dl>
       </main>
       </Layout>
     </motion.div>

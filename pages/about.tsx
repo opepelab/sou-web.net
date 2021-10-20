@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Layout from '../components/layout'
 import Head from 'next/head'
+import Link from 'next/link'
 
 
 const About: React.FC = () => {
@@ -27,6 +28,7 @@ const About: React.FC = () => {
           <dd>子供の頃からコンピュータが手元にあったこと<br/>
           この時代と生んでくれた母と父に感謝します。</dd>
         </dl>
+        <Link href="/special"><a>スペシャルサンクス</a></Link>
       </main>
       </Layout>
     </motion.div>
