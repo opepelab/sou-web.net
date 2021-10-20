@@ -10,7 +10,7 @@ const Design: React.FC = () => {
             <title>design - sou</title>
             <meta name="description" content="リンク"/>
         </Head>
-        <main>
+        <main className="CN">
             <h1>Design</h1>
             <dl>
                 <dt>Tablet</dt>
