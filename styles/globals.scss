@@ -1,13 +1,15 @@
 @import "setting";
 @import "parts";
-@import "scrollbar";
+@import "./PT/scrollbar";
 
 html {
     -webkit-text-size-adjust: $r100;
     overflow: scroll;
     user-select: none;
+    height: 80%;
   }
 body {
+    height: 80%;
     font-family: $Google;
     word-break: break-all;
     text-align: center;
@@ -28,7 +30,7 @@ nav {
 
 dt {
     font-size: $p10;
-    margin-bottom: -5px;
+    margin-bottom: -4px;
 }
 dd {
     margin-left: $p0;
@@ -50,7 +52,6 @@ p:hover {
 
 h1 {
     @include H1H2;
-    margin-top: 160px;
   }
   
 h2 {
@@ -65,3 +66,49 @@ h3 {
     from { opacity: 0.05; }
     to { opacity: 1; }
 }
+
+.footerFix {
+    display: flex;
+    flex-direction: column;
+    min-height: 88vh;
+  }
+  
+  
+  footer {
+    margin-top: auto;
+  }
+
+  .inblo {
+    display: $IB;
+  }
+
+  input {
+    border: none;
+    outline: none;
+    width: 300px;
+    height: $p20;
+    @include LRauto;
+    @include set1;
+  }
+  
+  textarea {
+    border: none;
+    outline: none;
+    width: 400px;
+    height: 300px;
+    resize: vertical;
+    overflow: auto;
+    @include LRauto;
+    @include set1;
+  }
+  
+  #massageButton {
+    background: none;
+    border: solid 2px;
+    color:rgb(215,228,255);
+    padding: $r0;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+  }
+  

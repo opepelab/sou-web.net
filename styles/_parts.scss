@@ -2,16 +2,19 @@
   text-align: left;
 }
 
+.CN {
+ @include CnString;
+}
+
 .marginTop {
   margin-top: $p10;
   margin-bottom: $p10;
 }
 
 .flex-container {
-  z-index: 2;
   position: relative;
 	display: flex;
-  top: 25px;
+  top: 38px;
   justify-content: center;
   white-space: nowrap;
   grid-gap: 120px;
@@ -34,11 +37,7 @@
   font-size: $p50;
   margin: 0;
   position: absolute;          
-  top: $r50;
-  transform: translate(0, -$r50);     
-  left: $r0;
-  right: $r0;
-  border: none;
+  @include CnString;
 }
 
 .hikki {
@@ -109,7 +108,6 @@
 
 .PZoom-in:active {
   transform: scale(2);
-  pointer-events: none;
 }
 
 .cursorIn {
@@ -124,16 +122,11 @@
   border: thin solid black;
 }
 
-.footerFix {
-  display: flex;
-  flex-direction: column;
-  min-height: 90vh;
+.margin50 {
+  margin-top:25%;
 }
 
 
-footer {
-  margin-top: auto;
-}
 
   
   
@@ -174,49 +167,12 @@ footer {
   color:#BC2E50;
 }
 
-.inblo {
-  display: $IB;
-}
-
 .Time1 {
   font-weight: 700;
   font-style: normal;
   font-size: $p10;
   color: rgb(215,228,255);
 }
-
-
-
-input {
-  border: none;
-  outline: none;
-  width: 300px;
-  height: $p20;
-  @include LRauto;
-  @include set1;
-}
-
-textarea {
-  border: none;
-  outline: none;
-  width: 400px;
-  height: 300px;
-  resize: vertical;
-  overflow: auto;
-  @include LRauto;
-  @include set1;
-}
-
-#massageButton {
-  background: none;
-  border: solid 2px;
-  color:rgb(215,228,255);
-  padding: $r0;
-  width: 100px;
-  height: 40px;
-  cursor: pointer;
-}
-
 
 
 

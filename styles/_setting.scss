@@ -21,7 +21,7 @@ $ST: rgb(215,228,255);
 @mixin set1 {
     background: #fffed5;
     border-radius: $p5;
-    margin-top: $p5;
+    margin-top: 6px;
 }
 
 @mixin LRauto {
@@ -46,6 +46,7 @@ $ST: rgb(215,228,255);
         display: flex;
           justify-content: center;
         grid-gap: $p50;
+        white-space: nowrap;
     }
 }
 
@@ -65,3 +66,10 @@ $ST: rgb(215,228,255);
     height: 150%;
     transition-duration: 1s;
 }
+
+@mixin CnString {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+

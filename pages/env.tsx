@@ -11,7 +11,7 @@ const Env: React.FC = () => {
         <title>environment - sou</title>
         <meta name="description" content="環境"/>
       </Head>
-      <main>
+      <main className="CN">
         <h1>Env</h1>
         <div className="triangle-bottom" />
         <dl>
@@ -22,7 +22,7 @@ const Env: React.FC = () => {
           <dt>IDE</dt>   
           <dd>Visual Studio Code</dd>
           <dt>language</dt>
-          <dd>TypeScript</dd>
+          <dd>TypeScript/Sass(Scss)</dd>
           <dt>Browser</dt>
           <dd>Edge/Chrome/Safari</dd>
           <dt>Host</dt>

@@ -29,7 +29,7 @@ const Blog: React.FC<Map> = ({blog}) => {
         <title>log - sou</title>
         <meta name="description" content="ログ"/>
       </Head>
-      <main className="textLeft">
+      <main className="textLeft CN">
         <h1>log</h1>
         <div className="triangle-bottom" />
         {blog.map((props: Content) => (

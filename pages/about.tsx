@@ -12,7 +12,7 @@ const About: React.FC = () => {
         <title>about - sou</title>
         <meta name="description" content="私について"/>
       </Head>
-      <main>
+      <main className="CN">
         <h1>About</h1>
         <div className="triangle-bottom" />
         <dl>
@@ -28,7 +28,7 @@ const About: React.FC = () => {
           <dd>子供の頃からコンピュータが手元にあったこと<br/>
           この時代と生んでくれた母と父に感謝します。</dd>
         </dl>
-        <Link href="/special"><a>スペシャルサンクス</a></Link>
+        <Link href="/special"><a className="scale">Special Thanks</a></Link>
       </main>
       </Layout>
     </motion.div>
