@@ -47,24 +47,20 @@ button {
 
 .Line [aria-expanded='true'] span:nth-of-type(1) { 
   transform: rotate(45deg) translateY(2.5px) translateX(2.5px) scale(1.2);
-  transition-duration: 0.5s;
-
+  transition-duration: 0.1s;
 }
 
 .Line [aria-expanded='true'] span:nth-of-type(2) { 
   transform: rotate(-45deg) translateY(-2.5px) translateX(2.5px) scale(1.2);
-  transition-duration: 0.5s;
-
+  transition-duration: 0.1s;
 }
 
 .Line [aria-expanded='false'] span:nth-of-type(1) { 
-  transition-duration: 0.5s;
-
+  transition-duration: 0.1s;
 }
 
 .Line [aria-expanded='false'] span:nth-of-type(2) { 
-  transition-duration: 0.5s;
-
+  transition-duration: 0.1s;
 }
 
 .MenuList  {
@@ -119,7 +115,7 @@ button {
   }
   
   .HZoom-in:active {
-    transform: scale(1.8) rotate(360deg);
+    transform: scale(1.5);
   }
 
 /* ブログとコンタクトのスケール再定義 */
