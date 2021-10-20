@@ -3,7 +3,7 @@
 }
 
 .CN {
- @include CnString;
+ @include CenString;
 }
 
 .marginTop {
@@ -37,7 +37,7 @@
   font-size: $p50;
   margin: 0;
   position: absolute;          
-  @include CnString;
+  @include CenString;
 }
 
 .hikki {

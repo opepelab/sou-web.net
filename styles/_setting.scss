@@ -67,9 +67,10 @@ $ST: rgb(215,228,255);
     transition-duration: 1s;
 }
 
-@mixin CnString {
+@mixin CenString {
     position: absolute;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
 }
 
