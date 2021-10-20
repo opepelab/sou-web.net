@@ -8,7 +8,7 @@ html {
     user-select: none;
   }
 body {
-    font-family: $Google;
+    @include Font1;
     word-break: break-all;
     text-align: center;
     @include LRauto;
@@ -85,32 +85,18 @@ h3 {
   }
 
   input {
-    border: none;
-    outline: none;
-    width: 300px;
-    height: $p20;
+    @include Input;
     @include LRauto;
-    @include set1;
+    @include BBMyellow;
   }
   
   textarea {
-    border: none;
-    outline: none;
-    width: 400px;
-    height: 300px;
-    resize: vertical;
-    overflow: auto;
+    @include Textarea;
     @include LRauto;
-    @include set1;
+    @include BBMyellow;
   }
   
   #massageButton {
-    background: none;
-    border: solid 2px;
-    color:rgb(215,228,255);
-    padding: $r0;
-    width: 100px;
-    height: 40px;
-    cursor: pointer;
+    @include Mbutton;
   }
   

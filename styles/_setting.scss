@@ -16,9 +16,15 @@ $IB: inline-block;
 $BG: rgb(24,29,41);
 $ST: rgb(215,228,255);
 
+@mixin Font1 {
+    font-family: "Sawarabi Gothic";
+}
 
+@mixin Font2 {
+    font-family: "Herr Von Muellerhoff";
+}
 
-@mixin set1 {
+@mixin BBMyellow {
     background: #fffed5;
     border-radius: $p5;
     margin-top: 6px;
@@ -62,8 +68,8 @@ $ST: rgb(215,228,255);
     background-color: rgba(16, 19, 29, 0.95);
     left: 0px;
     top: 0px;
-    width: 100%;
-    height: 150%;
+    width: $r100;
+    height: $r50*3;
     transition-duration: 1s;
 }
 
@@ -74,3 +80,28 @@ $ST: rgb(215,228,255);
     white-space: nowrap;
 }
 
+@mixin Input {
+    border: none;
+    outline: none;
+    width: $p50*6;
+    height: $p20;
+}
+
+@mixin Textarea {
+    border: none;
+    outline: none;
+    width: $p50*8;
+    height: $p50*6;
+    resize: vertical;
+    overflow: auto;
+}
+
+@mixin Mbutton {
+    background: none;
+    border: solid 2px;
+    color:rgb(215,228,255);
+    padding: $r0;
+    width: $p50*2;
+    height: $p20*2;
+    cursor: pointer;
+}

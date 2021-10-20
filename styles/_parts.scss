@@ -14,10 +14,10 @@
 .flex-container {
   position: relative;
 	display: flex;
-  top: 38px;
+  top: 20px;
   justify-content: center;
   white-space: nowrap;
-  grid-gap: 120px;
+  grid-gap: 100px;
 
 }
 
@@ -31,7 +31,7 @@
 
 
 .Home {
-  font-family: $Google0;
+  @include Font2;
   font-weight: 400;
   font-style: italic;
   font-size: $p50;
@@ -125,25 +125,6 @@
 
 .margin50 {
   margin-top:25%;
-}
-
-
-
-  
-  
-    /* スクロールバー変更 */
-  ::-webkit-scrollbar {
-    width: 4px;
-    height: $p0;
-  }
-
-  ::-webkit-scrollbar-track {
-    background: linear-gradient(#eaeaea);
-}
-
-  ::-webkit-scrollbar-thumb {
-  background: #8b8b8b;
-  border-radius: 2px;
 }
 
 .Line {
