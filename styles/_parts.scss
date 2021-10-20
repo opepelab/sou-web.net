@@ -103,12 +103,11 @@
 
 /* 写真のズーム */
 .PZoom-in {
-  transition-duration: 0.5s;
+  transition-duration: 1s;
 }
 
 .PZoom-in:active {
   transform: scale(2);
-  pointer-events: none;
 }
 
 .cursorIn {
