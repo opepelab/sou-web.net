@@ -22,7 +22,7 @@ const Header: React.FC<Props> = ({ open, setOpen }) => {
                     </nav>  
                 </div>
             </header>
-            <div className="Line PZoom-in">
+            <div className="Line HZoom-in">
                 <button aria-expanded={open} onClick={() => setOpen(!open)}
                     aria-label="Toggle mobile navigation menu">
                         <span />
