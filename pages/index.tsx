@@ -1,15 +1,11 @@
 import { motion } from "framer-motion";
-import Head from 'next/head'
 import Layout from '../components/layout'
+import Head from 'next/head'
 
 const Index: React.FC = () => {
   return (
-    <motion.div
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ duration: 1 }}
-    ><Layout home={true}>
-
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2 }}>
+      <Layout home={true}>
       <Head>
         <title>sou</title>
         <meta name="description" content="トップ"/>

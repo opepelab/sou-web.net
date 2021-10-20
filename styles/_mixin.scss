@@ -1,0 +1,36 @@
+@mixin set1 {
+    background: #fffed5;
+    border-radius: $p5;
+    margin-top: $p5;
+}
+
+@mixin LRauto {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@mixin H1H2 {
+    font-size: $p20;
+    border-bottom: 1px solid rgb(215,228,255);
+    white-space: nowrap;
+    @include LRauto;
+}
+
+@mixin H3 {
+    font-weight: 100;
+    font-size: 16px;
+}
+
+@mixin NAV {
+    ul{
+        display: flex;
+          justify-content: center;
+        grid-gap: $p50;
+    }
+}
+
+@mixin Hover {
+    transform: scale(1.01);
+    transition-duration: 0.1s;
+    animation: 1.1s feed;
+}

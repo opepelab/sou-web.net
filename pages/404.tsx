@@ -1,26 +1,25 @@
 import { motion } from "framer-motion";
-import Head from 'next/head';
+import Layout from '../components/layout'
+import Head from 'next/head'
 import Link from 'next/link'
 
 
 const NotFound: React.FC = () => {
     return (
-        <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        >
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2 }}>
+            <Layout home={true}>
             <Head>
                 <title>404 - sou</title>
                 <meta name="description" content="存在しないページ"/>
             </Head>
             <main>
-            <h1>This page does not exist</h1>
+            <h1>Don't sync does not</h1>
                 <div className="triangle-bottom" />
                 <div>
-                    <Link href="/"><a className="scale"><li>Go To Back</li></a></Link>
+                    <Link href="/"><a className="scale"><li>Return TOP</li></a></Link>
                 </div>
             </main>
+            </Layout>
         </motion.div>
     );
 }

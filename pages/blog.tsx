@@ -1,10 +1,12 @@
-import { GetStaticProps } from "next";
-import { motion } from "framer-motion";
 import { client } from "../libs/client";
-import Date from '../date';
-import Head from 'next/head';
-import Link from "next/link";
+import { GetStaticProps } from "next"
+import { motion } from "framer-motion"
 import Layout from '../components/layout'
+import Date from '../date'
+import Head from 'next/head'
+import Link from "next/link"
+
+
 
 
 export type Map = {
@@ -21,11 +23,8 @@ type Content = {
 
 const Blog: React.FC<Map> = ({blog}) => {
   return (
-    <motion.div
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ duration: 1 }}
-    ><Layout home={false}>
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2 }}>
+      <Layout home={false}>
       <Head>
         <title>log - sou</title>
         <meta name="description" content="ログ"/>

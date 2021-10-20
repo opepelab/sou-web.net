@@ -1,14 +1,12 @@
 import { motion } from "framer-motion";
-import Head from 'next/head'
 import Layout from '../components/layout'
+import Head from 'next/head'
+
 
 const Picture: React.FC = () => {
   return (
-    <motion.div
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ duration: 1 }}
-    ><Layout home={false}>
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2 }}>
+      <Layout home={false}>
       <Head>
         <title>picture - sou</title>
         <meta name="description" content="イラスト"/>
