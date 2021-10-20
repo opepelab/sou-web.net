@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Layout from '../components/layout'
 import Head from 'next/head'
-
+import Link from 'next/link'
 
 const Picture: React.FC = () => {
   return (
@@ -16,7 +16,8 @@ const Picture: React.FC = () => {
         <div className="triangle-bottom" />
           <div className="PZoom-in margin10 border2 cursorIn"><img className="PM" src="/picture/jett.png" width={255} height={266} /></div> 
           <div className="PZoom-in margin10 border2 cursorIn"><img className="PM" src="/picture/haruka.png" width={255} height={360} /></div>  
-          <div className="PZoom-in margin10 border2 cursorIn"><img className="PM" src="/picture/otoko.png" width={255} height={403} /></div> 
+          <div className="PZoom-in margin10 border2 cursorIn"><img className="PM" src="/picture/otoko.png" width={255} height={403} /></div>
+          <Link href="design"><a>Design</a></Link>
       </main>
       </Layout>
     </motion.div>

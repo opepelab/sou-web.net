@@ -40,7 +40,7 @@ a {
     text-decoration: none;
 }
   
-a.scale :hover {
+a.scale:hover {
     @include Hover;
 }
 

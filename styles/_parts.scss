@@ -11,17 +11,17 @@
   z-index: 2;
   position: relative;
 	display: flex;
-  top: 12px;
+  top: 25px;
   justify-content: center;
   white-space: nowrap;
-  grid-gap: $p50;
+  grid-gap: 120px;
 
 }
 
 .Logo {
   position: relative;
-  top: 62px;
-  left: -130px;
+  top: 60px;
+  left: 0px;
   width: $p50;
   height: $p50;
 }
