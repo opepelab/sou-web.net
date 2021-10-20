@@ -44,6 +44,10 @@ a.scale:hover {
     @include Hover;
 }
 
+.Special {
+color: rgb(255, 242, 170);
+}
+
 p:hover {
     @include Hover;
   }
