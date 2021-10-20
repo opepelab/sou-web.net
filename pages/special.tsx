@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 const Special: React.FC = () => {
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2 }}>
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
       <Layout home={false}>
         <Head>
           <title>育ててくれた人たち</title>

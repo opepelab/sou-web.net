@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const NotFound: React.FC = () => {
     return (
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2 }}>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
             <Layout home={true}>
             <Head>
                 <title>404 - sou</title>

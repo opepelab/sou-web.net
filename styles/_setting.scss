@@ -1,12 +1,12 @@
 $p0:  0px;
 $p5:  5px;
-$p10: 10px;
-$p20: 20px;
-$p50: 50px;
+$p10: $p5*2;
+$p20: $p10*2;
+$p50: $p10*5;
 
 $r0: 0%;
 $r50: 50%;
-$r100: 100%;
+$r100: $r50*2;
 
 $Google: "Sawarabi Gothic";
 $Google0: "Herr Von Muellerhoff";
@@ -69,7 +69,7 @@ $ST: rgb(215,228,255);
 
 @mixin CenString {
     position: absolute;
-    top: 50%;
+    top: 46%;
     transform: translate(-50%,-50%);
     white-space: nowrap;
 }

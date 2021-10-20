@@ -22,7 +22,7 @@ type Content = {
 
 const Id: React.FC<Content> = ({ blog }) => {
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2 }}>
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
       <Layout home={false}>
       <Head>
         <title>{blog.title} - sou</title>
