@@ -26,6 +26,7 @@
   @include CenString;
   animation:1.2s ease-in 1s infinite alternate-reverse  expansion;
   cursor: pointer;
+  width: $p200;
   font: {
   family: $Google0;
   weight: normal;
