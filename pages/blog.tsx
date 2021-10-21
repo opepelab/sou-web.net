@@ -9,7 +9,7 @@ import Link from "next/link"
 
 
 
-export type Map = {
+type Map = {
   blog: {
     map: StringConstructor;
   }
@@ -29,7 +29,7 @@ const Blog: React.FC<Map> = ({blog}) => {
         <title>log - sou</title>
         <meta name="description" content="ログ"/>
       </Head>
-      <main className="textLeft margin50">
+      <main className="textLeft margin25r">
         <h1>log</h1>
         <div className="triangle-bottom" />
         {blog.map((props: Content) => (

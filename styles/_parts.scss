@@ -6,49 +6,59 @@
  @include CenString;
 }
 
-.marginTop {
-  margin-top: $p10;
-  margin-bottom: $p10;
+.margin25r {
+  margin-top: $r25;
 }
 
 .flex-container {
-  position: relative;
-	display: flex;
-  top: 20px;
-  justify-content: center;
-  white-space: nowrap;
-  grid-gap: 100px;
-
+  display: none;
 }
 
 .Logo {
+  z-index: 4;
   position: relative;
-  top: 60px;
-  left: 0px;
-  width: $p50;
-  height: $p50;
+  top: -16px;
+  left: -300px;
 }
 
 
 .Home {
-  @include Font2;
-  font-weight: 400;
-  font-style: italic;
-  font-size: $p50;
-  margin: 0;
-  position: absolute;          
   @include CenString;
+  animation:1.2s ease-in 1s infinite alternate-reverse  expansion;
+  cursor: pointer;
+  font: {
+  family: $Google0;
+  weight: normal;
+  style: italic;
+  size: $p50;
+  }
 }
 
+.Home:hover {
+  transition-duration: 1s;
+  color: $FA;
+}
+
+@keyframes expansion {
+  0% { opacity: 0.1; }
+  100% { opacity: 1; }
+}
+
+
 .hikki {
-  font-family: $Google0;
-  font-weight: 700;
-  font-style: italic;
+  font: {
+  family: $Google0;
+  weight: 100;
+  style: italic;
+  }
+}
+
+.C {
+  font-size: $p10;
 }
 
 .colorState {
   opacity: 0.2;
-  transform: scale(1);
   transition-duration: 0.2s;
   pointer-events: none;
 }
@@ -56,10 +66,10 @@
 .bgg {
   z-index: 4;
   position: fixed;
-  background-color: rgb(24,29,41);
+  background-color: $BG;
   padding: 16px;
   width: $r100;
-  height: 36px;
+  height: 40px;
   top: $p0;
   left: $p0;
 }
@@ -68,15 +78,8 @@
   z-index: 5;
   position: relative;
   display: $IB;
-  top: -6px;
-  left: -38px;
+  top: -5px;
 }
-
-
-.MenuList {
-  display: none;
-}
-
 
 
 
@@ -100,40 +103,19 @@
   }
 
 
-
-/* 写真のズーム */
-.PZoom-in {
+@media screen and (min-width: 740px) {
+/* PC写真のズーム */
+.PCZoom-in {
   transition-duration: 1.5s;
 }
-
-.PZoom-in:active {
-  transform: scale(1.8);
-  pointer-events: none;
+.PCZoom-in:hover {
+  transform: scale(2);
 }
-
-.cursorIn {
-  cursor: Zoom-in;
-}
-
-.pointer {
-  cursor: pointer;
 }
 
 .PM {
   border: thin solid black;
 }
-
-.margin50 {
-  margin-top:25%;
-}
-
-.Line {
-  display: none;
-}
-
-
-
-
 
 
 
@@ -146,7 +128,11 @@
 }
 
 .redLinks {
-  color:#BC2E50;
+  color: $RP;
+}
+
+.Special {
+  color: $FA;
 }
 
 .Time1 {

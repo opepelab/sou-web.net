@@ -44,10 +44,6 @@ a.scale:hover {
     @include Hover;
 }
 
-.Special {
-color: rgb(255, 242, 170);
-}
-
 p:hover {
     @include Hover;
   }
@@ -98,5 +94,36 @@ h3 {
   
   #massageButton {
     @include Mbutton;
+  }
+  
+  .MenuList  {
+    visibility: collapse;
+  }
+  
+  .MenuList [aria-expanded='true'] {
+    @include Menu;
+    visibility: visible;
+    animation: 1s feed;
+  }
+  
+  .MenuList [aria-expanded='false'] {
+    @include Menu;
+    opacity: 0;
+    visibility: unset;
+    animation: 1s feed;
+  }
+  
+  #Pmoji {
+    position: fixed;
+    inset: 0%;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+  }
+  
+  .tate{
+    white-space: nowrap;
+    font-size: 24px;
+    margin: 20px;
   }
   

@@ -10,7 +10,7 @@ const Contact: React.FC<HTMLTextAreaElement> = () => {
                 <title>contact - sou</title>
                 <meta name="description" content="コンタクト"/>
             </Head>
-            <main className="margin50">
+            <main className="margin25r">
             <h1>Contact</h1>
                 <div className="triangle-bottom" />
                 <form action="https://formspree.io/f/xyylvaok" method="POST">

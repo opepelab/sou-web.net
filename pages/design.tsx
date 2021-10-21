@@ -12,6 +12,7 @@ const Design: React.FC = () => {
         </Head>
         <main className="CN">
             <h1>Design</h1>
+            <div className="triangle-bottom" />
             <dl>
                 <dt>Tablet</dt>
                 <dd>Cintiq Pro</dd>

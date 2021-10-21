@@ -1,19 +1,17 @@
 import ActiveLink from '../components/ActiveLink'
 import React from 'react';
 
-type Props = {
-    open: boolean;
-    setOpen: React.Dispatch<React.SetStateAction<boolean>>;
-};
 
-const Header: React.FC<Props> = ({ open, setOpen }) => {
+
+const Header: React.FC = () => {
     return (
         <div>
             <header className="bgg">
                 <div className="disableN">
                     <nav>           
                         <ul>
-                            <ActiveLink href="/" activeClassName="colorState"><a className="scale"><div>Home</div></a></ActiveLink>
+                            <ActiveLink href="/contact" activeClassName="colorState"><a className="scale"><li>Email</li></a></ActiveLink>
+                            <ActiveLink href="/blog" activeClassName="colorState"><a className="scale"><li>Post</li></a></ActiveLink>
                             <ActiveLink href="/about" activeClassName="colorState"><a className="scale"><li>About</li></a></ActiveLink>
                             <ActiveLink href="/links" activeClassName="colorState"><a className="scale"><li>Links</li></a></ActiveLink>
                             <ActiveLink href="/picture" activeClassName="colorState"><a className="scale"><li>Picture</li></a></ActiveLink>
@@ -22,13 +20,6 @@ const Header: React.FC<Props> = ({ open, setOpen }) => {
                     </nav>  
                 </div>
             </header>
-            <div className="Line HZoom-in">
-                <button aria-expanded={open} onClick={() => setOpen(!open)}
-                    aria-label="Toggle mobile navigation menu">
-                        <span />
-                        <span />
-                </button>
-            </div>
         </div>
     );
 }

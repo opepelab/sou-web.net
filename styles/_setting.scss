@@ -3,18 +3,24 @@ $p5:  5px;
 $p10: $p5*2;
 $p20: $p10*2;
 $p50: $p10*5;
+$p60: $p20*3;
 
 $r0: 0%;
-$r50: 50%;
+$r25: 25%;
+$r50: $r25*2;
 $r100: $r50*2;
 
 $Google: "Sawarabi Gothic";
 $Google0: "Herr Von Muellerhoff";
 
 $IB: inline-block;
+$NO: none;
 
 $BG: rgb(24,29,41);
 $ST: rgb(215,228,255);
+$FA: #ffaaaa;
+$RP: #BC2E50;
+
 
 @mixin Font1 {
     font-family: "Sawarabi Gothic";
@@ -51,7 +57,7 @@ $ST: rgb(215,228,255);
     ul{
         display: flex;
           justify-content: center;
-        grid-gap: $p50;
+        grid-gap: $p60;
         white-space: nowrap;
     }
 }

@@ -63,52 +63,34 @@ button {
   transition-duration: 0.1s;
 }
 
-.MenuList  {
-  visibility: collapse;
-  display: block;
-}
-
-.MenuList [aria-expanded='true'] {
-  @include Menu;
-  visibility: visible;
-  animation: 1s feed;
-}
-
-.MenuList [aria-expanded='false'] {
-  @include Menu;
-  opacity: 0;
-  visibility: unset;
-  animation: 1s feed;
-}
-
   .disableN {
     display:none;
   }
 
 
-.tate{
-  white-space: nowrap;
-  font-size: 24px;
-  margin: 20px;
-}
+
 
 .border {
   border-bottom: solid 1px rgb(215,228,255);
 }
 
 
-#Pmoji {
-    position: fixed;
-    inset: 0%;
-    margin: auto;
-    width: fit-content;
-    height: fit-content;
-}
+
 
 @keyframes feed {
   from { opacity: 0.05; }
     to { opacity: 1; }
   }
+
+  /* 写真のズーム */
+.SZoom-in {
+  transition-duration: 1.5s;
+}
+
+.SZoom-in:active {
+  transform: scale(1.8);
+  pointer-events: none;
+}
 
 /* ブログとコンタクトのスケール再定義 */
 
@@ -126,6 +108,7 @@ button {
 
 .flex-container {
   position: absolute;
+  display: flex;
   grid-gap: 20px;
   top: 24px;
   left: 74px;

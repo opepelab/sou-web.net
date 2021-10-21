@@ -11,7 +11,6 @@ const Index: React.FC = () => {
         <meta name="description" content="トップ"/>
       </Head>
       <main>
-        <h1 className="Home">Sou Web</h1>
       </main>
       </Layout>
     </motion.div>

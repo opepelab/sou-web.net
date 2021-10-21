@@ -3,7 +3,7 @@ import Link from 'next/link'
 type Props = {
     open: boolean;
     setOpen: React.Dispatch<React.SetStateAction<boolean>>;
-};
+}
 
 const Menu: React.FC<Props> = ({ open, setOpen }) => {
     return (     

@@ -10,7 +10,7 @@ const Special: React.FC = () => {
           <title>育ててくれた人たち</title>
           <meta name="description" content="私の習得ルート"/>
         </Head>
-        <main className="margin50">
+        <main className="margin25r">
         <h1 className="Special">Special Thanks</h1>
         <div className="triangle-bottom" />
         <h2>思い出をくれたゲームたち</h2>

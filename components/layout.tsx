@@ -1,7 +1,9 @@
 import React, { useState, ReactNode } from 'react';
 import StaticMeta from './StaticMeta'
 import Header from './Header'
+import MenuButton from './MenuButton'
 import Menu from './Menu'
+import Home from './Home'
 import Logo from './Logo'
 import NextText from './NextText'
 import Footer from './Footer'
@@ -18,10 +20,14 @@ const Layout: React.FC<Props> = ({ children, home }) => {
     return (
       <>
         <StaticMeta />
-        <Header open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />
-        {!home && <div><Logo /><NextText /></div>}
-        <div  className="inblo footerFix">
+        {!home && <div>
+        <Header />
+        <MenuButton open={open} setOpen={setOpen} />
+        <Logo /><NextText />
+        </div>}
+        {home && <div><Home open={open} setOpen={setOpen} /></div>}
+        <div className="inblo footerFix">
         { children }
         </div>
         <Footer />
