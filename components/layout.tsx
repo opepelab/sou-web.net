@@ -1,5 +1,4 @@
 import React, { useState, ReactNode } from 'react';
-import StaticMeta from './StaticMeta'
 import Header from './Header'
 import MenuButton from './MenuButton'
 import Menu from './Menu'
@@ -20,7 +19,6 @@ const Layout: React.FC<Props> = ({ children, nav, home }) => {
 
     return (
       <>
-        <StaticMeta />
         <Menu open={open} setOpen={setOpen} />
         {!nav && <div>
         <Header />
