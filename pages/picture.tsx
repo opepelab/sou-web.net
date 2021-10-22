@@ -6,7 +6,7 @@ import Link from 'next/link'
 const Picture: React.FC = () => {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-      <Layout home={false}>
+      <Layout nav={false} home={false}>
       <Head>
         <title>picture - sou</title>
         <meta name="description" content="イラスト"/>

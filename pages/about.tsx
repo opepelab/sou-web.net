@@ -7,7 +7,7 @@ import Link from 'next/link'
 const About: React.FC = () => {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-      <Layout home={false}>
+      <Layout nav={false} home={false}>
       <Head>
         <title>about - sou</title>
         <meta name="description" content="私について"/>

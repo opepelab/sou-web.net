@@ -6,7 +6,7 @@ import Head from 'next/head'
 const Env: React.FC = () => {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-      <Layout home={false}>
+      <Layout nav={false} home={false}>
       <Head>
         <title>environment - sou</title>
         <meta name="description" content="環境"/>

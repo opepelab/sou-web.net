@@ -7,18 +7,18 @@ import Link from 'next/link'
 const NotFound: React.FC = () => {
     return (
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-            <Layout home={true}>
+            <Layout nav={true} home={false}>
             <Head>
                 <title>404 - sou</title>
                 <meta name="description" content="存在しないページ"/>
             </Head>
-            <main>
-            <h1>Don't sync does not</h1>
-                <div className="triangle-bottom" />
-                <div>
-                    <Link href="/"><a className="scale"><li>Return TOP</li></a></Link>
-                </div>
-            </main>
+                <main className="CN">
+                    <h1>Does not don't sync</h1>
+                    <div className="triangle-bottom" />
+                    <dl>
+                    <Link href="/"><a className="redLinks scale">Return TOP</a></Link>
+                    </dl>
+                </main>
             </Layout>
         </motion.div>
     );

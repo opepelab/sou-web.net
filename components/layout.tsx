@@ -10,18 +10,19 @@ import Footer from './Footer'
 
 type Props = {
   children: ReactNode;
+  nav: boolean;
   home: boolean;
 };
 
 // すべてのコンポーネントをこのファイルが作動する starting components this file.
-const Layout: React.FC<Props> = ({ children, home }) => {
+const Layout: React.FC<Props> = ({ children, nav, home }) => {
   const [open, setOpen] = useState(false);
 
     return (
       <>
         <StaticMeta />
         <Menu open={open} setOpen={setOpen} />
-        {!home && <div>
+        {!nav && <div>
         <Header />
         <MenuButton open={open} setOpen={setOpen} />
         <Logo /><NextText />

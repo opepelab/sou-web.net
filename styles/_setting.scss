@@ -57,7 +57,7 @@ $RP: #BC2E50;
 @mixin NAV {
     ul{
         display: flex;
-          justify-content: center;
+        justify-content: center;
         grid-gap: $p60;
         white-space: nowrap;
     }
