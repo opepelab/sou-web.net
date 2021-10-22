@@ -26,7 +26,7 @@ const Env: React.FC = () => {
           <dt>Browser</dt>
           <dd>Edge/Chrome/Safari</dd>
           <dt>Host</dt>
-          <dd>Vercel/Cloudflare</dd>
+          <dd>Cloudflare</dd>
           </dl>
       </main>
       </Layout>
