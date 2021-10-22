@@ -14,9 +14,9 @@ const Picture: React.FC = () => {
       <main className="margin25r">
         <h1>Picture</h1>
         <div className="triangle-bottom" />
-          <div className="SZoom-in PCZoom-in margin10"><img className="PM" src="/picture/otoko.png" width={255} height={403} /></div>
-          <div className="SZoom-in PCZoom-in margin10"><img className="PM" src="/picture/jett.png" width={255} height={266} /></div> 
-          <div className="SZoom-in PCZoom-in margin10"><img className="PM" src="/picture/haruka.png" width={255} height={360} /></div>  
+          <div className="Zoom-in margin10"><img className="PM" src="/picture/otoko.png" width={255} height={403} /></div>
+          <div className="Zoom-in margin10"><img className="PM" src="/picture/jett.png" width={255} height={266} /></div> 
+          <div className="Zoom-in margin10"><img className="PM" src="/picture/haruka.png" width={255} height={360} /></div>  
           <Link href="design"><a className="scale Special">Design Env</a></Link>
       </main>
       </Layout>

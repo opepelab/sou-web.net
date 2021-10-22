@@ -1,6 +1,6 @@
 @import "setting";
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 739.98px) {
 
 body {
   width: 90%;
@@ -83,11 +83,11 @@ button {
   }
 
   /* 写真のズーム */
-.SZoom-in {
+.Zoom-in {
   transition-duration: 1.5s;
 }
 
-.SZoom-in:active {
+.Zoom-in:active {
   transform: scale(1.8);
   pointer-events: none;
 }

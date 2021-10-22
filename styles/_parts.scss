@@ -94,12 +94,12 @@
   }
 
 
-@media screen and (min-width: 741px) {
+@media screen and (min-width: 740px) {
 /* PC写真のズーム */
-.PCZoom-in {
+.Zoom-in {
   transition-duration: 1.5s;
 }
-.PCZoom-in:hover {
+.Zoom-in:hover {
   transform: scale(2);
 }
 }
