@@ -2,7 +2,7 @@ import { client } from "../libs/client";
 import { GetStaticProps } from "next"
 import { motion } from "framer-motion"
 import Layout from '../components/layout'
-import Date from '../date'
+import Date from '.././components/date'
 import Head from 'next/head'
 import Link from "next/link"
 
@@ -45,7 +45,7 @@ const Blog: React.FC<Map> = ({blog}) => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const data = await client.get<{ contents: Content[] }>({ endpoint: "blog" });
+  const data = await client.get<{ contents: Content }>({ endpoint: "blog" });
 
   return {
     props: {

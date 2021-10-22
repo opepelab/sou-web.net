@@ -1,6 +1,6 @@
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { client } from "../../libs/client";
-import Date from '../../date';
+import Date from '../../components/date';
 import styles from './midasi.module.scss';
 import Head from 'next/head';
 import { motion } from "framer-motion";
