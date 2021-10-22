@@ -4,12 +4,11 @@ import Document, { DocumentContext, Html, Head, Main, NextScript } from "next/do
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx)
-    return { ...initialProps }
-  }
+    return initialProps }
 
   render() {
     return (
-      <Html>
+      <Html lang="JA">
         <Head>
         <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic&display=optional" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=optional" rel="stylesheet" />
