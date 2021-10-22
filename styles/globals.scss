@@ -8,14 +8,16 @@ html {
     user-select: none;
   }
 body {
-    @include Font1;
+    font: {
+      family: $Google;
+      size: 14px;
+    }
     word-break: break-all;
     text-align: center;
-    @include LRauto;
-    width: $r50;
-    font-size: 14px;
     background: $BG;
     color: $ST;
+    width: $r50;
+    @include LRauto;
 }
 
 li {
