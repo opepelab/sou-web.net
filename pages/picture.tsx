@@ -17,7 +17,7 @@ const Picture: React.FC = () => {
           <div className="Zoom-in margin10"><img className="PM" src="/picture/otoko.png" width={255} height={403} /></div>
           <div className="Zoom-in margin10"><img className="PM" src="/picture/jett.png" width={255} height={266} /></div> 
           <div className="Zoom-in margin10"><img className="PM" src="/picture/haruka.png" width={255} height={360} /></div>  
-          <Link href="design"><a className="scale Special">Design Env</a></Link>
+          <Link href="design"><a className="scale Special">Design Environment</a></Link>
       </main>
       </Layout>
     </motion.div>
