@@ -24,8 +24,9 @@
 
 .Home {
   @include CenString;
-  animation:1.2s ease-in 1s infinite alternate-reverse  expansion;
+  animation:1.2s ease-in 1s infinite alternate-reverse feed;
   cursor: pointer;
+  border: none;
   width: $p200;
   font: {
   family: $Google0;
@@ -34,17 +35,6 @@
   size: $p50;
   }
 }
-
-.Home:hover {
-  transition-duration: 1s;
-  color: $FA;
-}
-
-@keyframes expansion {
-  0% { opacity: 0.1; }
-  100% { opacity: 1; }
-}
-
 
 .hikki {
   font: {
