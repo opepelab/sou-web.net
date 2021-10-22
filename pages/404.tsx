@@ -16,7 +16,7 @@ const NotFound: React.FC = () => {
                     <h1>Does not don't sync</h1>
                     <div className="triangle-bottom" />
                     <dl>
-                    <Link href="/"><a className="redLinks scale">Return</a></Link>
+                    <Link href="/"><a className="redLinks scale">Return 404 to TOP</a></Link>
                     </dl>
                 </main>
             </Layout>
