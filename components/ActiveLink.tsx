@@ -15,7 +15,7 @@ const ActiveLink: React.FC<Props> = ({ router, children, ...props }) => {
 
 
   let className: ReactNode = child;
-  if (router.pathname === props.href && props.activeClassName) {
+  if (router.pathname == props.href && props.activeClassName) {
     className = `${className} ${props.activeClassName}`;
   }
 
