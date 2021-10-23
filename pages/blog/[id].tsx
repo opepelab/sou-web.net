@@ -1,10 +1,10 @@
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { client } from "../../libs/client";
-import Date from '../../components/date';
+import Date from '../../components/Sys/date';
 import styles from './midasi.module.scss';
 import Head from 'next/head';
 import { motion } from "framer-motion";
-import Layout from '../../components/layout'
+import Layout from '../../components/Layout/layout'
 
 
 type ContentId = {
@@ -23,17 +23,17 @@ type Content = {
 const Id: React.FC<Content> = ({ blog }) => {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-      <Layout nav={false} home={false}>
-      <Head>
-        <title>{blog.title} - sou</title>
-        <meta name="description" content={blog.description} />
-      </Head>
-      <main className="textLeft">
-        <h1 className={styles.h1}>{blog.title}</h1>
-        <div className={styles.Time2}><Date dateString={blog.publishedAt} /></div>
-        <div className="triangle-bottom" />
-        <div className={styles.BodyBlog} dangerouslySetInnerHTML={{__html: blog.body}} />
-      </main>
+      <Layout>
+        <Head>
+          <title>{blog.title} - sou</title>
+          <meta name="description" content={blog.description} />
+        </Head>
+        <main className="textLeft">
+          <h1 className={styles.h1}>{blog.title}</h1>
+          <div className={styles.Time2}><Date dateString={blog.publishedAt} /></div>
+          <div className="triangle-bottom" />
+          <div className={styles.BodyBlog} dangerouslySetInnerHTML={{__html: blog.body}} />
+        </main>
       </Layout>
     </motion.div>
   );

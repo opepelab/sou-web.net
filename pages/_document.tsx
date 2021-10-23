@@ -10,9 +10,9 @@ class MyDocument extends Document {
     return (
       <Html lang="JA">
         <Head>
-        <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic&display=optional" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=optional" rel="stylesheet" />
-        <link rel="icon" href="/azur.ico" />
+          <link rel="icon" href="/azur.ico" />
+          <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff" rel="stylesheet" />
         </Head>
         <body>
           <Main />

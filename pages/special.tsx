@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import Layout from '../components/layout'
+import Layout from '../components/Layout/layout'
 import Head from 'next/head'
 
 const Special: React.FC = () => {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-      <Layout nav={false} home={false}>
+      <Layout>
         <Head>
           <title>育ててくれた人たち</title>
           <meta name="description" content="私の習得ルート"/>

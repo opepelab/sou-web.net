@@ -1,4 +1,4 @@
-import ActiveLink from './ActiveLink'
+import ActiveLink from '../Sys/ActiveLink'
 
 const NextText: React.FC = () => {
     return (

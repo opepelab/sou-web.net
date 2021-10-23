@@ -4,7 +4,8 @@ import '../styles/globals.scss'
 import '../styles/mobile.scss'
 import Head from 'next/head'
 
-const MyApp: React.FC<AppProps> = ({ Component, pageProps, router } ): JSX.Element => {
+
+const MyApp:React.FC<AppProps> = ({ Component, pageProps, router }): JSX.Element => {
   return (
     <>
       <Head>
@@ -17,4 +18,5 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps, router } ): JSX.Eleme
     </>
   );
 }
+
 export default MyApp;

@@ -1,7 +1,5 @@
-import ActiveLink from '../components/ActiveLink'
+import ActiveLink from '../Sys/ActiveLink'
 import React from 'react';
-
-
 
 const Header: React.FC = () => {
     return (
