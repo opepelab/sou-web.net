@@ -12,8 +12,6 @@ const Contact: React.FC<HTMLTextAreaElement> = () => {
                     <meta name="description" content="コンタクト"/>
                 </Head>
                 <main className="CN">
-                    <h1>Email</h1>
-                    <div className="triangle-bottom" />
                     <form action="https://formspree.io/f/xyylvaok" method="POST">
                         <dl>
                             <dt><label htmlFor="name">Name*</label></dt>
