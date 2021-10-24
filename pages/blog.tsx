@@ -6,9 +6,6 @@ import Date from '../components/Sys/date'
 import Head from 'next/head'
 import Link from "next/link"
 
-
-
-
 type Map = {
   blog: {
     map: StringConstructor;

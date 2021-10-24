@@ -4,7 +4,7 @@ type Props = {
     dateString: string;
 }
 
-export const Date: React.FC<Props> = ({ dateString }): JSX.Element => {
+export const Date: React.FC<Props> = ({ dateString }) => {
  const date: Date|string = parseISO(dateString)
  return <time dateTime={dateString}>{format(date, 'yyyy.MM.dd')}</time>
 }
