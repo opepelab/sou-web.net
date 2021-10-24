@@ -4,8 +4,8 @@ import Head from 'next/head'
 
 const Special: React.FC = () => {
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-      <Layout>
+    <Layout>
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
         <Head>
           <title>育ててくれた人たち</title>
           <meta name="description" content="私の習得ルート"/>
@@ -32,9 +32,9 @@ const Special: React.FC = () => {
           Solid State Drive : M.2 2280 NVMe Gen5x4 <br />
           Random Access Memory : DDR5 12,600MHz 128GBx4<br />
           Central Processing Unit : Intel @メモリさえあればなんでもいい</p>
-      </main>
-      </Layout>
-    </motion.div>
+        </main>
+      </motion.div>
+    </Layout>
   );
 }
 

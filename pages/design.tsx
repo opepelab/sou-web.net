@@ -4,8 +4,8 @@ import Head from 'next/head'
 
 const Design: React.FC = () => {
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-      <Layout>
+    <Layout>
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>      
         <Head>
             <title>design - sou</title>
             <meta name="description" content="リンク"/>
@@ -22,8 +22,8 @@ const Design: React.FC = () => {
             <dd>ColorEdge CS2410</dd>
           </dl>
         </main>
-      </Layout>
-    </motion.div>
+      </motion.div>
+    </Layout>
   );
 }
 

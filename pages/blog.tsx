@@ -20,8 +20,8 @@ type Content = {
 
 const Blog: React.FC<Map> = ({blog}) => {
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-      <Layout>
+    <Layout>
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
         <Head>
           <title>log - sou</title>
           <meta name="description" content="ログ"/>
@@ -36,8 +36,8 @@ const Blog: React.FC<Map> = ({blog}) => {
           </dl>
           ))}
         </main>
-      </Layout>
-    </motion.div>
+      </motion.div>
+    </Layout>
   );
 }
 

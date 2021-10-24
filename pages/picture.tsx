@@ -5,8 +5,8 @@ import Link from 'next/link'
 
 const Picture: React.FC = () => {
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-      <Layout>
+    <Layout>
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
         <Head>
           <title>picture - sou</title>
           <meta name="description" content="イラスト"/>
@@ -19,8 +19,8 @@ const Picture: React.FC = () => {
             <div className="Zoom-in margin10"><img className="PM" src="/picture/haruka.png" width={255} height={360} /></div>  
             <Link href="design"><a className="scale Special">Design Environment</a></Link>
         </main>
-      </Layout>
-    </motion.div>
+      </motion.div>
+    </Layout>
   );
 }
 

@@ -4,8 +4,8 @@ import Head from 'next/head'
 
 const Links: React.FC = () => {
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-      <Layout>
+    <Layout>
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
         <Head>
           <title>links - sou</title>
           <meta name="description" content="リンク"/>
@@ -22,8 +22,8 @@ const Links: React.FC = () => {
             <dd><a className="redLinks" href="https://opepelab.org/" target="_blank">Article(WordPress)</a></dd>
           </dl>
         </main>
-      </Layout>
-    </motion.div>
+      </motion.div>
+    </Layout>
   );
 }
 

@@ -17,7 +17,7 @@
 .Logo {
   z-index: 4;
   position: relative;
-  top: -16px;
+  top: 5px;
   left: -302px;
 }
 
@@ -50,7 +50,7 @@
 
 .colorState {
   opacity: 0.2;
-  transition-duration: 0.2s;
+  border-bottom: solid 2px;
   pointer-events: none;
 }
 
@@ -60,9 +60,13 @@
   background-color: $BG;
   padding: 16px;
   width: $r100;
-  height: 40px;
+  height: $p20;
   top: $p0;
   left: $p0;
+}
+
+.Line {
+  display: none;
 }
 
 .disableN {

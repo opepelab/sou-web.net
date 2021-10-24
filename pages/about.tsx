@@ -6,8 +6,8 @@ import Link from 'next/link'
 
 const About: React.FC  = () => {
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-      <Layout>
+    <Layout>
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
         <Head>
           <title>about - sou</title>
           <meta name="description" content="私について"/>
@@ -30,8 +30,8 @@ const About: React.FC  = () => {
           </dl>
           <Link href="/special"><a className="scale Special">Special Thanks</a></Link>
         </main>
-      </Layout>
-    </motion.div>
+      </motion.div>
+    </Layout>
   );
 }
 
