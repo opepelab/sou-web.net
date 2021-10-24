@@ -21,8 +21,8 @@ type Content = {
 
 const Id: React.FC<Content> = ({ blog }) => {
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-      <Layout>
+    <Layout>
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
         <Head>
           <title>{blog.title} - sou</title>
           <meta name="description" content={blog.description} />
@@ -33,8 +33,8 @@ const Id: React.FC<Content> = ({ blog }) => {
           <div className="triangle-bottom" />
           <div className={styles.BodyBlog} dangerouslySetInnerHTML={{__html: blog.body}} />
         </main>
-      </Layout>
-    </motion.div>
+      </motion.div>
+    </Layout>
   );
 }
 
