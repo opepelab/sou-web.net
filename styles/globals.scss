@@ -20,6 +20,10 @@ body {
     @include LRauto;
 }
 
+main {
+  display: inline-block;
+}
+
 li {
     list-style-type: none;
   }

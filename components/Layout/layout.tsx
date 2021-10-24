@@ -22,7 +22,9 @@ const Layout: React.FC<Props> = ({ children }) => {
           <Logo />
           <NextText />
         </div>
-        <div className="inblo footerFix">{ children }</div>
+        <div className="footerFix">
+          { children }
+        </div>
         <Footer />
       </>
     );

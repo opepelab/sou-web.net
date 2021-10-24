@@ -16,7 +16,9 @@ const Layout: React.FC<Props> = ({ children, home }) => {
         { home && 
         <Home open={open} setOpen={setOpen} /> }
         <Menu open={open} setOpen={setOpen} />
-        <div className="inblo footerFix">{ children }</div>
+        <div className="footerFix">
+          { children }
+        </div>
         <Footer />
       </>
     );
