@@ -24,7 +24,7 @@
 
 .Home {
   @include CenString;
-  animation:1.2s ease-in 1s infinite alternate-reverse feed;
+  animation:1s infinite alternate-reverse cycle;
   cursor: pointer;
   border: none;
   width: $p200;
@@ -33,7 +33,13 @@
   weight: normal;
   style: italic;
   size: $p50;
+  
   }
+}
+
+@keyframes cycle {
+  0% { opacity: 0.5; }
+  100% { opacity: 0.01; }
 }
 
 .hikki {

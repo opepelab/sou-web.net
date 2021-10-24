@@ -82,9 +82,10 @@ $RP: #BC2E50;
 
 @mixin CenString {
     position: absolute;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    white-space: nowrap;
+    inset: 0%;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
 }
 
 @mixin Input {

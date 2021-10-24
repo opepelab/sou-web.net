@@ -114,11 +114,7 @@ h3 {
   }
   
   #Pmoji {
-    position: fixed;
-    inset: 0%;
-    margin: auto;
-    width: fit-content;
-    height: fit-content;
+    @include CenString;
   }
   
   .tate{
