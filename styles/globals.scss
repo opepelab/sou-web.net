@@ -34,7 +34,6 @@ nav {
 
 dt {
     font-size: $p10;
-    margin-bottom: -4px;
 }
 dd {
     margin-left: $p0;
@@ -82,10 +81,6 @@ h3 {
     margin-top: auto;
   }
 
-  .inblo {
-    display: $IB;
-  }
-
   input {
     @include Input;
     @include LRauto;
@@ -115,10 +110,6 @@ h3 {
     @include Menu;
     opacity: 0;
     visibility: unset;
-  }
-  
-  #Pmoji {
-    @include CenString;
   }
   
   .tate{

@@ -3,11 +3,11 @@ import ActiveLink from '../Sys/ActiveLink'
 const NextText: React.FC = () => {
     return (
         <div className="flex-container">
-            <ActiveLink href="/contact" activeClassName="colorState">
-                <a className="scale">Email</a>
+            <ActiveLink href="/picture" activeClassName="colorState">
+                <a className="scale">Picture</a>
             </ActiveLink>
             <ActiveLink href="/blog" activeClassName="colorState">
-                <a className="scale">Post</a>
+                <a className="scale">Blog</a>
             </ActiveLink>
         </div>
     );

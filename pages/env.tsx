@@ -12,7 +12,7 @@ const Env: React.FC = () => {
           <meta name="description" content="環境"/>
         </Head>
         <main className="CN">
-            <h1>Env</h1>
+            <h1>Dev/Env</h1>
             <div className="triangle-bottom" />
             <dl>
             <dt>OS</dt>

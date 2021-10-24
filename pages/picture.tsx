@@ -11,7 +11,7 @@ const Picture: React.FC = () => {
           <title>picture - sou</title>
           <meta name="description" content="イラスト"/>
         </Head>
-        <main className="margin25r">
+        <main className="margin50p">
           <h1>Picture</h1>
             <div className="triangle-bottom" />
             <div className="Zoom-in margin10"><img className="PM" src="/picture/otoko.png" width={255} height={403} /></div>

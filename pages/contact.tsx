@@ -11,8 +11,8 @@ const Contact: React.FC<HTMLTextAreaElement> = () => {
                     <title>contact - sou</title>
                     <meta name="description" content="コンタクト"/>
                 </Head>
-                <main className="margin25r">
-                    <h1>Contact</h1>
+                <main className="CN">
+                    <h1>Email</h1>
                     <div className="triangle-bottom" />
                     <form action="https://formspree.io/f/xyylvaok" method="POST">
                         <dl>
@@ -24,7 +24,7 @@ const Contact: React.FC<HTMLTextAreaElement> = () => {
 
                             <dt><label htmlFor="massage">Message</label></dt>
                             <dd><textarea name="massage" aria-label="Massage area" required /></dd>
-                            <dd><button id="massageButton" type="submit">Send mail</button></dd>
+                            <button id="massageButton" type="submit">Send mail</button>
                         </dl>
                     </form>
                 </main>

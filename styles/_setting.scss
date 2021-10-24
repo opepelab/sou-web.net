@@ -32,12 +32,6 @@ $RP: #BC2E50;
     font-family: "Herr Von Muellerhoff";
 }
 
-@mixin BBMyellow {
-    background: #fffed5;
-    border-radius: $p5;
-    margin-top: 6px;
-}
-
 @mixin LRauto {
     margin-right: auto;
     margin-left: auto;
@@ -89,6 +83,12 @@ $RP: #BC2E50;
     height: fit-content;
 }
 
+@mixin BBMyellow {
+    background: #fffed5;
+    border-radius: $p5;
+    font-family: $Google;
+}
+
 @mixin Input {
     border: none;
     outline: none;
@@ -108,9 +108,10 @@ $RP: #BC2E50;
 @mixin Mbutton {
     background: none;
     border: solid 2px;
-    color:rgb(215,228,255);
+    color: $RP;
     padding: $r0;
     width: $p50*2;
     height: $p20*2;
     cursor: pointer;
+    border-radius: 10px;
 }

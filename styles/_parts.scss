@@ -2,24 +2,28 @@
   text-align: left;
 }
 
+.inblo {
+  display: $IB;
+}
+
 .CN {
  @include CenString;
 }
 
-.margin25r {
-  margin-top: $p100;
+.margin50p {
+  margin-top: $p50;
 }
 
 .flex-container {
   display: none;
 }
 
-.Logo {
-  z-index: 4;
-  position: relative;
-  top: 5px;
-  left: -302px;
-}
+  .Logo {
+    z-index: 4;
+    position: relative;
+    top: 5px;
+    left: -302px;
+  }
 
 
 .Home {
