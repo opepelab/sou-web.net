@@ -1,4 +1,4 @@
-// Qiitaの@TK-Cさんより Git Hub@remy氏
+//Git Hub@remy氏
 import { withRouter, NextRouter  } from 'next/router';
 import React, { Children, ReactNode } from 'react';
 import Link from 'next/link';
@@ -14,7 +14,7 @@ const ActiveLink: React.FC<Props> = ({ router, children, ...props }) => {
   const child = Children.only(children)
 
 
-  let className: ReactNode = child;
+  let className: ReactNode = child.props.className;
   if (router.pathname == props.href && props.activeClassName) {
     className = `${className} ${props.activeClassName}`;
   }

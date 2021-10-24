@@ -4,11 +4,11 @@ const Footer: React.FC = () => {
     return (
         <div>
             <footer>
-            <Link href="/">
-                <a className="scale">
-                    <div className="inblo C">© <span className="hikki">Sou Web</span></div>
-                </a>
-            </Link>
+                <Link href="/">
+                    <a className="scale">
+                        <div className="inblo C">© <span className="hikki">Sou Web</span></div>
+                    </a>
+                </Link>
             </footer>
         </div>
     );
