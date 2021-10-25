@@ -1,10 +1,10 @@
 import React, { useState, ReactNode } from 'react';
-import Header from '../atoms/Header'
-import MenuButton from '../atoms/MenuButton'
-import Menu from '../atoms/Menu'
-import Logo from '../atoms/Logo'
-import NextText from '../atoms/NextText'
-import Footer from '../atoms/Footer'
+import Header from '../Header'
+import MenuButton from '../MenuButton'
+import Menu from '../Menu'
+import Logo from '../Logo'
+import NextText from '../NextText'
+import Footer from '../Footer'
 
 type Props = {
   children: ReactNode;

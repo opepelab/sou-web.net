@@ -1,4 +1,4 @@
-import ActiveLink from '../Sys/ActiveLink'
+import ActiveLink from './Sys/ActiveLink'
 
 type Props = {
     open: boolean;

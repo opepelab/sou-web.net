@@ -1,7 +1,7 @@
 import React, { useState, ReactNode } from 'react';
-import Home from '../atoms/Home'
-import Menu from '../atoms/Menu'
-import Footer from '../atoms/Footer'
+import Home from '../Home'
+import Menu from '../Menu'
+import Footer from '../Footer'
 
 type Props = {
   children: ReactNode;
