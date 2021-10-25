@@ -1,4 +1,4 @@
-import { client } from "../libs/client";
+import client from "../libs/client";
 import { GetStaticProps } from "next"
 import { motion } from "framer-motion"
 import Layout from '../components/Layout/layout'

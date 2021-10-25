@@ -1,5 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from 'next'
-import { client } from "../../libs/client";
+import client from "../../libs/client";
 import Date from '../../components/Sys/date';
 import styles from './midasi.module.scss';
 import Head from 'next/head';
