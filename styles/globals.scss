@@ -28,9 +28,29 @@ li {
     list-style-type: none;
   }
   
-nav {
+.nav1 {
     @include NAV;
 }
+
+.nav2 {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  row-gap: 20px;
+  font-size: 24px;   
+}
+  
+.border {
+  border-bottom: solid 1px $ST;
+  pointer-events: none;
+}
+
+
+.CNT {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 dt {
     font-size: $p10;
@@ -112,9 +132,4 @@ h3 {
     visibility: unset;
   }
   
-  .tate{
-    white-space: nowrap;
-    font-size: 24px;
-    margin: 20px;
-  }
   

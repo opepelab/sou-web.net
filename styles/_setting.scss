@@ -3,8 +3,9 @@ $p5:  5px;
 $p10: $p5*2;
 $p20: $p10*2;
 $p50: $p10*5;
-$p100: $p50*2;
 $p60: $p20*3;
+$p80: $p20*4;
+$p100: $p50*2;
 $p200: $p50*4;
 
 $r0: 0%;
@@ -22,6 +23,7 @@ $BG: rgb(24,29,41);
 $ST: rgb(215,228,255);
 $FA: #ffaaaa;
 $RP: #BC2E50;
+$YE: #fffed5;
 
 
 @mixin Font1 {
@@ -50,12 +52,10 @@ $RP: #BC2E50;
 }
 
 @mixin NAV {
-    ul{
-        display: flex;
-        justify-content: center;
-        grid-gap: $p60;
-        white-space: nowrap;
-    }
+    display: flex;
+    justify-content: center;
+    grid-gap: $p60;
+    white-space: nowrap; 
 }
 
 @mixin Hover {

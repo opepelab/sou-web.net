@@ -11,8 +11,8 @@ class MyDocument extends Document {
       <Html lang="JA">
         <Head>
           <link href="/azur.ico" rel="icon"  />
-          <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic&display=optional" rel="stylesheet" />
-          <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=optional" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet" />
         </Head>
         <body>
           <Main />

@@ -5,11 +5,16 @@ type Props = {
 
 const Home: React.FC<Props> = ({ open, setOpen }) => {
     return (     
-        <div className="inblo">
+        <div>
             <main>
             <div aria-expanded={open} onClick={() => setOpen(!open)}
                 aria-label="TOP Toggle menu">
                 <h1 className="Home">Sou Web</h1>
+            </div>
+            <div className="loader">
+                <div className="inner one" />
+                <div className="inner two" />
+                <div className="inner three" />
             </div>
             </main>
         </div>

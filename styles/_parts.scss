@@ -27,24 +27,19 @@
 
 
 .Home {
+  position: fixed;
   @include CenString;
-  animation:1s infinite alternate-reverse cycle;
   cursor: pointer;
   border: none;
-  width: $p200;
+  padding: 80px;
   font: {
   family: $Google0;
   weight: normal;
   style: italic;
-  size: $p50;
-  
+  size: 30px;
   }
 }
 
-@keyframes cycle {
-  0% { opacity: 0.5; }
-  100% { opacity: 0.01; }
-}
 
 .hikki {
   font: {
@@ -59,8 +54,8 @@
 }
 
 .colorState {
-  opacity: 0.2;
-  border-bottom: solid 2px;
+  color: $RP;
+  border-bottom: solid 1px $ST;
   pointer-events: none;
 }
 
