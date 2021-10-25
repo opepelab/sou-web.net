@@ -16,7 +16,7 @@ const Home: React.FC<Props> = ({ open, setOpen }) => {
                 <div className="inner two" />
                 <div className="inner three" />
             </div>
-            helloW
+            he
             </main>
         </div>
     );
