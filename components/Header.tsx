@@ -8,7 +8,7 @@ const Header: React.FC = () => {
                 <div className="disableN">
                     <nav>           
                         <ul className="nav1">
-                            <ActiveLink href="/contact" activeClassName="colorState"><a className="scale"><li>Email</li></a></ActiveLink>
+                            <ActiveLink href="/mail" activeClassName="colorState"><a className="scale"><li>Email</li></a></ActiveLink>
                             <ActiveLink href="/blog" activeClassName="colorState"><a className="scale"><li>Posts</li></a></ActiveLink>
                             <ActiveLink href="/about" activeClassName="colorState"><a className="scale"><li>About</li></a></ActiveLink>
                             <ActiveLink href="/env" activeClassName="colorState"><a className="scale"><li>Dev/Env</li></a></ActiveLink>

@@ -3,7 +3,7 @@ import ActiveLink from './Sys/ActiveLink'
 const NextText: React.FC = () => {
     return (
         <div className="flex-container">
-            <ActiveLink href="/contact" activeClassName="colorState">
+            <ActiveLink href="/mail" activeClassName="colorState">
                 <a className="scale">Email</a>
             </ActiveLink>
             <ActiveLink href="/blog" activeClassName="colorState">
