@@ -22,7 +22,7 @@ const Contact: React.FC<HTMLTextAreaElement> = () => {
 
                             <dt><label htmlFor="massage">Message</label></dt>
                             <dd><textarea name="massage" aria-label="Massage area" required /></dd>
-                            <button id="massageButton" type="submit">Send mail</button>
+                            <dd><button id="massageButton" type="submit">Send mail</button></dd>
                         </dl>
                     </form>
                 </main>

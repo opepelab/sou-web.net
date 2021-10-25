@@ -1,6 +1,7 @@
 $p0:  0px;
 $p5:  5px;
 $p10: $p5*2;
+$p14: $p10*1.4;
 $p20: $p10*2;
 $p50: $p10*5;
 $p60: $p20*3;
@@ -85,15 +86,18 @@ $YE: #fffed5;
 
 @mixin BBMyellow {
     background: #fffed5;
-    border-radius: $p5;
-    font-family: $Google;
+    font: {
+        family: $Google;
+        size: 12px;
+    }
 }
 
 @mixin Input {
     border: none;
     outline: none;
     width: $p50*6;
-    height: $p20;
+    height: $p14;
+    border-radius: $p10;
 }
 
 @mixin Textarea {
@@ -101,11 +105,16 @@ $YE: #fffed5;
     outline: none;
     width: $p50*8;
     height: $p50*6;
+    border-radius: $p10 $p10 $p0 $p10 ;
     resize: vertical;
     overflow: auto;
 }
 
 @mixin Mbutton {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    margin: auto;
     background: none;
     border: solid 2px;
     color: $ST;
