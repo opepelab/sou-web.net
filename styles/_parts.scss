@@ -27,6 +27,7 @@
 
 
 .Home {
+  z-index: 1;
   position: fixed;
   @include CenString;
   cursor: pointer;
