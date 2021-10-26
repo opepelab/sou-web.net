@@ -66,7 +66,7 @@ $YE: #fffed5;
 }
 
 @mixin Menu {
-    z-index: 5;
+    z-index: 4;
     position: fixed;
     background-color: rgba(16, 19, 29, 0.95);
     left: 0px;
@@ -105,7 +105,7 @@ $YE: #fffed5;
     outline: none;
     width: $p50*8;
     height: $p50*6;
-    border-radius: $p10 $p10 $p0 $p10 ;
+    border-radius: $p10;
     resize: vertical;
     overflow: auto;
 }

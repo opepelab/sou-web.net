@@ -19,7 +19,7 @@
 }
 
   .Logo {
-    z-index: 4;
+    z-index: 2;
     position: relative;
     top: 5px;
     left: -302px;
@@ -61,7 +61,7 @@
 }
 
 .bgg {
-  z-index: 4;
+  z-index: 2;
   position: fixed;
   background-color: $BG;
   padding: 16px;
@@ -76,7 +76,7 @@
 }
 
 .disableN {
-  z-index: 5;
+  z-index: 3;
   position: relative;
   display: $IB;
   top: -5px;

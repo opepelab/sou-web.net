@@ -7,6 +7,15 @@
   width: 240px;
   height: 260px;
   opacity: 0.2;
+  animation: r2 10s linear infinite;
+}
+@keyframes r2 {
+  0%   { transform: 
+    rotate(0deg); 
+  }
+  100% { transform: 
+    rotate(-360deg); 
+  }
 }
 
 .inner {

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Layout from '../components/Layout/layout'
 import Head from 'next/head'
 
-export const Mail: React.FC<HTMLTextAreaElement> = (): JSX.Element => {
+export const Mail: React.FC<HTMLTextAreaElement> = () => {
   const { setName, setMail, setMessage, send } = useMail();
   return (
     <Layout>
