@@ -7,7 +7,8 @@
 }
 
 .CN {
- @include CenString;
+  position: absolute;
+  @include CenString;
 }
 
 .margin50p {
@@ -28,6 +29,7 @@
 
 .Home {
   z-index: 1;
+  position: fixed;
   @include CenString;
   cursor: pointer;
   border: none;

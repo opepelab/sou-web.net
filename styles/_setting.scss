@@ -27,15 +27,6 @@ $FA: #ffaaaa;
 $RP: #BC2E50;
 $YE: #fffed5;
 
-
-@mixin Font1 {
-    font-family: "Sawarabi Gothic";
-}
-
-@mixin Font2 {
-    font-family: "Herr Von Muellerhoff";
-}
-
 @mixin LRauto {
     margin-right: auto;
     margin-left: auto;
@@ -78,7 +69,6 @@ $YE: #fffed5;
 }
 
 @mixin CenString {
-    position: absolute;
     inset: 0%;
     margin: auto;
     width: fit-content;

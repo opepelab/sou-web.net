@@ -2,8 +2,9 @@
 
 .loader {
   z-index: 0;
-  position: absolute;
+  position: fixed;
   @include CenString;
+  margin: auto;
   width: 260px;
   height: 260px;
   opacity: 0.2;
