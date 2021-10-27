@@ -19,13 +19,16 @@
   display: none;
 }
 
-  .Logo {
-    z-index: 2;
-    position: relative;
-    top: 2.5px;
-    left: -302px;
-  }
+.Logo {
+  z-index: 2;
+  position: relative;
+  top: 2.5px;
+  left: -302px;
+}
 
+.Absolute {
+  position: absolute;
+}
 
 .Home {
   z-index: 1;

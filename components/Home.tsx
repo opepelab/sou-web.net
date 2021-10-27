@@ -6,7 +6,7 @@ type Props = {
 const Home: React.FC<Props> = ({ open, setOpen }) => {
     return (     
         <div>
-            <main>
+            <main className="Absolute">
             <div aria-expanded={open} onClick={() => setOpen(!open)}
                 aria-label="TOP Toggle menu">
                 <h1 className="Home">Sou Web</h1>
