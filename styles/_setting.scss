@@ -97,7 +97,7 @@ $YE: #fffed5;
     outline: none;
     width: $p50*6;
     height: $p20;
-    border-radius: $p10;
+    border-radius: $p5;
 }
 
 @mixin Textarea {
@@ -105,7 +105,7 @@ $YE: #fffed5;
     outline: none;
     width: $p50*8;
     height: $p50*6;
-    border-radius: $p10;
+    border-radius: $p5;
     resize: vertical;
     overflow: auto;
 }
