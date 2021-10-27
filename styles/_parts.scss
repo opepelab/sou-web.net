@@ -21,14 +21,13 @@
   .Logo {
     z-index: 2;
     position: relative;
-    top: 5px;
+    top: 2.5px;
     left: -302px;
   }
 
 
 .Home {
   z-index: 1;
-  position: fixed;
   @include CenString;
   cursor: pointer;
   border: none;
@@ -64,9 +63,8 @@
   z-index: 2;
   position: fixed;
   background-color: $BG;
-  padding: 16px;
   width: $r100;
-  height: $p20;
+  height: 70px;
   top: $p0;
   left: $p0;
 }
@@ -79,8 +77,8 @@
   z-index: 3;
   position: relative;
   display: $IB;
-  top: -5px;
-  left: 16px;
+  top: 10px;
+  left: 32px;
 }
 
 
