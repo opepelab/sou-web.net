@@ -69,6 +69,7 @@ $YE: #fffed5;
 }
 
 @mixin CenString {
+    position: absolute;
     inset: 0%;
     margin: auto;
     width: fit-content;

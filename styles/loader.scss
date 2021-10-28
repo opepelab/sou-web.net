@@ -1,22 +1,10 @@
 @import "setting";
 
 .loader {
-  z-index: 0;
-  position: fixed;
   @include CenString;
-  margin: auto;
-  width: 260px;
-  height: 260px;
+  width: 220px;
+  height: 220px;
   opacity: 0.2;
-  animation: r2 10s linear infinite;
-}
-@keyframes r2 {
-  0%   { transform: 
-    rotate(0deg); 
-  }
-  100% { transform: 
-    rotate(-360deg); 
-  }
 }
 
 .inner {
@@ -29,43 +17,43 @@
 }
 
 .inner.one {
-  animation: rotate-one 4s linear infinite;
+  animation: rotate-one 10s linear infinite;
   border-bottom: 2px solid;
 }
 
 .inner.two {
-  animation: rotate-two 4s linear infinite;
+  animation: rotate-two 10s linear infinite;
   border-right: 2px solid;
 }
 
 .inner.three {
-  animation: rotate-three 4s linear infinite;
+  animation: rotate-three 10s linear infinite;
   border-top: 2px solid;
 }
 
 @keyframes rotate-one {
   0% {
-    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    transform: rotate(-4deg) rotateX(35deg) rotateY(50deg) rotateZ(0deg);
   }
   100% {
-    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    transform: rotate(-4deg) rotateX(35deg) rotateY(50deg) rotateZ(-360deg);
   }
 }
 
 @keyframes rotate-two {
   0% {
-    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    transform: rotate(56deg) rotateX(35deg) rotateY(50deg) rotateZ(0deg);
   }
   100% {
-    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    transform: rotate(56deg) rotateX(35deg) rotateY(50deg) rotateZ(-360deg);
   }
 }
 
 @keyframes rotate-three {
   0% {
-    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    transform: rotate(116deg) rotateX(35deg) rotateY(50deg) rotateZ(0deg);
   }
   100% {
-    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    transform: rotate(116deg) rotateX(35deg) rotateY(50deg) rotateZ(-360deg);
   }
 }

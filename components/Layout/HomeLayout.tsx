@@ -1,6 +1,7 @@
 import React, { useState, ReactNode } from 'react';
 import Home from '../Home'
 import Menu from '../Menu'
+import Footer from '../Footer'
 
 type Props = {
   children: ReactNode;
@@ -18,6 +19,7 @@ const Layout: React.FC<Props> = ({ children, home }) => {
         <div className="footerFix">
           { children }
         </div>
+        <Footer />
       </>
     );
 }

@@ -7,7 +7,6 @@
 }
 
 .CN {
-  position: absolute;
   @include CenString;
 }
 
@@ -28,11 +27,10 @@
 
 .Home {
   z-index: 1;
-  position: fixed;
   @include CenString;
   cursor: pointer;
   border: none;
-  padding: 80px;
+  padding: 50px;
   font: {
   family: $Google0;
   weight: normal;
