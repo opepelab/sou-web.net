@@ -3,7 +3,6 @@
 .loading {
     @include CenString;
     cursor: pointer;
-    top: -8px;
     padding: 40px;
     width: 200px;
     background: $BG;

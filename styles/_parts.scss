@@ -28,7 +28,8 @@
 .Home {
   z-index: 1;
   @include CenString;
-  left: -14px;
+  left: -12px;
+  top: 8px;
   cursor: pointer;
   border: none;
   font: {
