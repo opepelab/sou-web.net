@@ -1,6 +1,6 @@
 //Git Hub@remy氏
 import { withRouter, NextRouter  } from 'next/router';
-import React, { Children, ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 import Link from 'next/link';
 
 type Props = {
@@ -10,10 +10,9 @@ type Props = {
   href: string;
 }
 
-const ActiveLink: React.FC<Props> = ({ router, children, ...props }) => {
-  const child = Children.only(children)
-
-
+const ActiveLink = ({ router, children, ...props }: Props) => {
+  const child = children;
+  
   let className: ReactNode = child.props.className;
   if (router.pathname == props.href && props.activeClassName) {
     className = `${className} ${props.activeClassName}`;

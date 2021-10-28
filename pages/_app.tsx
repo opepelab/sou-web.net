@@ -5,7 +5,7 @@ import '../styles/mobile.scss'
 import Head from 'next/head'
 
 
-const MyApp:React.FC<AppProps> = ({ Component, pageProps, router }): JSX.Element => {
+const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
   return (
     <>
       <Head>
