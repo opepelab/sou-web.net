@@ -28,14 +28,14 @@
 .Home {
   z-index: 1;
   @include CenString;
+  left: -14px;
   cursor: pointer;
   border: none;
-  padding: 50px;
   font: {
   family: $Google0;
   weight: normal;
   style: italic;
-  size: 30px;
+  size: 40px;
   }
 }
 
