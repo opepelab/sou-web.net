@@ -26,17 +26,28 @@
 }
 
 .Home {
+  animation: 1s infinite alternate  opacity;
   z-index: 1;
   @include CenString;
-  left: -12px;
-  top: 8px;
   cursor: pointer;
   border: none;
+  padding: 50px;
   font: {
   family: $Google0;
   weight: normal;
   style: italic;
   size: 40px;
+  }
+}
+
+@keyframes opacity {
+  from { 
+    transform: scale(0.98);
+    opacity: 0.2; 
+  }
+  to { 
+    transform: scale(1.02);
+    opacity: 0.8; 
   }
 }
 
