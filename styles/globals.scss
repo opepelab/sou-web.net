@@ -58,10 +58,6 @@ a.scale:hover {
     @include Hover;
 }
 
-p:hover {
-    @include Hover;
-  }
-
 h1 {
     @include H1H2;
   }
