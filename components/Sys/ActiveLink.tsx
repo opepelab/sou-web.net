@@ -1,4 +1,6 @@
-//Git Hub@remy氏
+//Git Hub@remy氏 (EN)
+//Qiita @TK-C (JA)
+
 import { withRouter, NextRouter  } from 'next/router';
 import React, { ReactNode, ReactElement } from 'react';
 import Link from 'next/link';
