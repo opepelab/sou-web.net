@@ -1,11 +1,11 @@
 //Git Hub@remy氏
 import { withRouter, NextRouter  } from 'next/router';
-import React, { ReactNode } from 'react';
+import React, { ReactNode, ReactElement } from 'react';
 import Link from 'next/link';
 
 type Props = {
   router: NextRouter;
-  children: JSX.Element;
+  children: ReactElement;
   activeClassName: string;
   href: string;
 }
