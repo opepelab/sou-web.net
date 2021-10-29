@@ -6,13 +6,9 @@ body {
   width: 90%;
 }
 
-.bgg {
- display: none;
-}
-
 button {
   border: none;
-  background: $RP;
+  background: $FA;
   border-radius: 20%;
   padding-top: 31px;
   padding-bottom: 5px;
@@ -100,6 +96,7 @@ button {
   /* Topヘッダーモビ */
 
 .flex-container {
+  z-index: 3;
   position: absolute;
   display: flex;
   grid-gap: 20px;

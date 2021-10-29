@@ -10,7 +10,14 @@
   @include CenString;
 }
 
+.posi {
+  position: relative;
+  top: 80px;
+}
+
 .margin50p {
+  position: relative;
+  z-index: 3;
   margin-top: $p50;
 }
 
@@ -65,19 +72,20 @@
 }
 
 .colorState {
-  color: $RP;
+  color: $FA;
   border-bottom: solid 1px $ST;
   pointer-events: none;
 }
 
 .bgg {
   z-index: 2;
-  position: fixed;
-  background-color: $BG;
+  position: absolute;
+  background-color: $FE;
   width: $r100;
   height: 70px;
   top: $p0;
   left: $p0;
+  border-bottom: solid 1px #eaeaea;
 }
 
 .Line {
@@ -99,7 +107,7 @@
   border: {
     style: solid;
     width: 5px;
-    color: rgb(215,228,255) transparent transparent transparent;
+    color: #eaeaea transparent transparent transparent;
   }
 }
 
@@ -125,7 +133,6 @@
 }
 
 .PM {
-  z-index: 3;
   border: thin solid black;
 }
 
@@ -138,8 +145,8 @@
   margin-top: $p10;
 }
 
-.redLinks {
-  color: $RP;
+.pinkLinks {
+  color: $FA;
 }
 
 .Special {

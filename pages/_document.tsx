@@ -12,6 +12,7 @@ class MyDocument extends Document {
         <Head>
         <link href="/azur.ico" rel="icon" />
         <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet" />
         </Head>
         <body>
