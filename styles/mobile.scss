@@ -1,7 +1,9 @@
 @import "setting";
 
 @media screen and (max-width: 739.98px) {
-
+html {
+  height: 100%;
+}
 body {
   width: 90%;
 }
