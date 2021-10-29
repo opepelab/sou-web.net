@@ -17,13 +17,14 @@ const About: React.FC  = () => {
           <dl>
             <dt>Name</dt>
             <dd>Sou Watanabe</dd>
-            <dt>HN</dt>
-            <dd>opera</dd>
+            <dt>sign</dt>
+            <dd>Scorpio</dd>
+            <dt>4タイプ</dt>
+            <dd>法則理想</dd>
+            <dt>干支</dt>
+            <dd>戌年(Dog)</dd>
             <dt>Country</dt>
-            <dd>Japan Tokyo</dd>
-            <dt>Job</dt>
-            <dd>Front End Developer, Illustrator</dd>
-            <dt>Thanks</dt>
+            <dd>Tokyo</dd>
             <dd>子供の頃からコンピュータが手元にあったこと<br/>
             この時代と生んでくれた母と父に感謝します。</dd>
           </dl>

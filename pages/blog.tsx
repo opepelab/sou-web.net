@@ -32,7 +32,7 @@ const Blog: React.FC<Map> = ({blog}) => {
           {blog.map((props: Content) => (
           <dl key={props.id}>
             <dt><Date dateString={props.publishedAt}/></dt>
-            <dd><Link href={`/blog/${props.id}`}><a className="redLinks">{props.title}</a></Link></dd>
+            <dd><Link href={`/blog/${props.id}`}><a className="scale redLinks">{props.title}</a></Link></dd>
           </dl>
           ))}
         </main>

@@ -11,8 +11,8 @@ const Header: React.FC = () => {
                             <ActiveLink href="/mail" activeClassName="colorState"><a className="scale"><li>Email</li></a></ActiveLink>
                             <ActiveLink href="/blog" activeClassName="colorState"><a className="scale"><li>Posts</li></a></ActiveLink>
                             <ActiveLink href="/about" activeClassName="colorState"><a className="scale"><li>About</li></a></ActiveLink>
-                            <ActiveLink href="/env" activeClassName="colorState"><a className="scale"><li>Dev/Env</li></a></ActiveLink>
                             <ActiveLink href="/links" activeClassName="colorState"><a className="scale"><li>Links</li></a></ActiveLink>
+                            <ActiveLink href="/env" activeClassName="colorState"><a className="scale"><li>Dev/Env</li></a></ActiveLink>
                             <ActiveLink href="/picture" activeClassName="colorState"><a className="scale"><li>Picture</li></a></ActiveLink>
                         </ul>
                     </nav>  
