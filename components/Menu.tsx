@@ -16,7 +16,8 @@ const Menu: React.FC<Props> = ({ open, setOpen }) => {
                                     <ActiveLink href="/" activeClassName="colorState"><a><li className="tate">Home</li></a></ActiveLink>
                                     <ActiveLink href="/about" activeClassName="colorState"><a><li className="tate">About</li></a></ActiveLink>
                                     <ActiveLink href="/links" activeClassName="colorState"><a><li className="tate">Links</li></a></ActiveLink>
-                                    <ActiveLink href="/env" activeClassName="colorState"><a><li className="tate">Dev/Env</li></a></ActiveLink>
+                                    <ActiveLink href="/designenv" activeClassName="colorState"><a><li className="tate">Design/Env</li></a></ActiveLink>
+                                    <ActiveLink href="/developenv" activeClassName="colorState"><a><li className="tate">Devlop/Env</li></a></ActiveLink>
                                     <ActiveLink href="/picture" activeClassName="colorState"><a><li className="tate">Picture</li></a></ActiveLink>
                                 </ul> 
                             </nav>

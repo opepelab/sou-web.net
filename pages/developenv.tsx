@@ -3,7 +3,7 @@ import Layout from '../components/Layout/layout'
 import Head from 'next/head'
 
 
-const Env: React.FC = () => {
+const Develop: React.FC = () => {
   return (
     <Layout>  
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
@@ -12,7 +12,7 @@ const Env: React.FC = () => {
           <meta name="description" content="環境"/>
         </Head>
         <main className="CN">
-            <h1>Dev/Env</h1>
+            <h1>Develop</h1>
             <div className="triangle-bottom" />
             <dl>
             <dt>OS</dt>
@@ -34,4 +34,4 @@ const Env: React.FC = () => {
   );
 }
 
-export default Env;
+export default Develop;

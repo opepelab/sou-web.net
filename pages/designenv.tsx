@@ -20,6 +20,10 @@ const Design: React.FC = () => {
             <dd>Photosohp. SAI2. CLIPSTUDIO</dd>
             <dt>Display</dt>
             <dd>ColorEdge CS2410</dd>
+            <dt>CPU</dt>
+            <dd>i7</dd>
+            <dt>RAM</dt>
+            <dd>16GB</dd>
           </dl>
         </main>
       </motion.div>
