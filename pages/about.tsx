@@ -11,8 +11,6 @@ const About: React.FC  = () => {
           <title>about - sou</title>
           <meta name="description" content="私について"/>
         </Head>
-        <div className="posi"><img className="Maru" src="/SVG/ico.png" width={100} height={100} /></div>
-        
         <main className="CN">
           <h1>About</h1>
           <div className="triangle-bottom" />

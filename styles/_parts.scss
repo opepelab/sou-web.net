@@ -15,10 +15,15 @@
   top: 80px;
 }
 
+.scale2:hover {
+  transform: scale(1.55);
+  transition-duration: 1s;
+}
+
 .margin50p {
   position: relative;
   z-index: 3;
-  margin-top: $p50;
+  margin-top: $p60;
 }
 
 .flex-container {
