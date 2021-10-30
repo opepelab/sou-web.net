@@ -14,7 +14,7 @@ const Design: React.FC = () => {
           <h1>Design</h1>
           <div className="triangle-bottom" />
           <dl>
-          <img className="PM" src="/picture/315.jpg" width={400} height={300} />
+          <div className="Zoom-in margin10 point z-index"><img className="PM" src="/picture/315.jpg" width={255} height={191} /></div>
             <dt>Tablet</dt>
             <dd>Cintiq Pro</dd>
             <dt>Software</dt>

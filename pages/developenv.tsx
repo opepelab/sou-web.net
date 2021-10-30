@@ -15,7 +15,7 @@ const Develop: React.FC = () => {
             <h1>Develop</h1>
             <div className="triangle-bottom" />
             <dl>
-            <img className="PM" src="/picture/312.jpg" width={400} height={300} />
+            <div className="Zoom-in margin10 point z-index"><img className="PM" src="/picture/312.jpg" width={255} height={191} /></div>
             <dt>OS</dt>
             <dd>Windows</dd>
             <dt>Version</dt>

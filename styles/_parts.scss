@@ -20,9 +20,12 @@
   transition-duration: 1s;
 }
 
-.margin50p {
+.z-index {
   position: relative;
   z-index: 4;
+}
+
+.margin50p {
   margin-top: $p60;
 }
 

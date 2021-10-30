@@ -14,8 +14,8 @@ const Picture: React.FC = () => {
         <main className="margin50p">
           <h1>Picture</h1>
             <div className="triangle-bottom" />
-            <div className="Zoom-in margin10 point"><img className="PM" src="/picture/otoko.png" width={255} height={403} /></div>
-            <div className="Zoom-in margin10 point"><img className="PM" src="/picture/haruka.png" width={255} height={360} /></div>  
+            <div className="Zoom-in margin10 point z-index"><img className="PM" src="/picture/otoko.png" width={255} height={403} /></div>
+            <div className="Zoom-in margin10 point z-index"><img className="PM" src="/picture/haruka.png" width={255} height={360} /></div>  
         </main>
       </motion.div>
     </Layout>
