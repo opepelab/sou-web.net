@@ -27,8 +27,6 @@ const Blog: React.FC<Map> = ({blog}) => {
           <meta name="description" content="ログ"/>
         </Head>
         <main className="textLeft margin50p">
-          <h1>log</h1>
-          <div className="triangle-bottom" />
           {blog.map((props: Content) => (
           <dl key={props.id}>
             <dt><Date dateString={props.publishedAt}/></dt>

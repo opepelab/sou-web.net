@@ -4,10 +4,10 @@ const NextText: React.FC = () => {
     return (
         <div className="flex-container">
             <ActiveLink href="/mail" activeClassName="colorState">
-                <a className="scale">Email</a>
+                <a className="scale">メール</a>
             </ActiveLink>
             <ActiveLink href="/blog" activeClassName="colorState">
-                <a className="scale">Posts</a>
+                <a className="scale">ポスト</a>
             </ActiveLink>
         </div>
     );

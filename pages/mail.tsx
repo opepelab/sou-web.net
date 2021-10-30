@@ -13,17 +13,18 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
             <meta name="description" content="コンタクト"/>
         </Head>
         <main className="CN">
+          <p className="pinkLinks">なんでもいいでござるよ</p>
           <form>
             <dl>
-              <dt><label htmlFor="name">Name*</label></dt>
+              <dt className="pinkLinks"><label htmlFor="name">Name*</label></dt>
               <dd><input type="text" name="name" aria-label="Name area" onChange={(e) => setName(e.target.value)} required  /></dd>
 
-              <dt><label htmlFor="email">Mail*</label></dt>
+              <dt className="pinkLinks"><label htmlFor="email">Mail*</label></dt>
               <dd><input type="text" name="name" aria-label="Name area" onChange={(e) => setMail(e.target.value)} required  /></dd>
               
-              <dt><label htmlFor="massage">Message</label></dt>
+              <dt className="pinkLinks"><label htmlFor="massage">Message</label></dt>
               <dd><textarea name="massage" aria-label="Massage area" onChange={(e) => setMessage(e.target.value)} required  /></dd>
-              <dd><button id="massageButton" type="submit" onClick={send}>Send</button></dd>
+              <dd><button id="massageButton" type="submit" onClick={send}>送る</button></dd>
             </dl>
           </form>
         </main>

@@ -8,13 +8,13 @@ const Header: React.FC = () => {
                 <div className="disableN">
                     <nav>           
                         <ul className="nav1">
-                            <ActiveLink href="/mail" activeClassName="colorState"><a className="scale"><li>Email</li></a></ActiveLink>
-                            <ActiveLink href="/blog" activeClassName="colorState"><a className="scale"><li>Posts</li></a></ActiveLink>
-                            <ActiveLink href="/about" activeClassName="colorState"><a className="scale"><li>About</li></a></ActiveLink>
-                            <ActiveLink href="/links" activeClassName="colorState"><a className="scale"><li>Links</li></a></ActiveLink>
-                            <ActiveLink href="/designenv" activeClassName="colorState"><a className="scale"><li>Design/Env</li></a></ActiveLink>
-                            <ActiveLink href="/developenv" activeClassName="colorState"><a className="scale"><li>Develop/Env</li></a></ActiveLink>
-                            <ActiveLink href="/picture" activeClassName="colorState"><a className="scale"><li>Picture</li></a></ActiveLink>
+                            <ActiveLink href="/mail" activeClassName="colorState"><a className="scale"><li>メール</li></a></ActiveLink>
+                            <ActiveLink href="/blog" activeClassName="colorState"><a className="scale"><li>ポスト</li></a></ActiveLink>
+                            <ActiveLink href="/about" activeClassName="colorState"><a className="scale"><li>詳細</li></a></ActiveLink>
+                            <ActiveLink href="/links" activeClassName="colorState"><a className="scale"><li>リンク</li></a></ActiveLink>
+                            <ActiveLink href="/picture" activeClassName="colorState"><a className="scale"><li>写真</li></a></ActiveLink>
+                            <ActiveLink href="/designenv" activeClassName="colorState"><a className="scale"><li>Design.Env</li></a></ActiveLink>
+                            <ActiveLink href="/developenv" activeClassName="colorState"><a className="scale"><li>Develop.Env</li></a></ActiveLink>
                         </ul>
                     </nav>  
                 </div>

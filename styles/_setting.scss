@@ -16,7 +16,10 @@ $r50: $r25*2;
 $r100: $r50*2;
 
 $Google0: "Herr Von Muellerhoff";
-$Google: 'Noto Serif JP', serif;
+$Google1: 'Noto Serif JP', serif;
+$Google: 'Zen Kurenaido', sans-serif;
+$Google1:  'Zen Maru Gothic', sans-serif;
+$Google1: 'Kaisei HarunoUmi', serif;
 
 $IB: inline-block;
 $NO: none;
@@ -47,7 +50,7 @@ $YE: #fffed5;
 @mixin NAV {
     display: flex;
     justify-content: center;
-    grid-gap: $p60;
+    grid-gap: $p50;
     white-space: nowrap; 
 }
 
@@ -79,6 +82,7 @@ $YE: #fffed5;
 
 @mixin BBMyellow {
     background: #fffed5;
+    color: $FA;
     font: {
         family: $Google;
         size: 12px;
@@ -108,9 +112,9 @@ $YE: #fffed5;
     left: 0%;
     right: 0%;
     margin: auto;
-    background: none;
+    background: $FA;
     border: solid 2px;
-    color: $ST;
+    color: #FFF;
     padding: $r0;
     width: $p50*2;
     height: $p20*2;
