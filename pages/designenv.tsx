@@ -10,10 +10,11 @@ const Design: React.FC = () => {
             <title>design - sou</title>
             <meta name="description" content="リンク"/>
         </Head>
-        <main className="CN">
+        <main className="margin50p">
           <h1>Design</h1>
           <div className="triangle-bottom" />
           <dl>
+          <img className="PM" src="/picture/315.jpg" width={400} height={300} />
             <dt>Tablet</dt>
             <dd>Cintiq Pro</dd>
             <dt>Software</dt>

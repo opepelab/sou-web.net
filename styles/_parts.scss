@@ -21,8 +21,8 @@
 }
 
 .margin50p {
-  position: static;
-  z-index: 3;
+  position: relative;
+  z-index: 4;
   margin-top: $p60;
 }
 
@@ -106,19 +106,16 @@
   border-radius: $r50;
 }
 
-/* 小物のズーム */
-.Zoom:hover {
-    transform: scale(1.1);
-    transition-duration: 0.2s;
-  }
-
+.point {
+cursor: zoom-in;
+}
 
 @media screen and (min-width: 740px) {
 /* PC写真のズーム */
 .Zoom-in {
   transition-duration: 1.5s;
 }
-.Zoom-in:hover {
+.Zoom-in:active {
   transform: scale(2);
 }
 }

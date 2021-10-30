@@ -4,14 +4,15 @@
 
 html {
     -webkit-text-size-adjust: $r100;
-    overflow: scroll;
     height: 100vh;
+    overflow: scroll;
+    user-select: none;
   }
 body {
     font: {
       family: $Google;
       weight: normal;
-      size: 14px;
+      size: $p14;
     }
     word-break: break-all;
     text-align: center;

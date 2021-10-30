@@ -11,10 +11,11 @@ const Develop: React.FC = () => {
           <title>environment - sou</title>
           <meta name="description" content="環境"/>
         </Head>
-        <main className="CN">
+        <main className="margin50p">
             <h1>Develop</h1>
             <div className="triangle-bottom" />
             <dl>
+            <img className="PM" src="/picture/312.jpg" width={400} height={300} />
             <dt>OS</dt>
             <dd>Windows</dd>
             <dt>Version</dt>
