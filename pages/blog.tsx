@@ -1,3 +1,4 @@
+import client from "../libs/client";
 import { GetStaticProps } from "next"
 import { motion } from "framer-motion"
 import Layout from '../components/Layout/layout'
@@ -39,17 +40,11 @@ const Blog: React.FC<Map> = ({blog}) => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const key = {
-    headers: {'X-MICROCMS-API-KEY': process.env.API_KEY},
-  };
-  const data = await fetch('https://sou.microcms.io/api/v1/blog?limit=1000', key)
-  .then(res => res.json())
-  .catch(() => null);
+  const data = await client.get<{ contents: Content }>({ endpoint: "blog" });
 
   return {
     props: {
       blog: data.contents,
-      totalCount: data.totalCount
     },
   };
 };
