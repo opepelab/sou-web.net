@@ -1,8 +1,6 @@
-import client from "../libs/client";
 import { GetStaticProps } from "next"
 import { motion } from "framer-motion"
 import Layout from '../components/Layout/layout'
-import Date from '../components/Sys/date'
 import Head from 'next/head'
 import Link from "next/link"
 
@@ -29,7 +27,6 @@ const Blog: React.FC<Map> = ({blog}) => {
         <main className="textLeft margin50p">
           {blog.map((blog: Content) => (
           <dl key={blog.id}>
-            <dt><Date dateString={blog.publishedAt}/></dt>
             <dd><Link href={`/blog/${blog.id}`}><a className="scale pinkLinks">{blog.title}</a></Link></dd>
           </dl>
           ))}
