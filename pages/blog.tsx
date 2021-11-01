@@ -50,7 +50,6 @@ export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
       blog: data.contents,
-      totalCount: data.totalCount
     },
   };
 };
