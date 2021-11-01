@@ -42,10 +42,10 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const key = {
     headers: {'X-MICROCMS-API-KEY': process.env.API_KEY},
   }
-  const data = await fetch('https://sou.microcms.io/api/v1/blog?limit=40/', key)
+  const data: [] = await fetch('https://sou.microcms.io/api/v1/blog?limit=40/', key)
     .then(res => res.json())
     .catch((err) => console.warn(err));
-  const paths: string[] = data.map((content: ContentId) => `/blog/${content.id}`)
+  const paths = data?.map((content: ContentId) => `/blog/${content.id}`)
 
   return { 
     paths, 
