@@ -6,7 +6,7 @@ import Layout from '../../components/Layout/layout'
 import client from "../../libs/client";
 
 type ContentId = {
-  id: string;
+
 }
 
 type Content = {
@@ -16,6 +16,7 @@ type Content = {
     body: string;
     description: string;
   }
+  id: string;
 }
 
 const Id: React.FC<Content> = ({ blog }) => {
@@ -39,12 +40,14 @@ const Id: React.FC<Content> = ({ blog }) => {
 
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const data = await client.get<{ contents: ContentId[] }>({ endpoint: 'blog', queries: {limit: 1000, fields: 'id,title'} });
-  const paths = data.contents.map((content: ContentId) => `/blog/${content.id}`);
-  return { 
-    paths, 
-    fallback: false 
+  const key = {
+    headers: {'X-MICROCMS-API-KEY': process.env.NEXT_PUBLIC_API_KEY},
   }
+  const data = await fetch('https://sou.microcms.io/api/v1/blog?limit=40/', key)
+    .then(res => res.json())
+    .catch((err) => console.warn(err));
+  const paths = data.contents.map((content: Content): string => `/blog/${content.id}`)
+  return { paths, fallback: false }
 }
 
 
