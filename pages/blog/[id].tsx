@@ -41,7 +41,7 @@ const Id: React.FC<Content> = ({ blog }) => {
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const key = {
-    headers: {'X-MICROCMS-API-KEY': process.env.NEXT_PUBLIC_API_KEY},
+    headers: {'X-MICROCMS-API-KEY': process.env.API_KEY},
   }
   const data = await fetch('https://sou.microcms.io/api/v1/blog?limit=40/', key)
     .then(res => res.json())

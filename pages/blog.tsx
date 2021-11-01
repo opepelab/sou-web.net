@@ -38,7 +38,7 @@ const Blog: React.FC<Map> = ({blog}) => {
 
 export const getStaticProps: GetStaticProps = async () => {
   const key = {
-    headers: {'X-MICROCMS-API-KEY': process.env.NEXT_PUBLIC_API_KEY},
+    headers: {'X-MICROCMS-API-KEY': process.env.API_KEY},
   };
   const data = await fetch('https://sou.microcms.io/api/v1/blog?limit=1000', key)
     .then(res => res.json())
