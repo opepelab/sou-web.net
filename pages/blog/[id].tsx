@@ -37,33 +37,33 @@ const Id: React.FC<Content> = ({ blog }) => {
 }
 
 
+
 export const getStaticPaths: GetStaticPaths = async () => {
-  const key = {
-    headers: {'X-MICROCMS-API-KEY': process.env.API_KEY},
-  };
-  const data = await fetch('https://sou.microcms.io/api/v1/blog?limit=40/', key)
-    .then(res => res.json())
-    .catch((err) => console.warn(err));
-  const paths = data.contents.map((content: ContentId) => `/blog/${content.id}`)
-  return { paths, fallback: false }
+  const data = await client.get<{ contents: ContentId[] }>({ endpoint: 'blog', queries: {limit: 1000, fields: 'id,title'} });
+  const paths = data.contents.map((content: ContentId) => `/blog/${content.id}`);
+  return { 
+    paths, 
+    fallback: false 
+  }
 }
 
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  
+ 
   if (!context.params) {
     return {
       notFound: true,
     };
   }
   const id = context.params.id;
-  const key = {
-    headers: {'X-MICROCMS-API-KEY': process.env.API_KEY},
-  }
-  const data = await fetch('https://sou.microcms.io/api/v1/blog?limit=1000/' +id, key)
-  .then(res => res.json())
-  .catch((err) => console.warn(err));
 
+
+  if (typeof id !== "string") {
+    return {
+      notFound: true,
+    }
+  }
+  const data = await client.get({ endpoint: "blog", contentId: id });
 
   return {
     props: {
@@ -73,4 +73,3 @@ export const getStaticProps: GetStaticProps = async (context) => {
 };
 
 export default Id;
-
