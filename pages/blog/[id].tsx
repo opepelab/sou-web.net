@@ -38,22 +38,17 @@ const Id: React.FC<Content> = ({ blog }) => {
   );
 }
 
-
-type Paths = {
-  paths: string;
-}
-
-export const getStaticPaths: GetStaticPaths<Paths> = async () => {
+export const getStaticPaths: GetStaticPaths = async () => {
   const key = {
     headers: {'X-MICROCMS-API-KEY': process.env.API_KEY},
   }
-  const data = await fetch('https://sou.microcms.io/api/v1/blog?limit=40/', key)
+  const data = await fetch('https://sou.microcms.io/api/v1/blog?limit=200/', key)
   .then(res => res.json())
   .catch(() => null)
 
 
-  const paths = data.contents.map((blog: ContentId) => ({
-    params: { id: blog.id },
+  const paths = data.contents.map((content: ContentId) => ({
+    params: { id: content.id },
   }));
   return { 
     paths, 
