@@ -43,15 +43,16 @@ type Paths = {
   paths: string;
 }
 
-export const getStaticPaths: GetStaticPaths<Paths> = async (): Promise<any> => {
+export const getStaticPaths: GetStaticPaths<Paths> = async () => {
   const key = {
     headers: {'X-MICROCMS-API-KEY': process.env.API_KEY},
   }
   const data = await fetch('https://sou.microcms.io/api/v1/blog?limit=40/', key)
   .then(res => res.json())
+  .catch(() => null)
 
 
-  const paths: string[] = data.contents?.map((blog: ContentId) => ({
+  const paths = data.contents.map((blog: ContentId) => ({
     params: { id: blog.id },
   }));
   return { 
