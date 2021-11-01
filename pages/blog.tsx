@@ -14,8 +14,8 @@ type Map = {
 
 type Content = {
     publishedAt: string;
-    title: string;
     id: string;
+    title: string;
 }
 
 const Blog: React.FC<Map> = ({blog}) => {
@@ -40,7 +40,8 @@ const Blog: React.FC<Map> = ({blog}) => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const data = await client.get<{ contents: Content }>({ endpoint: "blog" });
+  const data = await client.get<{ contents: Content }>({ endpoint: "blog", queries: {limit: 1000, fields: 'publishedAt,id,title'}
+});
 
   return {
     props: {

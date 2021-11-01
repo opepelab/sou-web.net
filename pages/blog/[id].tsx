@@ -39,7 +39,8 @@ const Id: React.FC<Content> = ({ blog }) => {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const data = await client.get<{ contents: ContentId[] }>({ endpoint: "blog" });
+  const data = await client.get<{ contents: ContentId[] }>({ endpoint: "blog", queries: {limit: 1000, fields: 'id'}
+});
   const paths = data.contents.map((content) => `/blog/${content.id}`);
   return { 
     paths, 
