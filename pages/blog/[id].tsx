@@ -39,7 +39,11 @@ const Id: React.FC<Content> = ({ blog }) => {
 }
 
 
-export const getStaticPaths: GetStaticPaths = async () => {
+type Paths = {
+  paths: string;
+}
+
+export const getStaticPaths: GetStaticPaths<Paths> = async (): Promise<any> => {
   const key = {
     headers: {'X-MICROCMS-API-KEY': process.env.API_KEY},
   }
@@ -47,8 +51,9 @@ export const getStaticPaths: GetStaticPaths = async () => {
   .then(res => res.json())
 
 
-  const paths: string[] = data.contents?.map((content: ContentId) => `/blog/${content.id}`);
-
+  const paths: string[] = data.contents?.map((blog: ContentId) => ({
+    params: { id: blog.id },
+  }));
   return { 
     paths, 
     fallback: false 
