@@ -10,7 +10,6 @@ type ContentId = {
 }
 
 type Content = {
-  id: string;
   blog: {
     publishedAt: string;
     title: string;
@@ -65,7 +64,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
       notFound: true,
     }
   }
-  const data = await client.get<Content>({ endpoint: "blog", contentId: id });
+  const data = await client.get({ endpoint: "blog", contentId: id });
+
 
   return {
     props: {
@@ -75,3 +75,4 @@ export const getStaticProps: GetStaticProps = async (context) => {
 };
 
 export default Id;
+
