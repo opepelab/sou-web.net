@@ -25,9 +25,9 @@ const Blog: React.FC<Map> = ({blog}) => {
           <meta name="description" content="ログ"/>
         </Head>
         <main className="textLeft margin50p">
-          {blog.map((blog: Content) => (
-          <dl key={blog.id}>
-            <dd><Link href={`/blog/${blog.id}`}><a className="scale pinkLinks">{blog.title}</a></Link></dd>
+          {blog.map((props: Content) => (
+          <dl key={props.id}>
+            <dd><Link href={`/blog/${props.id}`}><a className="scale pinkLinks">{props.title}</a></Link></dd>
           </dl>
           ))}
         </main>
@@ -40,14 +40,14 @@ export const getStaticProps: GetStaticProps = async () => {
   const key = {
     headers: {'X-MICROCMS-API-KEY': process.env.API_KEY},
   };
-  const data = await fetch('https://sou.microcms.io/api/v1/blog?limit=1000', key)
+  const data = await fetch('https://sou.microcms.io/api/v1/blog?limit=40', key)
     .then(res => res.json())
-    .catch(() => null);
-
-  return {
-    props: {
-      blog: data.contents,
-    },
+    .catch(() => null)
+    
+    return {
+      props: {
+        blog: data.contents,
+      },
+    };
   };
-};
 export default Blog;

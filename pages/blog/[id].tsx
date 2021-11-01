@@ -65,7 +65,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
       notFound: true,
     }
   }
-  const data = await client.get({ endpoint: "blog", contentId: id });
+  const data = await client.get<Content>({ endpoint: "blog", contentId: id });
+
 
   return {
     props: {
