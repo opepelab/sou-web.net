@@ -50,21 +50,19 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 
 export const getStaticProps: GetStaticProps = async (context) => {
- 
+  
   if (!context.params) {
     return {
       notFound: true,
     };
   }
   const id = context.params.id;
-
-
-  if (typeof id !== "string") {
-    return {
-      notFound: true,
-    }
+  const key = {
+    headers: {'X-MICROCMS-API-KEY': process.env.API_KEY},
   }
-  const data = await client.get({ endpoint: "blog", contentId: id });
+  const data = await fetch('https://sou.microcms.io/api/v1/blog?limit=1000/' +id, key)
+  .then(res => res.json())
+  .catch((err) => console.warn(err));
 
 
   return {
