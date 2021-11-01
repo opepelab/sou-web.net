@@ -1,5 +1,6 @@
 import { GetStaticProps } from "next"
 import { motion } from "framer-motion"
+import Date from '../components/Sys/date'
 import Layout from '../components/Layout/layout'
 import Head from 'next/head'
 import Link from "next/link"
@@ -27,6 +28,7 @@ const Blog: React.FC<Map> = ({blog}) => {
         <main className="textLeft margin50p">
           {blog.map((props: Content) => (
           <dl key={props.id}>
+            <dt><Date dateString={props.publishedAt} /></dt>
             <dd><Link href={`/blog/${props.id}`}><a className="scale pinkLinks">{props.title}</a></Link></dd>
           </dl>
           ))}

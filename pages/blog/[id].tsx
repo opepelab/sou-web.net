@@ -1,5 +1,6 @@
 import { GetStaticPaths, GetStaticProps } from 'next'
 import styles from './midasi.module.scss';
+import Date from '../../components/Sys/date'
 import Head from 'next/head';
 import { motion } from "framer-motion";
 import Layout from '../../components/Layout/layout'
@@ -28,6 +29,7 @@ const Id: React.FC<Content> = ({ blog }) => {
         </Head>
         <main className="textLeft">
           <h1 className={styles.h1}>{blog.title}</h1>
+          <div className={styles.Time2}><Date dateString={blog.publishedAt} /></div>
           <div className="triangle-bottom" />
           <div className={styles.BodyBlog} dangerouslySetInnerHTML={{__html: blog.body}} />
         </main>
@@ -36,19 +38,16 @@ const Id: React.FC<Content> = ({ blog }) => {
   );
 }
 
-type Paths = {
-  params: string;
-}
 
-export const getStaticPaths: GetStaticPaths<Paths> = async () => {
+export const getStaticPaths: GetStaticPaths = async () => {
   const key = {
     headers: {'X-MICROCMS-API-KEY': process.env.API_KEY},
   }
   const data = await fetch('https://sou.microcms.io/api/v1/blog?limit=40/', key)
   .then(res => res.json())
-  .catch(() => null);
 
-  const paths = data.contents?.map((blog: ContentId) => ({
+
+  const paths: string[] = data.contents?.map((blog: ContentId) => ({
     params: { id: blog.id },
   }));
   return { 
@@ -75,12 +74,10 @@ export const getStaticProps: GetStaticProps = async (context) => {
   }
   const data = await client.get<Content>({ endpoint: "blog", contentId: id });
 
-
   return {
     props: {
       blog: data,
     },
   };
 };
-
 export default Id;
