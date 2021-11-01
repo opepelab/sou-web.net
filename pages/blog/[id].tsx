@@ -46,7 +46,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
   .then(res => res.json())
   .catch(() => null)
 
-
   const paths = data.contents.map((content: ContentId) => ({
     params: { id: content.id },
   }));
@@ -56,22 +55,22 @@ export const getStaticPaths: GetStaticPaths = async () => {
   }
 }
 
-
 export const getStaticProps: GetStaticProps = async (context) => {
  
   if (!context.params) {
     return {
       notFound: true,
-    };
+    }
   }
-  const id = context.params.id;
 
+  const id = context.params.id;
 
   if (typeof id !== "string") {
     return {
       notFound: true,
     }
   }
+  
   const data = await client.get<Content>({ endpoint: "blog", contentId: id });
 
   return {
