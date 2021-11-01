@@ -47,9 +47,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
   .then(res => res.json())
 
 
-  const paths: string[] = data.contents?.map((blog: ContentId) => ({
-    params: { id: blog.id },
-  }));
+  const paths: string[] = data.contents?.map((content: ContentId) => `/blog/${content.id}`);
+
   return { 
     paths, 
     fallback: false 
