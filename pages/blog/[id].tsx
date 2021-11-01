@@ -39,13 +39,11 @@ const Id: React.FC<Content> = ({ blog }) => {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const key = {
-    headers: {'X-MICROCMS-API-KEY': process.env.API_KEY},
-  };
-  const paths = await fetch('https://sou.microcms.io/api/v1/blog?limit=1000', key)
-    .then(res => res.json())
-    .catch(() => null);
-
+  const data = await client.get<{ contents: ContentId[] }>({
+  endpoint: "blog",
+  queries: {limit: 100, fields: 'id'}
+});
+  const paths = data.contents.map((content) => `/blog/${content.id}`);
   return { 
     paths, 
     fallback: false 
