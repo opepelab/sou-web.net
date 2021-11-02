@@ -46,7 +46,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   .then(res => res.json())
   .catch(() => null)
 
-  const paths = data.contents.map((content: ContentId) => ({
+  const paths: string[] = data.contents.map((content: ContentId) => ({
     params: { id: content.id },
   }));
   return { 
