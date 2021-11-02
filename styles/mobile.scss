@@ -70,15 +70,6 @@ button {
     to { opacity: 1; }
   }
 
-  /* 写真のズーム */
-.Zoom-in {
-  transition-duration: 1.5s;
-}
-
-.Zoom-in:active {
-  transform: scale(1.8);
-  pointer-events: none;
-}
 
 /* ブログとコンタクトのスケール再定義 */
 

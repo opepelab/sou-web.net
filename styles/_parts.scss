@@ -20,11 +20,6 @@
   transition-duration: 1s;
 }
 
-.z-index {
-  position: relative;
-  z-index: 4;
-}
-
 .margin50p {
   margin-top: $p60;
 }
@@ -111,16 +106,6 @@
 
 .point {
 cursor: zoom-in;
-}
-
-@media screen and (min-width: 740px) {
-/* PC写真のズーム */
-.Zoom-in {
-  transition-duration: 1.5s;
-}
-.Zoom-in:active {
-  transform: scale(2);
-}
 }
 
 .PM {

@@ -16,10 +16,8 @@ $r50: $r25*2;
 $r100: $r50*2;
 
 $Google0: "Herr Von Muellerhoff";
-$Google1: 'Noto Serif JP', serif;
 $Google: 'Zen Kurenaido', sans-serif;
-$Google1:  'Zen Maru Gothic', sans-serif;
-$Google1: 'Kaisei HarunoUmi', serif;
+
 
 $IB: inline-block;
 $NO: none;
@@ -50,6 +48,7 @@ $YE: #fffed5;
 @mixin NAV {
     display: flex;
     justify-content: center;
+    align-items: center;
     grid-gap: $p50;
     white-space: nowrap; 
 }
