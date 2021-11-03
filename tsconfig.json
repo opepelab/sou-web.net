@@ -23,14 +23,6 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "components",
-    "pages/api/mail.js",
-    "pages/api/mail.js",
-    "pages/api/mail.js",
-    "pages/blog/[slug].js",
-    "pages/paper.js",
-    "pages/blog/[id].js",
-    "pages/blog/[id].js"
   ],
   "exclude": [
     "node_modules"

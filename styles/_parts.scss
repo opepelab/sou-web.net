@@ -2,10 +2,6 @@
   text-align: left;
 }
 
-.inblo {
-  display: $IB;
-}
-
 .CN {
   @include CenString;
 }
@@ -15,10 +11,7 @@
   top: 80px;
 }
 
-.scale2:hover {
-  transform: scale(1.55);
-  transition-duration: 1s;
-}
+
 
 .margin50p {
   margin-top: $p60;
@@ -28,11 +21,20 @@
   display: none;
 }
 
+.inblo {
+  display: $IB;
+}
+
 .Logo {
   z-index: 2;
   position: relative;
   top: 2.5px;
   left: -400px;
+}
+
+.scale2:hover {
+  transform: scale(1.55);
+  transition-duration: 1s;
 }
 
 .Home {
