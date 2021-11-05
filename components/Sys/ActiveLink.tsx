@@ -2,7 +2,7 @@
 //Qiita @TK-C (JA)
 
 import { withRouter, NextRouter  } from 'next/router';
-import React, { Children, ReactElement } from 'react';
+import React, { ReactElement } from 'react';
 import Link from 'next/link';
 
 type Props = {
@@ -13,10 +13,10 @@ type Props = {
 }
 
 const ActiveLink = ({ router, children, ...props }: Props) => {
-  const child = Children.only(children);
+  const child = children;
   
   let className: string = child.props.className;
-  if (router.pathname == props.href && props.activeClassName) {
+  if (router.pathname == props.href) {
     className = `${className} ${props.activeClassName}`;
   }
 
