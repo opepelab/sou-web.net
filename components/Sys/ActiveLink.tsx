@@ -16,7 +16,7 @@ const ActiveLink = ({ router, children, ...props }: Props) => {
   const child = children;
   
   let className: string = child.props.className;
-  if (router.pathname == props.href) {
+  if (router.pathname === props.href) {
     className = `${className} ${props.activeClassName}`;
   }
 
