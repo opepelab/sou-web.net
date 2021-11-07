@@ -13,15 +13,14 @@ type Props = {
 }
 
 const ActiveLink = ({ router, children, ...props }: Props) => {
-  const child = children;
   
-  let className: string = child.props.className;
+  let className: string = children.props.className;
   if (router.pathname === props.href) {
     className = `${className} ${props.activeClassName}`;
   }
 
   return (
-  <Link {...props}>{React.cloneElement(child, { className })}</Link>
+  <Link {...props}>{React.cloneElement(children, { className })}</Link>
   );
 }
 
