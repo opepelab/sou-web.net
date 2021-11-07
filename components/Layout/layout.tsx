@@ -4,6 +4,7 @@ import MenuButton from '../MenuButton'
 import Menu from '../Menu'
 import Logo from '../Logo'
 import NextText from '../NextText'
+import Text from '../Text'
 import Footer from '../Footer'
 
 type Props = {
@@ -21,6 +22,7 @@ const Layout: React.FC<Props> = ({ children }) => {
         <div>
           <Logo />
           <NextText />
+          <Text />
         </div>
         <div className="footerFix">
           { children }

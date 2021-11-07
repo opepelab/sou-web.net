@@ -7,7 +7,7 @@ import Link from "next/link"
 
 type Map = {
   blog: {
-    map: StringConstructor;
+    map: NumberConstructor;
   }
 }
 
@@ -17,7 +17,7 @@ type Content = {
     title: string;
 }
 
-const Blog: React.FC<Map> = ({blog}) => {
+const Blog: React.FC<Map> = ({ blog }) => {
   return (
     <Layout>
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
@@ -26,6 +26,7 @@ const Blog: React.FC<Map> = ({blog}) => {
           <meta name="description" content="ログ"/>
         </Head>
         <main className="textLeft margin50p">
+        <Link href="/blog/page/1"><a className="scale" id="subete">少分</a></Link>
           {blog.map((props: Content) => (
           <dl key={props.id}>
             <dt><Date dateString={props.publishedAt} /></dt>
@@ -42,6 +43,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const key = {
     headers: {'X-MICROCMS-API-KEY': process.env.API_KEY},
   };
+
   const data = await fetch('https://sou.microcms.io/api/v1/blog?limit=200', key)
     .then(res => res.json())
     .catch(() => null)

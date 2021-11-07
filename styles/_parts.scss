@@ -63,7 +63,7 @@
 }
 
 .colorState {
-  color: $FA;
+  color: $FB;
   border-bottom: solid 1px $ST;
   transform: scale(0.9);
   pointer-events: none;
@@ -77,7 +77,6 @@
   height: 70px;
   top: $p0;
   left: $p0;
-  border-bottom: solid 1px #eaeaea;
 }
 
 .Line {
@@ -98,7 +97,7 @@
   border: {
     style: solid;
     width: 5px;
-    color: $FA transparent transparent transparent;
+    color: $FB transparent transparent transparent;
   }
 }
 
@@ -124,11 +123,11 @@ cursor: zoom-in;
 }
 
 .pinkLinks {
-  color: $FA;
+  color: $FB;
 }
 
 .Special {
-  color: $FA;
+  color: $FB;
 }
 
 .Time1 {

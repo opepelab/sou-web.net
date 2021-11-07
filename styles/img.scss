@@ -45,22 +45,3 @@
     transform: scale(1.5);
 }
 }
-
-/* なんちゃって閉じるボタン*/
-.lb::before,.lb::after {
-    display: block;
-    position: fixed;
-    content: "";
-    width: 24px;
-    height:3px;
-    top: 24px;
-    right: 12px;
-    background: #fff;
-    border-radius: 4px;
-}
-.lb::before {
-    transform: rotate(-315deg);
-}
-.lb::after {
-    transform: rotate(315deg);
-}

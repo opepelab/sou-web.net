@@ -17,6 +17,7 @@ $r100: $r50*2;
 
 $Google0: "Herr Von Muellerhoff";
 $Google: 'Zen Kurenaido', sans-serif;
+$Google1: 'Zen Maru Gothic', sans-serif;
 
 
 $IB: inline-block;
@@ -24,8 +25,8 @@ $NO: none;
 
 $BG: #fafafa;
 $ST: #555555;
-$FA: #ffaaaa;
-$FE: #ffeeee;
+$FB: #ffaaaa;
+$FE: #ffefef;
 $YE: #fffed5;
 
 @mixin LRauto {
@@ -54,7 +55,7 @@ $YE: #fffed5;
 }
 
 @mixin Hover {
-    color: $FA;
+    color: $FB;
     transform: scale(1.01);
     transition-duration: 0.1s;
     animation: 1.1s feed;
@@ -81,7 +82,7 @@ $YE: #fffed5;
 
 @mixin BBMyellow {
     background: #fffed5;
-    color: $FA;
+    color: $FB;
     font: {
         family: $Google;
         size: 12px;
@@ -111,7 +112,7 @@ $YE: #fffed5;
     left: 0%;
     right: 0%;
     margin: auto;
-    background: $FA;
+    background: $FB;
     border: solid 2px;
     color: #FFF;
     padding: $r0;
@@ -119,4 +120,5 @@ $YE: #fffed5;
     height: $p20*2;
     cursor: pointer;
     border-radius: 10px;
+    border: none;
 }

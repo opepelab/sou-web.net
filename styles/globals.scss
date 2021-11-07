@@ -48,6 +48,25 @@ li {
   font-size: 24px;   
 }
 
+.nav3 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  grid-gap: $p20;
+}
+
+.Pagi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $YE;
+  color: $FB;
+  font-size: 10px;
+  height: 25px;
+  width: 25px;
+  border-radius: 5px;
+}
+
 
 dt {
     font-size: $p10;
@@ -127,4 +146,25 @@ h3 {
     visibility: unset;
   }
   
+  #subete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    position: absolute;
+    background: $FE;
+    width: $p50;
+    height: $p40;
+    right: $p0;
+    top: $p60;
+    border-radius: 10px;
+  }
   
+  .migiue {
+    z-index: 4;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: $FB;
+    font-size: 24px;
+  }

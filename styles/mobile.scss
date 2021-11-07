@@ -10,13 +10,13 @@ body {
 
 button {
   border: none;
-  background: $FA;
+  background: $FB;
   border-radius: 20%;
   padding-top: 31px;
   padding-bottom: 5px;
   padding-left: 8px;
   padding-right: 8px;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .Line {
@@ -24,7 +24,7 @@ button {
   z-index: 5;
   position: fixed;
   right: 15px;
-  top: 15px;
+  bottom: 15px;
 }
 .Line span {
   display: block;
@@ -105,10 +105,6 @@ button {
   position: absolute;
   top: 10px;
   left: 10px;
-}
-
-.scale05 {
-  transform: scale(0.75);
 }
 }
 
