@@ -10,6 +10,7 @@ type Props = {
   children: ReactElement;
   href: string;
   activeClassName: string;
+  [x: string]: any;
 }
 
 const ActiveLink = ({ router, children, ...props }: Props) => {
@@ -20,7 +21,7 @@ const ActiveLink = ({ router, children, ...props }: Props) => {
   }
 
   return (
-  <Link {...props}>{React.cloneElement(children, { className })}</Link>
+    <Link {...props}>{React.cloneElement(children, { className })}</Link>
   );
 }
 

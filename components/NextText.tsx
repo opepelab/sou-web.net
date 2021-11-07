@@ -6,7 +6,7 @@ const NextText: React.FC = () => {
             <ActiveLink href="/mail" activeClassName="colorState">
                 <a className="scale">メール</a>
             </ActiveLink>
-            <ActiveLink href="/blog/page/1" activeClassName="colorState">
+            <ActiveLink href="/blog/page/[id]" as="/blog/page/1" activeClassName="colorState">
                 <a className="scale">ポスト</a>
             </ActiveLink>
         </div>
