@@ -2,7 +2,7 @@ import ActiveLink from './Sys/ActiveLink'
 import React from 'react';
 
 
-const Header: React.FC = () => {
+const Header: React.FC = (content) => {
     return (
         <div>
             <header className="bgg">

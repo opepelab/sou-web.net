@@ -1,4 +1,3 @@
-// pages/blog/page/[id].js
 import { GetStaticPaths } from 'next'
 import Link from 'next/link';
 import { motion } from "framer-motion"
@@ -17,7 +16,6 @@ type Content = {
   totalCount: number;
 }
 
-// pages/blog/[id].js
 const Page: React.FC<Content> = ({ blog, totalCount }) => {
   return (
     <Layout>
