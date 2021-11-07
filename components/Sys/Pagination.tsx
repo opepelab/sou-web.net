@@ -1,4 +1,5 @@
 import Link from 'next/link';
+// import ActiveLink from './ActiveLink'
 
 type Props = {
     totalCount: number;
@@ -14,8 +15,8 @@ export const Pagination = ({ totalCount }: Props) => {
     <>
         <nav>
         <ul className="nav3">
-            {range(1, Math.ceil(totalCount / PER_PAGE)).map((content) => (
-            <Link href={`/blog/page/${content}`}><a className="Pagi"><li>{content}</li></a></Link>
+            {range(1, Math.ceil(totalCount / PER_PAGE)).map((id) => (
+            <Link href="/blog/page/[id]" as={`/blog/page/${id}`}><a className="Pagi"><li>{id}</li></a></Link>
             ))}
             </ul>
       </nav>
