@@ -25,28 +25,17 @@
   display: $IB;
 }
 
-.Logo {
-  z-index: 2;
-  position: relative;
-  top: 2.5px;
-  left: -400px;
-}
-
 .scale2:hover {
   transform: scale(1.55);
   transition-duration: 1s;
 }
 
 .Home {
-  z-index: 1;
-  @include CenString;
+  margin: 0px;
   cursor: pointer;
   border: none;
-  width: 100%;
   font: {
-  family: $Google;
-  weight: normal;
-  size: 40px;
+  size: 34px;
   }
 }
 
@@ -72,7 +61,7 @@
 .bgg {
   z-index: 2;
   position: absolute;
-  background-color: $FE;
+  background-color: $BG;
   width: $r100;
   height: 70px;
   top: $p0;
@@ -99,10 +88,6 @@
     width: 5px;
     color: $FB transparent transparent transparent;
   }
-}
-
-.Maru {
-  border-radius: $r50;
 }
 
 .point {

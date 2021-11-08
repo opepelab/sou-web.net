@@ -25,7 +25,28 @@ const Picture: React.FC = () => {
             </div>
 
 
-            <div className="Zoom-in margin10 point z-index"></div>  
+            <h1>Design</h1>
+          <div className="triangle-bottom" />
+          <dl>
+            <div>
+              <a href="#01"><img className="PM margin10 point " src="/picture/315.jpg" width={255} height={191} /></a>
+              <a id="01" href="#close" className="lb"><img className="PM" src="/picture/315.jpg" width={255} height={191} /></a>
+            </div>
+
+
+            <dt>Tablet</dt>
+            <dd>Cintiq Pro</dd>
+            <dt>Software</dt>
+            <dd>Photosohp. SAI2. CLIPSTUDIO</dd>
+            <dt>Display</dt>
+            <dd>ColorEdge CS2410</dd>
+            <dt>CPU</dt>
+            <dd>i7</dd>
+            <dt>RAM</dt>
+            <dd>16GB</dd>
+          </dl>
+
+          <img className="PM margin10 point " src="/picture/0068.png" width={190} height={260} />
         </main>
       </motion.div>
     </Layout>

@@ -19,11 +19,8 @@ const Layout: React.FC<Props> = ({ children }) => {
         <MenuButton open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />
         <Header />
-        <div>
-          <Logo />
-          <NextText />
-          <Text />
-        </div>
+        <Text />
+        <Logo />
         <div className="footerFix">
           { children }
         </div>

@@ -16,18 +16,19 @@ $r50: $r25*2;
 $r100: $r50*2;
 
 $Google0: "Herr Von Muellerhoff";
-$Google: 'Zen Kurenaido', sans-serif;
-$Google1: 'Zen Maru Gothic', sans-serif;
+$Google1: 'Zen Kurenaido', sans-serif;
+$Google: 'Zen Maru Gothic', sans-serif;
 
 
 $IB: inline-block;
 $NO: none;
 
-$BG: #fafafa;
-$ST: #555555;
-$FB: #ffaaaa;
+$BG: rgb(36, 47, 61);
+$ST: #FFF;
+$FB: #ffbbbb;
 $FE: #ffefef;
 $YE: #fffed5;
+$ME: rgba(19, 28, 37, 0.92);
 
 @mixin LRauto {
     margin-right: auto;
@@ -36,7 +37,7 @@ $YE: #fffed5;
 
 @mixin H1H2 {
     font-size: $p20;
-    border-bottom: 1px solid #eaeaea;
+    border-bottom: 1px solid;
     white-space: nowrap;
     @include LRauto;
 }
@@ -47,11 +48,13 @@ $YE: #fffed5;
 }
 
 @mixin NAV {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     grid-gap: $p50;
     white-space: nowrap; 
+    left: 120px;
 }
 
 @mixin Hover {
@@ -64,7 +67,7 @@ $YE: #fffed5;
 @mixin Menu {
     z-index: 4;
     position: fixed;
-    background-color: rgba(255,238,238,0.8);
+    background-color: $ME;
     left: 0px;
     top: 0px;
     width: $r100;

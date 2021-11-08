@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 type Props = {
     open: boolean;
     setOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -9,14 +11,8 @@ const Home: React.FC<Props> = ({ open, setOpen }) => {
             <main className="CN">
                 <div aria-expanded={open} onClick={() => setOpen(!open)}
                 aria-label="TOP Toggle menu">
-                <div><img className="Maru" src="/SVG/ico.svg" width={100} height={100} /></div>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <h1 className="Home pinkLinks">拙者</h1>
+                <Image className="m0" src="/logogo.png" width={250} height={250} />
+                <h1 className="Home hikki">S o u = W e b</h1>
                 </div>
             </main>
         </div>
