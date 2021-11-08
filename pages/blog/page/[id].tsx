@@ -43,9 +43,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const key = {
     headers: { 'X-MICROCMS-API-KEY': process.env.API_KEY }
   };
-  const data = await fetch('https://sou.microcms.io/api/v1/blog', key)
-  .then(res => res.json())
-  .catch(() => null)
+  const res = await fetch('https://sou.microcms.io/api/v1/blog', key)
+  const data = await res.json()
 
   const PER_PAGE = 14; 
   const range = (start: number, end: number) => [...Array(end - start + 1)].map((_, i) => start + i)
@@ -66,9 +65,8 @@ export const getStaticProps = async (context: {params: {id: number}}) => {
     headers: { 'X-MICROCMS-API-KEY': process.env.API_KEY }
   };
 
-  const data = await fetch(`https://sou.microcms.io/api/v1/blog?offset=${(id - 1) * 14}&limit=14`, key)
-  .then(res => res.json())
-  .catch(() => null)
+  const res = await fetch(`https://sou.microcms.io/api/v1/blog?offset=${(id - 1) * 14}&limit=14`, key)
+  const data = await res.json()
 
   return {
     props: {

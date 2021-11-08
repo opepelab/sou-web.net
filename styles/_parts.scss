@@ -58,6 +58,12 @@
   pointer-events: none;
 }
 
+.listState {
+  transform: scale(0.8);
+  color: $ME;
+  pointer-events: none;
+}
+
 .bgg {
   z-index: 2;
   position: absolute;
