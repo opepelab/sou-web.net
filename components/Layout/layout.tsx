@@ -3,7 +3,6 @@ import Header from '../Header'
 import MenuButton from '../MenuButton'
 import Menu from '../Menu'
 import Logo from '../Logo'
-import NextText from '../NextText'
 import Text from '../Text'
 import Footer from '../Footer'
 
