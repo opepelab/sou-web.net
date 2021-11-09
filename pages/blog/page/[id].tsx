@@ -24,8 +24,7 @@ const Page: React.FC<Content> = ({ blog, totalCount }) => {
           <title>log - sou</title>
           <meta name="description" content="ログ"/>
         </Head>
-        <main className="textLeft margin50p">
-        <Link href="/blog"><a className="scale" id="siteMap">Site Map</a></Link>
+        <main className="margin50p">
           {blog.map((blog: Content) => (
           <dl key={blog.id}>
             <dt><Date dateString={blog.publishedAt}/></dt>
@@ -33,6 +32,7 @@ const Page: React.FC<Content> = ({ blog, totalCount }) => {
           </dl>
           ))}
           <Pagination totalCount={totalCount} />
+          <Link href="/blog"><a className="scale">Site Map</a></Link>
         </main>
       </motion.div>
     </Layout>
