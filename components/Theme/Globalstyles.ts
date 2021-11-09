@@ -11,11 +11,11 @@ export const GlobalStyles = createGlobalStyle<Props>`
         background: ${(props) => props.theme.background};
         color: ${(props) => props.theme.color};
         font-family: ${(props) => props.theme.font};
-        transition: all 0.5s ease-in-out;
+        transition-duration: 0.5s;
     }
     .bgg{
         background: ${(props) => props.theme.bgg};
-        transition: all 0.5s ease-in-out;
+        transition-duration: 0.5s;
     }
     .colorState{
         border-bottom: ${(props) => props.theme.border};
@@ -24,7 +24,6 @@ export const GlobalStyles = createGlobalStyle<Props>`
     a{
         color: ${(props) => props.theme.color};
         font-weight: ${(props) => props.theme.bold};
-        transition: all 0.5s ease-in-out;
     }
     .MenuList [aria-expanded='true'] {
         background: ${(props) => props.theme.menu};

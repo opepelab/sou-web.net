@@ -2,7 +2,6 @@ import React, { useState, ReactNode } from 'react';
 import Header from '../Header'
 import MenuButton from '../MenuButton'
 import Menu from '../Menu'
-import Logo from '../Logo'
 import Text from '../Text'
 import Footer from '../Footer'
 import ThemeToggler from '../ThemeToggler'
