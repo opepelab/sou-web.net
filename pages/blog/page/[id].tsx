@@ -25,7 +25,7 @@ const Page: React.FC<Content> = ({ blog, totalCount }) => {
           <meta name="description" content="ログ"/>
         </Head>
         <main className="textLeft margin50p">
-        <Link href="/blog"><a className="scale" id="subete">全部</a></Link>
+        <Link href="/blog"><a className="scale" id="siteMap">Site Map</a></Link>
           {blog.map((blog: Content) => (
           <dl key={blog.id}>
             <dt><Date dateString={blog.publishedAt}/></dt>

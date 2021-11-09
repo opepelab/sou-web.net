@@ -58,9 +58,25 @@
   pointer-events: none;
 }
 
+.Pagi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $FB;
+  color: black;
+  font: {
+    size: 12px;
+    weight: bold;
+  }
+  height: 25px;
+  width: 25px;
+  border-radius: 5px;
+}
+
 .listState {
-  background: $ME;
-  color: rgb(255, 0, 0);
+  background: black;
+  color: white;
+  pointer-events: none;
 }
 
 .bgg {

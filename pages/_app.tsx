@@ -5,9 +5,9 @@ import '../styles/mobile.scss'
 import '../styles/img.scss'
 import Head from 'next/head'
 import { ThemeContext, ThemeProvider } from "styled-components";
-import { LightTheme, DarkTheme } from '../components/Theme'
+import { LightTheme, DarkTheme } from '../components/Theme/Theme'
 import { useState } from 'react'
-import GlobalStyles from '../components/Globalstyles'
+import GlobalStyles from '../components/Theme/Globalstyles'
 
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
   const [theme, toggleTheme] = useState('')
@@ -19,12 +19,12 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
       </Head>
       
       <ThemeContext.Provider value={{theme, toggleTheme}}>
-      <ThemeProvider theme={theme === 'light' ? DarkTheme : LightTheme }>
-      <GlobalStyles />
-      <AnimatePresence exitBeforeEnter>
-        <Component {...pageProps} key={router.route} />
-      </AnimatePresence>
-      </ThemeProvider>
+        <ThemeProvider theme={theme === 'light' ? DarkTheme : LightTheme }>
+          <GlobalStyles />
+          <AnimatePresence exitBeforeEnter>
+            <Component {...pageProps} key={router.route} />
+          </AnimatePresence>
+        </ThemeProvider>
       </ThemeContext.Provider>
     </>
   );

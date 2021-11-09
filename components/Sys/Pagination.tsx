@@ -12,7 +12,7 @@ export const Pagination = ({ totalCount }: Props) => {
 
   return (
     <>
-        <nav>
+      <nav>
         <ul className="nav3">
             {range(1, Math.ceil(totalCount / PER_PAGE)).map((id) => (
             <ActiveLink href={`/blog/page/${id}`} activeClassName="listState"><a className="Pagi"><li>{id}</li></a></ActiveLink>
