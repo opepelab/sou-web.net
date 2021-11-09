@@ -29,7 +29,7 @@ const Page: React.FC<Content> = ({ blog, totalCount }) => {
           {blog.map((blog: Content) => (
           <dl key={blog.id}>
             <dt><Date dateString={blog.publishedAt}/></dt>
-            <dd><Link href={`/blog/${blog.id}`}><a className="scale">{blog.title}</a></Link></dd>
+            <dd><Link href={`/blog/${blog.id}`}><a className="scale pinkLinks">{blog.title}</a></Link></dd>
           </dl>
           ))}
           <Pagination totalCount={totalCount} />

@@ -59,9 +59,8 @@
 }
 
 .listState {
-  transform: scale(0.8);
-  color: $ME;
-  pointer-events: none;
+  background: $ME;
+  color: rgb(255, 0, 0);
 }
 
 .bgg {

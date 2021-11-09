@@ -5,6 +5,7 @@ import Menu from '../Menu'
 import Logo from '../Logo'
 import Text from '../Text'
 import Footer from '../Footer'
+import ThemeToggler from '../ThemeToggler'
 
 type Props = {
   children: ReactNode;
@@ -19,7 +20,7 @@ const Layout: React.FC<Props> = ({ children }) => {
         <Menu open={open} setOpen={setOpen} />
         <Header />
         <Text />
-        <Logo />
+        <ThemeToggler />
         <div className="footerFix">
           { children }
         </div>

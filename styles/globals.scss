@@ -59,8 +59,12 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: $ME;
-  font-size: 10px;
+  background: #FFF;
+  color: $BG;
+  font: {
+    size: 12px;
+    weight: bold;
+  }
   height: 25px;
   width: 25px;
   border-radius: 5px;
@@ -159,7 +163,7 @@ h3 {
   }
   
   .migiue {
-    z-index: 4;
+    z-index: 5;
     position: relative;
     top: 14px;
     left: -340px;
@@ -168,13 +172,16 @@ h3 {
   .Logo {
     z-index: 4;
     position: relative;
-    top: -34px;
-    left: -246px;
-    transform: rotate(90deg);
+    background: #FFEFEF;
+    top: -26px;
+    left: -240px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
   }
+
   .m0 {
     cursor: pointer;
-    border-radius: 50%;
   }
   .Maru {
     border-radius: $r50;

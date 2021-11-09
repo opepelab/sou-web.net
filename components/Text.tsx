@@ -5,7 +5,7 @@ const Text: React.FC = () => {
         <div>
             <Link href="/">
             <a>
-                <span className="migiue hikki">S o u = W e b</span>
+                <span className="migiue hikki">S o u  W e b</span>
             </a>
             </Link>
         </div>

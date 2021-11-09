@@ -1,7 +1,3 @@
-// TechWiki
-//Git Hub@remy氏 (EN)
-//Qiita @TK-C (JA)
-
 import { withRouter, NextRouter  } from 'next/router';
 import React, { ReactElement } from 'react';
 import Link from 'next/link';
