@@ -2,10 +2,10 @@ import Link from 'next/link'
 
 const Text: React.FC = () => {
     return (
-        <div>
+        <div className="inblo">
             <Link href="/">
             <a>
-                <span className="migiue hikki">S o u  W e b</span>
+                <div className="migiue hikki">S o u  W e b</div>
             </a>
             </Link>
         </div>

@@ -18,7 +18,9 @@ export const GlobalStyles = createGlobalStyle<Props>`
     .colorState{
         border-bottom: ${(props) => props.theme.border};
     }
-
+    h1{
+        border-bottom: ${(props) => props.theme.h1};
+    }
     a{
         color: ${(props) => props.theme.color};
         font-weight: ${(props) => props.theme.bold};

@@ -5,5 +5,6 @@ export type ThemeType = {
     bgg: string;
     menu: string;
     border: string;
+    h1: string;
     bold: string;
   };

@@ -17,10 +17,9 @@ const Layout: React.FC<Props> = ({ children, home }) => {
       <>
 
         { home && 
-        <Home open={open} setOpen={setOpen} /> }
+        <Home open={open} setOpen={setOpen} trans={trans} setTrans={setTrans} /> }
         <Menu open={open} setOpen={setOpen} />
         <div className="position">
-        <ThemeToggler trans={trans} setTrans={setTrans}/>
         </div>
         <div className="footerFix">
           { children }

@@ -136,36 +136,49 @@ h3 {
   .migiue {
     z-index: 5;
     position: relative;
-    top: 14px;
+    top: 0px;
     left: -340px;
     font-size: 24px;
+    width: 100px;
   }
   .Logo {
     z-index: 4;
     position: relative;
-    top: -30px;
-    left: -260px;
-    border-radius: 20%;
+    top: 10px;
+    left: -320px;
     width: 40px;
     height: 40px;
   }
 
   .Logo [aria-expanded='true'] {
     transform: rotate(30deg);
-    transition-duration: 0.2s;
+    transition-duration: 0.25s;
   }
 
   .Logo [aria-expanded='false'] {
     transform: rotate(-330deg);
-    transition-duration: 0.2s;
+    transition-duration: 0.25s;
+  }
+
+  .LogoHome {
+    position: relative;
+    top: 100%;
+
+  }
+
+  .LogoHome [aria-expanded='true'] {
+    transform: rotate(30deg);
+  }
+
+  .LogoHome [aria-expanded='false'] {
+    transform: rotate(-30deg);
   }
 
   .position {
     z-index: 1;
     position: relative;
-    top: 480px;
-    right: -540px;
-    transform: scale(1.6);
+    left: 200px;
+    transform: scale(1);
   }
   .m0 {
     cursor: pointer;
