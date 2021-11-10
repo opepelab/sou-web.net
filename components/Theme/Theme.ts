@@ -10,9 +10,7 @@ export const LightTheme = {
     font: 'Zen Kurenaido, sans-serif',
     bgg: '#FFEFEF',
     menu: 'rgba(255, 239, 239, 0.9)',
-    Logo: 'black',
     border: 'solid 1px #555555',
-    list0: '#fffed5',
     bold: 'bold',
 }
 

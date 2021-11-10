@@ -12,6 +12,7 @@ type Props = {
 
 const Layout: React.FC<Props> = ({ children }) => {
   const [open, setOpen] = useState(false);
+  const [trans, setTrans] = useState(false);
 
     return (
       <>
@@ -19,7 +20,7 @@ const Layout: React.FC<Props> = ({ children }) => {
         <Menu open={open} setOpen={setOpen} />
         <Header />
         <Text />
-        <ThemeToggler />
+        <ThemeToggler trans={trans} setTrans={setTrans}/>
         <div className="footerFix">
           { children }
         </div>

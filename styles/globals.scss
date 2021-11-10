@@ -143,14 +143,30 @@ h3 {
   .Logo {
     z-index: 4;
     position: relative;
-    background: #FFEFEF;
-    top: -26px;
-    left: -240px;
-    border-radius: 50%;
+    top: -30px;
+    left: -260px;
+    border-radius: 20%;
     width: 40px;
     height: 40px;
   }
 
+  .Logo [aria-expanded='true'] {
+    transform: rotate(30deg);
+    transition-duration: 0.2s;
+  }
+
+  .Logo [aria-expanded='false'] {
+    transform: rotate(-330deg);
+    transition-duration: 0.2s;
+  }
+
+  .position {
+    z-index: 1;
+    position: relative;
+    top: 480px;
+    right: -540px;
+    transform: scale(1.6);
+  }
   .m0 {
     cursor: pointer;
   }

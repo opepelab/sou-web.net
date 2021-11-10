@@ -96,6 +96,13 @@ button {
   top: 15px;
   left: 140px;
 }
+
+.position {
+  @include CenString;
+  top: -82px;
+  left: -100px;
+  transform: scale(1);
+}
 }
 
 

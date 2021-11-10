@@ -2,11 +2,23 @@ import { useContext } from 'react'
 import { ThemeContext } from 'styled-components'
 import Image from 'next/image'
 
-export const ThemeToggler = () => {
-    const { theme, toggleTheme } = useContext(ThemeContext);
+type Props = {
+    trans: boolean;
+    setTrans: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+type StrProps = {
+    theme: string;
+    toggleTheme: StringConstructor;
+}
+
+export const ThemeToggler: React.FC<Props> = ({ trans, setTrans }) => {
+    const { theme, toggleTheme } = useContext<StrProps>(ThemeContext);
     return (
-        <div onClick={() => toggleTheme(theme === 'light' ? 'dark' : 'light')} className="Logo inblo">
-               <Image className="m0" src="/logogo.png" width={40} height={40} />
+        <div className="Logo inblo">
+                <div aria-expanded={trans} onClick={() => {toggleTheme(theme === 'light' ? 'dark' : 'light');setTrans(!trans);}}>
+               <Image className="m0" src="/logogo.svg" width={40} height={40} />
+            </div>
         </div>
     );
 }

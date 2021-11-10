@@ -2,6 +2,7 @@ import React, { useState, ReactNode } from 'react';
 import Home from '../Home'
 import Menu from '../Menu'
 import Footer from '../Footer'
+import ThemeToggler from '../ThemeToggler'
 
 type Props = {
   children: ReactNode;
@@ -10,12 +11,17 @@ type Props = {
 
 const Layout: React.FC<Props> = ({ children, home }) => {
   const [open, setOpen] = useState(false);
+  const [trans, setTrans] = useState(false);
 
     return (
       <>
+
         { home && 
         <Home open={open} setOpen={setOpen} /> }
         <Menu open={open} setOpen={setOpen} />
+        <div className="position">
+        <ThemeToggler trans={trans} setTrans={setTrans}/>
+        </div>
         <div className="footerFix">
           { children }
         </div>
