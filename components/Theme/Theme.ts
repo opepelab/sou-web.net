@@ -5,7 +5,7 @@ export const DarkTheme = {
 }
 
 export const LightTheme = {
-    color: 'rgb(36, 47, 61)',
+    color: '#555555',
     background: '#FAFAFA',
     font: 'Zen Kurenaido, sans-serif',
     bgg: '#FFEFEF',

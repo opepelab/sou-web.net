@@ -2,7 +2,6 @@ import React, { useState, ReactNode } from 'react';
 import Home from '../Home'
 import Menu from '../Menu'
 import Footer from '../Footer'
-import ThemeToggler from '../ThemeToggler'
 
 type Props = {
   children: ReactNode;
