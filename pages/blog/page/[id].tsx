@@ -24,7 +24,7 @@ const Page: React.FC<Content> = ({ blog, totalCount }) => {
           <title>log - sou</title>
           <meta name="description" content="ログ"/>
         </Head>
-        <main className="margin50p">
+        <main className="textLeft margin50p">
           {blog.map((blog: Content) => (
           <dl key={blog.id}>
             <dt><Date dateString={blog.publishedAt}/></dt>
