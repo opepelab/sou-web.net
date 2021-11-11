@@ -5,6 +5,7 @@ import Layout from '../../../components/Layout/layout'
 import Date from '../../../components/Sys/date'
 import Head from 'next/head'
 import { Pagination } from '../../../components/Sys/Pagination';
+import ActiveLink from '../../../components/Sys/ActiveLink'
 
 type Content = {
   blog: {
@@ -16,7 +17,11 @@ type Content = {
   totalCount: number;
 }
 
+const PER_PAGE = 14; 
+const range = (start: number, end: number) => [...Array(end - start + 1)].map((_, i) => start + i)
+
 const Page: React.FC<Content> = ({ blog, totalCount }) => {
+
   return (
     <Layout>
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
@@ -31,7 +36,13 @@ const Page: React.FC<Content> = ({ blog, totalCount }) => {
             <dd><Link href={`/blog/${blog.id}`}><a className="scale pinkLinks">{blog.title}</a></Link></dd>
           </dl>
           ))}
-          <Pagination totalCount={totalCount} />
+          <nav>
+            <ul className="nav3">
+              {range(1, Math.ceil(totalCount / PER_PAGE)).map((id) => (
+              <ActiveLink href={`/blog/page/${id}`} activeClassName="listState"><a className="Pagi"><li>{id}</li></a></ActiveLink>
+              ))}
+            </ul>
+          </nav>
           <Link href="/blog"><a className="scale">Site Map</a></Link>
         </main>
       </motion.div>
@@ -46,11 +57,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const res = await fetch('https://sou.microcms.io/api/v1/blog', key)
   const data = await res.json()
 
-  const PER_PAGE = 14; 
-  const range = (start: number, end: number) => [...Array(end - start + 1)].map((_, i) => start + i)
   const paths = range(1, Math.ceil(data.totalCount / PER_PAGE)).map((content) =>  `/blog/page/${content}`)
 
-  
   return { 
     paths, 
     fallback: false 
