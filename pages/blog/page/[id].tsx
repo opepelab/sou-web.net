@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import Layout from '../../../components/Layout/layout'
 import Date from '../../../components/Sys/date'
 import Head from 'next/head'
-import { Pagination } from '../../../components/Sys/Pagination';
+// import { Pagination } from '../../../components/Sys/Pagination';
 import ActiveLink from '../../../components/Sys/ActiveLink'
 
 type Content = {
@@ -24,7 +24,7 @@ const Page: React.FC<Content> = ({ blog, totalCount }) => {
 
   return (
     <Layout>
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.4 }}>
         <Head>
           <title>log - sou</title>
           <meta name="description" content="ログ"/>
@@ -57,7 +57,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const res = await fetch('https://sou.microcms.io/api/v1/blog', key)
   const data = await res.json()
 
-  const paths = range(1, Math.ceil(data.totalCount / PER_PAGE)).map((content) =>  `/blog/page/${content}`)
+  const paths: string[] = range(1, Math.ceil(data.totalCount / PER_PAGE)).map((content) =>  `/blog/page/${content}`)
 
   return { 
     paths, 
