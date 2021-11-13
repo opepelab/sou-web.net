@@ -11,7 +11,7 @@ const Picture: React.FC = () => {
           <meta name="description" content="イラスト"/>
         </Head>
         <main className="margin50p">
-          <h1>Picture</h1>
+          <h1>Photo</h1>
             <div className="triangle-bottom" />
 
             <div>
