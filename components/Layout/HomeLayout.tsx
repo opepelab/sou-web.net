@@ -10,13 +10,12 @@ type Props = {
 
 const Layout: React.FC<Props> = ({ children, home }) => {
   const [open, setOpen] = useState(false);
-  const [trans, setTrans] = useState(false);
 
     return (
       <>
 
         { home && 
-        <Home open={open} setOpen={setOpen} trans={trans} setTrans={setTrans} /> }
+        <Home open={open} setOpen={setOpen} /> }
         <Menu open={open} setOpen={setOpen} />
         <div className="position">
         </div>

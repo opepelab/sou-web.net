@@ -8,8 +8,8 @@ type StrProps = {
     toggleTheme: StringConstructor;
 }
 
-export const ThemeToggler: React.FC<StrProps> = () => {
-    const { theme, toggleTheme } = useContext(ThemeContext);
+export const ThemeToggler: React.FC = () => {
+    const { theme, toggleTheme } = useContext<StrProps>(ThemeContext);
     return (
         <div className="Logo inblo">
                 <div onClick={() => toggleTheme(theme === 'dark' ? 'light' : 'dark')}>
