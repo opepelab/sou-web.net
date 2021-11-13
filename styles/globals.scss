@@ -20,6 +20,10 @@ body {
     @include LRauto;
 }
 
+pre {
+  white-space: pre-wrap ;
+}
+
 main {
   display: inline-block;
 }
