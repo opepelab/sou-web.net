@@ -76,6 +76,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   }
   
   const data = await client.get<Content>({ endpoint: "blog", contentId: id });
+
   const $ = cheerio.load(data.body);  
   $('pre code').each((_, elm) => {
     const result = hljs.highlightAuto($(elm).text())
@@ -86,7 +87,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   return {
     props: {
       blog: data,
-      highlightedBody:$.html(),
+      highlightedBody:$.html()
     },
   };
 };
