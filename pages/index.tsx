@@ -8,7 +8,7 @@ const Index = () => {
       <HomeLayout home={true}>
         <Head>
           <title>sou</title>
-          <meta name="description" content="トップ"/>
+          <meta name="description" content="インデックス"/>
         </Head>
         <main>
         </main>

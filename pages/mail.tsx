@@ -10,7 +10,7 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.4 }}>
         <Head>
             <title>contact - sou</title>
-            <meta name="description" content="コンタクト"/>
+            <meta name="description" content="メール"/>
         </Head>
         <main className="CN">
           <p className="pinkLinks">なんでもいいでござるよ</p>

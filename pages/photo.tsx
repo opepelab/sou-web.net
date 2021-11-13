@@ -8,7 +8,7 @@ const Picture: React.FC = () => {
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.4 }}>
         <Head>
           <title>picture - sou</title>
-          <meta name="description" content="イラスト"/>
+          <meta name="description" content="フォト"/>
         </Head>
         <main className="margin50p">
           <h1>Photo</h1>

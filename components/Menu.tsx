@@ -17,7 +17,7 @@ const Menu: React.FC<BoolProps> = ({ open, setOpen }) => {
                                 <li className="tate"><ActiveLink href="/blog/page/1" activeClassName="colorState"><a className="scale">Posts</a></ActiveLink></li>
                                 <li className="tate"><ActiveLink href="/links" activeClassName="colorState"><a>Links</a></ActiveLink></li>
                                 <li className="tate"><ActiveLink href="/photo" activeClassName="colorState"><a>Photo</a></ActiveLink></li>
-                                <li className="tate"><ActiveLink href="/developenv" activeClassName="colorState"><a>Devlop</a></ActiveLink></li>
+                                <li className="tate"><ActiveLink href="/develop" activeClassName="colorState"><a>Devlop</a></ActiveLink></li>
                             </ul> 
                         </nav>
                     </div>

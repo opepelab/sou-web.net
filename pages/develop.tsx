@@ -7,8 +7,8 @@ const Develop: React.FC = () => {
     <Layout>  
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.4 }}>
         <Head>
-          <title>environment - sou</title>
-          <meta name="description" content="環境"/>
+          <title>develop - sou</title>
+          <meta name="description" content="開発環境"/>
         </Head>
         <main className="margin50p">
           <h1>Develop</h1>

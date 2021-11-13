@@ -21,7 +21,7 @@ const About: React.FC  = () => {
             <dd>蠍座</dd>
             <dt>4type</dt>
             <dd>法則</dd>
-            <dt>Eto!</dt>
+            <dt>eto!</dt>
             <dd>戌年</dd>
             <dt>location</dt>
             <dd>東京</dd>

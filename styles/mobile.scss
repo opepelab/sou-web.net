@@ -10,7 +10,7 @@ body {
 
 button {
   border: none;
-  background: rgba(106, 225, 255, 0.4);
+  background: #BC2E50;
   border-radius: 20%;
   padding-top: 31px;
   padding-bottom: 5px;
@@ -23,7 +23,7 @@ button {
   z-index: 5;
   position: fixed;
   right: 15px;
-  top: 15px;
+  bottom: 15px;
 }
 .Line span {
   display: block;
@@ -93,8 +93,9 @@ button {
 }
 .Logo {
   position: absolute;
-  top: 12px;
-  left: 120px;
+  top: 4px;
+  right: 0px;
+  transform: rotate(-180deg);
 }
 
 .position {
