@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Layout from '../components/Layout/layout'
 import Head from 'next/head'
-
+import Link from 'next/link'
 
 const About: React.FC  = () => {
   return (
@@ -25,8 +25,8 @@ const About: React.FC  = () => {
             <dd>戌年</dd>
             <dt>location</dt>
             <dd>東京</dd>
-            TypeScriptとReactとNext.js(Vercelに心酔しています)
             <dd>この時代と生んでくれた母と父に感謝します。</dd>
+            <Link href="/profile">「 プロフィール 」</Link>
           </dl>
         </main>
       </motion.div>

@@ -1,9 +1,9 @@
-type Props = {
+type BoolProps = {
     open: boolean;
     setOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const MenuButton: React.FC<Props> = ({ open, setOpen }) => {
+const MenuButton: React.FC<BoolProps> = ({ open, setOpen }) => {
     return (     
         <div className="Line">
             <button aria-expanded={open} onClick={() => setOpen(!open)}

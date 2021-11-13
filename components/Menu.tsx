@@ -1,11 +1,11 @@
 import ActiveLink from './Sys/ActiveLink'
 
-type Props = {
+type BoolProps = {
     open: boolean;
     setOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const Menu: React.FC<Props> = ({ open, setOpen }) => {
+const Menu: React.FC<BoolProps> = ({ open, setOpen }) => {
     return (     
         <div className="MenuList">
             <div aria-expanded={open} onClick={() => setOpen(!open)}>
