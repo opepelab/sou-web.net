@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@types/styled-components": "^5.1.15",
+    "cheerio": "^1.0.0-rc.10",
     "classnames": "^2.3.1",
     "date-fns": "^2.25.0",
     "framer-motion": "^5.0.0",
+    "highlight.js": "^11.3.1",
     "microcms-js-sdk": "^2.0.0",
     "next": "^12.0.1",
     "nodemailer": "^6.7.0",

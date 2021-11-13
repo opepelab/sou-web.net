@@ -5,12 +5,17 @@ import Head from 'next/head';
 import { motion } from "framer-motion";
 import Layout from '../../components/Layout/layout'
 import client from "../../libs/client";
+import cheerio from 'cheerio';
+import hljs from 'highlight.js'
+import 'highlight.js/styles/atom-one-dark-reasonable.css';
 
 type ContentId = {
   id: string;
 }
 
 type Content = {
+  body: string;
+  highlightedBody: string;
   blog: {
     publishedAt: string;
     title: string;
@@ -19,7 +24,7 @@ type Content = {
   }
 }
 
-const Id: React.FC<Content> = ({ blog }) => {
+const Id: React.FC<Content> = ({ blog, highlightedBody }) => {
   return (
     <Layout>
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.4 }}>
@@ -31,7 +36,7 @@ const Id: React.FC<Content> = ({ blog }) => {
           <h1 className={styles.h1}>{blog.title}</h1>
           <div className={styles.Time2}><Date dateString={blog.publishedAt} /></div>
           <div className="triangle-bottom" />
-          <div className={styles.BodyBlog} dangerouslySetInnerHTML={{__html: blog.body}} />
+          <div dangerouslySetInnerHTML={{__html: highlightedBody}} />
         </main>
       </motion.div>
     </Layout>
@@ -71,10 +76,17 @@ export const getStaticProps: GetStaticProps = async (context) => {
   }
   
   const data = await client.get<Content>({ endpoint: "blog", contentId: id });
+  const $ = cheerio.load(data.body);  
+  $('pre code').each((_, elm) => {
+    const result = hljs.highlightAuto($(elm).text())
+    $(elm).html(result.value)
+    $(elm).addClass('hljs')
+  })
 
   return {
     props: {
       blog: data,
+      highlightedBody:$.html(),
     },
   };
 };
