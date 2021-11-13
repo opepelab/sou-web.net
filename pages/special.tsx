@@ -20,7 +20,7 @@ const Special: React.FC = () => {
         <p>GrandFantasia－精霊物語－</p>
         <h2>ブログの人とエンジニアさん</h2>
         <p>/ pechorinさん/ konokeyさん/ コマツさん/ マナブさん/ マコなり社長さん/</p>
-        <p>/ T.Furukawaさん/ Ryusouさん/ piro(kk-web)さん/ Irisawaさん/ ncaqさん/</p>
+        <p>/ T.Furukawaさん/ Ryusouさん/ piro(kk-web)さん/ Irisawaさん/ ncaqさん/ かみむらさん/</p>
         <h2>読んだ本</h2>
         <p>/ フリーズする脳 / 脳が冴える15の習慣 / 脳と気持ちの整理術 /</p>
         <p>/ 自分に気づく心理学 / 自分の中に毒を持て /</p>

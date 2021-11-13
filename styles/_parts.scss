@@ -1,5 +1,6 @@
 .textLeft {
   text-align: left;
+  
 }
 
 .CN {
@@ -75,15 +76,15 @@
 }
 
 .listState {
-  background: black;
+  background: rgb(80, 86, 112);
   color: white;
+  transform: scale(0.6);
   pointer-events: none;
 }
 
 .bgg {
   z-index: 2;
   position: absolute;
-  background-color: $BG;
   width: $r100;
   height: 70px;
   top: $p0;

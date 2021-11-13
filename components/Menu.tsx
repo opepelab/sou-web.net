@@ -12,12 +12,12 @@ const Menu: React.FC<Props> = ({ open, setOpen }) => {
                     <div className="CN">
                         <nav>   
                             <ul className="nav2">                      
-                                <ActiveLink href="/about" activeClassName="colorState"><a><li className="tate">About</li></a></ActiveLink>
-                                <ActiveLink href="/mail" activeClassName="colorState"><a className="scale"><li className="tate">Mail</li></a></ActiveLink>
-                                <ActiveLink href="/blog/page/1" activeClassName="colorState"><a className="scale"><li className="tate">Posts</li></a></ActiveLink>
-                                <ActiveLink href="/links" activeClassName="colorState"><a><li className="tate">Links</li></a></ActiveLink>
-                                <ActiveLink href="/picture" activeClassName="colorState"><a><li className="tate">Picture</li></a></ActiveLink>
-                                <ActiveLink href="/developenv" activeClassName="colorState"><a><li className="tate">Devlop.Env</li></a></ActiveLink>
+                                <li className="tate"><ActiveLink href="/about" activeClassName="colorState"><a>About</a></ActiveLink></li>
+                                <li className="tate"><ActiveLink href="/mail" activeClassName="colorState"><a className="scale">Email</a></ActiveLink></li>
+                                <li className="tate"><ActiveLink href="/blog/page/1" activeClassName="colorState"><a className="scale">Posts</a></ActiveLink></li>
+                                <li className="tate"><ActiveLink href="/links" activeClassName="colorState"><a>Links</a></ActiveLink></li>
+                                <li className="tate"><ActiveLink href="/picture" activeClassName="colorState"><a>Photo</a></ActiveLink></li>
+                                <li className="tate"><ActiveLink href="/developenv" activeClassName="colorState"><a>Devlop</a></ActiveLink></li>
                             </ul> 
                         </nav>
                     </div>

@@ -52,7 +52,7 @@ li {
   display: flex;
   flex-wrap: wrap;
   padding: 0px;
-  grid-gap: $p20;
+  gap: $p20;
 }
 
 
@@ -144,34 +144,36 @@ h3 {
   .Logo {
     z-index: 4;
     position: relative;
-    top: 10px;
-    left: -320px;
+    top: 8px;
+    left: -340px;
     width: 40px;
     height: 40px;
+    transform: rotate(30deg);
   }
 
   .Logo [aria-expanded='true'] {
-    transform: rotate(30deg);
-    transition-duration: 0.25s;
+    transform: rotateX(180deg);
+    transition-duration: 1s;
   }
 
   .Logo [aria-expanded='false'] {
-    transform: rotate(-330deg);
-    transition-duration: 0.25s;
+    transition-duration: 1s;
   }
 
   .LogoHome {
-    position: relative;
-    top: 100%;
-
-  }
-
-  .LogoHome [aria-expanded='true'] {
+    position: absolute;
+    right: -60px;
+    top: -14px;
     transform: rotate(30deg);
   }
 
+  .LogoHome [aria-expanded='true'] {
+    transform: rotateX(180deg);
+    transition-duration: 1s;
+  }
+
   .LogoHome [aria-expanded='false'] {
-    transform: rotate(-30deg);
+    transition-duration: 1s;
   }
 
   .position {

@@ -20,15 +20,13 @@ const Home: React.FC<BoolProps> = ({ open, setOpen, trans, setTrans }) => {
     return (     
         <div>
             <main className="CN">
-                <br/><br/><br/><br/><br/><br/>
                 <div aria-expanded={open} onClick={() => setOpen(!open)}
                 aria-label="TOP Toggle menu">
                 <h1 className="Home hikki">S o u  W e b</h1>
                 </div>
-                <br/><br/>
                 <div className="LogoHome inblo">
                     <div aria-expanded={trans} onClick={() => {toggleTheme(theme === 'light' ? 'dark' : 'light');setTrans(!trans);}}>
-                        <Image className="m0" src="/logogo.svg" width={100} height={100} />
+                        <Image className="m0" src="/logogo.svg" width={60} height={60} />
                     </div>
                 </div>
             </main>

@@ -31,15 +31,15 @@ const Page: React.FC<Content> = ({ blog, totalCount }) => {
         </Head>
         <main className="textLeft margin50p">
           {blog.map((blog: Content) => (
-          <dl key={blog.id}>
+          <dl>
             <dt><Date dateString={blog.publishedAt}/></dt>
-            <dd><Link href={`/blog/${blog.id}`}><a className="scale pinkLinks">{blog.title}</a></Link></dd>
+            <dd key={blog.id}><Link href={`/blog/${blog.id}`}><a className="scale pinkLinks">{blog.title}</a></Link></dd>
           </dl>
           ))}
           <nav>
             <ul className="nav3">
               {range(1, Math.ceil(totalCount / PER_PAGE)).map((id) => (
-              <ActiveLink href={`/blog/page/${id}`} activeClassName="listState"><a className="Pagi"><li>{id}</li></a></ActiveLink>
+              <li key={id}><ActiveLink href={`/blog/page/${id}`} activeClassName="listState"><a className="Pagi">{id}</a></ActiveLink></li>
               ))}
             </ul>
           </nav>

@@ -10,10 +10,7 @@ export const GlobalStyles = createGlobalStyle<Props>`
     body{
         background: ${(props) => props.theme.background};
         color: ${(props) => props.theme.color};
-        font-family: ${(props) => props.theme.font};
-    }
-    .bgg{
-        background: ${(props) => props.theme.bgg};
+        transition-duration: 0.4s;
     }
     .colorState{
         border-bottom: ${(props) => props.theme.border};
