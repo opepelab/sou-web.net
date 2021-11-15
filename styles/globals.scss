@@ -168,22 +168,6 @@ h3 {
     transition-duration: 1s;
   }
 
-  .LogoHome {
-    position: absolute;
-    right: -60px;
-    top: -14px;
-    transform: rotate(30deg);
-  }
-
-  .LogoHome [aria-expanded='true'] {
-    transform: rotateX(180deg);
-    transition-duration: 1s;
-  }
-
-  .LogoHome [aria-expanded='false'] {
-    transition-duration: 1s;
-  }
-
   .position {
     z-index: 1;
     position: relative;
