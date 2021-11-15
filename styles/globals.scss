@@ -160,12 +160,12 @@ h3 {
   }
 
   .Logo [aria-expanded='true'] {
-    transform: rotateX(180deg);
-    transition-duration: 1s;
+    transform: rotate(360deg);
+    transition-duration: 0.4s;
   }
 
   .Logo [aria-expanded='false'] {
-    transition-duration: 1s;
+    transition-duration: 0.4s;
   }
 
   .position {

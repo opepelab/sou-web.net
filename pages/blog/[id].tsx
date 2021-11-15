@@ -3,7 +3,6 @@ import styles from './midasi.module.scss';
 import Date from '../../components/Sys/date'
 import Head from 'next/head';
 import { motion } from "framer-motion";
-import Layout from '../../components/Layout/layout'
 import client from "../../libs/client";
 import cheerio from 'cheerio';
 import hljs from 'highlight.js'
@@ -26,7 +25,6 @@ type Content = {
 
 const Id: React.FC<Content> = ({ blog, highlightedBody }) => {
   return (
-    <Layout>
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.4 }}>
         <Head>
           <title>{blog.title} - sou</title>
@@ -39,7 +37,6 @@ const Id: React.FC<Content> = ({ blog, highlightedBody }) => {
           <div dangerouslySetInnerHTML={{__html: highlightedBody}} />
         </main>
       </motion.div>
-    </Layout>
   );
 }
 

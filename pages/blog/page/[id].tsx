@@ -1,10 +1,8 @@
 import { GetStaticPaths } from 'next'
 import Link from 'next/link';
 import { motion } from "framer-motion"
-import Layout from '../../../components/Layout/layout'
 import Date from '../../../components/Sys/date'
 import Head from 'next/head'
-// import { Pagination } from '../../../components/Sys/Pagination';
 import ActiveLink from '../../../components/Sys/ActiveLink'
 
 type Content = {
@@ -23,7 +21,6 @@ const range = (start: number, end: number) => [...Array(end - start + 1)].map((_
 const Page: React.FC<Content> = ({ blog, totalCount }) => {
 
   return (
-    <Layout>
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.4 }}>
         <Head>
           <title>log - sou</title>
@@ -46,7 +43,6 @@ const Page: React.FC<Content> = ({ blog, totalCount }) => {
           <Link href="/blog"><a className="scale">Site Map</a></Link>
         </main>
       </motion.div>
-    </Layout>
   );
 }
 

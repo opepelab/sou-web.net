@@ -1,13 +1,13 @@
-import Link from 'next/link'
+import ActiveLink from './Sys/ActiveLink'
 
 const Text: React.FC = () => {
     return (
         <div className="inblo">
-            <Link href="/">
-            <a>
-                <div className="migiue hikki">S o u  W e b</div>
+            <ActiveLink href="/" activeClassName="colorState">
+            <a className="migiue hikki aBlock">
+                S o u  W e b
             </a>
-            </Link>
+            </ActiveLink>
         </div>
     );
 }

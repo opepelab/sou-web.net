@@ -1,10 +1,8 @@
 import { motion } from "framer-motion";
-import Layout from '../components/Layout/layout'
 import Head from 'next/head'
 
 const Special: React.FC = () => {
   return (
-    <Layout>
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
         <Head>
           <title>育ててくれた人たち</title>
@@ -34,7 +32,6 @@ const Special: React.FC = () => {
           Central Processing Unit : Intel @メモリさえあればなんでもいい</p>
         </main>
       </motion.div>
-    </Layout>
   );
 }
 

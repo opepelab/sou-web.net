@@ -7,9 +7,14 @@
   @include CenString;
 }
 
-.posi {
-  position: relative;
-  top: 80px;
+.aBlock {
+  display: block;
+}
+
+.Iti {
+  @include CenString;
+  position: fixed;
+  opacity: 1;
 }
 
 
@@ -33,7 +38,6 @@
 
 .Home {
   margin: 0px;
-  cursor: pointer;
   border: none;
   font: {
   size: 36px;

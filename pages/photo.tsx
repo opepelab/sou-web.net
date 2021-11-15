@@ -1,10 +1,8 @@
 import { motion } from "framer-motion";
-import Layout from '../components/Layout/layout'
 import Head from 'next/head'
 
 const Picture: React.FC = () => {
   return (
-    <Layout>
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.4 }}>
         <Head>
           <title>picture - sou</title>
@@ -49,7 +47,6 @@ const Picture: React.FC = () => {
           <img className="PM margin10 point " src="/picture/0068.png" width={190} height={260} />
         </main>
       </motion.div>
-    </Layout>
   );
 }
 

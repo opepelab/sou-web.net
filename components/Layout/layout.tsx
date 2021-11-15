@@ -5,6 +5,7 @@ import Menu from '../Menu'
 import Text from '../Text'
 import Footer from '../Footer'
 import ThemeToggler from '../ThemeToggler'
+// import Pict from '../Pict'
 
 type Props = {
   children: ReactNode;
