@@ -10,7 +10,6 @@ export const GlobalStyles = createGlobalStyle<Props>`
     body{
         background: ${(props) => props.theme.background};
         color: ${(props) => props.theme.color};
-        transition-duration: 0.4s;
     }
     .colorState{
         border-bottom: ${(props) => props.theme.border};
@@ -30,6 +29,7 @@ export const GlobalStyles = createGlobalStyle<Props>`
         background: ${(props) => props.theme.menu};
         color: ${(props) => props.theme.color};
     }
+
 }
 `;
 
