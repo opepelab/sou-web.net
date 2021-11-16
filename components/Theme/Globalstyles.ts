@@ -30,7 +30,6 @@ export const GlobalStyles = createGlobalStyle<Props>`
         background: ${(props) => props.theme.menu};
         color: ${(props) => props.theme.color};
     }
-
 }
 `;
 

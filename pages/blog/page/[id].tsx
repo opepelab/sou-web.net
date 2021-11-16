@@ -21,7 +21,7 @@ const range = (start: number, end: number) => [...Array(end - start + 1)].map((_
 const Page: React.FC<Content> = ({ blog, totalCount }) => {
 
   return (
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.4 }}>
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
         <Head>
           <title>log - sou</title>
           <meta name="description" content="ログ"/>

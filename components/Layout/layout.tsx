@@ -5,7 +5,6 @@ import Menu from '../Menu'
 import Text from '../Text'
 import Footer from '../Footer'
 import ThemeToggler from '../ThemeToggler'
-import GlobalStyles from '../Theme/Globalstyles'
 
 type Props = {
   children: ReactNode;
@@ -16,7 +15,6 @@ const Layout: React.FC<Props> = ({ children }) => {
 
     return (
       <>
-        <GlobalStyles />
         <MenuButton open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />
         <Header />

@@ -7,6 +7,7 @@ import Head from 'next/head'
 import { ThemeContext, ThemeProvider } from "styled-components";
 import { LightTheme, DarkTheme } from '../components/Theme/Theme'
 import { useState } from 'react'
+import GlobalStyles from '../components/Theme/Globalstyles'
 import Layout from '../components/Layout/layout'
 
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
@@ -19,6 +20,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
       
       <ThemeContext.Provider value={{theme, toggleTheme}}>
         <ThemeProvider theme={theme === 'dark' ? LightTheme : DarkTheme }>
+          <GlobalStyles />
           <Layout>
             <AnimatePresence exitBeforeEnter>
               <Component {...pageProps} key={router.asPath} />
