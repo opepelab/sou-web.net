@@ -87,6 +87,7 @@ h1 {
   
 h2 {
     @include H1H2;
+    display: $IB;
 }
   
 h3 {
