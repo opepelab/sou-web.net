@@ -7,8 +7,8 @@ class MyDocument extends Document {
     return (
       <Html lang="JA">
         <Head>
-        <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet" />
         </Head>
         <body>
           <Main />
