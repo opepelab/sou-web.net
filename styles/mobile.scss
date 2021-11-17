@@ -94,7 +94,8 @@ button {
 .Logo {
   position: absolute;
   top: 15px;
-  right: 10px;
+  right: 0px;
+  transform: rotate(-180deg);
 }
 
 .position {

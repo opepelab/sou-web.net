@@ -145,7 +145,7 @@ h3 {
   .migiue {
     z-index: 5;
     position: relative;
-    top: -5px;
+    top: -24px;
     left: -300px;
     font-size: 24px;
     width: 100px;
@@ -153,10 +153,11 @@ h3 {
   .Logo {
     z-index: 4;
     position: relative;
-    top: 5px;
+    top: 0px;
     right: -380px;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
+    transform: rotate(-90deg);
   }
 
   .Logo [aria-expanded='true'] {
