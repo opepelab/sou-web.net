@@ -15,10 +15,10 @@ export const GlobalStyles = createGlobalStyle<Props>`
         border-bottom: ${(props) => props.theme.border};
     }
     h1{
-        border-bottom: ${(props) => props.theme.h1};
+        border-bottom: ${(props) => props.theme.h12};
     }
     h2{
-        border-bottom: ${(props) => props.theme.h1};
+        border-bottom: ${(props) => props.theme.h12};
     }
     a{
         color: ${(props) => props.theme.color};

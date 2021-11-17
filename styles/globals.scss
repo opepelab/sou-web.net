@@ -94,6 +94,10 @@ h3 {
     @include H3;
 }
 
+h6 {
+  @include H6
+}
+
 @keyframes feed {
     from { opacity: 0.05; }
     to { opacity: 1; }

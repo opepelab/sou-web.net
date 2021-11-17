@@ -9,7 +9,7 @@ export const LightTheme = {
     bgg: '#FFEFEF',
     menu: 'rgba(255, 239, 239, 0.9)',
     border: 'solid 1px #555555',
-    h1: 'solid 1px #eaeaea',
+    h12: 'solid 1px #eaeaea',
     bold: 'bold',
 }
 

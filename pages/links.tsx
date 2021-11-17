@@ -19,7 +19,7 @@ const Links: React.FC = () => {
             <dd><a className="pinkLinks scale" href="https://www.amazon.jp/hz/wishlist/ls/21U6KMZ0YZN25?ref_=wl_share" target="_blank">Amazon</a></dd>
             <dd><a className="pinkLinks scale" href="https://com.nicovideo.jp/community/co1568349" target="_blank">Streem</a></dd>
             <dd><a className="pinkLinks scale" href="https://opepelab.org/" target="_blank">WordPress Blog</a></dd>
-            <Link href="/special"><a className="scale Special">Special Thanks</a></Link>
+            <Link href="/special"><a className="scale pinkLinks">Special Thanks</a></Link>
           </dl>
         </main>
       </motion.div>
