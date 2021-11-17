@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Head from 'next/head'
-// import ThemeToggler from '../components/ThemeToggler'
+import Image from 'next/image'
 
 const Index = () => {
   return (

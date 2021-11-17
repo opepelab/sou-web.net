@@ -7,6 +7,7 @@ class MyDocument extends Document {
     return (
       <Html lang="JA">
         <Head>
+        <link rel="shortcut icon" href="/favicon.png" />
         <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet" />
         </Head>

@@ -15,7 +15,7 @@ export const ThemeToggler = () => {
     return (
         <div className="Logo inblo">
                 <div aria-expanded={trans} onClick={() => {toggleTheme(theme === 'dark' ? 'light' : 'dark');setTrans(!trans)}}>
-               <Image className="m0" src="/PNG.png" width={60} height={60} />
+               <Image src="/aa.png" width={40} height={40} />
             </div>
         </div>
     );
