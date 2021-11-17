@@ -81,6 +81,10 @@ a.scale:hover {
     @include Hover;
 }
 
+p {
+  margin-top: 6px;
+}
+
 h1 {
     @include H1H2;
   }
@@ -150,7 +154,7 @@ h5 {
     z-index: 5;
     position: relative;
     top: -24px;
-    left: -300px;
+    left: -340px;
     font-size: 24px;
     width: 100px;
   }
@@ -158,7 +162,7 @@ h5 {
     z-index: 4;
     position: relative;
     top: 0px;
-    right: -380px;
+    right: -440px;
     width: 60px;
     height: 60px;
     transform: rotate(-90deg);

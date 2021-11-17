@@ -31,7 +31,6 @@ const Special: React.FC = () => {
           Solid State Drive : M.2 2280 NVMe Gen5x4 <br />
           Random Access Memory : DDR5 12,600MHz 128GBx4<br />
           Central Processing Unit : Intel @メモリさえあればなんでもいい</p>
-          <h6>styled-components</h6>
         </main>
       </motion.div>
   );
