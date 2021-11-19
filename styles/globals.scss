@@ -169,11 +169,12 @@ h5 {
   }
 
   .Logo [aria-expanded='true'] {
-    transition-duration: 2s;
+    transform: rotate(180deg);
+    transition-duration: 0.2s;
   }
 
   .Logo [aria-expanded='false'] {
-    transition-duration: 2s;
+    transition-duration: 0.2s;
   }
 
   .position {
@@ -184,4 +185,9 @@ h5 {
   }
   .m0 {
     cursor: pointer;
+  }
+
+  @keyframes r2 {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(-360deg); }
   }
