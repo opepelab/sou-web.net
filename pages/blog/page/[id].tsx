@@ -30,7 +30,7 @@ const Page: React.FC<Content> = ({ blog, totalCount }) => {
           {blog.map((blog: Content) => (
           <dl>
             <dt><Date dateString={blog.publishedAt}/></dt>
-            <dd key={blog.id}><Link href={`/blog/${blog.id}`}><a className="scale pinkLinks">{blog.title}</a></Link></dd>
+            <dd key={blog.id}><Link href={`/blog/${blog.id}`}><a className="scale">{blog.title}</a></Link></dd>
           </dl>
           ))}
           <nav>
