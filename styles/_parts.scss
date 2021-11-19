@@ -68,7 +68,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: $FB;
+  background: white;
   color: black;
   font: {
     size: 12px;
@@ -76,13 +76,13 @@
   }
   height: 25px;
   width: 25px;
-  border-radius: 5px;
+  border: solid 1px;
 }
 
 .listState {
   background: rgb(61, 81, 107);
   color: white;
-  transform: scale(0.6);
+  border: solid 1px transparent;
   pointer-events: none;
 }
 
