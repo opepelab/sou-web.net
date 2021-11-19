@@ -83,6 +83,7 @@
   background: rgb(61, 81, 107);
   color: white;
   border: solid 1px transparent;
+  transform: scale(0.8);
   pointer-events: none;
 }
 
@@ -123,11 +124,6 @@ cursor: zoom-in;
 
 .PM {
   border: thin solid black;
-}
-
-
-.margin0 {
-  margin: $p0;
 }
 
 .margin10 {
