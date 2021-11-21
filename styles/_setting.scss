@@ -1,141 +1,140 @@
-$p0:  0px;
-$p5:  5px;
-$p10: $p5*2;
-$p14: $p10*1.4;
-$p20: $p10*2;
-$p40: $p20*2;
-$p50: $p10*5;
-$p60: $p20*3;
-$p80: $p20*4;
-$p100: $p50*2;
-$p200: $p50*4;
+$p0: 0px;
+$p5: 5px;
+$p10: $p5 * 2;
+$p14: $p10 * 1.4;
+$p20: $p10 * 2;
+$p40: $p20 * 2;
+$p50: $p10 * 5;
+$p60: $p20 * 3;
+$p80: $p20 * 4;
+$p100: $p50 * 2;
+$p200: $p50 * 4;
 
 $r0: 0%;
 $r25: 25%;
-$r50: $r25*2;
-$r100: $r50*2;
+$r50: $r25 * 2;
+$r100: $r50 * 2;
 
 $Google0: "Herr Von Muellerhoff";
-$Google: 'Zen Maru Gothic', sans-serif;
-
+$Google: "Zen Maru Gothic", sans-serif;
 
 $IB: inline-block;
 $NO: none;
 
 $BG: #242f3d;
-$ST: #FAFAFA;
-$FB: #FFB7B7;
+$ST: #fafafa;
+$FB: #ffb7b7;
 $FE: #ffefef;
 $YE: #fffed5;
 $ME: rgba(19, 28, 37, 0.92);
 
 @mixin LRauto {
-    margin-right: auto;
-    margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @mixin H1H2 {
-    font-size: $p20;
-    border-bottom: 1px solid $ST;
-    white-space: nowrap;
-    @include LRauto;
+  font-size: $p20;
+  border-bottom: 1px solid $ST;
+  white-space: nowrap;
+  @include LRauto;
 }
 
 @mixin H3 {
-    font-weight: 100;
-    font-size: 16px;
+  font-weight: 100;
+  font-size: 16px;
 }
 
 @mixin H5 {
-    background: rgb(61, 81, 107);
-    color: $ST;
-    display: $IB;
-    padding-bottom: 4px;
-    padding-left: 4px;
-    padding-right: 4px;
-    margin: 0%;
-    border-radius: 2px;
-    font: {
-      size: 14px;
-      weight: 100;
-    } 
+  background: rgb(61, 81, 107);
+  color: $ST;
+  display: $IB;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin: 0%;
+  border-radius: 2px;
+  font: {
+    size: 14px;
+    weight: 100;
+  }
 }
 
 @mixin NAV {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-gap: $p50;
-    white-space: nowrap; 
-    left: 160px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: $p50;
+  white-space: nowrap;
+  left: 160px;
 }
 
 @mixin Hover {
-    color: $FB;
-    transform: scale(1.01);
-    transition-duration: 0.1s;
-    animation: 1.1s feed;
+  color: $FB;
+  transform: scale(1.01);
+  transition-duration: 0.1s;
+  animation: 1.1s feed;
 }
 
 @mixin Menu {
-    z-index: 4;
-    position: fixed;
-    background: $ME;
-    left: 0px;
-    top: 0px;
-    width: $r100;
-    height: $r100;
-    transition-duration: 0.5s;
+  z-index: 4;
+  position: fixed;
+  background: $ME;
+  left: 0px;
+  top: 0px;
+  width: $r100;
+  height: $r100;
+  transition-duration: 0.5s;
 }
 
 @mixin CenString {
-    position: absolute;
-    inset: 0%;
-    margin: auto;
-    width: fit-content;
-    height: fit-content;
+  position: absolute;
+  inset: 0%;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
 }
 
 @mixin BBMyellow {
-    background: #fffed5;
-    color: $FB;
-    font: {
-        family: $Google;
-        size: 12px;
-    }
+  background: #fffed5;
+  color: $FB;
+  font: {
+    family: $Google;
+    size: 12px;
+  }
 }
 
 @mixin Input {
-    border: none;
-    outline: none;
-    width: $p50*6;
-    height: $p20;
-    border-radius: $p5;
+  border: none;
+  outline: none;
+  width: $p50 * 6;
+  height: $p20;
+  border-radius: $p5;
 }
 
 @mixin Textarea {
-    border: none;
-    outline: none;
-    width: $p50*8;
-    height: $p50*6;
-    border-radius: $p5;
-    resize: vertical;
-    overflow: auto;
+  border: none;
+  outline: none;
+  width: $p50 * 8;
+  height: $p50 * 6;
+  border-radius: $p5;
+  resize: vertical;
+  overflow: auto;
 }
 
 @mixin Mbutton {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    margin: auto;
-    background: $FB;
-    border: solid 2px;
-    color: #FFF;
-    padding: $r0;
-    width: $p50*2;
-    height: $p20*2;
-    cursor: pointer;
-    border-radius: 10px;
-    border: none;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  margin: auto;
+  background: $FB;
+  border: solid 2px;
+  color: #fff;
+  padding: $r0;
+  width: $p50 * 2;
+  height: $p20 * 2;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
 }

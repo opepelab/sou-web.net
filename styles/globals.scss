@@ -3,25 +3,25 @@
 @import "./PT/scrollbar";
 
 html {
-    -webkit-text-size-adjust: $r100;
-    overflow: scroll;
-  }
+  -webkit-text-size-adjust: $r100;
+  overflow: scroll;
+}
 body {
-    font: {
-      family: $Google;
-      weight: normal;
-      size: $p14;
-    }
-    word-break: break-all;
-    text-align: center;
-    background: $BG;
-    color: $ST;
-    width: $r50;
-    @include LRauto;
+  font: {
+    family: $Google;
+    weight: normal;
+    size: $p14;
+  }
+  word-break: break-all;
+  text-align: center;
+  background: $BG;
+  color: $ST;
+  width: $r50;
+  @include LRauto;
 }
 
 pre {
-  white-space: pre-wrap ;
+  white-space: pre-wrap;
 }
 
 code {
@@ -41,11 +41,11 @@ button {
 }
 
 li {
-    list-style-type: none;
-  }
-  
+  list-style-type: none;
+}
+
 .nav1 {
-    @include NAV;
+  @include NAV;
 }
 
 .nav2 {
@@ -53,7 +53,7 @@ li {
   flex-direction: column;
   padding: 0px;
   row-gap: 20px;
-  font-size: 20px;   
+  font-size: 20px;
 }
 
 .nav3 {
@@ -63,22 +63,21 @@ li {
   gap: $p20;
 }
 
-
 dt {
-    font-size: $p10;
+  font-size: $p10;
 }
 dd {
-    margin-left: $p0;
-    margin-bottom: $p20;
+  margin-left: $p0;
+  margin-bottom: $p20;
 }
-  
+
 a {
-    color: $ST;
-    text-decoration: none;
+  color: $ST;
+  text-decoration: none;
 }
-  
+
 a.scale:hover {
-    @include Hover;
+  @include Hover;
 }
 
 p {
@@ -86,103 +85,106 @@ p {
 }
 
 h1 {
-    @include H1H2;
-  }
-  
-h2 {
-    @include H1H2;
-    display: $IB;
+  @include H1H2;
 }
-  
+
+h2 {
+  @include H1H2;
+  display: $IB;
+}
+
 h3 {
-    @include H3;
+  @include H3;
 }
 
 h5 {
-  @include H5
+  @include H5;
 }
 
 @keyframes feed {
-    from { opacity: 0.05; }
-    to { opacity: 1; }
+  from {
+    opacity: 0.05;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .footerFix {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  
-  footer {
-    margin-top: auto;
-    padding: 20px;
-  }
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
-  input {
-    @include Input;
-    @include LRauto;
-    @include BBMyellow;
-  }
-  
-  textarea {
-    @include Textarea;
-    @include LRauto;
-    @include BBMyellow;
-  }
-  
-  #massageButton {
-    @include Mbutton;
-  }
-  
-  .MenuList  {
-    visibility: collapse;
-  }
-  
-  .MenuList [aria-expanded='true'] {
-    @include Menu;
-    visibility: visible;
-  }
-  
-  .MenuList [aria-expanded='false'] {
-    @include Menu;
-    opacity: 0;
-    visibility: unset;
-  }
-  
-  .migiue {
-    z-index: 5;
-    position: relative;
-    top: -24px;
-    left: -340px;
-    font-size: 24px;
-    width: 100px;
-  }
-  .Logo {
-    z-index: 4;
-    position: relative;
-    top: -5px;
-    right: -440px;
-    width: 60px;
-    height: 60px;
-    transform: rotate(60deg);
-  }
+footer {
+  margin-top: auto;
+  padding: 20px;
+}
 
-  .Logo [aria-expanded='true'] {
-    transform: rotate(180deg);
-    transition-duration: 0.2s;
-  }
+input {
+  @include Input;
+  @include LRauto;
+  @include BBMyellow;
+}
 
-  .Logo [aria-expanded='false'] {
-    transition-duration: 0.2s;
-  }
+textarea {
+  @include Textarea;
+  @include LRauto;
+  @include BBMyellow;
+}
 
-  .position {
-    z-index: 1;
-    position: relative;
-    left: 200px;
-    transform: scale(1);
-  }
-  .m0 {
-    cursor: pointer;
-  }
+#massageButton {
+  @include Mbutton;
+}
+
+.MenuList {
+  visibility: collapse;
+}
+
+.MenuList [aria-expanded="true"] {
+  @include Menu;
+  visibility: visible;
+}
+
+.MenuList [aria-expanded="false"] {
+  @include Menu;
+  opacity: 0;
+  visibility: unset;
+}
+
+.migiue {
+  z-index: 5;
+  position: relative;
+  top: -24px;
+  left: -340px;
+  font-size: 24px;
+  width: 100px;
+}
+.Logo {
+  z-index: 4;
+  position: relative;
+  top: -5px;
+  right: -440px;
+  width: 60px;
+  height: 60px;
+  transform: rotate(60deg);
+}
+
+.Logo [aria-expanded="true"] {
+  transform: rotate(180deg);
+  transition-duration: 0.2s;
+}
+
+.Logo [aria-expanded="false"] {
+  transition-duration: 0.2s;
+}
+
+.position {
+  z-index: 1;
+  position: relative;
+  left: 200px;
+  transform: scale(1);
+}
+.m0 {
+  cursor: pointer;
+}

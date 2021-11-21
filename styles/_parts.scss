@@ -1,6 +1,5 @@
 .textLeft {
   text-align: left;
-  
 }
 
 .CN {
@@ -16,8 +15,6 @@
   position: fixed;
   opacity: 1;
 }
-
-
 
 .margin50p {
   margin-top: $p60;
@@ -42,18 +39,17 @@
   margin: 0px;
   border: none;
   font: {
-  size: 36px;
+    size: 36px;
   }
 }
-
 
 .hikki {
   font: {
-  family: $Google0;
-  weight: normal;
+    family: $Google0;
+    weight: normal;
   }
 }
- 
+
 .C {
   font-size: $p10;
 }
@@ -106,8 +102,6 @@
   top: 10px;
 }
 
-
-
 .triangle-bottom {
   display: $IB;
   border: {
@@ -118,7 +112,7 @@
 }
 
 .point {
-cursor: zoom-in;
+  cursor: zoom-in;
 }
 
 .PM {
@@ -132,10 +126,3 @@ cursor: zoom-in;
 .pinkLinks {
   color: $FB;
 }
-
-
-
-
-
-
-

@@ -1,81 +1,84 @@
 @import "setting";
 
 @media screen and (max-width: 739.98px) {
-html {
-  height: 100%;
-}
-body {
-  width: 90%;
-}
+  html {
+    height: 100%;
+  }
+  body {
+    width: 90%;
+  }
 
-button {
-  border: none;
-  background: #BC2E50;
-  border-radius: 20%;
-  padding-top: 31px;
-  padding-bottom: 5px;
-  padding-left: 8px;
-  padding-right: 8px;
-}
+  button {
+    border: none;
+    background: #bc2e50;
+    border-radius: 20%;
+    padding-top: 31px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 
-.Line {
-  display: inline-block;
-  z-index: 5;
-  position: fixed;
-  right: 15px;
-  bottom: 15px;
-}
-.Line span {
-  display: block;
-  position: relative;
-  height: 2px;
-  width: 24px;
-  background-color: #fff;
-  border-radius: 4px;
-}
+  .Line {
+    display: inline-block;
+    z-index: 5;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+  }
+  .Line span {
+    display: block;
+    position: relative;
+    height: 2px;
+    width: 24px;
+    background-color: #fff;
+    border-radius: 4px;
+  }
 
-.Line span:nth-of-type(1) {
-  bottom: 15px;
-}
+  .Line span:nth-of-type(1) {
+    bottom: 15px;
+  }
 
-.Line span:nth-of-type(2) {
-  bottom: 10px;
-}
+  .Line span:nth-of-type(2) {
+    bottom: 10px;
+  }
 
-.Line [aria-expanded='true'] span:nth-of-type(1) { 
-  transform: rotate(45deg) translateY(2.5px) translateX(2.5px) scale(1.2);
-  transition-duration: 0.1s;
-}
+  .Line [aria-expanded="true"] span:nth-of-type(1) {
+    transform: rotate(45deg) translateY(2.5px) translateX(2.5px) scale(1.2);
+    transition-duration: 0.1s;
+  }
 
-.Line [aria-expanded='true'] span:nth-of-type(2) { 
-  transform: rotate(-45deg) translateY(-2.5px) translateX(2.5px) scale(1.2);
-  transition-duration: 0.1s;
-}
+  .Line [aria-expanded="true"] span:nth-of-type(2) {
+    transform: rotate(-45deg) translateY(-2.5px) translateX(2.5px) scale(1.2);
+    transition-duration: 0.1s;
+  }
 
-.Line [aria-expanded='false'] span:nth-of-type(1) { 
-  transition-duration: 0.1s;
-}
+  .Line [aria-expanded="false"] span:nth-of-type(1) {
+    transition-duration: 0.1s;
+  }
 
-.Line [aria-expanded='false'] span:nth-of-type(2) { 
-  transition-duration: 0.1s;
-}
+  .Line [aria-expanded="false"] span:nth-of-type(2) {
+    transition-duration: 0.1s;
+  }
 
   .disableN {
-    display:none;
+    display: none;
   }
 
-@keyframes feed {
-  from { opacity: 0.05; }
-    to { opacity: 1; }
+  @keyframes feed {
+    from {
+      opacity: 0.05;
+    }
+    to {
+      opacity: 1;
+    }
   }
 
-
-/* ブログとコンタクトのスケール再定義 */
+  /* ブログとコンタクトのスケール再定義 */
 
   input {
     width: 240px;
   }
-  
+
   textarea {
     width: 290px;
     height: 215px;
@@ -86,25 +89,23 @@ button {
   }
 
   /* Topヘッダーモビ */
-.migiue {
-  position: absolute;
-  top: 20px;
-  left: 10px;
-}
-.Logo {
-  position: absolute;
-  top: 0px;
-  right: 10px;
-}
+  .migiue {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+  }
+  .Logo {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+  }
 
-.position {
-  @include CenString;
-  top: -82px;
-  left: -100px;
+  .position {
+    @include CenString;
+    top: -82px;
+    left: -100px;
+  }
+  code {
+    font-size: 10px;
+  }
 }
-code {
-font-size: 10px;
-}
-}
-
-
