@@ -16,7 +16,7 @@ export const ThemeToggler = () => {
       <div
         aria-expanded={trans}
         onClick={() => {
-          toggleTheme(theme === "dark" ? "light" : "dark");
+          toggleTheme(theme === "light" ? "dark" : "light");
           setTrans(!trans);
         }}
       >

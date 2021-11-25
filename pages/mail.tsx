@@ -16,10 +16,10 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
         <meta name="description" content="メール" />
       </Head>
       <main className="CN">
-        <p className="pinkLinks">なんでもいいでござるよ</p>
+        <p>なんでもいいでござるよ</p>
         <form>
           <dl>
-            <dt className="pinkLinks">
+            <dt>
               <label htmlFor="name">Name*</label>
             </dt>
             <dd>
@@ -32,7 +32,7 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
               />
             </dd>
 
-            <dt className="pinkLinks">
+            <dt>
               <label htmlFor="email">Mail*</label>
             </dt>
             <dd>
@@ -45,7 +45,7 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
               />
             </dd>
 
-            <dt className="pinkLinks">
+            <dt>
               <label htmlFor="massage">Message</label>
             </dt>
             <dd>

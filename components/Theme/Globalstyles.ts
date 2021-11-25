@@ -1,9 +1,9 @@
-import { createGlobalStyle } from 'styled-components'
-import { ThemeType } from './ThemeType'
+import { createGlobalStyle } from "styled-components";
+import { ThemeType } from "./ThemeType";
 
 type Props = {
-    theme: ThemeType;
-}
+  theme: ThemeType;
+};
 
 export const GlobalStyles = createGlobalStyle<Props>`
 {
@@ -12,6 +12,7 @@ export const GlobalStyles = createGlobalStyle<Props>`
         color: ${(props) => props.theme.color};
     }
     .colorState{
+        color: ${(props) => props.theme.links};
         border-bottom: ${(props) => props.theme.border};
     }
     h1{
@@ -23,6 +24,12 @@ export const GlobalStyles = createGlobalStyle<Props>`
     a{
         color: ${(props) => props.theme.color};
         font-weight: ${(props) => props.theme.bold};
+    }
+    a.scale:hover {
+        color: ${(props) => props.theme.links};
+    }
+    .pinkLinks{
+        color: ${(props) => props.theme.color};
     }
     .MenuList [aria-expanded='true'] {
         background: ${(props) => props.theme.menu};
@@ -37,4 +44,3 @@ export const GlobalStyles = createGlobalStyle<Props>`
 `;
 
 export default GlobalStyles;
-

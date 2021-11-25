@@ -49,6 +49,7 @@ li {
 }
 
 .nav2 {
+  font-weight: bold;
   display: flex;
   flex-direction: column;
   padding: 0px;
@@ -74,6 +75,7 @@ dd {
 a {
   color: $ST;
   text-decoration: none;
+  // font-weight: bold;
 }
 
 a.scale:hover {

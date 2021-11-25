@@ -25,8 +25,8 @@ $BG: #242f3d;
 $ST: #fafafa;
 $FB: #ffb7b7;
 $FE: #ffefef;
-$YE: #fffed5;
-$ME: rgba(19, 28, 37, 0.92);
+$YE: #f8f0df;
+$ME: rgba(0, 0, 0, 0.75);
 
 @mixin LRauto {
   margin-right: auto;
@@ -61,6 +61,7 @@ $ME: rgba(19, 28, 37, 0.92);
 }
 
 @mixin NAV {
+  font-weight: bold;
   position: relative;
   display: flex;
   justify-content: center;
