@@ -17,6 +17,7 @@ const Index = () => {
       <main className="CN">
         <h1 className="Home hikki">S o u W e b</h1>
       </main>
+      テスト
       色覚でハレーションを起こす方は右上の水滴マークでダークモードをご利用ください。
     </motion.div>
   );
