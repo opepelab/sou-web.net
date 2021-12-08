@@ -10,10 +10,6 @@
   display: block;
 }
 
-.test {
-  text-align: center;
-}
-
 .Iti {
   @include CenString;
   position: fixed;
