@@ -46,7 +46,6 @@
 .hikki {
   font: {
     family: $Google0;
-    weight: bold;
   }
 }
 
@@ -54,8 +53,7 @@
   font-size: $p10;
 }
 
-.colorState {
-  color: $FB;
+.headerState {
   border-bottom: solid 1px $ST;
   pointer-events: none;
 }

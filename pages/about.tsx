@@ -19,7 +19,7 @@ const About: React.FC = () => {
         <div className="triangle-bottom" />
         <dl>
           <dt>name</dt>
-          <dd>watanabe sou</dd>
+          <dd>sou</dd>
           <dt>sign</dt>
           <dd>蠍座</dd>
           <dt>4type</dt>
@@ -28,7 +28,7 @@ const About: React.FC = () => {
           <dd>戌年</dd>
           <dt>location</dt>
           <dd>東京</dd>
-          <dd>この時代と生んでくれた母と父に感謝します。</dd>
+          <dd>この時代に、生んでくれた母と父に感謝します。</dd>
           <Link href="/profile">「 プロフィール 」</Link>
         </dl>
       </main>

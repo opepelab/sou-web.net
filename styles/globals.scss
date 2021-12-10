@@ -49,12 +49,11 @@ li {
 }
 
 .nav2 {
-  font-weight: bold;
   display: flex;
   flex-direction: column;
   padding: 0px;
   row-gap: 20px;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .nav3 {
@@ -79,10 +78,9 @@ dd {
 a {
   color: $ST;
   text-decoration: none;
-  font-weight: bold;
 }
 
-a.scale:hover {
+.scale:hover {
   @include Hover;
 }
 
@@ -146,34 +144,33 @@ textarea {
 .migiue {
   z-index: 5;
   position: relative;
+  top: -2px;
   left: -340px;
   font-size: 24px;
   width: 100px;
 }
 
 .space {
-  background: #fff;
-  width: 14px;
-  height: 14px;
+  color: $ST;
+  font-size: $p20;
   cursor: pointer;
 }
 
 .toggle {
-  z-index: 4;
+  z-index: 3;
   position: relative;
-  top: -1px;
+  top: -2px;
   right: -410px;
 }
 
 .toggle [aria-expanded="true"] {
-  transform: rotate(180deg);
   transition-duration: 0.2s;
 }
 
-// .toggle [aria-expanded="false"] {
-//   transform: rotate(-90deg);
-//   transition-duration: 0.2s;
-// }
+.toggle [aria-expanded="false"] {
+  transform: rotate(-360deg);
+  transition-duration: 0.2s;
+}
 
 .position {
   z-index: 1;

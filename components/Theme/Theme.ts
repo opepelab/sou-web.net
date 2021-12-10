@@ -5,7 +5,7 @@ export const LightTheme = {
   background: "#FFF",
   bgg: "#FFEFEF",
   menu: "rgba(255, 255, 255, 1)",
-  border: "solid 1px #555555",
+  border: "solid 1px #666",
   h12: "solid 1px #eaeaea",
-  links: "#79B4B7",
+  links: "#0070C9",
 };

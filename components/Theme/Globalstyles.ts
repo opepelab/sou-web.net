@@ -20,6 +20,9 @@ export const GlobalStyles = createGlobalStyle<Props>`
     .pinkLinks{
         color: ${(props) => props.theme.links};
     }
+    .scale:hover {
+        border-bottom: ${(props) => props.theme.border};
+      }
 }
 `;
 

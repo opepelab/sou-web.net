@@ -9,32 +9,32 @@ const Header: React.FC = () => {
           <nav>
             <ul className="nav1">
               <li>
-                <ActiveLink href="/about" activeClassName="colorState">
+                <ActiveLink href="/about" activeClassName="headerState">
                   <a className="scale">About</a>
                 </ActiveLink>
               </li>
               <li>
-                <ActiveLink href="/mail" activeClassName="colorState">
+                <ActiveLink href="/mail" activeClassName="headerState">
                   <a className="scale">Email</a>
                 </ActiveLink>
               </li>
               <li>
-                <ActiveLink href="/blog/page/1" activeClassName="colorState">
+                <ActiveLink href="/blog/page/1" activeClassName="headerState">
                   <a className="scale">Posts</a>
                 </ActiveLink>
               </li>
               <li>
-                <ActiveLink href="/links" activeClassName="colorState">
+                <ActiveLink href="/links" activeClassName="headerState">
                   <a className="scale">Links</a>
                 </ActiveLink>
               </li>
               <li>
-                <ActiveLink href="/photo" activeClassName="colorState">
+                <ActiveLink href="/photo" activeClassName="headerState">
                   <a className="scale">Photo</a>
                 </ActiveLink>
               </li>
               <li>
-                <ActiveLink href="/develop" activeClassName="colorState">
+                <ActiveLink href="/develop" activeClassName="headerState">
                   <a className="scale">Develop</a>
                 </ActiveLink>
               </li>

@@ -21,7 +21,7 @@
     display: inline-block;
     z-index: 5;
     position: fixed;
-    right: 10px;
+    right: 5px;
     top: 5px;
   }
   .Line span {
@@ -68,6 +68,7 @@
     @include Menu;
     opacity: 0;
     visibility: unset;
+    transform: translate(20px);
   }
 
   .disableN {
@@ -107,8 +108,8 @@
 
   .toggle {
     position: absolute;
-    top: 16px;
-    right: 68px;
+    top: 6px;
+    right: 50px;
   }
 
   .position {
