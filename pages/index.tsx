@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import Head from "next/head";
-import Image from "next/image";
 
 const Index = () => {
   return (
@@ -14,11 +13,12 @@ const Index = () => {
         <title>sou-web</title>
         <meta name="description" content="Home" />
       </Head>
-      <main className="CN">
+      <main className="margin50p">
+        <p>初めまして 😎 😸</p>
+        <p>ダークモードが怖い方は星マークからライトモードをご利用ください。</p>
         <p>
-          😎 ライトテーマが見えづらい方は右上の四角いボタンでダークモードを、
-          <br />
-          ダークモードが怖い方はライトモードをご利用ください。
+          フロントエンド開発、HTML CSSに関する深い知識、React
+          Nextなどの近代技術やヘッドレスCMSの文化など
         </p>
       </main>
     </motion.div>
