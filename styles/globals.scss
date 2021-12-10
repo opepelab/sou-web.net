@@ -160,7 +160,8 @@ textarea {
 .toggle {
   z-index: 4;
   position: relative;
-  right: -440px;
+  top: -1px;
+  right: -410px;
 }
 
 .toggle [aria-expanded="true"] {
