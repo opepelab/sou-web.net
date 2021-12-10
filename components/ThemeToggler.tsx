@@ -1,6 +1,5 @@
 import { useContext, useState } from "react";
 import { ThemeContext } from "styled-components";
-import Image from "next/image";
 
 type StrProps = {
   theme: string;
@@ -12,7 +11,7 @@ export const ThemeToggler = () => {
   const { theme, toggleTheme } = useContext<StrProps>(ThemeContext);
 
   return (
-    <div className="Logo inblo">
+    <div className="toggle inblo">
       <div
         aria-expanded={trans}
         onClick={() => {
@@ -20,7 +19,7 @@ export const ThemeToggler = () => {
           setTrans(!trans);
         }}
       >
-        <Image className="m0" src="/logo.png" width={60} height={60} />
+        <button className="space" />
       </div>
     </div>
   );

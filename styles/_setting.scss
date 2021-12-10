@@ -60,7 +60,10 @@ $ME: rgba(0, 0, 0, 0.75);
 }
 
 @mixin NAV {
-  font-weight: bold;
+  font: {
+    size: 12px;
+    weight: bold;
+  }
   position: relative;
   display: flex;
   justify-content: center;
@@ -68,6 +71,8 @@ $ME: rgba(0, 0, 0, 0.75);
   grid-gap: $p50;
   white-space: nowrap;
   left: 160px;
+  top: -10px;
+  color: #fafafa;
 }
 
 @mixin Hover {
@@ -80,7 +85,7 @@ $ME: rgba(0, 0, 0, 0.75);
 @mixin Menu {
   z-index: 4;
   position: fixed;
-  background: $ME;
+  background: #333;
   left: 0px;
   top: 0px;
   width: $r100;

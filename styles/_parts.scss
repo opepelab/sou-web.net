@@ -10,10 +10,6 @@
   display: block;
 }
 
-.iloveit {
-  display: block;
-}
-
 .Iti {
   @include CenString;
   position: fixed;
@@ -21,7 +17,7 @@
 }
 
 .margin50p {
-  margin-top: $p60;
+  margin-top: $p50;
 }
 
 .flex-container {
@@ -90,7 +86,9 @@
   z-index: 2;
   position: absolute;
   width: $r100;
-  height: 70px;
+  height: 43px;
+  background: #333;
+  border-bottom: solid 1px #000000;
   top: $p0;
   left: $p0;
 }

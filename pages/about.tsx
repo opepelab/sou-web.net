@@ -19,7 +19,7 @@ const About: React.FC = () => {
         <div className="triangle-bottom" />
         <dl>
           <dt>name</dt>
-          <dd>渡邊 蒼</dd>
+          <dd>watanabe sou</dd>
           <dt>sign</dt>
           <dd>蠍座</dd>
           <dt>4type</dt>

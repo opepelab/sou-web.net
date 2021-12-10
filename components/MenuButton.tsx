@@ -10,6 +10,8 @@ const MenuButton: React.FC<BoolProps> = ({ open, setOpen }) => {
         aria-expanded={open}
         onClick={() => setOpen(!open)}
         aria-label="Toggle mobile navigation menu"
+        type="button"
+        className="Humb"
       >
         <span />
         <span />

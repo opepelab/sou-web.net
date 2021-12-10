@@ -12,32 +12,32 @@ const Menu: React.FC<BoolProps> = ({ open, setOpen }) => {
         <div className="CN">
           <nav>
             <ul className="nav2">
-              <li className="tate">
+              <li>
                 <ActiveLink href="/about" activeClassName="colorState">
                   <a>About</a>
                 </ActiveLink>
               </li>
-              <li className="tate">
+              <li>
                 <ActiveLink href="/mail" activeClassName="colorState">
                   <a className="scale">Email</a>
                 </ActiveLink>
               </li>
-              <li className="tate">
+              <li>
                 <ActiveLink href="/blog/page/1" activeClassName="colorState">
                   <a className="scale">Posts</a>
                 </ActiveLink>
               </li>
-              <li className="tate">
+              <li>
                 <ActiveLink href="/links" activeClassName="colorState">
                   <a>Links</a>
                 </ActiveLink>
               </li>
-              <li className="tate">
+              <li>
                 <ActiveLink href="/photo" activeClassName="colorState">
                   <a>Photo</a>
                 </ActiveLink>
               </li>
-              <li className="tate">
+              <li>
                 <ActiveLink href="/develop" activeClassName="colorState">
                   <a>Devlop</a>
                 </ActiveLink>

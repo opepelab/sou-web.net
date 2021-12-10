@@ -15,10 +15,10 @@ const Index = () => {
         <meta name="description" content="Home" />
       </Head>
       <main className="CN">
-        <h1 className="Home hikki">S o u W e b</h1>
+        <p>
+          ライトテーマが見えづらい方は右上の四角いボタンでダークモードをご利用ください。
+        </p>
       </main>
-      テスト
-      色覚でハレーションを起こす方は右上の水滴マークでダークモードをご利用ください。
     </motion.div>
   );
 };

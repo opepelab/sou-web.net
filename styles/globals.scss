@@ -64,6 +64,10 @@ li {
   gap: $p20;
 }
 
+.MenuList {
+  visibility: collapse;
+}
+
 dt {
   font-size: $p10;
 }
@@ -139,47 +143,34 @@ textarea {
   @include Mbutton;
 }
 
-.MenuList {
-  visibility: collapse;
-}
-
-.MenuList [aria-expanded="true"] {
-  @include Menu;
-  visibility: visible;
-}
-
-.MenuList [aria-expanded="false"] {
-  @include Menu;
-  opacity: 0;
-  visibility: unset;
-}
-
 .migiue {
   z-index: 5;
   position: relative;
-  top: -24px;
   left: -340px;
   font-size: 24px;
   width: 100px;
 }
-.Logo {
+
+.space {
+  background: #fff;
+  width: 20px;
+  height: 20px;
+}
+.toggle {
   z-index: 4;
   position: relative;
-  top: -5px;
   right: -440px;
-  width: 60px;
-  height: 60px;
-  transform: rotate(60deg);
 }
 
-.Logo [aria-expanded="true"] {
+.toggle [aria-expanded="true"] {
   transform: rotate(180deg);
   transition-duration: 0.2s;
 }
 
-.Logo [aria-expanded="false"] {
-  transition-duration: 0.2s;
-}
+// .toggle [aria-expanded="false"] {
+//   transform: rotate(-90deg);
+//   transition-duration: 0.2s;
+// }
 
 .position {
   z-index: 1;
