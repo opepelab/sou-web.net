@@ -10,32 +10,32 @@ const Header: React.FC = () => {
             <ul className="nav1">
               <li>
                 <ActiveLink href="/about" activeClassName="headerState">
-                  <a className="scale">About</a>
+                  <a className="scaleLinks">About</a>
                 </ActiveLink>
               </li>
               <li>
                 <ActiveLink href="/mail" activeClassName="headerState">
-                  <a className="scale">Email</a>
+                  <a className="scaleLinks">Email</a>
                 </ActiveLink>
               </li>
               <li>
                 <ActiveLink href="/blog/page/1" activeClassName="headerState">
-                  <a className="scale">Posts</a>
+                  <a className="scaleLinks">Posts</a>
                 </ActiveLink>
               </li>
               <li>
                 <ActiveLink href="/links" activeClassName="headerState">
-                  <a className="scale">Links</a>
+                  <a className="scaleLinks">Links</a>
                 </ActiveLink>
               </li>
               <li>
                 <ActiveLink href="/photo" activeClassName="headerState">
-                  <a className="scale">Photo</a>
+                  <a className="scaleLinks">Photo</a>
                 </ActiveLink>
               </li>
               <li>
                 <ActiveLink href="/develop" activeClassName="headerState">
-                  <a className="scale">Develop</a>
+                  <a className="scaleLinks">Develop</a>
                 </ActiveLink>
               </li>
             </ul>

@@ -81,7 +81,11 @@ a {
   text-decoration: none;
 }
 
-.scale:hover {
+.scaleLinks:hover {
+  @include Hover;
+}
+
+.scaleArticle:hover {
   @include Hover;
 }
 

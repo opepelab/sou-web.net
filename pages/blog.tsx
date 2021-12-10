@@ -36,7 +36,7 @@ const Blog: React.FC<Map> = ({ blog }) => {
             </dt>
             <dd>
               <Link href={`/blog/${props.id}`}>
-                <a className="scale pinkLinks">{props.title}</a>
+                <a className="scaleArticle pinkLinks">{props.title}</a>
               </Link>
             </dd>
           </dl>

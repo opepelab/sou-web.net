@@ -15,7 +15,7 @@ type Content = {
   totalCount: number;
 };
 
-const PER_PAGE = 14;
+const PER_PAGE = 15;
 const range = (start: number, end: number) =>
   [...Array(end - start + 1)].map((_, i) => start + i);
 
@@ -39,7 +39,7 @@ const Page: React.FC<Content> = ({ blog, totalCount }) => {
             </dt>
             <dd key={blog.id}>
               <Link href={`/blog/${blog.id}`}>
-                <a className="scale pinkLinks">{blog.title}</a>
+                <a className="scaleArticle pinkLinks">{blog.title}</a>
               </Link>
             </dd>
           </dl>
@@ -91,7 +91,7 @@ export const getStaticProps = async (context: { params: { id: number } }) => {
   };
 
   const res = await fetch(
-    `https://sou.microcms.io/api/v1/blog?offset=${(id - 1) * 14}&limit=14`,
+    `https://sou.microcms.io/api/v1/blog?offset=${(id - 1) * 15}&limit=15`,
     key
   );
   const data = await res.json();
