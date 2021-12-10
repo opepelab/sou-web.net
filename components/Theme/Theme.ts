@@ -1,7 +1,7 @@
 export const DarkTheme = {};
 
 export const LightTheme = {
-  color: "#555",
+  color: "#333",
   background: "#FFF",
   bgg: "#FFEFEF",
   menu: "rgba(255, 255, 255, 1)",
