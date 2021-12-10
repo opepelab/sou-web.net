@@ -19,7 +19,7 @@ export const ThemeToggler = () => {
           setTrans(!trans);
         }}
       >
-        <button className="space" />
+        <div className="space" />
       </div>
     </div>
   );
