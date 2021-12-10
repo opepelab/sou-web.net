@@ -16,7 +16,7 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
         <meta name="description" content="メール" />
       </Head>
       <main className="CN">
-        <p>なんでもいいでござるよ</p>
+        <p>Are you sure?</p>
         <form>
           <dl>
             <dt>

@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import Head from "next/head";
-import Link from "next/link";
 
 const About: React.FC = () => {
   return (
@@ -19,17 +18,17 @@ const About: React.FC = () => {
         <div className="triangle-bottom" />
         <dl>
           <dt>name</dt>
-          <dd>sou</dd>
+          <dd>SOU</dd>
           <dt>sign</dt>
-          <dd>蠍座</dd>
-          <dt>4type</dt>
-          <dd>法則</dd>
-          <dt>eto!</dt>
-          <dd>戌年</dd>
+          <dd>Scorpio</dd>
+          <dt>Type Four</dt>
+          <dd>law</dd>
+          <dt>eto</dt>
+          <dd>Dog</dd>
           <dt>location</dt>
-          <dd>東京</dd>
-          <dd>この時代に、生んでくれた母と父に感謝します。</dd>
-          <Link href="/profile">「 プロフィール 」</Link>
+          <dd>Tokyo</dd>
+          <dt>Merci papa maman.</dt>
+          <dd>生んでくれた母と父に感謝します。</dd>
         </dl>
       </main>
     </motion.div>
