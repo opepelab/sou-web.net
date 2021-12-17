@@ -1,5 +1,5 @@
-import { motion } from "framer-motion"
-import Head from "next/head"
+import { motion } from "framer-motion";
+import Head from "next/head";
 
 const About: React.FC = () => {
   return (
@@ -27,7 +27,7 @@ const About: React.FC = () => {
         </dl>
       </main>
     </motion.div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

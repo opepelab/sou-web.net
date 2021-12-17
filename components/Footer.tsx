@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from "next/link";
 
 const Footer: React.FC = () => {
   return (
@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
         </Link>
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

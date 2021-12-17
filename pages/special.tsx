@@ -1,5 +1,5 @@
-import { motion } from "framer-motion"
-import Head from "next/head"
+import { motion } from "framer-motion";
+import Head from "next/head";
 
 const Special: React.FC = () => {
   return (
@@ -37,7 +37,7 @@ const Special: React.FC = () => {
         </p>
       </main>
     </motion.div>
-  )
-}
+  );
+};
 
-export default Special
+export default Special;

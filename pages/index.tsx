@@ -1,5 +1,5 @@
-import { motion } from "framer-motion"
-import Head from "next/head"
+import { motion } from "framer-motion";
+import Head from "next/head";
 
 const Index = () => {
   return (
@@ -14,7 +14,7 @@ const Index = () => {
         <p>フロントエンド開発、HTML CSSに関する深い知識、React Nextなどの近代技術やヘッドレスCMSの文化など</p>
       </main>
     </motion.div>
-  )
-}
+  );
+};
 
-export default Index
+export default Index;

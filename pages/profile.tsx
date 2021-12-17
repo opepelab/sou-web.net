@@ -1,5 +1,5 @@
-import { motion } from "framer-motion"
-import Head from "next/head"
+import { motion } from "framer-motion";
+import Head from "next/head";
 
 const Profile: React.FC = () => {
   return (
@@ -17,7 +17,7 @@ const Profile: React.FC = () => {
         <br />
       </main>
     </motion.div>
-  )
-}
+  );
+};
 
-export default Profile
+export default Profile;

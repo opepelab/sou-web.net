@@ -1,4 +1,4 @@
-import ActiveLink from "./Sys/ActiveLink"
+import ActiveLink from "./Sys/ActiveLink";
 
 const Text: React.FC = () => {
   return (
@@ -7,7 +7,7 @@ const Text: React.FC = () => {
         <a className="migiue hikki aBlock">Sou W e b</a>
       </ActiveLink>
     </div>
-  )
-}
+  );
+};
 
-export default Text
+export default Text;

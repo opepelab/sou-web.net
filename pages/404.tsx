@@ -1,6 +1,6 @@
-import { motion } from "framer-motion"
-import Head from "next/head"
-import Link from "next/link"
+import { motion } from "framer-motion";
+import Head from "next/head";
+import Link from "next/link";
 
 const NotFound: React.FC = () => {
   return (
@@ -19,7 +19,7 @@ const NotFound: React.FC = () => {
         </dl>
       </main>
     </motion.div>
-  )
-}
+  );
+};
 
-export default NotFound
+export default NotFound;

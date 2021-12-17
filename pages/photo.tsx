@@ -1,5 +1,5 @@
-import { motion } from "framer-motion"
-import Head from "next/head"
+import { motion } from "framer-motion";
+import Head from "next/head";
 
 const Picture: React.FC = () => {
   return (
@@ -57,7 +57,7 @@ const Picture: React.FC = () => {
         <img className="PM margin10 point " src="/picture/0068.png" width={190} height={260} />
       </main>
     </motion.div>
-  )
-}
+  );
+};
 
-export default Picture
+export default Picture;

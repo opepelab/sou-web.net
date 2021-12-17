@@ -1,9 +1,9 @@
-import { useMail } from ".././hooks/useMail"
-import { motion } from "framer-motion"
-import Head from "next/head"
+import { useMail } from ".././hooks/useMail";
+import { motion } from "framer-motion";
+import Head from "next/head";
 
 export const Mail: React.FC<HTMLTextAreaElement> = () => {
-  const { setName, setMail, setMessage, send } = useMail()
+  const { setName, setMail, setMessage, send } = useMail();
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.4 }}>
       <Head>
@@ -43,7 +43,7 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
         </form>
       </main>
     </motion.div>
-  )
-}
+  );
+};
 
-export default Mail
+export default Mail;

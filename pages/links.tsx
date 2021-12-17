@@ -1,6 +1,6 @@
-import { motion } from "framer-motion"
-import Head from "next/head"
-import Link from "next/link"
+import { motion } from "framer-motion";
+import Head from "next/head";
+import Link from "next/link";
 
 const Links: React.FC = () => {
   return (
@@ -54,7 +54,7 @@ const Links: React.FC = () => {
         </dl>
       </main>
     </motion.div>
-  )
-}
+  );
+};
 
-export default Links
+export default Links;

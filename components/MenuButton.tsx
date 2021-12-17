@@ -1,7 +1,7 @@
 type BoolProps = {
-  open: boolean
-  setOpen: React.Dispatch<React.SetStateAction<boolean>>
-}
+  open: boolean;
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+};
 
 const MenuButton: React.FC<BoolProps> = ({ open, setOpen }) => {
   return (
@@ -11,7 +11,7 @@ const MenuButton: React.FC<BoolProps> = ({ open, setOpen }) => {
         <span />
       </button>
     </div>
-  )
-}
+  );
+};
 
-export default MenuButton
+export default MenuButton;
