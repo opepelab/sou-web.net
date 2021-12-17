@@ -72,6 +72,15 @@ const Links: React.FC = () => {
               WordPress Blog
             </a>
           </dd>
+          <dd>
+            <a
+              className="pinkLinks scale"
+              href="https://ikizura-wh.jimdofree.com/"
+              target="_blank"
+            >
+            生きづらわーほりプロジェクト
+            </a>
+          </dd>
           <Link href="/special">
             <a className="scale pinkLinks">Special Thanks</a>
           </Link>
