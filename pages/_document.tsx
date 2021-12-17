@@ -1,5 +1,5 @@
 // pages/_document.js
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, { Html, Head, Main, NextScript } from "next/document"
 
 class MyDocument extends Document {
   render() {
@@ -7,22 +7,16 @@ class MyDocument extends Document {
       <Html lang="JA">
         <Head>
           <link rel="shortcut icon" href="/folds.ico" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap"
-            rel="stylesheet"
-          />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap"
-            rel="stylesheet"
-          />
+          <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet" />
         </Head>
         <body>
           <Main />
           <NextScript />
         </body>
       </Html>
-    );
+    )
   }
 }
 
-export default MyDocument;
+export default MyDocument

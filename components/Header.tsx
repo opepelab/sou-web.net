@@ -1,5 +1,5 @@
-import ActiveLink from "./Sys/ActiveLink";
-import React from "react";
+import ActiveLink from "./Sys/ActiveLink"
+import React from "react"
 
 const Header: React.FC = () => {
   return (
@@ -43,7 +43,7 @@ const Header: React.FC = () => {
         </div>
       </header>
     </div>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

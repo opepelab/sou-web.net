@@ -1,14 +1,9 @@
-import { motion } from "framer-motion";
-import Head from "next/head";
+import { motion } from "framer-motion"
+import Head from "next/head"
 
 const Develop: React.FC = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.4 }}
-    >
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.4 }}>
       <Head>
         <title>develop - sou</title>
         <meta name="description" content="開発環境" />
@@ -19,20 +14,10 @@ const Develop: React.FC = () => {
         <dl>
           <div>
             <a href="#01">
-              <img
-                className="PM"
-                src="/picture/312.jpg"
-                width={255}
-                height={191}
-              />
+              <img className="PM" src="/picture/312.jpg" width={255} height={191} />
             </a>
             <a id="01" href="#close" className="lb">
-              <img
-                className="PM"
-                src="/picture/312.jpg"
-                width={255}
-                height={191}
-              />
+              <img className="PM" src="/picture/312.jpg" width={255} height={191} />
             </a>
           </div>
           <div className="Zoom-in margin10 point z-index"></div>
@@ -51,7 +36,7 @@ const Develop: React.FC = () => {
         </dl>
       </main>
     </motion.div>
-  );
-};
+  )
+}
 
-export default Develop;
+export default Develop

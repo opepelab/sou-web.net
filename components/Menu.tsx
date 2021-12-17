@@ -1,9 +1,9 @@
-import ActiveLink from "./Sys/ActiveLink";
+import ActiveLink from "./Sys/ActiveLink"
 
 type BoolProps = {
-  open: boolean;
-  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
-};
+  open: boolean
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>
+}
 
 const Menu: React.FC<BoolProps> = ({ open, setOpen }) => {
   return (
@@ -47,7 +47,7 @@ const Menu: React.FC<BoolProps> = ({ open, setOpen }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Menu;
+export default Menu

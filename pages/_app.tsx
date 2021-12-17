@@ -1,17 +1,17 @@
-import { AppProps } from "next/app";
-import { AnimatePresence } from "framer-motion";
-import "../styles/globals.scss";
-import "../styles/mobile.scss";
-import "../styles/img.scss";
-import Head from "next/head";
-import { ThemeContext, ThemeProvider } from "styled-components";
-import { LightTheme, DarkTheme } from "../components/Theme/Theme";
-import { useState } from "react";
-import GlobalStyles from "../components/Theme/Globalstyles";
-import Layout from "../components/Layout/layout";
+import { AppProps } from "next/app"
+import { AnimatePresence } from "framer-motion"
+import "../styles/globals.scss"
+import "../styles/mobile.scss"
+import "../styles/img.scss"
+import Head from "next/head"
+import { ThemeContext, ThemeProvider } from "styled-components"
+import { LightTheme, DarkTheme } from "../components/Theme/Theme"
+import { useState } from "react"
+import GlobalStyles from "../components/Theme/Globalstyles"
+import Layout from "../components/Layout/layout"
 
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
-  const [theme, toggleTheme] = useState("");
+  const [theme, toggleTheme] = useState("")
   return (
     <>
       <Head>
@@ -28,7 +28,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
         </ThemeProvider>
       </ThemeContext.Provider>
     </>
-  );
-};
+  )
+}
 
-export default MyApp;
+export default MyApp

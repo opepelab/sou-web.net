@@ -1,14 +1,9 @@
-import { motion } from "framer-motion";
-import Head from "next/head";
+import { motion } from "framer-motion"
+import Head from "next/head"
 
 const Picture: React.FC = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.4 }}
-    >
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.4 }}>
       <Head>
         <title>picture - sou</title>
         <meta name="description" content="フォト" />
@@ -19,39 +14,19 @@ const Picture: React.FC = () => {
 
         <div>
           <a href="#01">
-            <img
-              className="PM margin10 point"
-              src="/picture/otoko.png"
-              width={255}
-              height={403}
-            />
+            <img className="PM margin10 point" src="/picture/otoko.png" width={255} height={403} />
           </a>
           <a id="01" href="#close" className="lb">
-            <img
-              className="PM"
-              src="/picture/otoko.png"
-              width={255}
-              height={403}
-            />
+            <img className="PM" src="/picture/otoko.png" width={255} height={403} />
           </a>
         </div>
 
         <div>
           <a href="#02">
-            <img
-              className="PM margin10 point"
-              src="/picture/haruka.png"
-              width={255}
-              height={360}
-            />
+            <img className="PM margin10 point" src="/picture/haruka.png" width={255} height={360} />
           </a>
           <a id="02" href="#close" className="lb">
-            <img
-              className="PM"
-              src="/picture/haruka.png"
-              width={255}
-              height={360}
-            />
+            <img className="PM" src="/picture/haruka.png" width={255} height={360} />
           </a>
         </div>
 
@@ -60,20 +35,10 @@ const Picture: React.FC = () => {
         <dl>
           <div>
             <a href="#01">
-              <img
-                className="PM margin10 point "
-                src="/picture/315.jpg"
-                width={255}
-                height={191}
-              />
+              <img className="PM margin10 point " src="/picture/315.jpg" width={255} height={191} />
             </a>
             <a id="01" href="#close" className="lb">
-              <img
-                className="PM"
-                src="/picture/315.jpg"
-                width={255}
-                height={191}
-              />
+              <img className="PM" src="/picture/315.jpg" width={255} height={191} />
             </a>
           </div>
 
@@ -89,15 +54,10 @@ const Picture: React.FC = () => {
           <dd>16GB</dd>
         </dl>
 
-        <img
-          className="PM margin10 point "
-          src="/picture/0068.png"
-          width={190}
-          height={260}
-        />
+        <img className="PM margin10 point " src="/picture/0068.png" width={190} height={260} />
       </main>
     </motion.div>
-  );
-};
+  )
+}
 
-export default Picture;
+export default Picture

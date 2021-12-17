@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "next/link"
 
 const Footer: React.FC = () => {
   return (
@@ -7,13 +7,13 @@ const Footer: React.FC = () => {
         <Link href="/">
           <a className="scale">
             <div className="inblo C pinkLinks">
-              © <span className="hikki">Sou Web</span>
+              © <div className="hikki">Sou Web</div>
             </div>
           </a>
         </Link>
       </footer>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
