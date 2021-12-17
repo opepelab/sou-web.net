@@ -21,7 +21,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
         <ThemeProvider theme={theme === "light" ? DarkTheme : LightTheme}>
           <GlobalStyles />
           <Layout>
-            <AnimatePresence>
+            <AnimatePresence exitBeforeEnter>
               <Component {...pageProps} key={router.asPath} />
             </AnimatePresence>
           </Layout>

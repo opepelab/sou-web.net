@@ -16,17 +16,11 @@ type Content = {
 };
 
 const PER_PAGE = 15;
-const range = (start: number, end: number) =>
-  [...Array(end - start + 1)].map((_, i) => start + i);
+const range = (start: number, end: number) => [...Array(end - start + 1)].map((_, i) => start + i);
 
 const Page: React.FC<Content> = ({ blog, totalCount }) => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.4 }}
-    >
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.25 }}>
       <Head>
         <title>log - sou</title>
         <meta name="description" content="ログ" />
@@ -48,10 +42,7 @@ const Page: React.FC<Content> = ({ blog, totalCount }) => {
           <ul className="nav3">
             {range(1, Math.ceil(totalCount / PER_PAGE)).map((id) => (
               <li key={id}>
-                <ActiveLink
-                  href={`/blog/page/${id}`}
-                  activeClassName="listState"
-                >
+                <ActiveLink href={`/blog/page/${id}`} activeClassName="listState">
                   <a className="Pagi">{id}</a>
                 </ActiveLink>
               </li>
@@ -73,9 +64,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const res = await fetch("https://sou.microcms.io/api/v1/blog", key);
   const data = await res.json();
 
-  const paths: string[] = range(1, Math.ceil(data.totalCount / PER_PAGE)).map(
-    (content) => `/blog/page/${content}`
-  );
+  const paths: string[] = range(1, Math.ceil(data.totalCount / PER_PAGE)).map((content) => `/blog/page/${content}`);
 
   return {
     paths,
@@ -90,10 +79,7 @@ export const getStaticProps = async (context: { params: { id: number } }) => {
     headers: { "X-MICROCMS-API-KEY": process.env.API_KEY },
   };
 
-  const res = await fetch(
-    `https://sou.microcms.io/api/v1/blog?offset=${(id - 1) * 15}&limit=15`,
-    key
-  );
+  const res = await fetch(`https://sou.microcms.io/api/v1/blog?offset=${(id - 1) * 15}&limit=15`, key);
   const data = await res.json();
 
   return {
