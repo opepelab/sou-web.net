@@ -16,8 +16,8 @@ const About: React.FC = () => {
           <dd>sou333</dd>
           <dt>sign</dt>
           <dd>Scorpio</dd>
-          <dt>Type Four</dt>
-          <dd>~</dd>
+          <dt>Type</dt>
+          <dd>ENTP</dd>
           <dt>eto</dt>
           <dd>Dog</dd>
           <dt>location</dt>
