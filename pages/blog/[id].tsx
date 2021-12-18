@@ -30,11 +30,13 @@ const Id: React.FC<Content> = ({ blog, highlightedBody }) => {
         <title>{blog.title} - sou</title>
         <meta name="description" content={blog.description} />
       </Head>
-      <main className="textLeft margin50p">
+      <main className="textLeft margin50p resizeimage">
         <div className={styles.Time2}>
           <Date dateString={blog.publishedAt} />
         </div>
-        <h1 className={styles.h1}>{blog.title}</h1>
+        <div className="pinkLinks">
+          <h1 className={styles.h1}>{blog.title}</h1>
+        </div>
         <div className="triangle-bottom" />
         <div dangerouslySetInnerHTML={{ __html: highlightedBody }} />
       </main>

@@ -16,7 +16,7 @@ body {
   text-align: center;
   background: $BG;
   color: $ST;
-  width: $r50;
+  width: 600px;
   @include LRauto;
 }
 
@@ -28,8 +28,9 @@ code {
   font-size: 12px;
 }
 
-main {
-  display: inline-block;
+.resizeimage img {
+  width: 100%;
+  transform: scale(0.95);
 }
 
 button {

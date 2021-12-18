@@ -8,7 +8,7 @@ const Picture: React.FC = () => {
         <title>picture - sou</title>
         <meta name="description" content="フォト" />
       </Head>
-      <main className="margin50p">
+      <main className="margin50p inblo">
         <h1>Photo</h1>
         <div className="triangle-bottom" />
 

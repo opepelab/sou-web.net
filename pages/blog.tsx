@@ -23,7 +23,7 @@ const Blog: React.FC<Map> = ({ blog }) => {
         <title>log - sou</title>
         <meta name="description" content="ログ" />
       </Head>
-      <main className="textLeft margin50p">
+      <main className="textLeft margin50p inblo">
         {blog.map((props: Content) => (
           <dl key={props.id}>
             <dt>

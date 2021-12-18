@@ -25,7 +25,7 @@ const Page: React.FC<Content> = ({ blog, totalCount }) => {
         <title>log - sou</title>
         <meta name="description" content="ログ" />
       </Head>
-      <main className="textLeft margin50p">
+      <main className="textLeft margin50p inblo">
         {blog.map((blog: Content) => (
           <dl>
             <dt>
