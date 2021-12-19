@@ -12,15 +12,15 @@ const About: React.FC = () => {
         <h1>About</h1>
         <div className="triangle-bottom" />
         <dl>
-          <dt>name</dt>
+          <dt>Name</dt>
           <dd>sou333</dd>
-          <dt>sign</dt>
+          <dt>Sign</dt>
           <dd>Scorpio</dd>
           <dt>Type</dt>
           <dd>ENTP</dd>
-          <dt>eto</dt>
+          <dt>Eto</dt>
           <dd>Dog</dd>
-          <dt>location</dt>
+          <dt>Location</dt>
           <dd>Tokyo</dd>
           <dt>Merci papa maman.</dt>
           <dd>生んでくれた母と父に感謝します。</dd>
