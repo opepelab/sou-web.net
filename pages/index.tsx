@@ -9,9 +9,8 @@ const Index = () => {
         <meta name="description" content="Home" />
       </Head>
       <main className="margin50p">
-        <p>初めまして 😎 😸</p>
         <p>ダークモードが怖い方は星マークからライトモードをご利用ください。</p>
-        <p>フロントエンド開発、HTML CSSに関する深い知識、React Nextなどの近代技術やヘッドレスCMSの文化など</p>
+        <p>フロントエンド開発ヘッドレスCMSAPIサービスなど質問などあればメールください</p>
       </main>
     </motion.div>
   );
