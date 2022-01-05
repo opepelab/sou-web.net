@@ -48,6 +48,11 @@ const Links: React.FC = () => {
               生きづらわーほりプロジェクト
             </a>
           </dd>
+          <dd>
+            <a className="pinkLinks scale" href="https://chofu-koyado.vercel.app" target="_blank">
+              ちょうふのこやど
+            </a>
+          </dd>
           <Link href="/special">
             <a className="scale pinkLinks">Special Thanks</a>
           </Link>

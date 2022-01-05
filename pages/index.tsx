@@ -8,8 +8,9 @@ const Index = () => {
         <title>sou-web</title>
         <meta name="description" content="Home" />
       </Head>
-      <main className="margin50p textLeft">
-        <h1>ダークモードが怖い方はライトモードを使用してください</h1>
+      <main className="margin50p inblo">
+        <h1>コンピュータサイエンス</h1>
+        一人で開発しています友達欲しい
       </main>
     </motion.div>
   );
