@@ -10,9 +10,24 @@ import { useState } from "react";
 import GlobalStyles from "../components/Theme/Globalstyles";
 import Layout from "../components/Layout/layout";
 import usePageView from "../hooks/usePageView";
+import { GA_TRACKING_ID, pageview } from "../libs/gtag";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 
-const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
-  usePageView();
+const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
+  const router = useRouter();
+  useEffect(() => {
+    // GA_TRACKING_ID が設定されていない場合は、処理終了
+    if (!GA_TRACKING_ID) return;
+
+    const handleRouteChange = (url: string) => {
+      pageview(url);
+    };
+    router.events.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
   const [theme, toggleTheme] = useState("");
 
   return (
