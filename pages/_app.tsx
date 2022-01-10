@@ -10,12 +10,10 @@ import { useState } from "react";
 import GlobalStyles from "../components/Theme/Globalstyles";
 import Layout from "../components/Layout/layout";
 import { GA_TRACKING_ID, pageview } from "../libs/gtag";
-// import { useRouter } from "next/router";
 import { useEffect } from "react";
 
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
   useEffect(() => {
-    // GA_TRACKING_ID が設定されていない場合は、処理終了
     if (!GA_TRACKING_ID) return;
 
     const handleRouteChange = (url: string) => {

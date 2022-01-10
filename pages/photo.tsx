@@ -5,7 +5,7 @@ const Picture: React.FC = () => {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.25 }}>
       <Head>
-        <title>picture - sou</title>
+        <title>photo - sou</title>
         <meta name="description" content="フォト" />
       </Head>
       <main className="margin50p inblo">
