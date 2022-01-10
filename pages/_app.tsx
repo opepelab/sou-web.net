@@ -9,9 +9,12 @@ import { LightTheme, DarkTheme } from "../components/Theme/Theme";
 import { useState } from "react";
 import GlobalStyles from "../components/Theme/Globalstyles";
 import Layout from "../components/Layout/layout";
+import usePageView from "../hooks/usePageView";
 
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
+  usePageView();
   const [theme, toggleTheme] = useState("");
+
   return (
     <>
       <Head>

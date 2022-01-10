@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/gtag.js": "^0.0.8",
     "@types/styled-components": "^5.1.15",
     "cheerio": "^1.0.0-rc.10",
     "classnames": "^2.3.1",
