@@ -19,6 +19,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
     const handleRouteChange = (url: string) => {
       pageview(url);
     };
+
     router.events.on("routeChangeComplete", handleRouteChange);
     return () => {
       router.events.off("routeChangeComplete", handleRouteChange);
