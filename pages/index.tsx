@@ -17,6 +17,11 @@ const Index = () => {
         <p></p>
         <p>Challenging change the everytime The goal is to sleep like dead every day.</p>
         <p>sou Watanabe</p>
+        <p>私の趣味は検証することです。</p>
+        <p>直接的な討論は好きではありません。</p>
+        <p>出身住まい：日本 東京</p>
+        <p>生年：1994年生まれ 戌年</p>
+        <p>趣味：読書 </p>
       </main>
     </motion.div>
   );
