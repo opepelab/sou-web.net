@@ -9,7 +9,7 @@ const Index = () => {
         <meta name="description" content="Home" />
       </Head>
       <main className="margin50p textLeft inblo">
-        <h1>computer science</h1>
+        <h1>scientist</h1>
         <p>I'm front end program&developer</p>
         <p>I think always the better.</p>
         <p>beautiful&pretty isCoding</p>

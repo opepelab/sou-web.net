@@ -39,13 +39,18 @@ const Links: React.FC = () => {
             </a>
           </dd>
           <dd>
-            <a className="pinkLinks scale" href="https://opepelab.org/" target="_blank">
-              WordPress Blog
+            <a className="pinkLinks scale" href="https://www.deepl.com/translator" target="_blank">
+              DeepL
             </a>
           </dd>
           <dd>
-            <a className="pinkLinks scale" href="https://ikizura-wh.jimdofree.com/" target="_blank">
-              生きづらわーほりプロジェクト
+            <a className="pinkLinks scale" href="https://translate.google.co.jp/" target="_blank">
+              Google翻訳
+            </a>
+          </dd>
+          <dd>
+            <a className="pinkLinks scale" href="https://opepelab.org/" target="_blank">
+              WordPress Blog
             </a>
           </dd>
           <dd>

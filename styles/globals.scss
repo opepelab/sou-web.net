@@ -86,6 +86,10 @@ a {
   @include Hover;
 }
 
+p {
+  width: fit-content;
+}
+
 p:hover {
   @include Hover;
 }

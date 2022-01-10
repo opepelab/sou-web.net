@@ -8,7 +8,7 @@ const Develop: React.FC = () => {
         <title>develop - sou</title>
         <meta name="description" content="開発環境" />
       </Head>
-      <main className="margin50p">
+      <main className="margin50p inblo">
         <h1>Develop</h1>
         <div className="triangle-bottom" />
         <dl>
