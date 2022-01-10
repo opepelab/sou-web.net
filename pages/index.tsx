@@ -9,8 +9,7 @@ const Index = () => {
         <meta name="description" content="Home" />
       </Head>
       <main className="margin50p inblo">
-        <h1>コンピュータサイエンス</h1>
-        一人で開発しています友達欲しい
+        <h1>コンピュータサイエンス?</h1>
       </main>
     </motion.div>
   );
