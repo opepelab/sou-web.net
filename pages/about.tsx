@@ -13,7 +13,7 @@ const About: React.FC = () => {
         <div className="triangle-bottom" />
         <dl>
           <dt>Name</dt>
-          <dd>sou333</dd>
+          <dd>sou Watanabe</dd>
           <dt>Sign</dt>
           <dd>Scorpio</dd>
           <dt>Type</dt>
@@ -21,9 +21,9 @@ const About: React.FC = () => {
           <dt>Eto</dt>
           <dd>Dog</dd>
           <dt>Location</dt>
-          <dd>Tokyo</dd>
-          <dt>Merci papa maman.</dt>
-          <dd>生んでくれた母と父に感謝します。</dd>
+          <dd>Kokura and Tokyo</dd>
+          <dt>Merci papa mama.</dt>
+          <dd>私を作ってくれた生んでくれた母と父に感謝しています。</dd>
         </dl>
       </main>
     </motion.div>

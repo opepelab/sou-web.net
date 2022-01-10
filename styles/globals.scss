@@ -86,12 +86,8 @@ a {
   @include Hover;
 }
 
-.scaleArticle:hover {
+p:hover {
   @include Hover;
-}
-
-p {
-  margin-top: 6px;
 }
 
 h1 {

@@ -7,11 +7,11 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.25 }}>
       <Head>
-        <title>contact - sou</title>
+        <title>mail - sou</title>
         <meta name="description" content="メール" />
       </Head>
       <main className="CN">
-        <p>Are you sure?</p>
+        <h1>Are you sure?</h1>
         <form>
           <dl>
             <dt>
