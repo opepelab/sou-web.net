@@ -10,9 +10,9 @@ import { useState } from "react";
 import GlobalStyles from "../components/Theme/Globalstyles";
 import Layout from "../components/Layout/layout";
 import { GA_TRACKING_ID, pageview } from "../libs/gtag";
-import { useEffect } from "react";
+import { useEffect, memo } from "react";
 
-const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
+const MyApp = memo(({ Component, pageProps, router }: AppProps): JSX.Element => {
   useEffect(() => {
     if (!GA_TRACKING_ID) return;
 
@@ -44,6 +44,6 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
       </ThemeContext.Provider>
     </>
   );
-};
+});
 
 export default MyApp;
