@@ -18,6 +18,7 @@ body {
   color: $ST;
   width: 600px;
   @include LRauto;
+  transition-duration: 0.5s;
 }
 
 pre {
