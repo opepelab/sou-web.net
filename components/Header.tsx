@@ -19,13 +19,13 @@ const Header: React.FC = () => {
                 </ActiveLink>
               </li>
               <li>
-                <ActiveLink href="/mail" activeClassName="headerState">
-                  <a className="scaleLinks">Email</a>
+                <ActiveLink href="/1" activeClassName="headerState">
+                  <a className="scaleLinks">Posts</a>
                 </ActiveLink>
               </li>
               <li>
-                <ActiveLink href="/1" activeClassName="headerState">
-                  <a className="scaleLinks">Posts</a>
+                <ActiveLink href="/mail" activeClassName="headerState">
+                  <a className="scaleLinks">Email</a>
                 </ActiveLink>
               </li>
               <li>

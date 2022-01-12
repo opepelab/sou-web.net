@@ -174,8 +174,12 @@ textarea {
 .toggle {
   z-index: 3;
   position: relative;
-  top: -2px;
-  right: -410px;
+  top: -4px;
+  left: -320px;
+}
+
+.scale {
+  transform: scale(1.2);
 }
 
 .toggle [aria-expanded="true"] {

@@ -19,6 +19,7 @@ export const GlobalStyles = createGlobalStyle<Props>`
     }
     .pinkLinks{
         color: ${(props) => props.theme.links};
+        font-weight: ${(props) => props.theme.weight};
     }
     p:hover {
         border-bottom: ${(props) => props.theme.h12};

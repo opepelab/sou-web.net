@@ -4,4 +4,5 @@ export type ThemeType = {
   border: string;
   h12: string;
   links: string;
+  weight: string;
 };

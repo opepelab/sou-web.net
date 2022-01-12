@@ -13,18 +13,23 @@ const Menu: React.FC<BoolProps> = ({ open, setOpen }) => {
           <nav>
             <ul className="nav2">
               <li>
+                <ActiveLink href="/about" activeClassName="headerState">
+                  <a>About</a>
+                </ActiveLink>
+              </li>
+              <li>
                 <ActiveLink href="/profile" activeClassName="headerState">
                   <a>Profile</a>
                 </ActiveLink>
               </li>
               <li>
-                <ActiveLink href="/mail" activeClassName="headerState">
-                  <a className="scale">Email</a>
+                <ActiveLink href="/1" activeClassName="headerState">
+                  <a className="scale">Posts</a>
                 </ActiveLink>
               </li>
               <li>
-                <ActiveLink href="/blog/page/1" activeClassName="headerState">
-                  <a className="scale">Posts</a>
+                <ActiveLink href="/mail" activeClassName="headerState">
+                  <a className="scale">Email</a>
                 </ActiveLink>
               </li>
               <li>
