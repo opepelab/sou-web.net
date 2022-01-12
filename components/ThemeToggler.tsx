@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useState, memo } from "react";
 import { ThemeContext } from "styled-components";
 
 type StrProps = {
@@ -6,7 +6,7 @@ type StrProps = {
   toggleTheme: StringConstructor;
 };
 
-export const ThemeToggler = () => {
+export const ThemeToggler = memo(() => {
   const [trans, setTrans] = useState(false);
   const { theme, toggleTheme } = useContext<StrProps>(ThemeContext);
 
@@ -23,6 +23,6 @@ export const ThemeToggler = () => {
       </div>
     </div>
   );
-};
+});
 
 export default ThemeToggler;
