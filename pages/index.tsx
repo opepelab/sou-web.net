@@ -6,7 +6,7 @@ const Develop: React.FC = () => {
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.25 }}>
       <Head>
         <title>index - sou</title>
-        <meta name="description" content="開発環境" />
+        <meta name="description" content="ホーム" />
       </Head>
       <main className="margin50p inblo">
         <h1>index</h1>
