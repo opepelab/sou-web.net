@@ -8,9 +8,9 @@ type Props = {
 export const GlobalStyles = createGlobalStyle<Props>`
 {
     body{
-        transition-duration: 0.5s;
         background: ${(props) => props.theme.background};
         color: ${(props) => props.theme.color};
+        transition-duration: ${(props) => props.theme.dura};
     }
     h1{
         border-bottom: ${(props) => props.theme.h12};
