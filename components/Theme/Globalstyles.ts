@@ -1,11 +1,12 @@
 import { createGlobalStyle } from "styled-components";
 import { ThemeType } from "./ThemeType";
+import { memo } from "react";
 
 type Props = {
   theme: ThemeType;
 };
 
-export const GlobalStyles = createGlobalStyle<Props>`
+export const GlobalStyles = memo(createGlobalStyle<Props>`
 {
     body{
         background: ${(props) => props.theme.background};
@@ -33,6 +34,6 @@ export const GlobalStyles = createGlobalStyle<Props>`
 
     }
 }
-`;
+`);
 
 export default GlobalStyles;
