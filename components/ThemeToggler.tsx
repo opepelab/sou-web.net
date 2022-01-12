@@ -19,7 +19,7 @@ export const ThemeToggler = () => {
           setTrans(!trans);
         }}
       >
-        <div className="space scale">☀️</div>
+        <div className="space scale">&#x2600;</div>
       </div>
     </div>
   );
