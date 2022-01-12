@@ -1,17 +1,16 @@
 import { createGlobalStyle } from "styled-components";
 import { ThemeType } from "./ThemeType";
-import { memo } from "react";
 
 type Props = {
   theme: ThemeType;
 };
 
-export const GlobalStyles = memo(createGlobalStyle<Props>`
+export const GlobalStyles = createGlobalStyle<Props>`
 {
     body{
+        transition-duration: 0.5s;
         background: ${(props) => props.theme.background};
         color: ${(props) => props.theme.color};
-        transition-duration: 0.5s;
     }
     h1{
         border-bottom: ${(props) => props.theme.h12};
