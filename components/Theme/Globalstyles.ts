@@ -33,6 +33,6 @@ export const GlobalStyles = createGlobalStyle<Props>`
 
     }
 }
-`);
+`;
 
 export default GlobalStyles;
