@@ -16,6 +16,7 @@
     padding-bottom: 0px;
     padding-left: 3px;
     padding-right: 3px;
+    transition-duration: 1s;
   }
 
   .Line {
@@ -109,7 +110,7 @@
 
   .toggle {
     position: absolute;
-    top: 5px;
+    top: 6px;
     left: 120px;
   }
 

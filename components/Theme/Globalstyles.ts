@@ -10,6 +10,7 @@ export const GlobalStyles = createGlobalStyle<Props>`
     body{
         background: ${(props) => props.theme.background};
         color: ${(props) => props.theme.color};
+        transition-duration: 0.5s;
     }
     h1{
         border-bottom: ${(props) => props.theme.h12};
@@ -24,6 +25,13 @@ export const GlobalStyles = createGlobalStyle<Props>`
     p:hover {
         border-bottom: ${(props) => props.theme.h12};
       }
+    .Humb {
+        box-shadow: ${(props) => props.theme.shadow};
+    }
+    .toggle {
+        background: ${(props) => props.theme.black};
+
+    }
 }
 `;
 

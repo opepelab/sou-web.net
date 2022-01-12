@@ -5,4 +5,6 @@ export type ThemeType = {
   h12: string;
   links: string;
   weight: string;
+  shadow: string;
+  black: string;
 };
