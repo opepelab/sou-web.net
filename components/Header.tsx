@@ -10,7 +10,12 @@ const Header: React.FC = () => {
             <ul className="nav1">
               <li>
                 <ActiveLink href="/about" activeClassName="headerState">
-                  <a className="scaleLinks">About</a>
+                  <a className="Hlink scaleLinks">About</a>
+                </ActiveLink>
+              </li>
+              <li>
+                <ActiveLink href="/profile" activeClassName="headerState">
+                  <a className="Hlink scaleLinks">Profile</a>
                 </ActiveLink>
               </li>
               <li>
@@ -19,7 +24,7 @@ const Header: React.FC = () => {
                 </ActiveLink>
               </li>
               <li>
-                <ActiveLink href="/blog/page/1" activeClassName="headerState">
+                <ActiveLink href="/1" activeClassName="headerState">
                   <a className="scaleLinks">Posts</a>
                 </ActiveLink>
               </li>

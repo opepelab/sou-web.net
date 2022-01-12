@@ -1,9 +1,9 @@
 import { GetStaticPaths } from "next";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import Date from "../../../components/Sys/date";
+import Date from "../components/Sys/date";
 import Head from "next/head";
-import ActiveLink from "../../../components/Sys/ActiveLink";
+import ActiveLink from "../components/Sys/ActiveLink";
 
 type Content = {
   blog: {
@@ -42,15 +42,15 @@ const Page: React.FC<Content> = ({ blog, totalCount }) => {
           <ul className="nav3">
             {range(1, Math.ceil(totalCount / PER_PAGE)).map((id) => (
               <li key={id}>
-                <ActiveLink href={`/blog/page/${id}`} activeClassName="listState">
+                <ActiveLink href={`/${id}`} activeClassName="listState">
                   <a className="Pagi">{id}</a>
                 </ActiveLink>
               </li>
             ))}
           </ul>
         </nav>
-        <Link href="/blog">
-          <a className="scale">Site Map</a>
+        <Link href="/">
+          <a className="scale">すべて見る</a>
         </Link>
       </main>
     </motion.div>
@@ -64,7 +64,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const res = await fetch("https://sou.microcms.io/api/v1/blog", key);
   const data = await res.json();
 
-  const paths: string[] = range(1, Math.ceil(data.totalCount / PER_PAGE)).map((content) => `/blog/page/${content}`);
+  const paths: string[] = range(1, Math.ceil(data.totalCount / PER_PAGE)).map((content) => `/${content}`);
 
   return {
     paths,

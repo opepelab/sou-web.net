@@ -4,7 +4,7 @@ const Text: React.FC = () => {
   return (
     <div className="inblo">
       <ActiveLink href="/" activeClassName="topState">
-        <a className="migiue hikki aBlock">Sou W e b</a>
+        <a className="Hlink migiue hikki aBlock">Sou W e b</a>
       </ActiveLink>
     </div>
   );

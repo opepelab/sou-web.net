@@ -30,7 +30,7 @@ const Id: React.FC<Content> = ({ blog, highlightedBody }) => {
         <title>{blog.title} - sou</title>
         <meta name="description" content={blog.description} />
       </Head>
-      <main className="textLeft margin50p resizeimage">
+      <main className="Hlink textLeft margin50p resizeimage">
         <div className={styles.Time2}>
           <Date dateString={blog.publishedAt} />
         </div>

@@ -13,8 +13,8 @@ const Menu: React.FC<BoolProps> = ({ open, setOpen }) => {
           <nav>
             <ul className="nav2">
               <li>
-                <ActiveLink href="/about" activeClassName="headerState">
-                  <a>About</a>
+                <ActiveLink href="/profile" activeClassName="headerState">
+                  <a>Profile</a>
                 </ActiveLink>
               </li>
               <li>

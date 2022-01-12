@@ -42,7 +42,11 @@ button {
 }
 
 li {
-  list-style-type: none;
+  list-style: none;
+}
+
+.list li {
+  margin: 14px;
 }
 
 .nav1 {
@@ -79,6 +83,11 @@ dd {
 
 a {
   color: $ST;
+  text-decoration: none;
+}
+
+.Hlink a {
+  color: #68a5ff;
   text-decoration: none;
 }
 
