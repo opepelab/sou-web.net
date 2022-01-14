@@ -206,3 +206,19 @@ textarea {
 .m0 {
   cursor: pointer;
 }
+
+form {
+  border: 1px dashed #333;
+  border-radius: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background: #333;
+  color: white;
+  transition-duration: 0.5s;
+}
+form:focus-within {
+    background: $FB;
+    color: #022;
+    box-shadow: 0 0 0 100vmax rgba(51, 51, 51, 1);
+
+}

@@ -103,8 +103,8 @@ $ME: rgba(0, 0, 0, 0.75);
 }
 
 @mixin BBMyellow {
-  background: #fffed5;
-  color: $FB;
+  background: #fff;
+  color: #333;
   font: {
     family: $Google;
     size: 12px;
@@ -130,17 +130,20 @@ $ME: rgba(0, 0, 0, 0.75);
 }
 
 @mixin Mbutton {
-  position: absolute;
+  position: relative;
   left: 0%;
   right: 0%;
   margin: auto;
   background: $FB;
-  border: solid 2px;
+  border: solid 5px;
   color: #fff;
   padding: $r0;
-  width: $p50 * 2;
-  height: $p20 * 2;
+  width: $p50 * 2.5;
+  height: $p20 * 2.5;
   cursor: pointer;
   border-radius: 10px;
-  border: none;
+  font: {
+    size: 16px;
+    weight: bold;
+  }
 }

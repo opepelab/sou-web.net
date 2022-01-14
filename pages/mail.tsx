@@ -11,8 +11,8 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
         <meta name="description" content="メール" />
       </Head>
       <main className="CN">
-        <h1>Are you sure?</h1>
         <form>
+        <h1>Are you sure?</h1>
           <dl>
             <dt>
               <label htmlFor="name">Name*</label>
@@ -36,7 +36,7 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
             </dd>
             <dd>
               <button id="massageButton" type="submit" onClick={send}>
-                送る
+              Let's send.
               </button>
             </dd>
           </dl>
