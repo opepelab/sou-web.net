@@ -217,8 +217,7 @@ form {
   transition-duration: 0.5s;
 }
 form:focus-within {
-    background: $FB;
-    color: #022;
-    box-shadow: 0 0 0 100vmax rgba(51, 51, 51, 1);
-
+  background: $FB;
+  color: #022;
+  box-shadow: 0 0 0 100vmax rgba(51, 51, 51, 1);
 }
