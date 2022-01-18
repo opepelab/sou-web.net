@@ -11,7 +11,7 @@ export const ThemeToggler = () => {
   const { theme, toggleTheme } = useContext<StrProps>(ThemeContext);
 
   return (
-    <div className="toggle inblo">
+    <div className="inblo">
       <div
         aria-expanded={trans}
         onClick={() => {
@@ -19,7 +19,7 @@ export const ThemeToggler = () => {
           setTrans(!trans);
         }}
       >
-        <div className="space scale">&#x2600;</div>
+        <div className="toggle">&#x2600;</div>
       </div>
     </div>
   );
