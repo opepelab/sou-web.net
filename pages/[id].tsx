@@ -50,7 +50,9 @@ const Page: React.FC<Content> = ({ blog, totalCount }) => {
           </ul>
         </nav>
         <Link href="/blog">
-          <a className="scale">すべて見る</a>
+          <a>
+            <h5>Display All</h5>
+          </a>
         </Link>
       </main>
     </motion.div>
