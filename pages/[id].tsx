@@ -49,7 +49,7 @@ const Page: React.FC<Content> = ({ blog, totalCount }) => {
             ))}
           </ul>
         </nav>
-        <Link href="/">
+        <Link href="/blog">
           <a className="scale">すべて見る</a>
         </Link>
       </main>
