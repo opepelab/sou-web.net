@@ -18,7 +18,6 @@ type Content = {
   blog: {
     publishedAt: string;
     title: string;
-    body: string;
     description: string;
   };
 };
