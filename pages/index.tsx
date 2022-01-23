@@ -17,21 +17,21 @@ const Index: React.FC<Map> = ({ blog }) => {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.25 }}>
       <Head>
-        <title>index - sou</title>
-        <meta name="description" content="ホーム" />
+        <title>Index - sou</title>
+        <meta name="description" content="トップレベルインデックス" />
       </Head>
       <main className="textLeft margin50p inblo">
-        <h1>index</h1>
+        <h1>Index</h1>
         <div className="triangle-bottom" />
         <p>
           NPOでエンジニアをしているSOUWEB({" "}
           <a className="blue" href="https://twitter.com/pull1102">
             Sou Watanabe
-          </a>{" "}
+          </a>
           )のウェブサイトです。
         </p>
         <p>技術の切り出しやエラーメモで自分が見る専です。</p>
-        <h5>最新記事</h5>
+        <h2>最新記事</h2>
         {blog.map((blog: Entry<IPostFields>) => (
           <div className="">
             <dl key={blog.sys.id}>
