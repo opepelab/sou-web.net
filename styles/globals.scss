@@ -21,12 +21,18 @@ body {
   transition-duration: 0.5s;
 }
 
-pre {
-  white-space: pre-wrap;
-}
-
 code {
   font-size: 12px;
+}
+
+pre {
+  border-radius: 10px;
+}
+
+blockquote {
+  border-left: solid 6px gray;
+  margin: 0px;
+  padding-left: 20px;
 }
 
 .resizeimage img {
@@ -98,7 +104,12 @@ a {
   @include Hover;
 }
 
+span {
+  font-size: 12px;
+}
+
 p {
+  white-space: pre-wrap;
   width: fit-content;
 }
 

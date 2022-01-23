@@ -1,19 +1,16 @@
+import client from "../libs/contentful";
 import { GetStaticProps } from "next";
 import { motion } from "framer-motion";
+import { Entry, EntryCollection } from "contentful";
+import { IPostFields } from "../libs/types";
 import Date from "../components/Sys/date";
 import Head from "next/head";
 import Link from "next/link";
 
 type Map = {
   blog: {
-    map: NumberConstructor;
+    map: StringConstructor;
   };
-};
-
-type Content = {
-  publishedAt: string;
-  id: string;
-  title: string;
 };
 
 const Blog: React.FC<Map> = ({ blog }) => {
@@ -25,16 +22,14 @@ const Blog: React.FC<Map> = ({ blog }) => {
       </Head>
       <main className="textLeft margin50p inblo">
         <h5>記事一覧</h5>
-        {blog.map((props: Content) => (
-          <dl key={props.id}>
+        {blog.map((blog: Entry<IPostFields>) => (
+          <dl key={blog.sys.id}>
             <dt>
-              <Date dateString={props.publishedAt} />
+              <Date dateString={blog.fields.date} />
             </dt>
-            <dd>
-              <Link href={`/blog/${props.id}`}>
-                <a className="scaleArticle pinkLinks">{props.title}</a>
-              </Link>
-            </dd>
+            <Link href={`/blog/${blog.fields.slug}`}>
+              <a className="scaleArticle pinkLinks">{blog.fields.title}</a>
+            </Link>
           </dl>
         ))}
       </main>
@@ -43,17 +38,16 @@ const Blog: React.FC<Map> = ({ blog }) => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const key = {
-    headers: { "X-MICROCMS-API-KEY": process.env.API_KEY },
-  };
-
-  const res = await fetch("https://sou.microcms.io/api/v1/blog?limit=200", key);
-  const data = await res.json();
-
+  const data: EntryCollection<IPostFields> = await client.getEntries({
+    content_type: "blog",
+    order: "-fields.date",
+    limit: 100,
+  });
   return {
     props: {
-      blog: data.contents,
+      blog: data.items,
     },
   };
 };
+
 export default Blog;
