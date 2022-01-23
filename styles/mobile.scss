@@ -19,6 +19,11 @@
     transition-duration: 1s;
   }
 
+  .hoverbob:hover {
+    transform: scale(1) translateX(0px) rotateY(0deg);
+    transition-duration: 0.2s;
+  }
+
   .Line {
     display: inline-block;
     z-index: 5;
