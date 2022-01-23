@@ -104,6 +104,10 @@ a {
   @include Hover;
 }
 
+.hover:hover {
+  background: rgb(201, 201, 201);
+}
+
 span {
   font-size: 12px;
 }

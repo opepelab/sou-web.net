@@ -10,12 +10,12 @@ const Header: React.FC = () => {
             <ul className="nav1">
               <li>
                 <ActiveLink href="/about" activeClassName="headerState">
-                  <a className="Hlink scaleLinks">About</a>
+                  <a className="scaleLinks">About</a>
                 </ActiveLink>
               </li>
               <li>
                 <ActiveLink href="/profile" activeClassName="headerState">
-                  <a className="Hlink scaleLinks">Profile</a>
+                  <a className="scaleLinks">Profile</a>
                 </ActiveLink>
               </li>
               <li>

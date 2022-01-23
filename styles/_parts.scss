@@ -10,12 +10,6 @@
   display: block;
 }
 
-.Iti {
-  @include CenString;
-  position: fixed;
-  opacity: 1;
-}
-
 .margin50p {
   margin-top: $p50;
 }
@@ -28,9 +22,32 @@
   display: $IB;
 }
 
-.scale2:hover {
-  transform: scale(1.55);
-  transition-duration: 1s;
+.blue {
+  color: skyblue;
+}
+
+.hoverbob:hover {
+  transform: scale(2) translateX(-100px) rotateY(5deg);
+  transition-duration: 0.2s;
+}
+.hoverbomb:hover {
+  background: rgb(221, 221, 221);
+  transition-duration: 0.2s;
+}
+
+.PPx {
+  border-radius: 2px;
+  padding: {
+    bottom: 2px;
+    left: 5px;
+    right: 5px;
+    top: 0px;
+  }
+  width: max-content;
+}
+
+a dt .dateST {
+  color: $ST;
 }
 
 .Home {

@@ -23,14 +23,18 @@ const Blog: React.FC<Map> = ({ blog }) => {
       <main className="textLeft margin50p inblo">
         <h5>記事一覧</h5>
         {blog.map((blog: Entry<IPostFields>) => (
-          <dl key={blog.sys.id}>
-            <dt>
-              <Date dateString={blog.fields.date} />
-            </dt>
-            <Link href={`/blog/${blog.fields.slug}`}>
-              <a className="scaleArticle pinkLinks">{blog.fields.title}</a>
-            </Link>
-          </dl>
+          <div className="hoverbob">
+            <dl key={blog.sys.id}>
+              <Link href={`/blog/${blog.fields.slug}`}>
+                <a>
+                  <dt className="dateST">
+                    <Date dateString={blog.fields.date} />
+                  </dt>
+                  <div className="PPx pinkLinks">{blog.fields.title}</div>
+                </a>
+              </Link>
+            </dl>
+          </div>
         ))}
       </main>
     </motion.div>

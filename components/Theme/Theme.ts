@@ -11,5 +11,5 @@ export const LightTheme = {
   weight: "bold",
   shadow: "0px 0px 4px 1px black;",
   black: "white",
-  dura: "0.5s",
+  pink: "#CE1D51",
 };

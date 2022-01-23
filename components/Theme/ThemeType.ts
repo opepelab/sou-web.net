@@ -7,5 +7,5 @@ export type ThemeType = {
   weight: string;
   shadow: string;
   black: string;
-  dura: string;
+  pink: string;
 };

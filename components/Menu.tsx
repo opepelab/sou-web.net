@@ -23,7 +23,7 @@ const Menu: React.FC<BoolProps> = ({ open, setOpen }) => {
                 </ActiveLink>
               </li>
               <li>
-                <ActiveLink href="/1" activeClassName="headerState">
+                <ActiveLink href="/blog" activeClassName="headerState">
                   <a className="scale">Posts</a>
                 </ActiveLink>
               </li>
