@@ -5,9 +5,9 @@ import { IPostFields } from "../libs/types";
 const generateRssItem = (blog: Entry<IPostFields>) => {
   return `
         <item>
-            <guid>https://blog.kasorin.work/blob/${blog.fields.slug}</guid>
+            <guid>https://sou-web.net/blog/${blog.fields.slug}</guid>
             <title>${blog.fields.title}</title>
-            <link>https://blog.kasorin.work/blog/${blog.fields.slug}</link>
+            <link>https://sou-web.net/blog/${blog.fields.slug}</link>
             <pubDate>${new Date(blog.fields.date).toUTCString()}</pubDate>
         </item>
     `;
