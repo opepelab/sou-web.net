@@ -25,9 +25,9 @@ const Index: React.FC<Map> = ({ blog }) => {
         <div className="triangle-bottom" />
         <p>
           NPOでエンジニアをしているSOUWEB({" "}
-          <a className="blue" href="https://twitter.com/pull1102">
+          <a className="blue" href="https://www.facebook.com/opepelab" target="_blank">
             Sou Watanabe
-          </a>
+          </a>{" "}
           )のウェブサイトです。
         </p>
         <p>技術の切り出しやエラーメモで自分が見る専です。</p>

@@ -32,16 +32,16 @@ const Picture: React.FC = () => {
 
         <h1>Design</h1>
         <div className="triangle-bottom" />
-        <dl>
-          <div>
-            <a href="#01">
-              <img className="PM margin10 point " src="/picture/315.jpg" width={255} height={191} />
-            </a>
-            <a id="01" href="#close" className="lb">
-              <img className="PM" src="/picture/315.jpg" width={255} height={191} />
-            </a>
-          </div>
 
+        <div>
+          <a href="#03">
+            <img className="PM margin10 point " src="/picture/315.jpg" width={255} height={191} />
+          </a>
+          <a id="03" href="#close" className="lb">
+            <img className="PM" src="/picture/315.jpg" width={255} height={191} />
+          </a>
+        </div>
+        <dl>
           <dt>Tablet</dt>
           <dd>Cintiq Pro</dd>
           <dt>Software</dt>
@@ -53,8 +53,6 @@ const Picture: React.FC = () => {
           <dt>RAM</dt>
           <dd>16GB</dd>
         </dl>
-
-        <img className="PM margin10 point " src="/picture/0068.png" width={190} height={260} />
       </main>
     </motion.div>
   );
