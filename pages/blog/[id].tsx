@@ -77,7 +77,7 @@ export const getStaticProps: GetStaticProps = async (context: any) => {
   const draftKey = context.previewData?.draftKey;
   const content = await fetch(
     `https://sou.microcms.io/api/v1/blog/${id}${draftKey !== undefined ? `?draftKey=${draftKey}` : ""}`,
-    { headers: { "X-MICROCMS-API-KEY": process.env.apiKey || "" } }
+    { headers: { "X-MICROCMS-API-KEY": process.env.API_KEY || "" } }
   ).then((res) => res.json());
 
   const data = await client.get<Content>({ endpoint: "blog", contentId: id });
