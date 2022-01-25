@@ -34,7 +34,7 @@ const Page: React.FC<Content> = ({ blog, totalCount }) => {
                   <dt className="dateST">
                     <Date dateString={props.publishedAt} />
                   </dt>
-                  <div className="PPx hoverbob pinkLinks">{props.title}</div>
+                  <div className="PPx hoverbomb pinkLinks">{props.title}</div>
                 </a>
               </Link>
             </dl>
