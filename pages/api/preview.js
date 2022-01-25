@@ -7,7 +7,7 @@ export default async (req, res) => {
   }
   const content = await fetch(
     `https://xxxxxx.microcms.io/api/v1/blog/${req.query.slug}?fields=id&draftKey=${req.query.draftKey}`,
-    { headers: { "X-MICROCMS-API-KEY": process.env.apiKey || "" } }
+    { headers: { "X-MICROCMS-API-KEY": process.env.API_KEY || "" } }
   )
     .then((res) => res.json())
     .catch((error) => null);
