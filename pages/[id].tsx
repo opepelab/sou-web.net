@@ -27,14 +27,14 @@ const Page: React.FC<Content> = ({ blog, totalCount }) => {
       </Head>
       <main className="textLeft margin50p inblo">
         {blog.map((props: Content) => (
-          <div className="hoverbob">
+          <div className="">
             <dl key={props.id}>
               <Link href={`/blog/${props.id}`}>
                 <a>
                   <dt className="dateST">
                     <Date dateString={props.publishedAt} />
                   </dt>
-                  <div className="PPx pinkLinks">{props.title}</div>
+                  <div className="PPx hoverbob pinkLinks">{props.title}</div>
                 </a>
               </Link>
             </dl>
