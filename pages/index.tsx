@@ -6,6 +6,7 @@ import { IPostFields } from "../libs/types";
 import Date from "../components/Sys/date";
 import Head from "next/head";
 import Link from "next/link";
+// import Page from "../components/Page";
 
 type Map = {
   blog: {

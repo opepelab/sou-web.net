@@ -4270,7 +4270,7 @@
     "prismjs" "^1.25.0"
     "refractor" "^3.2.0"
 
-"react@^16.8.0 || ^17.0.0", "react@^16.8.6 || ^17.0.0", "react@^17.0.2", "react@^17.0.2 || ^18.0.0", "react@>= 0.14.0", "react@>= 16.8.0", "react@>= 16.8.0 || 17.x.x || 18.x.x", "react@>=16.8 || ^17.0.0", "react@0.0.0-experimental-3c4c1c470-20211021", "react@17.0.2":
+"react@^16.11.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0", "react@^16.8.6 || ^17.0.0", "react@^17.0.2", "react@^17.0.2 || ^18.0.0", "react@>= 0.14.0", "react@>= 16.8.0", "react@>= 16.8.0 || 17.x.x || 18.x.x", "react@>=16.8 || ^17.0.0", "react@0.0.0-experimental-3c4c1c470-20211021", "react@17.0.2":
   "integrity" "sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   "version" "17.0.2"
@@ -5036,6 +5036,11 @@
   "version" "8.1.1"
   dependencies:
     "has-flag" "^4.0.0"
+
+"swr@^1.1.2":
+  "integrity" "sha512-UsM0eo5T+kRPyWFZtWRx2XR5qzohs/LS4lDC0GCyLpCYFmsfTk28UCVDbOE9+KtoXY4FnwHYiF+ZYEU3hnJ1lQ=="
+  "resolved" "https://registry.npmjs.org/swr/-/swr-1.1.2.tgz"
+  "version" "1.1.2"
 
 "table@^6.0.9":
   "integrity" "sha512-UFZK67uvyNivLeQbVtkiUs8Uuuxv24aSL4/Vil2PJVtMgU8Lx0CYkP12uCGa3kjyQzOSgV1+z9Wkb82fCGsO0g=="

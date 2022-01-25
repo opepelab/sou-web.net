@@ -42,14 +42,14 @@ const Blog: React.FC<Map> = ({ blog }) => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const data: EntryCollection<IPostFields> = await client.getEntries({
+  const entries: EntryCollection<IPostFields> = await client.getEntries({
     content_type: "blog",
     order: "-fields.date",
     limit: 100,
   });
   return {
     props: {
-      blog: data.items,
+      blog: entries.items,
     },
   };
 };

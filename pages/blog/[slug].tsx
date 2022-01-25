@@ -84,11 +84,11 @@ const Slug: React.FC<Content> = ({ blog }) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const { items }: EntryCollection<IPostFields> = await client.getEntries({
+  const entries: EntryCollection<IPostFields> = await client.getEntries({
     content_type: "blog",
     limit: 1000,
   });
-  const paths = items.map((item) => ({
+  const paths = entries.items.map((item) => ({
     params: { slug: item.fields.slug },
   }));
   return {
@@ -97,13 +97,13 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
-  if (!params) {
+export const getStaticProps: GetStaticProps = async (context) => {
+  if (!context.params) {
     return {
       notFound: true,
     };
   }
-  const slug = params.slug;
+  const slug = context.params.slug;
 
   if (typeof slug !== "string") {
     return {
@@ -111,15 +111,15 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     };
   }
 
-  const { items } = await client.getEntries({
+  const entries = await client.getEntries({
     content_type: "blog",
     limit: 1000,
-    "fields.slug": params.slug,
+    "fields.slug": context.params.slug,
   });
 
   return {
     props: {
-      blog: items[0],
+      blog: entries.items[0],
     },
   };
 };

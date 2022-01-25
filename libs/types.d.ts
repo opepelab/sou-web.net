@@ -1,9 +1,18 @@
-import { Entry } from "contentful";
+import { Entry, EntryCollection } from "contentful";
+
+// declare module "contentful" {
+//   interface EntryCollection {
+//     items: any;
+//     entries: number[];
+//     contents: number;
+//   }
+// }
 
 export interface IPostFields {
   title: string;
   slug: string;
   date: string;
+  items: number;
 }
 
 export interface IPost extends Entry<IPostFields> {
