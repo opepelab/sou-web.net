@@ -26,17 +26,19 @@ const Page: React.FC<Content> = ({ blog, totalCount }) => {
         <meta name="description" content="ログ" />
       </Head>
       <main className="textLeft margin50p inblo">
-        {blog.map((blog: Content) => (
-          <dl>
-            <dt>
-              <Date dateString={blog.publishedAt} />
-            </dt>
-            <dd key={blog.id}>
-              <Link href={`/blog/${blog.id}`}>
-                <a className="scaleArticle pinkLinks">{blog.title}</a>
+        {blog.map((props: Content) => (
+          <div className="hoverbob">
+            <dl key={props.id}>
+              <Link href={`/blog/${props.id}`}>
+                <a>
+                  <dt className="dateST">
+                    <Date dateString={props.publishedAt} />
+                  </dt>
+                  <div className="PPx pinkLinks">{props.title}</div>
+                </a>
               </Link>
-            </dd>
-          </dl>
+            </dl>
+          </div>
         ))}
         <nav>
           <ul className="nav3">

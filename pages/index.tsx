@@ -1,4 +1,3 @@
-import client from "../libs/client";
 import { GetStaticProps } from "next";
 import { motion } from "framer-motion";
 import Date from "../components/Sys/date";
