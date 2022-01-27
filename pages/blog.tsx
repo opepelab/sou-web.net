@@ -1,19 +1,16 @@
+import client from "../libs/contentful";
 import { GetStaticProps } from "next";
 import { motion } from "framer-motion";
+import { Entry, EntryCollection } from "contentful";
+import { IPostFields } from "../libs/types";
 import Date from "../components/Sys/date";
 import Head from "next/head";
 import Link from "next/link";
 
 type Map = {
   blog: {
-    map: NumberConstructor;
+    map: StringConstructor;
   };
-};
-
-type Content = {
-  publishedAt: string;
-  id: string;
-  title: string;
 };
 
 const Blog: React.FC<Map> = ({ blog }) => {
@@ -25,15 +22,15 @@ const Blog: React.FC<Map> = ({ blog }) => {
       </Head>
       <main className="textLeft margin50p inblo">
         <h5>記事一覧</h5>
-        {blog.map((props: Content) => (
-          <div className="hoverbob">
-            <dl key={props.id}>
-              <Link href={`/blog/${props.id}`}>
+        {blog.map((blog: Entry<IPostFields>) => (
+          <div className="">
+            <dl key={blog.sys.id}>
+              <Link href={`/blog/${blog.fields.slug}`}>
                 <a>
                   <dt className="dateST">
-                    <Date dateString={props.publishedAt} />
+                    <Date dateString={blog.fields.date} />
                   </dt>
-                  <div className="PPx hoverbomb pinkLinks">{props.title}</div>
+                  <div className="PPx hoverbomb pinkLinks">{blog.fields.title}</div>
                 </a>
               </Link>
             </dl>
@@ -45,17 +42,16 @@ const Blog: React.FC<Map> = ({ blog }) => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const key = {
-    headers: { "X-MICROCMS-API-KEY": process.env.API_KEY },
-  };
-
-  const res = await fetch("https://sou.microcms.io/api/v1/blog?limit=200", key);
-  const data = await res.json();
-
+  const entries: EntryCollection<IPostFields> = await client.getEntries({
+    content_type: "blog",
+    order: "-fields.date",
+    limit: 100,
+  });
   return {
     props: {
-      blog: data.contents,
+      blog: entries.items,
     },
   };
 };
+
 export default Blog;

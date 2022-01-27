@@ -1,19 +1,16 @@
+import client from "../libs/contentful";
 import { GetStaticProps } from "next";
 import { motion } from "framer-motion";
+import { Entry, EntryCollection } from "contentful";
+import { IPostFields } from "../libs/types";
 import Date from "../components/Sys/date";
 import Head from "next/head";
 import Link from "next/link";
-// import Page from "../components/Page";
 
 type Map = {
   blog: {
     map: StringConstructor;
   };
-};
-type Content = {
-  publishedAt: string;
-  id: string;
-  title: string;
 };
 
 const Index: React.FC<Map> = ({ blog }) => {
@@ -27,7 +24,7 @@ const Index: React.FC<Map> = ({ blog }) => {
         <h1>Index</h1>
         <div className="triangle-bottom" />
         <p>
-          NPOでエンジニアをしているSOUWEB({" "}
+          NPOでフロントエンドエンジニアをしているSOU-WEB({" "}
           <a className="blue" href="https://www.facebook.com/opepelab" target="_blank">
             Sou Watanabe
           </a>{" "}
@@ -35,15 +32,15 @@ const Index: React.FC<Map> = ({ blog }) => {
         </p>
         <p>技術の切り出しやエラーメモで自分が見る専です。</p>
         <h2>最新記事</h2>
-        {blog.map((props: Content) => (
+        {blog.map((blog: Entry<IPostFields>) => (
           <div className="">
-            <dl key={props.id}>
-              <Link href={`/blog/${props.id}`}>
+            <dl key={blog.sys.id}>
+              <Link href={`/blog/${blog.fields.slug}`}>
                 <a>
                   <dt className="dateST">
-                    <Date dateString={props.publishedAt} />
+                    <Date dateString={blog.fields.date} />
                   </dt>
-                  <div className="PPx hoverbomb pinkLinks">{props.title}</div>
+                  <div className="PPx hoverbomb pinkLinks">{blog.fields.title}</div>
                 </a>
               </Link>
             </dl>
@@ -60,16 +57,14 @@ const Index: React.FC<Map> = ({ blog }) => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const key = {
-    headers: { "X-MICROCMS-API-KEY": process.env.API_KEY },
-  };
-
-  const res = await fetch("https://sou.microcms.io/api/v1/blog?limit=6", key);
-  const data = await res.json();
-
+  const data: EntryCollection<IPostFields> = await client.getEntries({
+    content_type: "blog",
+    order: "-fields.date",
+    limit: 6,
+  });
   return {
     props: {
-      blog: data.contents,
+      blog: data.items,
     },
   };
 };

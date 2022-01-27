@@ -125,6 +125,7 @@ p {
 }
 
 p:hover {
+  cursor: cell;
   @include Hover;
 }
 
