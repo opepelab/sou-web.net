@@ -34,7 +34,7 @@ const Slug: React.FC<Content> = ({ blog }) => {
           TYPES.helpers.isText(node.content[0]) &&
           node.content[0].marks.find((x) => x.type == "code")
         ) {
-          return <div>{children}</div>;
+          return <>{children}</>;
         }
         return <p>{children}</p>;
       },
@@ -55,7 +55,6 @@ const Slug: React.FC<Content> = ({ blog }) => {
             wrapLines={true}
             language="jsx"
             style={vscDarkPlus}
-            showLineNumbers
           >
             {text}
           </SyntaxHighlighter>
