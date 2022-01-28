@@ -7,7 +7,7 @@ import { Entry, EntryCollection } from "contentful";
 import { IPostFields } from "../libs/types";
 import Date from "../components/Sys/date";
 import ActiveLink from "../components/Sys/ActiveLink";
-import { motion } from "framer-motion";
+import Framerdiv from "../components/Sys/Framer";
 
 type Map = {
   blog: {
@@ -19,14 +19,14 @@ const MAX_ENTRY = 15;
 const Denomi = 5;
 
 const range = (start: number, end: number) => [...Array(end - start + 1)].map((_, i) => start + i);
-const BlogNum: React.FC<Map> = ({ blog }) => {
+const Id: React.FC<Map> = ({ blog }) => {
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.25 }}>
+    <Framerdiv>
       <Head>
         <title>Blog - sou</title>
         <meta name="description" content="ログ" />
       </Head>
-      <main className="textLeft margin50p inblo">
+      <main className="HeadMenu textLeft margin50p inblo">
         <h5>記事一覧</h5>
         {blog.map((props: Entry<IPostFields>) => (
           <div className="">
@@ -46,11 +46,9 @@ const BlogNum: React.FC<Map> = ({ blog }) => {
           <ul className="nav3">
             {range(1, Math.ceil(MAX_ENTRY / Denomi)).map((id) => (
               <li key={id}>
-                <br />
                 <ActiveLink href={`/${id}`} activeClassName="listState">
                   <a className="Pagi">{id}</a>
                 </ActiveLink>
-                <br />
               </li>
             ))}
           </ul>
@@ -61,7 +59,7 @@ const BlogNum: React.FC<Map> = ({ blog }) => {
           </a>
         </Link>
       </main>
-    </motion.div>
+    </Framerdiv>
   );
 };
 
@@ -92,4 +90,4 @@ export const getStaticProps = async (context: { params: { id: number } }) => {
   };
 };
 
-export default BlogNum;
+export default Id;

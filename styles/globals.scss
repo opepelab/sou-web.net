@@ -30,6 +30,10 @@ pre {
   border-radius: 10px;
 }
 
+pre code span {
+  white-space: pre-wrap;
+}
+
 iframe {
   transform: scale(0.95);
   width: 100%;
@@ -56,12 +60,16 @@ button {
   }
 }
 
-li {
+.HeadMenu li {
   list-style: none;
 }
 
 .list li {
   margin: 14px;
+}
+
+ul {
+  padding: 0px;
 }
 
 .nav1 {

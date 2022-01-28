@@ -1,6 +1,6 @@
 import client from "../libs/contentful";
 import { GetStaticProps } from "next";
-import { motion } from "framer-motion";
+import Framerdiv from "../components/Sys/Framer";
 import { Entry, EntryCollection } from "contentful";
 import { IPostFields } from "../libs/types";
 import Date from "../components/Sys/date";
@@ -15,7 +15,7 @@ type Map = {
 
 const Blog: React.FC<Map> = ({ blog }) => {
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.25 }}>
+    <Framerdiv>
       <Head>
         <title>Blog - sou</title>
         <meta name="description" content="ログ" />
@@ -37,7 +37,7 @@ const Blog: React.FC<Map> = ({ blog }) => {
           </div>
         ))}
       </main>
-    </motion.div>
+    </Framerdiv>
   );
 };
 

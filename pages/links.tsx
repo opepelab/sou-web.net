@@ -1,10 +1,10 @@
-import { motion } from "framer-motion";
+import Framerdiv from "../components/Sys/Framer";
 import Head from "next/head";
 import Link from "next/link";
 
 const Links: React.FC = () => {
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.25 }}>
+    <Framerdiv>
       <Head>
         <title>links - sou</title>
         <meta name="description" content="リンク" />
@@ -29,7 +29,11 @@ const Links: React.FC = () => {
             </a>
           </dd>
           <dd>
-            <a className="pinkLinks scale" href="https://www.amazon.jp/hz/wishlist/ls/21U6KMZ0YZN25?ref_=wl_share" target="_blank">
+            <a
+              className="pinkLinks scale"
+              href="https://www.amazon.jp/hz/wishlist/ls/21U6KMZ0YZN25?ref_=wl_share"
+              target="_blank"
+            >
               Amazon
             </a>
           </dd>
@@ -63,7 +67,7 @@ const Links: React.FC = () => {
           </Link>
         </dl>
       </main>
-    </motion.div>
+    </Framerdiv>
   );
 };
 

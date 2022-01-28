@@ -1,6 +1,6 @@
 import client from "../libs/contentful";
 import { GetStaticProps } from "next";
-import { motion } from "framer-motion";
+import Framerdiv from "../components/Sys/Framer";
 import { Entry, EntryCollection } from "contentful";
 import { IPostFields } from "../libs/types";
 import Date from "../components/Sys/date";
@@ -15,10 +15,10 @@ type Map = {
 
 const Index: React.FC<Map> = ({ blog }) => {
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.25 }}>
+    <Framerdiv>
       <Head>
         <title>Index - sou</title>
-        <meta name="description" content="トップレベルインデックス" />
+        <meta name="description" content="Index" />
       </Head>
       <main className="textLeft margin50p inblo">
         <h1>Index</h1>
@@ -52,7 +52,7 @@ const Index: React.FC<Map> = ({ blog }) => {
           </a>
         </Link>
       </main>
-    </motion.div>
+    </Framerdiv>
   );
 };
 

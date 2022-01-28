@@ -1,9 +1,9 @@
-import { motion } from "framer-motion";
+import Framerdiv from "../components/Sys/Framer";
 import Head from "next/head";
 
 const About = () => {
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.25 }}>
+    <Framerdiv>
       <Head>
         <title>sou-web</title>
         <meta name="description" content="Home" />
@@ -23,23 +23,27 @@ const About = () => {
         <p>ブログを書くのが得意です。</p>
         <p>このサイトのソースコードはMITライセンスです。</p>
         <h1>経歴</h1>
-        <li>1994年 福岡県北九州市生まれ</li>
-        <li>2014年 アメリカ シアトル カナダに行きました</li>
-        <li>2015年 統合失調症診断で強制入院しました</li>
-        <li>2016年 株式会社 PC DEPOT入社</li>
-        <li>2017年 株式会社 PC DEPOT退社</li>
-        <li>2018年 高等学校卒業程度認定試験合格</li>
-        <li>2019年 デザインの勉強を独学で始めました</li>
-        <li>2020年 イラストで仕事し始めました</li>
-        <li>2021年 TypeScriptを書き始めました</li>
-        <li>2022年 NPOプロジェクトのチームメンバーと働き始めました</li>
+        <ul>
+          <li>1994年 福岡県北九州市生まれ</li>
+          <li>2014年 アメリカ シアトル カナダに行きました</li>
+          <li>2015年 統合失調症診断で強制入院しました</li>
+          <li>2016年 株式会社 PC DEPOT入社</li>
+          <li>2017年 株式会社 PC DEPOT退社</li>
+          <li>2018年 高等学校卒業程度認定試験合格</li>
+          <li>2019年 デザインの勉強を独学で始めました</li>
+          <li>2020年 イラストで仕事し始めました</li>
+          <li>2021年 TypeScriptを書き始めました</li>
+          <li>2022年 NPOプロジェクトのチームメンバーと働き始めました</li>
+        </ul>
         <p>海外に行った経験や引きこもりになった経験や病気で入院した経験があります。</p>
         <p>中学と高校で受けた家族のネグレクトにより育つ環境居場所がありませんでした</p>
         <p>多忙により統合失調症の認定をもらっていて認知症気味です。</p>
         <p>引きこもり不登校, 親の歪んだ愛情などを経験, 勉強したことがあり知見があります。</p>
         <h1>精神疾患</h1>
         <h2>完全記憶性障害</h2>
-        <p>詳しい病名が現代医学では解明されていませんが物心ついた時から忘れたいのに記憶に残り続けてしまう疾患をしていました</p>
+        <p>
+          詳しい病名が現代医学では解明されていませんが物心ついた時から忘れたいのに記憶に残り続けてしまう疾患をしていました
+        </p>
         <h2>アルツハイマー(軽度)</h2>
         <p>中学で受けた虐めと家庭のネグレクト環境により強いPTSDになり軽い認知症を患いました</p>
         <p>完全に忘れるという感じではなく記憶が徐々に薄れて行く感覚です</p>
@@ -57,7 +61,7 @@ const About = () => {
         <p></p>
         <p>Challenging change the everytime The goal is to sleep like dead every day.</p>
       </main>
-    </motion.div>
+    </Framerdiv>
   );
 };
 

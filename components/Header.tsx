@@ -7,7 +7,7 @@ const Header: React.FC = () => {
       <header className="bgg">
         <div className="disableN">
           <nav>
-            <ul className="nav1">
+            <ul className="nav1 HeadMenu">
               <li>
                 <ActiveLink href="/about" activeClassName="headerState">
                   <a className="scaleLinks">About</a>

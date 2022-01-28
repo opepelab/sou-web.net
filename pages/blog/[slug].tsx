@@ -1,6 +1,6 @@
 import client from "../../libs/contentful";
 import { GetStaticPaths, GetStaticProps } from "next";
-import { motion } from "framer-motion";
+import Framerdiv from "../../components/Sys/Framer";
 import styles from "./midasi.module.scss";
 import { EntryCollection } from "contentful";
 import { IPostFields } from "../../libs/types";
@@ -48,14 +48,7 @@ const Slug: React.FC<Content> = ({ blog }) => {
     renderMark: {
       [TYPES.MARKS.CODE]: (text) => {
         return (
-          <SyntaxHighlighter
-            lineProps={{
-              style: { whiteSpace: "pre-wrap" },
-            }}
-            wrapLines={true}
-            language="jsx"
-            style={vscDarkPlus}
-          >
+          <SyntaxHighlighter language="tsx" style={vscDarkPlus}>
             {text}
           </SyntaxHighlighter>
         );
@@ -63,12 +56,12 @@ const Slug: React.FC<Content> = ({ blog }) => {
     },
   };
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.25 }}>
+    <Framerdiv>
       <Head>
         <title>{blog.fields.title} - sou</title>
         <meta name="description" content={blog.fields.description} />
       </Head>
-      <main className="Hlink textLeft margin50p resizeimage">
+      <main className="Hlink list textLeft margin50p resizeimage">
         <div className={styles.Time2}>
           <Date dateString={blog.fields.date} />
         </div>
@@ -78,7 +71,7 @@ const Slug: React.FC<Content> = ({ blog }) => {
         <div className="triangle-bottom" />
         <div>{documentToReactComponents(blog.fields.body, options)}</div>
       </main>
-    </motion.div>
+    </Framerdiv>
   );
 };
 

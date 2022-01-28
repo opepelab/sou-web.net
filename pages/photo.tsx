@@ -1,9 +1,9 @@
-import { motion } from "framer-motion";
+import Framerdiv from "../components/Sys/Framer";
 import Head from "next/head";
 
 const Picture: React.FC = () => {
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.25 }}>
+    <Framerdiv>
       <Head>
         <title>photo - sou</title>
         <meta name="description" content="フォト" />
@@ -54,7 +54,7 @@ const Picture: React.FC = () => {
           <dd>16GB</dd>
         </dl>
       </main>
-    </motion.div>
+    </Framerdiv>
   );
 };
 

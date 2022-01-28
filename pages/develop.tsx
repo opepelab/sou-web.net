@@ -1,9 +1,9 @@
-import { motion } from "framer-motion";
+import Framerdiv from "../components/Sys/Framer";
 import Head from "next/head";
 
 const Develop: React.FC = () => {
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.25 }}>
+    <Framerdiv>
       <Head>
         <title>develop - sou</title>
         <meta name="description" content="開発環境" />
@@ -35,7 +35,7 @@ const Develop: React.FC = () => {
           <dd>Vercel/Cloudflare</dd>
         </dl>
       </main>
-    </motion.div>
+    </Framerdiv>
   );
 };
 
