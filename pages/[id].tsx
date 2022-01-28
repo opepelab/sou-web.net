@@ -10,7 +10,6 @@ import ActiveLink from "../components/Sys/ActiveLink";
 import Framerdiv from "../components/Sys/Framer";
 
 type Map = {
-  i: number;
   blog: {
     map: StringConstructor;
   };
@@ -66,12 +65,12 @@ const Id: React.FC<Map> = ({ blog }) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const data: EntryCollection<IPostFields> = await client.getEntries({
+  const entries: EntryCollection<IPostFields> = await client.getEntries({
     content_type: "blog",
     order: "-fields.date",
   });
 
-  const paths = range(1, Math.ceil(data.items.length / Denomi)).map((id) => `/${id}`);
+  const paths = range(1, Math.ceil(entries.items.length / Denomi)).map((id) => `/${id}`);
 
   return { paths, fallback: false };
 };
