@@ -10,6 +10,7 @@ import ActiveLink from "../components/Sys/ActiveLink";
 import Framerdiv from "../components/Sys/Framer";
 
 type Map = {
+  i: number;
   blog: {
     map: StringConstructor;
   };
@@ -53,6 +54,7 @@ const Id: React.FC<Map> = ({ blog }) => {
             ))}
           </ul>
         </nav>
+
         <Link href="/blog">
           <a>
             <h5>Display All</h5>
