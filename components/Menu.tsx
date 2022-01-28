@@ -7,7 +7,7 @@ type BoolProps = {
 
 const Menu: React.FC<BoolProps> = ({ open, setOpen }) => {
   return (
-    <div className="MenuList">
+    <div className="MenuList HeadMenu">
       <div aria-expanded={open} onClick={() => setOpen(!open)}>
         <div className="CN">
           <nav>
