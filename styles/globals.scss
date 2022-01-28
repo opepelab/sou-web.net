@@ -21,14 +21,13 @@ body {
   transition-duration: 0.5s;
 }
 
-code {
-  border-radius: 10px;
-  font-size: 14px;
-  font-family: "Consolas", "Courier New", monospace;
-}
+// code {
+//   font-size: 122px;
+//   font-family: "Consolas", "Courier New", monospace;
+// }
 
 pre {
-  white-space: pre-wrap;
+  border-radius: 10px;
 }
 
 iframe {
