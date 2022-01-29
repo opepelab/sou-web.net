@@ -19,7 +19,9 @@ export const ThemeToggler = () => {
           setTrans(!trans);
         }}
       >
-        <div className="toggle">&#x2744;</div>
+        <div className="toggle">
+          <div className="sun" />
+        </div>
       </div>
     </div>
   );
