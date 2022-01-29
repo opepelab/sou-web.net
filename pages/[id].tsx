@@ -15,8 +15,8 @@ type Map = {
   };
 };
 
-const MAX_ENTRY = 15;
-const Denomi = 5;
+const MAX_ENTRY = 18;
+const Denomi = 6;
 
 const range = (start: number, end: number) => [...Array(end - start + 1)].map((_, i) => start + i);
 const Id: React.FC<Map> = ({ blog }) => {
@@ -80,8 +80,8 @@ export const getStaticProps = async (context: { params: { id: number } }) => {
   const entries: EntryCollection<IPostFields> = await client.getEntries({
     content_type: "blog",
     order: "-fields.date",
-    limit: 15,
-    skip: (id - 1) * 15,
+    limit: 18,
+    skip: (id - 1) * 18,
   });
 
   return {
