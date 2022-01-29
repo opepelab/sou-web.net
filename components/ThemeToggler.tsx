@@ -19,7 +19,7 @@ export const ThemeToggler = () => {
           setTrans(!trans);
         }}
       >
-        <div className="toggle">&#x2600;</div>
+        <div className="toggle">☀</div>
       </div>
     </div>
   );
