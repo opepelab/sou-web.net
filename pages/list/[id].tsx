@@ -11,12 +11,14 @@ import Framerdiv from "../../components/Sys/Framer";
 
 type Map = {
   blog: {
-    map: StringConstructor;
+    map: NumberConstructor;
   };
 };
 
-const MAX_ENTRY = 18;
-const Denomi = 6;
+// Total / Limit = PagesList　(Divide so exceed a limit)
+// Limit / PagesList = Divide(Denominator)
+const MAX_ENTRY: number = 15;
+const Divide: number = 5;
 
 const range = (start: number, end: number) => [...Array(end - start + 1)].map((_, i) => start + i);
 const Id: React.FC<Map> = ({ blog }) => {
@@ -24,7 +26,7 @@ const Id: React.FC<Map> = ({ blog }) => {
     <Framerdiv>
       <Head>
         <title>Blog - sou</title>
-        <meta name="description" content="ログ" />
+        <meta name="description" content="Page List" />
       </Head>
       <main className="HeadMenu textLeft margin50p inblo">
         <h5>記事一覧</h5>
@@ -44,13 +46,17 @@ const Id: React.FC<Map> = ({ blog }) => {
         ))}
         <nav>
           <ul className="nav3">
-            {range(1, Math.ceil(MAX_ENTRY / Denomi)).map((id) => (
+            {range(1, Math.ceil(MAX_ENTRY / Divide)).map((id) => (
               <li key={id}>
                 <ActiveLink href={`/list/${id}`} activeClassName="listState">
                   <a className="Pagi">{id}</a>
                 </ActiveLink>
               </li>
             ))}
+            {/* <Link href={`/list/${id}`}>
+              <a>next</a>
+            // </Link> */}
+            {/* OnchangeHandler useState(1) */}
           </ul>
         </nav>
 
@@ -63,14 +69,13 @@ const Id: React.FC<Map> = ({ blog }) => {
     </Framerdiv>
   );
 };
-
 export const getStaticPaths: GetStaticPaths = async () => {
   const entries: EntryCollection<IPostFields> = await client.getEntries({
     content_type: "blog",
     order: "-fields.date",
   });
 
-  const paths = range(1, Math.ceil(entries.items.length / Denomi)).map((id) => `/list/${id}`);
+  const paths = range(1, Math.ceil(entries.items.length / Divide)).map((id) => `/list/${id}`);
 
   return { paths, fallback: false };
 };
@@ -80,8 +85,8 @@ export const getStaticProps = async (context: { params: { id: number } }) => {
   const entries: EntryCollection<IPostFields> = await client.getEntries({
     content_type: "blog",
     order: "-fields.date",
-    limit: 18,
-    skip: (id - 1) * 18,
+    limit: MAX_ENTRY,
+    skip: (id - 1) * MAX_ENTRY,
   });
 
   return {
