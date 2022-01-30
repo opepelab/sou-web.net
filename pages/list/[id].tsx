@@ -1,13 +1,13 @@
 import Head from "next/head";
 import { GetStaticPaths, GetStaticProps } from "next";
-import client from "../libs/contentful";
+import client from "../../libs/contentful";
 import Link from "next/link";
 import React from "react";
 import { Entry, EntryCollection } from "contentful";
-import { IPostFields } from "../libs/types";
-import Date from "../components/Sys/date";
-import ActiveLink from "../components/Sys/ActiveLink";
-import Framerdiv from "../components/Sys/Framer";
+import { IPostFields } from "../../libs/types";
+import Date from "../../components/Sys/date";
+import ActiveLink from "../../components/Sys/ActiveLink";
+import Framerdiv from "../../components/Sys/Framer";
 
 type Map = {
   blog: {
@@ -31,7 +31,7 @@ const Id: React.FC<Map> = ({ blog }) => {
         {blog.map((props: Entry<IPostFields>) => (
           <div className="">
             <dl key={props.sys.id}>
-              <Link href={`/blog/${props.fields.slug}`}>
+              <Link href={`/docs/${props.fields.slug}`}>
                 <a>
                   <dt className="dateST">
                     <Date dateString={props.fields.date} />
@@ -46,7 +46,7 @@ const Id: React.FC<Map> = ({ blog }) => {
           <ul className="nav3">
             {range(1, Math.ceil(MAX_ENTRY / Denomi)).map((id) => (
               <li key={id}>
-                <ActiveLink href={`/${id}`} activeClassName="listState">
+                <ActiveLink href={`/list/${id}`} activeClassName="listState">
                   <a className="Pagi">{id}</a>
                 </ActiveLink>
               </li>
@@ -70,7 +70,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     order: "-fields.date",
   });
 
-  const paths = range(1, Math.ceil(entries.items.length / Denomi)).map((id) => `/${id}`);
+  const paths = range(1, Math.ceil(entries.items.length / Denomi)).map((id) => `/list/${id}`);
 
   return { paths, fallback: false };
 };

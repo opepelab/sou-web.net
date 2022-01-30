@@ -25,7 +25,7 @@ const Blog: React.FC<Map> = ({ blog }) => {
         {blog.map((props: Entry<IPostFields>) => (
           <div className="">
             <dl key={props.sys.id}>
-              <Link href={`/blog/${props.fields.slug}`}>
+              <Link href={`/docs/${props.fields.slug}`}>
                 <a>
                   <dt className="dateST">
                     <Date dateString={props.fields.date} />

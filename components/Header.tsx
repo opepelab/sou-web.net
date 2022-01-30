@@ -19,7 +19,7 @@ const Header: React.FC = () => {
                 </ActiveLink>
               </li>
               <li>
-                <ActiveLink href="/1" activeClassName="headerState">
+                <ActiveLink href="/list/1" activeClassName="headerState">
                   <a className="scaleLinks">Posts</a>
                 </ActiveLink>
               </li>
