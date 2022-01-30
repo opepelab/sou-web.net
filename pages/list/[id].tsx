@@ -2,14 +2,16 @@ import Head from "next/head";
 import { GetStaticPaths } from "next";
 import client from "../../libs/contentful";
 import Link from "next/link";
-import React from "react";
+import { useState } from "react";
 import { Entry, EntryCollection } from "contentful";
 import { IPostFields } from "../../libs/types";
 import Date from "../../components/Sys/date";
 import ActiveLink from "../../components/Sys/ActiveLink";
 import Framerdiv from "../../components/Sys/Framer";
+import useSWR from "swr";
 
 type Map = {
+  index: number;
   blog: {
     map: NumberConstructor;
   };

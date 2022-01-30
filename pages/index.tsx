@@ -35,7 +35,7 @@ const Index: React.FC<Map> = ({ blog }) => {
         {blog.map((blog: Entry<IPostFields>) => (
           <div className="">
             <dl key={blog.sys.id}>
-              <Link href={`/blog/${blog.fields.slug}`}>
+              <Link href={`/docs/${blog.fields.slug}`}>
                 <a>
                   <dt className="dateST">
                     <Date dateString={blog.fields.date} />
