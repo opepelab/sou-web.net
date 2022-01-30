@@ -15,10 +15,10 @@ type Map = {
   };
 };
 
-// Total / Limit = PagesList　(Divide so exceed a limit)
+// Total / Limit = PagesList (Divide so exceed a limit)
 // Limit / PagesList = Divide(Denominator)
-const MAX_ENTRY: number = 15;
-const Divide: number = 5;
+const MAX_ENTRY = 15;
+const Divide = 5;
 
 const range = (start: number, end: number) => [...Array(end - start + 1)].map((_, i) => start + i);
 const Id: React.FC<Map> = ({ blog }) => {
@@ -53,13 +53,8 @@ const Id: React.FC<Map> = ({ blog }) => {
                 </ActiveLink>
               </li>
             ))}
-            {/* <Link href={`/list/${id}`}>
-              <a>next</a>
-            // </Link> */}
-            {/* OnchangeHandler useState(1) */}
           </ul>
         </nav>
-
         <Link href="/blog">
           <a>
             <h5>Display All</h5>
