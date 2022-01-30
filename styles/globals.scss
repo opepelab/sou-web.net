@@ -22,8 +22,9 @@ body {
 }
 
 // code {
-//   font-size: 122px;
-//   font-family: "Consolas", "Courier New", monospace;
+//   // font-size: 12px;
+//   // font-weight: bold;
+//   // font-family: "Consolas", "Courier New", monospace;
 // }
 
 pre {
@@ -33,6 +34,7 @@ pre {
 pre code span {
   white-space: pre-wrap;
   font-size: $p12;
+  font-weight: bold;
 }
 
 iframe {
