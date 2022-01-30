@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { GetStaticPaths, GetStaticProps } from "next";
+import { GetStaticPaths } from "next";
 import client from "../../libs/contentful";
 import Link from "next/link";
 import React from "react";
