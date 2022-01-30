@@ -22,15 +22,15 @@ const Blog: React.FC<Map> = ({ blog }) => {
       </Head>
       <main className="textLeft margin50p inblo">
         <h5>記事一覧</h5>
-        {blog.map((blog: Entry<IPostFields>) => (
+        {blog.map((props: Entry<IPostFields>) => (
           <div className="">
-            <dl key={blog.sys.id}>
-              <Link href={`/blog/${blog.fields.slug}`}>
+            <dl key={props.sys.id}>
+              <Link href={`/blog/${props.fields.slug}`}>
                 <a>
                   <dt className="dateST">
-                    <Date dateString={blog.fields.date} />
+                    <Date dateString={props.fields.date} />
                   </dt>
-                  <div className="PPx hoverbomb pinkLinks">{blog.fields.title}</div>
+                  <div className="PPx hoverbomb pinkLinks">{props.fields.title}</div>
                 </a>
               </Link>
             </dl>
