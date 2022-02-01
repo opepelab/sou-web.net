@@ -2,7 +2,7 @@ import Head from "next/head";
 import { GetStaticPaths } from "next";
 import client from "../../libs/contentful";
 import Link from "next/link";
-import { useState } from "react";
+import React, { useState } from "react";
 import { Entry, EntryCollection } from "contentful";
 import { IPostFields } from "../../libs/types";
 import Date from "../../components/Sys/date";
@@ -11,7 +11,7 @@ import Framerdiv from "../../components/Sys/Framer";
 import useSWR from "swr";
 
 type Map = {
-  index: number;
+  total: number;
   blog: {
     map: NumberConstructor;
   };
@@ -19,11 +19,10 @@ type Map = {
 
 // Total / Limit = PagesList (Divide so exceed a limit)
 // Limit / PagesList = Divide(Denominator)
-const MAX_ENTRY = 15;
-const Divide = 5;
+const Limit = 19;
 
 const range = (start: number, end: number) => [...Array(end - start + 1)].map((_, i) => start + i);
-const Id: React.FC<Map> = ({ blog }) => {
+const Id: React.FC<Map> = ({ blog, total }) => {
   return (
     <Framerdiv>
       <Head>
@@ -48,7 +47,7 @@ const Id: React.FC<Map> = ({ blog }) => {
         ))}
         <nav>
           <ul className="nav3">
-            {range(1, Math.ceil(MAX_ENTRY / Divide)).map((id) => (
+            {range(1, Math.ceil(total / Limit)).map((id) => (
               <li key={id}>
                 <ActiveLink href={`/list/${id}`} activeClassName="listState">
                   <a className="Pagi">{id}</a>
@@ -72,7 +71,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     order: "-fields.date",
   });
 
-  const paths = range(1, Math.ceil(entries.total / Divide)).map((id) => `/list/${id}`);
+  const paths = range(1, Math.ceil(entries.total / Limit)).map((id) => `/list/${id}`);
 
   return { paths, fallback: false };
 };
@@ -82,13 +81,14 @@ export const getStaticProps = async (context: { params: { id: number } }) => {
   const entries: EntryCollection<IPostFields> = await client.getEntries({
     content_type: "blog",
     order: "-fields.date",
-    limit: MAX_ENTRY,
-    skip: (id - 1) * MAX_ENTRY,
+    limit: Limit,
+    skip: (id - 1) * Limit,
   });
 
   return {
     props: {
       blog: entries.items,
+      total: entries.total,
     },
   };
 };
