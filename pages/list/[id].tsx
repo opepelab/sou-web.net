@@ -72,7 +72,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     order: "-fields.date",
   });
 
-  const paths = range(1, Math.ceil(entries.items.length / Divide)).map((id) => `/list/${id}`);
+  const paths = range(1, Math.ceil(entries.total / Divide)).map((id) => `/list/${id}`);
 
   return { paths, fallback: false };
 };
