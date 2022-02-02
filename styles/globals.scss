@@ -118,6 +118,18 @@ ul {
 }
 
 .menu {
+  transform: translate(300px);
+  transition-duration: 3s;
+}
+
+.NavDrop [aria-expanded="true"] {
+  opacity: 0;
+  transition-duration: 2s;
+}
+
+.NavDrop [aria-expanded="false"] {
+  transform: translateY(120px);
+  transition-duration: 2s;
 }
 
 .nav1 {

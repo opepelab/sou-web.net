@@ -2,12 +2,15 @@ import React, { useRef, useState, useEffect } from "react";
 import Link from "next/link";
 
 const Dropdown4 = () => {
+  const [open, setOpen] = React.useState(false);
   const [isOpenMenu, setIsOpenMenu] = React.useState(false);
   const menuRef = React.useRef<HTMLUListElement>(null!);
   React.useEffect(() => {
     isOpenMenu && menuRef.current.focus();
   }, [isOpenMenu]);
   return (
+    // <div className="NavDrop">
+    //   <div aria-expanded={open} onClick={() => setOpen(!open)}>
     <div className="menu-container" onClick={() => setIsOpenMenu(!isOpenMenu)}>
       <div className="menuButton">Menu 4</div>
       {isOpenMenu && (
@@ -37,6 +40,8 @@ const Dropdown4 = () => {
         </ul>
       )}
     </div>
+    //   </div>
+    // </div>
   );
 };
 export default Dropdown4;

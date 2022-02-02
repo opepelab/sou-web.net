@@ -13,8 +13,6 @@ type Props = {
 const Layout: React.FC<Props> = ({ children }) => {
   const [open, setOpen] = useState(false);
 
-  useEffect(() => {}, []);
-
   return (
     <>
       <MenuButton open={open} setOpen={setOpen} />

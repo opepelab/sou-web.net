@@ -6,7 +6,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "postbuild": "node ./scripts/build-search.js",
     "lint": "next lint"
   },
   "dependencies": {
