@@ -2,6 +2,11 @@ import ActiveLink from "./Sys/ActiveLink";
 import React from "react";
 
 const Header: React.FC = () => {
+  const [isOpenMenu, setIsOpenMenu] = React.useState(false);
+  const menuRef = React.useRef<HTMLUListElement>(null!);
+  React.useEffect(() => {
+    isOpenMenu && menuRef.current.focus();
+  }, [isOpenMenu]);
   return (
     <div>
       <header className="bgg">
@@ -43,6 +48,28 @@ const Header: React.FC = () => {
                   <a className="scaleLinks">Develop</a>
                 </ActiveLink>
               </li>
+              <ul className="ire">
+                <li>
+                  <a className="scaleLinks">About▿</a>
+                  <ul>
+                    <li>this Blog</li>
+                    <li>Profile</li>
+                    <li></li>
+                    <li>aaa</li>
+                    <li>aaa</li>
+                  </ul>
+                </li>
+              </ul>
+              <div id="sample">
+                <label htmlFor="toggle">ここをクリックすると</label>
+                <input type="checkbox" id="toggle" autoComplete="off" />
+                <ul>
+                  <li>要素が変化します</li>
+                  <li>要素が変化します</li>
+                  <li>要素が変化します</li>
+                  <li>要素が変化します</li>
+                </ul>
+              </div>
             </ul>
           </nav>
         </div>

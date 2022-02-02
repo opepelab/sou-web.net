@@ -75,6 +75,51 @@ ul {
   padding: 0px;
 }
 
+.ire li ul {
+  position: absolute;
+  height: 0;
+  overflow: hidden;
+}
+
+.ire li:hover > ul {
+  height: 100px;
+  text-align: left;
+  transition-duration: 1s;
+}
+
+.ire ul li {
+  margin-top: 20px;
+}
+
+#sample label {
+  cursor: pointer;
+}
+#sample input {
+  // display: none;
+  width: 100%;
+}
+#sample ul {
+  position: absolute;
+  height: 0;
+  overflow: hidden;
+}
+#sample input:checked + ul {
+  height: 500px;
+  transition-duration: 3s;
+}
+
+.menuButton {
+  margin-top: 300px;
+  transition-duration: 3s;
+}
+
+.menu-container {
+  transition-duration: 3s;
+}
+
+.menu {
+}
+
 .nav1 {
   @include NAV;
 }

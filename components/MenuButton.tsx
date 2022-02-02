@@ -5,8 +5,8 @@ type BoolProps = {
 
 const MenuButton: React.FC<BoolProps> = ({ open, setOpen }) => {
   return (
-    <div className="Line">
-      <button aria-expanded={open} onClick={() => setOpen(!open)} aria-label="Toggle mobile navigation menu" type="button" className="Humb">
+    <div className="Line" aria-expanded={open} onClick={() => setOpen(!open)}>
+      <button aria-label="Toggle mobile navigation menu" type="button" className="Humb">
         <span />
         <span />
       </button>
