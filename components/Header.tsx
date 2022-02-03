@@ -2,11 +2,11 @@ import ActiveLink from "./Sys/ActiveLink";
 import React from "react";
 
 const Header: React.FC = () => {
-  const [isOpenMenu, setIsOpenMenu] = React.useState(false);
-  const menuRef = React.useRef<HTMLUListElement>(null!);
+  const [open, setOpen] = React.useState(false);
+  const menuRef = React.useRef<HTMLDivElement>(null!);
   React.useEffect(() => {
-    isOpenMenu && menuRef.current.focus();
-  }, [isOpenMenu]);
+    open && menuRef.current.focus();
+  }, [open]);
   return (
     <div>
       <header className="bgg">
@@ -14,24 +14,50 @@ const Header: React.FC = () => {
           <nav>
             <ul className="nav1 HeadMenu">
               <li>
-                <ActiveLink href="/about" activeClassName="headerState">
-                  <a className="scaleLinks">About</a>
-                </ActiveLink>
-              </li>
-              <li>
-                <ActiveLink href="/profile" activeClassName="headerState">
-                  <a className="scaleLinks">Profile</a>
-                </ActiveLink>
-              </li>
-              <li>
-                <ActiveLink href="/list/1" activeClassName="headerState">
-                  <a className="scaleLinks">Posts</a>
-                </ActiveLink>
-              </li>
-              <li>
-                <ActiveLink href="/mail" activeClassName="headerState">
-                  <a className="scaleLinks">Email</a>
-                </ActiveLink>
+                <div aria-expanded={open} onClick={() => setOpen(!open)}>
+                  <a className="hoverBG Block">
+                    About
+                    <div className="triangle-bottomMenu" />
+                  </a>
+                </div>
+                <div className="" ref={menuRef} tabIndex={0} onBlur={() => setTimeout(() => setOpen(!open), 125)}>
+                  <div className="NavDrop HeadMenu">
+                    <div aria-expanded={open} onClick={() => setOpen(!open)}>
+                      {open && (
+                        <ul className="menu yoko">
+                          <li>
+                            <ActiveLink href="/about" activeClassName="headerState">
+                              <a>
+                                <div className="hoverBG BlockM">このブログについて</div>
+                              </a>
+                            </ActiveLink>
+                          </li>
+                          <li>
+                            <ActiveLink href="/profile" activeClassName="headerState">
+                              <a>
+                                <div className="hoverBG BlockM">Profile</div>
+                              </a>
+                            </ActiveLink>
+                          </li>
+                          <li>
+                            <ActiveLink href="/list/1" activeClassName="headerState">
+                              <a>
+                                <div className="hoverBG BlockM">Posts</div>
+                              </a>
+                            </ActiveLink>
+                          </li>
+                          <li>
+                            <ActiveLink href="/mail" activeClassName="headerState">
+                              <a>
+                                <div className="hoverBG BlockM">Email</div>
+                              </a>
+                            </ActiveLink>
+                          </li>
+                        </ul>
+                      )}
+                    </div>
+                  </div>
+                </div>
               </li>
               <li>
                 <ActiveLink href="/links" activeClassName="headerState">
@@ -60,7 +86,7 @@ const Header: React.FC = () => {
                   </ul>
                 </li>
               </ul>
-              <div id="sample">
+              {/* <div id="sample">
                 <label htmlFor="toggle">ここをクリックすると</label>
                 <input type="checkbox" id="toggle" autoComplete="off" />
                 <ul>
@@ -69,7 +95,7 @@ const Header: React.FC = () => {
                   <li>要素が変化します</li>
                   <li>要素が変化します</li>
                 </ul>
-              </div>
+              </div> */}
             </ul>
           </nav>
         </div>

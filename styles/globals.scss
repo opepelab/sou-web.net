@@ -113,23 +113,31 @@ ul {
   transition-duration: 3s;
 }
 
-.menu-container {
-  transition-duration: 3s;
-}
-
-.menu {
-  transform: translate(300px);
-  transition-duration: 3s;
-}
-
 .NavDrop [aria-expanded="true"] {
-  opacity: 0;
-  transition-duration: 2s;
+  position: absolute;
+  margin-top: 20px;
+  height: 300px;
+  overflow: hidden;
+  transition-duration: 0.2s;
 }
 
 .NavDrop [aria-expanded="false"] {
-  transform: translateY(120px);
-  transition-duration: 2s;
+  height: 0px;
+}
+
+.menu li {
+  border: solid 1px;
+  border-radius: 0px;
+  background: #333;
+  color: rgb(255, 255, 255);
+  // padding: 20px 0px 20px 0px;
+  row-gap: 20px;
+  font-size: 14px;
+}
+
+.menu {
+  text-align: left;
+  display: inline-block;
 }
 
 .nav1 {
@@ -169,13 +177,31 @@ a {
   text-decoration: none;
 }
 
+.yoko a {
+  color: rgb(255, 255, 255);
+}
+
 .Hlink a {
   color: #68a5ff;
   text-decoration: none;
 }
 
 .scaleLinks:hover {
+  cursor: pointer;
   @include Hover;
+}
+
+.hoverBG:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.Block {
+  padding: 10px 20px 15px 20px;
+}
+
+.BlockM {
+  padding: 20px;
+  width: 100%;
 }
 
 .hover:hover {

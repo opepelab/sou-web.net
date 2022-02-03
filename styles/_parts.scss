@@ -106,7 +106,7 @@ a dt .dateST {
   z-index: 2;
   position: absolute;
   width: $r100;
-  height: 43px;
+  height: 54px;
   background: #333;
   border-bottom: solid 1px #000000;
   top: $p0;
@@ -128,8 +128,20 @@ a dt .dateST {
   display: $IB;
   border: {
     style: solid;
-    width: 5px;
+    width: 4px;
     color: $FB transparent transparent transparent;
+  }
+}
+
+.triangle-bottomMenu {
+  position: relative;
+  left: 6px;
+  top: 3px;
+  display: $IB;
+  border: {
+    style: solid;
+    width: 4px;
+    color: $ST transparent transparent transparent;
   }
 }
 

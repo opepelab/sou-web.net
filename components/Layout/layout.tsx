@@ -5,7 +5,7 @@ import Menu from "../Menu";
 import Text from "../Text";
 import Footer from "../Footer";
 import ThemeToggler from "../ThemeToggler";
-import Dropdown2from from "../Drop";
+import Dropdown4 from "../Drop";
 type Props = {
   children: ReactNode;
 };
@@ -15,11 +15,10 @@ const Layout: React.FC<Props> = ({ children }) => {
 
   return (
     <>
-      <MenuButton open={open} setOpen={setOpen} />
-      <Menu open={open} setOpen={setOpen} />
+      {/* <MenuButton open={open} setOpen={setOpen} /> */}
+      <Menu />
       <Text /> <ThemeToggler />
       <Header />
-      <Dropdown2from />
       <div className="footerFix">{children}</div>
       <Footer />
     </>

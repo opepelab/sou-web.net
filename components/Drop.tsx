@@ -1,47 +1,52 @@
 import React, { useRef, useState, useEffect } from "react";
 import Link from "next/link";
+import ActiveLink from "./Sys/ActiveLink";
 
-const Dropdown4 = () => {
-  const [open, setOpen] = React.useState(false);
-  const [isOpenMenu, setIsOpenMenu] = React.useState(false);
-  const menuRef = React.useRef<HTMLUListElement>(null!);
-  React.useEffect(() => {
-    isOpenMenu && menuRef.current.focus();
-  }, [isOpenMenu]);
+const Dropdown4: React.FC = () => {
+  const [open, setOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null!);
+  useEffect(() => {
+    open && menuRef.current.focus();
+  }, [open]);
   return (
-    // <div className="NavDrop">
-    //   <div aria-expanded={open} onClick={() => setOpen(!open)}>
-    <div className="menu-container" onClick={() => setIsOpenMenu(!isOpenMenu)}>
-      <div className="menuButton">Menu 4</div>
-      {isOpenMenu && (
-        <ul className="menu" ref={menuRef} tabIndex={1} onBlur={() => setTimeout(() => setIsOpenMenu(false), 125)}>
-          <li className="item">
-            <Link href="/">
-              <a>
-                <button>要素が変化します</button>
-              </a>
-            </Link>
-          </li>
-          <li className="item">
-            <Link href="/about">
-              <a>このブログについて</a>
-            </Link>
-          </li>
-          <li className="item">
-            <Link href="/">
-              <a>要素が変化します</a>
-            </Link>
-          </li>
-          <li className="item">
-            <Link href="/">
-              <a>要素が変化します</a>
-            </Link>
-          </li>
-        </ul>
-      )}
+    <div>
+      <div aria-expanded={open} onClick={() => setOpen(!open)}>
+        <div className="menuButton">Menu 4</div>
+      </div>
+
+      <div className="" ref={menuRef} tabIndex={1} onBlur={() => setTimeout(() => setOpen(false), 125)}>
+        <div className="NavDrop HeadMenu">
+          <div aria-expanded={open} onClick={() => setOpen(!open)}>
+            {open && (
+              <nav>
+                <ul className="menu">
+                  <li>
+                    <ActiveLink href="/about" activeClassName="headerState">
+                      <a className="scaleLinks">このブログについて</a>
+                    </ActiveLink>
+                  </li>
+                  <li>
+                    <ActiveLink href="/profile" activeClassName="headerState">
+                      <a>Profile</a>
+                    </ActiveLink>
+                  </li>
+                  <li>
+                    <ActiveLink href="/list/1" activeClassName="headerState">
+                      <a className="scale">Posts</a>
+                    </ActiveLink>
+                  </li>
+                  <li>
+                    <ActiveLink href="/mail" activeClassName="headerState">
+                      <a className="scale">Email</a>
+                    </ActiveLink>
+                  </li>
+                </ul>
+              </nav>
+            )}
+          </div>
+        </div>
+      </div>
     </div>
-    //   </div>
-    // </div>
   );
 };
 export default Dropdown4;
