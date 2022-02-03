@@ -1,5 +1,8 @@
 export type ThemeType = {
   background: string;
+  bgg: string;
+  MainBG: string;
+  bgNav: string;
   color: string;
   border: string;
   h12: string;

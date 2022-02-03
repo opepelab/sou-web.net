@@ -11,7 +11,7 @@ const About = () => {
       <main className="list margin50p textLeft inblo">
         <h1>About</h1>
         <h5>scientist Number11</h5>
-        <p>渡邊 蒼(Sou Watanabe)のプロフィールです。</p>
+        <p>渡邊 蒼(Sou Watanabe)の経歴(Careerです。</p>
         <br />
         <p>私の趣味は検証することです。</p>
         <p>直接的な討論は好きではありません。</p>

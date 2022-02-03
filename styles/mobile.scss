@@ -8,14 +8,22 @@
     width: 90%;
   }
 
+  .bgg {
+    display: none;
+  }
+
+  .margin50p {
+    margin-top: 80px;
+  }
+
   .Humb {
     box-shadow: 0px 0px 4px 1px white;
     border-radius: 12%;
     background: #333;
     padding-top: 26px;
     padding-bottom: 0px;
-    padding-left: 3px;
-    padding-right: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition-duration: 1s;
   }
 
@@ -30,7 +38,7 @@
     display: block;
     position: relative;
     height: 2px;
-    width: 24px;
+    width: 14px;
     background-color: #fff;
     border-radius: 4px;
   }
@@ -102,16 +110,17 @@
   }
 
   /* Topヘッダーモビ */
-  .migiue {
+  .hidari {
     position: absolute;
+    white-space: nowrap;
     top: 8px;
-    left: 5px;
+    left: -170px;
   }
 
   .toggle {
     position: absolute;
-    top: 6px;
-    left: 120px;
+    top: 18px;
+    left: 280px;
   }
 
   .position {

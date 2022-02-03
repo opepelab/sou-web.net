@@ -2,6 +2,10 @@
   text-align: left;
 }
 
+.textCenter {
+  text-align: center;
+}
+
 .CN {
   @include CenString;
 }
@@ -11,7 +15,7 @@
 }
 
 .margin50p {
-  margin-top: $p50;
+  margin-top: $p200;
 }
 
 .flex-container {
@@ -71,12 +75,7 @@ a dt .dateST {
 }
 
 .headerState {
-  border-bottom: solid 1px $ST;
-  pointer-events: none;
-}
-
-.topState {
-  color: $FB;
+  text-decoration: underline;
   pointer-events: none;
 }
 
@@ -102,14 +101,29 @@ a dt .dateST {
   pointer-events: none;
 }
 
+.Top-BG {
+  z-index: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 75px;
+  // background: white;
+}
+
+.Fix {
+  z-index: 100;
+  position: relative;
+}
+
 .bgg {
   z-index: 2;
   position: absolute;
   width: $r100;
-  height: 54px;
-  background: #333;
-  border-bottom: solid 1px #000000;
-  top: $p0;
+  height: 55px;
+  background: linear-gradient(0.25turn, $BG, #ebf8e1, $BG);
+  border-radius: 30px;
+  top: 75px;
   left: $p0;
 }
 
@@ -125,24 +139,25 @@ a dt .dateST {
 }
 
 .triangle-bottom {
-  display: $IB;
-  border: {
-    style: solid;
-    width: 4px;
-    color: $FB transparent transparent transparent;
-  }
+  color: $FB transparent transparent transparent;
+  border-color: $FB transparent transparent transparent;
+  @include Sankaku;
 }
 
-.triangle-bottomMenu {
+.SankakuBlack {
   position: relative;
   left: 6px;
   top: 3px;
-  display: $IB;
-  border: {
-    style: solid;
-    width: 4px;
-    color: $ST transparent transparent transparent;
-  }
+  border-color: #333 transparent transparent transparent;
+  @include Sankaku;
+}
+
+.SankakuWhite {
+  position: relative;
+  left: 6px;
+  top: 3px;
+  border-color: $ST transparent transparent transparent;
+  @include Sankaku;
 }
 
 .point {
@@ -158,10 +173,11 @@ a dt .dateST {
 }
 
 .pinkLinks {
-  color: $FB;
+  color: #ebf8e1;
 }
 
 .sun {
+  transform: scale(1.4);
   width: 6px;
   height: 6px;
   border-radius: 50%;

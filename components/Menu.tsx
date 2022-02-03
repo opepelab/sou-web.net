@@ -7,8 +7,9 @@ const Menu: React.FC = () => {
   useEffect(() => {
     open && menuRef.current.focus();
   }, [open]);
+
   return (
-    <div>
+    <div className="none">
       <div className="Line" aria-expanded={open} onClick={() => setOpen(!open)}>
         <button aria-label="Toggle mobile navigation menu" type="button" className="Humb">
           <span />
@@ -16,40 +17,81 @@ const Menu: React.FC = () => {
         </button>
       </div>
 
-      <div className="CN" ref={menuRef} tabIndex={1} onBlur={() => setTimeout(() => setOpen(false))}>
+      <div className="CN" ref={menuRef} tabIndex={1} onBlur={() => setTimeout(() => setOpen(!open))}>
         <div className="MenuList HeadMenu">
-          <div aria-expanded={open} onClick={() => setOpen(!open)}>
+          <div aria-expanded={open}>
             {open && (
               <nav>
                 <ul className="nav2">
-                  <li>
-                    <ActiveLink href="/about" activeClassName="headerState">
-                      <a>About</a>
-                    </ActiveLink>
+                  <li id="About">
+                    <label htmlFor="toggle1">
+                      About
+                      <div className="SankakuWhite" />
+                    </label>
+                    <input type="checkbox" id="toggle1" autoComplete="off" />
+                    <ul>
+                      <li>
+                        <ActiveLink href="/about" activeClassName="headerState">
+                          <a>私について(詳細)</a>
+                        </ActiveLink>
+                      </li>
+                      <li>
+                        <ActiveLink href="/profile" activeClassName="headerState">
+                          <a>プロフィール(概要)</a>
+                        </ActiveLink>
+                      </li>
+                      <li>
+                        <ActiveLink href="/konokey" activeClassName="headerState">
+                          <a>このサイトについて</a>
+                        </ActiveLink>
+                      </li>
+                    </ul>
                   </li>
-                  <li>
-                    <ActiveLink href="/profile" activeClassName="headerState">
-                      <a>Profile</a>
-                    </ActiveLink>
+                  <li id="Works">
+                    <label htmlFor="toggle2">
+                      Works
+                      <div className="SankakuWhite" />
+                    </label>
+                    <input type="checkbox" id="toggle2" autoComplete="off" />
+                    <ul>
+                      <li>
+                        <a href="https://github.com/opepelab" target="_blank">
+                          <div className="hoverBG BlockM">GitHub</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.linkedin.com/in/s-watanabe-a25157205" target="_blank">
+                          <div className="hoverBG BlockM">LinkdIn</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://opepelab.org/" target="_blank">
+                          <div className="hoverBG BlockM">WordPress</div>
+                        </a>
+                      </li>
+                    </ul>
                   </li>
                   <li>
                     <ActiveLink href="/list/1" activeClassName="headerState">
-                      <a className="scale">Posts</a>
+                      <a className="scale">
+                        Graphics
+                        <div className="SankakuWhite" />
+                      </a>
                     </ActiveLink>
                   </li>
                   <li>
                     <ActiveLink href="/mail" activeClassName="headerState">
-                      <a className="scale">Email</a>
+                      <a className="scale">I/O</a>
                     </ActiveLink>
                   </li>
                   <li>
                     <ActiveLink href="/links" activeClassName="headerState">
-                      <a>Links</a>
+                      <a>Contact</a>
                     </ActiveLink>
                   </li>
                   <li>
                     <ActiveLink href="/photo" activeClassName="headerState">
-                      <a>Photo</a>
+                      <a>Development Environment</a>
                     </ActiveLink>
                   </li>
                   <li>

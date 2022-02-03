@@ -21,7 +21,7 @@ const Index: React.FC<Map> = ({ blog }) => {
         <meta name="description" content="Index" />
       </Head>
       <main className="textLeft margin50p inblo">
-        <h1>Index</h1>
+        <h1>TOP</h1>
         <div className="triangle-bottom" />
         <p>
           NPOでフロントエンドエンジニアをしているSOU-WEB({" "}
@@ -30,8 +30,8 @@ const Index: React.FC<Map> = ({ blog }) => {
           </a>{" "}
           )のウェブサイトです。
         </p>
-        <p>技術の切り出しやエラーメモで自分が見る専です。</p>
-        <h2>最新記事</h2>
+        <p>技術の切り出しやエラーのメモで自分が見るために作りました。</p>
+        <h1>最新記事</h1>
         {blog.map((blog: Entry<IPostFields>) => (
           <div className="">
             <dl key={blog.sys.id}>

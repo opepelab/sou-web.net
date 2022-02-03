@@ -27,6 +27,10 @@ body {
 //   // font-family: "Consolas", "Courier New", monospace;
 // }
 
+ruby {
+  ruby-align: distribute-letter;
+}
+
 pre {
   border-radius: 10px;
 }
@@ -75,39 +79,6 @@ ul {
   padding: 0px;
 }
 
-.ire li ul {
-  position: absolute;
-  height: 0;
-  overflow: hidden;
-}
-
-.ire li:hover > ul {
-  height: 100px;
-  text-align: left;
-  transition-duration: 1s;
-}
-
-.ire ul li {
-  margin-top: 20px;
-}
-
-#sample label {
-  cursor: pointer;
-}
-#sample input {
-  // display: none;
-  width: 100%;
-}
-#sample ul {
-  position: absolute;
-  height: 0;
-  overflow: hidden;
-}
-#sample input:checked + ul {
-  height: 500px;
-  transition-duration: 3s;
-}
-
 .menuButton {
   margin-top: 300px;
   transition-duration: 3s;
@@ -127,12 +98,10 @@ ul {
 
 .menu li {
   border: solid 1px;
-  border-radius: 0px;
   background: #333;
-  color: rgb(255, 255, 255);
-  // padding: 20px 0px 20px 0px;
+  color: $ST;
   row-gap: 20px;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .menu {
@@ -146,18 +115,12 @@ ul {
 
 .nav2 {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  padding: 0px;
+  text-align: left;
+  padding: 40px;
   row-gap: 20px;
   font-size: 14px;
-}
-
-.nav3 {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0px;
-  gap: $p20;
+  white-space: nowrap;
 }
 
 .MenuList {
@@ -177,6 +140,10 @@ a {
   text-decoration: none;
 }
 
+.Color a {
+  color: #333;
+}
+
 .yoko a {
   color: rgb(255, 255, 255);
 }
@@ -184,6 +151,15 @@ a {
 .Hlink a {
   color: #68a5ff;
   text-decoration: none;
+}
+
+.Nlink a {
+  color: #333;
+  text-decoration: none;
+}
+
+.White a {
+  color: $ST;
 }
 
 .scaleLinks:hover {
@@ -196,16 +172,11 @@ a {
 }
 
 .Block {
-  padding: 10px 20px 15px 20px;
+  padding: 12px 20px 20px 20px;
 }
 
 .BlockM {
-  padding: 20px;
-  width: 100%;
-}
-
-.hover:hover {
-  background: rgb(201, 201, 201);
+  padding: 17px;
 }
 
 p {
@@ -271,26 +242,25 @@ textarea {
   @include Mbutton;
 }
 
-.migiue {
-  z-index: 5;
+.hidari {
   position: relative;
-  top: -2px;
-  left: -340px;
-  font-size: 24px;
-  width: 100px;
+  left: -400px;
+  top: 5px;
+  font-size: 30px;
 }
 
 .toggle {
+  color: white;
   z-index: 3;
   user-select: none;
   position: relative;
-  top: -4px;
-  left: -320px;
+  top: 2px;
+  left: -380px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
+  width: 56px;
+  height: 56px;
   font-size: 22px;
   cursor: pointer;
   background: $BG;
@@ -307,6 +277,45 @@ textarea {
 .toggle [aria-expanded="false"] {
   transition-duration: 1s;
   color: black;
+}
+
+#About label {
+  cursor: pointer;
+}
+#About input {
+  display: none;
+  width: 100%;
+}
+#About ul {
+  height: 0;
+  overflow: hidden;
+}
+#About input:checked + ul {
+  height: 140px;
+  transition-duration: 1s;
+}
+
+#About ul li {
+  height: 20px;
+  padding: 10px;
+}
+
+#Works input {
+  display: none;
+  width: 100%;
+}
+#Works ul {
+  height: 0;
+  overflow: hidden;
+}
+#Works input:checked + ul {
+  height: 150px;
+  transition-duration: 1s;
+}
+
+#Works ul li {
+  height: 20px;
+  padding: 10px;
 }
 
 .position {

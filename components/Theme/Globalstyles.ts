@@ -18,7 +18,7 @@ export const GlobalStyles = createGlobalStyle<Props>`
         border-bottom: ${(props) => props.theme.h12};
     }
     .pinkLinks{
-        color: ${(props) => props.theme.links};
+      color: ${(props) => props.theme.color};
         font-weight: ${(props) => props.theme.weight};
     }
     .scaleLinks:hover {
@@ -34,11 +34,19 @@ export const GlobalStyles = createGlobalStyle<Props>`
     .blue {
         color: ${(props) => props.theme.pink};
     }
+    a {
+        color: ${(props) => props.theme.color};
+    }
+    .bgg {
+        background: ${(props) => props.theme.bgNav};
+    }
     .Humb {
         box-shadow: ${(props) => props.theme.shadow};
     }
     .toggle {
         background: ${(props) => props.theme.black};
+        color: ${(props) => props.theme.MainBG};
+        box-shadow: ${(props) => props.theme.shadow};
     }
 }
 `;
