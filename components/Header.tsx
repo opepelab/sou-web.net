@@ -69,7 +69,7 @@ const Header: React.FC = () => {
                 <li>
                   <div aria-expanded={links} onClick={() => setLinks(!links)}>
                     <a className="hoverBG Block">
-                      Works
+                      <div className="gg-work-alt" /> Works
                       <div className="SankakuBlack" />
                     </a>
                   </div>
@@ -137,12 +137,16 @@ const Header: React.FC = () => {
                 </li>
                 <li>
                   <ActiveLink href="/list/1" activeClassName="headerState">
-                    <a className="hoverBG Block">I/O</a>
+                    <a className="hoverBG Block">
+                      <div className="gg-code-slash" /> I/O
+                    </a>
                   </ActiveLink>
                 </li>
                 <li>
                   <ActiveLink href="/mail" activeClassName="headerState">
-                    <a className="hoverBG Block">Contact</a>
+                    <a className="hoverBG Block">
+                      <div className="gg-mail" /> Contact
+                    </a>
                   </ActiveLink>
                 </li>
                 <li>
