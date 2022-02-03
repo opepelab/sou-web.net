@@ -1,0 +1,25 @@
+.gg-work-alt,
+.gg-work-alt::after {
+  display: inline-block;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 2px;
+}
+
+.gg-work-alt {
+  transform: scale(0.7);
+  position: relative;
+  width: 14px;
+  height: 10px;
+  border-radius: 1px;
+}
+
+.gg-work-alt::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 1px;
+  border-top-left-radius: 1px;
+  border-top-right-radius: 1px;
+  left: 4px;
+  top: -3px;
+}

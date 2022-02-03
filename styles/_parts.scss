@@ -52,16 +52,6 @@ a dt .dateST {
   color: $ST;
 }
 
-.Home {
-  width: 160px;
-  top: 600px;
-  margin: 0px;
-  border: none;
-  font: {
-    size: 36px;
-  }
-}
-
 .hikki {
   display: inline-block;
   font: {
@@ -119,10 +109,11 @@ a dt .dateST {
 .bgg {
   z-index: 2;
   position: absolute;
-  width: $r100;
-  height: 55px;
+  width: 80%;
+  height: 64px;
   background: linear-gradient(0.25turn, $BG, #ebf8e1, $BG);
   border-radius: 30px;
+  margin: 0px 10% 0px 10%;
   top: 75px;
   left: $p0;
 }

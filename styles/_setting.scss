@@ -3,6 +3,7 @@ $p5: 5px;
 $p10: $p5 * 2;
 $p12: $p10 * 1.2;
 $p14: $p10 * 1.4;
+$p16: $p10 * 1.6;
 $p20: $p10 * 2;
 $p40: $p20 * 2;
 $p50: $p10 * 5;
@@ -17,7 +18,9 @@ $r50: $r25 * 2;
 $r100: $r50 * 2;
 
 $Google0: "Herr Von Muellerhoff";
-$Google: "Zen Maru Gothic";
+$Google1: "Noto Sans JP", sans-serif;
+$Google: "Noto Serif JP", serif;
+// $Google2: "Zen Maru Gothic";
 
 $IB: inline-block;
 $NO: none;
@@ -70,8 +73,9 @@ $ME: rgba(0, 0, 0, 0.75);
 }
 
 @mixin NAV {
+  list-style: none;
   font: {
-    size: 15px;
+    size: $p16;
   }
   position: relative;
   display: flex;
@@ -80,7 +84,7 @@ $ME: rgba(0, 0, 0, 0.75);
   grid-gap: $p20;
   white-space: nowrap;
   left: 160px;
-  top: -12px;
+  top: -10px;
   color: $ST;
 }
 
@@ -97,7 +101,7 @@ $ME: rgba(0, 0, 0, 0.75);
   background: #333;
   right: 0px;
   top: 0px;
-  width: 60%;
+  width: 66.6%;
   height: $r100;
   transition-duration: 0.5s;
 }

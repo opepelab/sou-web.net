@@ -9,14 +9,14 @@ html {
 body {
   font: {
     family: $Google;
-    weight: normal;
-    size: $p14;
+    size: $p16;
+    weight: 100;
   }
   word-break: break-all;
   text-align: center;
   background: $BG;
   color: $ST;
-  width: 600px;
+  width: 800px;
   @include LRauto;
   transition-duration: 0.5s;
 }
@@ -67,10 +67,6 @@ button {
   }
 }
 
-.HeadMenu li {
-  list-style: none;
-}
-
 .list li {
   margin: 14px;
 }
@@ -86,10 +82,10 @@ ul {
 
 .NavDrop [aria-expanded="true"] {
   position: absolute;
-  margin-top: 20px;
+  margin-top: 25px;
   height: 300px;
   overflow: hidden;
-  transition-duration: 0.2s;
+  transition-duration: 0.25s;
 }
 
 .NavDrop [aria-expanded="false"] {
@@ -101,7 +97,7 @@ ul {
   background: #333;
   color: $ST;
   row-gap: 20px;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .menu {
@@ -123,8 +119,20 @@ ul {
   white-space: nowrap;
 }
 
+.nav3 {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
 .MenuList {
   visibility: collapse;
+}
+
+.MenuList li {
+  font-size: $p16;
+  list-style: none;
 }
 
 dt {
@@ -144,10 +152,6 @@ a {
   color: #333;
 }
 
-.yoko a {
-  color: rgb(255, 255, 255);
-}
-
 .Hlink a {
   color: #68a5ff;
   text-decoration: none;
@@ -155,7 +159,6 @@ a {
 
 .Nlink a {
   color: #333;
-  text-decoration: none;
 }
 
 .White a {
@@ -163,16 +166,16 @@ a {
 }
 
 .scaleLinks:hover {
-  cursor: pointer;
   @include Hover;
 }
 
 .hoverBG:hover {
+  cursor: pointer;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
 .Block {
-  padding: 12px 20px 20px 20px;
+  padding: 15px 24px 24px 24px;
 }
 
 .BlockM {
@@ -244,7 +247,7 @@ textarea {
 
 .hidari {
   position: relative;
-  left: -400px;
+  left: -700px;
   top: 5px;
   font-size: 30px;
 }
@@ -254,13 +257,13 @@ textarea {
   z-index: 3;
   user-select: none;
   position: relative;
-  top: 2px;
-  left: -380px;
+  top: 0px;
+  left: -650px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 56px;
-  height: 56px;
+  width: 40px;
+  height: 40px;
   font-size: 22px;
   cursor: pointer;
   background: $BG;
@@ -269,7 +272,7 @@ textarea {
 }
 
 .toggle [aria-expanded="true"] {
-  transform: rotate(-360deg);
+  transform: rotate(60deg);
   transition-duration: 1s;
   color: white;
 }
@@ -279,9 +282,6 @@ textarea {
   color: black;
 }
 
-#About label {
-  cursor: pointer;
-}
 #About input {
   display: none;
   width: 100%;
@@ -292,7 +292,7 @@ textarea {
 }
 #About input:checked + ul {
   height: 140px;
-  transition-duration: 1s;
+  transition-duration: 0.25s;
 }
 
 #About ul li {
@@ -309,8 +309,8 @@ textarea {
   overflow: hidden;
 }
 #Works input:checked + ul {
-  height: 150px;
-  transition-duration: 1s;
+  height: 140px;
+  transition-duration: 0.25s;
 }
 
 #Works ul li {

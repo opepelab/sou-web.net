@@ -46,7 +46,7 @@ const Index: React.FC<Map> = ({ blog }) => {
             </dl>
           </div>
         ))}
-        <Link href="/blog">
+        <Link href="/list/1">
           <a>
             <h5>全部見る →</h5>
           </a>

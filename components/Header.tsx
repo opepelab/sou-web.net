@@ -26,7 +26,7 @@ const Header: React.FC = () => {
         <div className="bgg">
           <div className="disableN">
             <nav>
-              <ul className="nav1 HeadMenu">
+              <ul className="nav1">
                 <li>
                   <div aria-expanded={about} onClick={() => setAbout(!about)}>
                     <a className="hoverBG Block">
@@ -38,7 +38,7 @@ const Header: React.FC = () => {
                     <div className="NavDrop">
                       <div aria-expanded={about} onClick={() => setAbout(!about)}>
                         {about && (
-                          <ul className="White menu yoko">
+                          <ul className="White menu">
                             <li>
                               <ActiveLink href="/about" activeClassName="headerState">
                                 <a>
@@ -77,7 +77,7 @@ const Header: React.FC = () => {
                     <div className="NavDrop HeadMenu">
                       <div aria-expanded={links} onClick={() => setLinks(!links)}>
                         {links && (
-                          <ul className="White menu yoko">
+                          <ul className="White menu">
                             <li>
                               <a href="https://github.com/opepelab" target="_blank">
                                 <div className="hoverBG BlockM">GitHub</div>
@@ -108,10 +108,10 @@ const Header: React.FC = () => {
                     </a>
                   </div>
                   <div className="" ref={graRef} tabIndex={0} onBlur={() => setTimeout(() => setGraph(!graph), 125)}>
-                    <div className="NavDrop HeadMenu">
+                    <div className="NavDrop">
                       <div aria-expanded={graph} onClick={() => setGraph(!graph)}>
                         {graph && (
-                          <ul className="White menu yoko">
+                          <ul className="White menu">
                             <li>
                               <a href="https://github.com/opepelab" target="_blank">
                                 <div className="hoverBG BlockM">Instagram</div>
@@ -141,16 +141,15 @@ const Header: React.FC = () => {
                   </ActiveLink>
                 </li>
                 <li>
+                  <ActiveLink href="/mail" activeClassName="headerState">
+                    <a className="hoverBG Block">Contact</a>
+                  </ActiveLink>
+                </li>
+                <li>
                   <ActiveLink href="/develop" activeClassName="headerState">
                     <a className="hoverBG Block">Development Environment</a>
                   </ActiveLink>
                 </li>
-
-                {/* <li>
-                <ActiveLink href="/mail" activeClassName="headerState">
-                  <a className="hoverBG Block">Contact</a>
-                </ActiveLink>
-              </li> */}
 
                 {/* <ul className="ire">
                 <li>

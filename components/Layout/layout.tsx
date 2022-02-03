@@ -15,7 +15,6 @@ const Layout: React.FC<Props> = ({ children }) => {
 
   return (
     <>
-      {/* <MenuButton open={open} setOpen={setOpen} /> */}
       <Menu />
       <Text />
       <ThemeToggler />
