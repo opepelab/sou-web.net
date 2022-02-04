@@ -11,18 +11,18 @@ export const ThemeToggler = () => {
   const { theme, toggleTheme } = useContext<StrProps>(ThemeContext);
 
   return (
-    <div className="inblo Butt">
-      <button aria-label="Toggle Theme Dark or Light" type="button" className="toggle">
-        <div
-          aria-expanded={trans}
-          onClick={() => {
-            toggleTheme(theme === "light" ? "dark" : "light");
-            setTrans(!trans);
-          }}
-        >
-          <div className="Big gg-dark-mode" />
-        </div>
-      </button>
+    <div className="inblo">
+      <div
+        aria-expanded={trans}
+        onClick={() => {
+          toggleTheme(theme === "light" ? "dark" : "light");
+          setTrans(!trans);
+        }}
+      >
+        <button aria-label="Toggle Theme Dark or Light" type="button" className="toggle">
+          <div className="sun" />
+        </button>
+      </div>
     </div>
   );
 };
