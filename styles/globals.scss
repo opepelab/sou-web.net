@@ -93,10 +93,10 @@ ul {
 
 .menu li {
   list-style-type: none;
-  border: solid 1px black;
-  background: #333;
+  border: solid 1px $ST;
+  border-style: dashed;
+  background: #666;
   color: $ST;
-  row-gap: 20px;
   font-size: 16px;
 }
 
@@ -154,16 +154,16 @@ a {
   text-decoration: none;
 }
 
-.Color a {
-  color: #333;
-}
-
 .Hlink a {
   color: #68a5ff;
   text-decoration: none;
 }
 
 .Nlink a {
+  color: #333;
+}
+
+.Color a {
   color: #333;
 }
 
@@ -185,7 +185,7 @@ a {
 }
 
 .BlockM {
-  padding: 17px;
+  padding: 14px;
 }
 
 p {

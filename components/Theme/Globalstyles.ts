@@ -9,7 +9,7 @@ export const GlobalStyles = createGlobalStyle<Props>`
 {
     body{
         background: ${(props) => props.theme.background};
-        color: ${(props) => props.theme.color};
+        color: ${(props) => props.theme.weak};
     }
     h1{
         border-bottom: ${(props) => props.theme.h12};
@@ -18,13 +18,13 @@ export const GlobalStyles = createGlobalStyle<Props>`
         border-bottom: ${(props) => props.theme.h12};
     }
     .pinkLinks{
-      color: ${(props) => props.theme.color};
+      color: ${(props) => props.theme.strong};
     }
     .scaleLinks:hover {
         border-bottom: ${(props) => props.theme.h12};
     }
     .dateST {
-        color: ${(props) => props.theme.color};
+        color: ${(props) => props.theme.weak};
     }
     p:hover {
         border-bottom: ${(props) => props.theme.h12};
@@ -34,7 +34,7 @@ export const GlobalStyles = createGlobalStyle<Props>`
         color: ${(props) => props.theme.pink};
     }
     a {
-        color: ${(props) => props.theme.color};
+        color: ${(props) => props.theme.weak};
     }
     .bgg {
         background: ${(props) => props.theme.bgNav};

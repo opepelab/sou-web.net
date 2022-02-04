@@ -3,7 +3,8 @@ export type ThemeType = {
   bgg: string;
   MainBG: string;
   bgNav: string;
-  color: string;
+  weak: string;
+  strong: string;
   border: string;
   h12: string;
   links: string;
