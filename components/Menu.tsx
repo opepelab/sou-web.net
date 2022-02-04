@@ -3,7 +3,7 @@ import ActiveLink from "./Sys/ActiveLink";
 
 const Menu: React.FC = () => {
   const [open, setOpen] = useState(false);
-  const menuRef = useRef<HTMLDivElement>(null!);
+  const menuRef: any = useRef(null);
   useEffect(() => {
     open && menuRef.current.focus();
   }, [open]);
