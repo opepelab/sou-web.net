@@ -36,6 +36,9 @@ export const GlobalStyles = createGlobalStyle<Props>`
     a {
         color: ${(props) => props.theme.weak};
     }
+    .Color a {
+        color: ${(props) => props.theme.strong};
+    }
     .bgg {
         background: ${(props) => props.theme.bgNav};
     }
