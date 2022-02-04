@@ -3,17 +3,11 @@
 @media screen and (max-width: 739.98px) {
   html {
     height: 100%;
-    user-select: none;
-  }
-  *:focus {
-    outline: none;
-  }
-  input,
-  textarea,
-  select {
-    outline: none;
   }
 
+  *:focus {
+    outline: none;
+    
   body {
     width: 90%;
   }

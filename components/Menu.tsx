@@ -1,10 +1,10 @@
-import React, { useRef, useState, useMemo } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import ActiveLink from "./Sys/ActiveLink";
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null!);
-  useMemo(() => {
+  useEffect(() => {
     open && menuRef.current.focus();
   }, [open]);
 
