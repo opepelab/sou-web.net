@@ -8,7 +8,7 @@ const About: React.FC = () => {
         <title>about - sou</title>
         <meta name="description" content="私について" />
       </Head>
-      <main className="CN">
+      <main className="margin50p">
         <h1>Profile</h1>
         <div className="triangle-bottom" />
         <dl>

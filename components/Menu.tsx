@@ -12,17 +12,17 @@ const Menu: React.FC = () => {
     <div>
       <div className="Line">
         <div aria-expanded={open} onClick={() => setOpen(!open)}>
-          <button aria-label="Toggle mobile navigation menu" type="button" className="Humb">
+          <div aria-label="Toggle mobile navigation menu" className="Humb">
             <span />
             <span />
-          </button>
+          </div>
         </div>
       </div>
-      <div ref={menuRef} tabIndex={1} onBlur={() => setOpen(!open)}>
+      <div ref={menuRef} tabIndex={1} onBlur={() => setOpen(!open)} onFocus={() => setOpen(!open)}>
         <div className="MenuList">
-          <div aria-expanded={open}>
+          <div aria-expanded={open} onClick={() => setOpen(!open)}>
             <nav>
-              <ul className="nav2">
+              <ul className="nav2" onClick={(e) => e.stopPropagation()}>
                 <li id="About">
                   <label htmlFor="toggle1">
                     <a>
