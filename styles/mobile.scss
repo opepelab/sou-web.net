@@ -5,9 +5,12 @@
     height: 100%;
   }
 
-  *:focus {
+  input,
+  textarea,
+  select {
     outline: none;
   }
+
   body {
     width: 90%;
   }

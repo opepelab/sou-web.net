@@ -17,8 +17,6 @@ type Map = {
   };
 };
 
-// Total / Limit = PagesList (Divide so exceed a limit)
-// Limit / PagesList = Divide(Denominator)
 const Limit = 19;
 
 const range = (start: number, end: number) => [...Array(end - start + 1)].map((_, i) => start + i);
