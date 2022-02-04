@@ -5,6 +5,15 @@
     height: 100%;
     user-select: none;
   }
+  *:focus {
+    outline: none;
+  }
+  input,
+  textarea,
+  select {
+    outline: none;
+  }
+
   body {
     width: 90%;
   }
