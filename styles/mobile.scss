@@ -17,7 +17,7 @@
   }
 
   .Humb {
-    z-index: 5;
+    z-index: 6;
     position: relative;
     box-shadow: 0px 0px 4px 1px white;
     border-radius: 12%;
@@ -30,6 +30,7 @@
   }
 
   .Line {
+    z-index: 6;
     position: fixed;
     display: inline-block;
     right: 5px;
@@ -71,6 +72,8 @@
   }
 
   .MenuList [aria-expanded="true"] {
+    z-index: 4;
+    position: fixed;
     @include Menu;
     visibility: visible;
   }
@@ -79,7 +82,7 @@
     @include Menu;
     opacity: 0;
     visibility: unset;
-    transform: translate(20px);
+    transform: translate(100px);
   }
 
   .disableN {
@@ -101,17 +104,13 @@
     margin-bottom: 12px;
   }
 
-  /* Topヘッダーモビ */
   .hidari {
-    z-index: 3;
     position: absolute;
-    white-space: nowrap;
     top: 30px;
     left: 30px;
   }
 
   .toggle {
-    z-index: 3;
     position: absolute;
     top: 25px;
     left: 275px;

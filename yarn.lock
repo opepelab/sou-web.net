@@ -1647,6 +1647,11 @@
   "resolved" "https://registry.npmjs.org/classnames/-/classnames-2.2.6.tgz"
   "version" "2.2.6"
 
+"clone@~2.1.0":
+  "integrity" "sha1-G39Ln1kfHo+DZwQBYANFoCiHQ18="
+  "resolved" "https://registry.npmjs.org/clone/-/clone-2.1.2.tgz"
+  "version" "2.1.2"
+
 "collection-visit@^1.0.0":
   "integrity" "sha1-S8A3PBZLwykbTTaMgpzxqApZ3KA="
   "resolved" "https://registry.npmjs.org/collection-visit/-/collection-visit-1.0.0.tgz"
@@ -1904,6 +1909,14 @@
   "integrity" "sha1-QuJ9T6BK4y+TGktNQZH6nN3ul8s="
   "resolved" "https://registry.npmjs.org/css.escape/-/css.escape-1.5.1.tgz"
   "version" "1.5.1"
+
+"csslint@^1.0.5":
+  "integrity" "sha1-Gcw+2jIhYP0/cjKvHLKjYOiYouk="
+  "resolved" "https://registry.npmjs.org/csslint/-/csslint-1.0.5.tgz"
+  "version" "1.0.5"
+  dependencies:
+    "clone" "~2.1.0"
+    "parserlib" "~1.1.1"
 
 "cssnano-preset-simple@^3.0.0":
   "integrity" "sha512-vxQPeoMRqUT3c/9f0vWeVa2nKQIHFpogtoBvFdW4GQ3IvEJ6uauCP6p3Y5zQDLFcI7/+40FTgX12o7XUL0Ko+w=="
@@ -4400,6 +4413,11 @@
   "integrity" "sha512-Ofn/CTFzRGTTxwpNEs9PP93gXShHcTq255nzRYSKe8AkVpZY7e1fpmTfOyoIvjP5HG7Z2ZM7VS9PPhQGW2pOpw=="
   "resolved" "https://registry.npmjs.org/parse5/-/parse5-6.0.1.tgz"
   "version" "6.0.1"
+
+"parserlib@~1.1.1":
+  "integrity" "sha1-pkz6ckBiQ0/fw1HJpOwtkrlMBvQ="
+  "resolved" "https://registry.npmjs.org/parserlib/-/parserlib-1.1.1.tgz"
+  "version" "1.1.1"
 
 "pascalcase@^0.1.1":
   "integrity" "sha1-s2PlXoAGym/iF4TS2yK9FdeRfxQ="

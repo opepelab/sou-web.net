@@ -82,18 +82,18 @@ ul {
 
 .NavDrop [aria-expanded="true"] {
   position: absolute;
-  margin-top: 25px;
-  height: 300px;
-  overflow: hidden;
-  transition-duration: 0.25s;
+  margin-top: 24px;
+  opacity: 1;
+  transition-duration: 0.125s;
 }
 
 .NavDrop [aria-expanded="false"] {
-  height: 0px;
+  opacity: 0;
 }
 
 .menu li {
-  border: solid 1px;
+  list-style-type: none;
+  border: solid 1px black;
   background: #333;
   color: $ST;
   row-gap: 20px;
@@ -110,6 +110,8 @@ ul {
 }
 
 .nav2 {
+  z-index: 4;
+  position: fixed;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -253,17 +255,17 @@ textarea {
   z-index: 3;
   position: relative;
   left: -700px;
-  top: 0px;
+  top: -42px;
   font-size: 30px;
 }
 
 .toggle {
-  color: white;
   z-index: 3;
-  user-select: none;
   position: relative;
+  color: white;
+  user-select: none;
   top: 2px;
-  left: -650px;
+  left: -500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -289,13 +291,13 @@ textarea {
   overflow: hidden;
 }
 #About input:checked + ul {
-  height: 140px;
+  height: 80px;
   transition-duration: 0.25s;
 }
 
 #About ul li {
   height: 20px;
-  padding: 10px;
+  padding: 10px 0 10px 40px;
 }
 
 #Works input {
@@ -307,13 +309,13 @@ textarea {
   overflow: hidden;
 }
 #Works input:checked + ul {
-  height: 140px;
+  height: 120px;
   transition-duration: 0.25s;
 }
 
 #Works ul li {
   height: 20px;
-  padding: 10px;
+  padding: 10px 0 10px 40px;
 }
 
 #Graph input {
@@ -325,13 +327,13 @@ textarea {
   overflow: hidden;
 }
 #Graph input:checked + ul {
-  height: 140px;
+  height: 120px;
   transition-duration: 0.25s;
 }
 
 #Graph ul li {
   height: 20px;
-  padding: 10px;
+  padding: 10px 0 10px 40px;
 }
 
 .m0 {

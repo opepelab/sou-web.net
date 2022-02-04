@@ -39,23 +39,16 @@ const Header: React.FC = () => {
                         {about && (
                           <ul className="White menu">
                             <li>
-                              <ActiveLink href="/about" activeClassName="headerState">
-                                <a>
-                                  <div className="hoverBG BlockM">私について(詳細)</div>
-                                </a>
-                              </ActiveLink>
-                            </li>
-                            <li>
                               <ActiveLink href="/profile" activeClassName="headerState">
                                 <a>
-                                  <div className="hoverBG BlockM">プロフィール(概要)</div>
+                                  <div className="hoverBG BlockM">Summary</div>
                                 </a>
                               </ActiveLink>
                             </li>
                             <li>
-                              <ActiveLink href="/privacy" activeClassName="headerState">
+                              <ActiveLink href="/about" activeClassName="headerState">
                                 <a>
-                                  <div className="hoverBG BlockM">Privacy Policy</div>
+                                  <div className="hoverBG BlockM">Overview</div>
                                 </a>
                               </ActiveLink>
                             </li>
@@ -68,7 +61,7 @@ const Header: React.FC = () => {
                 <li>
                   <div aria-expanded={links} onClick={() => setLinks(!links)}>
                     <a className="hoverBG Block">
-                      <div className="gg-work-alt" /> Works
+                      <div className="gg-work-alt" /> Work
                       <div className="SankakuBlack" />
                     </a>
                   </div>
