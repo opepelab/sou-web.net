@@ -1,29 +1,24 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useMemo } from "react";
 import ActiveLink from "./Sys/ActiveLink";
 
-const Menu: React.FC = () => {
+const Menu = () => {
   const [open, setOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null!);
-  useEffect(() => {
+  useMemo(() => {
     open && menuRef.current.focus();
   }, [open]);
 
   return (
     <div>
-      <div>
-        <div className="Line" aria-expanded={open} onClick={() => setOpen(!open)}>
-          <button aria-label="Toggle mobile navigation menu" type="button" className="Humb">
+      <div className="Line">
+        <div aria-expanded={open} onClick={() => setOpen(!open)}>
+          <button aria-label="Toggle mobile navigation menu" type="button">
             <span />
             <span />
           </button>
         </div>
       </div>
-      <div
-        ref={menuRef}
-        tabIndex={1}
-        onBlur={() => setTimeout(() => setOpen(!open), 125)}
-        onFocus={() => setOpen(!open)}
-      >
+      <div ref={menuRef} tabIndex={0} onBlur={() => setOpen(!open)} onFocus={() => setOpen(!open)}>
         <div className="MenuList">
           <div aria-expanded={open} onClick={() => setOpen(!open)}>
             <nav>
