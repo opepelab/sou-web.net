@@ -10,7 +10,7 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
         <title>mail - sou</title>
         <meta name="description" content="メール" />
       </Head>
-      <main className="CN">
+      <main className="CN Mail">
         <form>
           <h1>Are you sure?</h1>
           <dl>

@@ -92,21 +92,17 @@
     transform: translate(100px);
   }
 
-  input {
-    user-select: none;
-  }
-
   .disableN {
     display: none;
   }
 
   /* ブログとコンタクトのスケール再定義 */
 
-  input {
+  .Mail form input {
     width: 240px;
   }
 
-  textarea {
+  .Mail form textarea {
     width: 290px;
     height: 215px;
   }

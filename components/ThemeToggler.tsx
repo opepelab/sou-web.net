@@ -19,9 +19,9 @@ export const ThemeToggler = () => {
           setTrans(!trans);
         }}
       >
-        <button aria-label="Toggle Theme Dark or Light" type="button" className="toggle">
+        <div aria-label="Toggle Theme Dark or Light" className="toggle">
           <div className="sun" />
-        </button>
+        </div>
       </div>
     </div>
   );
