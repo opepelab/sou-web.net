@@ -7,133 +7,134 @@
 
   *:focus {
     outline: none;
-    
-  body {
-    width: 90%;
-  }
 
-  .bgg {
-    display: none;
-  }
+    body {
+      width: 90%;
+    }
 
-  .margin50p {
-    margin-top: 80px;
-  }
+    .bgg {
+      display: none;
+    }
 
-  .Line button {
-    z-index: 6;
-    position: relative;
-    box-shadow: 0px 0px 4px 1px white;
-    border-radius: 12%;
-    background: #333;
-    padding-top: 26px;
-    padding-bottom: 0px;
-    padding-left: 8px;
-    padding-right: 8px;
-    transition-duration: 1s;
-    outline: none;
-    border: none;
-  }
+    .margin50p {
+      margin-top: 80px;
+    }
 
-  button {
-    background: none;
-    outline: none;
-    border: none;
-    color: transparent;
-  }
+    .Line button {
+      z-index: 6;
+      position: relative;
+      box-shadow: 0px 0px 4px 1px white;
+      border-radius: 12%;
+      background: #333;
+      padding-top: 26px;
+      padding-bottom: 0px;
+      padding-left: 8px;
+      padding-right: 8px;
+      transition-duration: 1s;
+      outline: none;
+      border: none;
+    }
 
-  .Line {
-    z-index: 6;
-    position: fixed;
-    display: inline-block;
-    right: 5px;
-    top: 5px;
-  }
-  .Line span {
-    display: block;
-    position: relative;
-    height: 2px;
-    width: 14px;
-    background-color: #fff;
-    border-radius: 4px;
-  }
+    button {
+      background: none;
+      outline: none;
+      border: none;
+      color: transparent;
+    }
 
-  .Line span:nth-of-type(1) {
-    bottom: 15px;
-  }
+    .Line {
+      z-index: 6;
+      position: fixed;
+      display: inline-block;
+      right: 5px;
+      top: 5px;
+    }
+    .Line span {
+      display: block;
+      position: relative;
+      height: 2px;
+      width: 14px;
+      background-color: #fff;
+      border-radius: 4px;
+    }
 
-  .Line span:nth-of-type(2) {
-    bottom: 10px;
-  }
+    .Line span:nth-of-type(1) {
+      bottom: 15px;
+    }
 
-  .Line [aria-expanded="true"] span:nth-of-type(1) {
-    transform: rotate(45deg) translateY(2.5px) translateX(2.5px) scale(1.2);
-    transition-duration: 0.1s;
-  }
+    .Line span:nth-of-type(2) {
+      bottom: 10px;
+    }
 
-  .Line [aria-expanded="true"] span:nth-of-type(2) {
-    transform: rotate(-45deg) translateY(-2.5px) translateX(2.5px) scale(1.2);
-    transition-duration: 0.1s;
-  }
+    .Line [aria-expanded="true"] span:nth-of-type(1) {
+      transform: rotate(45deg) translateY(2.5px) translateX(2.5px) scale(1.2);
+      transition-duration: 0.1s;
+    }
 
-  .Line [aria-expanded="false"] span:nth-of-type(1) {
-    transition-duration: 0.1s;
-  }
+    .Line [aria-expanded="true"] span:nth-of-type(2) {
+      transform: rotate(-45deg) translateY(-2.5px) translateX(2.5px) scale(1.2);
+      transition-duration: 0.1s;
+    }
 
-  .Line [aria-expanded="false"] span:nth-of-type(2) {
-    transition-duration: 0.1s;
-  }
+    .Line [aria-expanded="false"] span:nth-of-type(1) {
+      transition-duration: 0.1s;
+    }
 
-  .MenuList [aria-expanded="true"] {
-    z-index: 4;
-    position: fixed;
-    @include Menu;
-    visibility: visible;
-  }
+    .Line [aria-expanded="false"] span:nth-of-type(2) {
+      transition-duration: 0.1s;
+    }
 
-  .MenuList [aria-expanded="false"] {
-    @include Menu;
-    opacity: 0;
-    visibility: none;
-  }
+    .MenuList [aria-expanded="true"] {
+      z-index: 4;
+      position: fixed;
+      @include Menu;
+      visibility: visible;
+    }
 
-  .disableN {
-    display: none;
-  }
+    .MenuList [aria-expanded="false"] {
+      @include Menu;
+      opacity: 0;
+      visibility: none;
+    }
 
-  /* ブログとコンタクトのスケール再定義 */
+    .disableN {
+      display: none;
+    }
 
-  .Mail form input {
-    width: 240px;
-  }
+    /* ブログとコンタクトのスケール再定義 */
 
-  .Mail form textarea {
-    width: 290px;
-    height: 215px;
-  }
+    .Mail form input {
+      width: 240px;
+    }
 
-  dd {
-    margin-bottom: 12px;
-  }
+    .Mail form textarea {
+      width: 290px;
+      height: 215px;
+    }
 
-  .hidari {
-    position: absolute;
-    top: 20px;
-    left: 30px;
-  }
+    dd {
+      margin-bottom: 12px;
+    }
 
-  .toggle {
-    position: absolute;
-    top: 25px;
-    left: 275px;
-  }
+    .hidari {
+      position: absolute;
+      top: 20px;
+      left: 30px;
+    }
 
-  .position {
-    @include CenString;
-    top: -82px;
-    left: -100px;
-  }
-  pre code span {
-    font-size: $p10;
+    .toggle {
+      position: absolute;
+      top: 25px;
+      left: 275px;
+    }
+
+    .position {
+      @include CenString;
+      top: -82px;
+      left: -100px;
+    }
+    pre code span {
+      font-size: $p10;
+    }
   }
 }
