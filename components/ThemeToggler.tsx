@@ -12,15 +12,17 @@ export const ThemeToggler = () => {
 
   return (
     <div className="inblo">
-      <div
-        aria-expanded={trans}
-        onClick={() => {
-          toggleTheme(theme === "dark" ? "light" : "dark");
-          setTrans(!trans);
-        }}
-      >
+      <div>
         <button aria-label="Toggle Theme Dark or Light" type="button" className="toggle">
-          <div className="sun" />
+          <div
+            aria-expanded={trans}
+            onClick={() => {
+              toggleTheme(theme === "light" ? "dark" : "light");
+              setTrans(!trans);
+            }}
+          >
+            <div className="Big gg-dark-mode" />
+          </div>
         </button>
       </div>
     </div>

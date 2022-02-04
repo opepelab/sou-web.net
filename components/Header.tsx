@@ -30,7 +30,7 @@ const Header: React.FC = () => {
                 <li>
                   <div aria-expanded={about} onClick={() => setAbout(!about)}>
                     <a className="hoverBG Block">
-                      About
+                      <div className="gg-details-more" /> About
                       <div className="SankakuBlack" />
                     </a>
                   </div>
@@ -103,7 +103,7 @@ const Header: React.FC = () => {
                 <li>
                   <div aria-expanded={graph} onClick={() => setGraph(!graph)}>
                     <a className="hoverBG Block">
-                      Graphics
+                      <div className="gg-digitalocean" /> Graphics
                       <div className="SankakuBlack" />
                     </a>
                   </div>
@@ -151,7 +151,9 @@ const Header: React.FC = () => {
                 </li>
                 <li>
                   <ActiveLink href="/develop" activeClassName="headerState">
-                    <a className="hoverBG Block">Development Environment</a>
+                    <a className="hoverBG Block">
+                      <div className="gg-path-trim" /> Development Environment
+                    </a>
                   </ActiveLink>
                 </li>
 

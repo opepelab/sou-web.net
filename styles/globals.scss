@@ -175,7 +175,7 @@ a {
 }
 
 .Block {
-  padding: 15px 24px 24px 24px;
+  padding: 16px 24px 23px 24px;
 }
 
 .BlockM {
@@ -246,9 +246,10 @@ textarea {
 }
 
 .hidari {
+  z-index: 3;
   position: relative;
   left: -700px;
-  top: 12px;
+  top: 0px;
   font-size: 30px;
 }
 
@@ -257,7 +258,7 @@ textarea {
   z-index: 3;
   user-select: none;
   position: relative;
-  top: 4px;
+  top: 2px;
   left: -650px;
   display: flex;
   align-items: center;
@@ -272,14 +273,7 @@ textarea {
 }
 
 .toggle [aria-expanded="true"] {
-  transform: rotate(60deg);
-  transition-duration: 1s;
-  color: white;
-}
-
-.toggle [aria-expanded="false"] {
-  transition-duration: 1s;
-  color: black;
+  transform: rotate(180deg);
 }
 
 #About input {

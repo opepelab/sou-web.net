@@ -91,25 +91,22 @@ a dt .dateST {
   pointer-events: none;
 }
 
-.Top-BG {
-  z-index: 0;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 75px;
-  // background: white;
-}
+// .Top-BG {
+//   z-index: 0;
+//   position: absolute;
+//   top: 0px;
+//   left: 0px;
+//   width: 100%;
+//   height: 75px;
+// }
 
 .bgg {
   z-index: 2;
   position: absolute;
-  width: 80%;
+  width: 100%;
   height: 64px;
   background: linear-gradient(0.25turn, $BG, #ebf8e1, $BG);
-  border-radius: 30px;
-  margin: 0px 10% 0px 10%;
-  top: 75px;
+  top: 0px;
   left: $p0;
 }
 
