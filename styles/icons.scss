@@ -187,10 +187,10 @@
 .gg-dark-mode {
   box-sizing: border-box;
   position: relative;
-  display: inline-block;
+  display: block;
   transform: scale(var(--ggs, 1));
   border: 2px solid;
-  border-radius: 50%;
+  border-radius: 100px;
   width: 20px;
   height: 20px;
 }
@@ -226,7 +226,7 @@
 }
 
 .Big {
-  transform: rotate(180deg) scale(2.1);
+  transform: scale(2.1);
 }
 
 .gg-coffee {

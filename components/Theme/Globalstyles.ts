@@ -42,7 +42,7 @@ export const GlobalStyles = createGlobalStyle<Props>`
     .bgg {
         background: ${(props) => props.theme.bgNav};
     }
-    .Humb {
+    .Line button {
         box-shadow: ${(props) => props.theme.shadow};
     }
     .toggle {
