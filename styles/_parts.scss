@@ -91,15 +91,6 @@ a dt .dateST {
   pointer-events: none;
 }
 
-// .Top-BG {
-//   z-index: 0;
-//   position: absolute;
-//   top: 0px;
-//   left: 0px;
-//   width: 100%;
-//   height: 75px;
-// }
-
 .bgg {
   z-index: 2;
   position: absolute;
@@ -169,4 +160,16 @@ a dt .dateST {
   box-shadow: -8px 0 0 -3px currentColor, 8px 0 0 -3px currentColor, 0 -8px 0 -3px currentColor,
     0 8px 0 -3px currentColor, -6px -6px 0 -3px currentColor, -6px 6px 0 -3px currentColor, 6px -6px 0 -3px currentColor,
     6px 6px 0 -3px currentColor;
+}
+
+.right {
+  margin-left: 20px;
+}
+
+.right2 {
+  margin-left: 2px;
+}
+
+.right3 {
+  margin-left: 3px;
 }

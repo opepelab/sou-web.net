@@ -22,7 +22,6 @@ const Header: React.FC = () => {
   return (
     <div className="Nlink">
       <header>
-        <div className="Top-BG" />
         <div className="bgg">
           <div className="disableN">
             <nav>
@@ -54,9 +53,9 @@ const Header: React.FC = () => {
                               </ActiveLink>
                             </li>
                             <li>
-                              <ActiveLink href="/konokey" activeClassName="headerState">
+                              <ActiveLink href="/privacy" activeClassName="headerState">
                                 <a>
-                                  <div className="hoverBG BlockM">このサイトについて</div>
+                                  <div className="hoverBG BlockM">Privacy Policy</div>
                                 </a>
                               </ActiveLink>
                             </li>

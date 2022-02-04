@@ -113,10 +113,14 @@ ul {
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding: 40px;
+  padding: 20px;
   row-gap: 20px;
   font-size: 14px;
   white-space: nowrap;
+}
+
+.nav2 a {
+  color: $ST;
 }
 
 .nav3 {
@@ -312,12 +316,24 @@ textarea {
   padding: 10px;
 }
 
-.position {
-  z-index: 1;
-  position: relative;
-  left: 200px;
-  transform: scale(1);
+#Graph input {
+  display: none;
+  width: 100%;
 }
+#Graph ul {
+  height: 0;
+  overflow: hidden;
+}
+#Graph input:checked + ul {
+  height: 140px;
+  transition-duration: 0.25s;
+}
+
+#Graph ul li {
+  height: 20px;
+  padding: 10px;
+}
+
 .m0 {
   cursor: pointer;
 }

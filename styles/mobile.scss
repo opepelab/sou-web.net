@@ -17,6 +17,8 @@
   }
 
   .Humb {
+    z-index: 5;
+    position: relative;
     box-shadow: 0px 0px 4px 1px white;
     border-radius: 12%;
     background: #333;
@@ -28,9 +30,8 @@
   }
 
   .Line {
-    display: inline-block;
-    z-index: 5;
     position: fixed;
+    display: inline-block;
     right: 5px;
     top: 5px;
   }
@@ -85,15 +86,6 @@
     display: none;
   }
 
-  @keyframes feed {
-    from {
-      opacity: 0.05;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
   /* ブログとコンタクトのスケール再定義 */
 
   input {
@@ -111,16 +103,18 @@
 
   /* Topヘッダーモビ */
   .hidari {
+    z-index: 3;
     position: absolute;
     white-space: nowrap;
     top: 30px;
-    left: 20px;
+    left: 30px;
   }
 
   .toggle {
+    z-index: 3;
     position: absolute;
     top: 25px;
-    left: 265px;
+    left: 275px;
   }
 
   .position {

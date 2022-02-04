@@ -23,32 +23,31 @@ const Menu: React.FC = () => {
               <ul className="nav2">
                 <li id="About">
                   <label htmlFor="toggle1">
-                    About
-                    <div className="SankakuWhite" />
+                    <a>
+                      <div className="gg-details-more" />
+                      &nbsp;About
+                      <div className="SankakuWhite" />
+                    </a>
                   </label>
                   <input type="checkbox" id="toggle1" autoComplete="off" />
                   <ul>
                     <li>
-                      <ActiveLink href="/about" activeClassName="headerState">
-                        <a>私について(詳細)</a>
-                      </ActiveLink>
-                    </li>
-                    <li>
                       <ActiveLink href="/profile" activeClassName="headerState">
-                        <a>プロフィール(概要)</a>
+                        <a>Summary</a>
                       </ActiveLink>
                     </li>
                     <li>
-                      <ActiveLink href="/konokey" activeClassName="headerState">
-                        <a>このサイトについて</a>
+                      <ActiveLink href="/about" activeClassName="headerState">
+                        <a>Overview</a>
                       </ActiveLink>
                     </li>
                   </ul>
                 </li>
                 <li id="Works">
                   <label htmlFor="toggle2">
-                    <a>
-                      <div className="gg-work-alt" /> Works
+                    <a className="right2">
+                      <div className="gg-work-alt" />
+                      &ensp;Works
                       <div className="SankakuWhite" />
                     </a>
                   </label>
@@ -71,36 +70,63 @@ const Menu: React.FC = () => {
                     </li>
                   </ul>
                 </li>
-
-                <li>
-                  <ActiveLink href="/list/1" activeClassName="">
-                    <a className="scale">
-                      Graphics
+                <li id="Graph">
+                  <label htmlFor="toggle3">
+                    <a>
+                      <div className="gg-digitalocean" />
+                      &nbsp;Graphics
                       <div className="SankakuWhite" />
+                    </a>
+                  </label>
+                  <input type="checkbox" id="toggle3" autoComplete="off" />
+                  <ul>
+                    <li>
+                      <a href="https://github.com/opepelab" target="_blank">
+                        Instagram
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.pixiv.net/users/10729947" target="_blank">
+                        Pixiv
+                      </a>
+                    </li>
+                    <li>
+                      <ActiveLink href="/photo" activeClassName="headerState">
+                        <a>Whiteboard</a>
+                      </ActiveLink>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <ActiveLink href="/list/1" activeClassName="headerState">
+                    <a className="right">
+                      <div className="gg-code-slash" />
+                      &nbsp;I/O
                     </a>
                   </ActiveLink>
                 </li>
                 <li>
                   <ActiveLink href="/mail" activeClassName="headerState">
-                    <a className="scale">
-                      <div className="gg-code-slash" />
-                      I/O
+                    <a className="right2">
+                      <div className="gg-mail" />
+                      &nbsp;Mail
                     </a>
                   </ActiveLink>
                 </li>
                 <li>
-                  <ActiveLink href="/links" activeClassName="headerState">
-                    <a>Contact</a>
-                  </ActiveLink>
-                </li>
-                <li>
-                  <ActiveLink href="/photo" activeClassName="headerState">
-                    <a>Development Environment</a>
-                  </ActiveLink>
-                </li>
-                <li>
                   <ActiveLink href="/develop" activeClassName="headerState">
-                    <a>Devlop</a>
+                    <a className="right3">
+                      <div className="gg-path-trim" />
+                      &nbsp;Development Environment
+                    </a>
+                  </ActiveLink>
+                </li>
+                <li>
+                  <ActiveLink href="/privacy" activeClassName="headerState">
+                    <a className="right3">
+                      <div className="gg-coffee" />
+                      &ensp;Privacy Policy
+                    </a>
                   </ActiveLink>
                 </li>
               </ul>
