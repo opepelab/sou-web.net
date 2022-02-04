@@ -88,8 +88,8 @@
   .MenuList [aria-expanded="false"] {
     @include Menu;
     opacity: 0;
-    visibility: unset;
-    transform: translate(100px);
+    visibility: none;
+    transform: translate(20px);
   }
 
   .disableN {
