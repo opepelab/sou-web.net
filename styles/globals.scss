@@ -255,31 +255,28 @@ textarea {
   z-index: 3;
   position: relative;
   left: -700px;
-  top: -42px;
+  top: -36px;
   font-size: 30px;
 }
 
 .toggle {
   z-index: 3;
   position: relative;
-  color: white;
-  user-select: none;
-  top: 2px;
+  top: 6px;
   left: -500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
   font-size: 22px;
-  cursor: pointer;
-  background: $BG;
   border-radius: 50%;
   box-shadow: 0px 0px 8px 1px white;
+  cursor: pointer;
+}
+
+.toggle [aria-expanded="true"] {
+  transform: rotate(0deg);
 }
 
 .toggle [aria-expanded="true"] {
   transform: rotate(180deg);
+  color: $BG;
 }
 
 #About input {

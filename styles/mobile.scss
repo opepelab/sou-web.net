@@ -29,11 +29,18 @@
     transition-duration: 1s;
   }
 
+  button {
+    background: none;
+    outline: none;
+    border: none;
+    color: transparent;
+  }
+
   .Line {
     z-index: 6;
     position: fixed;
     display: inline-block;
-    right: 5px;
+    right: 0px;
     top: 5px;
   }
   .Line span {

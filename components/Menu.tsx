@@ -10,13 +10,13 @@ const Menu: React.FC = () => {
 
   return (
     <div>
-      <div className="Line">
-        <div aria-expanded={open} onClick={() => setOpen(!open)}>
-          <div aria-label="Toggle mobile navigation menu" className="Humb">
+      <div className="Line" aria-expanded={open} onClick={() => setOpen(!open)}>
+        <button aria-label="Toggle mobile navigation menu" type="button">
+          <div className="Humb">
             <span />
             <span />
           </div>
-        </div>
+        </button>
       </div>
       <div ref={menuRef} tabIndex={1} onBlur={() => setOpen(!open)} onFocus={() => setOpen(!open)}>
         <div className="MenuList">

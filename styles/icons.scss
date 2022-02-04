@@ -187,10 +187,10 @@
 .gg-dark-mode {
   box-sizing: border-box;
   position: relative;
-  display: block;
+  display: inline-block;
   transform: scale(var(--ggs, 1));
   border: 2px solid;
-  border-radius: 100px;
+  border-radius: 50%;
   width: 20px;
   height: 20px;
 }
