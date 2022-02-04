@@ -18,12 +18,16 @@ const Menu: React.FC = () => {
           </button>
         </div>
       </div>
-
-      <div className="MenuList">
-        <div aria-expanded={open} onClick={() => setOpen(!open)}>
-          <div ref={menuRef} tabIndex={1} onBlur={() => setOpen(!open)} onFocus={() => setOpen(!open)}>
+      <div
+        ref={menuRef}
+        tabIndex={1}
+        onBlur={() => setTimeout(() => setOpen(!open), 125)}
+        onFocus={() => setOpen(!open)}
+      >
+        <div className="MenuList">
+          <div aria-expanded={open} onClick={() => setOpen(!open)}>
             <nav>
-              <ul className="nav2" onClick={(e) => e.stopPropagation()}>
+              <ul className="nav2">
                 <li id="About">
                   <label htmlFor="toggle1">
                     <a>
