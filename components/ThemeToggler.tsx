@@ -21,7 +21,7 @@ export const ThemeToggler = () => {
         }}
       >
         <div aria-label="Toggle Theme Dark or Light">
-          <div className="sun" />
+          <div className="gg-sun" />
         </div>
       </div>
     </div>
