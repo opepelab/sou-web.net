@@ -116,7 +116,7 @@ ul {
   flex-direction: column;
   text-align: left;
   padding: 20px;
-  row-gap: 20px;
+  row-gap: 10px;
   font-size: 14px;
   white-space: nowrap;
 }
@@ -294,13 +294,13 @@ textarea {
   overflow: hidden;
 }
 #About input:checked + ul {
-  height: 70px;
+  height: 55px;
   transition-duration: 0.25s;
 }
 
 #About ul li {
   height: 20px;
-  padding: 10px 0 10px 40px;
+  padding: 5px 0 5px 40px;
 }
 
 #Works input {
@@ -312,13 +312,13 @@ textarea {
   overflow: hidden;
 }
 #Works input:checked + ul {
-  height: 110px;
+  height: 85px;
   transition-duration: 0.25s;
 }
 
 #Works ul li {
   height: 20px;
-  padding: 10px 0 10px 40px;
+  padding: 5px 0 5px 40px;
 }
 
 #Graph input {
@@ -330,13 +330,13 @@ textarea {
   overflow: hidden;
 }
 #Graph input:checked + ul {
-  height: 110px;
+  height: 85px;
   transition-duration: 0.25s;
 }
 
 #Graph ul li {
   height: 20px;
-  padding: 10px 0 10px 40px;
+  padding: 5px 0 5px 40px;
 }
 
 .m0 {
