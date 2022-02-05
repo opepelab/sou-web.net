@@ -150,18 +150,6 @@ a dt .dateST {
   color: #ebf8e1;
 }
 
-.sun {
-  transform: scale(1.4);
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  border: 1px solid currentColor;
-  background-color: currentColor;
-  box-shadow: -8px 0 0 -3px currentColor, 8px 0 0 -3px currentColor, 0 -8px 0 -3px currentColor,
-    0 8px 0 -3px currentColor, -6px -6px 0 -3px currentColor, -6px 6px 0 -3px currentColor, 6px -6px 0 -3px currentColor,
-    6px 6px 0 -3px currentColor;
-}
-
 .right {
   margin-left: 9px;
 }
