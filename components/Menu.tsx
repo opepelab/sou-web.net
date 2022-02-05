@@ -49,7 +49,7 @@ const Menu = () => {
                   <label htmlFor="toggle2">
                     <a className="right2">
                       <div className="gg-work-alt" />
-                      &ensp;Works
+                      &ensp;Work
                       <div className="SankakuWhite" />
                     </a>
                   </label>
