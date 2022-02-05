@@ -29,7 +29,8 @@ const Header: React.FC = () => {
                 <li>
                   <div aria-expanded={about} onClick={() => setAbout(!about)}>
                     <a className="hoverBG Block">
-                      <div className="gg-details-more" /> About
+                      <div className="gg-details-more" />
+                      About
                       <div className="SankakuBlack" />
                     </a>
                   </div>
@@ -61,7 +62,8 @@ const Header: React.FC = () => {
                 <li>
                   <div aria-expanded={links} onClick={() => setLinks(!links)}>
                     <a className="hoverBG Block">
-                      <div className="gg-work-alt" /> Work
+                      <div className="gg-work-alt" />
+                      Work
                       <div className="SankakuBlack" />
                     </a>
                   </div>
@@ -95,7 +97,8 @@ const Header: React.FC = () => {
                 <li>
                   <div aria-expanded={graph} onClick={() => setGraph(!graph)}>
                     <a className="hoverBG Block">
-                      <div className="gg-digitalocean" /> Graphics
+                      <div className="gg-digitalocean" />
+                      Graphics
                       <div className="SankakuBlack" />
                     </a>
                   </div>
@@ -130,21 +133,24 @@ const Header: React.FC = () => {
                 <li>
                   <ActiveLink href="/list/1" activeClassName="headerState">
                     <a className="hoverBG Block">
-                      <div className="gg-code-slash" /> I/O
+                      <div className="gg-code-slash" />
+                      I/O
                     </a>
                   </ActiveLink>
                 </li>
                 <li>
                   <ActiveLink href="/mail" activeClassName="headerState">
                     <a className="hoverBG Block">
-                      <div className="gg-mail" /> Contact
+                      <div className="gg-mail" />
+                      Mail
                     </a>
                   </ActiveLink>
                 </li>
                 <li>
                   <ActiveLink href="/develop" activeClassName="headerState">
                     <a className="hoverBG Block">
-                      <div className="gg-path-trim" /> Development Environment
+                      <div className="gg-path-trim" />
+                      Development Environment
                     </a>
                   </ActiveLink>
                 </li>

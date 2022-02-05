@@ -27,7 +27,7 @@ const Menu = () => {
                   <label htmlFor="toggle1">
                     <a>
                       <div className="gg-details-more" />
-                      &nbsp;About
+                      About
                       <div className="SankakuWhite" />
                     </a>
                   </label>
@@ -49,7 +49,7 @@ const Menu = () => {
                   <label htmlFor="toggle2">
                     <a className="right2">
                       <div className="gg-work-alt" />
-                      &ensp;Work
+                      Work
                       <div className="SankakuWhite" />
                     </a>
                   </label>
@@ -74,9 +74,9 @@ const Menu = () => {
                 </li>
                 <li id="Graph">
                   <label htmlFor="toggle3">
-                    <a>
+                    <a className="right5">
                       <div className="gg-digitalocean" />
-                      &nbsp;Graphics
+                      Graphics
                       <div className="SankakuWhite" />
                     </a>
                   </label>
@@ -103,15 +103,15 @@ const Menu = () => {
                   <ActiveLink href="/list/1" activeClassName="headerState">
                     <a className="right">
                       <div className="gg-code-slash" />
-                      &nbsp;I/O
+                      I/O
                     </a>
                   </ActiveLink>
                 </li>
                 <li>
                   <ActiveLink href="/mail" activeClassName="headerState">
-                    <a className="right2">
+                    <a>
                       <div className="gg-mail" />
-                      &nbsp;Mail
+                      Mail
                     </a>
                   </ActiveLink>
                 </li>
@@ -119,15 +119,15 @@ const Menu = () => {
                   <ActiveLink href="/develop" activeClassName="headerState">
                     <a className="right3">
                       <div className="gg-path-trim" />
-                      &nbsp;Development Environment
+                      Development Environment
                     </a>
                   </ActiveLink>
                 </li>
                 <li>
                   <ActiveLink href="/privacy" activeClassName="headerState">
-                    <a className="right3">
+                    <a className="right4">
                       <div className="gg-coffee" />
-                      &ensp;Privacy Policy
+                      Privacy Policy
                     </a>
                   </ActiveLink>
                 </li>
