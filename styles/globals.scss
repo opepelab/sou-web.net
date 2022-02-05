@@ -116,7 +116,7 @@ ul {
   flex-direction: column;
   text-align: left;
   padding: 20px;
-  row-gap: 10px;
+  row-gap: 15px;
   font-size: 14px;
   white-space: nowrap;
 }
@@ -287,7 +287,6 @@ textarea {
 
 #About input {
   display: none;
-  width: 100%;
 }
 #About ul {
   height: 0;
@@ -305,7 +304,6 @@ textarea {
 
 #Works input {
   display: none;
-  width: 100%;
 }
 #Works ul {
   height: 0;
@@ -323,7 +321,6 @@ textarea {
 
 #Graph input {
   display: none;
-  width: 100%;
 }
 #Graph ul {
   height: 0;
