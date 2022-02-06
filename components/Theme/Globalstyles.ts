@@ -52,7 +52,7 @@ export const GlobalStyles = createGlobalStyle<Props>`
     .toggle {
         background: ${(props) => props.theme.black};
         color: ${(props) => props.theme.MainBG};
-        box-shadow: ${(props) => props.theme.shadow};
+        // box-shadow: ${(props) => props.theme.shadow};
     }
 }
 `;

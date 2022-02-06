@@ -272,3 +272,40 @@
 .gg-sun::after {
   transform: rotate(45deg);
 }
+
+.feedicon {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  position: relative;
+}
+.f1,
+.f2,
+.f3 {
+  position: absolute;
+}
+.f2,
+.f3 {
+  border-top: 5px solid #ffffff;
+  border-right: 5px solid #ffffff;
+}
+.f1 {
+  background-color: #ffffff;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+  bottom: 0;
+  left: 0;
+}
+.f2 {
+  width: 9px;
+  height: 9px;
+  border-radius: 0 13px 0 0;
+  bottom: 0;
+}
+.f3 {
+  width: 17px;
+  height: 17px;
+  border-radius: 0 22px 0 0;
+}
