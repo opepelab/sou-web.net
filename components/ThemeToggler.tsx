@@ -12,7 +12,7 @@ export const ThemeToggler = () => {
 
   return (
     <div className="inblo">
-      <button
+      <div
         className="toggle"
         aria-expanded={trans}
         aria-label="Toggle Theme Dark or Light"
@@ -21,8 +21,8 @@ export const ThemeToggler = () => {
           setTrans(!trans);
         }}
       >
-        <div className="gg-sun" />
-      </button>
+        <button className="gg-sun" />
+      </div>
     </div>
   );
 };
