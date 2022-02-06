@@ -3,7 +3,7 @@ import Link from "next/link";
 const RSS: React.FC = () => {
   return (
     <div className="RSS">
-      <Link href={"/feed"} prefetch={false}>
+      <Link href="/feed">
         <a>
           <button>
             <div className="feedicon">

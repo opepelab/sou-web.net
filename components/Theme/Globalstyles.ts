@@ -50,9 +50,23 @@ export const GlobalStyles = createGlobalStyle<Props>`
         background-color: ${(props) => props.theme.strong};
     }
     .toggle {
-        background: ${(props) => props.theme.black};
         color: ${(props) => props.theme.MainBG};
         // box-shadow: ${(props) => props.theme.shadow};
+    }
+    .f2,
+    .f3 {
+        border-top: ${(props) => props.theme.f3};
+        border-right: ${(props) => props.theme.f3};
+    }
+    .f1 {
+        background-color: ${(props) => props.theme.strong};
+    }
+    .gg-sun {
+        color: ${(props) => props.theme.strong};
+    }
+    .gg-sun::after,
+    .gg-sun::before {
+        color: ${(props) => props.theme.strong};
     }
 }
 `;

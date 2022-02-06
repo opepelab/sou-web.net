@@ -5,6 +5,7 @@ export type ThemeType = {
   bgNav: string;
   weak: string;
   strong: string;
+  f3: string;
   border: string;
   h12: string;
   links: string;

@@ -24,7 +24,7 @@ const Index: React.FC<Map> = ({ blog }) => {
         <h1>TOP</h1>
         <div className="triangle-bottom" />
         <p>
-          NPOでフロントエンドエンジニアをしているSOU-WEB({" "}
+          NPOでFrontEndとして活動をしているSOU-WEB({" "}
           <a className="blue" href="https://www.facebook.com/opepelab" target="_blank">
             Sou Watanabe
           </a>{" "}

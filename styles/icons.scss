@@ -239,6 +239,7 @@
   box-sizing: border-box;
   position: relative;
   display: block;
+  color: white;
   transform: scale(var(--ggs, 1));
   width: 24px;
   height: 24px;
@@ -254,6 +255,7 @@
 .gg-sun::after,
 .gg-sun::before {
   content: "";
+  color: white;
   display: block;
   box-sizing: border-box;
   position: absolute;
@@ -288,6 +290,7 @@
 .f3 {
   border-top: 5px solid #ffffff;
   border-right: 5px solid #ffffff;
+  border-radius: 50%;
 }
 .f1 {
   background-color: #ffffff;
