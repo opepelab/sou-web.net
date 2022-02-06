@@ -8,7 +8,7 @@ export const generateFeedXml = async () => {
     title: "sou-web",
     description: "説明",
     site_url: "http://sou-web.net",
-    feed_url: "http://sou-web.net/rss.xml",
+    feed_url: "http://sou-web.net/feed",
     language: "ja",
   });
 
