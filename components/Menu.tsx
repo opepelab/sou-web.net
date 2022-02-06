@@ -74,7 +74,7 @@ const Menu = () => {
                 </li>
                 <li id="Graph">
                   <label htmlFor="toggle3">
-                    <a className="right5">
+                    <a>
                       <div className="gg-digitalocean" />
                       Graphics
                       <div className="SankakuWhite" />
@@ -101,7 +101,7 @@ const Menu = () => {
                 </li>
                 <li>
                   <ActiveLink href="/list/1" activeClassName="headerState">
-                    <a className="right">
+                    <a className="">
                       <div className="gg-code-slash" />
                       I/O
                     </a>
@@ -109,7 +109,7 @@ const Menu = () => {
                 </li>
                 <li>
                   <ActiveLink href="/mail" activeClassName="headerState">
-                    <a>
+                    <a className="right5">
                       <div className="gg-mail" />
                       Mail
                     </a>
