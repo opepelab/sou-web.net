@@ -15,6 +15,7 @@ body {
   word-break: break-all;
   text-align: center;
   background: $BG;
+  background-attachment: fixed;
   color: $ST;
   width: 800px;
   @include LRauto;
