@@ -34,7 +34,7 @@ const Header: React.FC = () => {
                       <div className="SankakuBlack" />
                     </a>
                   </div>
-                  <div className="" ref={aboRef} tabIndex={0} onBlur={() => setTimeout(() => setAbout(!about), 125)}>
+                  <div className="" ref={aboRef} tabIndex={1} onBlur={() => setTimeout(() => setAbout(!about), 125)}>
                     <div className="NavDrop">
                       <div aria-expanded={about} onClick={() => setAbout(!about)}>
                         {about && (
@@ -67,7 +67,7 @@ const Header: React.FC = () => {
                       <div className="SankakuBlack" />
                     </a>
                   </div>
-                  <div className="" ref={linkRef} tabIndex={0} onBlur={() => setTimeout(() => setLinks(!links), 125)}>
+                  <div className="" ref={linkRef} tabIndex={1} onBlur={() => setTimeout(() => setLinks(!links), 125)}>
                     <div className="NavDrop HeadMenu">
                       <div aria-expanded={links} onClick={() => setLinks(!links)}>
                         {links && (
@@ -102,7 +102,7 @@ const Header: React.FC = () => {
                       <div className="SankakuBlack" />
                     </a>
                   </div>
-                  <div className="" ref={graRef} tabIndex={0} onBlur={() => setTimeout(() => setGraph(!graph), 125)}>
+                  <div className="" ref={graRef} tabIndex={1} onBlur={() => setTimeout(() => setGraph(!graph), 125)}>
                     <div className="NavDrop">
                       <div aria-expanded={graph} onClick={() => setGraph(!graph)}>
                         {graph && (

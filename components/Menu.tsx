@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import ActiveLink from "./Sys/ActiveLink";
 
 const Menu = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(!true);
   const menuRef = useRef<HTMLDivElement>(null!);
   useEffect(() => {
     open && menuRef.current.focus();
@@ -18,7 +18,7 @@ const Menu = () => {
           </button>
         </div>
       </div>
-      <div ref={menuRef} tabIndex={0} onBlur={() => setOpen(!open)} onFocus={() => setOpen(!open)}>
+      <div ref={menuRef} tabIndex={1} onBlur={() => setOpen(!open)}>
         <div className="MenuList">
           <div aria-expanded={open} onClick={() => setOpen(!open)}>
             <nav>
