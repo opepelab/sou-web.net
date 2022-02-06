@@ -4,6 +4,7 @@ export interface IPostFields {
   title: string;
   slug: string;
   date: string;
+  description: string;
 }
 
 export interface IPost extends EntryCollection<IPostFields> {

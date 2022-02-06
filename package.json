@@ -13,6 +13,7 @@
     "@contentful/rich-text-types": "^15.11.1",
     "@types/gtag.js": "^0.0.8",
     "@types/react-syntax-highlighter": "^13.5.2",
+    "@types/rss": "^0.0.29",
     "@types/styled-components": "^5.1.15",
     "algoliasearch": "^4.12.1",
     "cheerio": "^1.0.0-rc.10",
@@ -31,6 +32,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-syntax-highlighter": "^15.4.5",
+    "rss": "^1.2.2",
     "sass": "^1.43.4",
     "styled-components": "^5.3.3",
     "swr": "^1.1.2"
