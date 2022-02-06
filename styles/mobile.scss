@@ -29,12 +29,12 @@
     position: relative;
     box-shadow: 0px 0px 4px 1px white;
     border-radius: 12%;
-    background: #333;
+    background: $BG;
     padding-top: 26px;
     padding-bottom: 0px;
     padding-left: 8px;
     padding-right: 8px;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
     outline: none;
     border: none;
   }
@@ -50,8 +50,8 @@
     z-index: 6;
     position: fixed;
     display: inline-block;
-    right: 5px;
-    bottom: 5px;
+    right: 15px;
+    top: 30px;
   }
   .Line span {
     display: block;
