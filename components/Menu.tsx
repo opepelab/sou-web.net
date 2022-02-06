@@ -11,6 +11,7 @@ const Menu = () => {
           <button aria-label="Toggle mobile navigation menu" type="button">
             <span />
             <span />
+            <span />
           </button>
         </div>
       </div>

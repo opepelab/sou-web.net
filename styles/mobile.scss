@@ -25,13 +25,13 @@
   }
 
   .Line button {
-    box-shadow: 0px 0px 4px 1px white;
+    // box-shadow: 0px 0px 4px 1px white;
     border-radius: 12%;
     background: $BG;
-    padding-top: 40px;
-    padding-bottom: 14px;
-    padding-left: 22px;
-    padding-right: 22px;
+    padding-top: 29px;
+    padding-bottom: 8px;
+    padding-left: 11px;
+    padding-right: 11px;
     transition-duration: 0.5s;
     outline: none;
     border: none;
@@ -49,13 +49,13 @@
     position: fixed;
     display: inline-block;
     right: 15px;
-    top: 15px;
+    top: 24px;
   }
   .Line span {
     display: block;
     position: relative;
-    height: 2px;
-    width: 14px;
+    height: 1px;
+    width: 18px;
     background-color: #fff;
     border-radius: 4px;
   }
@@ -68,13 +68,22 @@
     bottom: 10px;
   }
 
+  .Line span:nth-of-type(3) {
+    bottom: 5px;
+  }
+
   .Line [aria-expanded="true"] span:nth-of-type(1) {
-    transform: rotate(45deg) translateY(2.5px) translateX(2.5px) scale(1.2);
+    transform: rotate(45deg) translateY(4px) translateX(4px) scale(0.8);
     transition-duration: 0.1s;
   }
 
   .Line [aria-expanded="true"] span:nth-of-type(2) {
-    transform: rotate(-45deg) translateY(-2.5px) translateX(2.5px) scale(1.2);
+    opacity: 0;
+    transition-duration: 0.25s;
+  }
+
+  .Line [aria-expanded="true"] span:nth-of-type(3) {
+    transform: rotate(-45deg) translateY(-4.5px) translateX(4.5px) scale(0.8);
     transition-duration: 0.1s;
   }
 
@@ -83,6 +92,10 @@
   }
 
   .Line [aria-expanded="false"] span:nth-of-type(2) {
+    transition-duration: 0.1s;
+  }
+
+  .Line [aria-expanded="false"] span:nth-of-type(3) {
     transition-duration: 0.1s;
   }
 

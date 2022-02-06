@@ -43,7 +43,7 @@ export const GlobalStyles = createGlobalStyle<Props>`
         background: ${(props) => props.theme.bgNav};
     }
     .Line button {
-        box-shadow: ${(props) => props.theme.shadow};
+        // box-shadow: ${(props) => props.theme.shadow};
         background: ${(props) => props.theme.background};
     }
       .Line span {
