@@ -273,7 +273,6 @@ textarea {
   width: 40px;
   height: 40px;
   cursor: pointer;
-  border-radius: 50%;
   // box-shadow: 0px 0px 4px 1px gray;
 }
 
@@ -287,15 +286,16 @@ textarea {
 .RSS {
   z-index: 3;
   position: relative;
-  width: 40px;
-  height: 40px;
+
   display: flex;
   align-items: center;
   justify-content: center;
   top: 4px;
   left: -185px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
-  // border-radius: 50%;
+  border-radius: 50%;
 }
 
 #About input {
@@ -372,6 +372,5 @@ form:focus-within {
 
 button {
   border: none;
-  outline: none;
   background: transparent;
 }
