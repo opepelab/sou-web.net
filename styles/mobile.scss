@@ -25,13 +25,13 @@
   }
 
   .Line button {
-    // box-shadow: 0px 0px 4px 1px white;
+    box-shadow: 0px 0px 4px 1px white;
     border-radius: 12%;
     background: $BG;
-    padding-top: 29px;
+    padding-top: 27px;
     padding-bottom: 8px;
-    padding-left: 11px;
-    padding-right: 11px;
+    padding-left: 10px;
+    padding-right: 10px;
     transition-duration: 0.5s;
     outline: none;
     border: none;
@@ -61,15 +61,15 @@
   }
 
   .Line span:nth-of-type(1) {
-    bottom: 15px;
+    bottom: 14px;
   }
 
   .Line span:nth-of-type(2) {
-    bottom: 10px;
+    bottom: 9px;
   }
 
   .Line span:nth-of-type(3) {
-    bottom: 5px;
+    bottom: 4px;
   }
 
   .Line [aria-expanded="true"] span:nth-of-type(1) {
