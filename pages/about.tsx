@@ -5,13 +5,13 @@ const About = () => {
   return (
     <Framerdiv>
       <Head>
-        <title>sou-web</title>
+        <title>Overview</title>
         <meta name="description" content="Home" />
       </Head>
       <main className="list margin50p textLeft inblo">
-        <h1>About</h1>
+        <h1>Overview</h1>
         <h5>scientist Number11</h5>
-        <p>渡邊 蒼(Sou Watanabe)の経歴(Careerです。</p>
+        <p>渡邊 蒼(Sou Watanabe)の経歴です。</p>
         <br />
         <p>私の趣味は検証することです。</p>
         <p>直接的な討論は好きではありません。</p>
@@ -19,7 +19,7 @@ const About = () => {
         <p>生年:1994年生まれ 戌年</p>
         <p>趣味:読書やゲームなど</p>
         <br />
-        <p>NPOのプロジェクトWEB制作/WEBアプリケーション開発を手掛けています。</p>
+        <p>NPOのプロジェクトWEBアプリケーション開発を手掛けています。</p>
         <p>ブログを書くのが得意です。</p>
         <p>このサイトのソースコードはMITライセンスです。</p>
         <h1>経歴</h1>
@@ -33,7 +33,7 @@ const About = () => {
           <li>2019年 デザインの勉強を独学で始めました</li>
           <li>2020年 イラストで仕事し始めました</li>
           <li>2021年 TypeScriptを書き始めました</li>
-          <li>2022年 NPOプロジェクトのチームメンバーと働き始めました</li>
+          <li>2022年 NPOプロジェクトのメンバーと働き始めました</li>
         </ul>
         <p>海外に行った経験や引きこもりになった経験や病気で入院した経験があります。</p>
         <p>中学と高校で受けた家族のネグレクトにより育つ環境居場所がありませんでした</p>
