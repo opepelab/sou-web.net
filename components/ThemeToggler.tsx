@@ -18,7 +18,7 @@ export const ThemeToggler = () => {
         aria-expanded={trans}
         aria-label="Toggle Theme Dark or Light"
         onClick={() => {
-          toggleTheme(theme === "light" ? "dark" : "light");
+          toggleTheme(theme === "dark" ? "light" : "dark");
           setTrans(!trans);
         }}
       >

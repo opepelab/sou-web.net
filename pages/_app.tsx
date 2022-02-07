@@ -34,7 +34,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <ThemeContext.Provider value={{ theme, toggleTheme }}>
-        <ThemeProvider theme={theme === "light" ? DarkTheme : LightTheme}>
+        <ThemeProvider theme={theme === "dark" ? LightTheme : DarkTheme}>
           <GlobalStyles />
           <Layout>
             <AnimatePresence exitBeforeEnter>
