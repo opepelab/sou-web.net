@@ -7,11 +7,10 @@ import "../styles/img.scss";
 import Head from "next/head";
 import { ThemeContext, ThemeProvider } from "styled-components";
 import { LightTheme, DarkTheme } from "../components/Theme/Theme";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import GlobalStyles from "../components/Theme/Globalstyles";
 import Layout from "../components/Layout/layout";
 import { GA_TRACKING_ID, pageview } from "../libs/gtag";
-import { useEffect } from "react";
 
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
   useEffect(() => {
