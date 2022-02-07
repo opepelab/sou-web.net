@@ -10,10 +10,6 @@
   @include CenString;
 }
 
-.aBlock {
-  display: block;
-}
-
 .margin50p {
   margin-top: $p50;
 }
@@ -123,8 +119,8 @@ a dt .dateST {
 .SankakuBlack {
   position: relative;
   left: 6px;
-  top: 3px;
-  border-color: #333 transparent transparent transparent;
+  top: 2px;
+  border-color: $ST transparent transparent transparent;
   @include Sankaku;
 }
 

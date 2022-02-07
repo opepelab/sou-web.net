@@ -38,16 +38,18 @@ const Header: React.FC = () => {
                     <div className="NavDrop">
                       <div aria-expanded={about} onClick={() => setAbout(!about)}>
                         {about && (
-                          <ul className="menu">
+                          <ul className="White menu">
                             <li>
                               <ActiveLink href="/profile" activeClassName="headerState">
-                                <a>Summary</a>
+                                <a>
+                                  <div className="hoverBG BlockM">Summary</div>
+                                </a>
                               </ActiveLink>
                             </li>
                             <li>
                               <ActiveLink href="/about" activeClassName="headerState">
                                 <a>
-                                  <div className=" BlockM">Overview</div>
+                                  <div className="hoverBG BlockM">Overview</div>
                                 </a>
                               </ActiveLink>
                             </li>
@@ -61,7 +63,7 @@ const Header: React.FC = () => {
                   <div aria-expanded={links} onClick={() => setLinks(!links)}>
                     <a className="scaleLinks  Block">
                       <div className="gg-work-alt" />
-                      Work
+                      Link
                       <div className="SankakuBlack" />
                     </a>
                   </div>

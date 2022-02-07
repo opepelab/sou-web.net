@@ -6,14 +6,12 @@ import { IPostFields } from "../libs/types";
 export const generateFeedXml = async () => {
   const feed = new RSS({
     title: "sou-web",
-    description: "説明",
+    description: "Sou Watanabeのメモ兼用ウェブアプリケーションです。",
     site_url: "http://sou-web.net",
     feed_url: "http://sou-web.net/rss.xml",
     language: "ja",
   });
 
-  // 例としてpostsを含めるイメージ
-  // このあたりの書き方はライブラリのドキュメントを参考にしてください
   const entries: EntryCollection<IPostFields> = await client.getEntries({
     content_type: "blog",
     order: "-fields.date",
@@ -28,6 +26,5 @@ export const generateFeedXml = async () => {
     });
   });
 
-  // XML形式の文字列にする
   return feed.xml();
 };

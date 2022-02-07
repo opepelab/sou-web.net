@@ -85,7 +85,7 @@ ul {
   position: absolute;
   margin-top: 24px;
   opacity: 1;
-  transition-duration: 0.125s;
+  transition-duration: 0.5s;
 }
 
 .NavDrop [aria-expanded="false"] {
@@ -100,8 +100,8 @@ ul {
 }
 
 .menu {
-  text-align: left;
-  display: inline-block;
+  text-align: center;
+  display: inline-flex;
 }
 
 .White a {

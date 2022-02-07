@@ -2,7 +2,7 @@ import { GetServerSidePropsContext } from "next";
 import { generateFeedXml } from "../libs/feed";
 
 export const getServerSideProps = async ({ res }: GetServerSidePropsContext) => {
-  const xml = await generateFeedXml(); // フィードのXMLを生成する（後述）
+  const xml = await generateFeedXml();
 
   res.statusCode = 200;
   res.setHeader("Cache-Control", "s-maxage=86400, stale-while-revalidate"); // 24時間キャッシュする
