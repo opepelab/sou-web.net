@@ -10,6 +10,7 @@ body {
   font: {
     family: $Google;
     size: $p14;
+    weight: lighter;
   }
   word-break: break-all;
   text-align: center;
@@ -19,16 +20,6 @@ body {
   width: 800px;
   @include LRauto;
   transition-duration: 0.5s;
-}
-
-// code {
-//   // font-size: 12px;
-//   // font-weight: bold;
-//   // font-family: "Consolas", "Courier New", monospace;
-// }
-
-ruby {
-  ruby-align: distribute-letter;
 }
 
 pre {
@@ -118,10 +109,10 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-gap: $p20;
+  grid-gap: $p40;
   white-space: nowrap;
-  left: 160px;
-  top: -15px;
+  left: 200px;
+  top: -14px;
 }
 
 .nav2 {
@@ -132,7 +123,6 @@ ul {
   text-align: left;
   padding: 20px;
   row-gap: 15px;
-  font-size: 14px;
   white-space: nowrap;
 }
 
@@ -189,7 +179,8 @@ a {
 }
 
 .Block {
-  padding: 16px 24px 22px 24px;
+  width: 100px;
+  padding: 10px 24px 13px 24px;
 }
 
 .BlockM {
@@ -265,7 +256,7 @@ textarea {
   position: relative;
   display: inline-block;
   left: -700px;
-  top: -85px;
+  top: -45px;
   font-size: 30px;
 }
 
@@ -276,7 +267,7 @@ textarea {
 .toggle {
   z-index: 3;
   position: relative;
-  top: -42px;
+  top: -2px;
   left: -515px;
   display: flex;
   align-items: center;
@@ -284,28 +275,13 @@ textarea {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.3);
+  background: $BG;
   cursor: pointer;
   box-shadow: 0px 0px 4px 1px gray;
 }
 
 .toggle [aria-expanded="true"] {
   transform: rotate(180deg);
-}
-
-.RSS {
-  z-index: 3;
-  position: relative;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: -4px;
-  left: -185px;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  border-radius: 50%;
 }
 
 #About input {
@@ -334,28 +310,11 @@ textarea {
   overflow: hidden;
 }
 #Works input:checked + ul {
-  height: 120px;
+  height: 240px;
   transition-duration: 0.25s;
 }
 
 #Works ul li {
-  height: 20px;
-  padding: 10px 0 10px 40px;
-}
-
-#Graph input {
-  display: none;
-}
-#Graph ul {
-  height: 0;
-  overflow: hidden;
-}
-#Graph input:checked + ul {
-  height: 120px;
-  transition-duration: 0.25s;
-}
-
-#Graph ul li {
   height: 20px;
   padding: 10px 0 10px 40px;
 }

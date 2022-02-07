@@ -11,7 +11,7 @@ type Props = {
 const Layout: React.FC<Props> = ({ children }) => {
   return (
     <>
-      <RSS />
+      {/* <RSS /> */}
       <ThemeToggler />
       <Menu />
       <Text />

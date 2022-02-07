@@ -52,7 +52,7 @@ const Menu = () => {
                     <label htmlFor="toggle2">
                       <a className="right2">
                         <div className="gg-work-alt" />
-                        Work
+                        Link
                         <div className="SankakuWhite" />
                       </a>
                     </label>
@@ -73,18 +73,6 @@ const Menu = () => {
                           WordPress
                         </a>
                       </li>
-                    </ul>
-                  </li>
-                  <li id="Graph">
-                    <label htmlFor="toggle3">
-                      <a>
-                        <div className="gg-digitalocean" />
-                        Graphics
-                        <div className="SankakuWhite" />
-                      </a>
-                    </label>
-                    <input type="checkbox" id="toggle3" autoComplete="off" />
-                    <ul>
                       <li>
                         <ActiveLink href="/photo" activeClassName="headerState">
                           <a>Whiteboard</a>
@@ -106,7 +94,7 @@ const Menu = () => {
                     <ActiveLink href="/list/1" activeClassName="headerState">
                       <a className="">
                         <div className="gg-code-slash" />
-                        Log
+                        Posts
                       </a>
                     </ActiveLink>
                   </li>

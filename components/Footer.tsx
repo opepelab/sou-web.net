@@ -11,6 +11,14 @@ const Footer: React.FC = () => {
             </div>
           </a>
         </Link>
+        <br />
+        <Link href="/privacy">
+          <a className="inblo C pinkLinks">Privacy Policy</a>
+        </Link>
+        <br />
+        <Link href="/feed">
+          <a className="inblo C pinkLinks">RSS</a>
+        </Link>
       </footer>
     </div>
   );

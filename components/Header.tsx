@@ -87,26 +87,6 @@ const Header: React.FC = () => {
                                 <div className="hoverBG BlockM">WordPress</div>
                               </a>
                             </li>
-                          </ul>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div aria-expanded={graph} onClick={() => setGraph(!graph)}>
-                    <a className="scaleLinks  Block">
-                      <div className="gg-digitalocean" />
-                      Graphics
-                      <div className="SankakuBlack" />
-                    </a>
-                  </div>
-                  <div ref={graRef} tabIndex={1} onBlur={() => setTimeout(() => setGraph(!graph), 125)}>
-                    <div className="NavDrop">
-                      <div aria-expanded={graph} onClick={() => setGraph(!graph)}>
-                        {graph && (
-                          <ul className="White menu">
                             <li>
                               <ActiveLink href="/photo" activeClassName="headerState">
                                 <a>
@@ -130,11 +110,21 @@ const Header: React.FC = () => {
                     </div>
                   </div>
                 </li>
+
+                <li>
+                  <div ref={graRef} tabIndex={1} onBlur={() => setTimeout(() => setGraph(!graph), 125)}>
+                    <div className="NavDrop">
+                      <div aria-expanded={graph} onClick={() => setGraph(!graph)}>
+                        {graph && <ul className="White menu"></ul>}
+                      </div>
+                    </div>
+                  </div>
+                </li>
                 <li>
                   <ActiveLink href="/list/1" activeClassName="headerState">
                     <a className="scaleLinks  Block">
                       <div className="gg-code-slash" />
-                      Log
+                      Posts
                     </a>
                   </ActiveLink>
                 </li>
