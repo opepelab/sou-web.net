@@ -6,7 +6,7 @@ const Menu = () => {
   const menuRef = useRef<HTMLDivElement>(null!);
   useEffect(() => {
     open && menuRef.current.focus();
-  }, []);
+  }, [open]);
 
   return (
     <div>
@@ -24,7 +24,7 @@ const Menu = () => {
           </button>
 
           <div className="MenuList">
-            <div aria-expanded={open} onClick={() => setOpen(false)}>
+            <div aria-expanded={open} onClick={() => setOpen(!open)}>
               <nav>
                 <ul className="nav2">
                   <li id="About">
