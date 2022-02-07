@@ -6,7 +6,7 @@ const Menu = () => {
   const menuRef = useRef<HTMLDivElement>(null!);
   useEffect(() => {
     open && menuRef.current.focus();
-  }, [open]);
+  }, []);
 
   return (
     <div>
