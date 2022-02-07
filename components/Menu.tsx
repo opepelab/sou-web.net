@@ -6,12 +6,12 @@ const Menu = () => {
   const menuRef = useRef<HTMLDivElement>(null!);
   useEffect(() => {
     open;
-  }, [open]);
+  }, []);
 
   return (
     <div>
       <div className="Line">
-        <div ref={menuRef} tabIndex={0} onFocus={() => setOpen(!open)} onBlur={() => setOpen(!open)}>
+        <div ref={menuRef} tabIndex={0} onFocus={() => set(!open)} onBlur={() => setOpen(!open)}>
           <button aria-expanded={open} aria-label="Toggle mobile navigation menu" type="button">
             <span />
             <span />
