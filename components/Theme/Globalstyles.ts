@@ -51,14 +51,6 @@ export const GlobalStyles = createGlobalStyle<Props>`
         background: ${(props) => props.theme.background};
         box-shadow: ${(props) => props.theme.shadow};
     }
-
-    .gg-sun {
-        color: ${(props) => props.theme.strong};
-    }
-    .gg-sun::after,
-    .gg-sun::before {
-        color: ${(props) => props.theme.strong};
-    }
 }
 `;
 
