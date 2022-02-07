@@ -7,8 +7,6 @@ export const LightTheme = {
   background: "#FFF",
   bgg: "#FFEFEF",
   MainBG: "#242f3d",
-  bgNav: "linear-gradient(0.25turn, #f69d3c, #ebf8e1, #3f87a6)",
-
   menu: "rgba(255, 255, 255, 1)",
   border: "solid 1px #333",
   h12: "solid 1px #eaeaea",

@@ -2,7 +2,6 @@ export type ThemeType = {
   background: string;
   bgg: string;
   MainBG: string;
-  bgNav: string;
   weak: string;
   strong: string;
   f3: string;

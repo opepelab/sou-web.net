@@ -73,22 +73,6 @@ $ME: rgba(0, 0, 0, 0.75);
   }
 }
 
-@mixin NAV {
-  list-style: none;
-  font: {
-    size: $p16;
-  }
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-gap: $p20;
-  white-space: nowrap;
-  left: 160px;
-  top: -10px;
-  color: $ST;
-}
-
 @mixin Hover {
   border-bottom: solid 1px $ST;
   width: fit-content;

@@ -20,7 +20,7 @@ const Header: React.FC = () => {
     graph && graRef.current.focus();
   }, [graph]);
   return (
-    <div className="Nlink">
+    <div>
       <header>
         <div className="bgg">
           <div className="disableN">
@@ -28,7 +28,7 @@ const Header: React.FC = () => {
               <ul className="nav1">
                 <li>
                   <div aria-expanded={about} onClick={() => setAbout(!about)}>
-                    <a className="hoverBG Block">
+                    <a className="scaleLinks Block">
                       <div className="gg-details-more" />
                       About
                       <div className="SankakuBlack" />
@@ -38,18 +38,16 @@ const Header: React.FC = () => {
                     <div className="NavDrop">
                       <div aria-expanded={about} onClick={() => setAbout(!about)}>
                         {about && (
-                          <ul className="White menu">
+                          <ul className="menu">
                             <li>
                               <ActiveLink href="/profile" activeClassName="headerState">
-                                <a>
-                                  <div className="hoverBG BlockM">Summary</div>
-                                </a>
+                                <a>Summary</a>
                               </ActiveLink>
                             </li>
                             <li>
                               <ActiveLink href="/about" activeClassName="headerState">
                                 <a>
-                                  <div className="hoverBG BlockM">Overview</div>
+                                  <div className=" BlockM">Overview</div>
                                 </a>
                               </ActiveLink>
                             </li>
@@ -61,7 +59,7 @@ const Header: React.FC = () => {
                 </li>
                 <li>
                   <div aria-expanded={links} onClick={() => setLinks(!links)}>
-                    <a className="hoverBG Block">
+                    <a className="scaleLinks  Block">
                       <div className="gg-work-alt" />
                       Work
                       <div className="SankakuBlack" />
@@ -96,7 +94,7 @@ const Header: React.FC = () => {
 
                 <li>
                   <div aria-expanded={graph} onClick={() => setGraph(!graph)}>
-                    <a className="hoverBG Block">
+                    <a className="scaleLinks  Block">
                       <div className="gg-digitalocean" />
                       Graphics
                       <div className="SankakuBlack" />
@@ -132,15 +130,15 @@ const Header: React.FC = () => {
                 </li>
                 <li>
                   <ActiveLink href="/list/1" activeClassName="headerState">
-                    <a className="hoverBG Block">
+                    <a className="scaleLinks  Block">
                       <div className="gg-code-slash" />
-                      I/O
+                      Log
                     </a>
                   </ActiveLink>
                 </li>
                 <li>
                   <ActiveLink href="/mail" activeClassName="headerState">
-                    <a className="hoverBG Block">
+                    <a className="scaleLinks  Block">
                       <div className="gg-mail" />
                       Mail
                     </a>
@@ -148,35 +146,12 @@ const Header: React.FC = () => {
                 </li>
                 <li>
                   <ActiveLink href="/develop" activeClassName="headerState">
-                    <a className="hoverBG Block">
+                    <a className="scaleLinks  Block">
                       <div className="gg-path-trim" />
                       Development Environment
                     </a>
                   </ActiveLink>
                 </li>
-
-                {/* <ul className="ire">
-                <li>
-                  <a className="scaleLinks">About▿</a>
-                  <ul>
-                    <li>this Blog</li>
-                    <li>Profile</li>
-                    <li></li>
-                    <li>aaa</li>
-                    <li>aaa</li>
-                  </ul>
-                </li>
-              </ul> */}
-                {/* <div id="sample">
-                  <label htmlFor="toggle">ここをクリックすると</label>
-                  <input type="checkbox" id="toggle" autoComplete="off" />
-                  <ul>
-                    <li>要素が変化します</li>
-                    <li>要素が変化します</li>
-                    <li>要素が変化します</li>
-                    <li>要素が変化します</li>
-                  </ul>
-                </div> */}
               </ul>
             </nav>
           </div>

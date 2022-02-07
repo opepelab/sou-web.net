@@ -6,7 +6,7 @@ const Menu = () => {
   const menuRef = useRef<HTMLDivElement>(null!);
   useEffect(() => {
     open && menuRef.current.focus();
-  }, []);
+  }, [open]);
 
   return (
     <div>
@@ -106,7 +106,7 @@ const Menu = () => {
                     <ActiveLink href="/list/1" activeClassName="headerState">
                       <a className="">
                         <div className="gg-code-slash" />
-                        I/O
+                        Log
                       </a>
                     </ActiveLink>
                   </li>
