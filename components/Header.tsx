@@ -62,7 +62,7 @@ const Header: React.FC = () => {
                 <li>
                   <div aria-expanded={links} onClick={() => setLinks(!links)}>
                     <a className="scaleLinks  Block">
-                      <div className="gg-work-alt" />
+                      <div className="gg-style" />
                       Link
                       <div className="SankakuBlack" />
                     </a>

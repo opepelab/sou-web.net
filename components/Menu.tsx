@@ -51,7 +51,7 @@ const Menu = () => {
                   <li id="Works">
                     <label htmlFor="toggle2">
                       <a className="right2">
-                        <div className="gg-work-alt" />
+                        <div className="gg-style" />
                         Link
                         <div className="SankakuWhite" />
                       </a>
