@@ -5,14 +5,19 @@ const Menu = () => {
   const [open, setOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null!);
   useEffect(() => {
-    open;
-  }, []);
+    open && menuRef.current.focus();
+  }, [open]);
 
   return (
     <div>
       <div className="Line">
-        <div ref={menuRef} tabIndex={0} onFocus={() => setOpen(!open)} onBlur={() => setOpen(!open)}>
-          <button aria-expanded={open} aria-label="Toggle mobile navigation menu" type="button">
+        <div ref={menuRef} tabIndex={0} onBlur={() => setOpen(!open)}>
+          <button
+            aria-expanded={open}
+            onMouseDown={() => setOpen(!open)}
+            aria-label="Toggle mobile navigation menu"
+            type="button"
+          >
             <span />
             <span />
             <span />
