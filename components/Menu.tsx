@@ -22,7 +22,6 @@ const Menu = () => {
             <span />
             <span />
           </button>
-
           <div className="MenuList">
             <div aria-expanded={open} onClick={() => setOpen(!open)}>
               <nav>

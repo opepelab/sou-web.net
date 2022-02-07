@@ -4,13 +4,13 @@ const RSS: React.FC = () => {
   return (
     <div className="RSS">
       <Link href="/feed">
-        <div tabIndex={0}>
+        <a>
           <div className="feedicon">
-            <div className="f1"></div>
-            <div className="f2"></div>
-            <div className="f3"></div>
+            <div className="f1" />
+            <div className="f2" />
+            <div className="f3" />
           </div>
-        </div>
+        </a>
       </Link>
     </div>
   );
