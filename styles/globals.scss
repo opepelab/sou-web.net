@@ -138,6 +138,10 @@ ul {
   visibility: collapse;
 }
 
+.Filter {
+  visibility: collapse;
+}
+
 .MenuList li {
   font-size: $p16;
   list-style: none;
@@ -172,14 +176,17 @@ a {
 .White a {
   color: $ST;
 }
-
-.scaleLinks:hover {
-  @include Hover;
+@media screen and (min-width: 740.98px) {
+  .scaleLinks:hover {
+    @include Hover;
+  }
 }
 
-.hoverBG:hover {
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.3);
+@media screen and (min-width: 740.98px) {
+  .hoverBG:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .Block {
@@ -195,11 +202,12 @@ p {
   width: fit-content;
 }
 
-p:hover {
-  cursor: cell;
-  @include Hover;
+@media screen and (min-width: 740.98px) {
+  p:hover {
+    cursor: cell;
+    @include Hover;
+  }
 }
-
 h1 {
   @include H1H2;
 }

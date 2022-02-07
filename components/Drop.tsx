@@ -10,11 +10,11 @@ const Dropdown4: React.FC = () => {
   }, [open]);
   return (
     <div>
-      <div aria-expanded={open} onClick={() => setOpen(!open)}>
+      <div aria-expanded={open} onMouseDown={() => setOpen(!open)}>
         <div className="menuButton">Menu 4</div>
       </div>
 
-      <div className="" ref={menuRef} tabIndex={1} onBlur={() => setTimeout(() => setOpen(false), 125)}>
+      <div className="" ref={menuRef} tabIndex={1} onBlur={() => setOpen(false)}>
         <div className="NavDrop HeadMenu">
           <div aria-expanded={open} onClick={() => setOpen(!open)}>
             {open && (

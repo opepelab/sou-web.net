@@ -99,11 +99,11 @@ $ME: rgba(0, 0, 0, 0.75);
 @mixin Menu {
   z-index: 4;
   position: fixed;
-  background: linear-gradient(90deg, #3f87a6 0%, #3f87a6 70%, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 0.5) 100%);
+  background: #222;
   opacity: 1;
   right: 0px;
   top: 0px;
-  width: 100%;
+  width: 70%;
   height: $r100;
   transition-duration: 0.25s;
 }
