@@ -199,7 +199,6 @@
 }
 
 .gg-sun {
-  transition-duration: 0.5s;
   box-sizing: border-box;
   position: relative;
   display: block;
@@ -247,7 +246,6 @@
 }
 
 .gg-moon {
-  transition-duration: 0.5s;
   overflow: hidden;
   position: relative;
   transform: rotate(-135deg) scale(var(--ggs, 1));
