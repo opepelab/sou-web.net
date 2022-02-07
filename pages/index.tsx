@@ -30,7 +30,7 @@ const Index: React.FC<Map> = ({ blog }) => {
           </a>{" "}
           )のウェブサイトです。
         </p>
-        <p>技術の切り出しやエラーのメモで自分が見るために作りました。</p>
+        <p>技術の切り出しやエラーのメモで自分が見るために作っています。</p>
         <h1>最新記事</h1>
         {blog.map((blog: Entry<IPostFields>) => (
           <div className="">
