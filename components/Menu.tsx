@@ -86,9 +86,9 @@ const Menu = () => {
                     <input type="checkbox" id="toggle3" autoComplete="off" />
                     <ul>
                       <li>
-                        <a href="https://github.com/opepelab" target="_blank">
-                          Instagram
-                        </a>
+                        <ActiveLink href="/photo" activeClassName="headerState">
+                          <a>Whiteboard</a>
+                        </ActiveLink>
                       </li>
                       <li>
                         <a href="https://www.pixiv.net/users/10729947" target="_blank">
@@ -96,9 +96,9 @@ const Menu = () => {
                         </a>
                       </li>
                       <li>
-                        <ActiveLink href="/photo" activeClassName="headerState">
-                          <a>Whiteboard</a>
-                        </ActiveLink>
+                        <a href="https://www.instagram.com/sou_watana/" target="_blank">
+                          Instagram
+                        </a>
                       </li>
                     </ul>
                   </li>

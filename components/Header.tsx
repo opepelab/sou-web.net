@@ -108,9 +108,11 @@ const Header: React.FC = () => {
                         {graph && (
                           <ul className="White menu">
                             <li>
-                              <a href="https://github.com/opepelab" target="_blank">
-                                <div className="hoverBG BlockM">Instagram</div>
-                              </a>
+                              <ActiveLink href="/photo" activeClassName="headerState">
+                                <a>
+                                  <div className="hoverBG BlockM">Whiteboard</div>
+                                </a>
+                              </ActiveLink>
                             </li>
                             <li>
                               <a href="https://www.pixiv.net/users/10729947" target="_blank">
@@ -118,11 +120,9 @@ const Header: React.FC = () => {
                               </a>
                             </li>
                             <li>
-                              <ActiveLink href="/photo" activeClassName="headerState">
-                                <a>
-                                  <div className="hoverBG BlockM">Whiteboard</div>
-                                </a>
-                              </ActiveLink>
+                              <a href="https://www.instagram.com/sou_watana/" target="_blank">
+                                <div className="hoverBG BlockM">Instagram</div>
+                              </a>
                             </li>
                           </ul>
                         )}
