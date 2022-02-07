@@ -24,7 +24,7 @@ const Menu = () => {
           </button>
 
           <div className="MenuList">
-            <div aria-expanded={open} onMouseDown={() => setOpen(false)}>
+            <div aria-expanded={open} onClick={() => setOpen(false)}>
               <nav>
                 <ul className="nav2">
                   <li id="About">
