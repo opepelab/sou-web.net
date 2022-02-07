@@ -138,10 +138,6 @@ ul {
   visibility: collapse;
 }
 
-.Filter {
-  visibility: collapse;
-}
-
 .MenuList li {
   font-size: $p16;
   list-style: none;
@@ -315,7 +311,7 @@ textarea {
 }
 
 #About input:checked + ul {
-  height: 55px;
+  height: 60px;
   transition-duration: 0.25s;
 }
 
@@ -332,7 +328,7 @@ textarea {
   overflow: hidden;
 }
 #Works input:checked + ul {
-  height: 85px;
+  height: 90px;
   transition-duration: 0.25s;
 }
 
@@ -349,7 +345,7 @@ textarea {
   overflow: hidden;
 }
 #Graph input:checked + ul {
-  height: 85px;
+  height: 90px;
   transition-duration: 0.25s;
 }
 
