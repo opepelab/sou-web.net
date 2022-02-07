@@ -22,7 +22,7 @@ export const ThemeToggler = () => {
           setTrans(!trans);
         }}
       >
-        <div className={theme === "dark" ? "gg-moon" : "gg-sun"} />
+        <div className={theme === "dark" ? "gg-sun" : "gg-moon"} />
       </div>
     </div>
   );
