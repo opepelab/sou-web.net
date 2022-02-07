@@ -6,12 +6,12 @@ const Menu = () => {
   const menuRef = useRef<HTMLDivElement>(null!);
   useEffect(() => {
     open && menuRef.current.focus();
-  }, [open]);
+  }, []);
 
   return (
     <div>
       <div className="Line">
-        <div ref={menuRef} tabIndex={0} onBlur={() => setOpen(!open)} onFocus={() => setOpen(!open)}>
+        <div ref={menuRef} tabIndex={0} onBlur={() => setOpen(!open)}>
           <button
             aria-expanded={open}
             onMouseDown={() => setOpen(!open)}
@@ -24,7 +24,7 @@ const Menu = () => {
           </button>
 
           <div className="MenuList">
-            <div aria-expanded={open} onMouseDown={() => setOpen(!open)}>
+            <div aria-expanded={open} onMouseDown={() => setOpen(false)}>
               <nav>
                 <ul className="nav2">
                   <li id="About">
