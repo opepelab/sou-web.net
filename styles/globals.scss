@@ -215,6 +215,10 @@ h5 {
   @include H5;
 }
 
+i {
+  @include H5;
+}
+
 @keyframes feed {
   from {
     opacity: 0.05;
