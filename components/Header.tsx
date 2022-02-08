@@ -110,20 +110,10 @@ const Header: React.FC = () => {
                     </div>
                   </div>
                 </li>
-
-                <li>
-                  <div ref={graRef} tabIndex={1} onBlur={() => setTimeout(() => setGraph(!graph), 125)}>
-                    <div className="NavDrop">
-                      <div aria-expanded={graph} onClick={() => setGraph(!graph)}>
-                        {graph && <ul className="White menu"></ul>}
-                      </div>
-                    </div>
-                  </div>
-                </li>
                 <li>
                   <ActiveLink href="/list/1" activeClassName="headerState">
                     <a className="scaleLinks  Block">
-                      <div className="gg-code-slash" />
+                      <div className="gg-calibrate" />
                       Posts
                     </a>
                   </ActiveLink>
@@ -139,7 +129,7 @@ const Header: React.FC = () => {
                 <li>
                   <ActiveLink href="/develop" activeClassName="headerState">
                     <a className="scaleLinks  Block">
-                      <div className="gg-path-trim" />
+                      <div className="gg-attribution" />
                       Development Environment
                     </a>
                   </ActiveLink>

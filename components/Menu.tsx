@@ -92,15 +92,15 @@ const Menu = () => {
                   </li>
                   <li>
                     <ActiveLink href="/list/1" activeClassName="headerState">
-                      <a className="">
-                        <div className="gg-code-slash" />
+                      <a>
+                        <div className="gg-calibrate" />
                         Posts
                       </a>
                     </ActiveLink>
                   </li>
                   <li>
                     <ActiveLink href="/mail" activeClassName="headerState">
-                      <a className="right5">
+                      <a className="">
                         <div className="gg-mail" />
                         Mail
                       </a>
@@ -109,7 +109,7 @@ const Menu = () => {
                   <li>
                     <ActiveLink href="/develop" activeClassName="headerState">
                       <a className="right3">
-                        <div className="gg-path-trim" />
+                        <div className="gg-attribution" />
                         Development Environment
                       </a>
                     </ActiveLink>
