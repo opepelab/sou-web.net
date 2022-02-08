@@ -59,10 +59,9 @@ $ME: rgba(0, 0, 0, 0.75);
 }
 
 @mixin H5 {
-  background: rgb(61, 81, 107);
-  color: $ST;
+  background: rgba(0, 0, 0, 0.2);
   display: $IB;
-  padding-bottom: 4px;
+  padding-bottom: 2px;
   padding-left: 4px;
   padding-right: 4px;
   margin: 0%;

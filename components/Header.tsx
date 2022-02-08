@@ -42,7 +42,7 @@ const Header: React.FC = () => {
                             <li>
                               <ActiveLink href="/profile" activeClassName="headerState">
                                 <a>
-                                  <div className="hoverBG BlockM">Summary</div>
+                                  <div className="hoverBG BlockM">Profile</div>
                                 </a>
                               </ActiveLink>
                             </li>

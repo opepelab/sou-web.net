@@ -5,11 +5,11 @@ const About: React.FC = () => {
   return (
     <Framerdiv>
       <Head>
-        <title>Summary</title>
+        <title>Profile</title>
         <meta name="description" content="私について" />
       </Head>
       <main className="margin50p">
-        <h1>Summary</h1>
+        <h1>Profile</h1>
         <div className="triangle-bottom" />
         <dl>
           <dt>Name</dt>
