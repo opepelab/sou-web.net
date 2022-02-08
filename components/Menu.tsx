@@ -28,7 +28,7 @@ const Menu = () => {
                 <ul className="nav2">
                   <li id="About">
                     <label htmlFor="toggle1">
-                      <a>
+                      <a className="left1">
                         <div className="gg-details-more" />
                         About
                         <div className="SankakuWhite" />
@@ -100,7 +100,7 @@ const Menu = () => {
                   </li>
                   <li>
                     <ActiveLink href="/mail" activeClassName="headerState">
-                      <a className="">
+                      <a>
                         <div className="gg-mail" />
                         Mail
                       </a>
