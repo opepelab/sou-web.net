@@ -109,7 +109,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-gap: $p80;
+  grid-gap: $p40;
   white-space: nowrap;
   left: 200px;
   top: -15px;
@@ -178,10 +178,10 @@ a {
   }
 }
 
-// .Block {
-//   width: 100px;
-//   padding: 10px 24px 13px 24px;
-// }
+.Block {
+  width: 100px;
+  padding: 10px 24px 13px 24px;
+}
 
 .BlockM {
   padding: 14px;
