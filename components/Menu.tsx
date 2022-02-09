@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
 import ActiveLink from "./Sys/ActiveLink";
-// import ThemeTogglerMenu from "./ThemeTogglerMenu";
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
@@ -24,7 +23,7 @@ const Menu = () => {
             <span />
           </button>
           <div className="MenuList">
-            <div aria-expanded={open}>
+            <div aria-expanded={true}>
               <nav>
                 <ul className="nav2">
                   <li id="About">
