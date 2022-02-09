@@ -130,29 +130,29 @@
   .hidari {
     position: absolute;
     top: 10px;
-    left: 20px;
+    left: 90px;
   }
 
   .toggle {
-    position: absolute;
+    z-index: 4;
+    position: fixed;
     top: 20px;
-    left: 275px;
-    display: none;
+    left: 20px;
   }
 
-  .toggleMenu {
-    z-index: 6;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background: $BG;
-  }
+  // .toggleMenu {
+  //   z-index: 6;
+  //   position: absolute;
+  //   top: 15px;
+  //   right: 15px;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   width: 32px;
+  //   height: 32px;
+  //   border-radius: 50%;
+  //   background: $BG;
+  // }
 
   .position {
     @include CenString;

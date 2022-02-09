@@ -14,7 +14,7 @@ const Menu = () => {
         <div ref={menuRef} tabIndex={0} onBlur={() => setOpen(false)}>
           <button
             aria-expanded={open}
-            onClick={() => setOpen(!open)}
+            onMouseDown={() => setOpen(!open)}
             aria-label="Toggle mobile navigation menu"
             type="button"
           >
@@ -23,7 +23,7 @@ const Menu = () => {
             <span />
           </button>
           <div className="MenuList">
-            <div aria-expanded={open} onClick={() => setOpen(true)}>
+            <div aria-expanded={open}>
               <nav>
                 <ul className="nav2">
                   <li id="About">
@@ -38,7 +38,7 @@ const Menu = () => {
                     <ul>
                       <li>
                         <ActiveLink href="/profile" activeClassName="headerState">
-                          <a onClick={() => setOpen(false)}>Summary</a>
+                          <a onClick={() => setOpen(!open)}>Summary</a>
                         </ActiveLink>
                       </li>
                       <li>
