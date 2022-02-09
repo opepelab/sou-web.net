@@ -24,9 +24,8 @@ const Menu = () => {
             <span />
           </button>
           <div className="MenuList">
-            <div aria-expanded={open}>
-              <nav>
-                <ThemeTogglerMenu />
+            <div>
+              <nav aria-expanded={open}>
                 <ul className="nav2">
                   <li id="About">
                     <label htmlFor="toggle1">
