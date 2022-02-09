@@ -68,6 +68,10 @@ ul {
   padding: 0px;
 }
 
+nav ul li {
+  width: fit-content;
+}
+
 .menuButton {
   margin-top: 300px;
   transition-duration: 3s;

@@ -11,7 +11,7 @@ const Menu = () => {
   return (
     <div>
       <div className="Line">
-        <div ref={menuRef} tabIndex={0} onBlur={() => setOpen(false)}>
+        <div ref={menuRef} tabIndex={0} onBlur={() => setOpen(!false)}>
           <button
             aria-expanded={open}
             onMouseDown={() => setOpen(!open)}
@@ -26,7 +26,7 @@ const Menu = () => {
             <div aria-expanded={open}>
               <nav>
                 <ul className="nav2">
-                  <li id="About" onClick={() => setOpen(!open)}>
+                  <li id="About">
                     <label htmlFor="toggle1">
                       <a className="left1">
                         <div className="gg-details-more" />
@@ -38,12 +38,12 @@ const Menu = () => {
                     <ul>
                       <li>
                         <ActiveLink href="/profile" activeClassName="headerState">
-                          <a>Summary</a>
+                          <a onClick={() => setOpen(!open)}>Summary</a>
                         </ActiveLink>
                       </li>
                       <li>
                         <ActiveLink href="/about" activeClassName="headerState">
-                          <a>Overview</a>
+                          <a onClick={() => setOpen(!open)}>Overview</a>
                         </ActiveLink>
                       </li>
                     </ul>
