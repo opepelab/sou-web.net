@@ -23,7 +23,7 @@ const Menu = () => {
             <span />
           </button>
           <div className="MenuList">
-            <div aria-expanded={open} onChange={() => setOpen(open)}>
+            <div aria-expanded={open} onChange={() => setOpen(true)}>
               <nav>
                 <ul className="nav2">
                   <li id="About">
