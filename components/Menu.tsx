@@ -21,7 +21,7 @@ const Menu = () => {
           <span />
           <span />
         </button>
-        <div ref={menuRef} tabIndex={0} onBlur={() => setOpen(false)} onFocus={() => setOpen(open)}>
+        <div ref={menuRef} tabIndex={0} onBlur={() => setOpen(false)}>
           <div className="MenuList">
             <div aria-expanded={open}>
               <nav>
