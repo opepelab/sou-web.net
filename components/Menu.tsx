@@ -23,7 +23,7 @@ const Menu = () => {
             <span />
           </button>
           <div className="MenuList">
-            <div aria-expanded={true}>
+            <div aria-expanded={!open}>
               <nav>
                 <ul className="nav2">
                   <li id="About">
