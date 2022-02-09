@@ -24,8 +24,8 @@ const Menu = () => {
           </button>
           <div className="MenuList">
             <div aria-expanded={open}>
-              <nav>
-                <ul className="nav2" onClick={() => setOpen(!open)}>
+              <nav onClick={() => setOpen(!open)}>
+                <ul className="nav2">
                   <li id="About">
                     <label htmlFor="toggle1">
                       <a className="left1">

@@ -314,6 +314,7 @@ textarea {
 #Works ul {
   height: 0;
   overflow: hidden;
+  transition-duration: 0.25s;
 }
 #Works input:checked + ul {
   height: 240px;
