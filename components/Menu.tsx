@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import ActiveLink from "./Sys/ActiveLink";
-import ThemeToggler from "./ThemeToggler";
+// import ThemeToggler from "./ThemeToggler";
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
