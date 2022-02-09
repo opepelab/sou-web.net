@@ -22,7 +22,7 @@ const Menu = () => {
           <span />
           <span />
         </button>
-        <div ref={menuRef} tabIndex={0} onBlur={() => setOpen(false)}>
+        <div ref={menuRef} tabIndex={0} onBlur={() => setOpen(!open)}>
           <div className="MenuList">
             <div aria-expanded={open}>
               {/* <ThemeTogglerMenu /> */}
