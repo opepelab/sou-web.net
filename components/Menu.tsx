@@ -24,9 +24,9 @@ const Menu = () => {
           </button>
           <div className="MenuList">
             <div aria-expanded={open}>
-              <nav onClick={() => setOpen(!open)}>
+              <nav>
                 <ul className="nav2">
-                  <li id="About">
+                  <li id="About" onClick={() => setOpen(!open)}>
                     <label htmlFor="toggle1">
                       <a className="left1">
                         <div className="gg-details-more" />
