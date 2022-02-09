@@ -11,14 +11,19 @@ const Menu = () => {
   return (
     <div>
       <div className="Line">
-        <div ref={menuRef} tabIndex={0} onBlur={() => setOpen(false)} onFocus={() => setOpen(!open)}>
-          <button aria-expanded={open} aria-label="Toggle mobile navigation menu" type="button">
+        <div ref={menuRef} tabIndex={0} onBlur={() => setOpen(false)}>
+          <button
+            aria-expanded={open}
+            onMouseDown={() => setOpen(!open)}
+            aria-label="Toggle mobile navigation menu"
+            type="button"
+          >
             <span />
             <span />
             <span />
           </button>
           <div className="MenuList">
-            <div aria-expanded={open} onClick={() => setOpen(!open)}>
+            <div aria-expanded={open}>
               <nav>
                 <ul className="nav2">
                   <li id="About">
