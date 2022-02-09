@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import ActiveLink from "./Sys/ActiveLink";
+import ThemeToggler from "./ThemeToggler";
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
@@ -11,7 +12,7 @@ const Menu = () => {
   return (
     <div>
       <div className="Line">
-        <div ref={menuRef} tabIndex={0} onBlur={() => setOpen(!false)}>
+        <div ref={menuRef} tabIndex={0} onBlur={() => setOpen(false)}>
           <button
             aria-expanded={open}
             onMouseDown={() => setOpen(!open)}
@@ -92,7 +93,7 @@ const Menu = () => {
                   </li>
                   <li>
                     <ActiveLink href="/list/1" activeClassName="headerState">
-                      <a>
+                      <a onClick={() => setOpen(!open)}>
                         <div className="gg-calibrate" />
                         Posts
                       </a>
@@ -100,7 +101,7 @@ const Menu = () => {
                   </li>
                   <li>
                     <ActiveLink href="/mail" activeClassName="headerState">
-                      <a>
+                      <a onClick={() => setOpen(!open)}>
                         <div className="gg-mail" />
                         Mail
                       </a>
@@ -108,7 +109,7 @@ const Menu = () => {
                   </li>
                   <li>
                     <ActiveLink href="/develop" activeClassName="headerState">
-                      <a className="right3">
+                      <a className="right3" onClick={() => setOpen(!open)}>
                         <div className="gg-attribution" />
                         Development Environment
                       </a>
@@ -116,7 +117,7 @@ const Menu = () => {
                   </li>
                   <li>
                     <ActiveLink href="/privacy" activeClassName="headerState">
-                      <a className="right4">
+                      <a className="right4" onClick={() => setOpen(!open)}>
                         <div className="gg-coffee" />
                         Privacy Policy
                       </a>
