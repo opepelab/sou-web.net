@@ -38,7 +38,7 @@ const Menu = () => {
                     <ul>
                       <li>
                         <ActiveLink href="/profile" activeClassName="headerState">
-                          <a onClick={() => setOpen(!open)}>Summary</a>
+                          <a onMouseDown={() => setOpen(!open)}>Summary</a>
                         </ActiveLink>
                       </li>
                       <li>
