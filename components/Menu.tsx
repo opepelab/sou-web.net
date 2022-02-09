@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useContext } from "react";
+import React, { useState, useRef, useEffect, useContext, useMemo } from "react";
 import ActiveLink from "./Sys/ActiveLink";
 import { ThemeContext } from "styled-components";
 
@@ -7,12 +7,12 @@ type StrProps = {
   toggleTheme: StringConstructor;
 };
 
-const Menu = () => {
+const Menu = useMemo(() => {
   const [open, setOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null!);
   useEffect(() => {
     open && menuRef.current.focus();
-  }, []);
+  }, [open]);
 
   const { theme, toggleTheme } = useContext<StrProps>(ThemeContext);
   return (
@@ -145,6 +145,6 @@ const Menu = () => {
       </div>
     </div>
   );
-};
+}, [ThemeContext]);
 
 export default Menu;
