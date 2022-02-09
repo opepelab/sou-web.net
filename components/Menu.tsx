@@ -35,7 +35,7 @@ const Menu = () => {
                 tabIndex={0}
                 className="toggleMenu"
                 aria-label="Toggle Theme Dark or Light"
-                onClick={() => {
+                onMouseDown={() => {
                   toggleTheme(theme === "dark" ? "light" : "dark");
                 }}
               >
