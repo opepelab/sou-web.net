@@ -12,7 +12,7 @@ const Menu = () => {
   return (
     <div>
       <div className="Line">
-        <div ref={menuRef} tabIndex={0} onBlur={() => setOpen(!true)}>
+        <div ref={menuRef} tabIndex={0} onBlur={() => setOpen(false)}>
           <button
             aria-expanded={open}
             onMouseDown={() => setOpen(!open)}
@@ -25,8 +25,8 @@ const Menu = () => {
           </button>
           <div className="MenuList">
             <div aria-expanded={open}>
-              <ThemeTogglerMenu />
               <nav>
+                <ThemeTogglerMenu />
                 <ul className="nav2">
                   <li id="About">
                     <label htmlFor="toggle1">
