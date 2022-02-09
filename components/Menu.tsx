@@ -1,6 +1,11 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useContext } from "react";
 import ActiveLink from "./Sys/ActiveLink";
-import ThemeTogglerMenu from "./ThemeTogglerMenu";
+import { ThemeContext } from "styled-components";
+
+type StrProps = {
+  theme: string;
+  toggleTheme: StringConstructor;
+};
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
@@ -9,6 +14,7 @@ const Menu = () => {
     open && menuRef.current.focus();
   }, [open]);
 
+  const { theme, toggleTheme } = useContext<StrProps>(ThemeContext);
   return (
     <div>
       <div className="Line">
@@ -25,6 +31,16 @@ const Menu = () => {
           </button>
           <div className="MenuList">
             <div>
+              <div
+                tabIndex={0}
+                className="toggleMenu"
+                aria-label="Toggle Theme Dark or Light"
+                onClick={() => {
+                  toggleTheme(theme === "dark" ? "light" : "dark");
+                }}
+              >
+                <div className={theme === "dark" ? "gg-sun" : "gg-moon"} />
+              </div>
               <nav aria-expanded={open}>
                 <ul className="nav2">
                   <li id="About">
