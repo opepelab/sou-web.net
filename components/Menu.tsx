@@ -23,7 +23,7 @@ const Menu = () => {
             <span />
           </button>
           <div className="MenuList">
-            <div aria-expanded={open} onClick={() => setOpen(open)}>
+            <div aria-expanded={open} onClick={() => setOpen(true)}>
               <nav>
                 <ul className="nav2">
                   <li id="About">
@@ -43,7 +43,7 @@ const Menu = () => {
                       </li>
                       <li>
                         <ActiveLink href="/about" activeClassName="headerState">
-                          <a onClick={() => setOpen(!open)}>Overview</a>
+                          <a onMouseDown={() => setOpen(!open)}>Overview</a>
                         </ActiveLink>
                       </li>
                     </ul>
@@ -92,7 +92,7 @@ const Menu = () => {
                   </li>
                   <li>
                     <ActiveLink href="/list/1" activeClassName="headerState">
-                      <a onClick={() => setOpen(!open)}>
+                      <a onMouseDown={() => setOpen(!open)}>
                         <div className="gg-calibrate" />
                         Posts
                       </a>
@@ -100,7 +100,7 @@ const Menu = () => {
                   </li>
                   <li>
                     <ActiveLink href="/mail" activeClassName="headerState">
-                      <a onClick={() => setOpen(!open)}>
+                      <a onMouseDown={() => setOpen(!open)}>
                         <div className="gg-mail" />
                         Mail
                       </a>
@@ -108,7 +108,7 @@ const Menu = () => {
                   </li>
                   <li>
                     <ActiveLink href="/develop" activeClassName="headerState">
-                      <a className="right3" onClick={() => setOpen(!open)}>
+                      <a className="right3" onMouseDown={() => setOpen(!open)}>
                         <div className="gg-attribution" />
                         Development Environment
                       </a>
@@ -116,7 +116,7 @@ const Menu = () => {
                   </li>
                   <li>
                     <ActiveLink href="/privacy" activeClassName="headerState">
-                      <a className="right4" onClick={() => setOpen(!open)}>
+                      <a className="right4" onMouseDown={() => setOpen(!open)}>
                         <div className="gg-coffee" />
                         Privacy Policy
                       </a>
