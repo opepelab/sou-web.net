@@ -29,7 +29,7 @@
     z-index: 5;
     position: relative;
     border-radius: 12%;
-    background: $BG;
+    // background: $BG;
     padding-top: 29px;
     padding-bottom: 8px;
     padding-left: 11px;
@@ -134,9 +134,21 @@
   }
 
   .toggle {
+    display: none;
+  }
+
+  .toggleMenu {
+    z-index: 6;
     position: absolute;
     top: 20px;
-    left: 275px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: $BG;
   }
 
   .position {

@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import ActiveLink from "./Sys/ActiveLink";
-// import ThemeToggler from "./ThemeToggler";
+import ThemeTogglerMenu from "./ThemeTogglerMenu";
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
@@ -12,7 +12,7 @@ const Menu = () => {
   return (
     <div>
       <div className="Line">
-        <div ref={menuRef} tabIndex={0} onBlur={() => setOpen(false)}>
+        <div ref={menuRef} tabIndex={0} onBlur={() => setOpen(!false)}>
           <button
             aria-expanded={open}
             onMouseDown={() => setOpen(!open)}
@@ -25,6 +25,7 @@ const Menu = () => {
           </button>
           <div className="MenuList">
             <div aria-expanded={open}>
+              <ThemeTogglerMenu />
               <nav>
                 <ul className="nav2">
                   <li id="About">

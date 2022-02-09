@@ -39,17 +39,19 @@ export const GlobalStyles = createGlobalStyle<Props>`
     }
 }
 
-    .Line button {
-        // box-shadow: ${(props) => props.theme.shadow};
-        background: ${(props) => props.theme.background};
-    }
+    // .Line button {
+    //     box-shadow: ${(props) => props.theme.shadow};
+    //     background: ${(props) => props.theme.background};
+    // }
       .Line span {
         background-color: ${(props) => props.theme.strong};
     }
     .toggle {
-        color: ${(props) => props.theme.MainBG};
         background: ${(props) => props.theme.background};
         box-shadow: ${(props) => props.theme.shadow};
+    }
+    .toggleMenu {
+        background: ${(props) => props.theme.background};
     }
 }
 `;

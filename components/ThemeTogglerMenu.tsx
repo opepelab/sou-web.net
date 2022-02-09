@@ -6,14 +6,14 @@ type StrProps = {
   toggleTheme: StringConstructor;
 };
 
-export const ThemeToggler = () => {
+export const ThemeTogglerMenu = () => {
   const { theme, toggleTheme } = useContext<StrProps>(ThemeContext);
 
   return (
     <div className="inblo">
       <div
         tabIndex={0}
-        className="toggle"
+        className="toggleMenu"
         aria-label="Toggle Theme Dark or Light"
         onClick={() => {
           toggleTheme(theme === "dark" ? "light" : "dark");
@@ -25,4 +25,4 @@ export const ThemeToggler = () => {
   );
 };
 
-export default ThemeToggler;
+export default ThemeTogglerMenu;
