@@ -48,7 +48,7 @@ const Menu = () => {
                       </li>
                     </ul>
                   </li>
-                  <li id="Works">
+                  <li id="Links">
                     <label htmlFor="toggle2">
                       <a className="right2">
                         <div className="gg-style" />

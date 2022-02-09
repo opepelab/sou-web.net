@@ -296,6 +296,7 @@ textarea {
 #About ul {
   height: 0;
   overflow: hidden;
+  transition-duration: 0.25s;
 }
 
 #About input:checked + ul {
@@ -308,23 +309,21 @@ textarea {
   padding: 10px 0 10px 40px;
 }
 
-#Works input {
+#Links input {
   display: none;
 }
 
-#Works {
+#Links ul {
+  height: 0;
+  overflow: hidden;
+  transition-duration: 0.25s;
+}
+#Links input:checked + ul {
+  height: 240px;
   transition-duration: 0.25s;
 }
 
-#Works ul {
-  height: 0;
-  overflow: hidden;
-}
-#Works input:checked + ul {
-  height: 240px;
-}
-
-#Works ul li {
+#Links ul li {
   height: 20px;
   padding: 10px 0 10px 40px;
 }
