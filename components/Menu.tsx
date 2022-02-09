@@ -12,7 +12,7 @@ const Menu = () => {
   return (
     <div>
       <div className="Line">
-        <div ref={menuRef} tabIndex={0} onBlur={() => setOpen(false)}>
+        <div ref={menuRef} tabIndex={0} onBlur={() => setOpen(!true)}>
           <button
             aria-expanded={open}
             onMouseDown={() => setOpen(!open)}
