@@ -14,7 +14,7 @@ const Menu = () => {
         <div ref={menuRef} tabIndex={0} onBlur={() => setOpen(false)}>
           <button
             aria-expanded={open}
-            onMouseDown={() => setOpen(!open)}
+            onClick={() => setOpen(!open)}
             aria-label="Toggle mobile navigation menu"
             type="button"
           >
