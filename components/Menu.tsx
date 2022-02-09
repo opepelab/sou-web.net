@@ -23,7 +23,7 @@ const Menu = () => {
             <span />
           </button>
           <div className="MenuList">
-            <div aria-expanded={open} onMouseDown={() => setOpen(true)}>
+            <div aria-expanded={open} onTouchEnd={() => setOpen(true)}>
               <nav>
                 <ul className="nav2">
                   <li id="About">
