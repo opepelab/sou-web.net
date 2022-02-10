@@ -236,7 +236,7 @@
 .gg-sun {
   color: black;
   box-sizing: border-box;
-  position: relative;
+  position: absolute;
   display: block;
   transform: scale(var(--ggs, 1));
   width: 24px;
@@ -284,7 +284,7 @@
 
 .gg-moon {
   overflow: hidden;
-  position: relative;
+  position: absolute;
   transform: rotate(-135deg) scale(var(--ggs, 1));
   width: 20px;
   height: 20px;
