@@ -29,7 +29,6 @@
     z-index: 5;
     position: relative;
     border-radius: 12%;
-    background: $BG;
     padding-top: 29px;
     padding-bottom: 8px;
     padding-left: 11px;
@@ -135,7 +134,7 @@
 
   .toggle {
     z-index: 4;
-    position: fixed;
+    position: absolute;
     top: 20px;
     left: 25px;
   }

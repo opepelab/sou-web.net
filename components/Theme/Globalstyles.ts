@@ -20,15 +20,9 @@ export const GlobalStyles = createGlobalStyle<Props>`
     .pinkLinks{
       color: ${(props) => props.theme.strong};
     }
-    .scaleLinks:hover {
-        border-bottom: ${(props) => props.theme.h12};
-    }
     .dateST {
         color: ${(props) => props.theme.weak};
     }
-    p:hover {
-        border-bottom: ${(props) => props.theme.h12};
-      }
     
     .blue {
         color: ${(props) => props.theme.pink};
