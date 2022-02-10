@@ -95,11 +95,13 @@
   .Filt [aria-expanded="true"] {
     @include Filter;
     touch-action: none;
+    visibility: visible;
   }
 
   .Filt [aria-expanded="false"] {
     @include Filter;
     opacity: 0;
+    visibility: hidden;
   }
 
   .MenuList [aria-expanded="true"] {
@@ -111,6 +113,7 @@
     @include Menu;
     opacity: 0;
     transform: translate(-300px);
+    visibility: hidden;
   }
 
   .MenuList li {
