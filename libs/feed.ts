@@ -8,7 +8,7 @@ export const generateFeedXml = async () => {
     title: "sou-web.net",
     description: "Sou Watanabeのメモ兼用ウェブアプリケーションです。",
     site_url: "http://sou-web.net",
-    feed_url: "http://sou-web.net/feed.xml",
+    feed_url: "http://sou-web.net/rss.xml",
     language: "ja",
   });
 

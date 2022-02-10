@@ -26,9 +26,9 @@
   color: skyblue;
 }
 @media screen and (min-width: 739.99px) {
-  .hoverbomb:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-    transition-duration: 0.2s;
+  .hoverbob:hover {
+    transform: scale(3);
+    transition-duration: 0.25s;
   }
 }
 

@@ -30,14 +30,14 @@ const Id: React.FC<Map> = ({ blog, total }) => {
       <main className="HeadMenu textLeft margin50p inblo">
         <h5>記事一覧</h5>
         {blog.map((props: Entry<IPostFields>) => (
-          <div className="">
+          <div className="scaleLinks">
             <dl key={props.sys.id}>
               <Link href={`/docs/${props.fields.slug}`}>
                 <a>
                   <dt className="dateST">
                     <Date dateString={props.fields.date} />
                   </dt>
-                  <div className="PPx hoverbomb pinkLinks">{props.fields.title}</div>
+                  <div className="PPx pinkLinks">{props.fields.title}</div>
                 </a>
               </Link>
             </dl>
