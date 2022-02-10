@@ -23,9 +23,9 @@ const About = () => {
           <li>Julia ( 勉強しています ) </li>
           <li>TypeScript</li>
         </ul>
-        <h1>クラン遍歴</h1>
+        <h1>クラン歴</h1>
         <ul>
-          <li>ｶﾜｲｿｽの群れGunz</li>
+          <li>ｶﾜｲｿｽの群れ</li>
           <li>不死鳥</li>
         </ul>
         <h1>派閥</h1>
