@@ -12,11 +12,11 @@ const Footer: React.FC = () => {
           <a className="blue" href="https://nextjs.org/">
             <u>Next.js</u>
           </a>
-        </div>
-        <br />
+        </div>{" "}
         <Link href="/">
           <a className="inblo C blue">© sou-web.net</a>
-        </Link>{" "}
+        </Link>
+        <br />
         <Link href="/feed">
           <a className="inblo C blue">
             <u>RSS Feed</u>
@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
         </Link>{" "}
         <Link href="/privacy">
           <a className="inblo C blue">
-            <u>PRIVACY POLICY</u>
+            <u>Privacy Policy</u>
           </a>
         </Link>
       </footer>
