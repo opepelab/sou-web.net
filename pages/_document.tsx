@@ -10,9 +10,6 @@ class MyDocument extends Document {
           <link rel="shortcut icon" href="/folds.ico" />
           <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet" />
-
-          <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-
           <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet" />
 
           <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet" />
