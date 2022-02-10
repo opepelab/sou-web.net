@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
         <Link href="/">
           <a className="scale">
             <div className="inblo C pinkLinks">
-              <div>© SOU-WEB written by Next.js MIT license</div>
+              <div>Written by Next.js at MIT</div>
             </div>
           </a>
         </Link>
