@@ -94,6 +94,7 @@
 
   .Filt [aria-expanded="true"] {
     @include Filter;
+    touch-action: none;
   }
 
   .Filt [aria-expanded="false"] {
