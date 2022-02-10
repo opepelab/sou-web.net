@@ -25,7 +25,6 @@
   }
 
   .Line button {
-    // box-shadow: 0px 0px 4px 1px white;
     z-index: 5;
     position: relative;
     border-radius: 12%;
@@ -93,9 +92,20 @@
     transition-duration: 0.1s;
   }
 
+  .Filt [aria-expanded="true"] {
+    z-index: 3;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    width: $r100;
+    height: $r100;
+    transition-duration: 0.5s;
+  }
+
   .MenuList [aria-expanded="true"] {
     z-index: 4;
-    position: fixed;
+    position: absolute;
     @include Menu;
     visibility: visible;
   }
@@ -118,8 +128,8 @@
   }
 
   .Mail form textarea {
-    width: 290px;
-    height: 215px;
+    width: 320px;
+    height: 220px;
   }
 
   dd {
@@ -129,7 +139,7 @@
   .hidari {
     position: absolute;
     top: 10px;
-    left: 88px;
+    left: 90px;
   }
 
   .toggle {
@@ -138,20 +148,6 @@
     top: 20px;
     left: 25px;
   }
-
-  // .toggleMenu {
-  //   z-index: 6;
-  //   position: absolute;
-  //   top: 15px;
-  //   right: 15px;
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  //   width: 32px;
-  //   height: 32px;
-  //   border-radius: 50%;
-  //   background: $BG;
-  // }
 
   .position {
     @include CenString;

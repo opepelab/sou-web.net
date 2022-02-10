@@ -12,8 +12,7 @@ const Develop: React.FC = () => {
         <h1>Development Environment</h1>
         <div className="triangle-bottom" />
         <dl>
-          <img className="PM" src="/picture/IMG-0554.jpg" />
-          <div className="Zoom-in margin10 point z-index"></div>
+          <img src="/picture/IMG-0554.jpg" />
           <dt>OS</dt>
           <dd>Windows</dd>
           <dt>Version</dt>

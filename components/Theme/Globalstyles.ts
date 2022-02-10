@@ -27,23 +27,20 @@ export const GlobalStyles = createGlobalStyle<Props>`
     .blue {
         color: ${(props) => props.theme.pink};
     }
-    @media screen and (max-width: 739.98px) {
+    @media screen and (max-width: 739.99px) {
     .Color a {
         color: ${(props) => props.theme.weak};
     }
 }
 
-    .Line button {
-        // box-shadow: ${(props) => props.theme.shadow};
-        background: ${(props) => props.theme.background};
-    }
       .Line span {
         background-color: ${(props) => props.theme.strong};
     }
+    @media screen and (min-width: 739.99px) {
     .toggle {
         background: ${(props) => props.theme.background};
         box-shadow: ${(props) => props.theme.shadow};
-    }
+    }}
     .toggleMenu {
         background: ${(props) => props.theme.background};
     }

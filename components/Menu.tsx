@@ -3,25 +3,22 @@ import ActiveLink from "./Sys/ActiveLink";
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
-  const menuRef = useRef<HTMLDivElement>(null!);
-  useEffect(() => {
-    open && menuRef.current.focus();
-  }, [open]);
 
   return (
     <div>
       <div className="Line">
-        <div ref={menuRef} tabIndex={0} onBlur={() => setOpen(false)}>
-          <button
-            aria-expanded={open}
-            onMouseDown={() => setOpen(!open)}
-            aria-label="Toggle mobile navigation menu"
-            type="button"
-          >
-            <span />
-            <span />
-            <span />
-          </button>
+        <button
+          aria-expanded={open}
+          onMouseDown={() => setOpen(!open)}
+          aria-label="Toggle mobile navigation menu"
+          type="button"
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+        <div className="Filt">
+          <div aria-expanded={open} onClick={() => setOpen(false)} />
           <div className="MenuList">
             <div aria-expanded={open} onClick={() => setOpen(open)}>
               <nav>
@@ -86,6 +83,11 @@ const Menu = () => {
                       <li>
                         <a href="https://www.instagram.com/sou_watana/" target="_blank">
                           Instagram
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://chofu-koyado.vercel.app/" target="_blank">
+                          chofu-koyado
                         </a>
                       </li>
                     </ul>
