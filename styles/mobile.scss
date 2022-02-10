@@ -106,6 +106,7 @@
 
   .MenuList [aria-expanded="true"] {
     @include Menu;
+    touch-action: none;
     visibility: visible;
   }
 

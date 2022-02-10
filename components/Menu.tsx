@@ -20,7 +20,7 @@ const Menu = () => {
         <div className="Filt">
           <div aria-expanded={open} onClick={() => setOpen(false)} />
           <div className="MenuList">
-            <div aria-expanded={open} onClick={() => setOpen(open)}>
+            <div aria-expanded={open}>
               <nav>
                 <ul className="nav2">
                   <li id="About">
