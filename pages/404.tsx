@@ -6,7 +6,7 @@ const NotFound: React.FC = () => {
   return (
     <Framerdiv>
       <Head>
-        <title>404 - sou</title>
+        <title>404 - sou-web.net</title>
         <meta name="description" content="存在しないページ" />
       </Head>
       <main className="CN">
