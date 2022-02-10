@@ -9,7 +9,7 @@ const Privacy: React.FC = () => {
         <title>プライバシーポリシー - sou</title>
         <meta name="description" content="Privacy Policy" />
       </Head>
-      <main className="CN textLeft">
+      <main className="margin50p textLeft">
         <h1>
           <ruby>
             Privacy Policy<rt>プライバシーポリシー</rt>

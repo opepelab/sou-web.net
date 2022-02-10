@@ -9,7 +9,7 @@ const Menu = () => {
       <div className="Line">
         <button
           aria-expanded={open}
-          onMouseDown={() => setOpen(!open)}
+          onClick={() => setOpen(!open)}
           aria-label="Toggle mobile navigation menu"
           type="button"
         >

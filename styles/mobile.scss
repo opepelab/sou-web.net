@@ -21,7 +21,7 @@
   }
 
   .margin50p {
-    margin-top: 50px;
+    margin-top: 80px;
   }
 
   .Line button {
@@ -93,19 +93,15 @@
   }
 
   .Filt [aria-expanded="true"] {
-    z-index: 3;
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    background: rgba(0, 0, 0, 0.5);
-    width: $r100;
-    height: $r100;
-    transition-duration: 0.5s;
+    @include Filter;
+  }
+
+  .Filt [aria-expanded="false"] {
+    @include Filter;
+    opacity: 0;
   }
 
   .MenuList [aria-expanded="true"] {
-    z-index: 4;
-    position: absolute;
     @include Menu;
     visibility: visible;
   }
@@ -113,8 +109,12 @@
   .MenuList [aria-expanded="false"] {
     @include Menu;
     opacity: 0;
-    visibility: none;
-    transform: translate(-120px);
+    transform: translate(-300px);
+  }
+
+  .MenuList li {
+    font-size: $p16;
+    list-style: none;
   }
 
   .disableN {
