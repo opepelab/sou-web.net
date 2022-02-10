@@ -4,20 +4,28 @@ const Footer: React.FC = () => {
   return (
     <div>
       <footer>
-        <Link href="/">
-          <a className="scale">
-            <div className="inblo C pinkLinks">
-              <div>Written by Next.js at MIT</div>
-            </div>
+        <div className="inblo C">
+          <a className="blue" href="https://github.com/opepelab/sou-web.net">
+            github/sou-web.net
+          </a>{" "}
+          Written by{" "}
+          <a className="blue" href="https://nextjs.org/">
+            <u>Next.js</u>
           </a>
-        </Link>
+        </div>
         <br />
-        <Link href="/privacy">
-          <a className="inblo C pinkLinks">Privacy Policy</a>
-        </Link>
-        <br />
+        <Link href="/">
+          <a className="inblo C blue">© sou-web.net</a>
+        </Link>{" "}
         <Link href="/feed">
-          <a className="inblo C pinkLinks">RSS</a>
+          <a className="inblo C blue">
+            <u>RSS Feed</u>
+          </a>
+        </Link>{" "}
+        <Link href="/privacy">
+          <a className="inblo C blue">
+            <u>PRIVACY POLICY</u>
+          </a>
         </Link>
       </footer>
     </div>

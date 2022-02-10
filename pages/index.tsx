@@ -24,14 +24,13 @@ const Index: React.FC<Map> = ({ blog }) => {
         <h1>TOP</h1>
         <div className="triangle-bottom" />
         <p>
-          NPOでFrontEndとして活動をしているSOU-WEB({" "}
+          プログラマーの
           <a className="blue" href="https://www.facebook.com/opepelab" target="_blank">
             Sou Watanabe
-          </a>{" "}
-          )のウェブサイトです。
+          </a>
+          のウェブサイトです。
         </p>
-        <p>技術の切り出しやエラーのメモで自分が見るために作っています。</p>
-        <h1>最新記事</h1>
+        <h5>最新記事</h5>
         {blog.map((blog: Entry<IPostFields>) => (
           <div className="">
             <dl key={blog.sys.id}>
@@ -60,7 +59,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const data: EntryCollection<IPostFields> = await client.getEntries({
     content_type: "blog",
     order: "-fields.date",
-    limit: 6,
+    limit: 10,
   });
   return {
     props: {
