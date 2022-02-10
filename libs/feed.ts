@@ -5,7 +5,7 @@ import { IPostFields } from "../libs/types";
 
 export const generateFeedXml = async () => {
   const feed = new RSS({
-    title: "sou-web",
+    title: "sou-web.net",
     description: "Sou Watanabeのメモ兼用ウェブアプリケーションです。",
     site_url: "http://sou-web.net",
     feed_url: "http://sou-web.net/rss.xml",
