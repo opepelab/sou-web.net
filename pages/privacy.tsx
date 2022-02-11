@@ -1,6 +1,5 @@
 import Framerdiv from "../components/Sys/Framer";
 import Head from "next/head";
-import Link from "next/link";
 
 const Privacy: React.FC = () => {
   return (
