@@ -2,7 +2,8 @@ export const DarkTheme = {};
 
 export const LightTheme = {
   weak: "#666",
-  strong: "#009999",
+  strong: "#333",
+  PLink: "#009999",
   f3: "solid 5px #333",
   background: "#FFF",
   bgg: "#FFEFEF",

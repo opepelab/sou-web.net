@@ -18,7 +18,7 @@ export const GlobalStyles = createGlobalStyle<Props>`
         border-bottom: ${(props) => props.theme.h12};
     }
     .pinkLinks{
-      color: ${(props) => props.theme.strong};
+      color: ${(props) => props.theme.PLink};
     }
     .dateST {
         color: ${(props) => props.theme.weak};

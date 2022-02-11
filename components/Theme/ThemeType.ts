@@ -4,6 +4,7 @@ export type ThemeType = {
   MainBG: string;
   weak: string;
   strong: string;
+  PLink: string;
   f3: string;
   border: string;
   h12: string;
