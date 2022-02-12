@@ -23,7 +23,9 @@ export const GlobalStyles = createGlobalStyle<Props>`
     .dateST {
         color: ${(props) => props.theme.weak};
     }
-    
+    .Link-Color {
+        color: ${(props) => props.theme.weak};
+    }
     .blue {
         color: ${(props) => props.theme.pink};
     }

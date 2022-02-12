@@ -24,6 +24,7 @@ const Index: React.FC<Map> = ({ blog }) => {
         <h1>TOP</h1>
         <div className="triangle-bottom" />
         <p>
+          NPOでフロントエンジニア担当している
           <a className="pinkLinks" href="https://www.facebook.com/opepelab" target="_blank">
             Sou Watanabe
           </a>
@@ -43,7 +44,7 @@ const Index: React.FC<Map> = ({ blog }) => {
           </dl>
         ))}
         <Link href="/list/1">
-          <a>
+          <a className="Link-Color">
             <h5>全部見る →</h5>
           </a>
         </Link>

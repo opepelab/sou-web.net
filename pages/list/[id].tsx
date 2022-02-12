@@ -53,7 +53,7 @@ const Id: React.FC<Map> = ({ blog, total }) => {
           </ul>
         </nav>
         <Link href="/blog">
-          <a>
+          <a className="Link-Color">
             <h5>Display All</h5>
           </a>
         </Link>

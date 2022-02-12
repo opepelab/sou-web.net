@@ -29,7 +29,7 @@ $IB: inline-block;
 $NO: none;
 
 $BG: #1b2633;
-$ST: #ebebeb;
+$ST: #e1e1e1;
 $SS: #4e92f8;
 $FB: #ffb7b7;
 $FE: #ffefef;
@@ -63,8 +63,11 @@ $ME: rgba(0, 0, 0, 0.75);
 @mixin H5 {
   background: rgba(0, 0, 0, 0.2);
   display: $IB;
-  padding-left: 4px;
-  padding-right: 4px;
+  padding: {
+    top: 2px;
+    left: 8px;
+    right: 8px;
+  }
   margin: 0%;
   border-radius: 2px;
   font: {
