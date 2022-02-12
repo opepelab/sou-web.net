@@ -30,18 +30,16 @@ const Id: React.FC<Map> = ({ blog, total }) => {
       <main className="HeadMenu textLeft margin50p inblo">
         <h5>記事一覧</h5>
         {blog.map((props: Entry<IPostFields>) => (
-          <div className="scaleLinks">
-            <dl key={props.sys.id}>
-              <Link href={`/docs/${props.fields.slug}`}>
-                <a>
-                  <dt className="dateST">
-                    <Date dateString={props.fields.date} />
-                  </dt>
-                  <div className="PPx pinkLinks">{props.fields.title}</div>
-                </a>
-              </Link>
-            </dl>
-          </div>
+          <dl key={props.sys.id}>
+            <Link href={`/docs/${props.fields.slug}`}>
+              <a>
+                <dt className="dateST">
+                  <Date dateString={props.fields.date} />
+                </dt>
+                <div className="PPx scaleLinks pinkLinks">{props.fields.title}</div>
+              </a>
+            </Link>
+          </dl>
         ))}
         <nav>
           <ul className="nav3">
