@@ -2,7 +2,6 @@ import React, { ReactNode } from "react";
 import Header from "../Header";
 import Menu from "../Menu";
 import Text from "../Text";
-import RSS from "../RSS";
 import Footer from "../Footer";
 import ThemeToggler from "../ThemeToggler";
 
