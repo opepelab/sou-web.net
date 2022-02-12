@@ -292,6 +292,16 @@ textarea {
   }
 }
 
+.RSS {
+  z-index: 5;
+  position: relative;
+  display: inline-block;
+  top: -62px;
+  left: -440px;
+  width: 40px;
+  fill: $ST;
+}
+
 #About input {
   display: none;
 }

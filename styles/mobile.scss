@@ -154,7 +154,15 @@
     left: 25px;
   }
 
-  .position {
+  .Menu-RSS {
+    z-index: 8;
+    position: absolute;
+    top: 10px;
+    left: 195px;
+    fill: $ST;
+  }
+
+  .sosial .position {
     @include CenString;
     top: -82px;
     left: -100px;

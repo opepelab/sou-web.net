@@ -1,5 +1,6 @@
 import ActiveLink from "./Sys/ActiveLink";
 import React from "react";
+import RSS from "./RSS";
 
 const Header: React.FC = () => {
   const [about, setAbout] = React.useState(false);
@@ -136,6 +137,7 @@ const Header: React.FC = () => {
                 </li>
               </ul>
             </nav>
+            <RSS />
           </div>
         </div>
       </header>

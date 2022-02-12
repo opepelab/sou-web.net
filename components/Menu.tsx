@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import ActiveLink from "./Sys/ActiveLink";
+import RSS from "./RSS";
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
@@ -22,6 +23,7 @@ const Menu = () => {
           <div className="MenuList">
             <div aria-expanded={open}>
               <nav>
+                <RSS />
                 <ul className="nav2">
                   <li id="About">
                     <label htmlFor="toggle1">
