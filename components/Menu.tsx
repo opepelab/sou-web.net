@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
 import ActiveLink from "./Sys/ActiveLink";
-import RSS from "./RSS";
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
