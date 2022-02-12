@@ -154,20 +154,6 @@
     left: 25px;
   }
 
-  .Menu-RSS {
-    z-index: 8;
-    position: absolute;
-    top: -230px;
-    left: 205px;
-    width: 30px;
-    fill: $ST;
-  }
-
-  .sosial .position {
-    @include CenString;
-    top: -82px;
-    left: -100px;
-  }
   pre code span {
     font-size: $p10;
   }

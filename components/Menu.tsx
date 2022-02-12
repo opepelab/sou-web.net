@@ -23,7 +23,6 @@ const Menu = () => {
           <div className="MenuList">
             <div aria-expanded={open}>
               <nav>
-                <RSS />
                 <ul className="nav2">
                   <li id="About">
                     <label htmlFor="toggle1">

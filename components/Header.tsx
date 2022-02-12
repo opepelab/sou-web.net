@@ -1,6 +1,5 @@
 import ActiveLink from "./Sys/ActiveLink";
 import React from "react";
-import RSS from "./RSS";
 
 const Header: React.FC = () => {
   const [about, setAbout] = React.useState(false);
@@ -15,11 +14,6 @@ const Header: React.FC = () => {
     links && linkRef.current.focus();
   }, [links]);
 
-  const [graph, setGraph] = React.useState(false);
-  const graRef = React.useRef<HTMLDivElement>(null!);
-  React.useEffect(() => {
-    graph && graRef.current.focus();
-  }, [graph]);
   return (
     <div>
       <header>
@@ -137,7 +131,6 @@ const Header: React.FC = () => {
                 </li>
               </ul>
             </nav>
-            <RSS />
           </div>
         </div>
       </header>
