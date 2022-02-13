@@ -10,7 +10,6 @@ export const generateFeedXml = async () => {
     site_url: "http://sou-web.net",
     feed_url: "http://sou-web.net/rss.xml",
     language: "ja",
-    image_url: "https://blog.35d.jp/logo.png",
   });
 
   const entries: EntryCollection<IPostFields> = await client.getEntries({
