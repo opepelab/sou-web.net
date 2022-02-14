@@ -148,20 +148,24 @@ a dt .dateST {
   color: $ST;
 }
 
-.right2 {
+.right1p {
+  margin-left: 1px;
+}
+
+.right3p {
   margin-left: 3px;
 }
 
-.right3 {
-  margin-left: 3px;
-}
-
-.right4 {
+.right6p {
   margin-left: 6px;
 }
 
-.left1 {
+.left2p {
   margin-left: -2px;
+}
+
+.left1p {
+  margin-left: -1px;
 }
 
 // GraphicsとAbout以外位置を修正してる

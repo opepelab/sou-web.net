@@ -25,7 +25,7 @@ const Menu = () => {
                 <ul className="nav2">
                   <li id="About">
                     <label htmlFor="toggle1">
-                      <a className="left1">
+                      <a className="left2p">
                         <div className="gg-details-more" />
                         About
                         <div className="SankakuWhite" />
@@ -47,7 +47,7 @@ const Menu = () => {
                   </li>
                   <li id="Links">
                     <label htmlFor="toggle2">
-                      <a className="right2">
+                      <a className="right3p">
                         <div className="gg-style" />
                         Link
                         <div className="SankakuWhite" />
@@ -94,7 +94,7 @@ const Menu = () => {
                   </li>
                   <li>
                     <ActiveLink href="/list/1" activeClassName="headerState">
-                      <a onMouseDown={() => setOpen(!open)}>
+                      <a className="left1p" onMouseDown={() => setOpen(!open)}>
                         <div className="gg-calibrate" />
                         Posts
                       </a>
@@ -110,7 +110,7 @@ const Menu = () => {
                   </li>
                   <li>
                     <ActiveLink href="/develop" activeClassName="headerState">
-                      <a className="right3" onMouseDown={() => setOpen(!open)}>
+                      <a className="right1" onMouseDown={() => setOpen(!open)}>
                         <div className="gg-attribution" />
                         Development Environment
                       </a>
@@ -118,7 +118,7 @@ const Menu = () => {
                   </li>
                   <li>
                     <ActiveLink href="/privacy" activeClassName="headerState">
-                      <a className="right4" onMouseDown={() => setOpen(!open)}>
+                      <a className="right6p" onMouseDown={() => setOpen(!open)}>
                         <div className="gg-coffee" />
                         Privacy Policy
                       </a>
