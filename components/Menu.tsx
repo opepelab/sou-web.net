@@ -118,7 +118,7 @@ const Menu = () => {
                   </li>
                   <li>
                     <ActiveLink href="/privacy" activeClassName="headerState">
-                      <a className="right6p" onMouseDown={() => setOpen(!open)}>
+                      <a className="right4p" onMouseDown={() => setOpen(!open)}>
                         <div className="gg-coffee" />
                         Privacy Policy
                       </a>
