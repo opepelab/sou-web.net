@@ -144,7 +144,9 @@
   .hidari {
     position: absolute;
     top: 12px;
-    left: 86px;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 
   .toggle {
