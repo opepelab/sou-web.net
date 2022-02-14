@@ -11,7 +11,7 @@ import Head from "next/head";
 import * as TYPES from "@contentful/rich-text-types";
 import { Options } from "@contentful/rich-text-react-renderer";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { vscDarkPlus } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 type Content = {
   blog: {
@@ -48,7 +48,7 @@ const Slug: React.FC<Content> = ({ blog }) => {
     renderMark: {
       [TYPES.MARKS.CODE]: (text) => {
         return (
-          <SyntaxHighlighter language="tsx" style={vscDarkPlus}>
+          <SyntaxHighlighter language="tsx" style={atomDark}>
             {text}
           </SyntaxHighlighter>
         );
