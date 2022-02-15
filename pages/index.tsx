@@ -28,7 +28,6 @@ const Index: React.FC<Map> = ({ blog }) => {
           <a className="pinkLinks" href="https://www.facebook.com/opepelab" target="_blank">
             Sou Watanabe
           </a>
-          のウェブサイトです。ホストはAzureです。
         </p>
         <h5>最新記事</h5>
         {blog.map((blog: Entry<IPostFields>) => (
