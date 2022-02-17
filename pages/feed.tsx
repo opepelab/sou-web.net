@@ -14,5 +14,5 @@ export const getServerSideProps = async ({ res }: GetServerSidePropsContext) => 
   };
 };
 
-const Page = () => undefined;
+const Page = () => null;
 export default Page;
