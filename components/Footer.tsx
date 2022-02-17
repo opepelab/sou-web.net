@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
           <a className="inblo C blue">© sou-web.net</a>
         </Link>
         <br />
-        <Link href="/feed.xml">
+        <Link href="/feed">
           <a className="inblo C blue">
             <u>RSS Feed</u>
           </a>
