@@ -99,6 +99,11 @@ const Header: React.FC = () => {
                                 <div className="hoverBG BlockM">Instagram</div>
                               </a>
                             </li>
+                            <li>
+                              <a href="https://chofu-koyado.vercel.app/" target="_blank">
+                                <div className="hoverBG BlockM">chofu-koyado</div>
+                              </a>
+                            </li>
                           </ul>
                         )}
                       </div>
