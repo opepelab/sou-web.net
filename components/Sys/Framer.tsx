@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import React from "react";
+import { ReactNode } from "react";
 
 type RRNode = {
-  children: React.ReactNode;
+  children: ReactNode;
 };
 
 const Framerdiv = ({ children }: RRNode): JSX.Element => {
