@@ -1,5 +1,5 @@
 import { withRouter, NextRouter } from "next/router";
-import React, { ReactElement, memo } from "react";
+import React, { ReactElement } from "react";
 import Link from "next/link";
 
 type Props = {
@@ -9,13 +9,13 @@ type Props = {
   activeClassName: string;
 };
 
-const ActiveLink = memo(({ router, children, ...props }: Props) => {
+const ActiveLink = ({ router, children, ...props }: Props) => {
   let className: string = children.props.className;
   if (router.asPath === props.href) {
     className = `${className} ${props.activeClassName}`;
   }
 
   return <Link {...props}>{React.cloneElement(children, { className })}</Link>;
-});
+};
 
 export default withRouter(ActiveLink);
