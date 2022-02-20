@@ -8,6 +8,7 @@ export type ThemeType = {
   f3: string;
   border: string;
   h12: string;
+  Sankaku: string;
   links: string;
   weight: string;
   shadow: string;

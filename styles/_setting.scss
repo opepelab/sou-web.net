@@ -28,7 +28,7 @@ $Google1: "Hind", "Yomogi", cursive;
 $IB: inline-block;
 $NO: none;
 
-$BG: #1b2633;
+$BG: #141414;
 $ST: #e1e1e1;
 $SS: #4e92f8;
 $FB: #ffb7b7;
@@ -95,7 +95,7 @@ $ME: rgba(0, 0, 0, 0.75);
 @mixin Menu {
   z-index: 4;
   position: fixed;
-  background: #222;
+  background: $BG;
   opacity: 1;
   left: 0px;
   top: 0px;

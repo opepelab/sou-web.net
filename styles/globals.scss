@@ -115,7 +115,7 @@ nav ul li {
   align-items: center;
   grid-gap: $p20;
   white-space: nowrap;
-  left: 50px;
+  left: 88px;
   top: -15px;
 }
 
@@ -259,23 +259,27 @@ textarea {
   @include Mbutton;
 }
 
+.hikki {
+  display: inline-block;
+  font: {
+    family: $Google0;
+  }
+  transform: skew(-20deg);
+}
+
 .hidari {
   z-index: 3;
   position: relative;
   display: inline-block;
-  left: -700px;
-  top: -48px;
-  font-size: 30px;
-}
-
-.Color a {
-  color: $ST;
+  left: -400px;
+  top: -38px;
+  font-size: 24px;
 }
 
 .toggle {
   z-index: 6;
   position: relative;
-  top: -2px;
+  top: 4px;
   left: -515px;
   display: flex;
   align-items: center;
@@ -285,12 +289,12 @@ textarea {
   border-radius: 50%;
   cursor: pointer;
 }
-@media screen and (min-width: 739.99px) {
-  .toggle {
-    background: $BG;
-    box-shadow: 0px 0px 4px 1px gray;
-  }
-}
+// @media screen and (min-width: 739.99px) {
+//   .toggle {
+//     background: $BG;
+//     box-shadow: 0px 0px 4px 1px gray;
+//   }
+// }
 
 #About input {
   display: none;

@@ -28,7 +28,7 @@ const Menu = () => {
                       <a className="left2p">
                         <div className="gg-details-more" />
                         About
-                        <div className="SankakuWhite" />
+                        <div className="SankakuBlack" />
                       </a>
                     </label>
                     <input type="checkbox" id="toggle1" autoComplete="off" />
@@ -50,7 +50,7 @@ const Menu = () => {
                       <a className="right3p">
                         <div className="gg-style" />
                         Link
-                        <div className="SankakuWhite" />
+                        <div className="SankakuBlack" />
                       </a>
                     </label>
                     <input type="checkbox" id="toggle2" autoComplete="off" />

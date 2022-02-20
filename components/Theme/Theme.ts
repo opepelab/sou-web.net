@@ -11,6 +11,7 @@ export const LightTheme = {
   menu: "rgba(255, 255, 255, 1)",
   border: "solid 1px #333",
   h12: "solid 1px #eaeaea",
+  Sankaku: "#333 transparent transparent transparent",
   weight: "bold",
   shadow: "0px 0px 4px 1px gray;",
   black: "white",

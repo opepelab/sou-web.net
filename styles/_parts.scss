@@ -49,14 +49,6 @@ a dt .dateST {
   color: $ST;
 }
 
-.hikki {
-  display: inline-block;
-  font: {
-    family: $Google0;
-  }
-  transform: skew(-20deg);
-}
-
 .C {
   font-size: 12px;
 }
@@ -93,9 +85,7 @@ a dt .dateST {
   position: absolute;
   width: 100%;
   height: 43px;
-  background: #222;
-  border: 1px solid black;
-  top: 0px;
+  top: 10px;
   left: $p0;
 }
 
@@ -120,14 +110,6 @@ a dt .dateST {
   position: relative;
   left: 6px;
   top: 2px;
-  border-color: $ST transparent transparent transparent;
-  @include Sankaku;
-}
-
-.SankakuWhite {
-  position: relative;
-  left: 6px;
-  top: 3px;
   border-color: $ST transparent transparent transparent;
   @include Sankaku;
 }
