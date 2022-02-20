@@ -5,6 +5,7 @@
 html {
   -webkit-text-size-adjust: $r100;
   overflow: scroll;
+  transition-duration: 0.5s;
 }
 body {
   font: {
@@ -20,7 +21,6 @@ body {
   width: 800px;
   margin-left: 100px;
   @include LRauto;
-  transition-duration: 0.5s;
 }
 
 pre {

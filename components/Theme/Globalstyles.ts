@@ -47,7 +47,7 @@ export const GlobalStyles = createGlobalStyle<Props>`
     // .toggleMenu {
     //     background: ${(props) => props.theme.background};
     // }
-    .MenuList [aria-expanded="true"] {
+    .MenuList {
         background: ${(props) => props.theme.black};
   }
     .nav2 a {
