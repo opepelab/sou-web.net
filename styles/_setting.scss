@@ -64,16 +64,11 @@ $ME: rgba(0, 0, 0, 0.75);
   background: rgba(0, 0, 0, 0.2);
   display: $IB;
   padding: {
-    top: 2px;
-    left: 8px;
-    right: 8px;
+    left: 5px;
+    right: 5px;
   }
   margin: 0%;
   border-radius: 2px;
-  font: {
-    size: 14px;
-    weight: 100;
-  }
 }
 
 @mixin Hover {
