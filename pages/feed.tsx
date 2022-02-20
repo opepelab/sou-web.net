@@ -1,7 +1,7 @@
-import { GetServerSidePropsContext } from "next";
+import { GetServerSideProps } from "next";
 import { generateFeedXml } from "../libs/feed";
 
-export const getServerSideProps = async ({ res }: GetServerSidePropsContext) => {
+export const getServerSideProps: GetServerSideProps = async ({ res }) => {
   const xml = await generateFeedXml();
 
   res.statusCode = 200;
@@ -14,5 +14,5 @@ export const getServerSideProps = async ({ res }: GetServerSidePropsContext) => 
   };
 };
 
-const Page = () => null;
-export default Page;
+const Feed = () => null;
+export default Feed;
