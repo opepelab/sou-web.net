@@ -16,10 +16,10 @@ export const ThemeToggler = () => {
         className="toggle"
         aria-label="Toggle Theme Dark or Light"
         onClick={() => {
-          toggleTheme(theme === "dark" ? "light" : "dark");
+          toggleTheme(theme === "light" ? "dark" : "light");
         }}
       >
-        <div className={theme === "dark" ? "gg-sun" : "gg-moon"} />
+        <div className={theme === "light" ? "gg-moon" : "gg-sun"} />
       </div>
     </div>
   );
