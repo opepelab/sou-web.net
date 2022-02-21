@@ -5,9 +5,9 @@
 html {
   -webkit-text-size-adjust: $r100;
   overflow: scroll;
-  transition-duration: 0.5s;
 }
 body {
+  transition-duration: 0.5s;
   font: {
     family: $Google;
     size: $p14;
