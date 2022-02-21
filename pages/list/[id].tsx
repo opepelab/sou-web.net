@@ -29,11 +29,11 @@ const Id: React.FC<Map> = ({ blog, total }) => {
         <h5>記事一覧</h5>
         {blog.map((props: Entry<IPostFields>) => (
           <dl key={props.sys.id}>
+            <dt className="dateST">
+              <Date dateString={props.fields.date} />
+            </dt>
             <Link href={`/docs/${props.fields.slug}`}>
               <a>
-                <dt className="dateST">
-                  <Date dateString={props.fields.date} />
-                </dt>
                 <div className="PPx scaleLinks pinkLinks">{props.fields.title}</div>
               </a>
             </Link>

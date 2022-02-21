@@ -33,11 +33,11 @@ const Index: React.FC<Map> = ({ blog }) => {
         <h5>最新記事</h5>
         {blog.map((blog: Entry<IPostFields>) => (
           <dl key={blog.sys.id}>
+            <dt className="dateST">
+              <Date dateString={blog.fields.date} />
+            </dt>
             <Link href={`/docs/${blog.fields.slug}`}>
               <a>
-                <dt className="dateST">
-                  <Date dateString={blog.fields.date} />
-                </dt>
                 <div className="PPx scaleLinks pinkLinks">{blog.fields.title}</div>
               </a>
             </Link>
