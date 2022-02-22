@@ -29,6 +29,9 @@ export const GlobalStyles = createGlobalStyle<Props>`
     .blue {
         color: ${(props) => props.theme.pink};
     }
+      .Logo {
+        color: ${(props) => props.theme.strong};
+    }
 
       .Line span {
         background-color: ${(props) => props.theme.strong};
