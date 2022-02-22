@@ -85,7 +85,9 @@ a dt .dateST {
   position: absolute;
   width: 100%;
   height: 43px;
-  top: 10px;
+  background: #222;
+  border-bottom: solid 1px black;
+  top: $p0;
   left: $p0;
 }
 
