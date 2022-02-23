@@ -1,7 +1,7 @@
 import RSS from "rss";
-import client from "../libs/contentful";
+import client from "./contentful";
 import { EntryCollection } from "contentful";
-import { IPostFields } from "../libs/types";
+import { IPostFields } from "./types";
 
 export const generateFeedXml = async () => {
   const feed = new RSS({
