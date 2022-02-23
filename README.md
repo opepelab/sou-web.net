@@ -32,16 +32,6 @@ sou-web@0.1.0 C:\Users\sou\Reduxsu
 
 C:\Users\sou\Reduxsu>
 
-Server
--Azure Static Web Apps
--GitHub Pages
-
-Architect
--TypeScript
--React
--Next.js
--Contentful
-
 # Requirement
  
 * Node.js
@@ -58,17 +48,11 @@ npm install
 
 # Note
  
-Contentfulやfromはに環境変数を入れないと動かないです
-ローカルは.env.localへ記述
+Contentfulやfromはに環境変数を入れないと動かないです  
+ローカルは.env.localへ記述  
 サーバーは各環境変数へ記述
  
 # Author
  
-作成情報を列挙する
- 
-* 作成者: Sou Watanabe
-* 所属: NPO & opepelab
-* E-mail: ocelot2828@gmail.com
- 
-# License
-sou-web.net is under MIT license.
+Sou Watanabe
+
