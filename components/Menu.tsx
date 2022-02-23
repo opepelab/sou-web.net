@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import ActiveLink from "./Sys/ActiveLink";
+import ReactDOM from "react-dom";
+import ReactSwipe from "react-swipe";
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
-
+  let reactSwipeEl;
   return (
     <div>
       <div className="Line">
