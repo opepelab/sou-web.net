@@ -31,3 +31,42 @@ sou-web@0.1.0 C:\Users\sou\Reduxsu
 
 
 C:\Users\sou\Reduxsu>
+
+Server
+-Azure Static Web Apps
+-GitHub Pages
+
+Architect
+-TypeScript
+-React
+-Next.js
+-Contentful
+
+# Requirement
+ 
+* Node.js
+* TypeScript
+
+# Installation
+ 
+Install nodemodules with npm command.  
+クローンした後npmライブラリーを入れてください
+ 
+```bash
+npm install
+```
+
+# Note
+ 
+Contentfulやfromは環境変数を入れないと動かないです
+ 
+# Author
+ 
+作成情報を列挙する
+ 
+* 作成者: Sou Watanabe
+* 所属: NPO
+* E-mail: ocelot2828@gmail.com
+ 
+# License
+ライセンスを明示する
