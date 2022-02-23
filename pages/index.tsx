@@ -6,6 +6,7 @@ import { IPostFields } from "../libs/types";
 import Date from "../components/Sys/date";
 import Head from "next/head";
 import Link from "next/link";
+import generateRssFeed from "../libs/feed";
 
 type Map = {
   blog: {
@@ -54,6 +55,7 @@ const Index: React.FC<Map> = ({ blog }) => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
+  await generateRssFeed();
   const data: EntryCollection<IPostFields> = await client.getEntries({
     content_type: "blog",
     order: "-fields.date",
