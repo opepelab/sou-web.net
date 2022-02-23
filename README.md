@@ -50,7 +50,7 @@ Architect
 # Installation
  
 Install nodemodules with npm command.  
-クローンした後npmライブラリーを入れてください
+クローンした後npm iコマンドでnodemodulesを入れてください
  
 ```bash
 npm install
@@ -58,15 +58,17 @@ npm install
 
 # Note
  
-Contentfulやfromは環境変数を入れないと動かないです
+Contentfulやfromはに環境変数を入れないと動かないです
+ローカルは.env.localへ記述
+サーバーは各環境変数へ記述
  
 # Author
  
 作成情報を列挙する
  
 * 作成者: Sou Watanabe
-* 所属: NPO
+* 所属: NPO & opepelab
 * E-mail: ocelot2828@gmail.com
  
 # License
-ライセンスを明示する
+sou-web.net is under MIT license.
