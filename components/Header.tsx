@@ -3,15 +3,15 @@ import React from "react";
 
 const Header: React.FC = () => {
   const [about, setAbout] = React.useState(false);
-  const aboRef = React.useRef<HTMLDivElement>(null!);
+  const aboRef = React.useRef<HTMLDivElement>(null);
   React.useEffect(() => {
-    about && aboRef.current.focus();
+    about && aboRef.current?.focus();
   }, [about]);
 
   const [links, setLinks] = React.useState(false);
-  const linkRef = React.useRef<HTMLDivElement>(null!);
+  const linkRef = React.useRef<HTMLDivElement>(null);
   React.useEffect(() => {
-    links && linkRef.current.focus();
+    links && linkRef.current?.focus();
   }, [links]);
 
   return (
