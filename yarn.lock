@@ -285,6 +285,11 @@
   "resolved" "https://registry.npmjs.org/@contentful/rich-text-types/-/rich-text-types-15.11.1.tgz"
   "version" "15.11.1"
 
+"@corex/deepmerge@^2.6.148":
+  "integrity" "sha512-6QMz0/2h5C3ua51iAnXMPWFbb1QOU1UvSM4bKBw5mzdT+WtLgjbETBBIQZ+Sh9WvEcGwlAt/DEdRpIC3XlDBMA=="
+  "resolved" "https://registry.npmjs.org/@corex/deepmerge/-/deepmerge-2.6.148.tgz"
+  "version" "2.6.148"
+
 "@emotion/is-prop-valid@^0.8.2", "@emotion/is-prop-valid@^0.8.8":
   "integrity" "sha512-u5WtneEAr5IDG2Wv65yhunPSMLIpuKsbuOktRojfrEiEvRyC85LgPMZI63cr7NUqT8ZIGdSVg8ZKGxIug4lXcA=="
   "resolved" "https://registry.npmjs.org/@emotion/is-prop-valid/-/is-prop-valid-0.8.8.tgz"
@@ -492,14 +497,6 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-swipe@^6.0.2":
-  "integrity" "sha512-LQGMw9AsJKqgb9HqlZq3DlptIQ3mpYBqYTeEggnog+4dHqLuEPoLI9wqy9s8XkVyWB2zJg276jrKYadknD0bng=="
-  "resolved" "https://registry.npmjs.org/@types/react-swipe/-/react-swipe-6.0.2.tgz"
-  "version" "6.0.2"
-  dependencies:
-    "@types/react" "*"
-    "@types/swipe" "*"
-
 "@types/react-syntax-highlighter@^13.5.2":
   "integrity" "sha512-sRZoKZBGKaE7CzMvTTgz+0x/aVR58ZYUTfB7HN76vC+yQnvo1FWtzNARBt0fGqcLGEVakEzMu/CtPzssmanu8Q=="
   "resolved" "https://registry.npmjs.org/@types/react-syntax-highlighter/-/react-syntax-highlighter-13.5.2.tgz"
@@ -529,11 +526,6 @@
     "@types/hoist-non-react-statics" "*"
     "@types/react" "*"
     "csstype" "^3.0.2"
-
-"@types/swipe@*":
-  "integrity" "sha512-zkLaqdRTuWg7WpTwDvCFaTuMXhre1a9AjA2xHrSnkk5N09obkA1yAo5qKXoJmWkq8LjMi94E3ejy/L4qMSTw4A=="
-  "resolved" "https://registry.npmjs.org/@types/swipe/-/swipe-2.0.28.tgz"
-  "version" "2.0.28"
 
 "@types/unist@*":
   "integrity" "sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ=="
@@ -3580,7 +3572,15 @@
   "resolved" "https://registry.npmjs.org/neo-async/-/neo-async-2.6.2.tgz"
   "version" "2.6.2"
 
-"next@^12.0.1", "next@>=10.2.0":
+"next-sitemap@^2.4.6":
+  "integrity" "sha512-xfQbpmJF96NUgIxlOitfDyRngZB24avaWIzDOSVosEpUV2SdMNsRuAm0IeSVdYpYSI1PZ6LldvT9Xnumpc016Q=="
+  "resolved" "https://registry.npmjs.org/next-sitemap/-/next-sitemap-2.4.6.tgz"
+  "version" "2.4.6"
+  dependencies:
+    "@corex/deepmerge" "^2.6.148"
+    "minimist" "^1.2.5"
+
+"next@*", "next@^12.0.1", "next@>=10.2.0":
   "integrity" "sha512-4MNXAbD9+Tmtejg0TOKbaP52Cgu4mIn2ejKMLHWV0acxWGkkcE7QvdZwvg5pkg3fQBMrgucOxxtmw4D7yWaZvg=="
   "resolved" "https://registry.npmjs.org/next/-/next-12.0.1.tgz"
   "version" "12.0.1"
