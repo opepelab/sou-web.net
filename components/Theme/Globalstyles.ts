@@ -29,10 +29,10 @@ export const GlobalStyles = createGlobalStyle<Props>`
     .blue {
         color: ${(props) => props.theme.pink};
     }
+    @media screen and (max-width: 739.98px) {
       .Logo {
         color: ${(props) => props.theme.strong};
-    }
-
+    }}
       .Line span {
         background-color: ${(props) => props.theme.strong};
     }
