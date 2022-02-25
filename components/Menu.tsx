@@ -42,6 +42,11 @@ const Menu = () => {
                           <a onMouseDown={() => setOpen(!open)}>Overview</a>
                         </ActiveLink>
                       </li>
+                      <li>
+                        <ActiveLink href="/webclip" activeClassName="headerState">
+                          <a onMouseDown={() => setOpen(!open)}>WebClip</a>
+                        </ActiveLink>
+                      </li>
                     </ul>
                   </li>
                   <li id="Links">
