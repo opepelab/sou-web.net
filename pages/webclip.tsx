@@ -5,27 +5,22 @@ const Webclip: React.FC = () => {
   return (
     <Framerdiv>
       <Head>
-        <title>Development Environment - sou</title>
+        <title>これだと思っていた重要なWEBページを公開クリップしています - sou</title>
         <meta name="description" content="開発環境" />
       </Head>
-      <main className="margin50p resizeimage inblo">
-        <h1>Development Environment</h1>
+      <main className="margin50p textLeft resizeimage inblo">
+        <h1>これだと思っていた重要なWEBページを公開クリップしています</h1>
         <div className="triangle-bottom" />
-        <dl>
-          <img src="/picture/IMG-0554.jpg" />
-          <dt>OS</dt>
-          <dd>Windows</dd>
-          <dt>Version</dt>
-          <dd>Git</dd>
-          <dt>IDE</dt>
-          <dd>Visual Studio Code</dd>
-          <dt>language</dt>
-          <dd>TypeScript/Sass(Scss)</dd>
-          <dt>Browser</dt>
-          <dd>Edge/Chrome/Safari</dd>
-          <dt>Host</dt>
-          <dd>Vercel/Cloudflare</dd>
-        </dl>
+        <ul>
+          <li>
+            <a href=""></a>クリエイターとデザイナーとアーティストの違い
+          </li>
+          <p>三つの違いについて絵コンテをもちいて説明されています、当てはまる人は一読の価値があります。</p>
+          <li>クリエイターとデザイナーとアーティストの違い</li>
+          <p>三つの違いについて絵コンテをもちいて説明されています、当てはまる人は一読の価値があります。</p>
+          <li>クリエイターとデザイナーとアーティストの違い</li>
+          <p>三つの違いについて絵コンテをもちいて説明されています、当てはまる人は一読の価値があります。</p>
+        </ul>
       </main>
     </Framerdiv>
   );
