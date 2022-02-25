@@ -48,6 +48,13 @@ const Header: React.FC = () => {
                                 </a>
                               </ActiveLink>
                             </li>
+                            <li>
+                              <ActiveLink href="/webclip" activeClassName="headerState">
+                                <a>
+                                  <div className="hoverBG BlockM">WebClip</div>
+                                </a>
+                              </ActiveLink>
+                            </li>
                           </ul>
                         )}
                       </div>
