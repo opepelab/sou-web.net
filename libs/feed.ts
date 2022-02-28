@@ -17,7 +17,7 @@ async function generateRssFeed() {
     title: "sou-web.net",
     id: baseUrl,
     link: baseUrl,
-    description: "Sou Watanabeのメモ兼用ウェブアプリケーションですでしゅです。",
+    description: "Sou Watanabeのメモ兼用ウェブアプリケーション。",
     language: "ja",
     image: `${baseUrl}/images/logo.svg`,
     favicon: `${baseUrl}/favicon.ico`,
