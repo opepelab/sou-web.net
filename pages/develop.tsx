@@ -24,7 +24,7 @@ const Develop: React.FC = () => {
           <dt>Browser</dt>
           <dd>Edge/Chrome/Safari</dd>
           <dt>Host</dt>
-          <dd>Azure Static Web Apps GitHub Pages</dd>
+          <dd>Azure Static Web Apps GitHub Pages/Vercel</dd>
         </dl>
       </main>
     </Framerdiv>
