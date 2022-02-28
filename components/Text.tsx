@@ -3,7 +3,7 @@ import ActiveLink from "./Sys/ActiveLink";
 const Text: React.FC = () => {
   return (
     <div>
-      <div className="inblo hidari">
+      <div className="inblo Top-Logo">
         <ActiveLink href="/" activeClassName="headerState">
           <a className="hikki Logo">Written by Sou Watanabe</a>
         </ActiveLink>
