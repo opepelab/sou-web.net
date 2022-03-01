@@ -7,25 +7,13 @@ import "../styles/img.scss";
 import Head from "next/head";
 import { ThemeContext, ThemeProvider } from "styled-components";
 import { LightTheme, DarkTheme } from "../components/Theme/Theme";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import GlobalStyles from "../components/Theme/Globalstyles";
 import Layout from "../components/Layout/layout";
-import { GA_TRACKING_ID, pageview } from "../libs/gtag";
+import usePageView from "../hooks/usePageView";
 
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
-  useEffect(() => {
-    if (!GA_TRACKING_ID) return;
-
-    const handleRouteChange = (url: string) => {
-      pageview(url);
-    };
-
-    router.events.on("routeChangeComplete", handleRouteChange);
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, [router.events]);
-
+  usePageView();
   const [theme, toggleTheme] = useState("");
   return (
     <>

@@ -13,9 +13,9 @@ const Webclip: React.FC = () => {
         <div className="triangle-bottom" />
         <dl>
           <img src="/picture/IMG-0554.jpg" />
-          <dt>OS</dt>
-          <dd>Windows</dd>
-          <dt>Version</dt>
+          <dt>Contentful</dt>
+          <dd>npm</dd>
+          <dt>TypeScript</dt>
           <dd>Git</dd>
           <dt>IDE</dt>
           <dd>Visual Studio Code</dd>
