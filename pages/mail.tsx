@@ -10,7 +10,7 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
         <title>mail - sou</title>
         <meta name="description" content="メール" />
       </Head>
-      <main className="margin50p Mail inblo">
+      <main className="CN margin50p Mail inblo">
         <form>
           <h1>Are you sure?</h1>
           <dl>
