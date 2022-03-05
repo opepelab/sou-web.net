@@ -1,10 +1,11 @@
-import client from "../libs/contentful";
+import client from "libs/contentful";
 import { GetStaticProps } from "next";
-import Framerdiv from "../components/Sys/Framer";
-import { Entry, EntryCollection } from "contentful";
-import { IPostFields } from "../libs/types";
-import Date from "../components/Sys/date";
 import OG from "components/OG";
+import Framerdiv from "components/Sys/Framer";
+import { Entry, EntryCollection } from "contentful";
+import { IPostFields } from "libs/types";
+import Date from "components/Sys/date";
+
 import Link from "next/link";
 import generateRssFeed from "../libs/feed";
 

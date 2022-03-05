@@ -1,14 +1,11 @@
-import Framerdiv from "../components/Sys/Framer";
-import Head from "next/head";
+import OG from "components/OG";
+import Framerdiv from "components/Sys/Framer";
 import Link from "next/link";
 
 const NotFound: React.FC = () => {
   return (
     <Framerdiv>
-      <Head>
-        <title>404 - sou-web.net</title>
-        <meta name="description" content="存在しないページ" />
-      </Head>
+      <OG title="404 - sou-web.net" description="存在しないページ" />
       <main className="CN">
         <h1>Does not don't sync</h1>
         <div className="triangle-bottom" />

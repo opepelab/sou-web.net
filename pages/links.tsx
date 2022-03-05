@@ -1,5 +1,5 @@
-import Framerdiv from "../components/Sys/Framer";
 import OG from "components/OG";
+import Framerdiv from "components/Sys/Framer";
 import Link from "next/link";
 
 const Links: React.FC = () => {

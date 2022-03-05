@@ -1,12 +1,12 @@
-import Head from "next/head";
+import client from "libs/contentful";
 import { GetStaticPaths } from "next";
-import client from "../../libs/contentful";
+import OG from "components/OG";
+import Framerdiv from "components/Sys/Framer";
 import Link from "next/link";
 import { Entry, EntryCollection } from "contentful";
-import { IPostFields } from "../../libs/types";
-import Date from "../../components/Sys/date";
-import ActiveLink from "../../components/Sys/ActiveLink";
-import Framerdiv from "../../components/Sys/Framer";
+import { IPostFields } from "libs/types";
+import Date from "components/Sys/date";
+import ActiveLink from "components/Sys/ActiveLink";
 
 type Map = {
   total: number;
@@ -21,10 +21,7 @@ const range = (start: number, end: number) => [...Array(end - start + 1)].map((_
 const Id: React.FC<Map> = ({ blog, total }) => {
   return (
     <Framerdiv>
-      <Head>
-        <title>Blog - sou</title>
-        <meta name="description" content="Page List" />
-      </Head>
+      <OG title="Page List - sou" description="ページリスト" />
       <main className="HeadMenu textLeft margin50p inblo">
         <h5>記事一覧</h5>
         {blog.map((props: Entry<IPostFields>) => (

@@ -1,15 +1,12 @@
-import { useMail } from ".././hooks/useMail";
-import Framerdiv from "../components/Sys/Framer";
-import Head from "next/head";
+import { useMail } from "hooks/useMail";
+import OG from "components/OG";
+import Framerdiv from "components/Sys/Framer";
 
 export const Mail: React.FC<HTMLTextAreaElement> = () => {
   const { setName, setMail, setMessage, send } = useMail();
   return (
     <Framerdiv>
-      <Head>
-        <title>mail - sou</title>
-        <meta name="description" content="メール" />
-      </Head>
+      <OG title="mail - sou" description="メール" />
       <main className="CN margin50p Mail inblo">
         <form>
           <h1>Are you sure?</h1>

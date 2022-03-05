@@ -1,10 +1,10 @@
-import client from "../libs/contentful";
+import client from "libs/contentful";
 import { GetStaticProps } from "next";
-import Framerdiv from "../components/Sys/Framer";
+import OG from "components/OG";
+import Framerdiv from "components/Sys/Framer";
 import { Entry, EntryCollection } from "contentful";
-import { IPostFields } from "../libs/types";
-import Date from "../components/Sys/date";
-import Head from "next/head";
+import { IPostFields } from "libs/types";
+import Date from "components/Sys/date";
 import Link from "next/link";
 
 type Map = {
@@ -16,10 +16,7 @@ type Map = {
 const Blog: React.FC<Map> = ({ blog }) => {
   return (
     <Framerdiv>
-      <Head>
-        <title>Blog - sou</title>
-        <meta name="description" content="ログ" />
-      </Head>
+      <OG title="Blog - sou" description="ブログ" />
       <main className="textLeft margin50p inblo">
         <h5>記事一覧</h5>
         {blog.map((props: Entry<IPostFields>) => (

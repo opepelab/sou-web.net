@@ -1,13 +1,10 @@
-import Framerdiv from "../components/Sys/Framer";
-import Head from "next/head";
+import OG from "components/OG";
+import Framerdiv from "components/Sys/Framer";
 
 const Picture: React.FC = () => {
   return (
     <Framerdiv>
-      <Head>
-        <title>photo - sou</title>
-        <meta name="description" content="フォト" />
-      </Head>
+      <OG title="photo - sou" description="フォト" />
       <main className="margin50p inblo">
         <h1>Photo</h1>
         <div className="triangle-bottom" />

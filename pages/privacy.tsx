@@ -1,5 +1,5 @@
-import Framerdiv from "../components/Sys/Framer";
 import OG from "components/OG";
+import Framerdiv from "../components/Sys/Framer";
 
 const Privacy: React.FC = () => {
   return (
