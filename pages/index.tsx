@@ -4,7 +4,7 @@ import Framerdiv from "../components/Sys/Framer";
 import { Entry, EntryCollection } from "contentful";
 import { IPostFields } from "../libs/types";
 import Date from "../components/Sys/date";
-import Head from "next/head";
+import OG from "components/OG";
 import Link from "next/link";
 import generateRssFeed from "../libs/feed";
 
@@ -17,10 +17,7 @@ type Map = {
 const Index: React.FC<Map> = ({ blog }) => {
   return (
     <Framerdiv>
-      <Head>
-        <title>Index - sou</title>
-        <meta name="description" content="Index" />
-      </Head>
+      <OG title="Index - sou" description="Index" />
       <main className="textLeft margin50p inblo">
         <h1>TOP</h1>
         <div className="triangle-bottom" />

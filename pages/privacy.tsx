@@ -1,13 +1,10 @@
 import Framerdiv from "../components/Sys/Framer";
-import Head from "next/head";
+import OG from "components/OG";
 
 const Privacy: React.FC = () => {
   return (
     <Framerdiv>
-      <Head>
-        <title>プライバシーポリシー - sou</title>
-        <meta name="description" content="Privacy Policy" />
-      </Head>
+      <OG title="Privacy Policy - sou" description="プライバシーポリシー" />
       <main className="margin50p textLeft">
         <h1>
           <ruby>

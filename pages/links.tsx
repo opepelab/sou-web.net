@@ -1,14 +1,11 @@
 import Framerdiv from "../components/Sys/Framer";
-import Head from "next/head";
+import OG from "components/OG";
 import Link from "next/link";
 
 const Links: React.FC = () => {
   return (
     <Framerdiv>
-      <Head>
-        <title>links - sou</title>
-        <meta name="description" content="リンク" />
-      </Head>
+      <OG title="links - sou" description="リンク" />
       <main className="CN">
         <h1>Links</h1>
         <div className="triangle-bottom" />

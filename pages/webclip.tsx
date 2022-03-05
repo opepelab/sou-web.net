@@ -1,13 +1,10 @@
 import Framerdiv from "../components/Sys/Framer";
-import Head from "next/head";
+import OG from "components/OG";
 
 const Webclip: React.FC = () => {
   return (
     <Framerdiv>
-      <Head>
-        <title>これだと思っていた重要なWEBページを公開クリップしています - sou</title>
-        <meta name="description" content="開発環境" />
-      </Head>
+      <OG title="これだと思っていた重要なWEBページを公開クリップしています - sou" description="公開ウェブクリップ" />
       <main className="Hlink list textLeft margin50p resizeimage">
         <h1>これだと思った重要なウェブページを公開クリップしています</h1>
         <div className="triangle-bottom" />

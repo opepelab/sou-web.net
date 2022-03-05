@@ -1,13 +1,10 @@
 import Framerdiv from "../components/Sys/Framer";
-import Head from "next/head";
+import OG from "components/OG";
 
 const Develop: React.FC = () => {
   return (
     <Framerdiv>
-      <Head>
-        <title>Development Environment - sou</title>
-        <meta name="description" content="開発環境" />
-      </Head>
+      <OG title="Development Environment - sou" description="開発環境" />
       <main className="margin50p resizeimage inblo">
         <h1>Development Environment</h1>
         <div className="triangle-bottom" />

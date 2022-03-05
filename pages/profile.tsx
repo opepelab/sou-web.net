@@ -1,13 +1,10 @@
 import Framerdiv from "../components/Sys/Framer";
-import Head from "next/head";
+import OG from "components/OG";
 
 const About: React.FC = () => {
   return (
     <Framerdiv>
-      <Head>
-        <title>Profile</title>
-        <meta name="description" content="私について" />
-      </Head>
+      <OG title="Profile - sou" description="私について" />
       <main className="CN margin50p">
         <h1>Profile</h1>
         <div className="triangle-bottom" />
