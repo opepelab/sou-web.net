@@ -1,6 +1,6 @@
 import client from "libs/contentful";
 import { GetStaticProps } from "next";
-import OG from "components/OG";
+import OG from "components/Sys/OG";
 import Framerdiv from "components/Sys/Framer";
 import { Entry, EntryCollection } from "contentful";
 import { IPostFields } from "libs/types";

@@ -1,5 +1,5 @@
 import { useMail } from "hooks/useMail";
-import OG from "components/OG";
+import OG from "components/Sys/OG";
 import Framerdiv from "components/Sys/Framer";
 
 export const Mail: React.FC<HTMLTextAreaElement> = () => {

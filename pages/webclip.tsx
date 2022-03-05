@@ -1,5 +1,5 @@
 import Framerdiv from "components/Sys/Framer";
-import OG from "components/OG";
+import OG from "components/Sys/OG";
 
 const Webclip: React.FC = () => {
   return (

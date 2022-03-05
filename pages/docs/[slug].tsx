@@ -1,6 +1,6 @@
 import client from "libs/contentful";
 import { GetStaticPaths, GetStaticProps } from "next";
-import OG from "components/OG";
+import OG from "components/Sys/OG";
 import Framerdiv from "components/Sys/Framer";
 import styles from "./midasi.module.scss";
 import { EntryCollection } from "contentful";

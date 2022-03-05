@@ -1,4 +1,4 @@
-import OG from "components/OG";
+import OG from "components/Sys/OG";
 import Framerdiv from "components/Sys/Framer";
 
 const About = () => {
