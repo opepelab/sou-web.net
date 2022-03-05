@@ -1,13 +1,11 @@
 import Framerdiv from "../components/Sys/Framer";
 import Head from "next/head";
+import OG from "components/OG";
 
 const About = () => {
   return (
     <Framerdiv>
-      <Head>
-        <title>Overview</title>
-        <meta name="description" content="Home" />
-      </Head>
+      <OG title="Overview" description="私について" />
       <main className="list margin50p textLeft inblo">
         <h1>
           Overview <h5>Number11</h5>
