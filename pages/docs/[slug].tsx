@@ -7,7 +7,7 @@ import { IPostFields } from "../../libs/types";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { Document } from "@contentful/rich-text-types";
 import Date from "../../components/Sys/date";
-import Head from "next/head";
+import OG from "components/OG";
 import * as TYPES from "@contentful/rich-text-types";
 import { Options } from "@contentful/rich-text-react-renderer";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
@@ -57,10 +57,7 @@ const Slug: React.FC<Content> = ({ blog }) => {
   };
   return (
     <Framerdiv>
-      <Head>
-        <title>{blog.fields.title} - sou</title>
-        <meta name="description" content={blog.fields.description} />
-      </Head>
+      <OG title={`${blog.fields.title} - sou`} description={blog.fields.description} />
       <main className="Hlink list textLeft margin50p resizeimage">
         <div className={styles.Time2}>
           <Date dateString={blog.fields.date} />
