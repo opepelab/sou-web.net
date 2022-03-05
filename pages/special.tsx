@@ -1,4 +1,4 @@
-import Framerdiv from "../components/Sys/Framer";
+import Framerdiv from "components/Sys/Framer";
 import Head from "next/head";
 
 const Special: React.FC = () => {
