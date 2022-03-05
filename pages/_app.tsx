@@ -19,7 +19,8 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        {/* <meta property="og:image" content={`https://og-image.vercel.app/${title}.png`} /> */}
+        <meta property="og:image" content={`https://sou-web.net/public/sou.png`} />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <ThemeContext.Provider value={{ theme, toggleTheme }}>
         <ThemeProvider theme={theme === "dark" ? LightTheme : DarkTheme}>
