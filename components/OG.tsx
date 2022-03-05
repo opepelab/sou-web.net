@@ -12,7 +12,7 @@ const OG = ({ title, description }: StProp) => {
       <meta property="description" content={description} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={`${process.env.baseUrl}/public/sou.png`} />
+      <meta property="og:image" content={`${process.env.SITE_URL}/public/sou.png`} />
       <meta name="twitter:card" content="summary_large_image" />
       {/* <meta name="twitter:image" content={`https://sou-web.net/sou.png`} /> */}
     </Head>
