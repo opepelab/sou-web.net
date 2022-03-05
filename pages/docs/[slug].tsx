@@ -2,7 +2,7 @@ import client from "libs/contentful";
 import { GetStaticPaths, GetStaticProps } from "next";
 import OG from "components/OG";
 import Framerdiv from "components/Sys/Framer";
-import styles from "midasi.module.scss";
+import styles from "./midasi.module.scss";
 import { EntryCollection } from "contentful";
 import { IPostFields } from "libs/types";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
