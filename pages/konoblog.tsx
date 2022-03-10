@@ -18,7 +18,7 @@ const Webclip: React.FC = () => {
           <br />
           もっというと日常的なことも書きたい日記にしたかったのでお手製にしました。
           <br />
-          t技術的にTypeScriptとVisual Studio Codeの型推論を学ぶためにReact Next.jsで作ることにしました。
+          技術的にTypeScriptとVisual Studio Codeの型推論を学ぶためにReact Next.jsで作ることにしました。
         </p>
         <p>普段はプログラミング以外はねこと遊んだりもしているので気軽にコンタクトを送ってもらって大丈夫ですよ。</p>
       </main>
