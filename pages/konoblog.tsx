@@ -16,7 +16,9 @@ const Webclip: React.FC = () => {
         <p>
           Zenn.devやQiitaを使うことも考えたのですがあちらはコード専用な感じな気がしたので
           <br />
-          TypeScriptとVisual Studio Codeの型推論を学ぶためにReact Next.jsで作ることにしました。
+          もっというと日常的なことも書きたい日記にしたかったのでお手製にしました。
+          <br />
+          技術的にTypeScriptとVisual Studio Codeの型推論を学ぶためにReact Next.jsで作ることにしました。
         </p>
         <p>普段はプログラミング以外はねこと遊んだりもしているので気軽にコンタクトを送ってもらってかませいません。</p>
       </main>
