@@ -9,23 +9,16 @@ const Webclip: React.FC = () => {
         <meta name="description" content="開発環境" />
       </Head>
       <main className="margin50p resizeimage inblo">
-        <h1>Development Environment</h1>
+        <h1>このブログについて</h1>
         <div className="triangle-bottom" />
-        <dl>
-          <img src="/picture/IMG-0554.jpg" />
-          <dt>Contentful</dt>
-          <dd>npm</dd>
-          <dt>TypeScript</dt>
-          <dd>Git</dd>
-          <dt>IDE</dt>
-          <dd>Visual Studio Code</dd>
-          <dt>language</dt>
-          <dd>TypeScript/Sass(Scss)</dd>
-          <dt>Browser</dt>
-          <dd>Edge/Chrome/Safari</dd>
-          <dt>Host</dt>
-          <dd>Vercel/Cloudflare</dd>
-        </dl>
+        <p>Contentfulのリッチテキストで入稿しています。</p>
+        <p>iPadや携帯からも投稿できたらいいなと思います。</p>
+        <p>
+          Zenn.devやQiitaを使うことも考えたのですがあちらはコード専用な感じな気がしたので
+          <br />
+          TypeScriptとVisual Studio Codeの型推論を学ぶためにReact Next.jsで作ることにしました。
+        </p>
+        <p>普段はプログラミング以外はねこと遊んだりもしているので気軽にコンタクトを送ってもらってかませいません。</p>
       </main>
     </Framerdiv>
   );
