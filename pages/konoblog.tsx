@@ -11,7 +11,7 @@ const Webclip: React.FC = () => {
       <main className="textLeft margin50p">
         <h1>このブログについて</h1>
         <div className="triangle-bottom" />
-        <p>ContentfulのリッチテキストMBAからいろんな場所でで入稿しています。</p>
+        <p>ContentfulのリッチテキストをMBAからいろんな場所でで入稿しています。</p>
         <p>iPadや携帯からも投稿できたらいいなと思います。</p>
         <p>
           Zenn.devやQiitaを使うことも考えたのですがあちらはコード専用な感じな気がしたので
