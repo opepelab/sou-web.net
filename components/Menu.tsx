@@ -43,6 +43,11 @@ const Menu = () => {
                         </ActiveLink>
                       </li>
                       <li>
+                        <ActiveLink href="/konoblog" activeClassName="headerState">
+                          <a onMouseDown={() => setOpen(!open)}>このブログについて</a>
+                        </ActiveLink>
+                      </li>
+                      <li>
                         <ActiveLink href="/webclip" activeClassName="headerState">
                           <a onMouseDown={() => setOpen(!open)}>WebClip</a>
                         </ActiveLink>
