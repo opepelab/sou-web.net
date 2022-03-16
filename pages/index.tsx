@@ -20,8 +20,6 @@ const Index: React.FC<Map> = ({ blog }) => {
     <Framerdiv>
       <OG title="Index - sou" description="Index" />
       <main className="textLeft margin-Mobile-PC-2 inblo">
-        <h1>TOP</h1>
-        <div className="triangle-bottom" />
         <p>
           <a className="pinkLinks" href="https://www.facebook.com/opepelab" target="_blank">
             ソフトウェアエンジニアのSou Watanabeです。
