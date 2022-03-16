@@ -5,7 +5,7 @@ const Privacy: React.FC = () => {
   return (
     <Framerdiv>
       <OG title="Privacy Policy - sou" description="プライバシーポリシー" />
-      <main className="margin50p textLeft">
+      <main className="margin-Mobile-PC textLeft">
         <h1>
           <ruby>
             Privacy Policy<rt>プライバシーポリシー</rt>
