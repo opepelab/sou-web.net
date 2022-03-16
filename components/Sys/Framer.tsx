@@ -13,7 +13,7 @@ const variants = {
 
 const Framerdiv = ({ children }: RRNode): JSX.Element => {
   return (
-    <motion.div initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ type: "spring" }}>
+    <motion.div initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ duration: 0.25 }}>
       {children}
     </motion.div>
   );
