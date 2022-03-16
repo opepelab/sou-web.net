@@ -8,7 +8,7 @@ const Webclip: React.FC = () => {
         <title>Development Environment - sou</title>
         <meta name="description" content="開発環境" />
       </Head>
-      <main className="textLeft margin50p">
+      <main className="textLeft margin-Mobile-PC">
         <h1>このブログについて</h1>
         <div className="triangle-bottom" />
         <p>Cloudflare registerで取得したドメインでCloudflare Pagesにデプロイしています。</p>

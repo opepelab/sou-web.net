@@ -5,7 +5,7 @@ const About = () => {
   return (
     <Framerdiv>
       <OG title="Overview - sou" description="私の概要" />
-      <main className="list margin50p textLeft inblo">
+      <main className="list margin-Mobile-PC-2 textLeft inblo">
         <h1>
           Overview <h5>Number11</h5>
         </h1>

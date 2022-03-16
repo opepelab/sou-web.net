@@ -6,7 +6,7 @@ const Links: React.FC = () => {
   return (
     <Framerdiv>
       <OG title="links - sou" description="リンク" />
-      <main className="CN">
+      <main className="margin-Mobile-PC">
         <h1>Links</h1>
         <div className="triangle-bottom" />
         <dl>

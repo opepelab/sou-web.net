@@ -7,7 +7,7 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
   return (
     <Framerdiv>
       <OG title="mail - sou" description="メール" />
-      <main className="CN margin50p Mail inblo">
+      <main className="margin-Mobile-PC Mail inblo">
         <form>
           <h1>Are you sure?</h1>
           <dl>

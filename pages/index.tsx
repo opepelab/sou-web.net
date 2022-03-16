@@ -19,15 +19,13 @@ const Index: React.FC<Map> = ({ blog }) => {
   return (
     <Framerdiv>
       <OG title="Index - sou" description="Index" />
-      <main className="textLeft margin50p inblo">
+      <main className="textLeft margin-Mobile-PC inblo">
         <h1>TOP</h1>
         <div className="triangle-bottom" />
         <p>
-          NPO法人で活動している技術者
           <a className="pinkLinks" href="https://www.facebook.com/opepelab" target="_blank">
-            Sou Watanabe
+            ソフトウェアエンジニアのSou Watanabeです。
           </a>
-          のウェブサイトです。
         </p>
         <h5>最新記事</h5>
         {blog.map((blog: Entry<IPostFields>) => (

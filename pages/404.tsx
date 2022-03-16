@@ -6,7 +6,7 @@ const NotFound: React.FC = () => {
   return (
     <Framerdiv>
       <OG title="404 - sou-web.net" description="存在しないページ" />
-      <main className="CN">
+      <main className="margin-Mobile-PC">
         <h1>Does not don't sync</h1>
         <div className="triangle-bottom" />
         <dl>
