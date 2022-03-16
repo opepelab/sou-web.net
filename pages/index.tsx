@@ -19,7 +19,7 @@ const Index: React.FC<Map> = ({ blog }) => {
   return (
     <Framerdiv>
       <OG title="Index - sou" description="Index" />
-      <main className="textLeft margin-Mobile-PC inblo">
+      <main className="textLeft margin-Mobile-PC-2 inblo">
         <h1>TOP</h1>
         <div className="triangle-bottom" />
         <p>
