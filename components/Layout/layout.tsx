@@ -12,7 +12,6 @@ const Layout: React.FC<Props> = ({ children }) => {
   return (
     <>
       <Menu />
-
       <ThemeToggler />
       <Text />
       <Header />
