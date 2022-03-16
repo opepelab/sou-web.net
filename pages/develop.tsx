@@ -5,7 +5,7 @@ const Develop: React.FC = () => {
   return (
     <Framerdiv>
       <OG title="Development Environment - sou" description="開発環境" />
-      <main className="margin-Mobile-PC resizeimage inblo">
+      <main className="margin-Mobile-PC-2 resizeimage inblo">
         <h1>Development Environment</h1>
         <div className="triangle-bottom" />
         <dl>
@@ -21,7 +21,7 @@ const Develop: React.FC = () => {
           <dt>Browser</dt>
           <dd>Edge/Chrome/Safari</dd>
           <dt>Host</dt>
-          <dd>Azure Static Web Apps GitHub Pages/Vercel</dd>
+          <dd>Azure SWA/Vercel/Cloudflare</dd>
         </dl>
       </main>
     </Framerdiv>
