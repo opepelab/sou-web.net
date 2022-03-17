@@ -5,7 +5,7 @@ const Picture: React.FC = () => {
   return (
     <Framerdiv>
       <OG title="photo - sou" description="フォト" />
-      <main className="margin50p inblo">
+      <main className="margin-Mobile-PC-2 inblo">
         <h1>Photo</h1>
         <div className="triangle-bottom" />
 
