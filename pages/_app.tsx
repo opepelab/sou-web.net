@@ -19,6 +19,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <ThemeContext.Provider value={{ theme, toggleTheme }}>
         <ThemeProvider theme={theme === "dark" ? LightTheme : DarkTheme}>

@@ -5,7 +5,7 @@ const Text: React.FC = () => {
     <div>
       <div className="inblo Top-Logo">
         <ActiveLink href="/" activeClassName="headerState">
-          <a className="hikki Logo">Written by Sou Watanabe</a>
+          <a className="hikki Logo">by Sou Watanabe</a>
         </ActiveLink>
       </div>
     </div>

@@ -22,7 +22,7 @@
   }
 
   .Line button {
-    z-index: 5;
+    z-index: 4;
     position: relative;
     border-radius: 12%;
     padding-top: 29px;
@@ -35,7 +35,7 @@
   }
 
   .Line {
-    z-index: 5;
+    z-index: 4;
     position: fixed;
     display: inline-block;
     right: 15px;
@@ -145,11 +145,22 @@
   }
 
   .toggle {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    // z-index: 3;
+    // position: absolute;
+    // top: 20px;
+    // left: 20px;
+    display: none;
   }
 
+  .ToggleMB {
+    z-index: 4;
+    position: absolute;
+    left: 204.4px;
+  }
+
+  .none {
+    display: block;
+  }
   pre code span {
     font-size: $p10;
   }

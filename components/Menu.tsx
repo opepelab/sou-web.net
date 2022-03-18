@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import ActiveLink from "./Sys/ActiveLink";
+import ToggleMB from "components/ToggleMB";
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div>
+    <div className="none">
       <div className="Line">
         <button
           aria-expanded={open}
@@ -136,6 +137,7 @@ const Menu = () => {
                 </li>
               </ul>
             </nav>
+            <ToggleMB />
           </div>
         </div>
       </div>
