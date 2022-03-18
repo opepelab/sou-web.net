@@ -1,5 +1,6 @@
 import client from "libs/contentful";
-import { GetStaticPaths } from "next";
+import { GetStaticPaths, GetStaticProps } from "next";
+import { ParsedUrlQuery } from "querystring";
 import OG from "components/Sys/OG";
 import Framerdiv from "components/Sys/Framer";
 import Link from "next/link";
@@ -7,6 +8,10 @@ import { Entry, EntryCollection } from "contentful";
 import { IPostFields } from "libs/types";
 import Date from "components/Sys/date";
 import ActiveLink from "components/Sys/ActiveLink";
+
+interface IParams extends ParsedUrlQuery {
+  [key: string]: any;
+}
 
 type Map = {
   total: number;
@@ -67,8 +72,9 @@ export const getStaticPaths: GetStaticPaths = async () => {
   return { paths, fallback: false };
 };
 
-export const getStaticProps = async (context: { params: { id: number } }) => {
-  const id = context.params.id;
+export const getStaticProps: GetStaticProps = async (context) => {
+  const { id } = context.params as IParams;
+
   const entries: EntryCollection<IPostFields> = await client.getEntries({
     content_type: "blog",
     order: "-fields.date",
@@ -85,3 +91,16 @@ export const getStaticProps = async (context: { params: { id: number } }) => {
 };
 
 export default Id;
+
+// if (!context.params) {
+//   return {
+//     notFound: true,
+//   };
+// }
+// const slug = context.params.slug;
+
+// if (typeof slug !== "string") {
+//   return {
+//     notFound: true,
+//   };
+// }

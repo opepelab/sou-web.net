@@ -1,5 +1,6 @@
 import client from "libs/contentful";
 import { GetStaticPaths, GetStaticProps } from "next";
+import { ParsedUrlQuery } from "querystring";
 import OG from "components/Sys/OG";
 import Framerdiv from "components/Sys/Framer";
 import styles from "./midasi.module.scss";
@@ -12,6 +13,10 @@ import * as TYPES from "@contentful/rich-text-types";
 import { Options } from "@contentful/rich-text-react-renderer";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/cjs/styles/prism";
+
+interface IParams extends ParsedUrlQuery {
+  slug: string;
+}
 
 type Content = {
   blog: {
@@ -87,23 +92,12 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  if (!context.params) {
-    return {
-      notFound: true,
-    };
-  }
-  const slug = context.params.slug;
-
-  if (typeof slug !== "string") {
-    return {
-      notFound: true,
-    };
-  }
+  const { slug } = context.params as IParams;
 
   const entries = await client.getEntries({
     content_type: "blog",
     limit: 1000,
-    "fields.slug": context.params.slug,
+    "fields.slug": slug,
   });
 
   return {
