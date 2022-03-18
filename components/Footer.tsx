@@ -3,7 +3,7 @@ import Link from "next/link";
 const Footer: React.FC = () => {
   return (
     <div>
-      <footer>
+      <footer className="Footer">
         <div className="inblo C">
           <a className="blue" href="https://github.com/opepelab/sou-web.net">
             github/sou-web.net
