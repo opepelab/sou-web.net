@@ -9,7 +9,7 @@ const OG = ({ title, description }: StProp) => {
   return (
     <Head>
       <title>{title}</title>
-      <meta property="og:title" content={title} />
+      {/* <meta property="og:title" content={title} /> */}
       <meta property="description" content={description} />
       <meta property="og:description" content={description} />
       {/* <meta property="og:image" content="https://sou-web.net/ogp/sou-ogp.png" /> */}
