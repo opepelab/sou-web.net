@@ -155,7 +155,17 @@
   .ToggleMB {
     z-index: 4;
     position: absolute;
-    left: 204.4px;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: $BG;
+    box-shadow: 0px 0px 4px 1px gray;
+    transition-duration: 1s;
   }
 
   .none {

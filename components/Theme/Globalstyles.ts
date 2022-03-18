@@ -42,6 +42,10 @@ export const GlobalStyles = createGlobalStyle<Props>`
         box-shadow: ${(props) => props.theme.shadow};
     }
     }
+    .ToggleMB {
+        background: ${(props) => props.theme.background};
+        box-shadow: ${(props) => props.theme.shadow};
+    }
 }
 `;
 
