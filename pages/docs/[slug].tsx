@@ -62,7 +62,7 @@ const Slug: React.FC<Content> = ({ blog }) => {
   };
   return (
     <Framerdiv>
-      <OG title={`${blog.fields.title} - sou`} description={blog.fields.description} />
+      <OG title={blog.fields.title} description={blog.fields.description} />
       <main className="Hlink list textLeft margin-Mobile-PC-2 resizeimage">
         <div className={styles.Time2}>
           <Date dateString={blog.fields.date} />
