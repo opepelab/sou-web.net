@@ -13,6 +13,7 @@ const OG = ({ title, description }: StProp) => {
       <meta property="description" content={description} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={`https://og-image-sw.vercel.app/${title}.png`} />
+      <meta name="twitter:card" content="summary_large_image" />
     </Head>
   );
 };
