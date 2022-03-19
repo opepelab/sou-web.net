@@ -3,7 +3,7 @@
  * htmlタグにdata-theme属性を付与して、見た目の切り替えを実現する.
  */
 
-const SwitchingTheme = () => {
+const SwitchingTheme = (currentTheme: any) => {
   const setTheme = (newTheme: string) => {
     const theme = !(newTheme === "dark" || newTheme === "light") ? "light" : newTheme;
     // ここではdata-themeとしていますが任意の名前でOKで大丈夫です.
@@ -30,7 +30,7 @@ const SwitchingTheme = () => {
   return (
     <>
       <div tabIndex={0} className="toggle" aria-label="Toggle Theme Dark or Light" onClick={changeTheme}>
-        {/* <div className={  === "dark" ? "gg-sun" : "gg-moon"} /> */}
+        <div className={currentTheme === "dark" ? "gg-sun" : "gg-moon"} />
       </div>
     </>
   );
