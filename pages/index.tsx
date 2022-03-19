@@ -9,6 +9,9 @@ import Date from "components/Sys/date";
 import Link from "next/link";
 import generateRssFeed from "../libs/feed";
 
+import SwitchingTheme from "components/switching-theme";
+import dynamic from "next/dynamic";
+
 type Map = {
   blog: {
     map: StringConstructor;
@@ -16,6 +19,7 @@ type Map = {
 };
 
 const Index: React.FC<Map> = ({ blog }) => {
+  const DynamicComponent = dynamic(() => import("../components/switching-theme"));
   return (
     <Framerdiv>
       <OG title="Index - sou" description="Index" />
@@ -25,6 +29,7 @@ const Index: React.FC<Map> = ({ blog }) => {
             ソフトウェアエンジニアのSou Watanabeです。
           </a>
         </p>
+        {/* <DynamicComponent /> */}
         <h5>最新記事</h5>
         {blog.map((blog: Entry<IPostFields>) => (
           <dl key={blog.sys.id}>

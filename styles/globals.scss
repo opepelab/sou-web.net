@@ -2,6 +2,22 @@
 @import "parts";
 @import "./PT/scrollbar";
 
+// :root {
+//   --color-text: #000;
+//   --color-bg: #fff;
+//   --color-code-bg: #fafafa;
+//   --color-border: #eaeaea;
+//   --color-link: #0070f3;
+// }
+// /* 追記 */
+// :root[data-theme="dark"] {
+//   --color-text: #fff;
+//   --color-bg: #333;
+//   --color-code-bg: #2d2d2d;
+//   --color-border: #dfdfdf;
+//   --color-link: #f38300;
+// }
+
 html {
   -webkit-text-size-adjust: $r100;
   overflow: scroll;
@@ -16,8 +32,9 @@ body {
   word-break: break-all;
   text-align: center;
   background: $BG;
-  background-attachment: fixed;
   color: $ST;
+  // background-color: var(--color-bg);
+  // color: var(--color-text);
   width: 800px;
   @include LRauto;
 }
