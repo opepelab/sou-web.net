@@ -13,6 +13,12 @@ interface IParams extends ParsedUrlQuery {
   [key: string]: any;
 }
 
+declare module "querystring" {
+  interface ParsedUrlQuery {
+    id: number;
+  }
+}
+
 type Map = {
   total: number;
   blog: {
