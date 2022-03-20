@@ -5,11 +5,8 @@ import Framerdiv from "components/Sys/Framer";
 import { Entry, EntryCollection } from "contentful";
 import { IPostFields } from "libs/types";
 import Date from "components/Sys/date";
-
 import Link from "next/link";
 import generateRssFeed from "../libs/feed";
-import { chakra } from "@chakra-ui/react";
-import ThemeToggleButton from "components/Theme-Toggle-Button";
 
 type Map = {
   blog: {
@@ -27,7 +24,6 @@ const Index: React.FC<Map> = ({ blog }) => {
             ソフトウェアエンジニアのSou Watanabeです。
           </a>
         </p>
-        <ThemeToggleButton />
         <h5>最新記事</h5>
         {blog.map((blog: Entry<IPostFields>) => (
           <dl key={blog.sys.id}>

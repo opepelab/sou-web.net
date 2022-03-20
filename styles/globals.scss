@@ -25,7 +25,7 @@ html {
 body {
   transition-duration: 0.5s;
   font: {
-    family: $Google;
+    // family: $Google;
     size: $p14;
     weight: lighter;
   }
@@ -33,6 +33,7 @@ body {
   text-align: center;
   background: $BG;
   color: $ST;
+  font-weight: normal;
   // background-color: var(--color-bg);
   // color: var(--color-text);
   width: 800px;
@@ -288,11 +289,11 @@ textarea {
   position: relative;
   display: inline-block;
   left: -420px;
-  top: -44px;
+  top: -40px;
   font-size: 24px;
 }
 
-.toggle {
+.togglelßege {
   z-index: 2;
   position: relative;
   top: -2px;
@@ -306,11 +307,12 @@ textarea {
   transition-duration: 1s;
   cursor: pointer;
 }
-@media screen and (min-width: 739.99px) {
-  .toggle {
-    background: $BG;
-    box-shadow: 0px 0px 4px 1px gray;
-  }
+
+.toggle {
+  z-index: 2;
+  position: relative;
+  top: -2px;
+  left: -515px;
 }
 
 #About input {

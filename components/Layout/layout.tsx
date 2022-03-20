@@ -4,6 +4,7 @@ import Menu from "../Menu";
 import Text from "../Text";
 import Footer from "../Footer";
 import ThemeToggler from "../ThemeToggler";
+import ThemeToggleButton from "components/Theme-Toggle-Button";
 
 type Props = {
   children: ReactNode;
@@ -12,7 +13,7 @@ const Layout: React.FC<Props> = ({ children }) => {
   return (
     <>
       <Menu />
-      <ThemeToggler />
+      <ThemeToggleButton />
       <Text />
       <Header />
       <div className="footerFix">{children}</div>

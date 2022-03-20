@@ -4,10 +4,20 @@ import { mode } from "@chakra-ui/theme-tools";
 const styles = {
   global: (props: any) => ({
     body: {
-      bg: mode("#f0e7db", "#202023")(props),
+      bg: mode("#fff", "#222")(props),
+    },
+    ".pinkLinks": {
+      color: mode("#009999", "")(props),
+      _hover: {
+        textDecoration: "underline",
+      },
     },
   }),
 };
 
-export const theme = extendTheme({ styles });
+const fonts = {
+  heading: "Hind",
+};
+
+export const theme = extendTheme({ styles, fonts });
 export default theme;
