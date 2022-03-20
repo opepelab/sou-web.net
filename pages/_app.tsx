@@ -1,12 +1,13 @@
 import { AppProps } from "next/app";
 import { AnimatePresence } from "framer-motion";
+import Chakra from "components/Sys/Chakra";
 import "styles/globals.scss";
 import "styles/mobile.scss";
 import "styles/icons.scss";
 import "styles/img.scss";
 import Head from "next/head";
-import { ChakraProvider } from "@chakra-ui/react";
-import { theme } from "libs/theme";
+// import { ChakraProvider } from "@chakra-ui/react";
+// import { theme } from "libs/theme";
 import Layout from "components/Layout/layout";
 import usePageView from "hooks/usePageView";
 
@@ -19,13 +20,13 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <ChakraProvider theme={theme} resetCSS={false}>
+      <Chakra cookies={pageProps.cookies}>
         <Layout>
           <AnimatePresence exitBeforeEnter>
             <Component {...pageProps} key={router.asPath} />
           </AnimatePresence>
         </Layout>
-      </ChakraProvider>
+      </Chakra>
     </>
   );
 };
