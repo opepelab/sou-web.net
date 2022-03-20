@@ -6,9 +6,9 @@ type StrProps = {
   toggleTheme: StringConstructor;
 };
 
-export const ThemeToggler = () => {
+export const ThemeTogglerMB = () => {
   const { currentTheme, toggleTheme } = useContext<StrProps>(ThemeContext);
-  // localStorage.setItem("theme", currentTheme);
+
   return (
     <div className="inblo">
       <div
@@ -25,4 +25,4 @@ export const ThemeToggler = () => {
   );
 };
 
-export default ThemeToggler;
+export default ThemeTogglerMB;

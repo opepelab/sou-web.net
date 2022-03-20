@@ -8,8 +8,6 @@ import Date from "components/Sys/date";
 
 import Link from "next/link";
 import generateRssFeed from "../libs/feed";
-
-import SwitchingTheme from "components/switching-theme";
 import dynamic from "next/dynamic";
 
 type Map = {

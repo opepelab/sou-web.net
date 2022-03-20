@@ -7,7 +7,7 @@ import "styles/img.scss";
 import Head from "next/head";
 import { ThemeContext, ThemeProvider } from "styled-components";
 import { LightTheme, DarkTheme } from "components/Theme/Theme";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import GlobalStyles from "components/Theme/Globalstyles";
 import Layout from "components/Layout/layout";
 import usePageView from "hooks/usePageView";
@@ -15,22 +15,6 @@ import usePageView from "hooks/usePageView";
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
   usePageView();
   const [currentTheme, toggleTheme] = useState();
-  // const [currentTheme, setCurrentTheme] = useState(() => {
-  //   localStorage.setItem("theme", currentTheme);
-  //   (localStorage && localStorage.theme === "dark") ||
-  //     (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches);
-  //   const storagedTheme = localStorage.getItem("theme");
-
-  //   return storagedTheme ?? "light";
-  // });
-
-  // useEffect(() => {
-  //   localStorage.setItem("theme", currentTheme);
-  // }, [currentTheme]);
-
-  // function toggleTheme() {
-  //   setCurrentTheme(currentTheme === "light" ? "dark" : "light");
-  // }
 
   return (
     <>
