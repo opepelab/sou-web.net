@@ -22,7 +22,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
       </Head>
 
       <Layout>
-        <AnimatePresence exitBeforeEnter>
+        <AnimatePresence exitBeforeEnter initial={true}>
           <Component {...pageProps} key={router.asPath} />
         </AnimatePresence>
       </Layout>

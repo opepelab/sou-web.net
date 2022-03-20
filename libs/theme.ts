@@ -8,9 +8,6 @@ const styles = {
     },
     ".pinkLinks": {
       color: mode("#009999", "rgb(160, 240, 240)")(props),
-      _hover: {
-        textDecoration: "underline",
-      },
     },
   }),
 };
