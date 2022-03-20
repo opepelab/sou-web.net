@@ -5,6 +5,7 @@ import "styles/mobile.scss";
 import "styles/icons.scss";
 import "styles/img.scss";
 import Head from "next/head";
+import { ChakraProvider } from "@chakra-ui/react";
 import { ThemeContext, ThemeProvider } from "styled-components";
 import { LightTheme, DarkTheme } from "components/Theme/Theme";
 import { useState } from "react";
@@ -25,9 +26,11 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
         <ThemeProvider theme={currentTheme === "dark" ? LightTheme : DarkTheme}>
           <GlobalStyles />
           <Layout>
+            {/* <ChakraProvider> */}
             <AnimatePresence exitBeforeEnter>
               <Component {...pageProps} key={router.asPath} />
             </AnimatePresence>
+            {/* </ChakraProvider> */}
           </Layout>
         </ThemeProvider>
       </ThemeContext.Provider>

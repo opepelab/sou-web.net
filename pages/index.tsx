@@ -8,7 +8,8 @@ import Date from "components/Sys/date";
 
 import Link from "next/link";
 import generateRssFeed from "../libs/feed";
-import dynamic from "next/dynamic";
+import { chakra } from "@chakra-ui/react";
+import ThemeToggleButton from "components/Theme-Toggle-Button";
 
 type Map = {
   blog: {
@@ -17,7 +18,6 @@ type Map = {
 };
 
 const Index: React.FC<Map> = ({ blog }) => {
-  const DynamicComponent = dynamic(() => import("../components/switching-theme"));
   return (
     <Framerdiv>
       <OG title="Index - sou" description="Index" />
@@ -27,7 +27,7 @@ const Index: React.FC<Map> = ({ blog }) => {
             ソフトウェアエンジニアのSou Watanabeです。
           </a>
         </p>
-        {/* <DynamicComponent /> */}
+        <ThemeToggleButton />
         <h5>最新記事</h5>
         {blog.map((blog: Entry<IPostFields>) => (
           <dl key={blog.sys.id}>

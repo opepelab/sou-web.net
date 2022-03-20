@@ -2,12 +2,12 @@ import { useContext } from "react";
 import { ThemeContext } from "styled-components";
 
 type StrProps = {
-  theme: string;
+  currentTheme: string;
   toggleTheme: StringConstructor;
 };
 
 export const ThemeTogglerMB = () => {
-  const { theme, toggleTheme } = useContext<StrProps>(ThemeContext);
+  const { currentTheme, toggleTheme } = useContext<StrProps>(ThemeContext);
 
   return (
     <div className="inblo">
@@ -16,10 +16,10 @@ export const ThemeTogglerMB = () => {
         className="ToggleMB"
         aria-label="Toggle Theme Dark or Light"
         onClick={() => {
-          toggleTheme(theme === "dark" ? "light" : "dark");
+          toggleTheme(currentTheme === "dark" ? "light" : "dark");
         }}
       >
-        <div className={theme === "dark" ? "gg-sun" : "gg-moon"} />
+        <div className={currentTheme === "dark" ? "gg-sun" : "gg-moon"} />
       </div>
     </div>
   );
