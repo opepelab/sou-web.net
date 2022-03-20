@@ -6,22 +6,18 @@ import "styles/mobile.scss";
 import "styles/icons.scss";
 import "styles/img.scss";
 import Head from "next/head";
-// import { ChakraProvider } from "@chakra-ui/react";
-// import { theme } from "libs/theme";
 import Layout from "components/Layout/layout";
 import usePageView from "hooks/usePageView";
 
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
-  // usePageView();
-  // const [currentTheme, toggleTheme] = useState();
+  usePageView();
 
   return (
     <>
       <Chakra cookies={pageProps.cookies}>
-        {/* <Head>
+        <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        </Head> */}
-
+        </Head>
         <Layout>
           <AnimatePresence exitBeforeEnter initial={true}>
             <Component {...pageProps} key={router.asPath} />
@@ -33,3 +29,4 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
 };
 
 export default MyApp;
+export { getServerSideProps } from "components/Sys/chakra";
