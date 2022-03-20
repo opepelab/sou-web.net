@@ -3,7 +3,7 @@ import { mode } from "@chakra-ui/theme-tools";
 
 const styles = {
   global: (props: any) => ({
-    body: {
+    "html, body": {
       bg: mode("#fff", "#222")(props),
     },
     ".pinkLinks": {
@@ -12,10 +12,10 @@ const styles = {
   }),
 };
 
-const config = {
-  initialColorMode: "dark",
-  useSystemColorMode: true,
-};
+// const config = {
+//   initialColorMode: "dark",
+//   useSystemColorMode: true,
+// };
 
-export const theme = extendTheme({ styles, config });
+export const theme = extendTheme({ styles });
 export default theme;
