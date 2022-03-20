@@ -1,6 +1,6 @@
 import { ChakraProvider, cookieStorageManager, localStorageManager } from "@chakra-ui/react";
 import theme from "libs/theme";
-import { GetServerSideProps } from "next";
+import { NextApiResponse } from "next";
 
 type Storage = {
   cookies: string;
@@ -17,12 +17,14 @@ const Chakra = ({ cookies, children }: Storage) => {
   );
 };
 
-export const getServerSideProps: GetServerSideProps = async ({ req }) => {
+export function getServerSideProps({ req }: NextApiResponse) {
   return {
     props: {
+      // first time users will not have any cookies and you may not return
+      // undefined here, hence ?? is necessary
       cookies: req.headers.cookie ?? "",
     },
   };
-};
+}
 
 export default Chakra;
