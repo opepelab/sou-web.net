@@ -6,20 +6,20 @@
 //   -webkit-text-size-adjust: $r100;
 //   overflow: scroll;
 // }
-// body {
-//   font: {
-//     // family: $Google;
-//     size: $p14;
-//     weight: lighter;
-//   }
-//   word-break: break-all;
-//   text-align: center;
-//   // background: $BG;
-//   // color: $ST;
-//   font-weight: normal;
-//   width: 800px;
-//   @include LRauto;
-// }
+body {
+  font: {
+    // family: $Google;
+    size: $p14;
+    weight: lighter;
+  }
+  word-break: break-all;
+  text-align: center;
+  // background: $BG;
+  // color: $ST;
+  font-weight: normal;
+  width: 800px;
+  @include LRauto;
+}
 
 pre {
   border-radius: 10px;
