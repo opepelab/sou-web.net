@@ -40,7 +40,6 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
       <ThemeContext.Provider value={{ theme: currentTheme, toggleTheme }}>
         <ThemeProvider theme={currentTheme === "dark" ? LightTheme : DarkTheme}>
           <GlobalStyles />
-
           <Layout>
             <AnimatePresence exitBeforeEnter>
               <Component {...pageProps} key={router.asPath} />
