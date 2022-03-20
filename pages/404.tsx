@@ -20,4 +20,3 @@ const NotFound: React.FC = () => {
 };
 
 export default NotFound;
-export { getServerSideProps } from "components/Sys/chakra";
