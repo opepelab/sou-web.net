@@ -3,6 +3,7 @@ import { GA_TRACKING_ID } from "../libs/gtag";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import theme from "libs/theme";
 import { ColorModeScript } from "@chakra-ui/react";
+import { FlashlessScript } from "chakra-ui-flashless";
 
 class MyDocument extends Document {
   render() {
@@ -41,7 +42,7 @@ class MyDocument extends Document {
           )}
         </Head>
         <body>
-          <script src="/noflash.js" />
+          <FlashlessScript theme={theme} />
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
           <Main />
           <NextScript />
