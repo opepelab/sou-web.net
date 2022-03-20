@@ -12,9 +12,5 @@ const styles = {
   }),
 };
 
-const fonts = {
-  heading: "Hind",
-};
-
-export const theme = extendTheme({ styles, fonts });
+export const theme = extendTheme({ styles });
 export default theme;
