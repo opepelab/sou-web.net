@@ -41,6 +41,7 @@ class MyDocument extends Document {
           )}
         </Head>
         <body>
+          <script src="/noflash.js" />
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
           <Main />
           <NextScript />
