@@ -12,15 +12,15 @@ import Layout from "components/Layout/layout";
 import usePageView from "hooks/usePageView";
 
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
-  usePageView();
+  // usePageView();
   // const [currentTheme, toggleTheme] = useState();
 
   return (
     <>
       <Chakra cookies={pageProps.cookies}>
-        <Head>
+        {/* <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        </Head>
+        </Head> */}
 
         <Layout>
           <AnimatePresence exitBeforeEnter initial={true}>
