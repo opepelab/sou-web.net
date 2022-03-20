@@ -62,3 +62,4 @@ export const getStaticProps: GetStaticProps = async () => {
 };
 
 export default Index;
+export { getServerSideProps } from "components/Sys/chakra";

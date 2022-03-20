@@ -576,7 +576,7 @@
   dependencies:
     "@chakra-ui/utils" "^1.10.4"
 
-"@chakra-ui/react@^1.1.6", "@chakra-ui/react@1.8.6":
+"@chakra-ui/react@1.8.6":
   "integrity" "sha512-FEh/KG0uPeNOMQuIlyPfGjHvGB7LN1AAhkdFefqzNt0zNy8Giv4p1PKY7wdCh5QEFor++A83L1wIWvTGQVJ2vQ=="
   "resolved" "https://registry.npmjs.org/@chakra-ui/react/-/react-1.8.6.tgz"
   "version" "1.8.6"
@@ -1718,14 +1718,6 @@
   "integrity" "sha512-xjlIAFHucBRSMUo1kb5D4LYgcN1M45qdKP++lhqowDpwJwGkpIRTt5qQqnhxjj1vHcI7nrJxWhCC1ATrCEBTcw=="
   "resolved" "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001319.tgz"
   "version" "1.0.30001319"
-
-"chakra-ui-flashless@0.0.8":
-  "integrity" "sha512-VJT+El7a9JA5ikEMq0WkbEJpdyKWq2rh7sQxmwjeTx7VDt2unr5Xll5JAgRvj1ijHg1bqoEDh8Stav0JTfwcaQ=="
-  "resolved" "https://registry.npmjs.org/chakra-ui-flashless/-/chakra-ui-flashless-0.0.8.tgz"
-  "version" "0.0.8"
-  dependencies:
-    "lodash.merge" "^4.6.2"
-    "outdent" "^0.8.0"
 
 "chalk@^2.0.0":
   "integrity" "sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ=="
@@ -3591,11 +3583,6 @@
   "integrity" "sha1-hUNzx/XCMVkU/Jv8a9gjj92h7Cc="
   "resolved" "https://registry.npmjs.org/os-browserify/-/os-browserify-0.3.0.tgz"
   "version" "0.3.0"
-
-"outdent@^0.8.0":
-  "integrity" "sha512-KiOAIsdpUTcAXuykya5fnVVT+/5uS0Q1mrkRHcF89tpieSmY33O/tmc54CqwA+bfhbtEfZUNLHaPUiB9X3jt1A=="
-  "resolved" "https://registry.npmjs.org/outdent/-/outdent-0.8.0.tgz"
-  "version" "0.8.0"
 
 "p-limit@^1.1.0":
   "integrity" "sha512-vvcXsLAJ9Dr5rQOPk7toZQZJApBl2K4J6dANSsEuh6QI41JYcsS/qhTGa9ErIUUgK3WNQoJYvylxvjqmiqEA9Q=="
