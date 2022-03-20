@@ -56,3 +56,4 @@ const Picture: React.FC = () => {
 };
 
 export default Picture;
+export { getServerSideProps } from "components/Sys/chakra";

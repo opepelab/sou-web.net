@@ -29,3 +29,4 @@ const About: React.FC = () => {
 };
 
 export default About;
+export { getServerSideProps } from "components/Sys/chakra";

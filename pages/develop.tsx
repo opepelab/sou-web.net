@@ -29,3 +29,4 @@ const Develop: React.FC = () => {
 };
 
 export default Develop;
+export { getServerSideProps } from "components/Sys/chakra";

@@ -28,3 +28,4 @@ const Privacy: React.FC = () => {
 };
 
 export default Privacy;
+export { getServerSideProps } from "components/Sys/chakra";

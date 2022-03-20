@@ -5,7 +5,7 @@ import Text from "../Text";
 import Footer from "../Footer";
 import ThemeToggleButton from "components/Theme-Toggle-Button";
 {
-  /* <div className="footerFix"></div> */
+  /*  */
 }
 type Props = {
   children: ReactNode;
@@ -17,10 +17,11 @@ const Layout: React.FC<Props> = ({ children }) => {
       <ThemeToggleButton />
       <Text />
       <Header />
-      {children}
+      <div className="footerFix">{children}</div>
       <Footer />
     </>
   );
 };
 
 export default Layout;
+export { getServerSideProps } from "components/Sys/chakra";
