@@ -7,10 +7,6 @@ import "styles/img.scss";
 import Head from "next/head";
 import { ChakraProvider } from "@chakra-ui/react";
 import { theme } from "libs/theme";
-import { ThemeContext, ThemeProvider } from "styled-components";
-import { LightTheme, DarkTheme } from "components/Theme/Theme";
-import { useState } from "react";
-import GlobalStyles from "components/Theme/Globalstyles";
 import Layout from "components/Layout/layout";
 import usePageView from "hooks/usePageView";
 
@@ -23,9 +19,6 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      {/* <ThemeContext.Provider value={{ currentTheme, toggleTheme }}>
-        <ThemeProvider theme={currentTheme === "dark" ? LightTheme : DarkTheme}> */}
-      {/* <GlobalStyles /> */}
       <ChakraProvider theme={theme} resetCSS={false}>
         <Layout>
           <AnimatePresence exitBeforeEnter>
@@ -33,8 +26,6 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
           </AnimatePresence>
         </Layout>
       </ChakraProvider>
-      {/* </ThemeProvider>
-      </ThemeContext.Provider> */}
     </>
   );
 };
