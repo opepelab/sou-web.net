@@ -12,5 +12,10 @@ const styles = {
   }),
 };
 
-export const theme = extendTheme({ styles });
+const config = {
+  initialColorMode: "dark",
+  useSystemColorMode: true,
+};
+
+export const theme = extendTheme({ styles, config });
 export default theme;

@@ -11,7 +11,7 @@ const Chakra = ({ cookies, children }: Storage) => {
   const colorModeManager = typeof cookies === "string" ? cookieStorageManager(cookies) : localStorageManager;
 
   return (
-    <ChakraProvider resetCSS={true} theme={theme} colorModeManager={colorModeManager}>
+    <ChakraProvider resetCSS={false} theme={theme} colorModeManager={colorModeManager}>
       {children}
     </ChakraProvider>
   );
