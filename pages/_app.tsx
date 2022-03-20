@@ -11,10 +11,6 @@ import Head from "next/head";
 import Layout from "components/Layout/layout";
 import usePageView from "hooks/usePageView";
 
-if (typeof window !== "undefined") {
-  window.history.scrollRestoration = "manual";
-}
-
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
   usePageView();
   // const [currentTheme, toggleTheme] = useState();
@@ -26,15 +22,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
       </Head>
 
       <Layout>
-        <AnimatePresence
-          exitBeforeEnter
-          initial={true}
-          onExitComplete={() => {
-            if (typeof window !== "undefined") {
-              window.scrollTo({ top: 0 });
-            }
-          }}
-        >
+        <AnimatePresence exitBeforeEnter>
           <Component {...pageProps} key={router.asPath} />
         </AnimatePresence>
       </Layout>
