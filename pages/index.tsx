@@ -1,7 +1,7 @@
 import client from "libs/contentful";
 import { GetStaticProps } from "next";
 import OG from "components/Sys/OG";
-import Layout from "components/Sys/Framer";
+import Framerdiv from "components/Sys/Framer";
 import { Entry, EntryCollection } from "contentful";
 import { IPostFields } from "libs/types";
 import Date from "components/Sys/date";
@@ -16,7 +16,7 @@ type Map = {
 
 const Index: React.FC<Map> = ({ blog }) => {
   return (
-    <Layout>
+    <Framerdiv>
       <OG title="Index - sou" description="Index" />
       <main className="textLeft margin-Mobile-PC-2 inblo">
         <p>
@@ -43,7 +43,7 @@ const Index: React.FC<Map> = ({ blog }) => {
           </a>
         </Link>
       </main>
-    </Layout>
+    </Framerdiv>
   );
 };
 
