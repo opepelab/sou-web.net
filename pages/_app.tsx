@@ -1,6 +1,6 @@
 import { AppProps } from "next/app";
 import { AnimatePresence } from "framer-motion";
-import Chakra from "components/Sys/Chakra";
+import Chakra from "components/Sys/chakra";
 import "styles/globals.scss";
 import "styles/mobile.scss";
 import "styles/icons.scss";
