@@ -20,7 +20,7 @@ const Index: React.FC<Map> = ({ blog }) => {
       <OG title="Index - sou" description="Index" />
       <main className="textLeft margin-Mobile-PC inblo">
         <p>
-          <a className="pinkLinks" href="https://www.facebook.com/opepelab" target="_blank">
+          <a className="pinkLinks text-black dark:text-white" href="https://www.facebook.com/opepelab" target="_blank">
             Software EngineerのSou Watanabeです。
           </a>
         </p>
@@ -32,7 +32,7 @@ const Index: React.FC<Map> = ({ blog }) => {
             </dt>
             <Link href={`/docs/${blog.fields.slug}`}>
               <a>
-                <div className="PPx scaleLinks text-rose-300 dark:text-sky-200">{blog.fields.title}</div>
+                <div className="PPx scaleLinks text-rose-500 dark:text-teal-400">{blog.fields.title}</div>
               </a>
             </Link>
           </dl>
