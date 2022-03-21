@@ -13,9 +13,9 @@ const Menu = () => {
           aria-label="Toggle mobile navigation menu"
           type="button"
         >
-          <span className="text-black" />
-          <span />
-          <span />
+          <span className="dark:bg-white" />
+          <span className="dark:bg-white" />
+          <span className="dark:bg-white" />
         </button>
       </div>
       <div className="Filt">
