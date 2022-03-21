@@ -12,10 +12,7 @@ import Script from "next/script";
 
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
   useEffect(() => {
-    if (
-      localStorage.theme === "dark" ||
-      (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
+    if (localStorage.theme === "dark" || (!localStorage && window.matchMedia("(prefers-color-scheme: dark)"))) {
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");

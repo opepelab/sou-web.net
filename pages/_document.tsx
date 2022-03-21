@@ -1,9 +1,7 @@
 // pages/_document.js
 import { GA_TRACKING_ID } from "../libs/gtag";
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import theme from "libs/theme";
-// import { ColorModeScript } from "@chakra-ui/react";
-import Script from "next/script";
+
 class MyDocument extends Document {
   render() {
     return (
@@ -30,7 +28,6 @@ class MyDocument extends Document {
           )}
         </Head>
         <body className="bg-amber-50 text-gray-600 dark:bg-stone-800 dark:text-teal-100 transition duration-500">
-          {/* <ColorModeScript initialColorMode={theme.config.initialColorMode} /> */}
           <Main />
           <NextScript />
         </body>
