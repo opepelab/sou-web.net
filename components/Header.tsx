@@ -51,16 +51,16 @@ const Header: React.FC = () => {
                                 </ActiveLink>
                               </li>
                               <li>
-                                <ActiveLink href="/konoblog" activeClassName="headerState">
+                                <ActiveLink href="/thisblog" activeClassName="headerState">
                                   <a>
-                                    <div className="hoverBG BlockM">このブログについて</div>
+                                    <div className="hoverBG BlockM">This blog</div>
                                   </a>
                                 </ActiveLink>
                               </li>
                               <li>
                                 <ActiveLink href="/webclip" activeClassName="headerState">
                                   <a>
-                                    <div className="hoverBG BlockM">WebClip</div>
+                                    <div className="hoverBG BlockM">Web clip</div>
                                   </a>
                                 </ActiveLink>
                               </li>

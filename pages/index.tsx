@@ -21,7 +21,12 @@ const Index: React.FC<Map> = ({ blog }) => {
       <main className="textLeft margin-Mobile-PC inblo">
         <p>
           <a className="pinkLinks text-black dark:text-white" href="https://www.facebook.com/opepelab" target="_blank">
-            Software EngineerのSou Watanabeです。
+            <h1>Hello? My name is Sou.</h1>
+            <p>
+              I am Software contributor
+              <br />
+              from JAPAN Tokyo.
+            </p>
           </a>
         </p>
         <h5>最新記事</h5>

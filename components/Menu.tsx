@@ -45,13 +45,13 @@ const Menu = () => {
                       </ActiveLink>
                     </li>
                     <li>
-                      <ActiveLink href="/konoblog" activeClassName="headerState">
-                        <a onMouseDown={() => setOpen(!open)}>このブログについて</a>
+                      <ActiveLink href="/thisblog" activeClassName="headerState">
+                        <a onMouseDown={() => setOpen(!open)}>This blog</a>
                       </ActiveLink>
                     </li>
                     <li>
                       <ActiveLink href="/webclip" activeClassName="headerState">
-                        <a onMouseDown={() => setOpen(!open)}>WebClip</a>
+                        <a onMouseDown={() => setOpen(!open)}>Web clip</a>
                       </ActiveLink>
                     </li>
                   </ul>
