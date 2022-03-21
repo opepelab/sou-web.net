@@ -31,12 +31,8 @@ const DarkModeToggle = (): JSX.Element => {
         className="text-2xl sm:text-3xl text-yellow-400 dark:text-yellow-300 focus:outline-none"
         onClick={() => toggleMode()}
         key={darkModeActive ? "dark-icon" : "light-icon"}
-        initial={{ y: -20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        exit={{ y: 20, opacity: 0 }}
-        transition={{ duration: 0.2 }}
       >
-        {darkModeActive ? "🌙" : "🌤️"}
+        <div className={darkModeActive ? "gg-sun" : "gg-moon"}></div>
       </motion.button>
     </AnimatePresence>
   );

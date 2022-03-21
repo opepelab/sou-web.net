@@ -19,14 +19,14 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
-      <Chakra cookies={pageProps.cookies}>
-        <Layout>
-          <AnimatePresence exitBeforeEnter initial={true}>
-            <Script src="/theme.js" strategy="beforeInteractive" />
-            <Component {...pageProps} key={router.asPath} />
-          </AnimatePresence>
-        </Layout>
-      </Chakra>
+      {/* <Chakra cookies={pageProps.cookies}> */}
+      <Layout>
+        <AnimatePresence exitBeforeEnter initial={true}>
+          <Script src="/theme.js" strategy="beforeInteractive" />
+          <Component {...pageProps} key={router.asPath} />
+        </AnimatePresence>
+      </Layout>
+      {/* </Chakra> */}
     </>
   );
 };
