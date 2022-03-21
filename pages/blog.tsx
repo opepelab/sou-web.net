@@ -46,6 +46,7 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       blog: entries.items,
     },
+    revalidate: 1,
   };
 };
 
