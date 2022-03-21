@@ -20,14 +20,15 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
       localStorage.theme === "dark" ||
       (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
     ) {
-      document.body.classList.add("dark");
+      document.documentElement.classList.add("dark");
     } else {
-      document.body.classList.remove("dark");
+      document.documentElement.classList.remove("dark");
     }
   });
 
   return (
     <>
+      <Script src="/theme.js" strategy="beforeInteractive" />
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
@@ -35,7 +36,6 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
       {/* <Chakra cookies={pageProps.cookies}> */}
       <Layout>
         <AnimatePresence exitBeforeEnter initial={true}>
-          <Script src="/theme.js" strategy="beforeInteractive" />
           <Component {...pageProps} key={router.asPath} />
         </AnimatePresence>
       </Layout>
