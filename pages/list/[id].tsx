@@ -69,7 +69,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   const paths = range(1, Math.ceil(entries.total / Limit)).map((id) => `/list/${id}`);
 
-  return { paths, fallback: true };
+  return { paths, fallback: false };
 };
 
 export const getStaticProps: GetStaticProps = async (context) => {
@@ -87,7 +87,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
       blog: entries.items,
       total: entries.total,
     },
-    revalidate: 1,
   };
 };
 
