@@ -1,8 +1,8 @@
 (function initTheme() {
   var theme = localStorage.getItem("theme");
   if (theme === "dark") {
-    document.querySelector.classList.add("dark");
+    document.querySelector("html").classList.add("dark");
   } else {
-    document.querySelector.classList.remove("dark");
+    document.querySelector("html").classList.remove("dark");
   }
 })();
