@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useLayoutEffect } from "react";
 
 const isDark = (): boolean =>
   (localStorage && localStorage.theme === "dark") ||
@@ -19,7 +19,7 @@ const DarkModeToggle = () => {
     setDarkMode(!isDarkMode);
   };
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     setDarkMode(isDark());
   });
 
