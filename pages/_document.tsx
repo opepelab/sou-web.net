@@ -40,7 +40,7 @@ class MyDocument extends Document {
             </>
           )}
         </Head>
-        <body>
+        <body className="bg-white dark:bg-gray-800">
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
           <Main />
           <NextScript />

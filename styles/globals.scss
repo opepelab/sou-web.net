@@ -2,6 +2,9 @@
 @import "parts";
 @import "./PT/scrollbar";
 
+@tailwind components;
+@tailwind utilities;
+
 html {
   -webkit-text-size-adjust: $r100;
   overflow: scroll;
