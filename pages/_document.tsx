@@ -27,7 +27,7 @@ class MyDocument extends Document {
             </>
           )}
         </Head>
-        <body className="bg-amber-50 text-gray-600 dark:bg-stone-800 dark:text-teal-100 transition duration-500">
+        <body className="bg-amber-50 text-gray-600 dark:bg-stone-800 dark:text-zinc-100 transition duration-500">
           <Main />
           <NextScript />
         </body>

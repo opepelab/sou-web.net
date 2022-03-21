@@ -28,7 +28,7 @@ const Header: React.FC = () => {
                       <a className="dark:text-stone-300 scaleLinks Block">
                         <div className="gg-details-more" />
                         About
-                        <div className="SankakuBlack" />
+                        <div className="SankakuBlack bg-gray-600" />
                       </a>
                     </div>
                     <div ref={aboRef} tabIndex={1} onBlur={() => setTimeout(() => setAbout(!about), 125)}>
