@@ -19,7 +19,7 @@ const Header: React.FC = () => {
     <div>
       <Center>
         <header className="">
-          <div className="bgg">
+          <div className="bgg bg-amber-50 dark:bg-stone-800">
             <div className="disableN">
               <nav>
                 <ul className="nav1">

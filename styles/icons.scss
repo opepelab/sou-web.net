@@ -234,7 +234,7 @@
 }
 
 .gg-sun {
-  color: coral;
+  color: orange;
   box-sizing: border-box;
   position: absolute;
   display: block;
@@ -253,7 +253,7 @@
 
 .gg-sun::after,
 .gg-sun::before {
-  color: coral;
+  color: orange;
   content: "";
   display: block;
   box-sizing: border-box;
@@ -276,7 +276,7 @@
 
 .gg-moon,
 .gg-moon::after {
-  color: skyblue;
+  color: cyan;
   display: block;
   box-sizing: border-box;
   border-radius: 50%;

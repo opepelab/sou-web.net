@@ -272,7 +272,7 @@ textarea {
   z-index: 2;
   position: fixed;
   display: inline-block;
-  left: 400px;
+  left: 320px;
   top: 10px;
   font-size: 24px;
 }
@@ -280,12 +280,12 @@ textarea {
 .toggle {
   z-index: 3;
   position: fixed;
-  top: 5px;
+  top: 6px;
   left: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
+  width: 400px;
   height: 40px;
   transition-duration: 1s;
   cursor: pointer;
@@ -307,7 +307,7 @@ textarea {
   width: 45px;
   height: 45px;
   border-radius: 20%;
-  background: #fda4af;
+  background: white;
 }
 
 .black {
@@ -316,10 +316,10 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 20%;
-  background: Purple;
+  background: black;
 }
 
 #About input {
