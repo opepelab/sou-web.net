@@ -1,28 +1,33 @@
-import { useContext } from "react";
-import { ThemeContext } from "styled-components";
+import { useState, useEffect } from "react";
 
-type StrProps = {
-  currentTheme: string;
-  toggleTheme: StringConstructor;
-};
+const isDark = (): boolean =>
+  (localStorage && localStorage.theme === "dark") ||
+  (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches);
 
-export const ThemeTogglerMB = () => {
-  const { currentTheme, toggleTheme } = useContext<StrProps>(ThemeContext);
+const getThemeString = (isDark: boolean): string => (isDark ? "dark" : "light");
+
+const DarkModeToggle = () => {
+  const [isDarkMode, setDarkMode] = useState(false);
+
+  const toggleMode = () => {
+    localStorage.theme = getThemeString(!isDarkMode);
+    if (localStorage.theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+    setDarkMode(!isDarkMode);
+  };
+
+  useEffect(() => {
+    setDarkMode(isDark());
+  });
 
   return (
-    <div className="inblo">
-      <div
-        tabIndex={0}
-        className="ToggleMB"
-        aria-label="Toggle Theme Dark or Light"
-        onClick={() => {
-          toggleTheme(currentTheme === "dark" ? "light" : "dark");
-        }}
-      >
-        <div className={currentTheme === "dark" ? "gg-sun" : "gg-moon"} />
-      </div>
+    <div className="ToggleMB dark:toggleDark" onClick={() => toggleMode()}>
+      <div className={isDarkMode ? "gg-sun" : "gg-moon"}></div>
     </div>
   );
 };
 
-export default ThemeTogglerMB;
+export default DarkModeToggle;

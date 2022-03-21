@@ -13,15 +13,7 @@ class MyDocument extends Document {
           <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet" />
-
-          {/* <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet" />
-          <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap" rel="stylesheet" />
-          <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet" /> */}
-          <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet" />
-
-          {/* <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet" />
-          <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet" /> */}
-
+          {/* <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet" /> */}
           {GA_TRACKING_ID && (
             <>
               <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`} />
@@ -40,7 +32,7 @@ class MyDocument extends Document {
             </>
           )}
         </Head>
-        <body className="bg-white dark:bg-gray-800">
+        <body className="bg-white text-gray-600 dark:bg-neutral-800 dark:text-teal-100 transition duration-500">
           {/* <ColorModeScript initialColorMode={theme.config.initialColorMode} /> */}
           <Main />
           <NextScript />
@@ -51,3 +43,5 @@ class MyDocument extends Document {
 }
 
 export default MyDocument;
+
+// className="bg-white text-gray-600

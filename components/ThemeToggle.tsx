@@ -21,10 +21,10 @@ const DarkModeToggle = () => {
 
   useEffect(() => {
     setDarkMode(isDark());
-  }, [isDark]);
+  });
 
   return (
-    <div className="toggle" onClick={toggleMode}>
+    <div className="toggle dark:toggleDark" onClick={() => toggleMode()}>
       <div className={isDarkMode ? "gg-sun" : "gg-moon"}></div>
     </div>
   );
