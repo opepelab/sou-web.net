@@ -11,6 +11,7 @@ import usePageView from "hooks/usePageView";
 import Script from "next/script";
 
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
+  <Script src="/theme.js" strategy="beforeInteractive" />;
   useEffect(() => {
     if (
       localStorage.theme === "dark" ||
@@ -25,7 +26,6 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
 
   return (
     <>
-      <Script src="/theme.js" strategy="beforeInteractive" />
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
