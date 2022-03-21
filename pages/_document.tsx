@@ -4,12 +4,11 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 import theme from "libs/theme";
 // import { ColorModeScript } from "@chakra-ui/react";
 import Script from "next/script";
-
 class MyDocument extends Document {
   render() {
     return (
       <Html lang="JA">
-        <Script src="/theme.js" strategy="beforeInteractive" />
+        <Script src="/theme.js" strategy="lazyOnload" />
         <Head>
           <link rel="shortcut icon" href="/folds.ico" />
           <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet" />
