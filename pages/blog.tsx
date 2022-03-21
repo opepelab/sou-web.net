@@ -26,7 +26,7 @@ const Blog: React.FC<Map> = ({ blog }) => {
             </dt>
             <Link href={`/docs/${props.fields.slug}`}>
               <a>
-                <div className="PPx hoverbob pinkLinks">{props.fields.title}</div>
+                <div className="PPx hoverbob text-cyan-500">{props.fields.title}</div>
               </a>
             </Link>
           </dl>

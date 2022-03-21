@@ -32,7 +32,7 @@ const Index: React.FC<Map> = ({ blog }) => {
             </dt>
             <Link href={`/docs/${blog.fields.slug}`}>
               <a>
-                <div className="PPx scaleLinks pinkLinks">{blog.fields.title}</div>
+                <div className="PPx scaleLinks text-rose-300 dark:text-sky-200">{blog.fields.title}</div>
               </a>
             </Link>
           </dl>

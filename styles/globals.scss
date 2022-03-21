@@ -117,7 +117,7 @@ nav ul li {
   grid-gap: $p20;
   white-space: nowrap;
   left: 88px;
-  top: -15px;
+  top: -8px;
 }
 
 .nav2 {
@@ -270,24 +270,23 @@ textarea {
 
 .Top-Logo {
   z-index: 2;
-  position: relative;
+  position: fixed;
   display: inline-block;
-  left: -420px;
-  top: -40px;
+  left: 400px;
+  top: 10px;
   font-size: 24px;
 }
 
 .toggle {
   z-index: 3;
-  position: relative;
-  top: -2px;
-  left: -130px;
+  position: fixed;
+  top: 0px;
+  left: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   transition-duration: 1s;
   cursor: pointer;
 }
@@ -301,25 +300,24 @@ textarea {
 
 .white {
   z-index: 3;
-  position: relative;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
+  width: 60px;
+  height: 60px;
   background: white;
 }
 
 .black {
   z-index: 3;
-  position: relative;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  width: 32px;
-  height: 32px;
   background: black;
 }
 

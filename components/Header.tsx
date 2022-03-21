@@ -25,7 +25,7 @@ const Header: React.FC = () => {
                 <ul className="nav1">
                   <li>
                     <div aria-expanded={about} onClick={() => setAbout(!about)}>
-                      <a className="text-slate-600 scaleLinks Block">
+                      <a className="dark:text-stone-300 scaleLinks Block">
                         <div className="gg-details-more" />
                         About
                         <div className="SankakuBlack" />
@@ -72,7 +72,7 @@ const Header: React.FC = () => {
                   </li>
                   <li>
                     <div aria-expanded={links} onClick={() => setLinks(!links)}>
-                      <a className="scaleLinks  Block">
+                      <a className="scaleLinks dark:text-stone-300 Block">
                         <div className="gg-style" />
                         Link
                         <div className="SankakuBlack" />
@@ -128,7 +128,7 @@ const Header: React.FC = () => {
                   </li>
                   <li>
                     <ActiveLink href="/list/1" activeClassName="headerState">
-                      <a className="scaleLinks  Block">
+                      <a className="scaleLinks dark:text-stone-300 Block">
                         <div className="gg-calibrate" />
                         Posts
                       </a>
@@ -136,7 +136,7 @@ const Header: React.FC = () => {
                   </li>
                   <li>
                     <ActiveLink href="/mail" activeClassName="headerState">
-                      <a className="scaleLinks  Block">
+                      <a className="scaleLinks dark:text-stone-300 Block">
                         <div className="gg-mail" />
                         Mail
                       </a>
@@ -144,7 +144,7 @@ const Header: React.FC = () => {
                   </li>
                   <li>
                     <ActiveLink href="/develop" activeClassName="headerState">
-                      <a className="scaleLinks  Block">
+                      <a className="scaleLinks dark:text-stone-300 Block">
                         <div className="gg-attribution" />
                         Development Environment
                       </a>
