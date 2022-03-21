@@ -27,7 +27,7 @@ const DarkModeToggle = (): JSX.Element => {
   const darkModeActive: boolean = process.browser && document.documentElement.classList.contains("dark");
   return (
     <div className="toggle" onClick={() => toggleMode()} key={darkModeActive ? "dark-icon" : "light-icon"}>
-      <div className={darkModeActive ? "gg-sun" : "gg-moon"}></div>
+      <div className={isDarkMode ? "gg-sun" : "gg-moon"}></div>
     </div>
   );
 };
