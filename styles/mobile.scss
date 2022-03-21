@@ -146,11 +146,8 @@
     margin-bottom: 12px;
   }
 
-  .toggle {
-    // z-index: 3;
-    // position: absolute;
-    // top: 20px;
-    // left: 20px;
+  .toggle.white,
+  .toggle.black {
     display: none;
   }
 
@@ -174,20 +171,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+    background: #fda4af;
   }
 
   .black {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    background: black;
+    background: Purple;
   }
 
   .none {

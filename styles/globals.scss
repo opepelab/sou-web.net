@@ -280,7 +280,7 @@ textarea {
 .toggle {
   z-index: 3;
   position: fixed;
-  top: 0px;
+  top: 5px;
   left: 250px;
   display: flex;
   align-items: center;
@@ -304,9 +304,10 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
-  background: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 20%;
+  background: #fda4af;
 }
 
 .black {
@@ -317,8 +318,8 @@ textarea {
   justify-content: center;
   width: 50px;
   height: 50px;
-  border-radius: 50%;
-  background: black;
+  border-radius: 20%;
+  background: Purple;
 }
 
 #About input {

@@ -13,7 +13,7 @@ const Menu = () => {
           aria-label="Toggle mobile navigation menu"
           type="button"
         >
-          <span />
+          <span className="text-black" />
           <span />
           <span />
         </button>
