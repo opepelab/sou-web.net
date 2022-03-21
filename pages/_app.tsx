@@ -24,7 +24,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
     } else {
       document.documentElement.classList.remove("dark");
     }
-  });
+  }, []);
 
   return (
     <>
