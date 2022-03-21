@@ -4,13 +4,11 @@ const isDark = (): boolean =>
   (localStorage && localStorage.theme === "dark") ||
   (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches);
 
-const getThemeString = (isDark: boolean): string => (isDark ? "dark" : "light");
-
 const DarkModeToggle = (): JSX.Element => {
   const [isDarkMode, setDarkMode] = useState(false);
 
   const toggleMode = (): void => {
-    localStorage.theme = getThemeString(!isDarkMode);
+    localStorage.theme = !isDarkMode;
     if (localStorage.theme === "dark") {
       document.documentElement.classList.add("dark");
     } else {
@@ -21,11 +19,10 @@ const DarkModeToggle = (): JSX.Element => {
 
   useEffect(() => {
     setDarkMode(isDark());
-  }, []);
+  }, [isDark]);
 
-  const darkModeActive: boolean = process.browser && document.documentElement.classList.contains("dark");
   return (
-    <div className="toggle" onClick={() => toggleMode()} key={darkModeActive ? "dark-icon" : "light-icon"}>
+    <div className="toggle" onClick={toggleMode}>
       <div className={isDarkMode ? "gg-sun" : "gg-moon"}></div>
     </div>
   );
