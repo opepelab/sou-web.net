@@ -32,7 +32,7 @@ class MyDocument extends Document {
             </>
           )}
         </Head>
-        <body className="bg-white text-gray-600 dark:bg-neutral-800 dark:text-teal-100 transition duration-500">
+        <body className="bg-white text-gray-600 dark:bg-neutral-900 dark:text-teal-100 transition duration-500">
           {/* <ColorModeScript initialColorMode={theme.config.initialColorMode} /> */}
           <Main />
           <NextScript />

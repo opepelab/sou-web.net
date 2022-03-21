@@ -24,7 +24,7 @@ const DarkModeToggle = () => {
   });
 
   return (
-    <div className="toggle dark:toggleDark" onClick={() => toggleMode()}>
+    <div className={isDarkMode ? "toggle white" : "toggle black"} onClick={() => toggleMode()}>
       <div className={isDarkMode ? "gg-sun" : "gg-moon"}></div>
     </div>
   );

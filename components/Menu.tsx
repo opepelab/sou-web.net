@@ -6,7 +6,7 @@ const Menu = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="none">
-      <div className="Line">
+      <div className="Line text-teal-100">
         <button
           aria-expanded={open}
           onClick={() => setOpen(!open)}

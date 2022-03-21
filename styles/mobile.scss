@@ -18,7 +18,16 @@
   }
 
   .bgg {
-    display: none;
+    position: fixed;
+    height: 60px;
+  }
+
+  .Top-Logo {
+    position: fixed;
+    color: black;
+    top: 10px;
+    left: 0%;
+    right: 0%;
   }
 
   .Line button {
@@ -39,7 +48,7 @@
     position: fixed;
     display: inline-block;
     right: 15px;
-    top: 15px;
+    top: 10px;
   }
   .Line span {
     display: block;
@@ -114,7 +123,7 @@
   }
 
   .MenuList li {
-    font-size: $p16;
+    font-size: $p14;
     list-style: none;
   }
 
@@ -135,13 +144,6 @@
 
   dd {
     margin-bottom: 12px;
-  }
-
-  .Top-Logo {
-    position: absolute;
-    top: 22px;
-    left: 0%;
-    right: 0%;
   }
 
   .toggle {

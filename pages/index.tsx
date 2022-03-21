@@ -24,7 +24,7 @@ const Index: React.FC<Map> = ({ blog }) => {
             ソフトウェアエンジニアのSou Watanabeです。
           </a>
         </p>
-        <h5 className="text-3xl">最新記事</h5>
+        <h5>最新記事</h5>
         {blog.map((blog: Entry<IPostFields>) => (
           <dl key={blog.sys.id}>
             <dt className="dateST">

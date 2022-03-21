@@ -1,6 +1,7 @@
 import { AppProps } from "next/app";
 import { AnimatePresence } from "framer-motion";
 import { useEffect } from "react";
+// import "ress";
 import "styles/globals.scss";
 import "styles/mobile.scss";
 import "styles/icons.scss";

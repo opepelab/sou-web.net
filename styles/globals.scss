@@ -11,7 +11,7 @@ html {
 }
 body {
   font: {
-    // family: $Google;
+    family: $Google;
     size: $p14;
     weight: normal;
   }
@@ -105,12 +105,12 @@ nav ul li {
 }
 
 .nav1 {
+  position: relative;
   list-style: none;
   font: {
     size: $p14;
   }
   color: #333;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -151,7 +151,7 @@ dd {
 }
 
 a {
-  color: $ST;
+  color: rgb(55 65 81);
   text-decoration: none;
 }
 
@@ -278,7 +278,7 @@ textarea {
 }
 
 .toggle {
-  z-index: 2;
+  z-index: 3;
   position: relative;
   top: -2px;
   left: -130px;
@@ -299,7 +299,25 @@ textarea {
   }
 }
 
-.toggleDark {
+.white {
+  z-index: 3;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background: white;
+}
+
+.black {
+  z-index: 3;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
   width: 32px;
   height: 32px;
   background: black;

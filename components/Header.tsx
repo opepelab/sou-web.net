@@ -18,14 +18,14 @@ const Header: React.FC = () => {
   return (
     <div>
       <Center>
-        <header>
+        <header className="">
           <div className="bgg">
             <div className="disableN">
               <nav>
                 <ul className="nav1">
                   <li>
                     <div aria-expanded={about} onClick={() => setAbout(!about)}>
-                      <a className="scaleLinks Block">
+                      <a className="text-slate-600 scaleLinks Block">
                         <div className="gg-details-more" />
                         About
                         <div className="SankakuBlack" />
