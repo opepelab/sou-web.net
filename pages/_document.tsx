@@ -10,10 +10,7 @@ class MyDocument extends Document {
       <Html lang="JA">
         <Head>
           <link rel="shortcut icon" href="/folds.ico" />
-          <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet" />
-          <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet" />
-          <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet" />
-          {/* <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet" /> */}
+          <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff" rel="stylesheet" />
           {GA_TRACKING_ID && (
             <>
               <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`} />
