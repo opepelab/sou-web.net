@@ -5,7 +5,7 @@ const Develop: React.FC = () => {
   return (
     <Framerdiv>
       <OG title="Development Environment - sou" description="開発環境" />
-      <main className="margin-Mobile-PC-2 resizeimage inblo">
+      <main className="margin-Mobile-PC resizeimage inblo">
         <h1>Development Environment</h1>
         <div className="triangle-bottom" />
         <dl>

@@ -33,7 +33,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
           <Component {...pageProps} key={router.asPath} />
         </AnimatePresence>
       </Layout>
-      <Script src="/theme.js" strategy="beforeInteractive" />;
+      <Script src="/theme.js" strategy="beforeInteractive" />
     </>
   );
 };

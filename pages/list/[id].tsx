@@ -27,7 +27,7 @@ const Id: React.FC<Map> = ({ blog, total }) => {
   return (
     <Framerdiv>
       <OG title="Page List - sou" description="ページリスト" />
-      <main className="HeadMenu textLeft margin-Mobile-PC-2 inblo">
+      <main className="HeadMenu textLeft margin-Mobile-PC inblo">
         <h5>記事一覧</h5>
         {blog.map((props: Entry<IPostFields>) => (
           <dl key={props.sys.id}>

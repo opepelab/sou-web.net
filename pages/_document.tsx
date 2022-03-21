@@ -37,5 +37,3 @@ class MyDocument extends Document {
 }
 
 export default MyDocument;
-
-// className="bg-white text-gray-600

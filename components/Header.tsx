@@ -28,7 +28,7 @@ const Header: React.FC = () => {
                       <a className="dark:text-stone-300 scaleLinks Block">
                         <div className="gg-details-more" />
                         About
-                        <div className="SankakuBlack bg-gray-600" />
+                        <div className="SankakuBlack border-t-gray-600 dark:border-t-zinc-100" />
                       </a>
                     </div>
                     <div ref={aboRef} tabIndex={1} onBlur={() => setTimeout(() => setAbout(!about), 125)}>
@@ -75,7 +75,7 @@ const Header: React.FC = () => {
                       <a className="scaleLinks dark:text-stone-300 Block">
                         <div className="gg-style" />
                         Link
-                        <div className="SankakuBlack" />
+                        <div className="SankakuBlack border-t-gray-600 dark:border-t-zinc-100" />
                       </a>
                     </div>
                     <div ref={linkRef} tabIndex={1} onBlur={() => setTimeout(() => setLinks(!links), 125)}>
