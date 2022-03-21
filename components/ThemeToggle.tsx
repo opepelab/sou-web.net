@@ -13,9 +13,9 @@ const DarkModeToggle = (): JSX.Element => {
   const toggleMode = (): void => {
     localStorage.theme = getThemeString(!isDarkMode);
     if (localStorage.theme === "dark") {
-      document.documentElement.classList.add("dark");
+      document.body.classList.add("dark");
     } else {
-      document.documentElement.classList.remove("dark");
+      document.body.classList.remove("dark");
     }
     setDarkMode(!isDarkMode);
   };
