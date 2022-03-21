@@ -6,10 +6,10 @@ const isDark = (): boolean =>
 
 const getThemeString = (isDark: boolean): string => (isDark ? "dark" : "light");
 
-const DarkModeToggle = (): JSX.Element => {
+const DarkModeToggle = () => {
   const [isDarkMode, setDarkMode] = useState(false);
 
-  const toggleMode = (): void => {
+  const toggleMode = () => {
     localStorage.theme = getThemeString(!isDarkMode);
     if (localStorage.theme === "dark") {
       document.documentElement.classList.add("dark");
