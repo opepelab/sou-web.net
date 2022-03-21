@@ -4,11 +4,13 @@ const isDark = (): boolean =>
   (localStorage && localStorage.theme === "dark") ||
   (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches);
 
+const getThemeString = (isDark: boolean): string => (isDark ? "dark" : "light");
+
 const DarkModeToggle = (): JSX.Element => {
   const [isDarkMode, setDarkMode] = useState(false);
 
   const toggleMode = (): void => {
-    localStorage.theme = !isDarkMode;
+    localStorage.theme = getThemeString(!isDarkMode);
     if (localStorage.theme === "dark") {
       document.documentElement.classList.add("dark");
     } else {
