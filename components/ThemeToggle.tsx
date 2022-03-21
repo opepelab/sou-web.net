@@ -20,7 +20,7 @@ const DarkModeToggle = () => {
   };
 
   useEffect(() => {
-    setDarkMode(isDark);
+    setDarkMode(isDark());
   });
 
   return (

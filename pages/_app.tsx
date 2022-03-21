@@ -24,7 +24,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
   usePageView();
 
   return (
-    <div>
+    <>
       <Script src="/theme.js" strategy="beforeInteractive" />
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -35,7 +35,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
           <Component {...pageProps} key={router.asPath} />
         </AnimatePresence>
       </Layout>
-    </div>
+    </>
   );
 };
 
