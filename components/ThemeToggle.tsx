@@ -21,7 +21,7 @@ const DarkModeToggle = () => {
 
   useEffect(() => {
     setDarkMode(isDark());
-  });
+  }, [isDarkMode]);
 
   return (
     <div className={isDarkMode ? "toggle black" : "toggle white"} onClick={() => toggleMode()}>
