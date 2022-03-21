@@ -51,4 +51,3 @@ class MyDocument extends Document {
 }
 
 export default MyDocument;
-export { getServerSideProps } from "components/Sys/chakra";

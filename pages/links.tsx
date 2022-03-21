@@ -69,4 +69,3 @@ const Links: React.FC = () => {
 };
 
 export default Links;
-export { getServerSideProps } from "components/Sys/chakra";

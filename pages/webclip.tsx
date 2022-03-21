@@ -29,4 +29,3 @@ const Webclip: React.FC = () => {
 };
 
 export default Webclip;
-export { getServerSideProps } from "components/Sys/chakra";

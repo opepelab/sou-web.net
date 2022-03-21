@@ -75,4 +75,3 @@ const About = () => {
 };
 
 export default About;
-export { getServerSideProps } from "components/Sys/chakra";

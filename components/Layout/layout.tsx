@@ -24,4 +24,3 @@ const Layout: React.FC<Props> = ({ children }) => {
 };
 
 export default Layout;
-export { getServerSideProps } from "components/Sys/chakra";

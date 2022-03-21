@@ -61,4 +61,3 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
 };
 
 export default Mail;
-export { getServerSideProps } from "components/Sys/chakra";
