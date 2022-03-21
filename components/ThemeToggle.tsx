@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { AnimatePresence, motion } from "framer-motion";
 
 const isDark = (): boolean =>
   (localStorage && localStorage.theme === "dark") ||
