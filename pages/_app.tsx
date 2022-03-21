@@ -8,6 +8,7 @@ import "styles/img.scss";
 import Head from "next/head";
 import Layout from "components/Layout/layout";
 import usePageView from "hooks/usePageView";
+import Script from "next/script";
 
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
   usePageView();
@@ -20,6 +21,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
       <Chakra cookies={pageProps.cookies}>
         <Layout>
           <AnimatePresence exitBeforeEnter initial={true}>
+            <Script src="/theme.js" strategy="beforeInteractive" />
             <Component {...pageProps} key={router.asPath} />
           </AnimatePresence>
         </Layout>
