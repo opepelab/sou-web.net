@@ -277,11 +277,11 @@ textarea {
   font-size: 24px;
 }
 
-.togglelßege {
+.toggle {
   z-index: 2;
   position: relative;
   top: -2px;
-  left: -515px;
+  left: -100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -292,11 +292,11 @@ textarea {
   cursor: pointer;
 }
 
-.toggle {
-  z-index: 2;
-  position: relative;
-  top: -2px;
-  left: -515px;
+@media screen and (min-width: 739.98px) {
+  .toggle {
+    background: #fff;
+    box-shadow: 0px 0px 4px 1px gray;
+  }
 }
 
 #About input {

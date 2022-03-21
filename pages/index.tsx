@@ -7,7 +7,6 @@ import { IPostFields } from "libs/types";
 import Date from "components/Sys/date";
 import Link from "next/link";
 import generateRssFeed from "../libs/feed";
-import DarkModeToggle from "components/ThemeToggle";
 
 type Map = {
   blog: {
@@ -25,7 +24,6 @@ const Index: React.FC<Map> = ({ blog }) => {
             ソフトウェアエンジニアのSou Watanabeです。
           </a>
         </p>
-        <DarkModeToggle />
         <h5 className="text-3xl">最新記事</h5>
         {blog.map((blog: Entry<IPostFields>) => (
           <dl key={blog.sys.id}>

@@ -1,5 +1,6 @@
 import { AppProps } from "next/app";
 import { AnimatePresence } from "framer-motion";
+import { useEffect } from "react";
 import Chakra from "components/Sys/chakra";
 import "styles/globals.scss";
 import "styles/mobile.scss";
@@ -13,6 +14,18 @@ import Script from "next/script";
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
   usePageView();
 
+  useEffect(() => {
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  });
+
   return (
     <>
       <Head>
@@ -22,7 +35,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
       {/* <Chakra cookies={pageProps.cookies}> */}
       <Layout>
         <AnimatePresence exitBeforeEnter initial={true}>
-          <Script src="/theme.js" strategy="beforeInteractive" />
+          {/* <Script src="/theme.js" strategy="beforeInteractive" /> */}
           <Component {...pageProps} key={router.asPath} />
         </AnimatePresence>
       </Layout>

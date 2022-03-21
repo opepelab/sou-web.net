@@ -26,15 +26,9 @@ const DarkModeToggle = (): JSX.Element => {
 
   const darkModeActive: boolean = process.browser && document.documentElement.classList.contains("dark");
   return (
-    <AnimatePresence exitBeforeEnter initial={false}>
-      <motion.button
-        className="text-2xl sm:text-3xl text-yellow-400 dark:text-yellow-300 focus:outline-none"
-        onClick={() => toggleMode()}
-        key={darkModeActive ? "dark-icon" : "light-icon"}
-      >
-        <div className={darkModeActive ? "gg-sun" : "gg-moon"}></div>
-      </motion.button>
-    </AnimatePresence>
+    <div className="toggle" onClick={() => toggleMode()} key={darkModeActive ? "dark-icon" : "light-icon"}>
+      <div className={darkModeActive ? "gg-sun" : "gg-moon"}></div>
+    </div>
   );
 };
 
