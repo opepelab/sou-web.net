@@ -11,8 +11,8 @@ import usePageView from "hooks/usePageView";
 import Script from "next/script";
 
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
-  <Script src="/theme.js" strategy="beforeInteractive" />;
   useEffect(() => {
+    <Script src="/theme.js" strategy="beforeInteractive" />;
     if (
       localStorage.theme === "dark" ||
       (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
