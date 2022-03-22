@@ -13,7 +13,7 @@ export const ToggleDarkMode = () => {
       setDarkMode(false);
       document.querySelector("html")?.classList.remove("dark");
     }
-  }, [darkMode]);
+  }, [darkMode, setDarkMode]);
 
   const handleChangeDarkMode = () => {
     if (darkMode) {
@@ -26,7 +26,7 @@ export const ToggleDarkMode = () => {
   };
 
   return (
-    <div className={darkMode ? "toggle black" : "toggle white"} onClick={handleChangeDarkMode}>
+    <div className={darkMode ? "toggle black" : "toggle white"} onClick={() => handleChangeDarkMode()}>
       <div className={darkMode ? "gg-moon" : "gg-sun"}></div>
     </div>
   );
