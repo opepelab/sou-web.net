@@ -1,6 +1,7 @@
 // pages/_document.js
 import { GA_TRACKING_ID } from "../libs/gtag";
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
 
 class MyDocument extends Document {
   render() {
@@ -28,6 +29,7 @@ class MyDocument extends Document {
           )}
         </Head>
         <body className="bg-amber-50 text-gray-600 dark:bg-stone-800 dark:text-zinc-100 transition duration-500">
+          <Script src="/theme.js" strategy="beforeInteractive" />
           <Main />
           <NextScript />
         </body>
