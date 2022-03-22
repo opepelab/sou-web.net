@@ -1,5 +1,5 @@
 (function initTheme() {
-  var theme = localStorage.theme.getItem("theme");
+  var theme = window.localStorage.theme.getItem("theme");
   if (theme === "dark") {
     document.querySelector("html").classList.setItem("dark");
   } else {
