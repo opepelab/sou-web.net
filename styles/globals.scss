@@ -10,6 +10,9 @@ html {
   overflow: scroll;
 }
 body {
+  transition-duration: 0.5s;
+  backface-visibility: hidden;
+  overflow: hidden;
   font: {
     family: $Google;
     size: $p14;
@@ -286,6 +289,8 @@ textarea {
   width: 400px;
   height: 40px;
   transition-duration: 1s;
+  backface-visibility: hidden;
+  overflow: hidden;
   cursor: pointer;
 }
 
