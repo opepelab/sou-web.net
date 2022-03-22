@@ -1,33 +1,34 @@
 import { useState, useEffect } from "react";
 
-const isDark = (): boolean =>
-  (localStorage && localStorage.theme === "dark") ||
-  (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches);
-
-const getThemeString = (isDark: boolean): string => (isDark ? "dark" : "light");
-
-const DarkModeToggle = () => {
-  const [isDarkMode, setDarkMode] = useState(false);
-
-  const toggleMode = () => {
-    localStorage.theme = getThemeString(!isDarkMode);
-    if (localStorage.theme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-    setDarkMode(!isDarkMode);
-  };
-
+export const ToggleDarkMode = () => {
+  const [darkMode, setDarkMode] = useState(false);
   useEffect(() => {
-    setDarkMode(isDark());
-  });
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      setDarkMode(true);
+      document.querySelector("html")?.classList.add("dark");
+    } else {
+      setDarkMode(false);
+      document.querySelector("html")?.classList.remove("dark");
+    }
+  }, [darkMode]);
 
+  const handleChangeDarkMode = () => {
+    if (darkMode) {
+      localStorage.theme = "light";
+      setDarkMode(false);
+    } else {
+      localStorage.theme = "dark";
+      setDarkMode(true);
+    }
+  };
   return (
-    <div className={isDarkMode ? "ToggleMB black" : "ToggleMB white"} onClick={() => toggleMode()}>
-      <div className={isDarkMode ? "gg-moon" : "gg-sun"}></div>
+    <div className={darkMode ? "ToggleMB black" : "ToggleMB white"} onClick={() => handleChangeDarkMode()}>
+      <div className={darkMode ? "gg-moon" : "gg-sun"}></div>
     </div>
   );
 };
 
-export default DarkModeToggle;
+export default ToggleDarkMode;
