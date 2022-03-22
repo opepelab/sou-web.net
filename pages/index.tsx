@@ -19,16 +19,14 @@ const Index: React.FC<Map> = ({ blog }) => {
     <Framerdiv>
       <OG title="Index - sou" description="Index" />
       <main className="textLeft margin-Mobile-PC inblo">
-        <p>
-          <a className="pinkLinks text-black dark:text-white" href="https://www.facebook.com/opepelab" target="_blank">
-            <h1>Hello? My name is Sou.</h1>
-            <p>
-              I am Software contributor
-              <br />
-              from JAPAN Tokyo.
-            </p>
-          </a>
-        </p>
+        <div className="text-black dark:text-white">
+          <h1 className="text-3xl m-0 font-extralight">Hello? My name is Sou.🖐</h1>
+          <p className="text-lg font-extralight">
+            I am Software contributor
+            <br />
+            from JAPAN Tokyo.
+          </p>
+        </div>
         <h5>最新記事</h5>
         {blog.map((blog: Entry<IPostFields>) => (
           <dl key={blog.sys.id}>
