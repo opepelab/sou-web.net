@@ -11,7 +11,7 @@ html {
 }
 body {
   transition-duration: 0.5s;
-  will-change: contents;
+  backface-visibility: hidden;
   font: {
     family: $Google;
     size: $p14;
@@ -288,7 +288,7 @@ textarea {
   width: 400px;
   height: 40px;
   transition-duration: 1s;
-  will-change: contents;
+  backface-visibility: hidden;
   cursor: pointer;
 }
 
