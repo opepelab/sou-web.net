@@ -12,9 +12,9 @@ const DarkModeToggle = () => {
   const toggleMode = () => {
     localStorage.theme = getThemeString(!isDarkMode);
     if (localStorage.theme === "dark") {
-      document.documentElement.classList.add("dark");
+      document.querySelector("html")?.classList.add("dark");
     } else {
-      document.documentElement.classList.remove("dark");
+      document.querySelector("html")?.classList.remove("dark");
     }
     setDarkMode(!isDarkMode);
   };
