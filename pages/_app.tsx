@@ -13,7 +13,7 @@ import Script from "next/script";
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
   useLayoutEffect(() => {
     if (
-      window.localStorage.theme === "dark" ||
+      localStorage.theme === "dark" ||
       (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)"))
     ) {
       document.documentElement.classList.add("dark");
