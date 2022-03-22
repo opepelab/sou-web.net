@@ -29,7 +29,7 @@ class MyDocument extends Document {
           )}
         </Head>
         <body className="bg-amber-50 text-gray-600 dark:bg-stone-800 dark:text-zinc-100 transition duration-500">
-          <Script src="/theme.js" strategy="beforeInteractive" />
+          <Script src="/localstrorage.js" strategy="beforeInteractive" />
           <Main />
           <NextScript />
         </body>
