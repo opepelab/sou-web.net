@@ -10,8 +10,6 @@ html {
   overflow: scroll;
 }
 body {
-  transition-duration: 0.5s;
-  transition-delay: 0.01s;
   font: {
     family: $Google;
     size: $p14;
@@ -288,7 +286,6 @@ textarea {
   width: 400px;
   height: 40px;
   transition-duration: 1s;
-  transition-delay: 0.01s;
   cursor: pointer;
 }
 
