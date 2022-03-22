@@ -28,6 +28,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
 
   return (
     <>
+      <Script src="/localstorage.js" strategy="beforeInteractive" />
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
@@ -36,7 +37,6 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
           <Component {...pageProps} key={router.asPath} />
         </AnimatePresence>
       </Layout>
-      <Script src="/localstorage.js" strategy="beforeInteractive" />
     </>
   );
 };
