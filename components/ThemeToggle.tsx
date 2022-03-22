@@ -1,8 +1,8 @@
-import React, { useEffect, useLayoutEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export const ToggleDarkMode = () => {
   const [darkMode, setDarkMode] = useState(false);
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (
       localStorage.theme === "dark" ||
       (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
