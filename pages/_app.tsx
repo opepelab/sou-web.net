@@ -1,6 +1,6 @@
 import { AppProps } from "next/app";
 import { AnimatePresence } from "framer-motion";
-import { useLayoutEffect, useState } from "react";
+import { useEffect } from "react";
 import "styles/globals.scss";
 import "styles/mobile.scss";
 import "styles/icons.scss";
@@ -11,19 +11,16 @@ import usePageView from "hooks/usePageView";
 import Script from "next/script";
 
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
-  const [darkMode, setDarkMode] = useState(false);
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (
       localStorage.theme === "dark" ||
-      (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+      (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)"))
     ) {
-      setDarkMode(true);
       document.querySelector("html")?.classList.add("dark");
     } else {
-      setDarkMode(false);
       document.querySelector("html")?.classList.remove("dark");
     }
-  }, [darkMode]);
+  });
   usePageView();
 
   return (
