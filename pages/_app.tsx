@@ -9,17 +9,18 @@ import Head from "next/head";
 import Layout from "components/Layout/layout";
 import usePageView from "hooks/usePageView";
 import Script from "next/script";
-useLayoutEffect(() => {
-  if (
-    localStorage.theme === "dark" ||
-    (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)"))
-  ) {
-    document.documentElement.classList.add("dark");
-  } else {
-    document.documentElement.classList.remove("dark");
-  }
-});
+
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
+  useLayoutEffect(() => {
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)"))
+    ) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  });
   usePageView();
 
   return (

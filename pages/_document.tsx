@@ -7,6 +7,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="JA">
+        <Script src="/theme.js" strategy="beforeInteractive" />
         <Head>
           <link rel="shortcut icon" href="/folds.ico" />
           <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff" rel="stylesheet" />
@@ -29,7 +30,6 @@ class MyDocument extends Document {
           )}
         </Head>
         <body className="bg-amber-50 text-gray-600 dark:bg-stone-800 dark:text-zinc-100 transition duration-500">
-          <Script src="/localstrorage.js" strategy="beforeInteractive" />
           <Main />
           <NextScript />
         </body>
