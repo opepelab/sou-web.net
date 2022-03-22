@@ -1,13 +1,11 @@
 // pages/_document.js
 import { GA_TRACKING_ID } from "../libs/gtag";
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import Script from "next/script";
 
 class MyDocument extends Document {
   render() {
     return (
       <Html lang="JA">
-        <Script src="/theme.js" strategy="beforeInteractive" />
         <Head>
           <link rel="shortcut icon" href="/folds.ico" />
           <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff" rel="stylesheet" />

@@ -17,14 +17,13 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
       (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)"))
     ) {
       document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
     }
   });
   usePageView();
 
   return (
     <>
+      <Script src="/localstorage.js" strategy="beforeInteractive" />
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
