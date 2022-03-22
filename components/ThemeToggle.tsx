@@ -1,8 +1,8 @@
-import React, { useLayoutEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export const ToggleDarkMode = () => {
   const [darkMode, setDarkMode] = useState(false);
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (
       localStorage.theme === "dark" ||
       (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
@@ -13,7 +13,7 @@ export const ToggleDarkMode = () => {
       setDarkMode(false);
       document.querySelector("html")?.classList.remove("dark");
     }
-  }, [darkMode, setDarkMode]);
+  }, [darkMode]);
 
   const handleChangeDarkMode = () => {
     if (darkMode) {
