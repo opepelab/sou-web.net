@@ -28,7 +28,7 @@ class MyDocument extends Document {
             </>
           )}
         </Head>
-        <body className="dark:bg-stone-800 dark:text-zinc-100 bg-amber-50 text-gray-600 transition duration-500">
+        <body className="dark:bg-stone-800 dark:text-zinc-100 bg-amber-50 text-gray-600">
           <Script src="/theme.js" strategy="beforeInteractive" />
           <Main />
           <NextScript />
