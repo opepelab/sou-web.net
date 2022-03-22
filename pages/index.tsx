@@ -16,7 +16,7 @@ type Map = {
 
 const Index: React.FC<Map> = ({ blog }) => {
   return (
-    <div>
+    <Framerdiv>
       <OG title="Index - sou" description="Index" />
       <main className="textLeft margin-Mobile-PC inblo">
         <p>
@@ -48,7 +48,7 @@ const Index: React.FC<Map> = ({ blog }) => {
           </a>
         </Link>
       </main>
-    </div>
+    </Framerdiv>
   );
 };
 
