@@ -4,3 +4,8 @@
     document.querySelector("html").classList.add("dark");
   }
 })();
+import $ from "jquery";
+
+$(window).load(function () {
+  $("body").removeClass("preload");
+});

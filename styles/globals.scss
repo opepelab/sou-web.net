@@ -9,6 +9,10 @@ html {
   -webkit-text-size-adjust: $r100;
   overflow: scroll;
 }
+.preload * {
+  transition-duration: none !important;
+}
+
 body {
   transition-duration: 0.5s;
   display: block;
