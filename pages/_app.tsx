@@ -14,7 +14,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
   useLayoutEffect(() => {
     if (
       localStorage.theme === "dark" ||
-      (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)"))
+      (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
     ) {
       document.querySelector("html")?.classList.add("dark");
     } else {
@@ -26,6 +26,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
   return (
     <>
       <Head>
+        <Script src="/localstorage.js" strategy="beforeInteractive" defer async />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <Layout>
