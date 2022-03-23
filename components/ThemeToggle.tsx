@@ -1,11 +1,8 @@
-import { useState, useEffect, useLayoutEffect } from "react";
-
-const canUseDOM = typeof window !== "undefined";
-const useIsomorphicLayoutEffect = canUseDOM ? useLayoutEffect : useEffect;
+import { useState, useEffect } from "react";
 
 export const ToggleDarkMode = () => {
   const [darkMode, setDarkMode] = useState(false);
-  useIsomorphicLayoutEffect(() => {
+  useEffect(() => {
     if (
       localStorage.theme === "dark" ||
       (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
