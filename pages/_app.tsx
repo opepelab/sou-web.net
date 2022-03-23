@@ -26,7 +26,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
   return (
     <>
       <Head>
-        <Script src="/localstorage.js" strategy="beforeInteractive" defer async />
+        <Script src="/localstorage.js" strategy="beforeInteractive" async />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <Layout>
