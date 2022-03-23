@@ -27,6 +27,7 @@ const Index: React.FC<Map> = ({ blog }) => {
             from JAPAN Tokyo.
           </p>
         </div>
+
         <h5>最新記事</h5>
         {blog.map((blog: Entry<IPostFields>) => (
           <dl key={blog.sys.id}>
