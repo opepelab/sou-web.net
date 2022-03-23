@@ -30,17 +30,19 @@ const securityHeaders = [
   },
 ];
 
+const cacheHeaders = [
+  {
+    key: "Cache-Control",
+    value: "max-age=1000",
+  },
+];
 module.exports = {
   swcMinify: true,
-  experimental: {
-    nextScriptWorkers: true,
-  },
-
   async headers() {
     return [
       {
         source: "/(.*)",
-        headers: securityHeaders,
+        headers: [securityHeaders, cacheHeaders],
       },
     ];
   },

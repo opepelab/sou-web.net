@@ -242,11 +242,6 @@
     "@babel/helper-validator-identifier" "^7.14.9"
     "to-fast-properties" "^2.0.0"
 
-"@builder.io/partytown@0.5.0":
-  "integrity" "sha512-kKSEZuHSc6yvxMWeDu4usa6tj76IMY7xOLkcuRLd4YEDixdW/4d38bURyAJJZAtnILUCO7zNzUVGJuxFV/Vb6Q=="
-  "resolved" "https://registry.npmjs.org/@builder.io/partytown/-/partytown-0.5.0.tgz"
-  "version" "0.5.0"
-
 "@chakra-ui/accordion@1.4.9":
   "integrity" "sha512-ZrfrLwAu6p9B41sZ+iEWjfPW/mn2TdUDXv165qr1O355619e2Btjb01x3IYoN4GlE2iF7GOVjC5uYGNyLpBlZg=="
   "resolved" "https://registry.npmjs.org/@chakra-ui/accordion/-/accordion-1.4.9.tgz"
