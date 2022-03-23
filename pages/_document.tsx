@@ -3,12 +3,14 @@ import { GA_TRACKING_ID } from "../libs/gtag";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ColorModeScript } from "@chakra-ui/react";
 import theme from "libs/theme";
+import Script from "next/script";
 
 class MyDocument extends Document {
   render() {
     return (
       <Html lang="JA">
         <Head>
+          <Script src="/localstorage.js" strategy="beforeInteractive" defer />
           <link rel="shortcut icon" href="/folds.ico" />
           <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff" rel="stylesheet" />
           {GA_TRACKING_ID && (
@@ -33,7 +35,6 @@ class MyDocument extends Document {
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
           <Main />
           <NextScript />
-          {/* <Script src="/localstorage.js" strategy="beforeInteractive" defer /> */}
         </body>
       </Html>
     );
