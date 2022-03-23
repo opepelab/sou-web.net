@@ -10,7 +10,7 @@ import Layout from "components/Layout/layout";
 import usePageView from "hooks/usePageView";
 
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
-  useLayoutEffect(() => {
+  useEffect(() => {
     setTimeout(() => {
       if (
         localStorage.theme === "dark" ||
