@@ -1,7 +1,6 @@
 import { AppProps } from "next/app";
 import { AnimatePresence } from "framer-motion";
 import { useLayoutEffect } from "react";
-import Chakra from "components/Sys/chakra";
 import "styles/globals.scss";
 import "styles/mobile.scss";
 import "styles/icons.scss";
@@ -28,13 +27,11 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <Chakra cookies={pageProps.cookies}>
-        <Layout>
-          <AnimatePresence exitBeforeEnter initial={true}>
-            <Component {...pageProps} key={router.asPath} />
-          </AnimatePresence>
-        </Layout>
-      </Chakra>
+      <Layout>
+        <AnimatePresence exitBeforeEnter initial={true}>
+          <Component {...pageProps} key={router.asPath} />
+        </AnimatePresence>
+      </Layout>
     </>
   );
 };
