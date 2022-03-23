@@ -1,6 +1,6 @@
 (function initTheme() {
   var theme = localStorage.theme.getItem("theme");
-  if (theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)"))) {
+  if (theme === "dark") {
     document.querySelector("html").classList.add("dark");
   }
 })();
