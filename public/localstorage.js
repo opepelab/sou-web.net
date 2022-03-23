@@ -3,6 +3,8 @@
   if (theme === "dark") {
     document.querySelector("html").classList.add("dark");
   }
+  const query = window.matchMedia("(prefers-color-scheme: dark)");
+  return query.matches ? "dark" : "light";
 })();
 // import { useLayoutEffect } from "react";
 
