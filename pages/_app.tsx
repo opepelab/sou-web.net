@@ -21,7 +21,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
       document.querySelector("html")?.classList.remove("dark");
     }
   });
-  useEffect(() => {
+  useLayoutEffect(() => {
     setTimeout(() => {
       setDarkMode(true);
     }, 100);
