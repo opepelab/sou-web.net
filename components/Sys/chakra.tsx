@@ -7,7 +7,7 @@ type Storage = {
   children: React.ReactNode;
 };
 
-const Chakra = ({ cookies, children }: Storage) => {
+export const Chakra = ({ cookies, children }: Storage) => {
   const colorModeManager = typeof cookies === "string" ? cookieStorageManager(cookies) : localStorageManager;
 
   return (
