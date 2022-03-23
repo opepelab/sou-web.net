@@ -1,6 +1,6 @@
 import { AppProps } from "next/app";
 import { AnimatePresence } from "framer-motion";
-import { useLayoutEffect } from "react";
+import { useLayoutEffect, useMemo } from "react";
 import "styles/globals.scss";
 import "styles/mobile.scss";
 import "styles/icons.scss";
@@ -19,7 +19,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
     } else {
       document.querySelector("html")?.classList.remove("dark");
     }
-  }, [pageProps]);
+  }, []);
   usePageView();
 
   return (
