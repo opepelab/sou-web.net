@@ -1,11 +1,13 @@
 // pages/_document.js
 import { GA_TRACKING_ID } from "../libs/gtag";
-import Document, { Html, Head, Main, NextScript } from "next/document";
-import { ColorModeScript } from "@chakra-ui/react";
-import theme from "libs/theme";
-import Script from "next/script";
+import Document, { Html, Head, Main, NextScript, DocumentContext } from "next/document";
 
+import Script from "next/script";
 class MyDocument extends Document {
+  static async getInitialProps(ctx: DocumentContext) {
+    return await Document.getInitialProps(ctx);
+  }
+
   render() {
     return (
       <Html lang="JA">
@@ -31,7 +33,6 @@ class MyDocument extends Document {
           )}
         </Head>
         <body className="dark:bg-stone-800 dark:text-zinc-100 bg-amber-50 text-gray-600">
-          <ColorModeScript initialColorMode={theme.config.initialColorMode} />
           <Main />
           <NextScript />
           <Script src="/localstorage.js" strategy="beforeInteractive" />

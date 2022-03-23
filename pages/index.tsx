@@ -7,7 +7,6 @@ import { IPostFields } from "libs/types";
 import Date from "components/Sys/date";
 import Link from "next/link";
 import generateRssFeed from "../libs/feed";
-import ThemeToggleButton from "components/Theme-Toggle-Button";
 
 type Map = {
   blog: {
