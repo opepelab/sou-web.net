@@ -31,14 +31,11 @@ class MyDocument extends Document {
         <body className="dark:bg-stone-800 dark:text-zinc-100 bg-amber-50 text-gray-600">
           <Main />
           <NextScript />
-          <script src="/localstorage/-async-defer/small.js" />
-          {/* <script> </script> */}
+          <Script src="/localstorage.js" strategy="beforeInteractive" async />
         </body>
       </Html>
     );
   }
 }
-
-// strategy="beforeInteractive"
 
 export default MyDocument;
