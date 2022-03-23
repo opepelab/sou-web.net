@@ -28,7 +28,7 @@ class MyDocument extends Document {
             </>
           )}
         </Head>
-        <body className="dark:bg-stone-800 dark:text-zinc-100 bg-amber-50 text-gray-600">
+        <body>
           <Main />
           <NextScript />
           <Script src="/localstorage.js" strategy="beforeInteractive" />
@@ -37,5 +37,5 @@ class MyDocument extends Document {
     );
   }
 }
-
+// className="dark:bg-stone-800 dark:text-zinc-100 bg-amber-50 text-gray-600"
 export default MyDocument;
