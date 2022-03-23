@@ -61,16 +61,19 @@ const Index: React.FC<Map> = ({ blog, cookies }) => {
 
 export const getStaticProps: GetStaticProps = async () => {
   await generateRssFeed();
-  const data: EntryCollection<IPostFields> = await client.getEntries({
-    content_type: "blog",
-    order: "-fields.date",
-    limit: 10,
-  });
-  return {
-    props: {
-      blog: data.items,
-    },
-  };
+  try {
+    const data: EntryCollection<IPostFields> = await client.getEntries({
+      content_type: "blog",
+      order: "-fields.date",
+      limit: 10,
+    });
+    return {
+      props: {
+        blog: data.items,
+      },
+    };
+  } catch (err) {
+    return { props: { err } };
+  }
 };
-
 export default Index;
