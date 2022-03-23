@@ -17,7 +17,7 @@ const Chakra = ({ cookies, children }: Storage) => {
   );
 };
 
-export function SyncS({ req }: NextApiResponse) {
+export async function SyncS({ req }: NextApiResponse) {
   return {
     props: {
       // first time users will not have any cookies and you may not return
