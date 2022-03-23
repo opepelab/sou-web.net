@@ -1,5 +1,10 @@
-import $ from "jquery";
+// import $ from "jquery";
 
-$(window).load(function () {
-  $("body").removeClass("preload");
-});
+// $(window).load(function () {
+//   $("body").removeClass("preload");
+// });
+
+window.onload = function () {
+  const preload = document.getElementsByClassName("preload");
+  preload[0].classList.remove("preload");
+};

@@ -8,7 +8,7 @@ class MyDocument extends Document {
     return (
       <Html lang="JA">
         <Head>
-          <Script src="/localstorage.js" strategy="beforeInteractive" defer />
+          <script src="/preload" async />
           <link rel="shortcut icon" href="/folds.ico" />
           <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff" rel="stylesheet" />
           {GA_TRACKING_ID && (
@@ -32,6 +32,7 @@ class MyDocument extends Document {
         <body className="dark:bg-stone-800 dark:text-zinc-100 bg-amber-50 text-gray-600">
           <Main />
           <NextScript />
+          <Script src="/localstorage.js" strategy="beforeInteractive" defer />
         </body>
       </Html>
     );
