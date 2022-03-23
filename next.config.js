@@ -28,14 +28,6 @@ const securityHeaders = [
     key: "Content-Security-Policy",
     value: "self",
   },
-  {
-    key: "Cache-Control",
-    value: "max-age=0",
-  },
-  {
-    key: "Surrogate-Control",
-    value: "public, max-age=300",
-  },
 ];
 
 module.exports = {

@@ -10,7 +10,7 @@ html {
   overflow: scroll;
 }
 body {
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
   font: {
     family: $Google;
     size: $p14;
