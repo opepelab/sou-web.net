@@ -1,6 +1,5 @@
-import { useLayoutEffect } from "react";
-
-useLayoutEffect(() => {
+import { useEffect } from "react";
+useEffect(() => {
   if (
     localStorage.theme === "dark" ||
     (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)"))
