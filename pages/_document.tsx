@@ -10,6 +10,7 @@ class MyDocument extends Document {
         <Head>
           <link rel="shortcut icon" href="/folds.ico" />
           <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff" rel="stylesheet" />
+          <script src="/localstorage.js" />
           {GA_TRACKING_ID && (
             <>
               <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`} />
@@ -31,7 +32,6 @@ class MyDocument extends Document {
         <body className="dark:bg-stone-800 dark:text-zinc-100 bg-amber-50 text-gray-600">
           <Main />
           <NextScript />
-          <Script src="/localstorage.js" strategy="beforeInteractive" />
         </body>
       </Html>
     );
