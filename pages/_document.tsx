@@ -28,9 +28,10 @@ class MyDocument extends Document {
             </>
           )}
         </Head>
-        <body className="dark:bg-stone-800 dark:text-zinc-100 bg-amber-50 text-gray-600">
+        <body className="preload dark:bg-stone-800 dark:text-zinc-100 bg-amber-50 text-gray-600">
           <Main />
           <NextScript />
+          <Script type="text/javascript" src="/preload.js" strategy="beforeInteractive" />
           <Script src="/localstorage.js" strategy="beforeInteractive" />
         </body>
       </Html>

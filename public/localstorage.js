@@ -1,9 +1,3 @@
-import $ from "jquery";
-
-$(window).load(function () {
-  $("body").removeClass("preload");
-});
-
 // (function initTheme() {
 //   var theme = localStorage.getItem("theme");
 //   if (theme === "dark") {

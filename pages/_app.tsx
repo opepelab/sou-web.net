@@ -8,6 +8,7 @@ import "styles/img.scss";
 import Head from "next/head";
 import Layout from "components/Layout/layout";
 import usePageView from "hooks/usePageView";
+import Script from "next/script";
 
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
   useLayoutEffect(() => {
