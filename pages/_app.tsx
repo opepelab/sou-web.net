@@ -11,35 +11,31 @@ import usePageView from "hooks/usePageView";
 import Chakra from "components/Sys/chakra";
 
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
-  const [mounted, setMounted] = useState(false);
-  // useLayoutEffect(() => {
-  //   if (
-  //     localStorage.theme === "dark" ||
-  //     (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
-  //   ) {
-  //     document.querySelector("html")?.classList.add("dark");
-  //   } else {
-  //     document.querySelector("html")?.classList.remove("dark");
-  //   }
-  // }, []);
-
+  const [darkMode, setDarkMode] = useState(false);
   useEffect(() => {
-    setMounted(true);
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      setDarkMode(true);
+      document.querySelector("html")?.classList.add("dark");
+    } else {
+      setDarkMode(false);
+      document.querySelector("html")?.classList.remove("dark");
+    }
+    setDarkMode(true);
   }, []);
-  usePageView();
 
   return (
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <Chakra cookies={pageProps.cookies}>
-        <Layout>
-          <AnimatePresence exitBeforeEnter initial={true}>
-            {mounted && <Component {...pageProps} key={router.asPath} />}
-          </AnimatePresence>
-        </Layout>
-      </Chakra>
+      <Layout>
+        <AnimatePresence exitBeforeEnter initial={true}>
+          {darkMode && <Component {...pageProps} key={router.asPath} />}
+        </AnimatePresence>
+      </Layout>
     </>
   );
 };
