@@ -1,6 +1,6 @@
 import { AppProps } from "next/app";
 import { AnimatePresence } from "framer-motion";
-import { useLayoutEffect } from "react";
+import { useLayoutEffect, useCallback } from "react";
 import "styles/globals.scss";
 import "styles/mobile.scss";
 import "styles/icons.scss";
@@ -10,7 +10,7 @@ import Layout from "components/Layout/layout";
 import usePageView from "hooks/usePageView";
 
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
-  useLayoutEffect(() => {
+  useCallback(() => {
     if (
       localStorage.theme === "dark" ||
       (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
@@ -19,7 +19,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
     } else {
       document.querySelector("html")?.classList.remove("dark");
     }
-  });
+  }, [pageProps]);
   usePageView();
 
   return (
