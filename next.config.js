@@ -1,7 +1,7 @@
 const securityHeaders = [
   {
     key: "X-DNS-Prefetch-Control",
-    value: "off",
+    value: "on",
   },
 
   {
@@ -28,14 +28,12 @@ const securityHeaders = [
     key: "Content-Security-Policy",
     value: "self",
   },
+  {
+    key: "Cache-Control",
+    value: "max-age=1000",
+  },
 ];
 
-// const cacheHeaders = [
-//   {
-//     key: "Cache-Control",
-//     value: "max-age=1000",
-//   },
-// ];
 module.exports = {
   swcMinify: true,
   async headers() {
