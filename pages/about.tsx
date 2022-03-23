@@ -6,9 +6,7 @@ const About = () => {
     <Framerdiv>
       <OG title="Overview - sou" description="私の概要" />
       <main className="list margin-Mobile-PC textLeft inblo">
-        <h1>
-          Overview <h5>Number11</h5>
-        </h1>
+        <h1>Overview</h1>
         <p>渡邊 蒼(Sou Watanabe)です。1994年生まれ27歳（2022年現在）です。</p>
         <p>普段はWEBアプリケーションを開発しています。</p>
         <p>個人開発はモバイルアプリケーション開発です。</p>
