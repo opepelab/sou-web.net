@@ -39,4 +39,3 @@ class MyDocument extends Document {
 }
 // className="dark:bg-stone-800 dark:text-zinc-100 bg-amber-50 text-gray-600"
 export default MyDocument;
-export { getServerSideProps } from "components/Sys/chakra";

@@ -67,3 +67,4 @@ export const getStaticProps: GetStaticProps = async () => {
 };
 
 export default Index;
+export { SyncS } from "components/Sys/chakra";
