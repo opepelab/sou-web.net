@@ -22,6 +22,19 @@ const Webclip: React.FC = () => {
           </li>
           <p>色と心理学の関係を死ぬほど調べていた時期があってその時見つけたページです。</p>
           <p>個人的に何度も訪れる必須のページ。</p>
+          <li>
+            <a href="https://future-architect.github.io/typescript-guide/version.html">
+              使用ライブラリのバージョン管理
+            </a>
+          </li>
+          <li>
+            <a href="https://please-sleep.cou929.nu/super-reload-and-cache.html">
+              リソースの種類・タイミングとスーパーリロード時のブラウザキャッシュ
+            </a>
+          </li>
+          <li>
+            <a href="https://os0x.hatenablog.com/entry/20110617/1308280740">君は3つのリロードを知っているか？</a>
+          </li>
         </ul>
       </main>
     </Freya>
