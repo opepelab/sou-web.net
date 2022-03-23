@@ -17,14 +17,13 @@ const Chakra = ({ cookies, children }: Storage) => {
   );
 };
 
-export function middleware({ req }: NextApiResponse) {
-  return {
-    props: {
-      // first time users will not have any cookies and you may not return
-      // undefined here, hence ?? is necessary      {/* <Chakra cookies={pageProps.cookies}> */}
-      cookies: req.headers.cookie ?? "",
-    },
-  };
+import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
+
+export function middleware(req: NextRequest) {
+  const res = NextResponse.redirect("/"); // creates an actual instance
+  req.cookies ?? ""; // can be called on an instance
+  return res;
 }
 
 export default Chakra;
