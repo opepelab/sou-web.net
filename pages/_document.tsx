@@ -2,6 +2,8 @@
 import { GA_TRACKING_ID } from "../libs/gtag";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import Script from "next/script";
+import { ColorModeScript } from "@chakra-ui/react";
+import theme from "libs/theme";
 
 class MyDocument extends Document {
   render() {
@@ -29,6 +31,7 @@ class MyDocument extends Document {
           )}
         </Head>
         <body>
+          <ColorModeScript initialColorMode={theme.config.initialColorMode} />
           <Main />
           <NextScript />
           <Script src="/localstorage.js" strategy="beforeInteractive" />
