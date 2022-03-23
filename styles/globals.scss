@@ -9,14 +9,6 @@ html {
   -webkit-text-size-adjust: $r100;
   overflow: scroll;
 }
-.preload * {
-  transition-duration: none !important;
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
-  transition: none !important;
-}
 
 body {
   font: {
@@ -29,7 +21,6 @@ body {
   font-weight: normal;
   width: 640px;
   @include LRauto;
-  transition-duration: 0.5s;
 }
 
 pre {
