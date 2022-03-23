@@ -25,7 +25,7 @@ export const ToggleDarkMode = () => {
     }
   };
   return (
-    <div className={`preload${darkMode ? "toggle black" : "toggle white"}`} onClick={() => handleChangeDarkMode()}>
+    <div className={darkMode ? "toggle black" : "toggle white"} onClick={() => handleChangeDarkMode()}>
       <div className={darkMode ? "gg-moon" : "gg-sun"}></div>
     </div>
   );

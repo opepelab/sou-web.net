@@ -19,8 +19,6 @@ html {
 }
 
 body {
-  transition-duration: 0.5s;
-  display: block;
   font: {
     family: $Google;
     size: $p14;
@@ -31,6 +29,7 @@ body {
   font-weight: normal;
   width: 640px;
   @include LRauto;
+  transition-duration: 0.5s;
 }
 
 pre {
