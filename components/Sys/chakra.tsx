@@ -17,7 +17,7 @@ const Chakra = ({ cookies, children }: Storage) => {
   );
 };
 
-export function getServerSideProps({ req }: NextApiResponse) {
+export function middleware({ req }: NextApiResponse) {
   return {
     props: {
       // first time users will not have any cookies and you may not return
