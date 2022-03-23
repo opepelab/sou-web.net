@@ -30,7 +30,11 @@ const securityHeaders = [
   },
   {
     key: "Cache-Control",
-    value: "max-age=1000",
+    value: "max-age=0",
+  },
+  {
+    key: "Surrogate-Control",
+    value: "public, max-age=300",
   },
 ];
 
