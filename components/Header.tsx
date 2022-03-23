@@ -16,7 +16,7 @@ const Header: React.FC = () => {
 
   return (
     <div>
-      <header className="">
+      <header className="flex">
         <div className="bgg bg-amber-50 dark:bg-stone-800">
           <div className="disableN">
             <nav>
@@ -127,7 +127,7 @@ const Header: React.FC = () => {
                 <li>
                   <ActiveLink href="/list/1" activeClassName="headerState">
                     <a className="scaleLinks dark:text-stone-300 Block">
-                      <div className="gg-calibrate" />
+                      <div className="gg-format-text" />
                       Posts
                     </a>
                   </ActiveLink>
@@ -143,7 +143,7 @@ const Header: React.FC = () => {
                 <li>
                   <ActiveLink href="/develop" activeClassName="headerState">
                     <a className="scaleLinks dark:text-stone-300 Block">
-                      <div className="gg-attribution" />
+                      <div className="gg-git-fork" />
                       Development Environment
                     </a>
                   </ActiveLink>

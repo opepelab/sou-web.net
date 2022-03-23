@@ -31,42 +31,29 @@
   right: -5px;
 }
 
-.gg-calibrate {
-  top: 4px;
-  margin-right: 4px;
-  display: inline-block;
+.gg-format-text {
   box-sizing: border-box;
   position: relative;
+  display: inline-block;
   transform: scale(var(--ggs, 1));
-  width: 18px;
-  height: 18px;
-  overflow: hidden;
+  width: 10px;
+  height: 8px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  box-shadow: 0 -2px 0 0, inset 0 0 0 2px;
+  margin-right: 9px;
 }
 
-.gg-calibrate::after,
-.gg-calibrate::before {
+.gg-format-text::after {
   content: "";
   display: block;
   box-sizing: border-box;
   position: absolute;
-  border-radius: 22px;
-}
-
-.gg-calibrate::before {
-  width: 6px;
-  height: 6px;
-  background: currentColor;
-  top: 10px;
-  left: 6px;
-}
-
-.gg-calibrate::after {
-  width: 22px;
-  height: 22px;
-  border: 6px solid transparent;
-  border-top: 6px solid;
-  left: -2px;
-  top: 1px;
+  width: 18px;
+  height: 18px;
+  border: 1px dashed;
+  top: -6px;
+  left: -8px;
 }
 
 .gg-mail,
@@ -129,46 +116,44 @@
   bottom: 0;
 }
 
-.gg-attribution {
-  top: 4px;
-  margin-right: 4px;
-  display: inline-block;
-  position: relative;
+.gg-git-fork {
   box-sizing: border-box;
+  position: relative;
+  display: inline-block;
   transform: scale(var(--ggs, 1));
-  width: 16px;
-  height: 18px;
-  background: linear-gradient(to left, currentColor 14px, transparent 0) no-repeat 1px 2px/8px 2px,
-    linear-gradient(to left, currentColor 14px, transparent 0) no-repeat 6px 14px/6px 2px,
-    radial-gradient(circle, currentColor 60%, transparent 40%) no-repeat 10px 12px/6px 6px,
-    radial-gradient(circle, currentColor 60%, transparent 40%) no-repeat 0 0/6px 6px;
+  width: 2px;
+  height: 14px;
+  background: currentColor;
+  margin-right: 12px;
+  top: 2px;
 }
 
-.gg-attribution::after,
-.gg-attribution::before {
+.gg-git-fork::after,
+.gg-git-fork::before {
   content: "";
   display: block;
   box-sizing: border-box;
   position: absolute;
+}
+
+.gg-git-fork::before {
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  border-bottom-right-radius: 4px;
+  bottom: 4px;
   width: 8px;
-  height: 8px;
-  border: 2px solid;
+  height: 6px;
+  left: 0;
 }
 
-.gg-attribution::before {
-  border-right: 0;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  top: 8px;
-  left: 2px;
-}
-
-.gg-attribution::after {
-  border-left: 0;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  right: 2px;
-  top: 2px;
+.gg-git-fork::after {
+  width: 4px;
+  height: 4px;
+  background: currentColor;
+  box-shadow: 0 12px 0 0, 6px 2px 0 0;
+  border-radius: 100%;
+  left: -1px;
+  top: -1px;
 }
 
 .gg-coffee {
