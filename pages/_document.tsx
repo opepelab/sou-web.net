@@ -10,7 +10,6 @@ class MyDocument extends Document {
     return (
       <Html lang="JA">
         <Head>
-          <Script src="/localstorage.js" strategy="beforeInteractive" defer />
           <link rel="shortcut icon" href="/folds.ico" />
           <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff" rel="stylesheet" />
           {GA_TRACKING_ID && (
@@ -31,14 +30,15 @@ class MyDocument extends Document {
             </>
           )}
         </Head>
-        <body>
+        <body className="dark:bg-stone-800 dark:text-zinc-100 bg-amber-50 text-gray-600">
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
           <Main />
           <NextScript />
+          <Script src="/localstorage.js" strategy="beforeInteractive" async />
         </body>
       </Html>
     );
   }
 }
-// className="dark:bg-stone-800 dark:text-zinc-100 bg-amber-50 text-gray-600"
+
 export default MyDocument;

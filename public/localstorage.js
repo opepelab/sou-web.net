@@ -1,6 +1,6 @@
 (function initTheme() {
-  var theme = localStorage.getItem("chakra-ui-color-mode");
+  var theme = localStorage.theme.getItem("theme");
   if (theme === "dark") {
-    document.querySelector("html")?.classList.add("dark");
+    document.querySelector("html").classList.add("dark");
   }
 })();
