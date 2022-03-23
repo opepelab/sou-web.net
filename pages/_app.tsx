@@ -10,18 +10,23 @@ import Layout from "components/Layout/layout";
 import usePageView from "hooks/usePageView";
 
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
+  const [darkMode, setDarkMode] = useState(false);
+  useLayoutEffect(() => {
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.querySelector("html")?.classList.add("dark");
+    } else {
+      document.querySelector("html")?.classList.remove("dark");
+    }
+  });
   useEffect(() => {
     setTimeout(() => {
-      if (
-        localStorage.theme === "dark" ||
-        (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
-      ) {
-        document.querySelector("html")?.classList.add("dark");
-      } else {
-        document.querySelector("html")?.classList.remove("dark");
-      }
+      setDarkMode(true);
     }, 500);
-  }, []);
+  }, [darkMode]);
+
   usePageView();
   return (
     <>
@@ -30,7 +35,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
       </Head>
       <Layout>
         <AnimatePresence exitBeforeEnter initial={true}>
-          <Component {...pageProps} key={router.asPath} />
+          {darkMode && <Component {...pageProps} key={router.asPath} />}
         </AnimatePresence>
       </Layout>
     </>
