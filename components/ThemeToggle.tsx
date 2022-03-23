@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 export const ToggleDarkMode = () => {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
   useEffect(() => {
     if (
       localStorage.theme === "dark" ||
@@ -9,8 +9,10 @@ export const ToggleDarkMode = () => {
     ) {
       setDarkMode(true);
       document.querySelector("html")?.classList.add("dark");
+      document.querySelector("html")?.classList.remove("light");
     } else {
       setDarkMode(false);
+      document.querySelector("html")?.classList.add("light");
       document.querySelector("html")?.classList.remove("dark");
     }
   }, [darkMode]);

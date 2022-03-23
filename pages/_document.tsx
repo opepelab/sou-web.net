@@ -33,7 +33,7 @@ class MyDocument extends Document {
             </>
           )}
         </Head>
-        <body className="dark:bg-stone-800 dark:text-zinc-100 bg-amber-50 text-gray-600">
+        <body className="dark:bg-stone-800 dark:text-zinc-100 light:bg-amber-50 light:text-gray-600">
           <Main />
           <NextScript />
           <Script src="/localstorage.js" strategy="beforeInteractive" defer />
