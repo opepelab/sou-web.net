@@ -1,5 +1,5 @@
 import $ from "jquery";
 
 $(window).load(function () {
-  $("body").removeClass("preload");
+  $("body, div").removeClass("preload");
 });
