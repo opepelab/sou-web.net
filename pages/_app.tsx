@@ -1,6 +1,6 @@
 import { AppProps } from "next/app";
 import { AnimatePresence } from "framer-motion";
-import { useLayoutEffect } from "react";
+import { useLayoutEffect, useEffect, useState } from "react";
 import "styles/globals.scss";
 import "styles/mobile.scss";
 import "styles/icons.scss";
@@ -11,15 +11,20 @@ import usePageView from "hooks/usePageView";
 import Chakra from "components/Sys/chakra";
 
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
-  useLayoutEffect(() => {
-    if (
-      localStorage.theme === "dark" ||
-      (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
-      document.querySelector("html")?.classList.add("dark");
-    } else {
-      document.querySelector("html")?.classList.remove("dark");
-    }
+  const [mounted, setMounted] = useState(false);
+  // useLayoutEffect(() => {
+  //   if (
+  //     localStorage.theme === "dark" ||
+  //     (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+  //   ) {
+  //     document.querySelector("html")?.classList.add("dark");
+  //   } else {
+  //     document.querySelector("html")?.classList.remove("dark");
+  //   }
+  // }, []);
+
+  useEffect(() => {
+    setMounted(true);
   }, []);
   usePageView();
 
@@ -31,7 +36,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
       <Chakra cookies={pageProps.cookies}>
         <Layout>
           <AnimatePresence exitBeforeEnter initial={true}>
-            <Component {...pageProps} key={router.asPath} />
+            {mounted && <Component {...pageProps} key={router.asPath} />}
           </AnimatePresence>
         </Layout>
       </Chakra>
