@@ -9,9 +9,12 @@ import Head from "next/head";
 import Layout from "components/Layout/layout";
 import usePageView from "hooks/usePageView";
 
+const canUseDOM = typeof window !== "undefined";
+const useIsomorphicLayoutEffect = canUseDOM ? useLayoutEffect : useEffect;
+
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
   const [darkMode, setDarkMode] = useState(false);
-  useLayoutEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     if (
       localStorage.theme === "dark" ||
       (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
@@ -21,10 +24,10 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
       document.querySelector("html")?.classList.remove("dark");
     }
   });
-  useLayoutEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     setTimeout(() => {
       setDarkMode(true);
-    }, 100);
+    }, 200);
   }, [darkMode]);
 
   usePageView();
