@@ -15,11 +15,12 @@ type Map = {
   blog: {
     map: StringConstructor;
   };
+  cookies?: string;
 };
 
-const Index: React.FC<Map> = ({ blog }) => {
+const Index: React.FC<Map> = ({ blog, cookies }) => {
   return (
-    <Chakra>
+    <Chakra cookies={cookies}>
       <Layout>
         <Freya>
           <OG title="Index - sou" description="Index" />
