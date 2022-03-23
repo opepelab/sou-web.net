@@ -1,13 +1,9 @@
 // pages/_document.js
 import { GA_TRACKING_ID } from "../libs/gtag";
-import Document, { Html, Head, Main, NextScript, DocumentContext } from "next/document";
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
 import Script from "next/script";
 class MyDocument extends Document {
-  static async getInitialProps(ctx: DocumentContext) {
-    return await Document.getInitialProps(ctx);
-  }
-
   render() {
     return (
       <Html lang="JA">

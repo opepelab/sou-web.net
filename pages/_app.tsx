@@ -7,7 +7,6 @@ import "styles/icons.scss";
 import "styles/img.scss";
 import Head from "next/head";
 import Layout from "components/Layout/layout";
-// import Chakra from "components/Sys/chakra";
 import usePageView from "hooks/usePageView";
 
 const canUseDOM = typeof window !== "undefined";
