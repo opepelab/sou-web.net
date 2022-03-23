@@ -34,7 +34,7 @@ class MyDocument extends Document {
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
           <Main />
           <NextScript />
-          <Script src="/localstorage.js" strategy="beforeInteractive" async />
+          <Script src="/localstorage.js" strategy="beforeInteractive" />
         </body>
       </Html>
     );
