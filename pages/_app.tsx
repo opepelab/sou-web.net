@@ -27,7 +27,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
   useIsomorphicLayoutEffect(() => {
     setTimeout(() => {
       setDarkMode(true);
-    }, 200);
+    }, 600);
   }, [darkMode]);
 
   usePageView();
