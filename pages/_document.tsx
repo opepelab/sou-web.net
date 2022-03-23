@@ -2,7 +2,6 @@
 import { GA_TRACKING_ID } from "../libs/gtag";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import Script from "next/script";
-import jQuery from "jquery";
 
 class MyDocument extends Document {
   render() {
