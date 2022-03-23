@@ -1,5 +1,5 @@
 import client from "libs/contentful";
-import { GetStaticProps } from "next";
+import { GetServerSideProps, NextApiResponse } from "next";
 import OG from "components/Sys/OG";
 import Framerdiv from "components/Sys/Framer";
 import { Entry, EntryCollection } from "contentful";
@@ -52,7 +52,7 @@ const Index: React.FC<Map> = ({ blog }) => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps = async ({ req }: NextApiResponse) => {
   await generateRssFeed();
   const data: EntryCollection<IPostFields> = await client.getEntries({
     content_type: "blog",
@@ -62,9 +62,9 @@ export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
       blog: data.items,
+      cookies: req.headers.cookie ?? "",
     },
   };
 };
 
 export default Index;
-export { SyncS } from "components/Sys/chakra";
