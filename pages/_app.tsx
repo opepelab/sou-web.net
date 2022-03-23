@@ -25,7 +25,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
     setTimeout(() => {
       setDarkMode(true);
     }, 100);
-  }, []);
+  }, [darkMode]);
 
   usePageView();
   return (
