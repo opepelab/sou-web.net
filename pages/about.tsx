@@ -1,9 +1,9 @@
 import OG from "components/Sys/OG";
-import Framerdiv from "components/Sys/Framer";
+import Freya from "components/Sys/Framer";
 
 const About = () => {
   return (
-    <Framerdiv>
+    <Freya>
       <OG title="Overview - sou" description="私の概要" />
       <main className="list margin-Mobile-PC textLeft inblo">
         <h1>Overview</h1>
@@ -68,7 +68,7 @@ const About = () => {
         <p></p>
         <p>Challenging change the everytime The goal is to sleep like dead every day.</p>
       </main>
-    </Framerdiv>
+    </Freya>
   );
 };
 

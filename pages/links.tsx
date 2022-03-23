@@ -1,10 +1,10 @@
 import OG from "components/Sys/OG";
-import Framerdiv from "components/Sys/Framer";
+import Freya from "components/Sys/Framer";
 import Link from "next/link";
 
 const Links: React.FC = () => {
   return (
-    <Framerdiv>
+    <Freya>
       <OG title="links - sou" description="リンク" />
       <main className="margin-Mobile-PC">
         <h1>Links</h1>
@@ -64,8 +64,9 @@ const Links: React.FC = () => {
           </Link>
         </dl>
       </main>
-    </Framerdiv>
+    </Freya>
   );
 };
 
 export default Links;
+export { getServerSideProps } from "components/Sys/chakra";

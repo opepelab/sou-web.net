@@ -1,9 +1,9 @@
-import Framerdiv from "../components/Sys/Framer";
+import Freya from "../components/Sys/Framer";
 import Head from "next/head";
 
 const Thisblog: React.FC = () => {
   return (
-    <Framerdiv>
+    <Freya>
       <Head>
         <title>Development Environment - sou</title>
         <meta name="description" content="開発環境" />
@@ -27,7 +27,7 @@ const Thisblog: React.FC = () => {
         <p>Welcome to my home page, refresh and swich your identitiy.</p>
         <p>Let's enjoy the code architect and programing! I'm going OSS mobile application contribution.</p>
       </main>
-    </Framerdiv>
+    </Freya>
   );
 };
 

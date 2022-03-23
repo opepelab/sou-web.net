@@ -1,9 +1,9 @@
 import OG from "components/Sys/OG";
-import Framerdiv from "components/Sys/Framer";
+import Freya from "components/Sys/Framer";
 
 const About: React.FC = () => {
   return (
-    <Framerdiv>
+    <Freya>
       <OG title="Profile - sou" description="私について" />
       <main className="margin-Mobile-PC inblo">
         <h1>Profile</h1>
@@ -24,7 +24,7 @@ const About: React.FC = () => {
           <dd>私を作ってくれた生んでくれた母と父に感謝しています。</dd>
         </dl>
       </main>
-    </Framerdiv>
+    </Freya>
   );
 };
 

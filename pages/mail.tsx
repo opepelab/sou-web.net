@@ -1,11 +1,11 @@
 import { useMail } from "hooks/useMail";
 import OG from "components/Sys/OG";
-import Framerdiv from "components/Sys/Framer";
+import Freya from "components/Sys/Framer";
 
 export const Mail: React.FC<HTMLTextAreaElement> = () => {
   const { setName, setMail, setMessage, send } = useMail();
   return (
-    <Framerdiv>
+    <Freya>
       <OG title="mail - sou" description="メール" />
       <main className="margin-Mobile-PC Mail inblo">
         <form>
@@ -56,7 +56,7 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
           </dl>
         </form>
       </main>
-    </Framerdiv>
+    </Freya>
   );
 };
 

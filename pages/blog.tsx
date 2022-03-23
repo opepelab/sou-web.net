@@ -1,7 +1,7 @@
 import client from "libs/contentful";
 import { GetStaticProps } from "next";
 import OG from "components/Sys/OG";
-import Framerdiv from "components/Sys/Framer";
+import Freya from "components/Sys/Framer";
 import { Entry, EntryCollection } from "contentful";
 import { IPostFields } from "libs/types";
 import Date from "components/Sys/date";
@@ -15,7 +15,7 @@ type Map = {
 
 const Blog: React.FC<Map> = ({ blog }) => {
   return (
-    <Framerdiv>
+    <Freya>
       <OG title="Blog - sou" description="ブログ" />
       <main className="textLeft margin-Mobile-PC inblo">
         <h5>記事一覧</h5>
@@ -32,7 +32,7 @@ const Blog: React.FC<Map> = ({ blog }) => {
           </dl>
         ))}
       </main>
-    </Framerdiv>
+    </Freya>
   );
 };
 

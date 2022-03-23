@@ -1,9 +1,9 @@
 import OG from "components/Sys/OG";
-import Framerdiv from "components/Sys/Framer";
+import Freya from "components/Sys/Framer";
 
 const Develop: React.FC = () => {
   return (
-    <Framerdiv>
+    <Freya>
       <OG title="Development Environment - sou" description="開発環境" />
       <main className="margin-Mobile-PC resizeimage inblo">
         <h1>Development Environment</h1>
@@ -24,7 +24,7 @@ const Develop: React.FC = () => {
           <dd>Azure SWA/Vercel/Cloudflare</dd>
         </dl>
       </main>
-    </Framerdiv>
+    </Freya>
   );
 };
 

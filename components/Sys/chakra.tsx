@@ -1,11 +1,11 @@
 import { ChakraProvider, cookieStorageManager, localStorageManager } from "@chakra-ui/react";
 import theme from "libs/theme";
-import { NextApiResponse } from "next";
+import { GetServerSidePropsContext } from "next";
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 // import Chakra from "components/Sys/chakra";
 type Storage = {
-  cookies: string;
+  cookies?: string;
   children: React.ReactNode;
 };
 
@@ -19,11 +19,11 @@ const Chakra = ({ cookies, children }: Storage) => {
   );
 };
 
-export async function middleware({ req }: NextApiResponse) {
+export type ServerSideProps<T> = { props: T } | Promise<{ props: T }>;
+
+export function getServerSideProps({ req }: GetServerSidePropsContext): ServerSideProps<{ cookies?: string }> {
   return {
     props: {
-      // first time users will not have any cookies and you may not return
-      // undefined here, hence ?? is necessary      {/* <Chakra cookies={pageProps.cookies}> */}
       cookies: req.headers.cookie ?? "",
     },
   };

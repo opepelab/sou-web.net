@@ -1,10 +1,10 @@
 import OG from "components/Sys/OG";
-import Framerdiv from "components/Sys/Framer";
+import Freya from "components/Sys/Framer";
 import Link from "next/link";
 
 const NotFound: React.FC = () => {
   return (
-    <Framerdiv>
+    <Freya>
       <OG title="404 - sou-web.net" description="存在しないページ" />
       <main className="margin-Mobile-PC">
         <h1>Does not don't sync</h1>
@@ -15,7 +15,7 @@ const NotFound: React.FC = () => {
           </Link>
         </dl>
       </main>
-    </Framerdiv>
+    </Freya>
   );
 };
 

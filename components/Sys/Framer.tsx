@@ -11,7 +11,7 @@ const variants = {
   exit: { opacity: 0, x: 0, y: 200 },
 };
 
-const Framerdiv: React.FC<RRNode> = ({ children }) => {
+const Freya: React.FC<RRNode> = ({ children }) => {
   return (
     <motion.article initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ duration: 0.25 }}>
       {children}
@@ -19,4 +19,4 @@ const Framerdiv: React.FC<RRNode> = ({ children }) => {
   );
 };
 
-export default Framerdiv;
+export default Freya;

@@ -1,9 +1,9 @@
 import OG from "components/Sys/OG";
-import Framerdiv from "components/Sys/Framer";
+import Freya from "components/Sys/Framer";
 
 const Picture: React.FC = () => {
   return (
-    <Framerdiv>
+    <Freya>
       <OG title="photo - sou" description="フォト" />
       <main className="margin-Mobile-PC inblo">
         <h1>Photo</h1>
@@ -51,7 +51,7 @@ const Picture: React.FC = () => {
           <dd>16GB</dd>
         </dl>
       </main>
-    </Framerdiv>
+    </Freya>
   );
 };
 

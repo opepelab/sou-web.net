@@ -1,9 +1,9 @@
-import Framerdiv from "components/Sys/Framer";
+import Freya from "components/Sys/Framer";
 import OG from "components/Sys/OG";
 
 const Webclip: React.FC = () => {
   return (
-    <Framerdiv>
+    <Freya>
       <OG title="これだと思っていた重要なWEBページを公開クリップしています - sou" description="公開ウェブクリップ" />
       <main className="Hlink list textLeft margin-Mobile-PC resizeimage">
         <h1>これだと思った重要なウェブページを公開クリップしています</h1>
@@ -24,7 +24,7 @@ const Webclip: React.FC = () => {
           <p>個人的に何度も訪れる必須のページ。</p>
         </ul>
       </main>
-    </Framerdiv>
+    </Freya>
   );
 };
 
