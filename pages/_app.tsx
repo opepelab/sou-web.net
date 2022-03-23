@@ -8,7 +8,6 @@ import "styles/img.scss";
 import Head from "next/head";
 import Layout from "components/Layout/layout";
 import usePageView from "hooks/usePageView";
-import Script from "next/script";
 
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
   useLayoutEffect(() => {
@@ -26,7 +25,6 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
   return (
     <>
       <Head>
-        <Script src="/localstorage.js" strategy="beforeInteractive" async />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <Layout>

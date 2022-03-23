@@ -8,6 +8,7 @@ class MyDocument extends Document {
     return (
       <Html lang="JA">
         <Head>
+          <Script src="/localstorage.js" strategy="beforeInteractive" defer />
           <link rel="shortcut icon" href="/folds.ico" />
           <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff" rel="stylesheet" />
           {GA_TRACKING_ID && (
