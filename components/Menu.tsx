@@ -106,7 +106,7 @@ const Menu = () => {
                 <li>
                   <ActiveLink href="/list/1" activeClassName="headerState">
                     <a className="left1p" onMouseDown={() => setOpen(!open)}>
-                      <div className="gg-calibrate" />
+                      <div className="gg-format-text" />
                       Posts
                     </a>
                   </ActiveLink>
@@ -121,8 +121,8 @@ const Menu = () => {
                 </li>
                 <li>
                   <ActiveLink href="/develop" activeClassName="headerState">
-                    <a className="right1" onMouseDown={() => setOpen(!open)}>
-                      <div className="gg-attribution" />
+                    <a className="right1p" onMouseDown={() => setOpen(!open)}>
+                      <div className="gg-git-fork" />
                       Development Environment
                     </a>
                   </ActiveLink>
