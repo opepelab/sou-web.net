@@ -2,11 +2,9 @@
 import { GA_TRACKING_ID } from "../libs/gtag";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import Script from "next/script";
-import { useState } from "react";
 
 class MyDocument extends Document {
   render() {
-    const [stop, setStop] = useState(null);
     return (
       <Html lang="JA">
         <Head>
@@ -33,13 +31,7 @@ class MyDocument extends Document {
         <body className="dark:bg-stone-800 dark:text-zinc-100 bg-amber-50 text-gray-600">
           <Main />
           <NextScript />
-          <Script
-            src="/localstorage.js"
-            strategy="beforeInteractive"
-            onLoad={() => {
-              setStop(stop);
-            }}
-          />
+          <Script src="/localstorage.js" strategy="worker" />
         </body>
       </Html>
     );
