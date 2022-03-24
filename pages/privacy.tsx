@@ -11,7 +11,6 @@ const Privacy: React.FC = () => {
             Privacy Policy<rt>プライバシーポリシー</rt>
           </ruby>
         </h1>
-
         <h2>このサイトについて</h2>
         <p>このサイトはGoogleAnalyticsを使用しています。</p>
         <p>JavaScriptが実行できないブラウザ環境では正常に動作しない場合があります。</p>

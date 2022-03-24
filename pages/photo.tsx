@@ -7,8 +7,6 @@ const Picture: React.FC = () => {
       <OG title="photo - sou" description="フォト" />
       <main className="margin-Mobile-PC inblo">
         <h1>Photo</h1>
-        <div className="triangle-bottom" />
-
         <div>
           <a href="#01">
             <img className="PM margin10 point" src="/picture/otoko.png" width={255} height={403} />

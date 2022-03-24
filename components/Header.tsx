@@ -1,6 +1,7 @@
 import ActiveLink from "./Sys/ActiveLink";
 import React from "react";
-
+import ThemeToggler from "components/ThemeToggle";
+import Text from "components/Text";
 const Header: React.FC = () => {
   const [about, setAbout] = React.useState(false);
   const aboRef = React.useRef<HTMLDivElement>(null);
@@ -20,7 +21,9 @@ const Header: React.FC = () => {
         <div className="bgg bg-amber-50 dark:bg-stone-800">
           <div className="disableN">
             <nav>
-              <ul className="nav1">
+              <ul className="nav1-left">
+                <ThemeToggler />
+                <Text />
                 <li>
                   <div aria-expanded={about} onClick={() => setAbout(!about)}>
                     <a className="dark:text-stone-300 scaleLinks Block">
@@ -124,6 +127,8 @@ const Header: React.FC = () => {
                     </div>
                   </div>
                 </li>
+              </ul>
+              <ul className="nav1-right">
                 <li>
                   <ActiveLink href="/list/1" activeClassName="headerState">
                     <a className="scaleLinks dark:text-stone-300 Block">

@@ -103,20 +103,28 @@ nav ul li {
   color: #333;
 }
 
-.nav1 {
-  position: relative;
+.nav1-right {
+  position: fixed;
   list-style: none;
-  font: {
-    size: $p14;
-  }
-  color: #333;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-gap: $p20;
   white-space: nowrap;
-  left: 88px;
-  top: -5px;
+  right: 5%;
+  top: 7px;
+}
+
+.nav1-left {
+  position: fixed;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: $p20;
+  white-space: nowrap;
+  left: 15%;
+  top: 7px;
 }
 
 .nav2 {
@@ -268,11 +276,10 @@ textarea {
 }
 
 .Top-Logo {
-  z-index: 2;
+  z-index: 3;
   position: fixed;
-  display: inline-block;
-  left: 320px;
-  top: 10px;
+  left: 7%;
+  top: 12px;
   font-size: 24px;
 }
 
@@ -280,7 +287,7 @@ textarea {
   z-index: 3;
   position: fixed;
   top: 7px;
-  left: 250px;
+  left: 15px;
   display: flex;
   align-items: center;
   justify-content: center;

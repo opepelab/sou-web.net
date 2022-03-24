@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import ActiveLink from "./Sys/ActiveLink";
 import ToggleMB from "components/ToggleMB";
-
+import Text from "components/Text";
 const Menu = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="none">
+      <Text />
       <div className="Line text-teal-100">
         <button
           aria-expanded={open}

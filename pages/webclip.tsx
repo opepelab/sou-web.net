@@ -7,7 +7,6 @@ const Webclip: React.FC = () => {
       <OG title="これだと思っていた重要なWEBページを公開クリップしています - sou" description="公開ウェブクリップ" />
       <main className="Hlink list textLeft margin-Mobile-PC resizeimage">
         <h1>これだと思った重要なウェブページを公開クリップしています</h1>
-        <div className="triangle-bottom" />
         <ul>
           <li>
             <a href="https://nico0927.hatenablog.com/entry/2017/10/31/221613">

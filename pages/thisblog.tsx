@@ -10,7 +10,6 @@ const Thisblog: React.FC = () => {
       </Head>
       <main className="textLeft margin-Mobile-PC">
         <h1>What is this blog?</h1>
-        <div className="triangle-bottom" />
         <p>Cloud: Cloudflare</p>
         <p>CSS: TailWind CSS Sass</p>
         <p>use TypeScript(Lint strict)</p>

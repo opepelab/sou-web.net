@@ -7,7 +7,6 @@ const About: React.FC = () => {
       <OG title="Profile - sou" description="私について" />
       <main className="margin-Mobile-PC inblo">
         <h1>Profile</h1>
-        <div className="triangle-bottom" />
         <dl>
           <dt>Name</dt>
           <dd>sou Watanabe/蒼 渡邊</dd>

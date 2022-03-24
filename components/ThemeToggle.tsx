@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { SunIcon, MoonIcon } from "@heroicons/react/solid";
 
 export const ToggleDarkMode = () => {
   const [darkMode, setDarkMode] = useState(false);

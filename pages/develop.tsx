@@ -7,7 +7,6 @@ const Develop: React.FC = () => {
       <OG title="Development Environment - sou" description="開発環境" />
       <main className="margin-Mobile-PC resizeimage inblo">
         <h1>Development Environment</h1>
-        <div className="triangle-bottom" />
         <dl>
           <img src="/picture/IMG-0554.jpg" />
           <dt>OS</dt>
