@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { SunIcon, MoonIcon } from "@heroicons/react/solid";
 
 export const ToggleDarkMode = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -26,7 +27,7 @@ export const ToggleDarkMode = () => {
   };
   return (
     <div className={darkMode ? "toggle black" : "toggle white"} onClick={() => handleChangeDarkMode()}>
-      <div className={darkMode ? "gg-moon" : "gg-sun"}></div>
+      <div className={darkMode ? "gg-moon" : "gg-sun"} />
     </div>
   );
 };
