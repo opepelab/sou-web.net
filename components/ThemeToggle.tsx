@@ -25,8 +25,8 @@ import { useTheme } from "next-themes";
 //     setDarkMode(true);
 //   }
 // };
-const canUseDOM = typeof window !== "undefined";
-const useIsomorphicLayoutEffect = canUseDOM ? useLayoutEffect : useEffect;
+// const canUseDOM = typeof window !== "undefined";
+// const useIsomorphicLayoutEffect = canUseDOM ? useLayoutEffect : useEffect;
 
 export const ThemeChanger: React.VFC = () => {
   const { theme, setTheme } = useTheme();
@@ -35,9 +35,9 @@ export const ThemeChanger: React.VFC = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
 
-  useIsomorphicLayoutEffect(() => {
-    setTheme(theme);
-  }, []);
+  // useIsomorphicLayoutEffect(() => {
+  //   setTheme(theme);
+  // }, []);
 
   return (
     <div className={theme === "dark" ? "toggle black" : "toggle white"} onClick={() => handleSetTheme()}>
