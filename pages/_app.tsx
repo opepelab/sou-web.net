@@ -8,6 +8,7 @@ import "styles/img.scss";
 import Head from "next/head";
 import Layout from "components/Layout/layout";
 import usePageView from "hooks/usePageView";
+import { ThemeProvider } from "libs/ThemeProvider";
 
 const canUseDOM = typeof window !== "undefined";
 const useIsomorphicLayoutEffect = canUseDOM ? useLayoutEffect : useEffect;
@@ -30,11 +31,13 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
+      {/* <ThemeProvider> */}
       <Layout>
         <AnimatePresence exitBeforeEnter initial={true}>
           <Component {...pageProps} key={router.asPath} />
         </AnimatePresence>
       </Layout>
+      {/* </ThemeProvider> */}
     </>
   );
 };

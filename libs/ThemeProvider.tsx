@@ -1,5 +1,5 @@
-import { useState, useEffect, createContext, ReactNode, SetStateAction } from "react";
-
+import { useState, useMemo, useEffect, createContext, ReactNode, SetStateAction } from "react";
+import { Colors } from "libs/theme";
 type Prov = {
   children: ReactNode;
 };
@@ -10,7 +10,7 @@ type ColorTheme = {
   changeColorMode: (value: ColorMode) => void;
 };
 
-export const ThemeContext = createContext<ColorTheme | null>(null);
+export const ThemeContext = createContext<any>(null);
 export const ThemeProvider = ({ children }: Prov) => {
   const [colorMode, setColorMode] = useState(undefined);
   useEffect(() => {
@@ -18,8 +18,34 @@ export const ThemeProvider = ({ children }: Prov) => {
     const initialColorValue = root.style.getPropertyValue("--initial-color-mode");
     setColorMode(initialColorValue as any);
   }, []);
-  const changeColorMode = (value: ColorMode) => {
-    setColorMode(value as any);
-  };
-  return <ThemeContext.Provider value={{ colorMode, changeColorMode }}>{children}</ThemeContext.Provider>;
+
+  const changeColorMode = useMemo(() => {
+    function setColorMode(mode: any) {
+      const root = window.document.documentElement;
+
+      root.style.setProperty("--initial-color-mode", mode);
+      root.style.setProperty("--color-text", mode === "light" ? Colors.light.textColor : Colors.dark.textColor);
+      root.style.setProperty(
+        "--color-sub-text",
+        mode === "light" ? Colors.light.subTextColor : Colors.dark.subTextColor
+      );
+      root.style.setProperty(
+        "--color-background",
+        mode === "light" ? Colors.light.backgroundColor : Colors.dark.backgroundColor
+      );
+      root.style.setProperty(
+        "--color-primary",
+        mode === "light" ? Colors.light.primaryColor : Colors.dark.primaryColor
+      );
+
+      setColorMode(mode);
+    }
+
+    return {
+      colorMode,
+      setColorMode,
+    };
+  }, [colorMode, setColorMode]);
+
+  return <ThemeContext.Provider value={changeColorMode}>{children}</ThemeContext.Provider>;
 };
