@@ -54,6 +54,7 @@ class MyDocument extends Document {
         </Head>
         <body>
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+          <Script src="/localstorage.js" strategy="beforeInteractive" />
           <Main />
           <NextScript />
         </body>
@@ -63,7 +64,5 @@ class MyDocument extends Document {
 }
 
 export default MyDocument;
-{
-  /* <Script src="/localstorage.js" strategy="beforeInteractive" />; */
-}
+
 // className="dark:bg-stone-800 dark:text-zinc-100 bg-amber-50 text-gray-600"
