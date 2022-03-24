@@ -9,7 +9,7 @@ import { ColorModeScript } from "@chakra-ui/react";
 import Script from "next/script";
 const { extractCritical } = createEmotionServer(emotionCache);
 
-class MyDocument extends Document {
+export default class CustomDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx);
     const styles = extractCritical(initialProps.html);
@@ -62,7 +62,5 @@ class MyDocument extends Document {
     );
   }
 }
-
-export default MyDocument;
 
 // className="dark:bg-stone-800 dark:text-zinc-100 bg-amber-50 text-gray-600"
