@@ -28,8 +28,10 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="JA">
+      <Html lang="en">
         <Head>
+          <meta charSet="UTF-8" />
+          <meta content="ie=edge" httpEquiv="X-UA-Compatible" />
           <link rel="shortcut icon" href="/folds.ico" />
           <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff" rel="stylesheet" />
           {GA_TRACKING_ID && (
