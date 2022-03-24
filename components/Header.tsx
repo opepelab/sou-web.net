@@ -1,6 +1,6 @@
 import ActiveLink from "./Sys/ActiveLink";
 import React from "react";
-import ThemeToggler from "components/ThemeToggle";
+import ThemeToggleButton from "components/Theme-Toggle-Button";
 import Text from "components/Text";
 const Header: React.FC = () => {
   const [about, setAbout] = React.useState(false);
@@ -21,9 +21,9 @@ const Header: React.FC = () => {
         <div className="bgg bg-amber-50 dark:bg-stone-800">
           <div className="disableN">
             <nav>
+              <ThemeToggleButton />
+              <Text />
               <ul className="nav1-left">
-                <ThemeToggler />
-                <Text />
                 <li>
                   <div aria-expanded={about} onClick={() => setAbout(!about)}>
                     <a className="dark:text-stone-300 scaleLinks Block">

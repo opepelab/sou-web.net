@@ -1,10 +1,31 @@
 // pages/_document.js
 import { GA_TRACKING_ID } from "../libs/gtag";
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, { Html, Head, Main, NextScript, DocumentContext } from "next/document";
+import emotionCache from "libs/emotion-cache";
+import createEmotionServer from "@emotion/server/create-instance";
+import theme from "libs/theme";
+import { ColorModeScript } from "@chakra-ui/react";
 
 import Script from "next/script";
+const { extractCritical } = createEmotionServer(emotionCache);
 
 class MyDocument extends Document {
+  static async getInitialProps(ctx: DocumentContext) {
+    const initialProps = await Document.getInitialProps(ctx);
+    const styles = extractCritical(initialProps.html);
+    return {
+      ...initialProps,
+      styles: [
+        initialProps.styles,
+        <style
+          key="emotion-css"
+          dangerouslySetInnerHTML={{ __html: styles.css }}
+          data-emotion-css={styles.ids.join(" ")}
+        />,
+      ],
+    };
+  }
+
   render() {
     return (
       <Html lang="JA">
@@ -29,10 +50,10 @@ class MyDocument extends Document {
             </>
           )}
         </Head>
-        <body className="dark:bg-stone-800 dark:text-zinc-100 bg-amber-50 text-gray-600">
+        <body>
+          <ColorModeScript initialColorMode={theme.config.initialColorMode} />
           <Main />
           <NextScript />
-          <Script src="/localstorage.js" strategy="beforeInteractive" />
         </body>
       </Html>
     );
@@ -40,3 +61,7 @@ class MyDocument extends Document {
 }
 
 export default MyDocument;
+{
+  /* <Script src="/localstorage.js" strategy="beforeInteractive" />; */
+}
+// className="dark:bg-stone-800 dark:text-zinc-100 bg-amber-50 text-gray-600"

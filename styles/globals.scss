@@ -112,7 +112,7 @@ nav ul li {
   grid-gap: $p20;
   white-space: nowrap;
   right: 5%;
-  top: 7px;
+  top: 5px;
 }
 
 .nav1-left {
@@ -124,7 +124,7 @@ nav ul li {
   grid-gap: $p20;
   white-space: nowrap;
   left: 15%;
-  top: 7px;
+  top: 5px;
 }
 
 .nav2 {
@@ -278,21 +278,20 @@ textarea {
 .Top-Logo {
   z-index: 3;
   position: fixed;
-  left: 7%;
-  top: 12px;
+  left: 0%;
+  right: 0%;
+  margin-right: 150px;
+  top: 8px;
   font-size: 24px;
 }
 
 .toggle {
-  z-index: 3;
+  z-index: 4;
   position: fixed;
-  top: 7px;
-  left: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 400px;
-  height: 40px;
+  top: 5px;
+  left: 0%;
+  right: 0%;
+  margin-right: 350px;
   transition-duration: 1s;
   cursor: pointer;
 }
