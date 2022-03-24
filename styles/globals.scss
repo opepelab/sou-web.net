@@ -104,6 +104,7 @@ nav ul li {
 }
 
 .nav1-right {
+  z-index: 2;
   position: fixed;
   list-style: none;
   display: flex;
@@ -116,6 +117,7 @@ nav ul li {
 }
 
 .nav1-left {
+  z-index: 2;
   position: fixed;
   list-style: none;
   display: flex;
@@ -276,22 +278,24 @@ textarea {
 }
 
 .Top-Logo {
-  z-index: 3;
+  z-index: 2;
   position: fixed;
-  left: 0%;
   right: 0%;
+  left: 0%;
   margin-right: 150px;
   top: 8px;
   font-size: 24px;
 }
 
 .toggle {
-  z-index: 4;
-  position: fixed;
+  z-index: 3;
   top: 5px;
-  left: 0%;
+  position: fixed;
   right: 0%;
+  left: 0%;
   margin-right: 350px;
+  width: 32px;
+  height: 32px;
   transition-duration: 1s;
   cursor: pointer;
 }

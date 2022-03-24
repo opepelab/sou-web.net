@@ -53,8 +53,8 @@ export default class CustomDocument extends Document {
           )}
         </Head>
         <body>
-          <ColorModeScript initialColorMode={theme.config.initialColorMode} />
           <Script src="/localstorage.js" strategy="beforeInteractive" />
+          <ColorModeScript initialColorMode={theme.config.initialColorMode} />
           <Main />
           <NextScript />
         </body>
