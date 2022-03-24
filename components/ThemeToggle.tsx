@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useLayoutEffect } from "react";
 import { useTheme } from "next-themes";
 
 // export const ToggleDarkMode = () => {
@@ -25,12 +25,20 @@ import { useTheme } from "next-themes";
 //     setDarkMode(true);
 //   }
 // };
+const canUseDOM = typeof window !== "undefined";
+const useIsomorphicLayoutEffect = canUseDOM ? useLayoutEffect : useEffect;
+
 export const ThemeChanger: React.VFC = () => {
   const { theme, setTheme } = useTheme();
 
   const handleSetTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
+
+  useIsomorphicLayoutEffect(() => {
+    setTheme(theme);
+  }, []);
+
   return (
     <div className={theme === "dark" ? "toggle black" : "toggle white"} onClick={() => handleSetTheme()}>
       <div className={theme === "dark" ? "gg-moon" : "gg-sun"}></div>

@@ -10,20 +10,20 @@ import Layout from "components/Layout/layout";
 import usePageView from "hooks/usePageView";
 import { ThemeProvider } from "next-themes";
 
-// const canUseDOM = typeof window !== "undefined";
-// const useIsomorphicLayoutEffect = canUseDOM ? useLayoutEffect : useEffect;
+const canUseDOM = typeof window !== "undefined";
+const useIsomorphicLayoutEffect = canUseDOM ? useLayoutEffect : useEffect;
 
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
-  // useIsomorphicLayoutEffect(() => {
-  //   if (
-  //     localStorage.theme === "dark" ||
-  //     (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
-  //   ) {
-  //     document.documentElement.setAttribute("data-theme", "dark");
-  //   } else {
-  //     document.documentElement.setAttribute("data-theme", "light");
-  //   }
-  // });
+  useIsomorphicLayoutEffect(() => {
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.documentElement.setAttribute("data-theme", "dark");
+    } else {
+      document.documentElement.setAttribute("data-theme", "light");
+    }
+  });
 
   usePageView();
   return (
