@@ -22,7 +22,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
     } else {
       document.querySelector("html")?.classList.remove("dark");
     }
-  }, []);
+  }, [router]);
 
   usePageView();
   return (
