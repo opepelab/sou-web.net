@@ -47,3 +47,4 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
 };
 
 export default MyApp;
+export { getServerSideProps } from "components/Sys/chakra";
