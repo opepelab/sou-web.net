@@ -13,7 +13,6 @@ const canUseDOM = typeof window !== "undefined";
 const useIsomorphicLayoutEffect = canUseDOM ? useLayoutEffect : useEffect;
 
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
-  const [mount, setMount] = useState(false);
   useIsomorphicLayoutEffect(() => {
     if (
       localStorage.theme === "dark" ||
@@ -23,13 +22,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
     } else {
       document.querySelector("html")?.classList.remove("dark");
     }
-  }, [router]);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setMount(true);
-    }, 200);
-  }, [mount]);
+  }, []);
 
   usePageView();
   return (
@@ -39,7 +32,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
       </Head>
       <Layout>
         <AnimatePresence exitBeforeEnter initial={true}>
-          {mount && <Component {...pageProps} key={router.asPath} />}
+          <Component {...pageProps} key={router.asPath} />
         </AnimatePresence>
       </Layout>
     </>
