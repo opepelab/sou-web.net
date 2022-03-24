@@ -52,9 +52,9 @@ export default class CustomDocument extends Document {
             </>
           )}
         </Head>
-        <body>
+        <body className="dark:bg-stone-800 dark:text-zinc-100 bg-amber-50 text-gray-600">
           <Script src="/localstorage.js" strategy="beforeInteractive" />
-          <ColorModeScript initialColorMode={theme.config.initialColorMode} key="chakra-ui-no-flash" />
+
           <Main />
           <NextScript />
         </body>
@@ -62,5 +62,6 @@ export default class CustomDocument extends Document {
     );
   }
 }
-
-// className="dark:bg-stone-800 dark:text-zinc-100 bg-amber-50 text-gray-600"
+{
+  /* <ColorModeScript initialColorMode={theme.config.initialColorMode} /> */
+}

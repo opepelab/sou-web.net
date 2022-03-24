@@ -289,13 +289,9 @@ textarea {
 
 .toggle {
   z-index: 3;
-  top: 5px;
+  top: 7px;
   position: fixed;
-  right: 0%;
-  left: 0%;
-  margin-right: 350px;
-  width: 32px;
-  height: 32px;
+  left: 41%;
   transition-duration: 1s;
   cursor: pointer;
 }

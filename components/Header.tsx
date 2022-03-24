@@ -1,6 +1,6 @@
 import ActiveLink from "./Sys/ActiveLink";
 import React from "react";
-import ThemeToggleButton from "components/Theme-Toggle-Button";
+import ToggleDarkMode from "components/ThemeToggle";
 import Text from "components/Text";
 const Header: React.FC = () => {
   const [about, setAbout] = React.useState(false);
@@ -21,7 +21,7 @@ const Header: React.FC = () => {
         <div className="bgg bg-amber-50 dark:bg-stone-800">
           <div className="disableN">
             <nav>
-              <ThemeToggleButton />
+              <ToggleDarkMode />
               <Text />
               <ul className="nav1-left">
                 <li>
