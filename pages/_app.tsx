@@ -1,6 +1,6 @@
 import { AppProps } from "next/app";
 import { AnimatePresence } from "framer-motion";
-import { useLayoutEffect, useEffect } from "react";
+import { useLayoutEffect, useEffect, useState } from "react";
 import "styles/globals.scss";
 import "styles/mobile.scss";
 import "styles/icons.scss";
@@ -14,16 +14,19 @@ const canUseDOM = typeof window !== "undefined";
 const useIsomorphicLayoutEffect = canUseDOM ? useLayoutEffect : useEffect;
 
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
+  const [darkMode, setDarkMode] = useState(undefined);
   useIsomorphicLayoutEffect(() => {
     if (
       localStorage.theme === "dark" ||
       (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
     ) {
-      document.documentElement.setAttribute("data-theme", "dark");
+      setDarkMode(darkMode);
+      document.querySelector("html")?.classList.add("dark");
     } else {
-      document.documentElement.setAttribute("data-theme", "light");
+      setDarkMode(darkMode!);
+      document.querySelector("html")?.classList.remove("dark");
     }
-  });
+  }, [darkMode]);
 
   usePageView();
   return (
