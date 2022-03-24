@@ -54,7 +54,7 @@ export default class CustomDocument extends Document {
         </Head>
         <body>
           <Script src="/localstorage.js" strategy="beforeInteractive" />
-          <ColorModeScript />
+          <ColorModeScript initialColorMode={theme.config.initialColorMode} key="chakra-ui-no-flash" />
           <Main />
           <NextScript />
         </body>
