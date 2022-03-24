@@ -4,6 +4,7 @@ import { useLayoutEffect, useEffect, useState } from "react";
 import emotionCache from "libs/emotion-cache";
 import { ChakraProvider } from "@chakra-ui/react";
 import { CacheProvider } from "@emotion/react";
+import { Chakra } from "components/Sys/chakra";
 import theme from "libs/theme";
 import "styles/globals.scss";
 import "styles/mobile.scss";
@@ -34,15 +35,13 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <CacheProvider value={emotionCache}>
-        <ChakraProvider resetCSS={false} theme={theme}>
-          <Layout>
-            <AnimatePresence exitBeforeEnter initial={true}>
-              <Component {...pageProps} key={router.asPath} />
-            </AnimatePresence>
-          </Layout>
-        </ChakraProvider>
-      </CacheProvider>
+      <Chakra>
+        <Layout>
+          <AnimatePresence exitBeforeEnter initial={true}>
+            <Component {...pageProps} key={router.asPath} />
+          </AnimatePresence>
+        </Layout>
+      </Chakra>
     </>
   );
 };

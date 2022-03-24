@@ -1,4 +1,6 @@
 import { ChakraProvider, cookieStorageManager, localStorageManager } from "@chakra-ui/react";
+import emotionCache from "libs/emotion-cache";
+import { CacheProvider } from "@emotion/react";
 import theme from "libs/theme";
 import { NextApiResponse } from "next";
 
@@ -11,9 +13,11 @@ export const Chakra = ({ cookies, children }: Storage) => {
   const colorModeManager = typeof cookies === "string" ? cookieStorageManager(cookies) : localStorageManager;
 
   return (
-    <ChakraProvider resetCSS={false} theme={theme} colorModeManager={colorModeManager}>
-      {children}
-    </ChakraProvider>
+    <CacheProvider value={emotionCache}>
+      <ChakraProvider resetCSS={false} theme={theme} colorModeManager={colorModeManager}>
+        {children}
+      </ChakraProvider>
+    </CacheProvider>
   );
 };
 
