@@ -31,18 +31,6 @@ export default function SwitchingTheme() {
       <button type="button" onClick={changeTheme}>
         Switching Theme
       </button>
-      <style jsx>{`
-        button {
-          border: 0;
-          cursor: pointer;
-          outline: none;
-          padding: 10px 15px;
-          appearance: none;
-          background-color: var(--color-link);
-          border-radius: 5px;
-          color: var(--color-button-text);
-        }
-      `}</style>
     </>
   );
 }
