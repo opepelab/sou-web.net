@@ -1,17 +1,20 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useLayoutEffect } from "react";
 
 export const ToggleDarkMode = () => {
   const [darkMode, setDarkMode] = useState(false);
-  useEffect(() => {
+  const canUseDOM = typeof window !== "undefined";
+  const useIsomorphicLayoutEffect = canUseDOM ? useLayoutEffect : useEffect;
+
+  useIsomorphicLayoutEffect(() => {
     if (
       localStorage.theme === "dark" ||
       (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
     ) {
       setDarkMode(true);
-      document.querySelector("html")?.classList.add("dark");
+      document.documentElement.setAttribute("data-theme", "dark");
     } else {
       setDarkMode(false);
-      document.querySelector("html")?.classList.remove("dark");
+      document.documentElement.setAttribute("data-theme", "light");
     }
   }, [darkMode]);
 
@@ -26,7 +29,7 @@ export const ToggleDarkMode = () => {
   };
   return (
     <div className={darkMode ? "ToggleMB black" : "ToggleMB white"} onClick={() => handleChangeDarkMode()}>
-      <div className={darkMode ? "gg-moon" : "gg-sun"}></div>
+      <div className={darkMode ? "gg-moon" : "gg-sun"} />
     </div>
   );
 };

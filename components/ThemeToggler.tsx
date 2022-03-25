@@ -1,11 +1,11 @@
 import { useState, useEffect, useLayoutEffect } from "react";
 
-const canUseDOM = typeof window !== "undefined";
-const useIsomorphicLayoutEffect = canUseDOM ? useLayoutEffect : useEffect;
-
 export const ToggleDarkMode = () => {
   const [darkMode, setDarkMode] = useState(false);
-  useIsomorphicLayoutEffect(() => {
+  const canUseDOM = typeof window !== "undefined";
+  const useIsomorphicLayoutEffect = canUseDOM ? useLayoutEffect : useEffect;
+
+  useEffect(() => {
     if (
       localStorage.theme === "dark" ||
       (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
@@ -28,7 +28,7 @@ export const ToggleDarkMode = () => {
     }
   };
   return (
-    <div className={darkMode ? "black" : "white"} onClick={() => handleChangeDarkMode()}>
+    <div className={darkMode ? "toggle black" : "toggle white"} onClick={() => handleChangeDarkMode()}>
       <div className={darkMode ? "gg-moon" : "gg-sun"} />
     </div>
   );
