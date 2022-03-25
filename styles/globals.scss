@@ -6,12 +6,14 @@
 @tailwind utilities;
 
 :root[data-theme="light"] {
+  transition: all 0.5s;
   --color-text: rgb(75 85 99);
   --color-bg: rgb(255 251 235);
   --color-pink: rgb(244 63 94);
 }
 /* 追記 */
 :root[data-theme="dark"] {
+  transition: all 0.5s;
   --color-text: #f4f4f5;
   --color-bg: rgb(41 37 36);
   --color-pink: rgb(45 212 191);
@@ -27,7 +29,6 @@ html {
 }
 
 body {
-  transition-duration: 0.5s;
   background-color: var(--color-bg);
   color: var(--color-text);
   font: {
