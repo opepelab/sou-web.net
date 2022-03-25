@@ -5,26 +5,14 @@ import emotionCache from "libs/emotion-cache";
 import createEmotionServer from "@emotion/server/create-instance";
 import theme from "libs/theme";
 import { ColorModeScript } from "@chakra-ui/react";
-import { useLayoutEffect, useEffect, useState } from "react";
+
 import Script from "next/script";
-const canUseDOM = typeof window !== "undefined";
-const useIsomorphicLayoutEffect = canUseDOM ? useLayoutEffect : useEffect;
 const { extractCritical } = createEmotionServer(emotionCache);
 
 export default class CustomDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx);
     const styles = extractCritical(initialProps.html);
-    useIsomorphicLayoutEffect(() => {
-      if (
-        localStorage.theme === "dark" ||
-        (!("chakra-ui-color-mode" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
-      ) {
-        document.querySelector("html")?.classList.add("dark");
-      } else {
-        document.querySelector("html")?.classList.remove("dark");
-      }
-    }, []);
     return {
       ...initialProps,
       styles: [
