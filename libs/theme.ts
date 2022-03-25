@@ -1,15 +1,10 @@
 import { atom, useRecoilState, useSetRecoilState } from "recoil";
 
-export type Theme = "light" | "dark" | "systemUI";
+export type Theme = "light" | "dark";
 
 const themeState = atom<Theme>({
   key: "themeState",
-  default: "systemUI",
+  default: "light",
 });
 
 export const useSetTheme = () => useSetRecoilState(themeState);
-
-export const useTheme = () => {
-  const [theme] = useRecoilState(themeState);
-  return { theme };
-};

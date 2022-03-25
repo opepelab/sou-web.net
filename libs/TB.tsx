@@ -1,12 +1,19 @@
 import { useEffect } from "react";
-import { Theme, useSetTheme } from "libs/theme";
+import { atom, useSetRecoilState } from "recoil";
 
 type Props = {
   children: JSX.Element;
 };
 
+export type Theme = "light" | "dark";
+
+const themeState = atom<Theme>({
+  key: "themeState",
+  default: "light",
+});
+
 const ThemeProvider = ({ children }: Props): JSX.Element => {
-  const setTheme = useSetTheme();
+  const setTheme = useSetRecoilState(themeState);
 
   useEffect(() => {
     const initialColorValue = window.document.documentElement.getAttribute("data-theme");
