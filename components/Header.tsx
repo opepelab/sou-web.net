@@ -14,7 +14,7 @@ const Header: React.FC = () => {
   React.useEffect(() => {
     links && linkRef.current?.focus();
   }, [links]);
-  // bg-amber-50 dark:bg-stone-800
+
   return (
     <div>
       <header className="flex">
@@ -26,7 +26,7 @@ const Header: React.FC = () => {
               <ul className="nav1-left">
                 <li>
                   <div aria-expanded={about} onClick={() => setAbout(!about)}>
-                    <a className="dark:text-stone-300 scaleLinks Block">
+                    <a className="scaleLinks Block">
                       <div className="gg-details-more" />
                       About
                       <div className="SankakuBlack border-t-gray-600 dark:border-t-zinc-100" />
@@ -73,7 +73,7 @@ const Header: React.FC = () => {
                 </li>
                 <li>
                   <div aria-expanded={links} onClick={() => setLinks(!links)}>
-                    <a className="scaleLinks dark:text-stone-300 Block">
+                    <a className="scaleLinks Block">
                       <div className="gg-style" />
                       Link
                       <div className="SankakuBlack border-t-gray-600 dark:border-t-zinc-100" />
@@ -131,7 +131,7 @@ const Header: React.FC = () => {
               <ul className="nav1-right">
                 <li>
                   <ActiveLink href="/list/1" activeClassName="headerState">
-                    <a className="scaleLinks dark:text-stone-300 Block">
+                    <a className="scaleLinks Block">
                       <div className="gg-format-text" />
                       Posts
                     </a>
@@ -139,7 +139,7 @@ const Header: React.FC = () => {
                 </li>
                 <li>
                   <ActiveLink href="/mail" activeClassName="headerState">
-                    <a className="scaleLinks dark:text-stone-300 Block">
+                    <a className="scaleLinks Block">
                       <div className="gg-mail" />
                       Mail
                     </a>
@@ -147,7 +147,7 @@ const Header: React.FC = () => {
                 </li>
                 <li>
                   <ActiveLink href="/develop" activeClassName="headerState">
-                    <a className="scaleLinks dark:text-stone-300 Block">
+                    <a className="scaleLinks Block">
                       <div className="gg-git-fork" />
                       Development Environment
                     </a>

@@ -82,6 +82,7 @@ a dt .dateST {
   width: 100%;
   height: 60px;
   border-bottom: solid 1px #737373;
+  background: var(--color-bg);
   top: $p0;
   left: $p0;
 }
@@ -120,7 +121,7 @@ a dt .dateST {
 }
 
 .pinkLinks {
-  color: rgb(160, 240, 240);
+  color: var(--color-pink);
 }
 
 .Link-Color {

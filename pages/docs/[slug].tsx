@@ -67,8 +67,8 @@ const Slug: React.FC<Content> = ({ blog }) => {
         <div className={styles.Time2}>
           <Date dateString={blog.fields.date} />
         </div>
-        <div className="pinkLinks">
-          <h1 className="text-gray-600 dark:text-zinc-100">{blog.fields.title}</h1>
+        <div>
+          <h1>{blog.fields.title}</h1>
         </div>
         <div className="triangle-bottom" />
         <div>{documentToReactComponents(blog.fields.body, options)}</div>

@@ -5,28 +5,16 @@
 @tailwind components;
 @tailwind utilities;
 
-// .light-theme[data-theme="light"] {
-//   transition: all 0.5s;
-//   --primary-color: white;
-//   --secondary-color: #f9f9f9;
-//   --text-color: #212121;
-//   --secondary-text-color: #6c757d;
-// }
-// .dark-theme[data-theme="dark"] {
-//   transition: all 0.5s;
-//   --primary-color: #212121;
-//   --secondary-color: #2b2a2a;
-//   --text-color: white;
-//   --secondary-text-color: gray;
-// }
-:root {
-  --color-text: #000;
-  --color-bg: #fff;
+:root[data-theme="light"] {
+  --color-text: rgb(75 85 99);
+  --color-bg: rgb(255 251 235);
+  --color-pink: rgb(244 63 94);
 }
 /* 追記 */
 :root[data-theme="dark"] {
-  --color-text: #fff;
-  --color-bg: #333;
+  --color-text: #f4f4f5;
+  --color-bg: rgb(41 37 36);
+  --color-pink: rgb(45 212 191);
 }
 
 html {
@@ -188,7 +176,7 @@ dd {
 }
 
 a {
-  color: rgb(55 65 81);
+  color: var(--color-text);
   text-decoration: none;
 }
 
@@ -312,6 +300,7 @@ textarea {
   margin-right: 150px;
   top: 8px;
   font-size: 24px;
+  color: #d6d3d1;
 }
 
 .toggle {

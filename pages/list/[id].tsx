@@ -36,7 +36,7 @@ const Id: React.FC<Map> = ({ blog, total }) => {
             </dt>
             <Link href={`/docs/${props.fields.slug}`}>
               <a>
-                <div className="PPx scaleLinks text-rose-500 dark:text-teal-400">{props.fields.title}</div>
+                <div className="PPx scaleLinks pinkLinks">{props.fields.title}</div>
               </a>
             </Link>
           </dl>
