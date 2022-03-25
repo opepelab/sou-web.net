@@ -32,7 +32,7 @@ export default class MyDocument extends Document {
             </>
           )}
         </Head>
-        <body className="">
+        <body className="preload">
           <Main />
           <NextScript />
         </body>
