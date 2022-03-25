@@ -16,7 +16,7 @@ const ThemeProvider = ({ children }: Props): JSX.Element => {
   const setTheme = useSetRecoilState(themeState);
 
   useEffect(() => {
-    const initialColorValue = window.document.documentElement.getAttribute("data-theme");
+    const initialColorValue = window.document.documentElement.getAttribute("style");
     setTheme(initialColorValue as Theme);
   }, [setTheme]);
 
@@ -24,7 +24,7 @@ const ThemeProvider = ({ children }: Props): JSX.Element => {
     <>
       <script
         dangerouslySetInnerHTML={{
-          __html: `!function(){let e;const t=window.localStorage.getItem("theme");if(null!==t)e=t;else{e=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}document.documentElement.setAttribute("data-theme",e)}();`,
+          __html: `!function(){let e;const t=window.localStorage.getItem("chakra-ui-color-mode");if(null!==t)e=t;else{e=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}document.documentElement.setAttribute("style",e)}();`,
         }}
       />
       {children}

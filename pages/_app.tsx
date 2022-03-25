@@ -1,7 +1,8 @@
 import { AppProps } from "next/app";
 import { AnimatePresence } from "framer-motion";
 import { useLayoutEffect, useEffect, useState } from "react";
-// import { Chakra } from "components/Sys/chakra";
+import { ChakraProvider } from "@chakra-ui/react";
+import theme from "libs/Chakra";
 import "styles/globals.scss";
 import "styles/mobile.scss";
 import "styles/icons.scss";
@@ -12,8 +13,8 @@ import usePageView from "hooks/usePageView";
 import atom from "libs/theme2";
 import { RecoilRoot } from "recoil";
 import Theme from "libs/TB";
-const canUseDOM = typeof window !== "undefined";
-const useIsomorphicLayoutEffect = canUseDOM ? useLayoutEffect : useEffect;
+// const canUseDOM = typeof window !== "undefined";
+// const useIsomorphicLayoutEffect = canUseDOM ? useLayoutEffect : useEffect;
 
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
   // useIsomorphicLayoutEffect(() => {
@@ -35,11 +36,13 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
       </Head>
       <RecoilRoot>
         <Theme>
-          <Layout>
-            <AnimatePresence exitBeforeEnter initial={true}>
-              <Component {...pageProps} key={router.asPath} />
-            </AnimatePresence>
-          </Layout>
+          <ChakraProvider resetCSS={false} theme={theme}>
+            <Layout>
+              <AnimatePresence exitBeforeEnter initial={true}>
+                <Component {...pageProps} key={router.asPath} />
+              </AnimatePresence>
+            </Layout>
+          </ChakraProvider>
         </Theme>
       </RecoilRoot>
     </>
