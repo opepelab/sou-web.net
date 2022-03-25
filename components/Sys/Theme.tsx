@@ -18,10 +18,13 @@ const ThemeProvider = ({ children }: RNode): JSX.Element => {
     <>
       <script
         dangerouslySetInnerHTML={{
-          __html: `!function(){let e;const t=window.localStorage.getItem("theme");if(null!==t)e=t;else{e=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}document.documentElement.setAttribute("data-theme",e)}();`,
+          __html: `!function(){let e;const t=window.localStorage.getItem("theme");if(null!==t)e=t;else{e=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}document.documentElement.setAttribute("data-theme",e)}();window.onload = function () {
+            const preload = document.getElementsByClassName("preload");
+            preload[0].classList.remove("preload");
+          };
+          `,
         }}
       />
-      <script src="/preload.js" />
       {children}
     </>
   );
