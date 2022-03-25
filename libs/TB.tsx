@@ -5,11 +5,11 @@ type Props = {
   children: JSX.Element;
 };
 
-export type Theme = "light" | "dark";
+export type Theme = "--chakra-ui-color-mode:light;" | "--chakra-ui-color-mode:dark;";
 
 const themeState = atom<Theme>({
   key: "themeState",
-  default: "light",
+  default: "--chakra-ui-color-mode:light;",
 });
 
 const ThemeProvider = ({ children }: Props): JSX.Element => {
