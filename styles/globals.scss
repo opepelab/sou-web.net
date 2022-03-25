@@ -303,11 +303,11 @@ textarea {
   color: #d6d3d1;
 }
 
-.toggle {
+.togglePosition {
   z-index: 3;
   top: 7px;
   position: fixed;
-  left: 41%;
+  left: 15px;
   transition-duration: 1s;
   cursor: pointer;
 }

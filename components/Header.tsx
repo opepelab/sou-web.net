@@ -20,16 +20,17 @@ const Header: React.FC = () => {
       <header className="flex">
         <div className="bgg">
           <div className="disableN">
+            <ToggleDarkMode />
             <nav>
-              <ToggleDarkMode />
               <Text />
+
               <ul className="nav1-left">
                 <li>
                   <div aria-expanded={about} onClick={() => setAbout(!about)}>
                     <a className="scaleLinks Block">
                       <div className="gg-details-more" />
                       About
-                      <div className="SankakuBlack border-t-gray-600 dark:border-t-zinc-100" />
+                      <div className="SankakuBlack" />
                     </a>
                   </div>
                   <div ref={aboRef} tabIndex={1} onBlur={() => setTimeout(() => setAbout(!about), 125)}>
@@ -76,7 +77,7 @@ const Header: React.FC = () => {
                     <a className="scaleLinks Block">
                       <div className="gg-style" />
                       Link
-                      <div className="SankakuBlack border-t-gray-600 dark:border-t-zinc-100" />
+                      <div className="SankakuBlack" />
                     </a>
                   </div>
                   <div ref={linkRef} tabIndex={1} onBlur={() => setTimeout(() => setLinks(!links), 125)}>

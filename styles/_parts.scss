@@ -108,7 +108,7 @@ a dt .dateST {
   position: relative;
   left: 6px;
   top: 2px;
-  border-color: $ST transparent transparent transparent;
+  border-color: var(--color-text) transparent transparent transparent;
   @include Sankaku;
 }
 
