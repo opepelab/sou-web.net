@@ -1,4 +1,4 @@
-import { useLayoutEffect, useEffect, ReactNode } from "react";
+import { useEffect, ReactNode } from "react";
 import { Theme, themeState } from "libs/theme";
 import { useSetRecoilState } from "recoil";
 
@@ -8,10 +8,8 @@ type RNode = {
 
 const ThemeProvider = ({ children }: RNode): JSX.Element => {
   const setTheme = useSetRecoilState(themeState);
-  const canUseDOM = typeof window !== "undefined";
-  const useIsomorphicLayoutEffect = canUseDOM ? useLayoutEffect : useEffect;
 
-  useIsomorphicLayoutEffect(() => {
+  useEffect(() => {
     const initialColorValue = window.document.documentElement.getAttribute("data-theme");
     setTheme(initialColorValue as Theme);
   }, [setTheme]);
