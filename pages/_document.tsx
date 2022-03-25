@@ -3,7 +3,7 @@ import { GA_TRACKING_ID } from "../libs/gtag";
 import Document, { Html, Head, Main, NextScript, DocumentContext } from "next/document";
 import emotionCache from "libs/emotion-cache";
 import createEmotionServer from "@emotion/server/create-instance";
-import theme from "libs/theme";
+import theme from "libs/theme2";
 import { ColorModeScript } from "@chakra-ui/react";
 
 import Script from "next/script";
@@ -53,7 +53,6 @@ export default class CustomDocument extends Document {
           )}
         </Head>
         <body>
-          <ColorModeScript initialColorMode={theme.config.initialColorMode} />
           <Main />
           <NextScript />
         </body>
@@ -64,5 +63,8 @@ export default class CustomDocument extends Document {
 
 {
   /* <Script src="/localstorage.js" strategy="beforeInteractive" /> */
+}
+{
+  /* <ColorModeScript initialColorMode={theme.config.initialColorMode} /> */
 }
 // className="dark:bg-stone-800 dark:text-zinc-100 bg-amber-50 text-gray-600"

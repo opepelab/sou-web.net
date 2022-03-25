@@ -1,7 +1,7 @@
 import { ChakraProvider, cookieStorageManager, localStorageManager } from "@chakra-ui/react";
 import emotionCache from "libs/emotion-cache";
 import { CacheProvider } from "@emotion/react";
-import theme from "libs/theme";
+import theme from "libs/theme2";
 import { NextApiResponse } from "next";
 
 type Storage = {

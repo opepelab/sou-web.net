@@ -1,21 +1,24 @@
-import { extendTheme } from "@chakra-ui/react";
-import { mode } from "@chakra-ui/theme-tools";
+import { atom, useRecoilState, useSetRecoilState } from "recoil";
 
-const styles = {
-  global: (props: any) => ({
-    body: {
-      bg: mode("#fff", "#222")(props),
-    },
-    ".pinkLinks": {
-      color: mode("#009999", "rgb(160, 240, 240)")(props),
-    },
-  }),
+export type Theme = "light" | "dark";
+
+const themeState = atom<Theme>({
+  key: "themeState",
+  default: "light",
+});
+
+export const useSetTheme = () => useSetRecoilState(themeState);
+
+export const useTheme = () => {
+  const [theme, setTheme] = useRecoilState(themeState);
+
+  const toggleTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+    window.localStorage.setItem("theme", newTheme);
+    const root = window.document.documentElement;
+    root.setAttribute("data-theme", newTheme);
+  };
+
+  return { theme, toggleTheme };
 };
-
-// const config = {
-//   initialColorMode: "dark",
-//   useSystemColorMode: true,
-// };
-
-export const theme = extendTheme({ styles });
-export default theme;

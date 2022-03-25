@@ -14,14 +14,14 @@ const Header: React.FC = () => {
   React.useEffect(() => {
     links && linkRef.current?.focus();
   }, [links]);
-
+  // bg-amber-50 dark:bg-stone-800
   return (
     <div>
       <header className="flex">
-        <div className="bgg bg-amber-50 dark:bg-stone-800">
+        <div className="bgg">
           <div className="disableN">
             <nav>
-              <ToggleDarkMode />
+              {/* <ToggleDarkMode /> */}
               <Text />
               <ul className="nav1-left">
                 <li>
