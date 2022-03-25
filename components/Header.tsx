@@ -1,6 +1,6 @@
 import ActiveLink from "./Sys/ActiveLink";
 import React from "react";
-import ToggleDarkMode from "components/ThemeToggler";
+import ToggleDarkMode from "components/ToggleDW";
 import Text from "components/Text";
 const Header: React.FC = () => {
   const [about, setAbout] = React.useState(false);

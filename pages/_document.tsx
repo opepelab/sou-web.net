@@ -1,37 +1,17 @@
 // pages/_document.js
 import { GA_TRACKING_ID } from "../libs/gtag";
 import Document, { Html, Head, Main, NextScript, DocumentContext } from "next/document";
-import emotionCache from "libs/emotion-cache";
-import createEmotionServer from "@emotion/server/create-instance";
-import theme from "libs/Chakra";
-import { ColorModeScript } from "@chakra-ui/react";
 
-import Script from "next/script";
-const { extractCritical } = createEmotionServer(emotionCache);
-
-export default class CustomDocument extends Document {
+export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx);
-    const styles = extractCritical(initialProps.html);
-    return {
-      ...initialProps,
-      styles: [
-        initialProps.styles,
-        <style
-          key="emotion-css"
-          dangerouslySetInnerHTML={{ __html: styles.css }}
-          data-emotion-css={styles.ids.join(" ")}
-        />,
-      ],
-    };
+    return { ...initialProps };
   }
 
   render() {
     return (
       <Html lang="en">
         <Head>
-          <meta charSet="UTF-8" />
-          <meta content="ie=edge" httpEquiv="X-UA-Compatible" />
           <link rel="shortcut icon" href="/folds.ico" />
           <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff" rel="stylesheet" />
           {GA_TRACKING_ID && (
@@ -53,7 +33,6 @@ export default class CustomDocument extends Document {
           )}
         </Head>
         <body>
-          <ColorModeScript initialColorMode={theme.config.initialColorMode} />
           <Main />
           <NextScript />
         </body>
