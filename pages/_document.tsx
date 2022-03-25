@@ -17,7 +17,11 @@ export default class CustomDocument extends Document {
       ...initialProps,
       styles: [
         initialProps.styles,
-        <style key="css" dangerouslySetInnerHTML={{ __html: styles.css }} data-emotion-css={styles.ids.join(" ")} />,
+        <style
+          key="emotion-css"
+          dangerouslySetInnerHTML={{ __html: styles.css }}
+          data-emotion-css={styles.ids.join(" ")}
+        />,
       ],
     };
   }
@@ -48,7 +52,7 @@ export default class CustomDocument extends Document {
             </>
           )}
         </Head>
-        <body>
+        <body className="dark:bg-stone-800 dark:text-zinc-100 bg-amber-50 text-gray-600">
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
           <Main />
           <NextScript />
@@ -61,4 +65,3 @@ export default class CustomDocument extends Document {
 {
   /* <Script src="/localstorage.js" strategy="beforeInteractive" /> */
 }
-//  className="dark:bg-stone-800 dark:text-zinc-100 bg-amber-50 text-gray-600"
