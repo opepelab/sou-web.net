@@ -5,12 +5,24 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-text: #000;
+  --color-bg: #fff;
+}
+/* 追記 */
+:root[data-theme="dark"] {
+  --color-text: #fff;
+  --color-bg: #333;
+}
+
 html {
   -webkit-text-size-adjust: $r100;
   overflow: scroll;
 }
 
 body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
   font: {
     family: $Google;
     size: $p14;

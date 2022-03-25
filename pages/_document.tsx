@@ -52,7 +52,7 @@ export default class CustomDocument extends Document {
             </>
           )}
         </Head>
-        <body className="dark:bg-stone-800 dark:text-zinc-100 bg-amber-50 text-gray-600">
+        <body>
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
           <Main />
           <NextScript />
@@ -65,3 +65,4 @@ export default class CustomDocument extends Document {
 {
   /* <Script src="/localstorage.js" strategy="beforeInteractive" /> */
 }
+// className="dark:bg-stone-800 dark:text-zinc-100 bg-amber-50 text-gray-600"

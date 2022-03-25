@@ -7,6 +7,7 @@ import { IPostFields } from "libs/types";
 import Date from "components/Sys/date";
 import Link from "next/link";
 import generateRssFeed from "../libs/feed";
+import dynamic from "next/dynamic";
 
 type Map = {
   blog: {
@@ -15,6 +16,7 @@ type Map = {
 };
 
 const Index: React.FC<Map> = ({ blog }) => {
+  const DynamicComponent = dynamic(() => import("components/Toggle"));
   return (
     <Freya>
       <OG title="Index - sou" description="Index" />
@@ -27,6 +29,7 @@ const Index: React.FC<Map> = ({ blog }) => {
             from JAPAN Tokyo.
           </p>
         </div>
+        <DynamicComponent />
         <h5>最新記事</h5>
         {blog.map((blog: Entry<IPostFields>) => (
           <dl key={blog.sys.id}>
