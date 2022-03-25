@@ -19,15 +19,15 @@
 //   --text-color: white;
 //   --secondary-text-color: gray;
 // }
-:root {
-  --color-text: #000;
-  --color-bg: #fff;
-}
-/* 追記 */
-:root[data-theme="dark"] {
-  --color-text: #fff;
-  --color-bg: #333;
-}
+// :root {
+//   --color-text: #000;
+//   --color-bg: #fff;
+// }
+// /* 追記 */
+// :root[data-theme="dark"] {
+//   --color-text: #fff;
+//   --color-bg: #333;
+// }
 
 html {
   -webkit-text-size-adjust: $r100;
@@ -36,8 +36,8 @@ html {
 
 body {
   transition-duration: 0.5s;
-  background-color: var(--color-bg);
-  color: var(--color-text);
+  // background-color: var(--color-bg);
+  // color: var(--color-text);
   font: {
     family: $Google;
     size: $p14;
