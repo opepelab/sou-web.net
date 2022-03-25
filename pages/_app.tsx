@@ -16,16 +16,16 @@ const canUseDOM = typeof window !== "undefined";
 const useIsomorphicLayoutEffect = canUseDOM ? useLayoutEffect : useEffect;
 
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
-  useIsomorphicLayoutEffect(() => {
-    if (
-      localStorage.theme === "dark" ||
-      (!("chakra-ui-color-mode" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
-      document.documentElement.setAttribute("data-theme", "dark");
-    } else {
-      document.documentElement.setAttribute("data-theme", "light");
-    }
-  }, []);
+  // useIsomorphicLayoutEffect(() => {
+  //   if (
+  //     localStorage.theme === "dark" ||
+  //     (!("chakra-ui-color-mode" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+  //   ) {
+  //     document.documentElement.setAttribute("data-theme", "dark");
+  //   } else {
+  //     document.documentElement.setAttribute("data-theme", "light");
+  //   }
+  // }, []);
 
   usePageView();
   return (

@@ -1,24 +1,15 @@
 import { atom, useRecoilState, useSetRecoilState } from "recoil";
 
-export type Theme = "light" | "dark";
+export type Theme = "light" | "dark" | "systemUI";
 
 const themeState = atom<Theme>({
   key: "themeState",
-  default: "light",
+  default: "systemUI",
 });
 
 export const useSetTheme = () => useSetRecoilState(themeState);
 
 export const useTheme = () => {
-  const [theme, setTheme] = useRecoilState(themeState);
-
-  const toggleTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-    window.localStorage.setItem("theme", newTheme);
-    const root = window.document.documentElement;
-    root.setAttribute("data-theme", newTheme);
-  };
-
-  return { theme, toggleTheme };
+  const [theme] = useRecoilState(themeState);
+  return { theme };
 };
