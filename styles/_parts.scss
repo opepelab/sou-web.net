@@ -18,6 +18,12 @@
   display: $IB;
 }
 
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .blue {
   color: skyblue;
 }
@@ -81,6 +87,7 @@ a dt .dateST {
   position: fixed;
   width: 100%;
   height: 60px;
+  background: var(--color-bg2);
   backdrop-filter: blur(10px);
   top: $p0;
   left: $p0;

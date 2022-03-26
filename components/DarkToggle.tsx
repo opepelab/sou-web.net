@@ -29,20 +29,21 @@ export const ToggleDarkMode = () => {
 
   return (
     <div className="togglePosition">
-      <AnimatePresence exitBeforeEnter>
-        <motion.div
-          onClick={() => handleChangeDarkMode()}
-          key={darkMode ? "dark-icon" : "light-icon"}
-          initial={{ rotate: -180, opacity: 0 }}
-          animate={{ rotate: 0, opacity: 1 }}
-          exit={{ rotate: 0, opacity: 0 }}
-          transition={{ duration: 1 }}
-        >
-          <div className={darkMode ? "shadow black" : "shadow white"} onClick={() => handleChangeDarkMode()}>
+      <div className={darkMode ? "shadow black" : "shadow white"} onClick={() => handleChangeDarkMode()}>
+        <AnimatePresence exitBeforeEnter>
+          <motion.div
+            className="flex"
+            onClick={() => handleChangeDarkMode()}
+            key={darkMode ? "dark-icon" : "light-icon"}
+            initial={{ rotate: -120, opacity: 0 }}
+            animate={{ rotate: 0, opacity: 1 }}
+            exit={{ y: 20, opacity: 0 }}
+            transition={{ duration: 1 }}
+          >
             <div className={darkMode ? "gg-moon" : "gg-sun"} />
-          </div>
-        </motion.div>
-      </AnimatePresence>
+          </motion.div>
+        </AnimatePresence>
+      </div>
     </div>
   );
 };
