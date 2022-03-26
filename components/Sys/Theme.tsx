@@ -12,7 +12,7 @@ const ThemeProvider = ({ children }: RNode): JSX.Element => {
   useEffect(() => {
     const initialColorValue = window.document.documentElement.getAttribute("data-theme");
     setTheme(initialColorValue as Theme);
-  });
+  }, [setTheme]);
 
   return (
     <>
