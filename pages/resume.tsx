@@ -7,9 +7,9 @@ const Resume: React.FC = () => {
       <OG title="Resume - Sou Watanabe" description="My Resume" />
       <main className="list margin-Mobile-PC textLeft inblo">
         <h1>Resume</h1>
-        <p>渡邊 蒼(Sou Watanabe)です。1994年生まれ27歳（2022年現在）です。</p>
-        <p>普段はアプリケーションを開発しています。</p>
-        <p>個人開発はモバイルアプリケーション開発です。</p>
+        <p>渡邊 蒼(Sou Watanabe)と申します。1994年生まれ現27歳です。</p>
+        <p>アプリケーションを開発しています。</p>
+        <p>趣味で個人開発していてモバイルアプリも作っています。</p>
         <p>他には基本的にゲームは得意です。</p>
         <h1>好きな言語(得意とは言っていない)</h1>
         <ul>
@@ -41,29 +41,35 @@ const Resume: React.FC = () => {
           <li>2021年 TypeScriptを書き始めました</li>
         </ul>
         <hr />
-        <p>海外に行った時に出会った人によって価値観が覆るような経験がありました。</p>
         <p>中学と高校時代は学校のお世話にならなかったので社会人経験をした後に少し勉強しました。</p>
         <p>多忙すぎるとややアルツハイマー気味になります。</p>
         <p>引きこもり不登校, 親の歪んだ愛情などを経験し心理学の本「 自分に気づく心理学 」を読みました。</p>
-        <p>デザイン イラスト ゲーム WEB開発の分野でなら意見できると思います。</p>
+        <p>デザイン ゲーム WEB開発の分野でなら多少詳しいかと思います。</p>
 
-        <h1>精神疾患</h1>
         <h2>強記憶症</h2>
         <p>物心ついた時からいじめられたトラウマが忘れたいのに忘れられない状態でした。</p>
         <p>この特質でPTSD気味でした。</p>
         <h2>統合失調症</h2>
         <p>八ヶ岳旅行中に遭難し強制入院した時に認定されました。</p>
-        <p>幻覚が見えたことにされていますが今でもハッキリと覚えていますし認めていません。</p>
+        <p>幻覚が見えたこと自体をはっきりと覚えています。</p>
         <p>国家医師より認定を受けています。</p>
         <hr />
         <br />
-        <p>Welcome to my home page, refresh and swich your identitiy.</p>
-        <p>Let's enjoy the code architect and programing! I'm going OSS mobile application contribution.</p>
-        <p>I think always the better.</p>
-        <p>beautiful and pretty, simple is coding</p>
-        <p>Because never mind? why is it there don't talking,</p>
-        <p></p>
-        <p>Challenging change the everytime The goal is to sleep like dead every day.</p>
+        <p>
+          Welcome to my home page,
+          <br />
+          refresh and swich your identitiy.
+        </p>
+        <p>Let's enjoy the code architect and programing, my application contribute.</p>
+        <p>
+          I think always the better and..
+          <br />I keep in mind to beautiful and pretty, simple is coding.
+        </p>
+        <p>
+          Because never mind is it there don't talking,
+          <br />
+          Challenging change the everytime The goal is to sleep like dead every day.
+        </p>
       </main>
     </Freya>
   );
