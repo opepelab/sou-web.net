@@ -5,7 +5,7 @@ import "styles/mobile.scss";
 import "styles/icons.scss";
 import "styles/img.scss";
 import Head from "next/head";
-import Layout from "components/Layout/layout";
+import LayoutProvider from "components/Layout/layout";
 import usePageView from "hooks/usePageView";
 import { RecoilRoot } from "recoil";
 import DarkState from "components/Sys/DarkState";
@@ -21,11 +21,11 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
       </Head>
       <RecoilRoot>
         <DarkState>
-          <Layout>
+          <LayoutProvider>
             <AnimatePresence exitBeforeEnter initial={true}>
               <Component {...pageProps} key={router.asPath} />
             </AnimatePresence>
-          </Layout>
+          </LayoutProvider>
         </DarkState>
       </RecoilRoot>
     </>

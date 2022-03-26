@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ActiveLink from "./Sys/ActiveLink";
 
-const Menu = () => {
+const Menu: React.FC = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="none">
@@ -12,9 +12,9 @@ const Menu = () => {
           aria-label="Toggle mobile navigation menu"
           type="button"
         >
-          <span className="dark:bg-white" />
-          <span className="dark:bg-white" />
-          <span className="dark:bg-white" />
+          <span />
+          <span />
+          <span />
         </button>
       </div>
       <div className="Filt">
@@ -39,18 +39,18 @@ const Menu = () => {
                       </ActiveLink>
                     </li>
                     <li>
-                      <ActiveLink href="/about" activeClassName="headerState">
-                        <a onMouseDown={() => setOpen(!open)}>Overview</a>
+                      <ActiveLink href="/resume" activeClassName="headerState">
+                        <a onMouseDown={() => setOpen(!open)}>Resume</a>
                       </ActiveLink>
                     </li>
                     <li>
-                      <ActiveLink href="/thisblog" activeClassName="headerState">
-                        <a onMouseDown={() => setOpen(!open)}>This blog</a>
+                      <ActiveLink href="/thisis" activeClassName="headerState">
+                        <a onMouseDown={() => setOpen(!open)}>Thisis</a>
                       </ActiveLink>
                     </li>
                     <li>
                       <ActiveLink href="/webclip" activeClassName="headerState">
-                        <a onMouseDown={() => setOpen(!open)}>Web clip</a>
+                        <a onMouseDown={() => setOpen(!open)}>Clip</a>
                       </ActiveLink>
                     </li>
                   </ul>

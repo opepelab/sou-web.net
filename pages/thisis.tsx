@@ -1,13 +1,10 @@
-import Freya from "../components/Sys/Freya";
-import Head from "next/head";
+import OG from "components/Sys/OG";
+import Freya from "components/Sys/Freya";
 
 const Thisblog: React.FC = () => {
   return (
     <Freya>
-      <Head>
-        <title>Development Environment - sou</title>
-        <meta name="description" content="開発環境" />
-      </Head>
+      <OG title="Thisis - Sou Watanabe" description="This Site is" />
       <main className="textLeft margin-Mobile-PC">
         <h1>What is this blog?</h1>
         <p>Cloud: Cloudflare</p>

@@ -8,14 +8,14 @@
 :root[data-theme="light"] {
   --color-text: rgb(75 85 99);
   --color-bg: rgb(252, 240, 224);
-  --color-pink: rgb(244, 63, 63);
+  --color-pink: rgb(13 148 136);
   --color-bg2: rgba(255, 255, 255, 0.2);
   --color-icon: lightsalmon;
 }
 /* 追記 */
 :root[data-theme="dark"] {
   --color-text: #f4f4f5;
-  --color-bg: rgb(44, 32, 35);
+  --color-bg: rgb(40, 32, 35);
   --color-pink: rgb(94 234 212);
   --color-bg2: rgba(0, 0, 0, 0.04);
   --color-icon: mediumslateblue;
@@ -191,7 +191,7 @@ a {
   visibility: collapse;
 }
 
-.Hlink a {
+.Alink a {
   color: #68a5ff;
   text-decoration: none;
 }
@@ -286,20 +286,14 @@ textarea {
   @include Mbutton;
 }
 
-.hikki {
-  display: inline-block;
-  font: {
-    family: $Google0;
-  }
-  transform: skew(-20deg);
-}
-
-.Top-Logo {
+.Text {
   z-index: 2;
   position: relative;
+  font-family: $Google0;
+  font-weight: bold;
   display: inline-flex;
   top: 8px;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 @media screen and (min-width: 739.98px) {

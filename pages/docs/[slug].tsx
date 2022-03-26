@@ -12,7 +12,7 @@ import Date from "components/Sys/date";
 import * as TYPES from "@contentful/rich-text-types";
 import { Options } from "@contentful/rich-text-react-renderer";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { vscDarkPlus } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { a11yDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 interface IParams extends ParsedUrlQuery {
   slug: string;
@@ -53,7 +53,7 @@ const Slug: React.FC<Content> = ({ blog }) => {
     renderMark: {
       [TYPES.MARKS.CODE]: (text) => {
         return (
-          <SyntaxHighlighter language="tsx" style={vscDarkPlus} showLineNumbers>
+          <SyntaxHighlighter language="tsx" style={a11yDark} showLineNumbers>
             {text}
           </SyntaxHighlighter>
         );
@@ -63,12 +63,12 @@ const Slug: React.FC<Content> = ({ blog }) => {
   return (
     <Framerdiv>
       <OG title={blog.fields.title} description={blog.fields.description} />
-      <main className="Hlink list textLeft margin-Mobile-PC resizeimage">
+      <main className="Alink list textLeft margin-Mobile-PC resizeimage">
         <div className={styles.Time2}>
           <Date dateString={blog.fields.date} />
         </div>
         <div>
-          <h1>{blog.fields.title}</h1>
+          <h1 className="pinkLinks">{blog.fields.title}</h1>
         </div>
         <div>{documentToReactComponents(blog.fields.body, options)}</div>
       </main>
@@ -92,7 +92,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const { slug } = context.params as IParams;
-
   const entries = await client.getEntries({
     content_type: "blog",
     limit: 1000,

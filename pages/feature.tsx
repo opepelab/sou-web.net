@@ -1,10 +1,10 @@
 import OG from "components/Sys/OG";
 import Freya from "components/Sys/Freya";
 
-const Develop: React.FC = () => {
+const Feature: React.FC = () => {
   return (
     <Freya>
-      <OG title="Development Environment - sou" description="開発環境" />
+      <OG title="Feature - Sou Watanabe" description="My Compurter" />
       <main className="margin-Mobile-PC resizeimage inblo">
         <h1>Feature</h1>
         <dl>
@@ -29,4 +29,4 @@ const Develop: React.FC = () => {
   );
 };
 
-export default Develop;
+export default Feature;

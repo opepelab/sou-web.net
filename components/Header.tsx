@@ -4,11 +4,11 @@ import ToggleDarkMode from "components/DarkToggle";
 import Text from "components/Text";
 
 const Header: React.FC = () => {
-  const [about, setAbout] = React.useState(false);
-  const aboRef = React.useRef<HTMLDivElement>(null);
+  const [view, setView] = React.useState(false);
+  const viewRef = React.useRef<HTMLDivElement>(null);
   React.useEffect(() => {
-    about && aboRef.current?.focus();
-  }, [about]);
+    view && viewRef.current?.focus();
+  }, [view]);
 
   const [links, setLinks] = React.useState(false);
   const linkRef = React.useRef<HTMLDivElement>(null);
@@ -26,18 +26,25 @@ const Header: React.FC = () => {
             <nav>
               <ul className="nav1-left">
                 <li>
-                  <div aria-expanded={about} onClick={() => setAbout(!about)}>
+                  <div aria-expanded={view} onClick={() => setView(!view)}>
                     <a className="scaleLinks Block">
                       <div className="gg-details-more" />
-                      About
+                      View
                       <div className="SankakuBlack" />
                     </a>
                   </div>
-                  <div ref={aboRef} tabIndex={1} onBlur={() => setTimeout(() => setAbout(!about), 125)}>
+                  <div ref={viewRef} tabIndex={1} onBlur={() => setTimeout(() => setView(!view), 125)}>
                     <div className="NavDrop">
-                      <div aria-expanded={about} onClick={() => setAbout(!about)}>
-                        {about && (
+                      <div aria-expanded={view} onClick={() => setView(!view)}>
+                        {view && (
                           <ul className="White menu">
+                            <li>
+                              <ActiveLink href="/resume" activeClassName="headerState">
+                                <a>
+                                  <div className="hoverBG BlockM">Resume</div>
+                                </a>
+                              </ActiveLink>
+                            </li>
                             <li>
                               <ActiveLink href="/profile" activeClassName="headerState">
                                 <a>
@@ -46,16 +53,9 @@ const Header: React.FC = () => {
                               </ActiveLink>
                             </li>
                             <li>
-                              <ActiveLink href="/about" activeClassName="headerState">
+                              <ActiveLink href="/thisis" activeClassName="headerState">
                                 <a>
-                                  <div className="hoverBG BlockM">Overview</div>
-                                </a>
-                              </ActiveLink>
-                            </li>
-                            <li>
-                              <ActiveLink href="/thisblog" activeClassName="headerState">
-                                <a>
-                                  <div className="hoverBG BlockM">This blog</div>
+                                  <div className="hoverBG BlockM">This is</div>
                                 </a>
                               </ActiveLink>
                             </li>

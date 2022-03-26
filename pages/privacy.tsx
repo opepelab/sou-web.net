@@ -4,7 +4,7 @@ import Freya from "components/Sys/Freya";
 const Privacy: React.FC = () => {
   return (
     <Freya>
-      <OG title="Privacy Policy - sou" description="プライバシーポリシー" />
+      <OG title="Privacy Policy - Sou Watanabe" description="My Policy" />
       <main className="margin-Mobile-PC textLeft">
         <h1>
           <ruby>

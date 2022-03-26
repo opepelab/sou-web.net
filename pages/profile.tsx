@@ -4,7 +4,7 @@ import Freya from "components/Sys/Freya";
 const About: React.FC = () => {
   return (
     <Freya>
-      <OG title="Profile - sou" description="私について" />
+      <OG title="Profile - Sou Watanabe" description="My Profile" />
       <main className="margin-Mobile-PC inblo">
         <h1>Profile</h1>
         <dl>

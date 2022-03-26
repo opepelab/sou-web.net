@@ -6,7 +6,7 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
   const { setName, setMail, setMessage, send } = useMail();
   return (
     <Freya>
-      <OG title="mail - sou" description="メール" />
+      <OG title="Mail - Sou Watanabe" description="My Mail" />
       <main className="margin-Mobile-PC Mail inblo">
         <form>
           <h1>Are you sure?</h1>

@@ -1,19 +1,21 @@
 // pages/_document.js
 import { GA_TRACKING_ID } from "../libs/gtag";
-import Document, { Html, Head, Main, NextScript, DocumentContext } from "next/document";
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
 export default class MyDocument extends Document {
-  static async getInitialProps(ctx: DocumentContext) {
-    const initialProps = await Document.getInitialProps(ctx);
-    return { ...initialProps };
-  }
-
   render() {
     return (
       <Html lang="en">
         <Head>
           <link rel="shortcut icon" href="/folds.ico" />
           <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=Noto+Sans" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru" rel="stylesheet" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap"
+            rel="stylesheet"
+          />
           {GA_TRACKING_ID && (
             <>
               <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`} />
@@ -32,17 +34,13 @@ export default class MyDocument extends Document {
             </>
           )}
         </Head>
-        <body>
+        <body className="footerFix">
           <Main />
           <NextScript />
         </body>
       </Html>
     );
   }
-}
-
-{
-  /* <Script src="/localstorage.js" strategy="beforeInteractive" /> */
 }
 
 // className="dark:bg-stone-800 dark:text-zinc-100 bg-amber-50 text-gray-600"

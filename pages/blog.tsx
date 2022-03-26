@@ -16,7 +16,7 @@ type Map = {
 const Blog: React.FC<Map> = ({ blog }) => {
   return (
     <Freya>
-      <OG title="Blog - sou" description="ブログ" />
+      <OG title="Blog - Sou Watanabe" description="My Blog" />
       <main className="textLeft margin-Mobile-PC inblo">
         <h5>記事一覧</h5>
         {blog.map((props: Entry<IPostFields>) => (

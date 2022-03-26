@@ -4,9 +4,9 @@ import Freya from "components/Sys/Freya";
 const Picture: React.FC = () => {
   return (
     <Freya>
-      <OG title="photo - sou" description="フォト" />
+      <OG title="Art - Sou Watanabe" description="My Arts" />
       <main className="margin-Mobile-PC inblo">
-        <h1>Photo</h1>
+        <h1>Art</h1>
         <div>
           <a href="#01">
             <img className="PM margin10 point" src="/picture/otoko.png" width={255} height={403} />

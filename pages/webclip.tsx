@@ -4,8 +4,8 @@ import OG from "components/Sys/OG";
 const Webclip: React.FC = () => {
   return (
     <Freya>
-      <OG title="これだと思っていた重要なWEBページを公開クリップしています - sou" description="公開ウェブクリップ" />
-      <main className="Hlink list textLeft margin-Mobile-PC resizeimage">
+      <OG title="Webclip - Sou Watanabe" description="My Web Clip" />
+      <main className="Alink list textLeft margin-Mobile-PC resizeimage">
         <h1>これだと思った重要なウェブページを公開クリップしています</h1>
         <ul>
           <li>

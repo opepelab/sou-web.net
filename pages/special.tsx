@@ -1,13 +1,10 @@
-import Framerdiv from "components/Sys/Freya";
-import Head from "next/head";
+import OG from "components/Sys/OG";
+import Freya from "components/Sys/Freya";
 
 const Special: React.FC = () => {
   return (
-    <Framerdiv>
-      <Head>
-        <title>育ててくれた人たち</title>
-        <meta name="description" content="私の習得ルート" />
-      </Head>
+    <Freya>
+      <OG title="Special - Sou Watanabe" description="Give Thanks" />
       <main className="textLeft margin50p">
         <h1 className="Special">Special Thanks</h1>
         <div className="triangle-bottom" />
@@ -39,7 +36,7 @@ const Special: React.FC = () => {
           Central Processing Unit : Intel @メモリさえあればなんでもいい
         </p>
       </main>
-    </Framerdiv>
+    </Freya>
   );
 };
 

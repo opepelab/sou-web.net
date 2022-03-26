@@ -5,10 +5,9 @@ import Link from "next/link";
 const NotFound: React.FC = () => {
   return (
     <Freya>
-      <OG title="404 - sou-web.net" description="存在しないページ" />
+      <OG title="404 - Sou Watanabe" description="Erorr URL" />
       <main className="margin-Mobile-PC">
         <h1>Does not don't sync</h1>
-        <div className="triangle-bottom" />
         <dl>
           <Link href="/">
             <a className="redLinks scale">Return 404 to TOP</a>

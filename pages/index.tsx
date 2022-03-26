@@ -17,7 +17,7 @@ type Map = {
 const Index: React.FC<Map> = ({ blog }) => {
   return (
     <Freya>
-      <OG title="Index - sou" description="Index" />
+      <OG title="Sou Watanabe - Homepage" description="Index Top Page" />
       <main className="textLeft margin-Mobile-PC inblo">
         <h1 className="text-3xl m-0 font-extralight">Hello? My name is Sou.🖐</h1>
         <p className="text-lg font-extralight">
