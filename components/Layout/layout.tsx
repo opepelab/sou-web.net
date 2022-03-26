@@ -14,7 +14,6 @@ const Layout: React.FC<Props> = ({ children }) => {
     <>
       <Header />
       <Menu />
-      <Text />
       <div className="footerFix">{children}</div>
       <Footer />
     </>

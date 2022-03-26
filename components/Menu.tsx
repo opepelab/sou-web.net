@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import ActiveLink from "./Sys/ActiveLink";
-import ToggleDarkMode from "components/DarkToggle";
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
@@ -77,28 +76,8 @@ const Menu = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="https://opepelab.org/" target="_blank">
-                        WordPress
-                      </a>
-                    </li>
-                    <li>
-                      <ActiveLink href="/photo" activeClassName="headerState">
-                        <a>Whiteboard</a>
-                      </ActiveLink>
-                    </li>
-                    <li>
-                      <a href="https://www.pixiv.net/users/10729947" target="_blank">
-                        Pixiv
-                      </a>
-                    </li>
-                    <li>
                       <a href="https://www.instagram.com/sou_watana/" target="_blank">
                         Instagram
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://chofu-koyado.vercel.app/" target="_blank">
-                        chofu-koyado
                       </a>
                     </li>
                   </ul>
@@ -120,10 +99,10 @@ const Menu = () => {
                   </ActiveLink>
                 </li>
                 <li>
-                  <ActiveLink href="/develop" activeClassName="headerState">
+                  <ActiveLink href="/feature" activeClassName="headerState">
                     <a className="right1p" onMouseDown={() => setOpen(!open)}>
                       <div className="gg-git-fork" />
-                      Development Environment
+                      Feature
                     </a>
                   </ActiveLink>
                 </li>
@@ -137,7 +116,6 @@ const Menu = () => {
                 </li>
               </ul>
             </nav>
-            <ToggleDarkMode />
           </div>
         </div>
       </div>

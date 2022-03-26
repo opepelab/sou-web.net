@@ -1,4 +1,4 @@
-import Freya from "components/Sys/Framer";
+import Freya from "components/Sys/Freya";
 import OG from "components/Sys/OG";
 
 const Webclip: React.FC = () => {

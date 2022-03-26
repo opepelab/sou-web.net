@@ -2,7 +2,7 @@ import client from "libs/contentful";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { ParsedUrlQuery } from "querystring";
 import OG from "components/Sys/OG";
-import Framerdiv from "components/Sys/Framer";
+import Framerdiv from "components/Sys/Freya";
 import styles from "./midasi.module.scss";
 import { EntryCollection } from "contentful";
 import { IPostFields } from "libs/types";
@@ -70,7 +70,6 @@ const Slug: React.FC<Content> = ({ blog }) => {
         <div>
           <h1>{blog.fields.title}</h1>
         </div>
-        <div className="triangle-bottom" />
         <div>{documentToReactComponents(blog.fields.body, options)}</div>
       </main>
     </Framerdiv>

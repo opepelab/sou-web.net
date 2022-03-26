@@ -1,5 +1,5 @@
 import OG from "components/Sys/OG";
-import Freya from "components/Sys/Framer";
+import Freya from "components/Sys/Freya";
 
 const About: React.FC = () => {
   return (

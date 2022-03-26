@@ -45,6 +45,19 @@ $ME: rgba(0, 0, 0, 0.75);
   }
 }
 
+@mixin Back {
+  z-index: 3;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 20%;
+  background: var(--color-icon);
+  transition: all 2s;
+}
+
 @mixin LRauto {
   margin-right: auto;
   margin-left: auto;
@@ -88,7 +101,6 @@ $ME: rgba(0, 0, 0, 0.75);
   position: fixed;
   left: 0px;
   top: 0px;
-  // background: rgba(0, 0, 0, 0.5);
   width: $r100;
   height: $r100;
   transition-duration: 0.5s;

@@ -1,10 +1,9 @@
-import { MotionConfig } from "framer-motion";
-import { useState, useEffect, useLayoutEffect } from "react";
+import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 export const ToggleDarkMode = () => {
   const [darkMode, setDarkMode] = useState(false);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (
       localStorage.theme === "dark" ||
       (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
@@ -18,23 +17,23 @@ export const ToggleDarkMode = () => {
   }, [darkMode]);
 
   const handleChangeDarkMode = () => {
-    if (darkMode) {
-      localStorage.theme = "light";
-      setDarkMode(false);
-    } else {
-      localStorage.theme = "dark";
+    if (!darkMode) {
       setDarkMode(true);
+      localStorage.theme = "dark";
+    } else {
+      setDarkMode(false);
+      localStorage.theme = "light";
     }
   };
 
   return (
     <div className="togglePosition">
-      <div className={darkMode ? "shadow black" : "shadow white"} onClick={() => handleChangeDarkMode()}>
+      <div className="iconButton shadow" onClick={handleChangeDarkMode}>
         <AnimatePresence exitBeforeEnter>
           <motion.div
             className="flex"
-            onClick={() => handleChangeDarkMode()}
-            key={darkMode ? "dark-icon" : "light-icon"}
+            onClick={handleChangeDarkMode}
+            key={darkMode ? "dark" : "light"}
             initial={{ rotate: -120, opacity: 0 }}
             animate={{ rotate: 0, opacity: 1 }}
             exit={{ y: 20, opacity: 0 }}

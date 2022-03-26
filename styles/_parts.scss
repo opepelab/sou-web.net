@@ -7,7 +7,7 @@
 }
 
 .margin-Mobile-PC {
-  margin-top: 20%;
+  margin-top: 15%;
 }
 
 .flex-container {
@@ -91,6 +91,7 @@ a dt .dateST {
   backdrop-filter: blur(10px);
   top: $p0;
   left: $p0;
+  transition: all 2s;
 }
 
 .none {

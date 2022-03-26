@@ -1,5 +1,5 @@
 import OG from "components/Sys/OG";
-import Freya from "components/Sys/Framer";
+import Freya from "components/Sys/Freya";
 import Link from "next/link";
 
 const NotFound: React.FC = () => {

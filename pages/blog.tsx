@@ -1,7 +1,7 @@
 import client from "libs/contentful";
 import { GetStaticProps } from "next";
 import OG from "components/Sys/OG";
-import Freya from "components/Sys/Framer";
+import Freya from "components/Sys/Freya";
 import { Entry, EntryCollection } from "contentful";
 import { IPostFields } from "libs/types";
 import Date from "components/Sys/date";

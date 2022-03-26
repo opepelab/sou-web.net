@@ -219,11 +219,11 @@
 }
 
 .gg-sun {
-  color: orange;
+  color: black;
   box-sizing: border-box;
   position: absolute;
   display: block;
-  transform: scale(var(--ggs, 1));
+  transform: scale(var(--ggs, 0.8));
   width: 24px;
   height: 24px;
   background: linear-gradient(to bottom, currentColor 4px, transparent 0) no-repeat 5px -6px/2px 6px,
@@ -238,7 +238,7 @@
 
 .gg-sun::after,
 .gg-sun::before {
-  color: orange;
+  color: black;
   content: "";
   display: block;
   box-sizing: border-box;
@@ -261,7 +261,7 @@
 
 .gg-moon,
 .gg-moon::after {
-  color: cyan;
+  color: white;
   display: block;
   box-sizing: border-box;
   border-radius: 50%;

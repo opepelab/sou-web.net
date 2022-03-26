@@ -1,6 +1,6 @@
 import { useMail } from "hooks/useMail";
 import OG from "components/Sys/OG";
-import Freya from "components/Sys/Framer";
+import Freya from "components/Sys/Freya";
 
 export const Mail: React.FC<HTMLTextAreaElement> = () => {
   const { setName, setMail, setMessage, send } = useMail();

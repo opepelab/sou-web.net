@@ -1,4 +1,4 @@
-@import "setting";
+@import "settings";
 
 @media screen and (max-width: 739.98px) {
   html {
@@ -11,6 +11,12 @@
 
   body {
     width: 90%;
+  }
+
+  .Top-Logo {
+    position: relative;
+    left: -10px;
+    top: 14px;
   }
 
   .bgg {
@@ -29,14 +35,14 @@
     padding-right: 11px;
     transition-duration: 0.5s;
     outline: none;
-    border: none;
+    border: solid 1px gray;
   }
 
   .Line {
     z-index: 4;
     position: fixed;
     display: inline-block;
-    right: 15px;
+    right: 10px;
     top: 10px;
   }
   .Line span {
@@ -143,31 +149,8 @@
   .togglePosition {
     z-index: 4;
     position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-
-  .white {
-    z-index: 4;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: white;
-  }
-
-  .black {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: black;
+    top: 10px;
+    right: 62px;
   }
 
   .none {

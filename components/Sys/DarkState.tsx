@@ -6,7 +6,7 @@ type RNode = {
   children: ReactNode;
 };
 
-const ThemeProvider = ({ children }: RNode): JSX.Element => {
+const DarkState = ({ children }: RNode): JSX.Element => {
   const setTheme = useSetRecoilState(themeState);
 
   useEffect(() => {
@@ -25,4 +25,4 @@ const ThemeProvider = ({ children }: RNode): JSX.Element => {
     </>
   );
 };
-export default ThemeProvider;
+export default DarkState;
