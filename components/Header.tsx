@@ -1,7 +1,6 @@
 import ActiveLink from "./Sys/ActiveLink";
 import React from "react";
-import ToggleDarkMode from "components/ToggleDarkMode";
-import Text from "components/Text";
+import ToggleDarkMode from "components/DarkToggle";
 
 const Header: React.FC = () => {
   const [about, setAbout] = React.useState(false);
@@ -23,8 +22,6 @@ const Header: React.FC = () => {
           <div className="disableN">
             <ToggleDarkMode />
             <nav>
-              <Text />
-
               <ul className="nav1-left">
                 <li>
                   <div aria-expanded={about} onClick={() => setAbout(!about)}>

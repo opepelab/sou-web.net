@@ -2,12 +2,10 @@ import ActiveLink from "./Sys/ActiveLink";
 
 const Text: React.FC = () => {
   return (
-    <div>
-      <div className="Top-Logo">
-        <ActiveLink href="/" activeClassName="headerState">
-          <a className="hikki Logo">by Sou Watanabe</a>
-        </ActiveLink>
-      </div>
+    <div className="Top-Logo">
+      <ActiveLink href="/" activeClassName="headerState">
+        <a className="hikki">by Sou Watanabe</a>
+      </ActiveLink>
     </div>
   );
 };

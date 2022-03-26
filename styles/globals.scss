@@ -127,7 +127,7 @@ nav ul li {
   align-items: center;
   grid-gap: $p20;
   white-space: nowrap;
-  right: 5%;
+  right: 6%;
   top: 5px;
 }
 
@@ -140,7 +140,7 @@ nav ul li {
   align-items: center;
   grid-gap: $p20;
   white-space: nowrap;
-  left: 15%;
+  left: 18%;
   top: 5px;
 }
 
@@ -294,10 +294,8 @@ textarea {
 .Top-Logo {
   z-index: 2;
   position: fixed;
-  right: 0%;
-  left: 0%;
-  margin-right: 150px;
-  top: 8px;
+  text-align: center;
+  top: 12px;
   font-size: 24px;
   color: #d6d3d1;
 }
@@ -307,7 +305,8 @@ textarea {
     z-index: 3;
     top: 7px;
     position: fixed;
-    left: 15px;
+    text-align: center;
+    transform: translate(280px);
     transition-duration: 1s;
     cursor: pointer;
   }
