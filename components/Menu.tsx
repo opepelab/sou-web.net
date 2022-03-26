@@ -50,7 +50,7 @@ const Menu: React.FC = () => {
                     </li>
                     <li>
                       <ActiveLink href="/webclip" activeClassName="headerState">
-                        <a onMouseDown={() => setOpen(!open)}>Clip</a>
+                        <a onMouseDown={() => setOpen(!open)}>WebClip</a>
                       </ActiveLink>
                     </li>
                   </ul>

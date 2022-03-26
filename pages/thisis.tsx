@@ -6,13 +6,12 @@ const Thisblog: React.FC = () => {
     <Freya>
       <OG title="Thisis - Sou Watanabe" description="This Site is" />
       <main className="textLeft margin-Mobile-PC">
-        <h1>What is this blog?</h1>
+        <h1>What is this blog Read me?</h1>
         <p>Cloud: Cloudflare</p>
         <p>CSS: TailWind CSS Sass</p>
         <p>use TypeScript(Lint strict)</p>
         <p>use Node.js React library Nexet.js</p>
         <p>Blog: Contentful</p>
-        <p>スマートホンから投稿したりしています。</p>
         <p>
           Zenn.devやQiitaを使うことも考えたのですがあちらはコード専用な感じな気がしたので
           <br />
@@ -20,8 +19,6 @@ const Thisblog: React.FC = () => {
           <br />
         </p>
         <p>普段はプログラミング以外はねこと遊んだりもしているので気軽に話しかけたりコンタクト送ってくださいね。</p>
-        <p>Welcome to my home page, refresh and swich your identitiy.</p>
-        <p>Let's enjoy the code architect and programing! I'm going OSS mobile application contribution.</p>
       </main>
     </Freya>
   );
