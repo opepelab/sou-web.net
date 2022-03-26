@@ -295,17 +295,16 @@ textarea {
   transform: skew(-20deg);
 }
 
-@media screen and (min-width: 739.98px) {
-  .Top-Logo {
-    z-index: 2;
-    position: relative;
-    display: inline-flex;
-    transform: translate(-100px);
-    top: 8px;
-    font-size: 24px;
-    color: #d6d3d1;
-  }
+.Top-Logo {
+  z-index: 2;
+  position: relative;
+  display: inline-flex;
+  transform: translate(-100px);
+  top: 8px;
+  font-size: 24px;
+}
 
+@media screen and (min-width: 739.98px) {
   .togglePosition {
     z-index: 3;
     position: relative;
