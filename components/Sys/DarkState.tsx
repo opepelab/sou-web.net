@@ -1,8 +1,12 @@
-import { useEffect } from "react";
+import { useEffect, ReactNode } from "react";
 import { Theme, themeState } from "libs/theme";
 import { useSetRecoilState } from "recoil";
 
-const DarkState: React.FC = ({ children }): JSX.Element => {
+type RNode = {
+  children: ReactNode;
+};
+
+const DarkState: React.FC<RNode> = ({ children }): JSX.Element => {
   const setTheme = useSetRecoilState(themeState);
 
   useEffect(() => {

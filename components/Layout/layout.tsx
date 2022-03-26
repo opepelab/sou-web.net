@@ -4,11 +4,11 @@ import Menu from "components/Menu";
 import Footer from "components/Footer";
 import Filter from "components/Sys/Filter";
 
-type Props = {
+type RNode = {
   children: ReactNode;
 };
 
-const LayoutProvider: React.FC<Props> = ({ children }) => {
+const LayoutProvider: React.FC<RNode> = ({ children }) => {
   const [view, setView] = React.useState(false);
   const [links, setLinks] = React.useState(false);
   return (
