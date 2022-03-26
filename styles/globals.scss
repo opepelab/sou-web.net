@@ -7,14 +7,14 @@
 
 :root[data-theme="light"] {
   --color-text: rgb(75 85 99);
-  --color-bg: rgb(255 251 235);
+  --color-bg: rgb(255 247 237);
   --color-pink: rgb(244 63 94);
 }
 /* 追記 */
 :root[data-theme="dark"] {
   --color-text: #f4f4f5;
   --color-bg: rgb(41 37 36);
-  --color-pink: rgb(45 212 191);
+  --color-pink: rgb(94 234 212);
 }
 
 html {
