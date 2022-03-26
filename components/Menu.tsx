@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ActiveLink from "./Sys/ActiveLink";
-import ToggleMB from "components/ToggleMB";
+import ToggleDarkMode from "components/ToggleDarkMode";
 import Text from "components/Text";
 const Menu = () => {
   const [open, setOpen] = useState(false);
@@ -138,7 +138,7 @@ const Menu = () => {
                 </li>
               </ul>
             </nav>
-            <ToggleMB />
+            <ToggleDarkMode />
           </div>
         </div>
       </div>
