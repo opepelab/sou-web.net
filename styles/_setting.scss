@@ -88,7 +88,7 @@ $ME: rgba(0, 0, 0, 0.75);
   position: fixed;
   left: 0px;
   top: 0px;
-  background: rgba(0, 0, 0, 0.5);
+  // background: rgba(0, 0, 0, 0.5);
   width: $r100;
   height: $r100;
   transition-duration: 0.5s;
@@ -97,8 +97,7 @@ $ME: rgba(0, 0, 0, 0.75);
 @mixin Menu {
   z-index: 3;
   position: fixed;
-  backdrop-filter: blur(5px);
-  opacity: 1;
+  backdrop-filter: blur(10px);
   left: $p0;
   top: $p0;
   width: 250px;
