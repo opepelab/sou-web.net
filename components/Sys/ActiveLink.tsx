@@ -9,7 +9,7 @@ type Props = {
   activeClassName: string;
 };
 
-const ActiveLink = ({ router, children, ...props }: Props) => {
+const ActiveLink: React.FC<Props> = ({ router, children, ...props }) => {
   let className: string = children.props.className;
   if (router.asPath === props.href) {
     className = `${className} ${props.activeClassName}`;

@@ -7,7 +7,7 @@ type boolProp = {
   setLinks: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const Filter: React.FC<boolProp> = ({ view, setView, links, setLinks, children }) => {
+const Filter: React.FC<boolProp> = ({ view, setView, links, setLinks }) => {
   return (
     <div className="Filter">
       <div
