@@ -95,13 +95,13 @@
   }
 
   .Filt [aria-expanded="true"] {
-    @include Filter;
+    @include FilterAtom;
     touch-action: none;
     visibility: visible;
   }
 
   .Filt [aria-expanded="false"] {
-    @include Filter;
+    @include FilterAtom;
     opacity: 0;
     visibility: hidden;
   }

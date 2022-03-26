@@ -92,14 +92,13 @@ $ME: rgba(0, 0, 0, 0.75);
   animation: 1.1s feed;
 }
 
-@mixin Filter {
-  z-index: 3;
+@mixin FilterAtom {
+  z-index: 1;
   position: fixed;
-  left: 0px;
   top: 0px;
+  left: 0px;
   width: $r100;
   height: $r100;
-  transition-duration: 0.5s;
 }
 
 @mixin Menu {

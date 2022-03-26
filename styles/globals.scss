@@ -216,6 +216,9 @@ a {
 }
 
 .BlockM {
+  z-index: 3;
+  position: relative;
+  display: inline-flex;
   padding: 14px;
 }
 
@@ -366,4 +369,16 @@ form:focus-within {
 button {
   border: none;
   background: transparent;
+}
+
+.Filter [aria-expanded="true"] {
+  @include FilterAtom;
+  touch-action: none;
+  visibility: visible;
+}
+
+.Filter [aria-expanded="false"] {
+  @include FilterAtom;
+  opacity: 0;
+  visibility: hidden;
 }

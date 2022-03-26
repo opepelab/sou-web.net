@@ -3,23 +3,24 @@ import React from "react";
 import ToggleDarkMode from "components/DarkToggle";
 import Text from "components/Text";
 
-const Header: React.FC = () => {
-  const [view, setView] = React.useState(false);
-  const viewRef = React.useRef<HTMLDivElement>(null);
-  React.useEffect(() => {
-    view && viewRef.current?.focus();
-  }, [view]);
+type boolProp = {
+  view: boolean;
+  setView: React.Dispatch<React.SetStateAction<boolean>>;
+  links: boolean;
+  setLinks: React.Dispatch<React.SetStateAction<boolean>>;
+};
 
-  const [links, setLinks] = React.useState(false);
-  const linkRef = React.useRef<HTMLDivElement>(null);
-  React.useEffect(() => {
-    links && linkRef.current?.focus();
-  }, [links]);
-
+const Header: React.FC<boolProp> = ({ view, setView, links, setLinks }) => {
   return (
     <div>
       <header className="flex">
-        <div className="bgg">
+        <div
+          className="bgg"
+          onClick={() => {
+            view ? setView(false) : "";
+            links ? setLinks(false) : "";
+          }}
+        >
           <Text />
           <ToggleDarkMode />
           <div className="disableN">
@@ -33,42 +34,40 @@ const Header: React.FC = () => {
                       <div className="SankakuBlack" />
                     </a>
                   </div>
-                  <div ref={viewRef} tabIndex={1} onBlur={() => setTimeout(() => setView(!view), 125)}>
-                    <div className="NavDrop">
-                      <div aria-expanded={view} onClick={() => setView(!view)}>
-                        {view && (
-                          <ul className="White menu">
-                            <li>
-                              <ActiveLink href="/resume" activeClassName="headerState">
-                                <a>
-                                  <div className="hoverBG BlockM">Resume</div>
-                                </a>
-                              </ActiveLink>
-                            </li>
-                            <li>
-                              <ActiveLink href="/profile" activeClassName="headerState">
-                                <a>
-                                  <div className="hoverBG BlockM">Profile</div>
-                                </a>
-                              </ActiveLink>
-                            </li>
-                            <li>
-                              <ActiveLink href="/thisis" activeClassName="headerState">
-                                <a>
-                                  <div className="hoverBG BlockM">Thisis</div>
-                                </a>
-                              </ActiveLink>
-                            </li>
-                            <li>
-                              <ActiveLink href="/webclip" activeClassName="headerState">
-                                <a>
-                                  <div className="hoverBG BlockM">WebClip</div>
-                                </a>
-                              </ActiveLink>
-                            </li>
-                          </ul>
-                        )}
-                      </div>
+                  <div className="NavDrop">
+                    <div aria-expanded={view} onClick={() => setView(!view)}>
+                      {view && (
+                        <ul className="White menu">
+                          <li>
+                            <ActiveLink href="/resume" activeClassName="headerState">
+                              <a>
+                                <div className="hoverBG BlockM">Resume</div>
+                              </a>
+                            </ActiveLink>
+                          </li>
+                          <li>
+                            <ActiveLink href="/profile" activeClassName="headerState">
+                              <a>
+                                <div className="hoverBG BlockM">Profile</div>
+                              </a>
+                            </ActiveLink>
+                          </li>
+                          <li>
+                            <ActiveLink href="/thisis" activeClassName="headerState">
+                              <a>
+                                <div className="hoverBG BlockM">Thisis</div>
+                              </a>
+                            </ActiveLink>
+                          </li>
+                          <li>
+                            <ActiveLink href="/webclip" activeClassName="headerState">
+                              <a>
+                                <div className="hoverBG BlockM">WebClip</div>
+                              </a>
+                            </ActiveLink>
+                          </li>
+                        </ul>
+                      )}
                     </div>
                   </div>
                 </li>
@@ -80,29 +79,27 @@ const Header: React.FC = () => {
                       <div className="SankakuBlack" />
                     </a>
                   </div>
-                  <div ref={linkRef} tabIndex={1} onBlur={() => setTimeout(() => setLinks(!links), 125)}>
-                    <div className="NavDrop HeadMenu">
-                      <div aria-expanded={links} onClick={() => setLinks(!links)}>
-                        {links && (
-                          <ul className="White menu">
-                            <li>
-                              <a href="https://github.com/opepelab" target="_blank">
-                                <div className="hoverBG BlockM">GitHub</div>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="https://www.linkedin.com/in/s-watanabe-a25157205" target="_blank">
-                                <div className="hoverBG BlockM">LinkdIn</div>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="https://www.instagram.com/sou_watana/" target="_blank">
-                                <div className="hoverBG BlockM">Instagram</div>
-                              </a>
-                            </li>
-                          </ul>
-                        )}
-                      </div>
+                  <div className="NavDrop HeadMenu">
+                    <div aria-expanded={links} onClick={() => setLinks(!links)}>
+                      {links && (
+                        <ul className="White menu">
+                          <li>
+                            <a href="https://github.com/opepelab" target="_blank">
+                              <div className="hoverBG BlockM">GitHub</div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.linkedin.com/in/s-watanabe-a25157205" target="_blank">
+                              <div className="hoverBG BlockM">LinkdIn</div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.instagram.com/sou_watana/" target="_blank">
+                              <div className="hoverBG BlockM">Instagram</div>
+                            </a>
+                          </li>
+                        </ul>
+                      )}
                     </div>
                   </div>
                 </li>
