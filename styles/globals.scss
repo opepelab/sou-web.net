@@ -164,6 +164,13 @@ nav ul li {
   font-size: $p16;
 }
 
+.ListNum {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
 dt {
   font-size: $p10;
 }
@@ -257,11 +264,11 @@ i {
 .footerFix {
   display: flex;
   flex-direction: column;
-  min-height: 85vh;
+  min-height: 80vh;
 }
 
 footer {
-  padding: 60px;
+  padding-top: 40px;
 }
 
 input {
@@ -303,7 +310,7 @@ textarea {
     z-index: 3;
     position: relative;
     display: inline-flex;
-    top: 3px;
+    top: 2px;
     transform: translate(448px);
     transition-duration: 1s;
     cursor: pointer;

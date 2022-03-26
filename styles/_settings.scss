@@ -76,18 +76,11 @@ $ME: rgba(0, 0, 0, 0.75);
 }
 
 @mixin H5 {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.15);
   display: $IB;
-  padding: {
-    left: 5px;
-    right: 5px;
-  }
+  padding: 0 5px 0 5px;
   margin: 0%;
   border-radius: 2px;
-  font: {
-    size: 14px;
-    weight: 100;
-  }
 }
 
 @mixin Hover {

@@ -41,7 +41,7 @@ const Id: React.FC<Map> = ({ blog, total }) => {
           </dl>
         ))}
         <nav>
-          <ul className="nav3">
+          <ul className="ListNum">
             {range(1, Math.ceil(total / Limit)).map((id) => (
               <li key={id}>
                 <ActiveLink href={`/list/${id}`} activeClassName="listState">
@@ -52,8 +52,8 @@ const Id: React.FC<Map> = ({ blog, total }) => {
           </ul>
         </nav>
         <Link href="/blog">
-          <a className="Link-Color">
-            <h5>Display All</h5>
+          <a>
+            <h5>本当に全部見る →</h5>
           </a>
         </Link>
       </main>
