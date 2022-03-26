@@ -2,7 +2,7 @@ import React, { ReactNode } from "react";
 import Header from "components/Header";
 import Menu from "components/Menu";
 import Footer from "components/Footer";
-import Filter from "components/Filter";
+import Filter from "components/Sys/Filter";
 
 type Props = {
   children: ReactNode;
