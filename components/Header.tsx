@@ -17,8 +17,8 @@ const Header: React.FC<boolProp> = ({ view, setView, links, setLinks }) => {
         <div
           className="bgg"
           onClick={() => {
-            view ? setView(false) : "";
-            links ? setLinks(false) : "";
+            view ? setView(false) : null;
+            links ? setLinks(false) : null;
           }}
         >
           <Text />
@@ -35,7 +35,7 @@ const Header: React.FC<boolProp> = ({ view, setView, links, setLinks }) => {
                     </a>
                   </div>
                   <div className="NavDrop">
-                    <div aria-expanded={view} onClick={() => setView(!view)}>
+                    <div aria-expanded={view}>
                       {view && (
                         <ul className="White menu">
                           <li>
@@ -80,7 +80,7 @@ const Header: React.FC<boolProp> = ({ view, setView, links, setLinks }) => {
                     </a>
                   </div>
                   <div className="NavDrop HeadMenu">
-                    <div aria-expanded={links} onClick={() => setLinks(!links)}>
+                    <div aria-expanded={links}>
                       {links && (
                         <ul className="White menu">
                           <li>
