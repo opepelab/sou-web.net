@@ -16,7 +16,7 @@ const LayoutProvider: React.FC<RNode> = ({ children }) => {
       <Filter links={links} setLinks={setLinks} view={view} setView={setView} />
       <Header links={links} setLinks={setLinks} view={view} setView={setView} />
       <Menu />
-      {children}
+      <div className="footerFix">{children}</div>
       <Footer />
     </>
   );

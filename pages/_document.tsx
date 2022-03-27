@@ -34,7 +34,7 @@ export default class MyDocument extends Document {
             </>
           )}
         </Head>
-        <body className="footerFix">
+        <body>
           <Main />
           <NextScript />
         </body>
