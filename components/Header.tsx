@@ -13,7 +13,7 @@ type boolProp = {
 const Header: React.FC<boolProp> = ({ view, setView, links, setLinks }) => {
   return (
     <div>
-      <header className="flex">
+      <header>
         <div
           className="bgg"
           onClick={() => {

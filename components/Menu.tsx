@@ -17,7 +17,7 @@ const Menu: React.FC = () => {
           <span />
         </button>
       </div>
-      <div className="Filt">
+      <div className="Filter">
         <div aria-expanded={open} onClick={() => setOpen(false)} />
         <div className="MenuList">
           <div aria-expanded={open}>

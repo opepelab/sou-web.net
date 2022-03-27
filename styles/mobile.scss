@@ -98,18 +98,6 @@
     transition-duration: 0.1s;
   }
 
-  .Filt [aria-expanded="true"] {
-    @include FilterAtom;
-    touch-action: none;
-    visibility: visible;
-  }
-
-  .Filt [aria-expanded="false"] {
-    @include FilterAtom;
-    opacity: 0;
-    visibility: hidden;
-  }
-
   .MenuList [aria-expanded="true"] {
     @include Menu;
     visibility: visible;

@@ -379,6 +379,5 @@ button {
 
 .Filter [aria-expanded="false"] {
   @include FilterAtom;
-  opacity: 0;
   visibility: hidden;
 }
