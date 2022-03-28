@@ -9,8 +9,6 @@ import LayoutProvider from "components/Layout/layout";
 import usePageView from "hooks/usePageView";
 import { RecoilRoot } from "recoil";
 import DarkState from "components/Sys/DarkState";
-// const canUseDOM = typeof window !== "undefined";
-// const useIsomorphicLayoutEffect = canUseDOM ? useLayoutEffect : useEffect;
 
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
   usePageView();
