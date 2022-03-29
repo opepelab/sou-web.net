@@ -293,10 +293,11 @@ textarea {
   z-index: 2;
   position: relative;
   font-family: $Google0;
-  font-weight: bold;
+  // font-weight: bold;
+  font-style: italic;
   display: inline-flex;
   top: 8px;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 @media screen and (min-width: 739.98px) {
