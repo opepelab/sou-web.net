@@ -28,7 +28,7 @@ const Header: React.FC<boolProp> = ({ view, setView, links, setLinks }) => {
               <ul className="nav1-left">
                 <li>
                   <div aria-expanded={view} onClick={() => setView(!view)}>
-                    <a className="scaleLinks Block">
+                    <a className="Line scaleLinks Block">
                       <div className="gg-details-more" />
                       View
                       <div className="SankakuBlack" />
@@ -73,7 +73,7 @@ const Header: React.FC<boolProp> = ({ view, setView, links, setLinks }) => {
                 </li>
                 <li>
                   <div aria-expanded={links} onClick={() => setLinks(!links)}>
-                    <a className="scaleLinks Block">
+                    <a className="Line scaleLinks Block">
                       <div className="gg-style" />
                       Link
                       <div className="SankakuBlack" />
@@ -89,7 +89,7 @@ const Header: React.FC<boolProp> = ({ view, setView, links, setLinks }) => {
                             </a>
                           </li>
                           <li>
-                            <a href="https://www.linkedin.com/in/s-watanabe-a25157205" target="_blank">
+                            <a href="https://www.linkedin.com/in/sou-watanabe-a25157205/" target="_blank">
                               <div className="hoverBG BlockM">LinkdIn</div>
                             </a>
                           </li>

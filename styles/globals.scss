@@ -138,6 +138,27 @@ nav ul li {
   top: -3px;
 }
 
+.Line {
+  padding-bottom: 4px;
+  position: relative;
+}
+
+.Line::after {
+  content: "";
+  position: absolute;
+  background-color: var(--color-text);
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.5s;
+}
+
+.Line:hover::after {
+  width: 100%;
+}
+
 .nav1-left {
   z-index: 2;
   position: relative;
