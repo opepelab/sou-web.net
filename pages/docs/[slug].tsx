@@ -65,7 +65,11 @@ const Slug: React.FC<Content> = ({ blog }) => {
 
   return (
     <Freya>
-      <OG title={blog.fields.title} description={blog.fields.description} url={router.asPath} />
+      <OG
+        title={`${blog.fields.title}${(<br />)}Sou Watanabe`}
+        description={blog.fields.description}
+        url={router.asPath}
+      />
       <main className="Alink list textLeft margin-Mobile-PC resizeimage">
         <div className={styles.Time2}>
           <Date dateString={blog.fields.date} />
@@ -87,10 +91,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const paths = entries.items.map((item) => ({
     params: { slug: item.fields.slug },
   }));
-  return {
-    paths,
-    fallback: false,
-  };
+  return { paths, fallback: false };
 };
 
 export const getStaticProps: GetStaticProps = async (context) => {
