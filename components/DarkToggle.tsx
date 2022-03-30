@@ -1,10 +1,8 @@
 import { useState, useEffect } from "react";
-import { useRecoilState } from "recoil";
-import { themeState } from "libs/unique";
 import { AnimatePresence, motion } from "framer-motion";
 
 export const ToggleDarkMode: React.FC = () => {
-  const [darkMode, setDarkMode] = useRecoilState(themeState);
+  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     if (

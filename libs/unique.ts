@@ -1,9 +1,9 @@
 import { atom } from "recoil";
 
-export type Theme = false | true;
+export type Theme = "light" | "dark" | "systemUI";
 export const themeState = atom<Theme>({
   key: "themeState",
-  default: false,
+  default: "systemUI",
 });
 
 export type View = false | true;
