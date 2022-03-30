@@ -7,11 +7,12 @@ const Thisblog: React.FC = () => {
       <OG title="Thisis - Sou Watanabe" description="This Site is" />
       <main className="textLeft margin-Mobile-PC">
         <h1>What is this blog Read me?</h1>
-        <p>Cloud: Cloudflare</p>
+        <p>Host: Vercel etc..</p>
         <p>CSS: TailWind CSS Sass</p>
         <p>use TypeScript(Lint strict)</p>
         <p>use Node.js React library Nexet.js</p>
-        <p>Blog: Contentful</p>
+        <p>状態管理: Recoil</p>
+        <p>CMS: Contentful</p>
         <p>
           Zenn.devやQiitaを使うことも考えたのですがあちらはコード専用な感じな気がしたので
           <br />
