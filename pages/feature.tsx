@@ -8,7 +8,7 @@ const Feature: React.FC = () => {
       <main className="inblo resizeimage">
         <h1>Feature</h1>
         <dl>
-          <img src="/picture/IMG-0554.jpg" />
+          <img src="/picture/IMG-0554.jpg" width="600" height="800" />
           <dt>OS</dt>
           <dd>Windows / Mac</dd>
           <dt>Version</dt>
