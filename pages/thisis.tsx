@@ -5,7 +5,7 @@ const Thisblog: React.FC = () => {
   return (
     <Freya>
       <OG title="Thisis - Sou Watanabe" description="This Site is" />
-      <main className="textLeft margin-Mobile-PC">
+      <main className="inblo textLeft">
         <h1>What is this blog Read me?</h1>
         <p>Architect: Node.js React library Nexet.js TypeScript</p>
         <p>State management: Recoil</p>

@@ -5,7 +5,7 @@ const Feature: React.FC = () => {
   return (
     <Freya>
       <OG title="Feature - Sou Watanabe" description="My Compurter" />
-      <main className="margin-Mobile-PC resizeimage inblo">
+      <main className="inblo resizeimage">
         <h1>Feature</h1>
         <dl>
           <img src="/picture/IMG-0554.jpg" />

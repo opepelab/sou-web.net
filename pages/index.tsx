@@ -18,7 +18,7 @@ const Index: React.FC<Map> = ({ blog }) => {
   return (
     <Freya>
       <OG title="Sou Watanabe - Homepage" description="Index Top Page" />
-      <main className="textLeft margin-Mobile-PC inblo">
+      <main className="inblo textLeft">
         <h1 className="text-3xl m-0 font-extralight">Hello? My name is Sou.🖐</h1>
         <p className="text-lg font-extralight">
           I am Software contributor

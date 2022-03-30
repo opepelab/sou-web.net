@@ -5,7 +5,7 @@ const Resume: React.FC = () => {
   return (
     <Freya>
       <OG title="Resume - Sou Watanabe" description="My Resume" />
-      <main className="list margin-Mobile-PC textLeft inblo">
+      <main className="list inblo textLeft">
         <h1>Resume</h1>
         <p>渡邊 蒼(Sou Watanabe)と申します。1994年生まれ現27歳です。</p>
         <p>アプリケーションを開発しています。</p>

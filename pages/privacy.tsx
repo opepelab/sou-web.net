@@ -5,7 +5,7 @@ const Privacy: React.FC = () => {
   return (
     <Freya>
       <OG title="Privacy Policy - Sou Watanabe" description="My Policy" />
-      <main className="margin-Mobile-PC textLeft">
+      <main className="inblo textLeft">
         <h1>
           <ruby>
             Privacy Policy<rt>プライバシーポリシー</rt>

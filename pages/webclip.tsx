@@ -5,7 +5,7 @@ const Webclip: React.FC = () => {
   return (
     <Freya>
       <OG title="Webclip - Sou Watanabe" description="My Web Clip" />
-      <main className="Alink list textLeft margin-Mobile-PC resizeimage">
+      <main className="Alink list inblo textLeft resizeimage">
         <h1>これだと思った重要なウェブページを公開クリップしています</h1>
         <ul>
           <li>

@@ -5,7 +5,7 @@ const Picture: React.FC = () => {
   return (
     <Freya>
       <OG title="Art - Sou Watanabe" description="My Arts" />
-      <main className="margin-Mobile-PC inblo">
+      <main className="inblo">
         <h1>Art</h1>
         <div>
           <a href="#01">

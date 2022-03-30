@@ -6,7 +6,7 @@ const NotFound: React.FC = () => {
   return (
     <Freya>
       <OG title="404 - Sou Watanabe" description="Erorr URL" />
-      <main className="margin-Mobile-PC">
+      <main className="inblo">
         <h1>Does not don't sync</h1>
         <dl>
           <Link href="/">

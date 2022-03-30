@@ -6,7 +6,7 @@ const Links: React.FC = () => {
   return (
     <Freya>
       <OG title="Links - Sou Watanabe" description="My Link" />
-      <main className="margin-Mobile-PC">
+      <main className="inblo">
         <h1>Links</h1>
         <div className="triangle-bottom" />
         <dl>

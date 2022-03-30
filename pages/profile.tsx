@@ -5,7 +5,7 @@ const About: React.FC = () => {
   return (
     <Freya>
       <OG title="Profile - Sou Watanabe" description="My Profile" />
-      <main className="margin-Mobile-PC inblo">
+      <main className="inblo">
         <h1>Profile</h1>
         <dl>
           <dt>Name</dt>

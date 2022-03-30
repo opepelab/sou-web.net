@@ -5,7 +5,7 @@ const Special: React.FC = () => {
   return (
     <Freya>
       <OG title="Special - Sou Watanabe" description="Give Thanks" />
-      <main className="textLeft margin50p">
+      <main className="inblo textLeft">
         <h1 className="Special">Special Thanks</h1>
         <div className="triangle-bottom" />
         <p></p>
