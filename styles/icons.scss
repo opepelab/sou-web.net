@@ -302,7 +302,7 @@
   content: ""; /* 疑似要素に必須 */
   width: 50%; /* ハートの丸い部分の大きさにかかわる */
   height: 80%; /* ハートの高さにかかわる */
-  background: rgb(94 234 212); /* ハートの色 */
+  background: var(--color-acsent); /* ハートの色 */
   border-radius: 25px 25px 0 0; /* ハートの半円を生成 */
   display: block; /* ブロック要素にする */
   position: absolute; /* 相対位置に指定 */

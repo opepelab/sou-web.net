@@ -11,6 +11,7 @@
   --color-pink: rgb(13 148 136);
   --color-bg2: rgba(255, 255, 255, 0.3);
   --color-icon: lightsalmon;
+  --color-acsent: rgb(94 234 212);
 }
 /* 追記 */
 :root[data-theme="dark"] {
@@ -19,6 +20,7 @@
   --color-pink: rgb(94 234 212);
   --color-bg2: rgba(0, 0, 0, 0.04);
   --color-icon: mediumslateblue;
+  --color-acsent: rgb(234, 138, 94);
 }
 
 html {
@@ -138,7 +140,7 @@ nav ul li {
   list-style: none;
   display: inline-flex;
   transform: translate(150px);
-  grid-gap: 0px;
+  grid-gap: 50px;
   white-space: nowrap;
   top: -3px;
 }
@@ -169,7 +171,7 @@ nav ul li {
   position: relative;
   list-style: none;
   display: inline-flex;
-  grid-gap: 0px;
+  grid-gap: 50px;
   white-space: nowrap;
   top: -3px;
 }
@@ -224,7 +226,6 @@ a {
 
 @media screen and (min-width: 740.98px) {
   .scaleLinks:hover {
-    cursor: pointer;
     @include Hover;
   }
 }
@@ -237,8 +238,8 @@ a {
 }
 
 .Block {
-  width: 100px;
-  padding: 10px 24px 13px 24px;
+  width: 100%;
+  padding: 10px 10px 14px 10px;
 }
 
 .BlockM {

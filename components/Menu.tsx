@@ -3,6 +3,7 @@ import ActiveLink from "./Sys/ActiveLink";
 
 const Menu: React.FC = () => {
   const [open, setOpen] = useState(false);
+
   return (
     <div className="none">
       <div className="Line text-teal-100">
@@ -31,7 +32,7 @@ const Menu: React.FC = () => {
                       <div className="SankakuBlack" />
                     </a>
                   </label>
-                  <input type="checkbox" id="toggle1" autoComplete="off" />
+                  <input type="checkbox" id="toggle1" />
                   <ul>
                     <li>
                       <ActiveLink href="/profile" activeClassName="headerState">
@@ -63,7 +64,7 @@ const Menu: React.FC = () => {
                       <div className="SankakuBlack" />
                     </a>
                   </label>
-                  <input type="checkbox" id="toggle2" autoComplete="off" />
+                  <input type="checkbox" id="toggle2" />
                   <ul>
                     <li>
                       <a href="https://github.com/opepelab" target="_blank">

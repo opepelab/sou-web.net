@@ -1,14 +1,13 @@
 import ActiveLink from "./Sys/ActiveLink";
-import React from "react";
+import { Dispatch, SetStateAction } from "react";
 import ToggleDarkMode from "components/DarkToggle";
 import Text from "components/Text";
-import FocusLock from "react-focus-lock";
 
 type boolProp = {
   view: boolean;
-  setView: React.Dispatch<React.SetStateAction<boolean>>;
+  setView: Dispatch<SetStateAction<boolean>>;
   links: boolean;
-  setLinks: React.Dispatch<React.SetStateAction<boolean>>;
+  setLinks: Dispatch<SetStateAction<boolean>>;
 };
 
 const Header: React.FC<boolProp> = ({ view, setView, links, setLinks }) => {
@@ -29,7 +28,7 @@ const Header: React.FC<boolProp> = ({ view, setView, links, setLinks }) => {
               <ul className="nav1-left">
                 <li>
                   <div aria-expanded={view} onClick={() => setView(!view)}>
-                    <a className="extend scaleLinks Block">
+                    <a className="extend Block point" tabIndex={0}>
                       <div className="gg-details-more" />
                       View
                       <div className="SankakuBlack" />
@@ -72,7 +71,7 @@ const Header: React.FC<boolProp> = ({ view, setView, links, setLinks }) => {
                 </li>
                 <li>
                   <div aria-expanded={links} onClick={() => setLinks(!links)}>
-                    <a className="extend scaleLinks Block">
+                    <a className="extend Block point" tabIndex={0}>
                       <div className="gg-style" />
                       Link
                       <div className="SankakuBlack" />
