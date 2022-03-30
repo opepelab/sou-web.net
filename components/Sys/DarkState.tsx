@@ -1,5 +1,5 @@
 import { useEffect, ReactNode } from "react";
-import { Theme, themeState } from "libs/unique";
+import { Theme, themeState } from "libs/theme";
 import { useSetRecoilState } from "recoil";
 
 type RNode = {
@@ -18,7 +18,7 @@ const DarkState: React.FC<RNode> = ({ children }): JSX.Element => {
     <>
       <script
         dangerouslySetInnerHTML={{
-          __html: `!function(){let x=window.localStorage.getItem("theme");if(x!==null)x;else{a=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}document.documentElement.setAttribute("data-theme",a)}();`,
+          __html: `!function(){let x;const a=window.localStorage.getItem("theme");if(null!==t)x=a;else{e=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}document.documentElement.setAttribute("data-theme",x)}();`,
         }}
       />
       {children}
