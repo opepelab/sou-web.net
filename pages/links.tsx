@@ -1,11 +1,13 @@
 import OG from "components/Sys/OG";
 import Freya from "components/Sys/Freya";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Links: React.FC = () => {
+  const router = useRouter();
   return (
     <Freya>
-      <OG title="Links - Sou Watanabe" description="My Link" />
+      <OG title="Links - Sou Watanabe" description="My Link" url={router.asPath} />
       <main className="margin-Mobile-PC">
         <h1>Links</h1>
         <div className="triangle-bottom" />

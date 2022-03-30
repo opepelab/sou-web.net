@@ -18,6 +18,7 @@ const LayoutProvider: React.FC<RNode> = ({ children }) => {
         <meta name="color-scheme" content="light dark" />
         <meta property="og:site_name" content="Sou Watanabe Homepage" />
         <meta property="og:type" content="website" />
+        <meta property="og:locale" content="ja_JP" />
       </Head>
       <Filter />
       <Header />

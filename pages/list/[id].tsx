@@ -1,7 +1,8 @@
 import client from "libs/contentful";
 import { GetStaticPaths } from "next";
 import OG from "components/Sys/OG";
-import Framerdiv from "components/Sys/Freya";
+import Freya from "components/Sys/Freya";
+import { useRouter } from "next/router";
 import Link from "next/link";
 import { Entry, EntryCollection } from "contentful";
 import { IPostFields } from "libs/types";
@@ -23,9 +24,11 @@ const Limit = 19;
 
 const range = (start: number, end: number) => [...Array(end - start + 1)].map((_, i) => start + i);
 const Id: React.FC<Map> = ({ blog, total }) => {
+  const router = useRouter();
+
   return (
-    <Framerdiv>
-      <OG title="Page List - sou" description="ページリスト" />
+    <Freya>
+      <OG title="Page List - Sou Watanabe" description="Page Lists" url={router.asPath} />
       <main className="HeadMenu textLeft margin-Mobile-PC inblo">
         <h5>記事一覧</h5>
         {blog.map((props: Entry<IPostFields>) => (
@@ -57,7 +60,7 @@ const Id: React.FC<Map> = ({ blog, total }) => {
           </a>
         </Link>
       </main>
-    </Framerdiv>
+    </Freya>
   );
 };
 export const getStaticPaths: GetStaticPaths = async () => {

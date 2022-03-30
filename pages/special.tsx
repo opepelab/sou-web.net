@@ -1,10 +1,12 @@
 import OG from "components/Sys/OG";
 import Freya from "components/Sys/Freya";
+import { useRouter } from "next/router";
 
 const Special: React.FC = () => {
+  const router = useRouter();
   return (
     <Freya>
-      <OG title="Special - Sou Watanabe" description="Give Thanks" />
+      <OG title="Special - Sou Watanabe" description="Give Thanks" url={router.asPath} />
       <main className="textLeft margin50p">
         <h1 className="Special">Special Thanks</h1>
         <div className="triangle-bottom" />

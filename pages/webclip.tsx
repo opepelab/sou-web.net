@@ -1,10 +1,12 @@
 import Freya from "components/Sys/Freya";
 import OG from "components/Sys/OG";
+import { useRouter } from "next/router";
 
 const Webclip: React.FC = () => {
+  const router = useRouter();
   return (
     <Freya>
-      <OG title="Webclip - Sou Watanabe" description="My Web Clip" />
+      <OG title="Webclip - Sou Watanabe" description="My Web Clip" url={router.asPath} />
       <main className="Alink list textLeft margin-Mobile-PC resizeimage">
         <h1>これだと思った重要なウェブページを公開クリップしています</h1>
         <ul>

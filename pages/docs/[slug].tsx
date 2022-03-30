@@ -2,7 +2,8 @@ import client from "libs/contentful";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { ParsedUrlQuery } from "querystring";
 import OG from "components/Sys/OG";
-import Framerdiv from "components/Sys/Freya";
+import Freya from "components/Sys/Freya";
+import { useRouter } from "next/router";
 import styles from "./midasi.module.scss";
 import { EntryCollection } from "contentful";
 import { IPostFields } from "libs/types";
@@ -31,6 +32,7 @@ type Content = {
 };
 
 const Slug: React.FC<Content> = ({ blog }) => {
+  const router = useRouter();
   const options: Options = {
     renderNode: {
       [TYPES.BLOCKS.PARAGRAPH]: (node, children) => {
@@ -60,9 +62,10 @@ const Slug: React.FC<Content> = ({ blog }) => {
       },
     },
   };
+
   return (
-    <Framerdiv>
-      <OG title={blog.fields.title} description={blog.fields.description} />
+    <Freya>
+      <OG title={blog.fields.title} description={blog.fields.description} url={router.asPath} />
       <main className="Alink list textLeft margin-Mobile-PC resizeimage">
         <div className={styles.Time2}>
           <Date dateString={blog.fields.date} />
@@ -72,7 +75,7 @@ const Slug: React.FC<Content> = ({ blog }) => {
         </div>
         <div>{documentToReactComponents(blog.fields.body, options)}</div>
       </main>
-    </Framerdiv>
+    </Freya>
   );
 };
 

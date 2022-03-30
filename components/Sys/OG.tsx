@@ -3,9 +3,10 @@ import Head from "next/head";
 type StProp = {
   title: string;
   description: string;
+  url: string;
 };
 
-const OG = ({ title, description }: StProp) => {
+const OG = ({ title, description, url }: StProp) => {
   return (
     <Head>
       <title>{title}</title>
@@ -16,6 +17,7 @@ const OG = ({ title, description }: StProp) => {
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@pull1102" />
       <meta name="twitter:creator" content="@pull1102" />
+      <meta property="og:url" content={`https://sou-web.net${url}`} />
     </Head>
   );
 };

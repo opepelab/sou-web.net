@@ -1,12 +1,14 @@
 import { useMail } from "hooks/useMail";
 import OG from "components/Sys/OG";
 import Freya from "components/Sys/Freya";
+import { useRouter } from "next/router";
 
 export const Mail: React.FC<HTMLTextAreaElement> = () => {
+  const router = useRouter();
   const { setName, setMail, setMessage, send } = useMail();
   return (
     <Freya>
-      <OG title="Mail - Sou Watanabe" description="My Mail" />
+      <OG title="Mail - Sou Watanabe" description="My Mail" url={router.asPath} />
       <main className="margin-Mobile-PC Mail inblo">
         <form>
           <h1>Are you sure?</h1>

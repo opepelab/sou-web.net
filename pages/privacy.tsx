@@ -1,10 +1,12 @@
 import OG from "components/Sys/OG";
 import Freya from "components/Sys/Freya";
+import { useRouter } from "next/router";
 
 const Privacy: React.FC = () => {
+  const router = useRouter();
   return (
     <Freya>
-      <OG title="Privacy Policy - Sou Watanabe" description="My Policy" />
+      <OG title="Privacy Policy - Sou Watanabe" description="My Policy" url={router.asPath} />
       <main className="margin-Mobile-PC textLeft">
         <h1>
           <ruby>
