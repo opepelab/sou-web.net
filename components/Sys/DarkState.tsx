@@ -18,7 +18,7 @@ const DarkState: React.FC<RNode> = ({ children }): JSX.Element => {
     <>
       <script
         dangerouslySetInnerHTML={{
-          __html: `(function(){let x;const a=window.localStorage.getItem("theme");if(a!==null)x=a;else{e=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}document.documentElement.setAttribute("data-theme",x)})();`,
+          __html: `(function(){const x=window.localStorage.getItem("theme");if(x!==null)x;else{window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}document.documentElement.setAttribute("data-theme",x)})();`,
         }}
       />
       {children}

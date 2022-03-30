@@ -1,12 +1,10 @@
 (function () {
-  let storageTheme = window.localStorage.getItem("theme");
-  if (storageTheme !== null) {
-    storageTheme;
+  let x = window.localStorage.getItem("theme");
+  if (x !== null) {
+    x;
   } else {
-    const ssw = window.matchMedia("(prefers-color-scheme: dark)");
-    storageTheme = ssw.matches ? "dark" : "light";
+    window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
   }
 
-  const root = document.documentElement;
-  root.setAttribute("data-theme", storageTheme);
+  document.documentElement.setAttribute("data-theme", x);
 })();
