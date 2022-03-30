@@ -47,13 +47,13 @@ const Header: React.FC = () => {
                             </a>
                           </ActiveLink>
                         </li>
-                        <li>
+                        {/* <li>
                           <ActiveLink href="/thisis" activeClassName="headerState">
                             <a>
                               <div className="hoverBG BlockM">Thisis</div>
                             </a>
                           </ActiveLink>
-                        </li>
+                        </li> */}
                         <li>
                           <ActiveLink href="/webclip" activeClassName="headerState">
                             <a>
@@ -96,10 +96,10 @@ const Header: React.FC = () => {
                   </div>
                 </li>
                 <li>
-                  <ActiveLink href="/list/1" activeClassName="headerState">
+                  <ActiveLink href="/rss/atom.xml" activeClassName="headerState">
                     <a className="scaleLinks Block">
-                      <div className="gg-format-text" />
-                      Posts
+                      <div className="gg-data" />
+                      RSS
                     </a>
                   </ActiveLink>
                 </li>

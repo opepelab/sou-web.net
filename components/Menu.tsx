@@ -44,11 +44,11 @@ const Menu: React.FC = () => {
                         <a onMouseDown={() => setOpen(!open)}>Resume</a>
                       </ActiveLink>
                     </li>
-                    <li>
+                    {/* <li>
                       <ActiveLink href="/thisis" activeClassName="headerState">
                         <a onMouseDown={() => setOpen(!open)}>Thisis</a>
                       </ActiveLink>
-                    </li>
+                    </li> */}
                     <li>
                       <ActiveLink href="/webclip" activeClassName="headerState">
                         <a onMouseDown={() => setOpen(!open)}>WebClip</a>
@@ -84,10 +84,10 @@ const Menu: React.FC = () => {
                   </ul>
                 </li>
                 <li>
-                  <ActiveLink href="/list/1" activeClassName="headerState">
+                  <ActiveLink href="/rss/atom.xml" activeClassName="headerState">
                     <a className="left1p" onMouseDown={() => setOpen(!open)}>
-                      <div className="gg-format-text" />
-                      Posts
+                      <div className="gg-data" />
+                      RSS
                     </a>
                   </ActiveLink>
                 </li>

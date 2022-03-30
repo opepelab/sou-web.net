@@ -5,7 +5,8 @@ const Text: React.FC = () => {
     <div className="Text">
       <ActiveLink href="/" activeClassName="headerState">
         <a>
-          <div className="heart" />* Sou Watanabe
+          <div className="heart" />
+          Sou Watanabe
         </a>
       </ActiveLink>
     </div>

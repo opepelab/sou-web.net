@@ -12,7 +12,6 @@
   --color-pink: rgb(13 148 136);
   --color-bg2: rgba(255, 255, 255, 0.3);
   --color-icon: lightsalmon;
-  --color-acsent: rgb(234, 138, 94);
 }
 /* 追記 */
 :root[data-theme="dark"] {
@@ -22,7 +21,6 @@
   --color-pink: rgb(94 234 212);
   --color-bg2: rgba(0, 0, 0, 0.04);
   --color-icon: mediumslateblue;
-  --color-acsent: rgb(94 234 212);
 }
 
 html {
@@ -44,7 +42,7 @@ body {
   word-break: break-all;
   text-align: center;
   font-weight: normal;
-  width: 960px;
+  width: 800px;
   @include LRauto;
 }
 
@@ -139,7 +137,7 @@ nav ul li {
   list-style: none;
   display: inline-flex;
   transform: translate(150px);
-  grid-gap: 0px;
+  grid-gap: 15px;
   white-space: nowrap;
   top: -3px;
 }
@@ -149,7 +147,7 @@ nav ul li {
   position: relative;
   list-style: none;
   display: inline-flex;
-  grid-gap: 0px;
+  grid-gap: 15px;
   white-space: nowrap;
   top: -3px;
 }
@@ -298,12 +296,10 @@ textarea {
   z-index: 2;
   position: relative;
   font-family: $Google0;
-  // font-weight: bold;
-  font-style: italic;
   display: inline-flex;
   top: 8px;
-  transform: translate(-160px);
-  font-size: 24px;
+  transform: translate(-30px);
+  font-size: 18px;
 }
 
 @media screen and (min-width: 739.98px) {
@@ -335,7 +331,7 @@ textarea {
 }
 
 #About input:checked + ul {
-  height: 160px;
+  height: 120px;
   transition-duration: 0.25s;
 }
 
@@ -382,9 +378,12 @@ button {
   @include FilterAtom;
   touch-action: none;
   visibility: visible;
+  transition-duration: 0.5s;
 }
 
 .Filter [aria-expanded="false"] {
   @include FilterAtom;
   visibility: hidden;
+  opacity: 0;
+  transition-duration: 0.5s;
 }

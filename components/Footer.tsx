@@ -9,20 +9,15 @@ const Footer: React.FC = () => {
           <a href="https://nextjs.org/">
             <u>Next.js</u>
           </a>
-        </div>{" "}
-        <Link href="/">
-          <a className="inblo C">© sou-web.net</a>
-        </Link>
+        </div>
         <br />
-        <Link href="/rss/atom.xml">
-          <a className="inblo C">
-            <u>RSS Feed</u>
-          </a>
-        </Link>{" "}
         <Link href="/privacy">
           <a className="inblo C">
             <u>Privacy Policy</u>
           </a>
+        </Link>{" "}
+        <Link href="/">
+          <a className="inblo C">© sou-web.net 2022</a>
         </Link>
       </footer>
     </div>

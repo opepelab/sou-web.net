@@ -17,8 +17,8 @@ $r25: 25%;
 $r50: $r25 * 2;
 $r100: $r50 * 2;
 
-$Google0: "Herr Von Muellerhoff";
-$Google2: "M PLUS Rounded 1c";
+$Google2: "Herr Von Muellerhoff";
+$Google0: "M PLUS Rounded 1c";
 $Google: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
   Helvetica Neue, "Noto Sans JP", sans-serif;
 
@@ -94,6 +94,7 @@ $ME: rgba(0, 0, 0, 0.75);
 @mixin FilterAtom {
   z-index: 1;
   position: fixed;
+  background: rgba(0, 0, 0, 0.5);
   top: $r0;
   left: $r0;
   width: $r100;
@@ -103,7 +104,7 @@ $ME: rgba(0, 0, 0, 0.75);
 @mixin Menu {
   z-index: 3;
   position: fixed;
-  backdrop-filter: blur(10px);
+  background: var(--color-bg);
   left: $p0;
   top: $p0;
   width: 250px;

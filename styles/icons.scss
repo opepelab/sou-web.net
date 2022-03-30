@@ -31,29 +31,46 @@
   right: -5px;
 }
 
-.gg-format-text {
+.gg-data {
+  transform: scale(var(--ggs, 1));
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.gg-data,
+.gg-data::after,
+.gg-data::before {
   box-sizing: border-box;
   position: relative;
   display: inline-block;
-  transform: scale(var(--ggs, 1));
-  width: 10px;
-  height: 8px;
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent;
-  box-shadow: 0 -2px 0 0, inset 0 0 0 2px;
-  margin-right: 9px;
+  border: 2px solid;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
 }
 
-.gg-format-text::after {
+.gg-data::after,
+.gg-data::before {
   content: "";
-  display: block;
-  box-sizing: border-box;
   position: absolute;
-  width: 18px;
-  height: 18px;
-  border: 1px dashed;
+  width: 6px;
+  height: 6px;
+  top: 2px;
+  left: 2px;
+}
+
+.gg-data::after {
+  background: linear-gradient(to left, currentColor 8px, transparent 0) no-repeat bottom center/2px 8px;
+  width: 22px;
+  height: 22px;
   top: -6px;
-  left: -8px;
+  left: -6px;
+}
+
+.gg-data,
+.gg-data::after {
+  border-top-color: transparent;
+  border-bottom-color: transparent;
 }
 
 .gg-mail,
@@ -295,14 +312,15 @@
   height: 15px; /* 正方形を作る */
   position: relative; /* 基準位置とする */
   display: inline-flex;
-  transform: rotate(-50deg);
+  transform: rotate(-60deg);
+  top: 2px;
 }
 .heart::before,
 .heart::after {
   content: ""; /* 疑似要素に必須 */
   width: 50%; /* ハートの丸い部分の大きさにかかわる */
   height: 80%; /* ハートの高さにかかわる */
-  background: var(--color-acsent); /* ハートの色 */
+  background: rgb(94 234 212); /* ハートの色 */
   border-radius: 25px 25px 0 0; /* ハートの半円を生成 */
   display: block; /* ブロック要素にする */
   position: absolute; /* 相対位置に指定 */
