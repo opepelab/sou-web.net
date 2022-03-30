@@ -6,6 +6,7 @@
 @tailwind utilities;
 
 :root[data-theme="light"] {
+  color-scheme: light;
   --color-text: rgb(31 41 55);
   --color-bg: rgb(255, 244, 240);
   --color-pink: rgb(13 148 136);
@@ -15,6 +16,7 @@
 }
 /* 追記 */
 :root[data-theme="dark"] {
+  color-scheme: dark;
   --color-text: rgb(229 231 235);
   --color-bg: rgb(40, 32, 35);
   --color-pink: rgb(94 234 212);
