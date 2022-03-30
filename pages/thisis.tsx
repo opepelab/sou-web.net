@@ -1,12 +1,10 @@
 import OG from "components/Sys/OG";
 import Freya from "components/Sys/Freya";
-import { useRouter } from "next/router";
 
 const Thisblog: React.FC = () => {
-  const router = useRouter();
   return (
     <Freya>
-      <OG title="Thisis - Sou Watanabe" description="This Site is" url={router.asPath} />
+      <OG title="Thisis - Sou Watanabe" description="This Site is" />
       <main className="textLeft margin-Mobile-PC">
         <h1>What is this blog Read me?</h1>
         <p>Host: Vercel etc..</p>

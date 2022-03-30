@@ -1,12 +1,10 @@
 import OG from "components/Sys/OG";
 import Freya from "components/Sys/Freya";
-import { useRouter } from "next/router";
 
 const Picture: React.FC = () => {
-  const router = useRouter();
   return (
     <Freya>
-      <OG title="Art - Sou Watanabe" description="My Arts" url={router.asPath} />
+      <OG title="Art - Sou Watanabe" description="My Arts" />
       <main className="margin-Mobile-PC inblo">
         <h1>Art</h1>
         <div>

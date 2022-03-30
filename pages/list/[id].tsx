@@ -24,11 +24,9 @@ const Limit = 19;
 
 const range = (start: number, end: number) => [...Array(end - start + 1)].map((_, i) => start + i);
 const Id: React.FC<Map> = ({ blog, total }) => {
-  const router = useRouter();
-
   return (
     <Freya>
-      <OG title="Page List - Sou Watanabe" description="Page Lists" url={router.asPath} />
+      <OG title="Page List - Sou Watanabe" description="Page Lists" />
       <main className="HeadMenu textLeft margin-Mobile-PC inblo">
         <h5>記事一覧</h5>
         {blog.map((props: Entry<IPostFields>) => (

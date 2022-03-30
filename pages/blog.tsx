@@ -2,7 +2,6 @@ import client from "libs/contentful";
 import { GetStaticProps } from "next";
 import OG from "components/Sys/OG";
 import Freya from "components/Sys/Freya";
-import { useRouter } from "next/router";
 import { Entry, EntryCollection } from "contentful";
 import { IPostFields } from "libs/types";
 import Date from "components/Sys/date";
@@ -15,10 +14,9 @@ type Map = {
 };
 
 const Blog: React.FC<Map> = ({ blog }) => {
-  const router = useRouter();
   return (
     <Freya>
-      <OG title="Blog - Sou Watanabe" description="My Blog" url={router.asPath} />
+      <OG title="Blog - Sou Watanabe" description="My Blog" />
       <main className="textLeft margin-Mobile-PC inblo">
         <h5>記事一覧</h5>
         {blog.map((props: Entry<IPostFields>) => (

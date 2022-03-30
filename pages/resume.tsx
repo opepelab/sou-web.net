@@ -1,12 +1,10 @@
 import OG from "components/Sys/OG";
 import Freya from "components/Sys/Freya";
-import { useRouter } from "next/router";
 
 const Resume: React.FC = () => {
-  const router = useRouter();
   return (
     <Freya>
-      <OG title="Resume - Sou Watanabe" description="My Resume" url={router.asPath} />
+      <OG title="Resume - Sou Watanabe" description="My Resume" />
       <main className="list margin-Mobile-PC textLeft inblo">
         <h1>Resume</h1>
         <p>渡邊 蒼(Sou Watanabe)と申します。1994年生まれ現27歳です。</p>
