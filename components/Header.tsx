@@ -105,7 +105,7 @@ const Header: React.FC<boolProp> = ({ view, setView, links, setLinks }) => {
                 </li>
                 <li>
                   <ActiveLink href="/list/1" activeClassName="headerState">
-                    <a className="scaleLinks Block">
+                    <a className="Line scaleLinks Block">
                       <div className="gg-format-text" />
                       Posts
                     </a>
@@ -115,7 +115,7 @@ const Header: React.FC<boolProp> = ({ view, setView, links, setLinks }) => {
               <ul className="nav1-right">
                 <li>
                   <ActiveLink href="/mail" activeClassName="headerState">
-                    <a className="scaleLinks Block">
+                    <a className="Line scaleLinks Block">
                       <div className="gg-mail" />
                       Mail
                     </a>
@@ -123,7 +123,7 @@ const Header: React.FC<boolProp> = ({ view, setView, links, setLinks }) => {
                 </li>
                 <li>
                   <ActiveLink href="/feature" activeClassName="headerState">
-                    <a className="scaleLinks Block">
+                    <a className="Line scaleLinks Block">
                       <div className="gg-git-fork" />
                       Feature
                     </a>

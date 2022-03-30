@@ -6,15 +6,15 @@
 @tailwind utilities;
 
 :root[data-theme="light"] {
-  --color-text: rgb(30 41 59);
+  --color-text: rgb(31 41 55);
   --color-bg: rgb(255, 244, 240);
   --color-pink: rgb(13 148 136);
-  --color-bg2: rgba(255, 255, 255, 0.35);
+  --color-bg2: rgba(255, 255, 255, 0.3);
   --color-icon: lightsalmon;
 }
 /* 追記 */
 :root[data-theme="dark"] {
-  --color-text: rgb(241 245 249);
+  --color-text: rgb(229 231 235);
   --color-bg: rgb(40, 32, 35);
   --color-pink: rgb(94 234 212);
   --color-bg2: rgba(0, 0, 0, 0.04);
@@ -139,7 +139,6 @@ nav ul li {
 }
 
 .Line {
-  padding-bottom: 4px;
   position: relative;
 }
 
@@ -152,6 +151,7 @@ nav ul li {
   width: 0;
   left: 50%;
   transform: translateX(-50%);
+  border-radius: 20px;
   transition: all 0.5s;
 }
 

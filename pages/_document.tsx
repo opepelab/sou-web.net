@@ -45,4 +45,5 @@ export default class MyDocument extends Document {
 
 // className="dark:bg-stone-800 dark:text-zinc-100 bg-amber-50 text-gray-600"
 // text-rose-500 dark:text-teal-400
+// #f4f4f5 gray-600
 // dark: slate-800 light: slate-100
