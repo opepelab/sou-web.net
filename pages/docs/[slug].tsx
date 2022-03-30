@@ -12,7 +12,7 @@ import Date from "components/Sys/date";
 import * as TYPES from "@contentful/rich-text-types";
 import { Options } from "@contentful/rich-text-react-renderer";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { a11yDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { nord } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 interface IParams extends ParsedUrlQuery {
   slug: string;
@@ -53,7 +53,7 @@ const Slug: React.FC<Content> = ({ blog }) => {
     renderMark: {
       [TYPES.MARKS.CODE]: (text) => {
         return (
-          <SyntaxHighlighter language="tsx" style={a11yDark} showLineNumbers>
+          <SyntaxHighlighter language="tsx" style={nord} showLineNumbers>
             {text}
           </SyntaxHighlighter>
         );

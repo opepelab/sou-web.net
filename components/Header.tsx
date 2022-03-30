@@ -1,11 +1,11 @@
 import ActiveLink from "./Sys/ActiveLink";
 import { useRecoilState } from "recoil";
-import { viewState, linksState } from "libs/unique";
+import { aboutState, linksState } from "libs/unique";
 import ToggleDarkMode from "components/DarkToggle";
 import Text from "components/Text";
 
 const Header: React.FC = () => {
-  const [view, setView] = useRecoilState(viewState);
+  const [about, setAbout] = useRecoilState(aboutState);
   const [links, setLinks] = useRecoilState(linksState);
   return (
     <div>
@@ -13,7 +13,7 @@ const Header: React.FC = () => {
         <div
           className="bgg"
           onClick={() => {
-            view ? setView(false) : null;
+            about ? setAbout(false) : null;
             links ? setLinks(false) : null;
           }}
         >
@@ -23,15 +23,15 @@ const Header: React.FC = () => {
             <nav>
               <ul className="nav1-left">
                 <li>
-                  <div aria-expanded={view} onClick={() => setView(!view)}>
-                    <a className="extend Block point" tabIndex={0}>
+                  <div aria-expanded={about} onClick={() => setAbout(!about)}>
+                    <a className="scaleLinks Block point" tabIndex={0}>
                       <div className="gg-details-more" />
-                      View
+                      About
                       <div className="SankakuBlack" />
                     </a>
                   </div>
                   <div className="NavDrop">
-                    <div aria-expanded={view}>
+                    <div aria-expanded={about}>
                       <ul className="White menu">
                         <li>
                           <ActiveLink href="/resume" activeClassName="headerState">
@@ -67,7 +67,7 @@ const Header: React.FC = () => {
                 </li>
                 <li>
                   <div aria-expanded={links} onClick={() => setLinks(!links)}>
-                    <a className="extend Block point" tabIndex={0}>
+                    <a className="scaleLinks Block point" tabIndex={0}>
                       <div className="gg-style" />
                       Link
                       <div className="SankakuBlack" />

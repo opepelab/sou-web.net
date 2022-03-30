@@ -12,7 +12,7 @@
   --color-pink: rgb(13 148 136);
   --color-bg2: rgba(255, 255, 255, 0.3);
   --color-icon: lightsalmon;
-  --color-acsent: rgb(94 234 212);
+  --color-acsent: rgb(234, 138, 94);
 }
 /* 追記 */
 :root[data-theme="dark"] {
@@ -22,13 +22,13 @@
   --color-pink: rgb(94 234 212);
   --color-bg2: rgba(0, 0, 0, 0.04);
   --color-icon: mediumslateblue;
-  --color-acsent: rgb(234, 138, 94);
+  --color-acsent: rgb(94 234 212);
 }
 
 html {
   -webkit-text-size-adjust: $r100;
   overflow: scroll;
-  padding: $p100 $p100 $p40 $p100;
+  padding: 58px 58px $p40 58px;
 }
 
 body {
@@ -44,7 +44,7 @@ body {
   word-break: break-all;
   text-align: center;
   font-weight: normal;
-  width: 640px;
+  width: 960px;
   @include LRauto;
 }
 
@@ -142,27 +142,6 @@ nav ul li {
   grid-gap: 0px;
   white-space: nowrap;
   top: -3px;
-}
-
-.extend {
-  position: relative;
-}
-
-.extend::after {
-  content: "";
-  position: absolute;
-  background-color: var(--color-text);
-  bottom: 0;
-  height: 2px;
-  width: 0;
-  right: 50%;
-  transform: translateX(50%);
-  border-radius: 20px;
-  transition: all 0.5s;
-}
-
-.extend:hover::after {
-  width: 100%;
 }
 
 .nav1-left {
@@ -323,6 +302,7 @@ textarea {
   font-style: italic;
   display: inline-flex;
   top: 8px;
+  transform: translate(-160px);
   font-size: 24px;
 }
 

@@ -1,13 +1,13 @@
 import { useRecoilState } from "recoil";
-import { viewState, linksState } from "libs/unique";
+import { aboutState, linksState } from "libs/unique";
 
 const Filter: React.FC = () => {
-  const [view, setView] = useRecoilState(viewState);
+  const [about, setView] = useRecoilState(aboutState);
   const [links, setLinks] = useRecoilState(linksState);
   return (
     <div className="Filter">
       <div
-        aria-expanded={view || links}
+        aria-expanded={about || links}
         onClick={() => {
           setView(false);
           setLinks(false);

@@ -6,9 +6,9 @@ export const themeState = atom<Theme>({
   default: "systemUI",
 });
 
-export type View = false | true;
-export const viewState = atom<View>({
-  key: "viewState",
+export type About = false | true;
+export const aboutState = atom<About>({
+  key: "aboutState",
   default: false,
 });
 
