@@ -16,7 +16,8 @@ const LayoutProvider: React.FC<RNode> = ({ children }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="Sou Watanabe" />
         <meta name="color-scheme" content="light dark" />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:site_name" content="Sou Watanabe Homepage" />
+        <meta property="og:type" content="website" />
       </Head>
       <Filter />
       <Header />
