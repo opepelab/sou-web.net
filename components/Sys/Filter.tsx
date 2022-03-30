@@ -1,10 +1,10 @@
-import React from "react";
+import { Dispatch, SetStateAction } from "react";
 
 type boolProp = {
   view: boolean;
-  setView: React.Dispatch<React.SetStateAction<boolean>>;
+  setView: Dispatch<SetStateAction<boolean>>;
   links: boolean;
-  setLinks: React.Dispatch<React.SetStateAction<boolean>>;
+  setLinks: Dispatch<SetStateAction<boolean>>;
 };
 
 const Filter: React.FC<boolProp> = ({ view, setView, links, setLinks }) => {
