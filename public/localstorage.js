@@ -1,18 +1,13 @@
 (function () {
-  let x = window.localStorage.getItem("theme");
-  if (x !== null) x;
-  else {
-    window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  let theme;
+  const storageTheme = window.localStorage.getItem("theme");
+  if (storageTheme !== null) {
+    theme = storageTheme;
+  } else {
+    const mql = window.matchMedia("(prefers-color-scheme: dark)");
+    theme = mql.matches ? "dark" : "light";
   }
 
-  document.documentElement.setAttribute("data-theme", x);
-})();
-
-(function () {
-  const x = window.localStorage.getItem("theme");
-  if (x !== null) x;
-  else {
-    window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-  }
-  document.documentElement.setAttribute("data-theme", x);
+  const root = document.documentElement;
+  root.setAttribute("data-theme", theme);
 })();
