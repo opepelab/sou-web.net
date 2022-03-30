@@ -28,9 +28,11 @@
 html {
   -webkit-text-size-adjust: $r100;
   overflow: scroll;
+  padding: $p100 $p100 $p40 $p100;
 }
 
 body {
+  position: relative;
   transition: all 2s;
   background-color: var(--color-bg);
   color: var(--color-text);
@@ -44,11 +46,6 @@ body {
   font-weight: normal;
   width: 640px;
   @include LRauto;
-}
-@media screen and (min-width: 739.98px) {
-  body {
-    padding: $p40;
-  }
 }
 
 pre {

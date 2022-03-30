@@ -6,10 +6,6 @@
   text-align: center;
 }
 
-.margin-Mobile-PC {
-  margin-top: 15%;
-}
-
 .flex-container {
   display: none;
 }
@@ -86,8 +82,8 @@ a dt .dateST {
   z-index: 1;
   position: fixed;
   width: 100%;
-  height: 60px;
-  background: var(--color-bg2);
+  height: 58px;
+  background: var(--color-bg);
   backdrop-filter: blur(10px);
   top: $p0;
   left: $p0;

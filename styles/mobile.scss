@@ -3,6 +3,7 @@
 @media screen and (max-width: 739.98px) {
   html {
     height: 100%;
+    padding: 60px 0 0 0;
   }
 
   footer {
@@ -24,12 +25,6 @@
     top: 14px;
   }
 
-  .bgg {
-    position: fixed;
-    height: 60px;
-    border: none;
-  }
-
   .Line button {
     z-index: 4;
     position: relative;
@@ -47,8 +42,8 @@
     z-index: 4;
     position: fixed;
     display: inline-block;
-    right: 7px;
-    top: 7px;
+    right: 6px;
+    top: 6px;
   }
   .Line span {
     display: block;
@@ -137,8 +132,8 @@
   .togglePosition {
     z-index: 4;
     position: absolute;
-    top: 9px;
-    right: 59px;
+    top: 8px;
+    right: 58px;
   }
 
   .none {
