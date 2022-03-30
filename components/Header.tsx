@@ -1,16 +1,12 @@
 import ActiveLink from "./Sys/ActiveLink";
-import { Dispatch, SetStateAction } from "react";
+import { useRecoilState } from "recoil";
+import { viewState, linksState } from "libs/unique";
 import ToggleDarkMode from "components/DarkToggle";
 import Text from "components/Text";
 
-type boolProp = {
-  view: boolean;
-  setView: Dispatch<SetStateAction<boolean>>;
-  links: boolean;
-  setLinks: Dispatch<SetStateAction<boolean>>;
-};
-
-const Header: React.FC<boolProp> = ({ view, setView, links, setLinks }) => {
+const Header: React.FC = () => {
+  const [view, setView] = useRecoilState(viewState);
+  const [links, setLinks] = useRecoilState(linksState);
   return (
     <div>
       <header>
@@ -118,7 +114,7 @@ const Header: React.FC<boolProp> = ({ view, setView, links, setLinks }) => {
                   </ActiveLink>
                 </li>
                 <li>
-                  <ActiveLink href="/feature" activeClassName="headerState">
+                  <ActiveLink href="/feature" activeClassName="headerState extend">
                     <a className="scaleLinks Block">
                       <div className="gg-git-fork" />
                       Feature

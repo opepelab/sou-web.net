@@ -140,7 +140,7 @@ nav ul li {
   list-style: none;
   display: inline-flex;
   transform: translate(150px);
-  grid-gap: 50px;
+  grid-gap: 0px;
   white-space: nowrap;
   top: -3px;
 }
@@ -156,8 +156,8 @@ nav ul li {
   bottom: 0;
   height: 2px;
   width: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 50%;
+  transform: translateX(50%);
   border-radius: 20px;
   transition: all 0.5s;
 }
@@ -171,7 +171,7 @@ nav ul li {
   position: relative;
   list-style: none;
   display: inline-flex;
-  grid-gap: 50px;
+  grid-gap: 0px;
   white-space: nowrap;
   top: -3px;
 }
@@ -239,7 +239,7 @@ a {
 
 .Block {
   width: 100%;
-  padding: 10px 10px 14px 10px;
+  padding: 10px 24px 14px 24px;
 }
 
 .BlockM {

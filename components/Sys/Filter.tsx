@@ -1,13 +1,9 @@
-import { Dispatch, SetStateAction } from "react";
+import { useRecoilState } from "recoil";
+import { viewState, linksState } from "libs/unique";
 
-type boolProp = {
-  view: boolean;
-  setView: Dispatch<SetStateAction<boolean>>;
-  links: boolean;
-  setLinks: Dispatch<SetStateAction<boolean>>;
-};
-
-const Filter: React.FC<boolProp> = ({ view, setView, links, setLinks }) => {
+const Filter: React.FC = () => {
+  const [view, setView] = useRecoilState(viewState);
+  const [links, setLinks] = useRecoilState(linksState);
   return (
     <div className="Filter">
       <div
