@@ -4,7 +4,6 @@ import "styles/globals.scss";
 import "styles/mobile.scss";
 import "styles/icons.scss";
 import "styles/img.scss";
-import Head from "next/head";
 import LayoutProvider from "components/Layout/layout";
 import usePageView from "hooks/usePageView";
 import { RecoilRoot } from "recoil";
@@ -14,9 +13,6 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
   usePageView();
   return (
     <>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </Head>
       <RecoilRoot>
         <DarkState>
           <LayoutProvider>
