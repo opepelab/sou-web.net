@@ -2,7 +2,6 @@ import client from "libs/contentful";
 import { GetStaticPaths } from "next";
 import OG from "components/Sys/OG";
 import Freya from "components/Sys/Freya";
-import { useRouter } from "next/router";
 import Link from "next/link";
 import { Entry, EntryCollection } from "contentful";
 import { IPostFields } from "libs/types";
