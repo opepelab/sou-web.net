@@ -8,10 +8,7 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <link rel="shortcut icon" href="/folds.ico" />
-          <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff" rel="stylesheet" />
-          <link href="https://fonts.googleapis.com/css2?family=Noto+Sans" rel="stylesheet" />
-          <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP" rel="stylesheet" />
-          <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet" />
           <link
             href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap"
             rel="stylesheet"
