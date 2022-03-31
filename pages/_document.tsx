@@ -1,4 +1,3 @@
-// pages/_document.js
 import { GA_TRACKING_ID } from "../libs/gtag";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
@@ -8,9 +7,8 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <link rel="shortcut icon" href="/folds.ico" />
-          {/* <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet" /> */}
           <link
-            href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap"
             rel="stylesheet"
           />
           {GA_TRACKING_ID && (
