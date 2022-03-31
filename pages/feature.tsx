@@ -7,8 +7,9 @@ const Feature: React.FC = () => {
       <OG title="Feature - Sou Watanabe" description="My Compurter" />
       <main className="inblo resizeimage">
         <h1>Feature</h1>
+
+        <img src="/picture/IMG-0554.jpg" height="700" />
         <dl>
-          <img src="/picture/IMG-0554.jpg" width="600" height="800" />
           <dt>OS</dt>
           <dd>Windows / Mac</dd>
           <dt>Version</dt>

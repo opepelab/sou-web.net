@@ -20,7 +20,7 @@ type Map = {
   };
 };
 
-const Limit = 19;
+const Limit = 25;
 
 const range = (start: number, end: number) => [...Array(end - start + 1)].map((_, i) => start + i);
 const Id: React.FC<Map> = ({ blog, total }) => {

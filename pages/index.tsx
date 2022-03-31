@@ -53,7 +53,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const data: EntryCollection<IPostFields> = await client.getEntries({
     content_type: "blog",
     order: "-fields.date",
-    limit: 10,
+    limit: 14,
   });
   return {
     props: {

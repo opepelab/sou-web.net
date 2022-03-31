@@ -41,8 +41,11 @@ body {
   text-align: center;
   font-weight: normal;
   width: 800px;
-  padding: 42px;
   @include LRauto;
+}
+
+article {
+  padding: 24px;
 }
 
 pre {
