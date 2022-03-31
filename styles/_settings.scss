@@ -113,6 +113,18 @@ $ME: rgba(0, 0, 0, 0.75);
   transition-duration: 0.5s;
 }
 
+// @mixin Menu {
+//   z-index: 3;
+//   position: fixed;
+//   display: inline-block;
+//   background: var(--color-bg);
+//   right: -100px;
+//   top: $p0;
+//   width: 250px;
+//   height: 400px;
+//   transition-duration: 0.5s;
+// }
+
 @mixin CenString {
   position: absolute;
   inset: 0%;
