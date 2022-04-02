@@ -162,11 +162,11 @@ nav ul li {
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding: 20px;
-  margin: -8px 8px 0 0px;
+  padding: 20px 20px 20px 30px;
+  margin: -8px 0 0 0;
   row-gap: 20px;
   width: 50%;
-  right: $r0;
+  left: -5px;
   white-space: nowrap;
   background: var(--color-bg);
   border-radius: 8px;
@@ -308,11 +308,11 @@ textarea {
 .Text {
   z-index: 2;
   position: relative;
-  font-family: $Google;
+  font-family: $Google0;
   display: inline-flex;
   top: 8px;
   transform: translate(-30px);
-  font-size: 18px;
+  font-size: 20px;
 }
 
 @media screen and (min-width: 739.98px) {
