@@ -80,7 +80,7 @@ $ME: rgba(0, 0, 0, 0.75);
 }
 
 @mixin H5 {
-  background: rgba(0, 0, 0, 0.15);
+  border: solid var(--color-text) 1px;
   display: $IB;
   padding: 0 5px 0 5px;
   margin: 0%;
