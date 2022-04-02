@@ -107,8 +107,9 @@
     .nav2 li {
       display: none;
     }
+
     @include Menu;
-    opacity: 0;
+    transform: scaleY(0);
     visibility: hidden;
   }
 
