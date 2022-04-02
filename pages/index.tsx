@@ -21,7 +21,7 @@ const Index: React.FC<Map> = ({ blog }) => {
       <main className="inblo textLeft">
         <h1 className="text-3xl m-0 font-extralight">Hello? My name is Sou.🖐</h1>
         <p className="text-lg font-extralight">
-          I am Software contributor
+          I am Software contributor,
           <br />
           from JAPAN Tokyo.
         </p>
