@@ -13,9 +13,9 @@ const variants = {
 
 const Freya: React.FC<RNode> = ({ children }) => {
   return (
-    <motion.article initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ duration: 0.5 }}>
+    <motion.div initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ duration: 0.5 }}>
       {children}
-    </motion.article>
+    </motion.div>
   );
 };
 

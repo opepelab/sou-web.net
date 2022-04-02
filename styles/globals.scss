@@ -42,11 +42,8 @@ body {
   text-align: center;
   font-weight: normal;
   width: 1000px;
-  @include LRauto;
-}
-
-article {
   padding: 100px;
+  @include LRauto;
 }
 
 pre {
@@ -162,22 +159,25 @@ nav ul li {
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding: 20px 20px 20px 30px;
   margin: -8px 0 0 0;
-  row-gap: 20px;
+  padding: 8px 20px 8px 0;
+  row-gap: 0px;
   width: 50%;
-  left: -5px;
+  right: 8px;
   white-space: nowrap;
   background: var(--color-bg);
-  border-radius: 8px;
-  border: solid 2px var(--color-text);
-  transition: all 2s;
+  border-radius: 4px;
+  border: solid 1px var(--color-text);
 }
 
 .nav2 a {
   font-size: $p16;
   height: 20px;
   padding: 10px 10px 10px 0;
+}
+
+.nav2 li {
+  padding: 8px 20px 8px 20px;
 }
 
 .ListNum {
