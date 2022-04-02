@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 import Head from "next/head";
 import Header from "components/Header";
-import Menu from "components/Menu";
+import MenuSeco from "components/MenuSeco";
 import Footer from "components/Footer";
 import Filter from "components/Sys/Filter";
 
@@ -22,7 +22,7 @@ const LayoutProvider: React.FC<RNode> = ({ children }) => {
       </Head>
       <Filter />
       <Header />
-      <Menu />
+      <MenuSeco />
       <div className="footerFix">{children}</div>
       <Footer />
     </>

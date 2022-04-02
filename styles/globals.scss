@@ -7,8 +7,9 @@
 
 :root[data-theme="light"] {
   color-scheme: light;
-  --color-text: rgb(31 41 55);
-  --color-bg: rgb(255, 244, 240);
+  --color-text: rgb(55 65 81); //gray-700
+  --color-bg: rgb(255, 255, 255);
+  // --color-bg: rgb(255, 244, 240);
   --color-pink: rgb(13 148 136);
   --color-bg2: rgba(255, 255, 255, 0.3);
   --color-icon: lightsalmon;
@@ -16,10 +17,10 @@
 /* 追記 */
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --color-text: rgb(229 231 235);
+  --color-text: rgb(209 213 219); //gray-300
   --color-bg: rgb(40, 32, 35);
   --color-pink: rgb(94 234 212);
-  --color-bg2: rgba(0, 0, 0, 0.04);
+  --color-bg2: rgba(0, 0, 0, 0.3);
   --color-icon: mediumslateblue;
 }
 
@@ -40,12 +41,12 @@ body {
   }
   text-align: center;
   font-weight: normal;
-  width: 848px;
+  width: 1000px;
   @include LRauto;
 }
 
 article {
-  padding: 24px;
+  padding: 100px;
 }
 
 pre {
@@ -105,15 +106,16 @@ nav ul li {
   position: absolute;
   margin-top: 40px;
   opacity: 1;
-  transition-duration: 0.5s;
+  transition-duration: 0.2s;
   visibility: visible;
 }
 
 .NavDrop [aria-expanded="false"] {
   position: absolute;
-  margin-top: 20px;
+  margin-top: 60px;
   opacity: 0;
-  transition-duration: 0.5s;
+  transform: scaleY(0);
+  transition-duration: 0.2s;
   visibility: hidden;
 }
 
@@ -161,12 +163,21 @@ nav ul li {
   flex-direction: column;
   text-align: left;
   padding: 20px;
+  margin: -8px 8px 0 0px;
   row-gap: 20px;
+  width: 50%;
+  right: $r0;
   white-space: nowrap;
+  background: var(--color-bg);
+  border-radius: 8px;
+  border: solid 2px var(--color-text);
+  transition: all 2s;
 }
 
 .nav2 a {
   font-size: $p16;
+  height: 20px;
+  padding: 10px 10px 10px 0;
 }
 
 .ListNum {
@@ -323,42 +334,14 @@ textarea {
   @include Back;
 }
 
-#About input {
-  display: none;
-}
-#About ul {
-  height: 0;
-  overflow: hidden;
-  transition-duration: 0.25s;
-}
-
-#About input:checked + ul {
-  height: 120px;
-  transition-duration: 0.25s;
-}
-
 #About ul li {
   height: 20px;
   padding: 20px 0 0 40px;
 }
 
-#Links input {
-  display: none;
-}
-
-#Links ul {
-  height: 0;
-  overflow: hidden;
-  transition-duration: 0.25s;
-}
-#Links input:checked + ul {
-  height: 120px;
-  transition-duration: 0.25s;
-}
-
 #Links ul li {
   height: 20px;
-  padding: 20px 0 0 40px;
+  padding: 20px 0 0px 40px;
 }
 
 form {

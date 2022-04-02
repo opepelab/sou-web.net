@@ -17,3 +17,21 @@ export const linksState = atom<Links>({
   key: "links",
   default: false,
 });
+
+export type Menu = false | true;
+export const menuState = atom<Menu>({
+  key: "menu",
+  default: false,
+});
+
+export type AboutRes = false | true;
+export const aboutStateRes = atom<AboutRes>({
+  key: "aboutRes",
+  default: false,
+});
+
+export type LinksRes = false | true;
+export const linksStateRes = atom<LinksRes>({
+  key: "linksRes",
+  default: false,
+});

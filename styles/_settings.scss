@@ -95,7 +95,7 @@ $ME: rgba(0, 0, 0, 0.75);
 @mixin FilterAtom {
   z-index: 1;
   position: fixed;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.15);
   top: $r0;
   left: $r0;
   width: $r100;
@@ -104,14 +104,23 @@ $ME: rgba(0, 0, 0, 0.75);
 
 @mixin Menu {
   z-index: 3;
-  position: fixed;
-  background: var(--color-bg);
-  left: $p0;
-  top: $p0;
-  width: 250px;
-  height: $r100;
-  transition-duration: 0.5s;
+  position: relative;
+  right: $r0;
+  top: $r0;
+  transition: all 0.2s;
+  transition-timing-function: steps(2, start);
 }
+
+// @mixin Menu {
+//   z-index: 3;
+//   position: fixed;
+//   background: var(--color-bg);
+//   left: $p0;
+//   top: $p0;
+//   width: 250px;
+//   height: $r100;
+//   transition-duration: 0.5s;
+// }
 
 // @mixin Menu {
 //   z-index: 3;

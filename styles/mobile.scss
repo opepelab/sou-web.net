@@ -18,6 +18,10 @@
     width: 100%;
   }
 
+  article {
+    padding: 16px;
+  }
+
   .Text {
     position: absolute;
     display: inline-flex;
@@ -100,9 +104,11 @@
   }
 
   .MenuList [aria-expanded="false"] {
+    .nav2 li {
+      display: none;
+    }
     @include Menu;
     opacity: 0;
-    transform: translate(-300px);
     visibility: hidden;
   }
 
@@ -113,6 +119,34 @@
 
   .disableN {
     display: none;
+  }
+
+  .AboutState [aria-expanded="true"] {
+    opacity: 1;
+    transition-duration: 0.2s;
+    visibility: visible;
+    height: 120px;
+  }
+
+  .AboutState [aria-expanded="false"] {
+    transition-duration: 0.2s;
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+  }
+
+  .LinksState [aria-expanded="true"] {
+    opacity: 1;
+    transition-duration: 0.2s;
+    visibility: visible;
+    height: 120px;
+  }
+
+  .LinksState [aria-expanded="false"] {
+    transition-duration: 0.2s;
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
   }
 
   /* ブログとコンタクトのスケール再定義 */

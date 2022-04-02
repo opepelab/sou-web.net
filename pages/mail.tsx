@@ -7,7 +7,7 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
   return (
     <Freya>
       <OG title="Mail - Sou Watanabe" description="My Mail" />
-      <main className="inblo">
+      <main className="Mail inblo">
         <form>
           <h1>Are you sure?</h1>
           <dl>

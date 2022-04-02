@@ -1,12 +1,15 @@
 import ActiveLink from "./Sys/ActiveLink";
-import { useRecoilState } from "recoil";
-import { aboutState, linksState } from "libs/unique";
+import { useRecoilState, useSetRecoilState } from "recoil";
+import { aboutState, linksState, menuState, aboutStateRes, linksStateRes } from "libs/unique";
 import ToggleDarkMode from "components/DarkToggle";
 import Text from "components/Text";
 
 const Header: React.FC = () => {
   const [about, setAbout] = useRecoilState(aboutState);
   const [links, setLinks] = useRecoilState(linksState);
+  const [menu, setMenu] = useRecoilState(menuState);
+  const setAboutRes = useSetRecoilState(aboutStateRes);
+  const setLinksRes = useSetRecoilState(linksStateRes);
   return (
     <div>
       <header>
@@ -15,6 +18,9 @@ const Header: React.FC = () => {
           onClick={() => {
             about ? setAbout(false) : null;
             links ? setLinks(false) : null;
+            menu ? setMenu(false) : null;
+            setAboutRes(false);
+            setLinksRes(false);
           }}
         >
           <Text />
@@ -23,7 +29,7 @@ const Header: React.FC = () => {
             <nav>
               <ul className="nav1-left">
                 <li>
-                  <div aria-expanded={about} onClick={() => setAbout(!about)}>
+                  <div onClick={() => setAbout(!about)}>
                     <a className="scaleLinks Block point" tabIndex={0}>
                       <div className="gg-details-more" />
                       About
