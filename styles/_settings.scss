@@ -111,6 +111,21 @@ $ME: rgba(0, 0, 0, 0.75);
   transition-timing-function: steps(2, start);
 }
 
+@mixin State-false {
+  opacity: 1;
+  transition-duration: 0.4s;
+  visibility: hidden;
+  overflow: hidden;
+  height: 0;
+  transform: scaleY(0);
+}
+
+@mixin State-true {
+  transition-duration: 0.4s;
+  visibility: visible;
+  height: 120px;
+}
+
 // @mixin Menu {
 //   z-index: 3;
 //   position: fixed;

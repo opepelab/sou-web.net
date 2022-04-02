@@ -110,11 +110,9 @@
     @include Menu;
     opacity: 0;
     visibility: hidden;
-    transform: scaleY(0);
   }
 
   .MenuList li {
-    font-size: $p14;
     list-style: none;
   }
 
@@ -123,31 +121,19 @@
   }
 
   .AboutState [aria-expanded="true"] {
-    opacity: 1;
-    transition-duration: 0.2s;
-    visibility: visible;
-    height: 120px;
+    @include State-true;
   }
 
   .AboutState [aria-expanded="false"] {
-    transition-duration: 0.2s;
-    visibility: hidden;
-    overflow: hidden;
-    height: 0;
+    @include State-false;
   }
 
   .LinksState [aria-expanded="true"] {
-    opacity: 1;
-    transition-duration: 0.2s;
-    visibility: visible;
-    height: 120px;
+    @include State-true;
   }
 
   .LinksState [aria-expanded="false"] {
-    transition-duration: 0.2s;
-    visibility: hidden;
-    overflow: hidden;
-    height: 0;
+    @include State-false;
   }
 
   /* ブログとコンタクトのスケール再定義 */
