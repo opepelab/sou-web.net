@@ -110,6 +110,7 @@
     @include Menu;
     opacity: 0;
     visibility: hidden;
+    transform: scaleY(0);
   }
 
   .MenuList li {
