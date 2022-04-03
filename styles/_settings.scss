@@ -105,8 +105,8 @@ $ME: rgba(0, 0, 0, 0.75);
 @mixin Menu {
   z-index: 4;
   position: relative;
-  right: $r0;
-  top: $r0;
+  // right: $r0;
+  // top: $r0;
   transition: all 0.2s;
   transition-timing-function: steps(2, start);
 }
