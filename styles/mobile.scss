@@ -101,6 +101,9 @@
   .MenuList [aria-expanded="true"] {
     @include Menu;
     visibility: visible;
+    .nav2 {
+      transition-duration: 0.2s;
+    }
   }
 
   .MenuList [aria-expanded="false"] {
@@ -109,7 +112,9 @@
     }
     @include Menu;
     visibility: hidden;
-    text-indent: 50%;
+    .nav2 {
+      transform: translateX(100px) rotate(180deg);
+    }
   }
 
   .MenuList li {

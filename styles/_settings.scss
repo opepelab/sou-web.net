@@ -103,12 +103,9 @@ $ME: rgba(0, 0, 0, 0.75);
 }
 
 @mixin Menu {
-  z-index: 4;
+  z-index: 2;
   position: relative;
-  // right: $r0;
-  // top: $r0;
-  transition: all 0.2s;
-  transition-timing-function: steps(2, start);
+  transition: all 0.1s;
 }
 
 @mixin State-false {
@@ -118,12 +115,14 @@ $ME: rgba(0, 0, 0, 0.75);
   overflow: hidden;
   height: 0;
   transform: scaleY(0);
+  transition-timing-function: steps(2, start);
 }
 
 @mixin State-true {
   transition-duration: 0.4s;
   visibility: visible;
   height: 125px;
+  transition-timing-function: steps(2, start);
 }
 
 // @mixin Menu {
