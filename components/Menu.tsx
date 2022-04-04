@@ -52,7 +52,6 @@ const Menu: React.FC = () => {
                           <a
                             onClick={() => {
                               setMenu(false);
-                              setAboutRes(false);
                             }}
                           >
                             Profile
@@ -64,7 +63,6 @@ const Menu: React.FC = () => {
                           <a
                             onClick={() => {
                               setMenu(false);
-                              setAboutRes(false);
                             }}
                           >
                             Resume
@@ -76,7 +74,6 @@ const Menu: React.FC = () => {
                           <a
                             onClick={() => {
                               setMenu(false);
-                              setAboutRes(false);
                             }}
                           >
                             WebClip
@@ -124,7 +121,7 @@ const Menu: React.FC = () => {
               </li>
               <li>
                 <ActiveLink href="/rss/atom.xml" activeClassName="headerState">
-                  <a className="left1p" onClick={() => setMenu(!menu)}>
+                  <a className="left1p" onClick={() => setMenu(false)}>
                     <div className="gg-data" />
                     RSS
                   </a>
@@ -132,7 +129,7 @@ const Menu: React.FC = () => {
               </li>
               <li>
                 <ActiveLink href="/mail" activeClassName="headerState">
-                  <a onClick={() => setMenu(!menu)}>
+                  <a onClick={() => setMenu(false)}>
                     <div className="gg-mail" />
                     Mail
                   </a>
@@ -140,7 +137,7 @@ const Menu: React.FC = () => {
               </li>
               <li>
                 <ActiveLink href="/feature" activeClassName="headerState">
-                  <a className="right1p" onClick={() => setMenu(!menu)}>
+                  <a className="right1p" onClick={() => setMenu(false)}>
                     <div className="gg-git-fork" />
                     Feature
                   </a>
