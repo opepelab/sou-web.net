@@ -1,8 +1,6 @@
 import ActiveLink from "./Sys/ActiveLink";
 import { useRecoilState } from "recoil";
 import { menuState, aboutStateRes, linksStateRes } from "libs/unique";
-import MenuAnime from "components/Sys/MenuAnime";
-import { AnimatePresence } from "framer-motion";
 
 const Menu: React.FC = () => {
   const [menu, setMenu] = useRecoilState(menuState);
@@ -11,7 +9,7 @@ const Menu: React.FC = () => {
 
   return (
     <div className="none">
-      <div className="Line text-teal-100">
+      <div className="Line">
         <button
           aria-expanded={menu}
           onClick={() => {
