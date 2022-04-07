@@ -83,7 +83,7 @@ const Header: React.FC = () => {
                     <div aria-expanded={links}>
                       <ul className="White menu">
                         <li>
-                          <a href="https://github.com/opepelab" target="_blank">
+                          <a href="https://github.com/s-wataru" target="_blank">
                             <div className="hoverBG BlockM">GitHub</div>
                           </a>
                         </li>
