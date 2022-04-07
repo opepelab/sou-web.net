@@ -99,7 +99,7 @@ const Menu: React.FC = () => {
                   <div aria-expanded={linksRes}>
                     <ul>
                       <li>
-                        <a href="https://github.com/s-wataru" target="_blank">
+                        <a href="https://github.com/opepelab" target="_blank">
                           GitHub
                         </a>
                       </li>
