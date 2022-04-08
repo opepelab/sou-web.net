@@ -5,24 +5,24 @@
 @tailwind components;
 @tailwind utilities;
 
-// :root[data-theme="light"] {
-//   color-scheme: light;
-//   --color-text: rgb(55 65 81); //gray-700
-//   --color-bg: rgb(255, 255, 255);
-//   // --color-bg: rgb(255, 244, 240);
-//   --color-pink: rgb(13 148 136);
-//   --color-bg2: rgba(255, 255, 255, 0.3);
-//   --color-icon: lightsalmon;
-// }
-// /* 追記 */
-// :root[data-theme="dark"] {
-//   color-scheme: dark;
-//   --color-text: rgb(209 213 219); //gray-300
-//   --color-bg: rgb(40, 32, 35); //40 32 35
-//   --color-pink: rgb(94 234 212);
-//   --color-bg2: rgba(0, 0, 0, 0.3);
-//   --color-icon: mediumslateblue;
-// }
+:root[data-theme="light"] {
+  color-scheme: light;
+  --color-text: rgb(55 65 81); //gray-700
+  --color-bg: rgb(255, 255, 255);
+  // --color-bg: rgb(255, 244, 240);
+  --color-pink: rgb(13 148 136);
+  --color-bg2: rgba(255, 255, 255, 0.3);
+  --color-icon: lightsalmon;
+}
+/* 追記 */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-text: rgb(209 213 219); //gray-300
+  --color-bg: rgb(40, 32, 35); //40 32 35
+  --color-pink: rgb(94 234 212);
+  --color-bg2: rgba(0, 0, 0, 0.3);
+  --color-icon: mediumslateblue;
+}
 
 html {
   -webkit-text-size-adjust: $r100;

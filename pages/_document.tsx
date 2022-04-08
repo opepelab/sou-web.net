@@ -1,7 +1,5 @@
 import { GA_TRACKING_ID } from "../libs/gtag";
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import { ColorModeScript } from "@chakra-ui/react";
-import theme from "libs/theme";
 
 export default class MyDocument extends Document {
   render() {
@@ -28,7 +26,6 @@ export default class MyDocument extends Document {
             </>
           )}
         </Head>
-        <ColorModeScript initialColorMode={theme.config.initialColorMode} />
         <body>
           <Main />
           <NextScript />
