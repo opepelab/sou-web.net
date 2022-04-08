@@ -8,7 +8,7 @@ import { IPostFields } from "libs/types";
 import Date from "components/Sys/date";
 import Link from "next/link";
 import generateRssFeed from "../libs/feed";
-import ThemeToggleButton from "components/Toggle";
+import { SunIcon, MoonIcon } from "@chakra-ui/icons";
 
 type Map = {
   blog: {
@@ -29,7 +29,7 @@ const Index: React.FC<Map> = ({ blog }) => {
           <br />
           from JAPAN Tokyo.
         </Text>
-        <ThemeToggleButton />
+        <MoonIcon />
         <h5>最新記事</h5>
         {blog.map((blog: Entry<IPostFields>) => (
           <dl key={blog.sys.id}>
