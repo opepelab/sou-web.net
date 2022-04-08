@@ -2,6 +2,7 @@ import client from "libs/contentful";
 import { GetStaticProps } from "next";
 import OG from "components/Sys/OG";
 import Freya from "components/Sys/Freya";
+import { Text, Heading } from "@chakra-ui/react";
 import { Entry, EntryCollection } from "contentful";
 import { IPostFields } from "libs/types";
 import Date from "components/Sys/date";
@@ -19,12 +20,15 @@ const Index: React.FC<Map> = ({ blog }) => {
     <Freya>
       <OG title="Sou Watanabe - Homepage" description="Index Top Page" />
       <main className="inblo textLeft">
-        <h1 className="text-3xl m-0 font-extralight">Hello? My name is Sou.🖐</h1>
-        <p className="text-lg font-extralight">
+        <Heading as="h1" m="0" fontWeight="200" fontSize="40">
+          Hello? My name is Sou.🖐
+        </Heading>
+        <Text fontWeight="200" fontSize="24px">
           I am Software contributor,
           <br />
           from JAPAN Tokyo.
-        </p>
+        </Text>
+
         <h5>最新記事</h5>
         {blog.map((blog: Entry<IPostFields>) => (
           <dl key={blog.sys.id}>
