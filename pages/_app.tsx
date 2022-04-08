@@ -8,6 +8,7 @@ import "styles/globals.scss";
 import "styles/mobile.scss";
 import "styles/icons.scss";
 import "styles/img.scss";
+import { ChakraProvider } from "@chakra-ui/provider";
 
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
   usePageView();
@@ -15,11 +16,13 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
     <>
       <RecoilRoot>
         <DarkState>
-          <LayoutProvider>
-            <AnimatePresence exitBeforeEnter initial={true}>
-              <Component {...pageProps} key={router.asPath} />
-            </AnimatePresence>
-          </LayoutProvider>
+          <ChakraProvider resetCSS={false}>
+            <LayoutProvider>
+              <AnimatePresence exitBeforeEnter initial={true}>
+                <Component {...pageProps} key={router.asPath} />
+              </AnimatePresence>
+            </LayoutProvider>
+          </ChakraProvider>
         </DarkState>
       </RecoilRoot>
     </>

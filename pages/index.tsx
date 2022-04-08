@@ -8,6 +8,7 @@ import { IPostFields } from "libs/types";
 import Date from "components/Sys/date";
 import Link from "next/link";
 import generateRssFeed from "../libs/feed";
+import ThemeToggleButton from "components/Toggle";
 
 type Map = {
   blog: {
@@ -28,7 +29,7 @@ const Index: React.FC<Map> = ({ blog }) => {
           <br />
           from JAPAN Tokyo.
         </Text>
-
+        <ThemeToggleButton />
         <h5>最新記事</h5>
         {blog.map((blog: Entry<IPostFields>) => (
           <dl key={blog.sys.id}>
