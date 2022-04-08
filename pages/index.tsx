@@ -8,7 +8,7 @@ import { IPostFields } from "libs/types";
 import Date from "components/Sys/date";
 import Link from "next/link";
 import generateRssFeed from "../libs/feed";
-import { SunIcon, MoonIcon } from "@chakra-ui/icons";
+import { MoonIcon } from "@chakra-ui/icons";
 
 type Map = {
   blog: {
@@ -21,10 +21,10 @@ const Index: React.FC<Map> = ({ blog }) => {
     <Freya>
       <OG title="Sou Watanabe - Homepage" description="Index Top Page" />
       <main className="inblo textLeft">
-        <Heading as="h1" m="0" fontWeight="200" fontSize="40">
+        <Heading as="h1" m="0" fontWeight="200" fontSize="32">
           Hello? My name is Sou.🖐
         </Heading>
-        <Text fontWeight="200" fontSize="24px">
+        <Text fontWeight="200" fontSize="20px">
           I am Software contributor,
           <br />
           from JAPAN Tokyo.
