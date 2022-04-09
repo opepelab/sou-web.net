@@ -105,7 +105,6 @@ $ME: rgba(0, 0, 0, 0.75);
 @mixin Menu {
   z-index: 2;
   position: relative;
-  transition: all 0.1s;
 }
 
 @mixin State-false {

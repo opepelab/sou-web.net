@@ -101,19 +101,13 @@
   .MenuList [aria-expanded="true"] {
     @include Menu;
     visibility: visible;
-    .nav2 {
-      transition-duration: 0.2s;
-    }
   }
 
   .MenuList [aria-expanded="false"] {
-    .nav2 li {
-      display: none;
-    }
     @include Menu;
     visibility: hidden;
     .nav2 {
-      transform: translateX(100px) rotate(180deg);
+      transform: translateX(100px) translateY(-100px) scale(0);
     }
   }
 
