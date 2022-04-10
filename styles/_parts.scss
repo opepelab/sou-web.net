@@ -28,9 +28,6 @@
   color: skyblue;
 }
 @media screen and (min-width: 739.99px) {
-  .CN {
-    @include CenString;
-  }
   .hoverbob:hover {
     transform: scale(3);
     transition-duration: 0.25s;

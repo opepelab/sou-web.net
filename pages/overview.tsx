@@ -1,12 +1,12 @@
 import OG from "components/Sys/OG";
 import Freya from "components/Sys/Freya";
 
-const Resume: React.FC = () => {
+const Overview: React.FC = () => {
   return (
     <Freya>
-      <OG title="Resume - Sou Watanabe" description="My Resume" />
+      <OG title="Overview - Sou Watanabe" description="My Overview" />
       <main className="list inblo textLeft">
-        <h1>Resume</h1>
+        <h1>Overview</h1>
         <p>渡邊 蒼(Sou Watanabe)と申します。1994年生まれ現27歳です。</p>
         <p>アプリケーションを開発しています。</p>
         <p>趣味で個人開発していてモバイルアプリも作っています。</p>
@@ -75,4 +75,4 @@ const Resume: React.FC = () => {
   );
 };
 
-export default Resume;
+export default Overview;

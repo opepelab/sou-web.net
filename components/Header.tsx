@@ -40,9 +40,9 @@ const Header: React.FC = () => {
                     <div aria-expanded={about}>
                       <ul className="White menu">
                         <li>
-                          <ActiveLink href="/resume" activeClassName="headerState">
+                          <ActiveLink href="/overview" activeClassName="headerState">
                             <a>
-                              <div className="hoverBG BlockM">Resume</div>
+                              <div className="hoverBG BlockM">Overview</div>
                             </a>
                           </ActiveLink>
                         </li>

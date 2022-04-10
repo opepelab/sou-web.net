@@ -147,14 +147,6 @@ $ME: rgba(0, 0, 0, 0.75);
 //   transition-duration: 0.5s;
 // }
 
-@mixin CenString {
-  position: absolute;
-  inset: 0%;
-  margin: auto;
-  width: fit-content;
-  height: fit-content;
-}
-
 @mixin BBMyellow {
   background: #fff;
   color: #333;

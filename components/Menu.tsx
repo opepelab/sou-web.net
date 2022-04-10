@@ -46,6 +46,17 @@ const Menu: React.FC = () => {
                   <div aria-expanded={aboutRes}>
                     <ul>
                       <li>
+                        <ActiveLink href="/overview" activeClassName="headerState">
+                          <a
+                            onClick={() => {
+                              setMenu(false);
+                            }}
+                          >
+                            Overview
+                          </a>
+                        </ActiveLink>
+                      </li>
+                      <li>
                         <ActiveLink href="/profile" activeClassName="headerState">
                           <a
                             onClick={() => {
@@ -53,17 +64,6 @@ const Menu: React.FC = () => {
                             }}
                           >
                             Profile
-                          </a>
-                        </ActiveLink>
-                      </li>
-                      <li>
-                        <ActiveLink href="/resume" activeClassName="headerState">
-                          <a
-                            onClick={() => {
-                              setMenu(false);
-                            }}
-                          >
-                            Resume
                           </a>
                         </ActiveLink>
                       </li>

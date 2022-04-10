@@ -1,13 +1,15 @@
 import OG from "components/Sys/OG";
 import Freya from "components/Sys/Freya";
+import { Heading } from "@chakra-ui/react";
 
 const Feature: React.FC = () => {
   return (
     <Freya>
       <OG title="Feature - Sou Watanabe" description="My Compurter" />
       <main className="inblo resizeimage">
-        <h1>Feature</h1>
-
+        <Heading as="h1" m="0" fontWeight="200" fontSize="32">
+          Feature
+        </Heading>
         <img src="/picture/IMG-0554.jpg" height="40%" width="40%" />
         <dl>
           <dt>OS</dt>
