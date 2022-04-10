@@ -124,29 +124,6 @@ $ME: rgba(0, 0, 0, 0.75);
   transition-timing-function: steps(2, start);
 }
 
-// @mixin Menu {
-//   z-index: 3;
-//   position: fixed;
-//   background: var(--color-bg);
-//   left: $p0;
-//   top: $p0;
-//   width: 250px;
-//   height: $r100;
-//   transition-duration: 0.5s;
-// }
-
-// @mixin Menu {
-//   z-index: 3;
-//   position: fixed;
-//   display: inline-block;
-//   background: var(--color-bg);
-//   right: -100px;
-//   top: $p0;
-//   width: 250px;
-//   height: 400px;
-//   transition-duration: 0.5s;
-// }
-
 @mixin BBMyellow {
   background: #fff;
   color: #333;
