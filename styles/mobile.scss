@@ -107,7 +107,7 @@
     @include Menu;
     visibility: hidden;
     .nav2 {
-      transform: translateX(100px) translateY(-100px) scale(0);
+      transform: translateX(-225px) rotate(-45deg);
     }
   }
 
