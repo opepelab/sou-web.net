@@ -152,3 +152,37 @@ a dt .dateST {
 }
 
 // GraphicsとAbout以外位置を修正してる
+
+.loading {
+  width: 160px;
+  height: 160px;
+  border-radius: 150px;
+  border: 15px solid #fff;
+  border-top-color: rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -80px;
+  margin-left: -80px;
+  animation: loading 1.2s linear infinite;
+  -webkit-animation: loading 1.2s linear infinite;
+  opacity: 0.2;
+  transition: 2s;
+}
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes cssAnimation {
+  to {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}

@@ -95,11 +95,11 @@ $ME: rgba(0, 0, 0, 0.75);
 @mixin FilterAtom {
   z-index: 1;
   position: fixed;
-  background: rgba(0, 0, 0, 0.15);
   top: $r0;
   left: $r0;
   width: $r100;
   height: $r100;
+  // background: rgba(0, 0, 0, 0.15);
 }
 
 @mixin Menu {
