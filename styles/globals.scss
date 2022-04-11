@@ -160,15 +160,16 @@ nav ul li {
   z-index: 1;
   position: fixed;
   text-align: left;
-  margin: -8px 0 0 0;
   padding: 8px 20px 8px 0;
   row-gap: 0px;
-  width: 50%;
-  left: 8px;
+  width: 40%;
+  left: 0px;
   white-space: nowrap;
   background: var(--color-bg);
-  border-radius: 4px;
-  border: solid 1px gray;
+  border-radius: 0 4px 4px 0;
+  border-top: dashed 1px gray;
+  border-bottom: dashed 1px gray;
+  border-right: dashed 1px gray;
   transition-duration: 0.2s;
 }
 
@@ -328,9 +329,10 @@ textarea {
   }
 }
 
-.shadow {
-  box-shadow: 0px 0px 3px 0.5px gray;
-}
+// .shadow {
+//   box-shadow: 0px 0px 3px 0.5px gray;
+// }
+
 .iconButton {
   @include Back;
 }
