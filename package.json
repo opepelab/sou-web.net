@@ -8,13 +8,10 @@
     "start": "next start",
     "export": "next export",
     "lint": "next lint",
-    "lint-staged": "npx lint staged",
     "prepare": "husky install"
   },
   "dependencies": {
-    "@chakra-ui/icons": "1.1.7",
     "@chakra-ui/react": "1.8.6",
-    "@chakra-ui/theme-tools": "1.3.6",
     "@contentful/rich-text-react-renderer": "^15.11.1",
     "@emotion/react": "11.8.2",
     "@emotion/styled": "11.8.1",
