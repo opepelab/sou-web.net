@@ -7,7 +7,6 @@ export default class MyDocument extends Document {
       <Html lang="ja">
         <Head>
           <link rel="shortcut icon" href="/folds.ico" />
-          <link href="https://fonts.googleapis.com/css2?family=Rationale&display=swap" rel="stylesheet" />
           {GA_TRACKING_ID && (
             <>
               <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`} />
