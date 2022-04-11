@@ -71,8 +71,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
   return { paths, fallback: false };
 };
 
-export const getStaticProps = async (params: { id: number }) => {
-  const id = params.id;
+export const getStaticProps = async (context: { params: { id: number } }) => {
+  const id = context.params.id;
 
   const entries: EntryCollection<IPostFields> = await client.getEntries({
     content_type: "blog",
