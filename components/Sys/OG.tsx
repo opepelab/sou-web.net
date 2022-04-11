@@ -9,7 +9,7 @@ const OG = ({ title, description }: StProp) => {
   const router = useRouter();
   return (
     <Head>
-      <title>{title}</title>
+      <title>Sou Watanabe - Website</title>
       <meta property="og:title" content={title} />
       <meta property="description" content={description} />
       <meta property="og:description" content={description} />
