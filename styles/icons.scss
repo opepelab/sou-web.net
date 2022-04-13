@@ -312,7 +312,7 @@
   height: 15px; /* 正方形を作る */
   position: relative; /* 基準位置とする */
   display: inline-flex;
-  transform: rotate(-60deg);
+  transform: rotate(-45deg);
   top: 2px;
 }
 .heart::before,
