@@ -7,6 +7,7 @@
     "build": "next build && next-sitemap --config sitemap.config.js",
     "start": "next start",
     "export": "next export",
+    "lint-staged": "npx lint-staged",
     "lint": "next lint",
     "prepare": "husky install"
   },
@@ -25,6 +26,7 @@
     "feed": "^4.2.2",
     "framer-motion": "^5.0.0",
     "husky": "7.0.4",
+    "lint-staged": "12.3.7",
     "next": "^12.0.1",
     "next-sitemap": "2.5.13",
     "nodemailer": "6.7.3",
@@ -32,7 +34,8 @@
     "react-dom": "17.0.2",
     "react-syntax-highlighter": "^15.4.5",
     "recoil": "0.6.1",
-    "sass": "1.49.9"
+    "sass": "1.49.9",
+    "stylelint-scss": "4.2.0"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^12.0.1",
@@ -59,5 +62,10 @@
   "bugs": {
     "url": "https://github.com/opepelab/Reduxsu/issues"
   },
-  "homepage": "https://github.com/opepelab/Reduxsu#readme"
+  "homepage": "https://github.com/opepelab/Reduxsu#readme",
+  "lint-staged": {
+    "*.{js,ts,tsx}": "eslint --cache --fix",
+    "*.{css,scss}": "stylelint --fix",
+    "*.{js,ts,css,md}": "prettier --write"
+  }
 }
