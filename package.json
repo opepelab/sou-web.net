@@ -8,9 +8,9 @@
     "start": "next start",
     "export": "next export",
     "lint": "next lint",
-    "lint-staged": "lint-staged",
     "eslint": "eslint --ext .js,jsx,.ts,.tsx --fix .",
     "prettier": "prettier --write .",
+    "lint-staged": "lint-staged",
     "prepare": "husky install"
   },
   "dependencies": {
