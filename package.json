@@ -10,6 +10,7 @@
     "lint": "next lint",
     "lint-staged": "lint-staged",
     "eslint": "eslint --ext .js,jsx,.ts,.tsx --fix .",
+    "prettier": "prettier --write .",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -31,6 +32,7 @@
     "next": "^12.0.1",
     "next-sitemap": "2.5.13",
     "nodemailer": "6.7.3",
+    "prettier": "2.6.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-syntax-highlighter": "^15.4.5",
@@ -65,8 +67,7 @@
   "homepage": "https://github.com/opepelab/Reduxsu#readme",
   "lint-staged": {
     "*.{js,ts,jsx,tsx}": [
-      "npx eslint . --fix",
-      "npx prettier --write ."
+      "eslint --fix"
     ]
   }
 }
