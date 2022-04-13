@@ -27,6 +27,7 @@
     "feed": "^4.2.2",
     "framer-motion": "^5.0.0",
     "husky": "7.0.4",
+    "lint-staged": "12.3.7",
     "next": "^12.0.1",
     "next-sitemap": "2.5.13",
     "nodemailer": "6.7.3",
@@ -64,7 +65,8 @@
   "homepage": "https://github.com/opepelab/Reduxsu#readme",
   "lint-staged": {
     "*.{js,ts,jsx,tsx}": [
-      "npx eslint . --fix"
+      "npx eslint . --fix",
+      "npx prettier --write ."
     ]
   }
 }

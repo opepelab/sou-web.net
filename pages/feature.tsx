@@ -5,24 +5,12 @@ import { Heading } from "@chakra-ui/react";
 const Feature: React.FC = () => {
   return (
     <Freya>
-      <OG
-        title="Feature - Sou Watanabe"
-        description="My Compurter"
-      />
+      <OG title="Feature - Sou Watanabe" description="My Compurter" />
       <main className="inblo resizeimage">
-        <Heading
-          as="h1"
-          m="0"
-          fontWeight="200"
-          fontSize="24"
-        >
+        <Heading as="h1" m="0" fontWeight="200" fontSize="24">
           Features of my room
         </Heading>
-        <img
-          src="/picture/IMG-0554.jpg"
-          height="40%"
-          width="40%"
-        />
+        <img src="/picture/IMG-0554.jpg" height="40%" width="40%" />
         <dl>
           <p>test</p>
           <dt>OS</dt>
