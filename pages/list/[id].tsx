@@ -21,15 +21,11 @@ type Map = {
 
 const Limit = 30;
 
-const range = (start: number, end: number) =>
-  [...Array(end - start + 1)].map((_, i) => start + i);
+const range = (start: number, end: number) => [...Array(end - start + 1)].map((_, i) => start + i);
 const Id: React.FC<Map> = ({ blog, total }) => {
   return (
     <Freya>
-      <OG
-        title="Page List - Sou Watanabe"
-        description="Page Lists"
-      />
+      <OG title="Page List - Sou Watanabe" description="Page Lists" />
       <main className="HeadMenu inblo textLeft">
         <h5>記事一覧</h5>
         {blog.map((props: Entry<IPostFields>) => (
@@ -39,27 +35,20 @@ const Id: React.FC<Map> = ({ blog, total }) => {
             </dt>
             <Link href={`/docs/${props.fields.slug}`}>
               <a>
-                <div className="PPx scaleLinks pinkLinks">
-                  {props.fields.title}
-                </div>
+                <div className="PPx scaleLinks pinkLinks">{props.fields.title}</div>
               </a>
             </Link>
           </dl>
         ))}
         <nav>
           <ul className="ListNum">
-            {range(1, Math.ceil(total / Limit)).map(
-              (id) => (
-                <li key={id}>
-                  <ActiveLink
-                    href={`/list/${id}`}
-                    activeClassName="listState"
-                  >
-                    <a className="Pagi">{id}</a>
-                  </ActiveLink>
-                </li>
-              )
-            )}
+            {range(1, Math.ceil(total / Limit)).map((id) => (
+              <li key={id}>
+                <ActiveLink href={`/list/${id}`} activeClassName="listState">
+                  <a className="Pagi">{id}</a>
+                </ActiveLink>
+              </li>
+            ))}
           </ul>
         </nav>
         <Link href="/blog">
@@ -72,32 +61,25 @@ const Id: React.FC<Map> = ({ blog, total }) => {
   );
 };
 export const getStaticPaths: GetStaticPaths = async () => {
-  const entries: EntryCollection<IPostFields> =
-    await client.getEntries({
-      content_type: "blog",
-      order: "-fields.date",
-    });
+  const entries: EntryCollection<IPostFields> = await client.getEntries({
+    content_type: "blog",
+    order: "-fields.date",
+  });
 
-  const paths = range(
-    1,
-    Math.ceil(entries.total / Limit)
-  ).map((id) => `/list/${id}`);
+  const paths = range(1, Math.ceil(entries.total / Limit)).map((id) => `/list/${id}`);
 
   return { paths, fallback: false };
 };
 
-export const getStaticProps = async (context: {
-  params: { id: number };
-}) => {
+export const getStaticProps = async (context: { params: { id: number } }) => {
   const id = context.params.id;
 
-  const entries: EntryCollection<IPostFields> =
-    await client.getEntries({
-      content_type: "blog",
-      order: "-fields.date",
-      limit: Limit,
-      skip: (id - 1) * Limit,
-    });
+  const entries: EntryCollection<IPostFields> = await client.getEntries({
+    content_type: "blog",
+    order: "-fields.date",
+    limit: Limit,
+    skip: (id - 1) * Limit,
+  });
 
   return {
     props: {

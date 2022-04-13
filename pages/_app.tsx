@@ -9,11 +9,7 @@ import "styles/mobile.scss";
 import "styles/icons.scss";
 import "styles/img.scss";
 
-const MyApp = ({
-  Component,
-  pageProps,
-  router,
-}: AppProps): JSX.Element => {
+const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
   usePageView();
   return (
     <>
@@ -21,10 +17,7 @@ const MyApp = ({
         <DarkState>
           <LayoutProvider>
             <AnimatePresence exitBeforeEnter initial={true}>
-              <Component
-                {...pageProps}
-                key={router.asPath}
-              />
+              <Component {...pageProps} key={router.asPath} />
             </AnimatePresence>
           </LayoutProvider>
         </DarkState>

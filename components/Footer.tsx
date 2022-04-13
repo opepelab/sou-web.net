@@ -6,10 +6,7 @@ const Footer: React.FC = () => {
       <a href="/">home</a>
       <footer className="Footer">
         <div className="inblo C">
-          <a href="https://github.com/opepelab/sou-web.net">
-            github/sou-web.net
-          </a>{" "}
-          Written by{" "}
+          <a href="https://github.com/opepelab/sou-web.net">github/sou-web.net</a> Written by{" "}
           <a href="https://nextjs.org/">
             <u>Next.js</u>
           </a>

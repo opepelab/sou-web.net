@@ -4,9 +4,7 @@
   if (storageTheme !== null) {
     theme = storageTheme;
   } else {
-    const mql = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    );
+    const mql = window.matchMedia("(prefers-color-scheme: dark)");
     theme = mql.matches ? "dark" : "light";
   }
 

@@ -7,21 +7,13 @@ export const ToggleDarkMode: React.FC = () => {
   useEffect(() => {
     if (
       localStorage.theme === "dark" ||
-      (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)")
-          .matches)
+      (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
     ) {
       setDarkMode(true);
-      document.documentElement.setAttribute(
-        "data-theme",
-        "dark"
-      );
+      document.documentElement.setAttribute("data-theme", "dark");
     } else {
       setDarkMode(false);
-      document.documentElement.setAttribute(
-        "data-theme",
-        "light"
-      );
+      document.documentElement.setAttribute("data-theme", "light");
     }
   }, [darkMode]);
 
@@ -37,10 +29,7 @@ export const ToggleDarkMode: React.FC = () => {
 
   return (
     <div className="togglePosition">
-      <div
-        className="iconButton shadow"
-        onClick={handleChangeDarkMode}
-      >
+      <div className="iconButton shadow" onClick={handleChangeDarkMode}>
         <AnimatePresence exitBeforeEnter>
           <motion.div
             className="flex"
@@ -51,9 +40,7 @@ export const ToggleDarkMode: React.FC = () => {
             exit={{ y: 20, opacity: 0 }}
             transition={{ duration: 1 }}
           >
-            <div
-              className={darkMode ? "gg-moon" : "gg-sun"}
-            />
+            <div className={darkMode ? "gg-moon" : "gg-sun"} />
           </motion.div>
         </AnimatePresence>
       </div>

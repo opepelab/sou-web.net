@@ -1,10 +1,5 @@
 import { GA_TRACKING_ID } from "../libs/gtag";
-import Document, {
-  Html,
-  Head,
-  Main,
-  NextScript,
-} from "next/document";
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
 export default class MyDocument extends Document {
   render() {
@@ -14,10 +9,7 @@ export default class MyDocument extends Document {
           <link rel="shortcut icon" href="/folds.ico" />
           {GA_TRACKING_ID && (
             <>
-              <script
-                async
-                src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-              />
+              <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`} />
               <script
                 dangerouslySetInnerHTML={{
                   __html: `
