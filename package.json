@@ -64,8 +64,7 @@
   "homepage": "https://github.com/opepelab/Reduxsu#readme",
   "lint-staged": {
     "*.{js,ts,jsx,tsx}": [
-      "npx eslint . --fix",
-      "npx prettier --write ."
+      "npx eslint . --fix"
     ]
   }
 }
