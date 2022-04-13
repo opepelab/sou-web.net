@@ -8,7 +8,8 @@ export interface IPostFields {
   body: string;
 }
 
-export interface IPost extends EntryCollection<IPostFields> {
+export interface IPost
+  extends EntryCollection<IPostFields> {
   sys: {
     id: string;
     type: string;

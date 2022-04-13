@@ -5,23 +5,38 @@ import Link from "next/link";
 const Links: React.FC = () => {
   return (
     <Freya>
-      <OG title="Links - Sou Watanabe" description="My Link" />
+      <OG
+        title="Links - Sou Watanabe"
+        description="My Link"
+      />
       <main className="inblo">
         <h1>Links</h1>
         <div className="triangle-bottom" />
         <dl>
           <dd>
-            <a className="pinkLinks scale" href="https://github.com/opepelab" target="_blank">
+            <a
+              className="pinkLinks scale"
+              href="https://github.com/opepelab"
+              target="_blank"
+            >
               GitHub{" "}
             </a>
           </dd>
           <dd>
-            <a className="pinkLinks scale" href="https://www.linkedin.com/in/s-watanabe-a25157205" target="_blank">
+            <a
+              className="pinkLinks scale"
+              href="https://www.linkedin.com/in/s-watanabe-a25157205"
+              target="_blank"
+            >
               LinkdIn
             </a>
           </dd>
           <dd>
-            <a className="pinkLinks scale" href="https://www.pixiv.net/users/10729947" target="_blank">
+            <a
+              className="pinkLinks scale"
+              href="https://www.pixiv.net/users/10729947"
+              target="_blank"
+            >
               Pixiv
             </a>
           </dd>
@@ -35,32 +50,54 @@ const Links: React.FC = () => {
             </a>
           </dd>
           <dd>
-            <a className="pinkLinks scale" href="https://com.nicovideo.jp/community/co1568349" target="_blank">
+            <a
+              className="pinkLinks scale"
+              href="https://com.nicovideo.jp/community/co1568349"
+              target="_blank"
+            >
               Streem
             </a>
           </dd>
           <dd>
-            <a className="pinkLinks scale" href="https://www.deepl.com/translator" target="_blank">
+            <a
+              className="pinkLinks scale"
+              href="https://www.deepl.com/translator"
+              target="_blank"
+            >
               DeepL
             </a>
           </dd>
           <dd>
-            <a className="pinkLinks scale" href="https://translate.google.co.jp/" target="_blank">
+            <a
+              className="pinkLinks scale"
+              href="https://translate.google.co.jp/"
+              target="_blank"
+            >
               Google翻訳
             </a>
           </dd>
           <dd>
-            <a className="pinkLinks scale" href="https://opepelab.org/" target="_blank">
+            <a
+              className="pinkLinks scale"
+              href="https://opepelab.org/"
+              target="_blank"
+            >
               WordPress Blog
             </a>
           </dd>
           <dd>
-            <a className="pinkLinks scale" href="https://chofu-koyado.vercel.app" target="_blank">
+            <a
+              className="pinkLinks scale"
+              href="https://chofu-koyado.vercel.app"
+              target="_blank"
+            >
               ちょうふのこやど
             </a>
           </dd>
           <Link href="/special">
-            <a className="scale pinkLinks">Special Thanks</a>
+            <a className="scale pinkLinks">
+              Special Thanks
+            </a>
           </Link>
         </dl>
       </main>

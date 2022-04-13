@@ -1,5 +1,8 @@
 import client from "libs/contentful";
-import { GetStaticPaths, GetStaticProps } from "next";
+import {
+  GetStaticPaths,
+  GetStaticProps,
+} from "next";
 import { ParsedUrlQuery } from "querystring";
 import OG from "components/Sys/OG";
 import Freya from "components/Sys/Freya";
@@ -33,27 +36,48 @@ type Content = {
 const Slug: React.FC<Content> = ({ blog }) => {
   const options: Options = {
     renderNode: {
-      [TYPES.BLOCKS.PARAGRAPH]: (node, children) => {
+      [TYPES.BLOCKS.PARAGRAPH]: (
+        node,
+        children
+      ) => {
         if (
           node.content.length === 1 &&
           TYPES.helpers.isText(node.content[0]) &&
-          node.content[0].marks.find((x) => x.type == "code")
+          node.content[0].marks.find(
+            (x) => x.type == "code"
+          )
         ) {
           return <>{children}</>;
         }
         return <p>{children}</p>;
       },
       [TYPES.BLOCKS.EMBEDDED_ASSET]: (node) => {
-        const src = "https://" + node.data.target.fields.file.url;
-        const height = node.data.target.fields.file.details.height;
-        const width = node.data.target.fields.file.details.width;
-        return <img src={src} width={width} height={height} />;
+        const src =
+          "https://" +
+          node.data.target.fields.file.url;
+        const height =
+          node.data.target.fields.file.details
+            .height;
+        const width =
+          node.data.target.fields.file.details
+            .width;
+        return (
+          <img
+            src={src}
+            width={width}
+            height={height}
+          />
+        );
       },
     },
     renderMark: {
       [TYPES.MARKS.CODE]: (text) => {
         return (
-          <SyntaxHighlighter language="tsx" style={vscDarkPlus} showLineNumbers>
+          <SyntaxHighlighter
+            language="tsx"
+            style={vscDarkPlus}
+            showLineNumbers
+          >
             {text}
           </SyntaxHighlighter>
         );
@@ -63,44 +87,57 @@ const Slug: React.FC<Content> = ({ blog }) => {
 
   return (
     <Freya>
-      <OG title={blog.fields.title} description={blog.fields.description} />
+      <OG
+        title={blog.fields.title}
+        description={blog.fields.description}
+      />
       <main className="Alink list textLeft resizeimage">
         <div className={styles.Time2}>
           <Date dateString={blog.fields.date} />
         </div>
         <div>
-          <h1 className="pinkLinks">{blog.fields.title}</h1>
+          <h1 className="pinkLinks">
+            {blog.fields.title}
+          </h1>
         </div>
-        <div>{documentToReactComponents(blog.fields.body, options)}</div>
+        <div>
+          {documentToReactComponents(
+            blog.fields.body,
+            options
+          )}
+        </div>
       </main>
     </Freya>
   );
 };
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  const entries: EntryCollection<IPostFields> = await client.getEntries({
-    content_type: "blog",
-    limit: 1000,
-  });
-  const paths = entries.items.map((item) => ({
-    params: { slug: item.fields.slug },
-  }));
-  return { paths, fallback: false };
-};
-
-export const getStaticProps: GetStaticProps = async (context) => {
-  const { slug } = context.params as IParams;
-  const entries = await client.getEntries({
-    content_type: "blog",
-    limit: 1000,
-    "fields.slug": slug,
-  });
-
-  return {
-    props: {
-      blog: entries.items[0],
-    },
+export const getStaticPaths: GetStaticPaths =
+  async () => {
+    const entries: EntryCollection<IPostFields> =
+      await client.getEntries({
+        content_type: "blog",
+        limit: 1000,
+      });
+    const paths = entries.items.map((item) => ({
+      params: { slug: item.fields.slug },
+    }));
+    return { paths, fallback: false };
   };
-};
+
+export const getStaticProps: GetStaticProps =
+  async (context) => {
+    const { slug } = context.params as IParams;
+    const entries = await client.getEntries({
+      content_type: "blog",
+      limit: 1000,
+      "fields.slug": slug,
+    });
+
+    return {
+      props: {
+        blog: entries.items[0],
+      },
+    };
+  };
 
 export default Slug;

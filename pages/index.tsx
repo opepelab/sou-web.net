@@ -3,7 +3,10 @@ import { GetStaticProps } from "next";
 import OG from "components/Sys/OG";
 import Freya from "components/Sys/Freya";
 import { Text, Heading } from "@chakra-ui/react";
-import { Entry, EntryCollection } from "contentful";
+import {
+  Entry,
+  EntryCollection,
+} from "contentful";
 import { IPostFields } from "libs/types";
 import Date from "components/Sys/date";
 import Link from "next/link";
@@ -19,9 +22,17 @@ type Map = {
 const Index: React.FC<Map> = ({ blog }) => {
   return (
     <Freya>
-      <OG title="Sou Watanabe - Homepage" description="Index Top Page" />
+      <OG
+        title="Sou Watanabe - Homepage"
+        description="Index Top Page"
+      />
       <main className="inblo textLeft">
-        <Heading as="h1" m="0" fontWeight="200" fontSize="32">
+        <Heading
+          as="h1"
+          m="0"
+          fontWeight="200"
+          fontSize="32"
+        >
           Hello? My name is Sou🖐
         </Heading>
         <Text fontWeight="200" fontSize="20px">
@@ -34,11 +45,17 @@ const Index: React.FC<Map> = ({ blog }) => {
         {blog.map((blog: Entry<IPostFields>) => (
           <dl key={blog.sys.id}>
             <dt className="dateST">
-              <Date dateString={blog.fields.date} />
+              <Date
+                dateString={blog.fields.date}
+              />
             </dt>
-            <Link href={`/docs/${blog.fields.slug}`}>
+            <Link
+              href={`/docs/${blog.fields.slug}`}
+            >
               <a>
-                <div className="PPx scaleLinks pinkLinks">{blog.fields.title}</div>
+                <div className="PPx scaleLinks pinkLinks">
+                  {blog.fields.title}
+                </div>
               </a>
             </Link>
           </dl>
@@ -53,18 +70,20 @@ const Index: React.FC<Map> = ({ blog }) => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async () => {
-  await generateRssFeed();
-  const data: EntryCollection<IPostFields> = await client.getEntries({
-    content_type: "blog",
-    order: "-fields.date",
-    limit: 15,
-  });
-  return {
-    props: {
-      blog: data.items,
-    },
+export const getStaticProps: GetStaticProps =
+  async () => {
+    await generateRssFeed();
+    const data: EntryCollection<IPostFields> =
+      await client.getEntries({
+        content_type: "blog",
+        order: "-fields.date",
+        limit: 15,
+      });
+    return {
+      props: {
+        blog: data.items,
+      },
+    };
   };
-};
 
 export default Index;
