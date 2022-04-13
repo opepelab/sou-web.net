@@ -70,44 +70,30 @@
     bottom: 5px;
   }
 
-  .Line
-    [aria-expanded="true"]
-    span:nth-of-type(1) {
-    transform: rotate(45deg) translateY(4px)
-      translateX(4px) scale(0.8);
+  .Line [aria-expanded="true"] span:nth-of-type(1) {
+    transform: rotate(45deg) translateY(4px) translateX(4px) scale(0.8);
     transition-duration: 0.1s;
   }
 
-  .Line
-    [aria-expanded="true"]
-    span:nth-of-type(2) {
+  .Line [aria-expanded="true"] span:nth-of-type(2) {
     opacity: 0;
     transition-duration: 0.25s;
   }
 
-  .Line
-    [aria-expanded="true"]
-    span:nth-of-type(3) {
-    transform: rotate(-45deg) translateY(-4.5px)
-      translateX(4.5px) scale(0.8);
+  .Line [aria-expanded="true"] span:nth-of-type(3) {
+    transform: rotate(-45deg) translateY(-4.5px) translateX(4.5px) scale(0.8);
     transition-duration: 0.1s;
   }
 
-  .Line
-    [aria-expanded="false"]
-    span:nth-of-type(1) {
+  .Line [aria-expanded="false"] span:nth-of-type(1) {
     transition-duration: 0.1s;
   }
 
-  .Line
-    [aria-expanded="false"]
-    span:nth-of-type(2) {
+  .Line [aria-expanded="false"] span:nth-of-type(2) {
     transition-duration: 0.1s;
   }
 
-  .Line
-    [aria-expanded="false"]
-    span:nth-of-type(3) {
+  .Line [aria-expanded="false"] span:nth-of-type(3) {
     transition-duration: 0.1s;
   }
 

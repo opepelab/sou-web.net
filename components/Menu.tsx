@@ -1,20 +1,11 @@
 import ActiveLink from "./Sys/ActiveLink";
 import { useRecoilState } from "recoil";
-import {
-  menuState,
-  aboutStateRes,
-  linksStateRes,
-} from "libs/unique";
+import { menuState, aboutStateRes, linksStateRes } from "libs/unique";
 
 const Menu: React.FC = () => {
-  const [menu, setMenu] =
-    useRecoilState(menuState);
-  const [aboutRes, setAboutRes] = useRecoilState(
-    aboutStateRes
-  );
-  const [linksRes, setLinksRes] = useRecoilState(
-    linksStateRes
-  );
+  const [menu, setMenu] = useRecoilState(menuState);
+  const [aboutRes, setAboutRes] = useRecoilState(aboutStateRes);
+  const [linksRes, setLinksRes] = useRecoilState(linksStateRes);
 
   return (
     <div className="none">
@@ -55,10 +46,7 @@ const Menu: React.FC = () => {
                   <div aria-expanded={aboutRes}>
                     <ul>
                       <li>
-                        <ActiveLink
-                          href="/overview"
-                          activeClassName="headerState"
-                        >
+                        <ActiveLink href="/overview" activeClassName="headerState">
                           <a
                             onClick={() => {
                               setMenu(false);
@@ -69,10 +57,7 @@ const Menu: React.FC = () => {
                         </ActiveLink>
                       </li>
                       <li>
-                        <ActiveLink
-                          href="/profile"
-                          activeClassName="headerState"
-                        >
+                        <ActiveLink href="/profile" activeClassName="headerState">
                           <a
                             onClick={() => {
                               setMenu(false);
@@ -83,10 +68,7 @@ const Menu: React.FC = () => {
                         </ActiveLink>
                       </li>
                       <li>
-                        <ActiveLink
-                          href="/webclip"
-                          activeClassName="headerState"
-                        >
+                        <ActiveLink href="/webclip" activeClassName="headerState">
                           <a
                             onClick={() => {
                               setMenu(false);
@@ -117,26 +99,17 @@ const Menu: React.FC = () => {
                   <div aria-expanded={linksRes}>
                     <ul>
                       <li>
-                        <a
-                          href="https://github.com/opepelab"
-                          target="_blank"
-                        >
+                        <a href="https://github.com/opepelab" target="_blank">
                           GitHub
                         </a>
                       </li>
                       <li>
-                        <a
-                          href="https://www.linkedin.com/in/s-watanabe-a25157205"
-                          target="_blank"
-                        >
+                        <a href="https://www.linkedin.com/in/s-watanabe-a25157205" target="_blank">
                           LinkdIn
                         </a>
                       </li>
                       <li>
-                        <a
-                          href="https://www.instagram.com/sou_watana/"
-                          target="_blank"
-                        >
+                        <a href="https://www.instagram.com/sou_watana/" target="_blank">
                           Instagram
                         </a>
                       </li>
@@ -145,41 +118,24 @@ const Menu: React.FC = () => {
                 </div>
               </li>
               <li>
-                <ActiveLink
-                  href="/rss/atom.xml"
-                  activeClassName="headerState"
-                >
-                  <a
-                    className="left1p"
-                    onClick={() => setMenu(false)}
-                  >
+                <ActiveLink href="/rss/atom.xml" activeClassName="headerState">
+                  <a className="left1p" onClick={() => setMenu(false)}>
                     <div className="gg-data" />
                     RSS
                   </a>
                 </ActiveLink>
               </li>
               <li>
-                <ActiveLink
-                  href="/mail"
-                  activeClassName="headerState"
-                >
-                  <a
-                    onClick={() => setMenu(false)}
-                  >
+                <ActiveLink href="/mail" activeClassName="headerState">
+                  <a onClick={() => setMenu(false)}>
                     <div className="gg-mail" />
                     Mail
                   </a>
                 </ActiveLink>
               </li>
               <li>
-                <ActiveLink
-                  href="/feature"
-                  activeClassName="headerState"
-                >
-                  <a
-                    className="right1p"
-                    onClick={() => setMenu(false)}
-                  >
+                <ActiveLink href="/feature" activeClassName="headerState">
+                  <a className="right1p" onClick={() => setMenu(false)}>
                     <div className="gg-git-fork" />
                     Feature
                   </a>

@@ -4,47 +4,24 @@ import Freya from "components/Sys/Freya";
 const Picture: React.FC = () => {
   return (
     <Freya>
-      <OG
-        title="Art - Sou Watanabe"
-        description="My Arts"
-      />
+      <OG title="Art - Sou Watanabe" description="My Arts" />
       <main className="inblo">
         <h1>Art</h1>
         <div>
           <a href="#01">
-            <img
-              className="PM margin10 point"
-              src="/picture/otoko.png"
-              width={255}
-              height={403}
-            />
+            <img className="PM margin10 point" src="/picture/otoko.png" width={255} height={403} />
           </a>
           <a id="01" href="#close" className="lb">
-            <img
-              className="PM"
-              src="/picture/otoko.png"
-              width={255}
-              height={403}
-            />
+            <img className="PM" src="/picture/otoko.png" width={255} height={403} />
           </a>
         </div>
 
         <div>
           <a href="#02">
-            <img
-              className="PM margin10 point"
-              src="/picture/haruka.png"
-              width={255}
-              height={360}
-            />
+            <img className="PM margin10 point" src="/picture/haruka.png" width={255} height={360} />
           </a>
           <a id="02" href="#close" className="lb">
-            <img
-              className="PM"
-              src="/picture/haruka.png"
-              width={255}
-              height={360}
-            />
+            <img className="PM" src="/picture/haruka.png" width={255} height={360} />
           </a>
         </div>
 
@@ -53,20 +30,10 @@ const Picture: React.FC = () => {
 
         <div>
           <a href="#03">
-            <img
-              className="PM margin10 point "
-              src="/picture/315.jpg"
-              width={255}
-              height={191}
-            />
+            <img className="PM margin10 point " src="/picture/315.jpg" width={255} height={191} />
           </a>
           <a id="03" href="#close" className="lb">
-            <img
-              className="PM"
-              src="/picture/315.jpg"
-              width={255}
-              height={191}
-            />
+            <img className="PM" src="/picture/315.jpg" width={255} height={191} />
           </a>
         </div>
         <dl>

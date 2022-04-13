@@ -9,25 +9,15 @@ import "styles/mobile.scss";
 import "styles/icons.scss";
 import "styles/img.scss";
 
-const MyApp = ({
-  Component,
-  pageProps,
-  router,
-}: AppProps): JSX.Element => {
+const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
   usePageView();
   return (
     <>
       <RecoilRoot>
         <DarkState>
           <LayoutProvider>
-            <AnimatePresence
-              exitBeforeEnter
-              initial={true}
-            >
-              <Component
-                {...pageProps}
-                key={router.asPath}
-              />
+            <AnimatePresence exitBeforeEnter initial={true}>
+              <Component {...pageProps} key={router.asPath} />
             </AnimatePresence>
           </LayoutProvider>
         </DarkState>

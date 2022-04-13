@@ -17,8 +17,7 @@ async function generateRssFeed() {
     title: "sou-web.net",
     id: baseUrl,
     link: baseUrl,
-    description:
-      "Sou Watanabeのメモ兼用ウェブアプリケーション。",
+    description: "Sou Watanabeのメモ兼用ウェブアプリケーション。",
     language: "ja",
     image: `${baseUrl}/images/logo.svg`,
     favicon: `${baseUrl}/favicon.ico`,
@@ -33,12 +32,11 @@ async function generateRssFeed() {
     author,
   });
 
-  const entries: EntryCollection<IPostFields> =
-    await client.getEntries({
-      content_type: "blog",
-      order: "-fields.date",
-      limit: 1000,
-    });
+  const entries: EntryCollection<IPostFields> = await client.getEntries({
+    content_type: "blog",
+    order: "-fields.date",
+    limit: 1000,
+  });
 
   entries.items.forEach((blog) => {
     const url = `${baseUrl}/${`/docs/${blog.fields.slug}`}`;
@@ -54,18 +52,9 @@ async function generateRssFeed() {
   fs.mkdirSync("./public/rss", {
     recursive: true,
   });
-  fs.writeFileSync(
-    "./public/rss/feed.xml",
-    feed.rss2()
-  );
-  fs.writeFileSync(
-    "./public/rss/atom.xml",
-    feed.atom1()
-  );
-  fs.writeFileSync(
-    "./public/rss/feed.json",
-    feed.json1()
-  );
+  fs.writeFileSync("./public/rss/feed.xml", feed.rss2());
+  fs.writeFileSync("./public/rss/atom.xml", feed.atom1());
+  fs.writeFileSync("./public/rss/feed.json", feed.json1());
 }
 
 export default generateRssFeed;

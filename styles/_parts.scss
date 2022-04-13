@@ -103,8 +103,7 @@ a dt .dateST {
 
 .triangle-bottom {
   color: $FB transparent transparent transparent;
-  border-color: $FB transparent transparent
-    transparent;
+  border-color: $FB transparent transparent transparent;
   @include Sankaku;
 }
 
@@ -112,8 +111,7 @@ a dt .dateST {
   position: relative;
   left: 6px;
   top: 2px;
-  border-color: var(--color-text) transparent
-    transparent transparent;
+  border-color: var(--color-text) transparent transparent transparent;
   @include Sankaku;
 }
 

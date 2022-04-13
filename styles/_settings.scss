@@ -19,15 +19,12 @@ $r100: $r50 * 2;
 
 @font-face {
   font-family: "Rationale";
-  src: url("./font/Rationale-Regular.ttf")
-    format("TrueType");
+  src: url("./font/Rationale-Regular.ttf") format("TrueType");
 }
 
 $Google0: "Rationale";
-$Google: -apple-system, BlinkMacSystemFont,
-  Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-  Fira Sans, Droid Sans, Helvetica Neue,
-  sans-serif;
+$Google: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+  Helvetica Neue, sans-serif;
 
 $IB: inline-block;
 $NO: none;

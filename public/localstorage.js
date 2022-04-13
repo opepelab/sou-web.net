@@ -1,13 +1,10 @@
 (function () {
   let theme;
-  const storageTheme =
-    window.localStorage.getItem("theme");
+  const storageTheme = window.localStorage.getItem("theme");
   if (storageTheme !== null) {
     theme = storageTheme;
   } else {
-    const mql = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    );
+    const mql = window.matchMedia("(prefers-color-scheme: dark)");
     theme = mql.matches ? "dark" : "light";
   }
 

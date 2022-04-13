@@ -5,10 +5,7 @@ const Footer: React.FC = () => {
     <div className="Alink">
       <footer className="Footer">
         <div className="inblo C">
-          <a href="https://github.com/opepelab/sou-web.net">
-            github/sou-web.net
-          </a>{" "}
-          Written by{" "}
+          <a href="https://github.com/opepelab/sou-web.net">github/sou-web.net</a> Written by{" "}
           <a href="https://nextjs.org/">
             <u>Next.js</u>
           </a>
@@ -20,9 +17,7 @@ const Footer: React.FC = () => {
           </a>
         </Link>{" "}
         <Link href="/">
-          <a className="inblo C">
-            © sou-web.net 2022
-          </a>
+          <a className="inblo C">© sou-web.net 2022</a>
         </Link>
       </footer>
     </div>
