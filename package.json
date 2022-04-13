@@ -38,6 +38,8 @@
     "react-syntax-highlighter": "^15.4.5",
     "recoil": "0.7.1",
     "sass": "1.50.0",
+    "stylelint-config-prettier": "9.0.3",
+    "stylelint-config-standard-scss": "3.0.0",
     "stylelint-scss": "4.2.0"
   },
   "devDependencies": {
