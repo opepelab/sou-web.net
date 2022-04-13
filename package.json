@@ -64,7 +64,7 @@
   },
   "homepage": "https://github.com/opepelab/Reduxsu#readme",
   "lint-staged": {
-    "*.{js,ts,tsx}": "eslint --cache --fix",
+    "*.{js,ts,tsx}": "eslint --fix",
     "*.{css,scss}": "stylelint --fix",
     "*.{js,ts,css,md}": "prettier --write"
   }
