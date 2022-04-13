@@ -8,6 +8,7 @@
     "start": "next start",
     "export": "next export",
     "lint": "next lint",
+    "lint-staged": "lint-staged",
     "eslint": "eslint --ext .js,jsx,.ts,.tsx --fix .",
     "prepare": "husky install"
   },
@@ -32,8 +33,8 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-syntax-highlighter": "^15.4.5",
-    "recoil": "0.6.1",
-    "sass": "1.49.9"
+    "recoil": "0.7.1",
+    "sass": "1.50.0"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^12.0.1",
@@ -46,7 +47,7 @@
     "eslint-config-next": "12.0.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-react": "^7.26.1",
-    "typescript": "4.6.2"
+    "typescript": "4.4.4"
   },
   "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
   "main": ".eslintrc.js",
@@ -60,5 +61,11 @@
   "bugs": {
     "url": "https://github.com/opepelab/Reduxsu/issues"
   },
-  "homepage": "https://github.com/opepelab/Reduxsu#readme"
+  "homepage": "https://github.com/opepelab/Reduxsu#readme",
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": [
+      "npx eslint . --fix",
+      "npx prettier --write ."
+    ]
+  }
 }
