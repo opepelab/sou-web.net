@@ -2,9 +2,6 @@
 @import "parts";
 @import "./PT/scrollbar";
 
-@tailwind components;
-@tailwind utilities;
-
 :root[data-theme="light"] {
   color-scheme: light;
   --color-text: rgb(55 65 81); //gray-700
