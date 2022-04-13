@@ -16,6 +16,12 @@
     "incremental": true,
     "baseUrl": "./"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "context/AppContext.ts", "hooks/useDarkMode.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "context/AppContext.ts",
+    "hooks/useDarkMode.js"
+  ],
   "exclude": ["node_modules"]
 }

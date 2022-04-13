@@ -11,9 +11,15 @@ const usePageView = () => {
       pageview(url);
     };
 
-    router.events.on("routeChangeComplete", handleRouteChange);
+    router.events.on(
+      "routeChangeComplete",
+      handleRouteChange
+    );
     return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
+      router.events.off(
+        "routeChangeComplete",
+        handleRouteChange
+      );
     };
   }, [router.events]);
 };

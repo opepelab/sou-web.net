@@ -6,7 +6,10 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
   const { setName, setMail, setMessage, send } = useMail();
   return (
     <Freya>
-      <OG title="Mail - Sou Watanabe" description="My Mail" />
+      <OG
+        title="Mail - Sou Watanabe"
+        description="My Mail"
+      />
       <main className="Mail inblo">
         <form>
           <h1>Are you sure?</h1>
@@ -49,7 +52,11 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
               />
             </dd>
             <dd>
-              <button id="massageButton" type="submit" onClick={send}>
+              <button
+                id="massageButton"
+                type="submit"
+                onClick={send}
+              >
                 Let's send.
               </button>
             </dd>

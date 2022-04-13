@@ -19,9 +19,17 @@ type Map = {
 const Index: React.FC<Map> = ({ blog }) => {
   return (
     <Freya>
-      <OG title="Sou Watanabe - Homepage" description="Index Top Page" />
+      <OG
+        title="Sou Watanabe - Homepage"
+        description="Index Top Page"
+      />
       <main className="inblo textLeft">
-        <Heading as="h1" m="0" fontWeight="200" fontSize="32">
+        <Heading
+          as="h1"
+          m="0"
+          fontWeight="200"
+          fontSize="32"
+        >
           Hello? My name is Sou🖐
         </Heading>
         <Text fontWeight="200" fontSize="20px">
@@ -38,7 +46,9 @@ const Index: React.FC<Map> = ({ blog }) => {
             </dt>
             <Link href={`/docs/${blog.fields.slug}`}>
               <a>
-                <div className="PPx scaleLinks pinkLinks">{blog.fields.title}</div>
+                <div className="PPx scaleLinks pinkLinks">
+                  {blog.fields.title}
+                </div>
               </a>
             </Link>
           </dl>
@@ -55,11 +65,12 @@ const Index: React.FC<Map> = ({ blog }) => {
 
 export const getStaticProps: GetStaticProps = async () => {
   await generateRssFeed();
-  const data: EntryCollection<IPostFields> = await client.getEntries({
-    content_type: "blog",
-    order: "-fields.date",
-    limit: 15,
-  });
+  const data: EntryCollection<IPostFields> =
+    await client.getEntries({
+      content_type: "blog",
+      order: "-fields.date",
+      limit: 15,
+    });
   return {
     props: {
       blog: data.items,

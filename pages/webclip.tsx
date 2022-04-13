@@ -4,22 +4,31 @@ import OG from "components/Sys/OG";
 const Webclip: React.FC = () => {
   return (
     <Freya>
-      <OG title="Webclip - Sou Watanabe" description="My Web Clip" />
+      <OG
+        title="Webclip - Sou Watanabe"
+        description="My Web Clip"
+      />
       <main className="Alink list inblo textLeft resizeimage">
-        <h1>これだと思った重要なウェブページを公開クリップしています</h1>
+        <h1>
+          これだと思った重要なウェブページを公開クリップしています
+        </h1>
         <ul>
           <li>
             <a href="https://nico0927.hatenablog.com/entry/2017/10/31/221613">
               クリエイターとデザイナーとアーティストの違い
             </a>
           </li>
-          <p>三つの違いについて絵コンテをもちいて説明されています、当てはまる人は一読の価値があります。</p>
+          <p>
+            三つの違いについて絵コンテをもちいて説明されています、当てはまる人は一読の価値があります。
+          </p>
           <li>
             <a href="https://digitalidentity.co.jp/blog/creative/color-psychology.html#i-10">
               色彩と心理の関係-「配色」をブランディングに活かそう！
             </a>
           </li>
-          <p>色と心理学の関係を死ぬほど調べていた時期があってその時見つけたページです。</p>
+          <p>
+            色と心理学の関係を死ぬほど調べていた時期があってその時見つけたページです。
+          </p>
           <p>個人的に何度も訪れる必須のページ。</p>
           <li>
             <a href="https://future-architect.github.io/typescript-guide/version.html">
@@ -32,7 +41,9 @@ const Webclip: React.FC = () => {
             </a>
           </li>
           <li>
-            <a href="https://os0x.hatenablog.com/entry/20110617/1308280740">君は3つのリロードを知っているか？</a>
+            <a href="https://os0x.hatenablog.com/entry/20110617/1308280740">
+              君は3つのリロードを知っているか？
+            </a>
           </li>
         </ul>
       </main>
