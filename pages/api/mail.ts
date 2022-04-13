@@ -1,9 +1,9 @@
-import { createTransport } from 'nodemailer';
-import type { NextApiRequest, NextApiResponse } from 'next'
+import { createTransport } from "nodemailer";
+import type { NextApiRequest, NextApiResponse } from "next";
 
 export default async (req: NextApiRequest, res: NextApiResponse): Promise<void> => {
   const transporter = createTransport({
-    host: 'smtp.gmail.com',
+    host: "smtp.gmail.com",
     port: 465,
     secure: true,
     auth: {
@@ -13,7 +13,7 @@ export default async (req: NextApiRequest, res: NextApiResponse): Promise<void> 
   });
   await transporter.sendMail({
     to: process.env.MAIL_TO,
-    subject: 'お問い合わせ',
+    subject: "お問い合わせ",
     text: req.body,
   });
 
