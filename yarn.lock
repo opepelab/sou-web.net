@@ -3681,10 +3681,10 @@
   dependencies:
     "picomatch" "^2.2.1"
 
-"recoil@0.7.1":
-  "integrity" "sha512-gRaiLLZKfAMe/QszIY1OLzNdd9m3Hf57c1b6bWrdZvOksw7Mr6c5YPThOh+HORbZ/cJV0L82OCH2sPyAr05oBw=="
-  "resolved" "https://registry.npmjs.org/recoil/-/recoil-0.7.1.tgz"
-  "version" "0.7.1"
+"recoil@0.6.1":
+  "integrity" "sha512-J7oT3LZl2vpyFClgSUpOQjpykz84VSX/NJE/PavAtR8n7Z+whEdVBPUtwc2TEWjONeL/lJmiac2XQ+qEOQA52Q=="
+  "resolved" "https://registry.npmjs.org/recoil/-/recoil-0.6.1.tgz"
+  "version" "0.6.1"
   dependencies:
     "hamt_plus" "1.0.2"
 
