@@ -19,7 +19,7 @@
   --color-bg: rgb(40 32 35);
   --color-pink: rgb(94 234 212);
   --color-bg2: rgb(0 0 0 / 30%);
-  --color-icon: mediumslateblue;
+  --color-icon: skyblue;
 }
 
 // black:text gray-700;
@@ -34,19 +34,19 @@ html {
 }
 
 body {
-  @include LRauto;
-
   background-color: var(--color-bg);
   color: var(--color-text);
   font-weight: normal;
   text-align: center;
-  transition: all 2s;
   width: 1000px;
+  @include LRauto;
   font: {
     family: $Google;
     size: $p14;
     weight: normal;
   }
+
+  transition: all 2s;
 }
 
 article {
@@ -149,20 +149,11 @@ nav ul li {
   color: #333;
 }
 
-.nav1-right {
-  z-index: 2;
-  position: relative;
-  display: inline-flex;
-  top: -7px;
-  grid-gap: 15px;
-  white-space: nowrap;
-  transform: translate(150px);
-}
-
 .nav1-left {
   position: relative;
   display: inline-flex;
-  top: -7px;
+  top: -10px;
+  left: -120px;
   grid-gap: 15px;
   white-space: nowrap;
   z-index: 2;
@@ -305,8 +296,29 @@ textarea {
   display: inline-flex;
   font-family: $Google0;
   font-size: 20px;
-  top: 5px;
-  transform: translate(-30px);
+  top: 2px;
+  left: -84px;
+}
+
+.feedPosition {
+  z-index: 3;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  top: 8px;
+  right: -550px;
+  width: 42px;
+  height: 42px;
+}
+
+.sky {
+  color: skyblue;
+}
+
+.ColorGray {
+  color: var(--color-icon);
+  transition: all 2s;
 }
 
 @media screen and (min-width: 739.98px) {
@@ -315,7 +327,7 @@ textarea {
     position: relative;
     display: inline-flex;
     top: 8px;
-    right: -450px;
+    right: -520px;
     transition-duration: 1s;
     cursor: pointer;
   }

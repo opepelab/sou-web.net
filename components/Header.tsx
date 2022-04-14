@@ -2,6 +2,7 @@ import ActiveLink from "./Sys/ActiveLink";
 import { useRecoilState, useSetRecoilState } from "recoil";
 import { aboutState, linksState, menuState, aboutStateRes, linksStateRes } from "libs/unique";
 import ToggleDarkMode from "components/DarkToggle";
+import RSS from "components/RSS";
 import Text from "components/Text";
 
 const Header: React.FC = () => {
@@ -25,6 +26,7 @@ const Header: React.FC = () => {
         >
           <Text />
           <ToggleDarkMode />
+          <RSS />
           <div className="disableN">
             <nav>
               <ul className="nav1-left">
@@ -101,16 +103,6 @@ const Header: React.FC = () => {
                     </div>
                   </div>
                 </li>
-                <li>
-                  <ActiveLink href="/rss/atom.xml" activeClassName="headerState">
-                    <a className="scaleLinks Block">
-                      <div className="gg-data" />
-                      RSS
-                    </a>
-                  </ActiveLink>
-                </li>
-              </ul>
-              <ul className="nav1-right">
                 <li>
                   <ActiveLink href="/mail" activeClassName="headerState">
                     <a className="scaleLinks Block">

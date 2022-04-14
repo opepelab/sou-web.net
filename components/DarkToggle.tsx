@@ -31,7 +31,7 @@ export const ToggleDarkMode: React.FC = () => {
 
   return (
     <div className="togglePosition">
-      <div className="iconButton shadow" onClick={handleChangeDarkMode}>
+      <div className="iconButton" onClick={handleChangeDarkMode}>
         <AnimatePresence exitBeforeEnter>
           <motion.div
             className="flex"
@@ -42,7 +42,7 @@ export const ToggleDarkMode: React.FC = () => {
             exit={{ opacity: 0, scale: 0.6 }}
             transition={{ duration: 1 }}
           >
-            {darkMode ? <IoMdMoon size={20} color={"lightskyblue"} /> : <HiSun size={20} color={"lightsalmon"} />}
+            {darkMode ? <IoMdMoon size={22} color={"skyblue"} /> : <HiSun size={22} color={"lightsalmon"} />}
           </motion.div>
         </AnimatePresence>
       </div>

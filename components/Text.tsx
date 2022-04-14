@@ -4,7 +4,7 @@ const Text: React.FC = () => {
   return (
     <div className="Text">
       <ActiveLink href="/" activeClassName="headerState">
-        <a>
+        <a className="sky">
           <div className="heart" />
           Sou Watanabe
         </a>
