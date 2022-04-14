@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { IoMdMoon } from "react-icons/io";
-import { HiSun } from "react-icons/hi";
+import { HiSun, HiMoon } from "react-icons/hi";
 
 export const ToggleDarkMode: React.FC = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -42,7 +41,7 @@ export const ToggleDarkMode: React.FC = () => {
             exit={{ opacity: 0, scale: 0.6 }}
             transition={{ duration: 1 }}
           >
-            {darkMode ? <IoMdMoon size={22} color={"skyblue"} /> : <HiSun size={22} color={"lightsalmon"} />}
+            {darkMode ? <HiMoon size={22} color={"skyblue"} /> : <HiSun size={22} color={"lightsalmon"} />}
           </motion.div>
         </AnimatePresence>
       </div>

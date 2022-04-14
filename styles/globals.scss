@@ -306,11 +306,10 @@ textarea {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  top: 8px;
-  right: -500px;
+  top: 6px;
+  left: -120px;
   width: 42px;
   height: 42px;
-  color: var(--color-icon);
   transition: all 2s;
 }
 
@@ -319,7 +318,7 @@ textarea {
     z-index: 3;
     position: relative;
     display: inline-flex;
-    top: 7px;
+    top: 6px;
     right: -480px;
     transition-duration: 1s;
     cursor: pointer;
