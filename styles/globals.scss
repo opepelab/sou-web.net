@@ -135,8 +135,7 @@ nav ul li {
 
 .menu li {
   background: #fff;
-  border: solid 1px black;
-  border-style: dashed;
+  border: dashed 1px black;
   list-style-type: none;
 }
 
@@ -152,7 +151,7 @@ nav ul li {
 .nav1-left {
   position: relative;
   display: inline-flex;
-  top: -10px;
+  top: -9px;
   left: -120px;
   grid-gap: 15px;
   white-space: nowrap;
@@ -306,7 +305,7 @@ textarea {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  top: 6px;
+  top: 7px;
   left: -120px;
   width: 42px;
   height: 42px;
@@ -318,7 +317,7 @@ textarea {
     z-index: 3;
     position: relative;
     display: inline-flex;
-    top: 6px;
+    top: 8px;
     right: -480px;
     transition-duration: 1s;
     cursor: pointer;
