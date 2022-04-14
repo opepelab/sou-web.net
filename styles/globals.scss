@@ -242,12 +242,6 @@ p {
   white-space: pre-wrap;
 }
 
-@media screen and (min-width: 740.98px) {
-  p:hover {
-    // @include Hover;
-  }
-}
-
 h1 {
   @include H1H2;
 }
