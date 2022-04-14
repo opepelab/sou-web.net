@@ -3,23 +3,23 @@
 @import "./PT/scrollbar";
 
 :root[data-theme="light"] {
+  color-scheme: light;
+
   --color-text: rgb(55 65 81);
   --color-bg: rgb(255 255 255);
   --color-pink: rgb(13 148 136);
   --color-bg2: rgb(255 255 255 / 30%);
   --color-icon: lightsalmon;
-
-  color-scheme: light;
 }
 
 :root[data-theme="dark"] {
+  color-scheme: dark;
+
   --color-text: rgb(209 213 219);
   --color-bg: rgb(40 32 35);
   --color-pink: rgb(94 234 212);
   --color-bg2: rgb(0 0 0 / 30%);
   --color-icon: mediumslateblue;
-
-  color-scheme: dark;
 }
 
 // black:text gray-700;
@@ -70,9 +70,9 @@ iframe {
 
 // API CMS用の引用のスタイル
 blockquote {
-  border-left: solid 6px gray;
   margin: 0;
   padding-left: 20px;
+  border-left: solid 6px gray;
 }
 
 dt {
@@ -98,12 +98,17 @@ ul {
   padding: 0;
 }
 
+li {
+  list-style: none;
+}
+
 nav ul li {
   width: fit-content;
 }
 
 .list li {
   margin: 14px;
+  list-style: inside;
 }
 
 .menuButton {
@@ -112,20 +117,20 @@ nav ul li {
 }
 
 .NavDrop [aria-expanded="true"] {
+  position: absolute;
   margin-top: 40px;
   opacity: 1;
-  position: absolute;
-  transition-duration: 0.2s;
   visibility: visible;
+  transition-duration: 0.2s;
 }
 
 .NavDrop [aria-expanded="false"] {
+  position: absolute;
   margin-top: 20px;
   opacity: 0;
-  position: absolute;
+  visibility: hidden;
   transform: scale(0);
   transition-duration: 0.2s;
-  visibility: hidden;
 }
 
 .menu li {
@@ -145,47 +150,45 @@ nav ul li {
 }
 
 .nav1-right {
-  display: inline-flex;
-  grid-gap: 15px;
-  list-style: none;
-  position: relative;
-  top: -3px;
-  transform: translate(150px);
-  white-space: nowrap;
   z-index: 2;
+  position: relative;
+  display: inline-flex;
+  top: -3px;
+  grid-gap: 15px;
+  white-space: nowrap;
+  transform: translate(150px);
 }
 
 .nav1-left {
-  display: inline-flex;
-  grid-gap: 15px;
-  list-style: none;
   position: relative;
+  display: inline-flex;
   top: -3px;
+  grid-gap: 15px;
   white-space: nowrap;
   z-index: 2;
 }
 
 .nav2 {
+  z-index: 1;
+  position: fixed;
   background: var(--color-bg);
-  border-bottom: dashed 1px gray;
-  border-radius: 0 4px 4px 0;
-  border-right: dashed 1px gray;
-  border-top: dashed 1px gray;
+  width: 40%;
   left: 0;
   padding: 8px 20px 8px 0;
-  position: fixed;
   row-gap: 0;
   text-align: left;
-  transition-duration: 0.4s;
   white-space: nowrap;
-  width: 40%;
-  z-index: 1;
+  border-bottom: dashed 1px gray;
+  border-right: dashed 1px gray;
+  border-top: dashed 1px gray;
+  border-radius: 0 4px 4px 0;
+  transition-duration: 0.4s;
 }
 
 .nav2 a {
-  font-size: $p16;
   height: 20px;
   padding: 10px 10px 10px 0;
+  font-size: $p16;
 }
 
 .nav2 li {
@@ -196,7 +199,6 @@ nav ul li {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  list-style: none;
 }
 
 .Filt {
@@ -216,9 +218,7 @@ nav ul li {
   .scaleLinks:hover {
     @include Hover;
   }
-}
 
-@media screen and (min-width: 740.98px) {
   .hoverBG:hover {
     background-color: rgb(0 0 0 / 20%);
     cursor: pointer;
@@ -231,10 +231,10 @@ nav ul li {
 }
 
 .BlockM {
+  z-index: 3;
+  position: relative;
   display: inline-flex;
   padding: 14px;
-  position: relative;
-  z-index: 3;
 }
 
 p {
@@ -301,24 +301,24 @@ textarea {
 }
 
 .Text {
+  z-index: 2;
+  position: relative;
   display: inline-flex;
   font-family: $Google0;
   font-size: 20px;
-  position: relative;
   top: 8px;
   transform: translate(-30px);
-  z-index: 2;
 }
 
 @media screen and (min-width: 739.98px) {
   .togglePosition {
-    cursor: pointer;
-    display: inline-flex;
+    z-index: 3;
     position: relative;
+    display: inline-flex;
     top: 2px;
     transform: translate(448px);
     transition-duration: 1s;
-    z-index: 3;
+    cursor: pointer;
   }
 }
 
