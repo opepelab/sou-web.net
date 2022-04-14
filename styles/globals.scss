@@ -153,7 +153,7 @@ nav ul li {
   z-index: 2;
   position: relative;
   display: inline-flex;
-  top: -3px;
+  top: -7px;
   grid-gap: 15px;
   white-space: nowrap;
   transform: translate(150px);
@@ -162,7 +162,7 @@ nav ul li {
 .nav1-left {
   position: relative;
   display: inline-flex;
-  top: -3px;
+  top: -7px;
   grid-gap: 15px;
   white-space: nowrap;
   z-index: 2;
@@ -305,7 +305,7 @@ textarea {
   display: inline-flex;
   font-family: $Google0;
   font-size: 20px;
-  top: 8px;
+  top: 5px;
   transform: translate(-30px);
 }
 
@@ -314,8 +314,8 @@ textarea {
     z-index: 3;
     position: relative;
     display: inline-flex;
-    top: 2px;
-    transform: translate(448px);
+    top: 8px;
+    right: -450px;
     transition-duration: 1s;
     cursor: pointer;
   }

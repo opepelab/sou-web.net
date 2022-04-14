@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { ImSun } from "react-icons/Im";
+import { BsMoonStars } from "react-icons/Bs";
+import { IoMdMoon } from "react-icons/Io";
+import { HiSun } from "react-icons/Hi";
 
 export const ToggleDarkMode: React.FC = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -35,12 +39,12 @@ export const ToggleDarkMode: React.FC = () => {
             className="flex"
             onClick={handleChangeDarkMode}
             key={darkMode ? "dark" : "light"}
-            initial={{ rotate: -120, opacity: 0 }}
-            animate={{ rotate: 0, opacity: 1 }}
-            exit={{ y: 20, opacity: 0 }}
+            initial={{ rotate: -90, opacity: 0, scale: 0.2 }}
+            animate={{ rotate: 0, opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.6 }}
             transition={{ duration: 1 }}
           >
-            <div className={darkMode ? "gg-moon" : "gg-sun"} />
+            {darkMode ? <IoMdMoon size={20} color={"lightskyblue"} /> : <HiSun size={20} color={"lightsalmon"} />}
           </motion.div>
         </AnimatePresence>
       </div>
