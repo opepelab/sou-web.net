@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { BsSun, BsMoonStars } from "react-icons/bs";
+import { BsSun, BsMoonStars, BsCloudMoonFill, BsCloudSunFill } from "react-icons/bs";
 
 export const ToggleDarkMode: React.FC = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -41,7 +41,11 @@ export const ToggleDarkMode: React.FC = () => {
             exit={{ y: 20, opacity: 0 }}
             transition={{ duration: 0.8 }}
           >
-            {darkMode ? <BsMoonStars size={20} color={"skyblue"} /> : <BsSun size={20} color={"lightsalmon"} />}
+            {darkMode ? (
+              <BsCloudMoonFill size={24} color={"skyblue"} />
+            ) : (
+              <BsCloudSunFill size={24} color={"lightsalmon"} />
+            )}
           </motion.div>
         </AnimatePresence>
       </div>
