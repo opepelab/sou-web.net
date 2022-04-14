@@ -3,7 +3,7 @@
 @media screen and (max-width: 739.98px) {
   html {
     height: 100%;
-    padding: 58px 0 0 0;
+    padding: 58px 0 0;
   }
 
   footer {
@@ -34,12 +34,10 @@
     z-index: 4;
     position: relative;
     border-radius: 12%;
-    padding-top: 30px;
-    padding-bottom: 9px;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding: 30px 12px 9px;
     transition-duration: 0.5s;
     outline: none;
+    border: none;
   }
 
   .Line {
@@ -49,6 +47,7 @@
     right: 6px;
     top: 6px;
   }
+
   .Line span {
     display: block;
     position: relative;
@@ -99,12 +98,15 @@
 
   .MenuList [aria-expanded="true"] {
     @include Menu;
+
     visibility: visible;
   }
 
   .MenuList [aria-expanded="false"] {
     @include Menu;
+
     visibility: hidden;
+
     .nav2 {
       transform: translateX(-225px) rotate(-45deg);
     }
@@ -159,6 +161,7 @@
   .none {
     display: block;
   }
+
   pre code span {
     font-size: $p10;
     overflow-x: scroll;
