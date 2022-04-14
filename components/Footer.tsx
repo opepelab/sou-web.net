@@ -18,6 +18,11 @@ const Footer: React.FC = () => {
         </Link>{" "}
         <Link href="/">
           <a className="inblo C">© sou-web.net 2022</a>
+        </Link>{" "}
+        <Link href="/rss/atom.xml">
+          <a className="inblo C">
+            <u>RSS</u>
+          </a>
         </Link>
       </footer>
     </div>

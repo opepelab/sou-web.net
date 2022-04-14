@@ -36,12 +36,12 @@ export const ToggleDarkMode: React.FC = () => {
             className="flex"
             onClick={handleChangeDarkMode}
             key={darkMode ? "dark" : "light"}
-            initial={{ rotate: -90, opacity: 0, scale: 0.2 }}
+            initial={{ rotate: -90, opacity: 0, scale: 0 }}
             animate={{ rotate: 0, opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.6 }}
             transition={{ duration: 1 }}
           >
-            {darkMode ? <HiMoon size={24} color={"skyblue"} /> : <HiSun size={24} color={"lightsalmon"} />}
+            {darkMode ? <HiMoon size={20} color={"skyblue"} /> : <HiSun size={20} color={"lightsalmon"} />}
           </motion.div>
         </AnimatePresence>
       </div>

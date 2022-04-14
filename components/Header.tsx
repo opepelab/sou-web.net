@@ -26,7 +26,6 @@ const Header: React.FC = () => {
         >
           <Text />
           <ToggleDarkMode />
-          <RSS />
           <div className="disableN">
             <nav>
               <ul className="nav1-left">
