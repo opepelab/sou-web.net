@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { IoMdMoon } from "react-icons/Io";
+import { IoMdMoon } from "react-icons/io";
 import { HiSun } from "react-icons/Hi";
 
 export const ToggleDarkMode: React.FC = () => {
