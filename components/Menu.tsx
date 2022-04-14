@@ -29,7 +29,7 @@ const Menu: React.FC = () => {
         <div aria-expanded={menu}>
           <nav>
             <ul className="nav2">
-              <li id="About">
+              <li className="About">
                 <div
                   onClick={() => {
                     setAboutRes(!aboutRes);
@@ -82,7 +82,7 @@ const Menu: React.FC = () => {
                   </div>
                 </div>
               </li>
-              <li id="Links">
+              <li className="Links">
                 <div
                   onClick={() => {
                     setLinksRes(!linksRes);

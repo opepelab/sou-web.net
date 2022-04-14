@@ -3,43 +3,50 @@
 @import "./PT/scrollbar";
 
 :root[data-theme="light"] {
-  color-scheme: light;
-  --color-text: rgb(55 65 81); //gray-700
-  --color-bg: rgb(255, 255, 255);
+  --color-text: rgb(55 65 81);
+  --color-bg: rgb(255 255 255);
   --color-pink: rgb(13 148 136);
-  --color-bg2: rgba(255, 255, 255, 0.3);
+  --color-bg2: rgb(255 255 255 / 30%);
   --color-icon: lightsalmon;
+
+  color-scheme: light;
 }
-/* 追記 */
+
 :root[data-theme="dark"] {
-  color-scheme: dark;
-  --color-text: rgb(209 213 219); //gray-300
-  --color-bg: rgb(40, 32, 35); //40 32 35
+  --color-text: rgb(209 213 219);
+  --color-bg: rgb(40 32 35);
   --color-pink: rgb(94 234 212);
-  --color-bg2: rgba(0, 0, 0, 0.3);
+  --color-bg2: rgb(0 0 0 / 30%);
   --color-icon: mediumslateblue;
+
+  color-scheme: dark;
 }
-// --color-bg: rgb(255, 244, 240);
+
+// black:text gray-700;
+// white:text gray-300;
+// --color-bg: black pink rgb(255, 244, 240);
+// --color-bg: litht tone 40 32 35;
 
 html {
-  -webkit-text-size-adjust: $r100;
   overflow: scroll;
   padding: 58px 58px $p40 58px;
+  text-size-adjust: $r100;
 }
 
 body {
-  transition: all 2s;
+  @include LRauto;
+
   background-color: var(--color-bg);
   color: var(--color-text);
+  font-weight: normal;
+  text-align: center;
+  transition: all 2s;
+  width: 1000px;
   font: {
     family: $Google;
     size: $p14;
     weight: normal;
   }
-  text-align: center;
-  font-weight: normal;
-  width: 1000px;
-  @include LRauto;
 }
 
 article {
@@ -52,6 +59,7 @@ pre {
 
 pre code span {
   font-size: $p12;
+
   // font-weight: bold;
 }
 
@@ -63,35 +71,39 @@ iframe {
 // API CMS用の引用のスタイル
 blockquote {
   border-left: solid 6px gray;
-  margin: 0px;
+  margin: 0;
   padding-left: 20px;
 }
 
+dt {
+  font-size: $p10;
+}
+
+dd {
+  margin-bottom: $p20;
+  margin-left: $p0;
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
 .resizeimage img {
-  width: 100%;
   transform: scale(0.95);
-}
-
-button {
-  border: none;
-  outline: none;
-  font: {
-    family: $Google;
-    weight: normal;
-    size: 14px;
-  }
-}
-
-.list li {
-  margin: 14px;
+  width: 100%;
 }
 
 ul {
-  padding: 0px;
+  padding: 0;
 }
 
 nav ul li {
   width: fit-content;
+}
+
+.list li {
+  margin: 14px;
 }
 
 .menuButton {
@@ -100,32 +112,32 @@ nav ul li {
 }
 
 .NavDrop [aria-expanded="true"] {
-  position: absolute;
   margin-top: 40px;
   opacity: 1;
+  position: absolute;
   transition-duration: 0.2s;
   visibility: visible;
 }
 
 .NavDrop [aria-expanded="false"] {
-  position: absolute;
   margin-top: 20px;
   opacity: 0;
+  position: absolute;
   transform: scale(0);
   transition-duration: 0.2s;
   visibility: hidden;
 }
 
 .menu li {
-  list-style-type: none;
+  background: #fff;
   border: solid 1px black;
   border-style: dashed;
-  background: #fff;
+  list-style-type: none;
 }
 
 .menu {
-  text-align: center;
   display: inline-flex;
+  text-align: center;
 }
 
 .White a {
@@ -133,41 +145,41 @@ nav ul li {
 }
 
 .nav1-right {
-  z-index: 2;
-  position: relative;
-  list-style: none;
   display: inline-flex;
-  transform: translate(150px);
   grid-gap: 15px;
-  white-space: nowrap;
+  list-style: none;
+  position: relative;
   top: -3px;
+  transform: translate(150px);
+  white-space: nowrap;
+  z-index: 2;
 }
 
 .nav1-left {
-  z-index: 2;
-  position: relative;
-  list-style: none;
   display: inline-flex;
   grid-gap: 15px;
-  white-space: nowrap;
+  list-style: none;
+  position: relative;
   top: -3px;
+  white-space: nowrap;
+  z-index: 2;
 }
 
 .nav2 {
-  z-index: 1;
-  position: fixed;
-  text-align: left;
-  padding: 8px 20px 8px 0;
-  row-gap: 0px;
-  width: 40%;
-  left: 0px;
-  white-space: nowrap;
   background: var(--color-bg);
-  border-radius: 0 4px 4px 0;
-  border-top: dashed 1px gray;
   border-bottom: dashed 1px gray;
+  border-radius: 0 4px 4px 0;
   border-right: dashed 1px gray;
+  border-top: dashed 1px gray;
+  left: 0;
+  padding: 8px 20px 8px 0;
+  position: fixed;
+  row-gap: 0;
+  text-align: left;
   transition-duration: 0.4s;
+  white-space: nowrap;
+  width: 40%;
+  z-index: 1;
 }
 
 .nav2 a {
@@ -177,27 +189,14 @@ nav ul li {
 }
 
 .nav2 li {
-  padding: 8px 20px 8px 20px;
+  padding: 8px 20px;
 }
 
 .ListNum {
-  list-style: none;
   display: flex;
   flex-direction: row;
   gap: 20px;
-}
-
-dt {
-  font-size: $p10;
-}
-dd {
-  margin-left: $p0;
-  margin-bottom: $p20;
-}
-
-a {
-  color: var(--color-text);
-  text-decoration: none;
+  list-style: none;
 }
 
 .Filt {
@@ -221,26 +220,26 @@ a {
 
 @media screen and (min-width: 740.98px) {
   .hoverBG:hover {
+    background-color: rgb(0 0 0 / 20%);
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.2);
   }
 }
 
 .Block {
+  padding: 10px 24px 14px;
   width: 100%;
-  padding: 10px 24px 14px 24px;
 }
 
 .BlockM {
-  z-index: 3;
-  position: relative;
   display: inline-flex;
   padding: 14px;
+  position: relative;
+  z-index: 3;
 }
 
 p {
-  white-space: pre-wrap;
   margin-top: 20px;
+  white-space: pre-wrap;
 }
 
 @media screen and (min-width: 740.98px) {
@@ -248,6 +247,7 @@ p {
     // @include Hover;
   }
 }
+
 h1 {
   @include H1H2;
 }
@@ -265,14 +265,16 @@ h5 {
 }
 
 i {
-  font-style: normal;
   @include H5;
+
+  font-style: normal;
 }
 
 @keyframes feed {
   from {
     opacity: 0.05;
   }
+
   to {
     opacity: 1;
   }
@@ -300,29 +302,29 @@ textarea {
   @include BBMyellow;
 }
 
-#massageButton {
+.massageButton {
   @include Mbutton;
 }
 
 .Text {
-  z-index: 2;
-  position: relative;
-  font-family: $Google0;
   display: inline-flex;
+  font-family: $Google0;
+  font-size: 20px;
+  position: relative;
   top: 8px;
   transform: translate(-30px);
-  font-size: 20px;
+  z-index: 2;
 }
 
 @media screen and (min-width: 739.98px) {
   .togglePosition {
-    z-index: 3;
-    position: relative;
+    cursor: pointer;
     display: inline-flex;
+    position: relative;
     top: 2px;
     transform: translate(448px);
     transition-duration: 1s;
-    cursor: pointer;
+    z-index: 3;
   }
 }
 
@@ -334,41 +336,43 @@ textarea {
   @include Back;
 }
 
-#About ul li {
+.About ul li {
   height: 20px;
   padding: 20px 0 0 40px;
 }
 
-#Links ul li {
+.Links ul li {
   height: 20px;
-  padding: 20px 0 0px 40px;
+  padding: 20px 0 0 40px;
 }
 
 form {
-  border-radius: 12px;
-  padding: 5px 10px 5px 10px;
   background: skyblue;
+  border-radius: 12px;
+  padding: 5px 10px;
   transition-duration: 0.5s;
 }
+
 form:focus-within {
   background: pink;
 }
 
 button {
-  border: none;
   background: transparent;
 }
 
 .Filter [aria-expanded="true"] {
   @include FilterAtom;
+
   touch-action: none;
-  visibility: visible;
   transition-duration: 0.5s;
+  visibility: visible;
 }
 
 .Filter [aria-expanded="false"] {
   @include FilterAtom;
-  visibility: hidden;
+
   opacity: 0;
   transition-duration: 0.5s;
+  visibility: hidden;
 }

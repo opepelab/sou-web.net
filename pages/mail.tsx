@@ -49,7 +49,7 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
               />
             </dd>
             <dd>
-              <button id="massageButton" type="submit" onClick={send}>
+              <button className="massageButton" type="submit" onClick={send}>
                 Let's send.
               </button>
             </dd>
