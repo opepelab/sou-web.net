@@ -108,7 +108,9 @@
     visibility: hidden;
 
     .nav2 {
-      transform: translateX(-225px) rotate(-45deg);
+      opacity: 0;
+      transform: translateX(100px) translateY(-100px) scale(0) rotate(-720deg);
+      transform-origin: center;
     }
   }
 
@@ -122,6 +124,10 @@
 
   .AboutState [aria-expanded="true"] {
     @include State-true;
+
+    div {
+      background-color: orange;
+    }
   }
 
   .AboutState [aria-expanded="false"] {
