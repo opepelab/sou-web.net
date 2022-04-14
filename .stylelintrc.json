@@ -8,7 +8,6 @@
   ],
 
   "rules": {
-    "order/properties-alphabetical-order": true,
     "color-named": null,
     "selector-class-pattern": null
   }
