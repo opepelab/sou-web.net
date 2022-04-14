@@ -2,7 +2,6 @@ import ActiveLink from "./Sys/ActiveLink";
 import { useRecoilState, useSetRecoilState } from "recoil";
 import { aboutState, linksState, menuState, aboutStateRes, linksStateRes } from "libs/unique";
 import ToggleDarkMode from "components/DarkToggle";
-import RSS from "components/RSS";
 import Text from "components/Text";
 
 const Header: React.FC = () => {
