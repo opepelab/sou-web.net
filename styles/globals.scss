@@ -299,18 +299,6 @@ textarea {
   left: -94px;
 }
 
-.feedPosition {
-  z-index: 3;
-  position: relative;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  top: 7px;
-  left: -120px;
-  width: 42px;
-  height: 42px;
-}
-
 @media screen and (min-width: 739.98px) {
   .togglePosition {
     z-index: 3;
