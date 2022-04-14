@@ -109,8 +109,8 @@
 
     .nav2 {
       opacity: 0;
-      transform: translateX(100px) translateY(-100px) scale(0) rotate(-720deg);
       transform-origin: center;
+      transform: translateX(100px) translateY(-100px) scale(0.2) rotate(-720deg);
     }
   }
 
