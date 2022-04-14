@@ -118,18 +118,10 @@ const Menu: React.FC = () => {
                 </div>
               </li>
               <li>
-                <ActiveLink href="/rss/atom.xml" activeClassName="headerState">
-                  <a className="left1p" onClick={() => setMenu(false)}>
-                    <div className="gg-data" />
-                    RSS
-                  </a>
-                </ActiveLink>
-              </li>
-              <li>
                 <ActiveLink href="/mail" activeClassName="headerState">
                   <a onClick={() => setMenu(false)}>
                     <div className="gg-mail" />
-                    Mail
+                    Email
                   </a>
                 </ActiveLink>
               </li>
@@ -137,7 +129,7 @@ const Menu: React.FC = () => {
                 <ActiveLink href="/feature" activeClassName="headerState">
                   <a className="right1p" onClick={() => setMenu(false)}>
                     <div className="gg-git-fork" />
-                    Feature
+                    MyRoom
                   </a>
                 </ActiveLink>
               </li>

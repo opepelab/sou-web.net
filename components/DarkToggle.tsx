@@ -42,7 +42,7 @@ export const ToggleDarkMode: React.FC = () => {
             exit={{ opacity: 0, scale: 0.6 }}
             transition={{ duration: 1 }}
           >
-            {darkMode ? <IoMdMoon size={22} color={"skyblue"} /> : <HiSun size={22} color={"lightsalmon"} />}
+            {darkMode ? <IoMdMoon size={22} color={"rgb(94 234 212)"} /> : <HiSun size={22} color={"lightsalmon"} />}
           </motion.div>
         </AnimatePresence>
       </div>

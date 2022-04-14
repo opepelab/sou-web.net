@@ -1,4 +1,4 @@
-$p0: 0px;
+$p0: 0;
 $p5: 5px;
 $p10: $p5 * 2;
 $p12: $p10 * 1.2;
@@ -11,31 +11,28 @@ $p60: $p20 * 3;
 $p80: $p20 * 4;
 $p100: $p50 * 2;
 $p200: $p50 * 4;
-
 $r0: 0%;
 $r25: 25%;
 $r50: $r25 * 2;
 $r100: $r50 * 2;
 
 @font-face {
-  font-family: "Rationale";
+  font-family: Rationale;
   src: url("./font/Rationale-Regular.ttf") format("TrueType");
 }
 
 $Google0: "Rationale";
-$Google: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-  Helvetica Neue, sans-serif;
-
+$Google: -apple-system, blinkmacsystemfont, segoe ui, roboto, oxygen, ubuntu, cantarell, fira sans, droid sans,
+  helvetica neue, sans-serif;
 $IB: inline-block;
 $NO: none;
-
 $BG: #1f2a38;
 $ST: #e1e1e1;
 $SS: #4e92f8;
 $FB: #ffb7b7;
 $FE: #ffefef;
 $YE: #f8f0df;
-$ME: rgba(0, 0, 0, 0.75);
+$ME: rgb(0 0 0 / 75%);
 
 @mixin Sankaku {
   display: $IB;
@@ -54,7 +51,6 @@ $ME: rgba(0, 0, 0, 0.75);
   width: 42px;
   height: 42px;
   border-radius: 20%;
-  transition: all 2s;
 }
 
 @mixin LRauto {
@@ -78,7 +74,7 @@ $ME: rgba(0, 0, 0, 0.75);
 @mixin H5 {
   border: solid var(--color-text) 1px;
   display: $IB;
-  padding: 0 5px 0 5px;
+  padding: 0 5px;
   margin: 0%;
   border-radius: 2px;
 }
@@ -95,6 +91,7 @@ $ME: rgba(0, 0, 0, 0.75);
   left: $r0;
   width: $r100;
   height: $r100;
+
   // background: rgba(0, 0, 0, 0.15);
 }
 

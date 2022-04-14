@@ -19,7 +19,7 @@
   --color-bg: rgb(40 32 35);
   --color-pink: rgb(94 234 212);
   --color-bg2: rgb(0 0 0 / 30%);
-  --color-icon: skyblue;
+  --color-icon: rgb(94 234 212);
 }
 
 // black:text gray-700;
@@ -307,16 +307,9 @@ textarea {
   justify-content: center;
   align-items: center;
   top: 8px;
-  right: -550px;
+  right: -500px;
   width: 42px;
   height: 42px;
-}
-
-.sky {
-  color: skyblue;
-}
-
-.ColorGray {
   color: var(--color-icon);
   transition: all 2s;
 }
@@ -326,8 +319,8 @@ textarea {
     z-index: 3;
     position: relative;
     display: inline-flex;
-    top: 8px;
-    right: -520px;
+    top: 7px;
+    right: -480px;
     transition-duration: 1s;
     cursor: pointer;
   }

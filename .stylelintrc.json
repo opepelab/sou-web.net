@@ -5,6 +5,8 @@
   "rules": {
     "color-named": null,
     "selector-class-pattern": null,
-    "no-descending-specificity": null
+    "no-descending-specificity": null,
+    "scss/dollar-variable-pattern": null,
+    "scss/at-mixin-pattern": null
   }
 }
