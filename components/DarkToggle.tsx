@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { ImSun } from "react-icons/Im";
-import { BsMoonStars } from "react-icons/Bs";
 import { IoMdMoon } from "react-icons/Io";
 import { HiSun } from "react-icons/Hi";
 
