@@ -36,6 +36,7 @@ html {
 }
 
 body {
+  transition: all 2s;
   background-color: var(--color-bg);
   color: var(--color-text);
   font-weight: normal;
@@ -47,8 +48,6 @@ body {
     size: $p14;
     weight: normal;
   }
-
-  transition: all 2s;
 }
 
 article {
@@ -144,12 +143,11 @@ nav ul li {
 }
 
 .menu {
-  border: solid 1px var(--color-menuBorder);
   display: inline-flex;
-
-  // flex-direction: column;
+  background: var(--color-bg);
+  border: solid 1px var(--color-menuBorder);
   border-radius: 4px;
-  text-align: center;
+  transition-duration: 2s;
 }
 
 .White a {
@@ -223,7 +221,7 @@ nav ul li {
 }
 
 .Block {
-  padding: 10px 24px 14px;
+  padding: 14px 24px;
   width: 100%;
 }
 
