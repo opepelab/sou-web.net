@@ -10,6 +10,8 @@ const Header: React.FC = () => {
   const [menu, setMenu] = useRecoilState(menuState);
   const setAboutRes = useSetRecoilState(aboutStateRes);
   const setLinksRes = useSetRecoilState(linksStateRes);
+  const A = () => setAbout(!about);
+  const B = () => setLinks(!links);
   return (
     <div>
       <header>
@@ -29,7 +31,7 @@ const Header: React.FC = () => {
             <nav>
               <ul className="nav1-left">
                 <li>
-                  <div onClick={() => setAbout(!about)}>
+                  <div onClick={A} onKeyPress={A}>
                     <a className="scaleLinks Block point" tabIndex={0}>
                       <div className="gg-details-more" />
                       About
@@ -72,7 +74,7 @@ const Header: React.FC = () => {
                   </div>
                 </li>
                 <li>
-                  <div aria-expanded={links} onClick={() => setLinks(!links)}>
+                  <div onClick={B} onKeyPress={B}>
                     <a className="scaleLinks Block point" tabIndex={0}>
                       <div className="gg-style" />
                       Link
