@@ -108,9 +108,7 @@
     visibility: hidden;
 
     .nav2 {
-      opacity: 0;
-      transform-origin: center;
-      transform: translateX(100px) translateY(-100px) scale(0.2) rotate(-720deg);
+      transform: translateY(-80px) scaleY(0);
     }
   }
 

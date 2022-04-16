@@ -10,6 +10,7 @@
   --color-pink: rgb(13 148 136);
   --color-bg2: rgb(255 255 255 / 30%);
   --color-icon: lightsalmon;
+  --color-menuBorder: darkgray;
 }
 
 :root[data-theme="dark"] {
@@ -20,6 +21,7 @@
   --color-pink: rgb(94 234 212);
   --color-bg2: rgb(0 0 0 / 30%);
   --color-icon: skyblue;
+  --color-menuBorder: dimgray;
 }
 
 // black:text gray-700;
@@ -116,9 +118,13 @@ nav ul li {
   transition-duration: 3s;
 }
 
+.NavDrop {
+  margin-left: -50px;
+}
+
 .NavDrop [aria-expanded="true"] {
   position: absolute;
-  margin-top: 40px;
+  margin-top: 20px;
   opacity: 1;
   visibility: visible;
   transition-duration: 0.2s;
@@ -127,25 +133,27 @@ nav ul li {
 .NavDrop [aria-expanded="false"] {
   position: absolute;
   margin-top: 20px;
-  opacity: 0;
+  opacity: 1;
   visibility: hidden;
-  transform: scale(0);
+  transform: translateY(-25px) scaleY(0);
   transition-duration: 0.2s;
 }
 
 .menu li {
-  background: #fff;
-  border: dashed 1px black;
   list-style-type: none;
 }
 
 .menu {
+  border: solid 1px var(--color-menuBorder);
   display: inline-flex;
+
+  // flex-direction: column;
+  border-radius: 4px;
   text-align: center;
 }
 
 .White a {
-  color: #333;
+  color: var(--color-text);
 }
 
 .nav1-left {
@@ -169,9 +177,9 @@ nav ul li {
   row-gap: 0;
   text-align: left;
   white-space: nowrap;
-  border: solid 1px gray;
+  border: solid 1px var(--color-menuBorder);
   border-radius: 4px;
-  transition-duration: 1s;
+  transition-duration: 0.4s;
 }
 
 .nav2 a {
