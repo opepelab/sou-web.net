@@ -112,10 +112,10 @@ const Header: React.FC = () => {
                   </ActiveLink>
                 </li>
                 <li>
-                  <ActiveLink href="/feature" activeClassName="headerState extend">
+                  <ActiveLink href="/room" activeClassName="headerState extend">
                     <a className="scaleLinks Block">
                       <div className="gg-git-fork" />
-                      MyRoom
+                      My room
                     </a>
                   </ActiveLink>
                 </li>

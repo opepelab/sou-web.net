@@ -126,10 +126,10 @@ const Menu: React.FC = () => {
                 </ActiveLink>
               </li>
               <li>
-                <ActiveLink href="/feature" activeClassName="headerState">
+                <ActiveLink href="/room" activeClassName="headerState">
                   <a className="right1p" onClick={() => setMenu(false)}>
                     <div className="gg-git-fork" />
-                    MyRoom
+                    My room
                   </a>
                 </ActiveLink>
               </li>
