@@ -10,7 +10,7 @@ const Feature: React.FC = () => {
         <Heading as="h1" m="0" fontWeight="200" fontSize="24">
           Features of my room
         </Heading>
-        <img src="/picture/IMG-0554.jpg" height="40%" width="40%" />
+        <img src="/picture/IMG_0618.jpeg" height="40%" width="40%" />
         <dl>
           <p>test</p>
           <dt>OS</dt>
