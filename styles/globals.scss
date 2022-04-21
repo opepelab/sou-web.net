@@ -159,7 +159,7 @@ nav ul li {
   display: inline-flex;
   top: -9px;
   left: -120px;
-  grid-gap: 15px;
+  grid-gap: 40px;
   white-space: nowrap;
   z-index: 2;
 }
@@ -221,7 +221,7 @@ nav ul li {
 }
 
 .Block {
-  padding: 14px 24px;
+  padding: 14px 12px;
   width: 100%;
 }
 
@@ -302,7 +302,7 @@ textarea {
   font-family: $Google0;
   font-size: 20px;
   top: 2px;
-  left: -94px;
+  left: -120px;
 }
 
 @media screen and (min-width: 739.98px) {

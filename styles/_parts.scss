@@ -152,6 +152,10 @@ a dt .dateST {
   margin-left: 2px;
 }
 
+.m5 {
+  margin-right: 8px;
+}
+
 .bottom {
   z-index: 4;
   position: absolute;
@@ -161,9 +165,67 @@ a dt .dateST {
   background-color: var(--color-bg);
   border: solid 1px var(--color-menuBorder);
   color: var(--color-text);
-  transition: all 2s;
+  transition: all 0.4s;
+  transform-origin: center;
   padding: 12px;
   border-radius: 4px;
+  visibility: visible;
+}
+
+.bottomLess {
+  position: absolute;
+  width: max-content;
+  top: 50px;
+  right: -56px;
+  background-color: var(--color-bg);
+  border: solid 1px var(--color-menuBorder);
+  color: var(--color-text);
+  transition: all 0.4s;
+  transform-origin: center;
+  padding: 12px;
+  border-radius: 4px;
+  opacity: 0;
+  transform: scale(0);
+  visibility: hidden;
+}
+
+.underline {
+  position: relative;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  background-color: var(--color-text);
+  height: 2px;
+  bottom: 0;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 4px;
+  transition: 0.5s all;
+}
+
+.underline2 {
+  z-index: 4;
+  position: relative;
+}
+
+.underline2::after {
+  content: "";
+  position: absolute;
+  background-color: var(--color-text);
+  height: 2px;
+  bottom: 0;
+  width: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 4px;
+  transition: 0.5s all;
+}
+
+.underline2:hover::after {
+  width: 0%;
 }
 
 // GraphicsとAbout以外位置を修正してる

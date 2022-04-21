@@ -30,7 +30,7 @@ export const ToggleDarkMode: React.FC = () => {
 
   return (
     <div className="togglePosition">
-      <Tooltip content="Dark or Light Toggle" location="bottom">
+      <Tooltip content="Dark or Light Toggle">
         <div className="iconButton" onClick={handleChangeDarkMode} tabIndex={0} aria-label="Dark or Light ToggleButton">
           <AnimatePresence exitBeforeEnter>
             <motion.div

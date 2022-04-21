@@ -1,10 +1,13 @@
 import ActiveLink from "./Sys/ActiveLink";
+import { useRouter } from "next/router";
+import { useState } from "react";
 import { useRecoilState, useSetRecoilState } from "recoil";
-import { aboutState, linksState, menuState, aboutStateRes, linksStateRes } from "libs/unique";
+import { aboutState, linksState, menuState, aboutStateRes, linksStateRes, borderState } from "libs/unique";
 import ToggleDarkMode from "components/DarkToggle";
 import Text from "components/Text";
 
 const Header: React.FC = () => {
+  const router = useRouter();
   const [about, setAbout] = useRecoilState(aboutState);
   const [links, setLinks] = useRecoilState(linksState);
   const [menu, setMenu] = useRecoilState(menuState);
@@ -12,6 +15,10 @@ const Header: React.FC = () => {
   const setLinksRes = useSetRecoilState(linksStateRes);
   const A = () => setAbout(!about);
   const B = () => setLinks(!links);
+  const [aboutBorder, setAboutBorder] = useState(false);
+  const [linkBorder, setLinkBorder] = useState(false);
+  const [mail, setMail] = useState(false);
+  const [room, setRoom] = useState(false);
   return (
     <div>
       <header>
@@ -31,11 +38,19 @@ const Header: React.FC = () => {
             <nav>
               <ul className="nav1-left">
                 <li>
-                  <div onClick={A} onKeyPress={A}>
-                    <a className="scaleLinks Block point" tabIndex={0}>
+                  <div
+                    onClick={A}
+                    onKeyPress={A}
+                    onMouseEnter={() => setAboutBorder(true)}
+                    onMouseLeave={() => setAboutBorder(false)}
+                  >
+                    <a
+                      className={about || aboutBorder ? "underline scaleLinks Block point" : "underline2 Block"}
+                      tabIndex={0}
+                    >
                       <div className="gg-details-more" />
                       About
-                      <div className="SankakuBlack" />
+                      <div className="SankakuBlack m5" />
                     </a>
                   </div>
                   <div className="NavDrop">
@@ -74,8 +89,16 @@ const Header: React.FC = () => {
                   </div>
                 </li>
                 <li>
-                  <div onClick={B} onKeyPress={B}>
-                    <a className="scaleLinks Block point" tabIndex={0}>
+                  <div
+                    onClick={B}
+                    onKeyPress={B}
+                    onMouseEnter={() => setLinkBorder(true)}
+                    onMouseLeave={() => setLinkBorder(false)}
+                  >
+                    <a
+                      className={links || linkBorder ? "underline scaleLinks Block point" : "underline2 Block"}
+                      tabIndex={0}
+                    >
                       <div className="gg-style" />
                       Link
                       <div className="SankakuBlack" />
@@ -103,22 +126,34 @@ const Header: React.FC = () => {
                     </div>
                   </div>
                 </li>
-                <li>
-                  <ActiveLink href="/mail" activeClassName="headerState">
-                    <a className="scaleLinks Block">
-                      <div className="gg-mail" />
-                      Mail
-                    </a>
-                  </ActiveLink>
-                </li>
-                <li>
-                  <ActiveLink href="/room" activeClassName="headerState extend">
-                    <a className="scaleLinks Block">
-                      <div className="gg-git-fork" />
-                      My room
-                    </a>
-                  </ActiveLink>
-                </li>
+                <div onMouseEnter={() => setMail(true)} onMouseLeave={() => setMail(false)}>
+                  <li>
+                    <ActiveLink href="/mail" activeClassName="headerState">
+                      <a
+                        className={
+                          router.asPath === "/mail" || mail ? "underline scaleLinks Block point" : "underline2 Block"
+                        }
+                      >
+                        <div className="gg-mail" />
+                        Mail
+                      </a>
+                    </ActiveLink>
+                  </li>
+                </div>
+                <div onMouseEnter={() => setRoom(true)} onMouseLeave={() => setRoom(false)}>
+                  <li>
+                    <ActiveLink href="/room" activeClassName="headerState">
+                      <a
+                        className={
+                          router.asPath === "/room" || room ? "underline scaleLinks Block point" : "underline2 Block"
+                        }
+                      >
+                        <div className="gg-git-fork" />
+                        My room
+                      </a>
+                    </ActiveLink>
+                  </li>
+                </div>
               </ul>
             </nav>
           </div>
