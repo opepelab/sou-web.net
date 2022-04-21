@@ -167,7 +167,7 @@ $ME: rgb(0 0 0 / 75%);
 @mixin Underline {
   content: "";
   position: absolute;
-  background-color: var(--color-text);
+  background-color: var(--color-color);
   height: 2px;
   bottom: 0;
   left: 50%;

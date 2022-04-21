@@ -10,6 +10,7 @@
   --color-pink: rgb(13 148 136);
   --color-bg2: rgb(255 255 255 / 30%);
   --color-icon: lightsalmon;
+  --color-color: blueviolet;
   --color-menuBorder: darkgray;
 }
 
@@ -21,6 +22,7 @@
   --color-pink: rgb(94 234 212);
   --color-bg2: rgb(0 0 0 / 30%);
   --color-icon: skyblue;
+  --color-color: orangered;
   --color-menuBorder: dimgray;
 }
 
@@ -118,7 +120,6 @@ nav ul li {
 }
 
 .NavDrop {
-  margin-top: 0;
   margin-left: -88px;
   position: absolute;
   opacity: 1;
@@ -126,14 +127,14 @@ nav ul li {
 
 .NavDrop [aria-expanded="true"] {
   visibility: visible;
-  transition-duration: 0.2s;
+  transition-duration: 0.1s;
   transition-delay: 0.2s;
 }
 
 .NavDrop [aria-expanded="false"] {
   visibility: hidden;
   transform: translateY(-25px) scaleY(0);
-  transition-duration: 0.4s;
+  transition-duration: 0.3s;
 }
 
 .menu li {
@@ -176,7 +177,7 @@ nav ul li {
   white-space: nowrap;
   border: solid 1px var(--color-menuBorder);
   border-radius: 4px;
-  transition-duration: 0.1s;
+  transition-duration: 0.2s;
 }
 
 .nav2 a {
@@ -224,6 +225,7 @@ nav ul li {
   display: $IB;
   padding: 14px;
   width: 62px;
+  height: 20px;
 }
 
 .BlockM {

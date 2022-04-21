@@ -38,7 +38,7 @@ const Header: React.FC = () => {
               <ul className="nav1-left">
                 <li>
                   <div onMouseEnter={() => setAbout(true)} onMouseLeave={() => setAbout(false)}>
-                    <a className={about ? "underline scaleLinks Block point" : "underline2 Block"} tabIndex={0}>
+                    <a className={about ? "underline Block point" : "underline2 Block"} tabIndex={0}>
                       <div className="gg-details-more" />
                       About
                       <div className="SankakuBlack" />
@@ -81,7 +81,7 @@ const Header: React.FC = () => {
                 </li>
                 <li>
                   <div onMouseEnter={() => setLinks(true)} onMouseLeave={() => setLinks(false)}>
-                    <a className={links ? "underline scaleLinks Block point" : "underline2 Block"} tabIndex={0}>
+                    <a className={links ? "underline Block point" : "underline2 Block"} tabIndex={0}>
                       <div className="gg-style" />
                       Link
                       <div className="SankakuBlack" />
@@ -112,11 +112,7 @@ const Header: React.FC = () => {
                 <div onMouseEnter={() => setMail(true)} onMouseLeave={() => setMail(false)}>
                   <li>
                     <ActiveLink href="/mail" activeClassName="cursorDefault">
-                      <a
-                        className={
-                          router.asPath === "/mail" || mail ? "underlineDuo scaleLinks Block" : "underlineNormal Block"
-                        }
-                      >
+                      <a className={router.asPath === "/mail" || mail ? "underlineDuo Block" : "underlineNormal Block"}>
                         <div className="gg-mail" />
                         Mail
                       </a>

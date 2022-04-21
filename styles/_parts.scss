@@ -57,8 +57,6 @@ a dt .dateST {
 }
 
 .headerState {
-  display: block;
-  pointer-events: none;
   text-decoration: underline;
   cursor: default;
 }
@@ -140,7 +138,7 @@ a dt .dateST {
 }
 
 .right1p {
-  margin-left: 4px;
+  margin-left: 6px;
 }
 
 .right3p {
@@ -152,7 +150,7 @@ a dt .dateST {
 }
 
 .left2p {
-  margin-left: -2px;
+  margin-left: 4px;
 }
 
 .left1p {
@@ -200,7 +198,7 @@ a dt .dateST {
   @include Underline;
 
   width: 265px;
-  transition: 0.2s all;
+  transition: 0.3s all;
 }
 
 .underline2 {
@@ -211,7 +209,7 @@ a dt .dateST {
   @include Underline;
 
   width: 0;
-  transition: 0.2s all;
+  transition: 0.1s all;
   transition-delay: 0.2s;
 }
 
@@ -223,7 +221,7 @@ a dt .dateST {
   @include Underline;
 
   width: 100%;
-  transition: 0.2s all;
+  transition: 0.3s all;
 }
 
 .underlineNormal {
@@ -234,7 +232,7 @@ a dt .dateST {
   @include Underline;
 
   width: 0;
-  transition: 0.3s all;
+  transition: 0.2s all;
 }
 
 // GraphicsとAbout以外位置を修正してる
