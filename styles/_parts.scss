@@ -201,7 +201,7 @@ a dt .dateST {
   @include Underline;
 
   width: 100%;
-  transition: 0.3s all;
+  transition: 0.2s all;
 }
 
 .underline2 {
@@ -212,7 +212,7 @@ a dt .dateST {
   @include Underline;
 
   width: 0;
-  transition: 0.4s all;
+  transition: 0.2s all;
 }
 
 // GraphicsとAbout以外位置を修正してる
