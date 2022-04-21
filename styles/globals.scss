@@ -7,7 +7,7 @@
 
   --color-text: rgb(55 65 81);
   --color-bg: rgb(255 255 255);
-  --color-pink: rgb(13 148 136);
+  --color-pink: blueviolet;
   --color-bg2: rgb(255 255 255 / 30%);
   --color-icon: lightsalmon;
   --color-color: blueviolet;
@@ -22,10 +22,11 @@
   --color-pink: rgb(94 234 212);
   --color-bg2: rgb(0 0 0 / 30%);
   --color-icon: skyblue;
-  --color-color: orangered;
+  --color-color: rgb(94 234 212);
   --color-menuBorder: dimgray;
 }
 
+// --color-pink: rgb(13 148 136);
 // black:text gray-700;
 // white:text gray-300;
 // --color-bg: black pink rgb(255, 244, 240);
@@ -205,7 +206,7 @@ nav ul li {
 }
 
 .Alink a {
-  color: #68a5ff;
+  color: var(--color-pink);
   text-decoration: none;
 }
 
