@@ -11,10 +11,8 @@ const Filter: React.FC = () => {
   return (
     <div className="Filter">
       <div
-        aria-expanded={menu || about || links}
+        aria-expanded={menu}
         onClick={() => {
-          setAbout(false);
-          setLinks(false);
           setMenu(false);
           setAboutRes(false);
           setLinksRes(false);
