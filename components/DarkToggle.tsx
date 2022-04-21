@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { HiOutlineMoon, HiOutlineSun } from "react-icons/hi";
-
+import Tooltip from "components/Sys/Tooltip";
 export const ToggleDarkMode: React.FC = () => {
   const [darkMode, setDarkMode] = useState(false);
 
@@ -30,25 +30,27 @@ export const ToggleDarkMode: React.FC = () => {
 
   return (
     <div className="togglePosition">
-      <div className="iconButton" onClick={handleChangeDarkMode} tabIndex={0} aria-label="Dark or Light ToggleButton">
-        <AnimatePresence exitBeforeEnter>
-          <motion.div
-            className="flex"
-            onClick={handleChangeDarkMode}
-            key={darkMode ? "dark" : "light"}
-            initial={{ rotate: -90, opacity: 0, scale: 0 }}
-            animate={{ rotate: 0, opacity: 1, scale: 1 }}
-            exit={{ y: 20, opacity: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            {darkMode ? (
-              <HiOutlineMoon size={24} color={"skyblue"} />
-            ) : (
-              <HiOutlineSun size={24} color={"lightsalmon"} />
-            )}
-          </motion.div>
-        </AnimatePresence>
-      </div>
+      <Tooltip content="Dark or Light Toggle" location="bottom">
+        <div className="iconButton" onClick={handleChangeDarkMode} tabIndex={0} aria-label="Dark or Light ToggleButton">
+          <AnimatePresence exitBeforeEnter>
+            <motion.div
+              className="flex"
+              onClick={handleChangeDarkMode}
+              key={darkMode ? "dark" : "light"}
+              initial={{ rotate: -90, opacity: 0, scale: 0 }}
+              animate={{ rotate: 0, opacity: 1, scale: 1 }}
+              exit={{ y: 20, opacity: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              {darkMode ? (
+                <HiOutlineMoon size={24} color={"skyblue"} />
+              ) : (
+                <HiOutlineSun size={24} color={"lightsalmon"} />
+              )}
+            </motion.div>
+          </AnimatePresence>
+        </div>
+      </Tooltip>
     </div>
   );
 };
