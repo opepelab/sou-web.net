@@ -118,21 +118,18 @@ nav ul li {
 }
 
 .NavDrop {
-  margin-left: -50px;
+  position: absolute;
+  opacity: 1;
+  margin-left: -78px;
+  margin-top: 20px;
 }
 
 .NavDrop [aria-expanded="true"] {
-  position: absolute;
-  margin-top: 20px;
-  opacity: 1;
   visibility: visible;
   transition-duration: 0.2s;
 }
 
 .NavDrop [aria-expanded="false"] {
-  position: absolute;
-  margin-top: 20px;
-  opacity: 1;
   visibility: hidden;
   transform: translateY(-25px) scaleY(0);
   transition-duration: 0.2s;
@@ -216,7 +213,6 @@ nav ul li {
 
   .hoverBG:hover {
     background-color: rgb(0 0 0 / 20%);
-    cursor: pointer;
   }
 }
 

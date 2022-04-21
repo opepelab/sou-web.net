@@ -2,7 +2,7 @@ import ActiveLink from "./Sys/ActiveLink";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import { useRecoilState, useSetRecoilState } from "recoil";
-import { aboutState, linksState, menuState, aboutStateRes, linksStateRes, borderState } from "libs/unique";
+import { aboutState, linksState, menuState, aboutStateRes, linksStateRes } from "libs/unique";
 import ToggleDarkMode from "components/DarkToggle";
 import Text from "components/Text";
 
@@ -128,10 +128,10 @@ const Header: React.FC = () => {
                 </li>
                 <div onMouseEnter={() => setMail(true)} onMouseLeave={() => setMail(false)}>
                   <li>
-                    <ActiveLink href="/mail" activeClassName="headerState">
+                    <ActiveLink href="/mail" activeClassName="cursorDefault">
                       <a
                         className={
-                          router.asPath === "/mail" || mail ? "underline scaleLinks Block point" : "underline2 Block"
+                          router.asPath === "/mail" || mail ? "underline scaleLinks Block" : "underline2 Block"
                         }
                       >
                         <div className="gg-mail" />
@@ -142,10 +142,10 @@ const Header: React.FC = () => {
                 </div>
                 <div onMouseEnter={() => setRoom(true)} onMouseLeave={() => setRoom(false)}>
                   <li>
-                    <ActiveLink href="/room" activeClassName="headerState">
+                    <ActiveLink href="/room" activeClassName="cursorDefault">
                       <a
                         className={
-                          router.asPath === "/room" || room ? "underline scaleLinks Block point" : "underline2 Block"
+                          router.asPath === "/room" || room ? "underline scaleLinks Block" : "underline2 Block"
                         }
                       >
                         <div className="gg-git-fork" />

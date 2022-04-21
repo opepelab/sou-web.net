@@ -35,9 +35,3 @@ export const linksStateRes = atom<LinksRes>({
   key: "linksResKey",
   default: false,
 });
-
-export type Border = false | true;
-export const borderState = atom<Border>({
-  key: "borderKey",
-  default: false,
-});

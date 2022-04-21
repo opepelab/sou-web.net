@@ -58,7 +58,11 @@ a dt .dateST {
 
 .headerState {
   text-decoration: underline;
-  pointer-events: none;
+  cursor: default;
+}
+
+.cursorDefault {
+  cursor: default;
 }
 
 .Pagi {
@@ -194,38 +198,21 @@ a dt .dateST {
 }
 
 .underline::after {
-  content: "";
-  position: absolute;
-  background-color: var(--color-text);
-  height: 2px;
-  bottom: 0;
+  @include Underline;
+
   width: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 4px;
-  transition: 0.5s all;
+  transition: 0.3s all;
 }
 
 .underline2 {
-  z-index: 4;
   position: relative;
 }
 
 .underline2::after {
-  content: "";
-  position: absolute;
-  background-color: var(--color-text);
-  height: 2px;
-  bottom: 0;
-  width: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 4px;
-  transition: 0.5s all;
-}
+  @include Underline;
 
-.underline2:hover::after {
-  width: 0%;
+  width: 0;
+  transition: 0.4s all;
 }
 
 // GraphicsとAbout以外位置を修正してる

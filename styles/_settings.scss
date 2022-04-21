@@ -164,3 +164,14 @@ $ME: rgb(0 0 0 / 75%);
     weight: bold;
   }
 }
+
+@mixin Underline {
+  content: "";
+  position: absolute;
+  background-color: var(--color-text);
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 4px;
+}
