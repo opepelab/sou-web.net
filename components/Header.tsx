@@ -25,8 +25,6 @@ const Header: React.FC = () => {
         <div
           className="bgg"
           onClick={() => {
-            about ? setAbout(false) : null;
-            links ? setLinks(false) : null;
             menu ? setMenu(false) : null;
             setAboutRes(false);
             setLinksRes(false);
@@ -38,34 +36,26 @@ const Header: React.FC = () => {
             <nav>
               <ul className="nav1-left">
                 <li>
-                  <div
-                    onClick={A}
-                    onKeyPress={A}
-                    onMouseEnter={() => setAboutBorder(true)}
-                    onMouseLeave={() => setAboutBorder(false)}
-                  >
-                    <a
-                      className={about || aboutBorder ? "underline scaleLinks Block point" : "underline2 Block"}
-                      tabIndex={0}
-                    >
+                  <div onMouseEnter={() => setAbout(true)} onMouseLeave={() => setAbout(false)}>
+                    <a className={about ? "underline scaleLinks Block point" : "underline2 Block"} tabIndex={0}>
                       <div className="gg-details-more" />
                       About
-                      <div className="SankakuBlack m5" />
+                      <div className="SankakuBlack" />
                     </a>
                   </div>
                   <div className="NavDrop">
-                    <div aria-expanded={about}>
+                    <div aria-expanded={about} onMouseEnter={() => setAbout(true)} onMouseLeave={() => setAbout(false)}>
                       <ul className="White menu">
                         <li>
                           <ActiveLink href="/overview" activeClassName="headerState">
-                            <a>
+                            <a onClick={() => setAbout(false)}>
                               <div className="hoverBG BlockM">Overview</div>
                             </a>
                           </ActiveLink>
                         </li>
                         <li>
                           <ActiveLink href="/profile" activeClassName="headerState">
-                            <a>
+                            <a onClick={() => setAbout(false)}>
                               <div className="hoverBG BlockM">Profile</div>
                             </a>
                           </ActiveLink>
@@ -79,7 +69,7 @@ const Header: React.FC = () => {
                         </li> */}
                         <li>
                           <ActiveLink href="/webclip" activeClassName="headerState">
-                            <a>
+                            <a onClick={() => setAbout(false)}>
                               <div className="hoverBG BlockM">WebClip</div>
                             </a>
                           </ActiveLink>
@@ -89,23 +79,15 @@ const Header: React.FC = () => {
                   </div>
                 </li>
                 <li>
-                  <div
-                    onClick={B}
-                    onKeyPress={B}
-                    onMouseEnter={() => setLinkBorder(true)}
-                    onMouseLeave={() => setLinkBorder(false)}
-                  >
-                    <a
-                      className={links || linkBorder ? "underline scaleLinks Block point" : "underline2 Block"}
-                      tabIndex={0}
-                    >
+                  <div onMouseEnter={() => setLinks(true)} onMouseLeave={() => setLinks(false)}>
+                    <a className={links ? "underline scaleLinks Block point" : "underline2 Block"} tabIndex={0}>
                       <div className="gg-style" />
                       Link
                       <div className="SankakuBlack" />
                     </a>
                   </div>
                   <div className="NavDrop HeadMenu">
-                    <div aria-expanded={links}>
+                    <div aria-expanded={links} onMouseEnter={() => setLinks(true)} onMouseLeave={() => setLinks(false)}>
                       <ul className="White menu">
                         <li>
                           <a href="https://github.com/opepelab" target="_blank">
@@ -131,7 +113,7 @@ const Header: React.FC = () => {
                     <ActiveLink href="/mail" activeClassName="cursorDefault">
                       <a
                         className={
-                          router.asPath === "/mail" || mail ? "underline scaleLinks Block" : "underline2 Block"
+                          router.asPath === "/mail" || mail ? "underline scaleLinks Block" : "underlineNormal Block"
                         }
                       >
                         <div className="gg-mail" />
@@ -145,7 +127,7 @@ const Header: React.FC = () => {
                     <ActiveLink href="/room" activeClassName="cursorDefault">
                       <a
                         className={
-                          router.asPath === "/room" || room ? "underline scaleLinks Block" : "underline2 Block"
+                          router.asPath === "/room" || room ? "underline scaleLinks Block" : "underlineNormal Block"
                         }
                       >
                         <div className="gg-git-fork" />

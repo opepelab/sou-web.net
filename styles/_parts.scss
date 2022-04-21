@@ -57,12 +57,15 @@ a dt .dateST {
 }
 
 .headerState {
+  display: block;
+  pointer-events: none;
   text-decoration: underline;
   cursor: default;
 }
 
 .cursorDefault {
-  cursor: default;
+  display: block;
+  pointer-events: none;
 }
 
 .Pagi {
@@ -156,10 +159,6 @@ a dt .dateST {
   margin-left: 2px;
 }
 
-.m5 {
-  margin-right: 8px;
-}
-
 .bottom {
   z-index: 4;
   position: absolute;
@@ -201,7 +200,7 @@ a dt .dateST {
   @include Underline;
 
   width: 100%;
-  transition: 0.2s all;
+  transition: 0.3s all;
 }
 
 .underline2 {
@@ -212,7 +211,19 @@ a dt .dateST {
   @include Underline;
 
   width: 0;
-  transition: 0.2s all;
+  transition: 0.3s all;
+  transition-delay: 0.3s;
+}
+
+.underlineNormal {
+  position: relative;
+}
+
+.underlineNormal::after {
+  @include Underline;
+
+  width: 0;
+  transition: 0.3s all;
 }
 
 // GraphicsとAbout以外位置を修正してる

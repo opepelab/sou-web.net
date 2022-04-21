@@ -120,19 +120,19 @@ nav ul li {
 .NavDrop {
   position: absolute;
   opacity: 1;
-  margin-left: -78px;
-  margin-top: 20px;
 }
 
 .NavDrop [aria-expanded="true"] {
   visibility: visible;
-  transition-duration: 0.2s;
+  transition-duration: 0.1s;
+  transition-delay: 0.3s;
 }
 
 .NavDrop [aria-expanded="false"] {
   visibility: hidden;
   transform: translateY(-25px) scaleY(0);
-  transition-duration: 0.2s;
+  transition-duration: 0.3s;
+  margin-top: -44px;
 }
 
 .menu li {
@@ -140,7 +140,6 @@ nav ul li {
 }
 
 .menu {
-  display: inline-flex;
   background: var(--color-bg);
   border: solid 1px var(--color-menuBorder);
   border-radius: 4px;
@@ -154,6 +153,7 @@ nav ul li {
 .nav1-left {
   position: relative;
   display: inline-flex;
+  margin: 0;
   top: -9px;
   left: -120px;
   grid-gap: 40px;
@@ -217,8 +217,11 @@ nav ul li {
 }
 
 .Block {
-  padding: 14px 12px;
-  width: 100%;
+  z-index: 3;
+  position: relative;
+  display: $IB;
+  padding: 14px;
+  width: 62px;
 }
 
 .BlockM {
