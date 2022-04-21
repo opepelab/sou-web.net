@@ -118,24 +118,26 @@ nav ul li {
 }
 
 .NavDrop {
+  margin-top: 0;
+  margin-left: -88px;
   position: absolute;
   opacity: 1;
 }
 
 .NavDrop [aria-expanded="true"] {
   visibility: visible;
-  transition-duration: 0.1s;
-  transition-delay: 0.3s;
+  transition-duration: 0.2s;
+  transition-delay: 0.2s;
 }
 
 .NavDrop [aria-expanded="false"] {
   visibility: hidden;
   transform: translateY(-25px) scaleY(0);
-  transition-duration: 0.2s;
-  margin-top: -44px;
+  transition-duration: 0.4s;
 }
 
 .menu li {
+  display: inline-block;
   list-style-type: none;
 }
 

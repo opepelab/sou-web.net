@@ -199,7 +199,7 @@ a dt .dateST {
 .underline::after {
   @include Underline;
 
-  width: 100%;
+  width: 265px;
   transition: 0.2s all;
 }
 
@@ -212,7 +212,18 @@ a dt .dateST {
 
   width: 0;
   transition: 0.2s all;
-  transition-delay: 0.3s;
+  transition-delay: 0.2s;
+}
+
+.underlineDuo {
+  position: relative;
+}
+
+.underlineDuo::after {
+  @include Underline;
+
+  width: 100%;
+  transition: 0.2s all;
 }
 
 .underlineNormal {

@@ -1,6 +1,6 @@
 import ActiveLink from "./Sys/ActiveLink";
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useRecoilState, useSetRecoilState } from "recoil";
 import { aboutState, linksState, menuState, aboutStateRes, linksStateRes } from "libs/unique";
 import ToggleDarkMode from "components/DarkToggle";
@@ -19,6 +19,7 @@ const Header: React.FC = () => {
   const [linkBorder, setLinkBorder] = useState(false);
   const [mail, setMail] = useState(false);
   const [room, setRoom] = useState(false);
+
   return (
     <div>
       <header>
@@ -113,7 +114,7 @@ const Header: React.FC = () => {
                     <ActiveLink href="/mail" activeClassName="cursorDefault">
                       <a
                         className={
-                          router.asPath === "/mail" || mail ? "underline scaleLinks Block" : "underlineNormal Block"
+                          router.asPath === "/mail" || mail ? "underlineDuo scaleLinks Block" : "underlineNormal Block"
                         }
                       >
                         <div className="gg-mail" />
@@ -127,7 +128,7 @@ const Header: React.FC = () => {
                     <ActiveLink href="/room" activeClassName="cursorDefault">
                       <a
                         className={
-                          router.asPath === "/room" || room ? "underline scaleLinks Block" : "underlineNormal Block"
+                          router.asPath === "/room" || room ? "underlineDuo scaleLinks Block" : "underlineNormal Block"
                         }
                       >
                         <div className="gg-git-fork" />
