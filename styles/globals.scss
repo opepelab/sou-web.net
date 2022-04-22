@@ -10,6 +10,7 @@
   --color-pink: rgb(13 148 136);
   --color-bg2: rgb(255 255 255 / 44%);
   --color-icon: lightsalmon;
+  --color-link: #3297fd;
   --color-menuBorder: darkgray;
   --color-headBorder: rgb(94 234 212);
 }
@@ -22,6 +23,7 @@
   --color-pink: rgb(94 234 212);
   --color-bg2: rgb(40 32 35 / 44%);
   --color-icon: skyblue;
+  --color-link: #7bf;
   --color-menuBorder: dimgray;
   --color-headBorder: orangered;
 }
@@ -206,7 +208,7 @@ nav ul li {
 }
 
 .Alink a {
-  color: var(--color-pink);
+  color: var(--color-link);
   text-decoration: none;
 }
 
