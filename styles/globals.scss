@@ -7,10 +7,11 @@
 
   --color-text: rgb(55 65 81);
   --color-bg: rgb(255 255 255);
-  --color-pink: blueviolet;
+  --color-pink: rgb(13 148 136);
   --color-bg2: rgb(255 255 255 / 30%);
   --color-icon: lightsalmon;
   --color-menuBorder: darkgray;
+  --color-headBorder: rgb(94 234 212);
 }
 
 :root[data-theme="dark"] {
@@ -22,6 +23,7 @@
   --color-bg2: rgb(0 0 0 / 30%);
   --color-icon: skyblue;
   --color-menuBorder: dimgray;
+  --color-headBorder: orangered;
 }
 
 // --color-pink: rgb(13 148 136);

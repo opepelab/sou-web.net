@@ -122,11 +122,7 @@ const Header: React.FC = () => {
                 <div onMouseEnter={() => setRoom(true)} onMouseLeave={() => setRoom(false)}>
                   <li>
                     <ActiveLink href="/room" activeClassName="cursorDefault">
-                      <a
-                        className={
-                          router.asPath === "/room" || room ? "underlineDuo scaleLinks Block" : "underlineNormal Block"
-                        }
-                      >
+                      <a className={router.asPath === "/room" || room ? "underlineDuo Block" : "underlineNormal Block"}>
                         <div className="gg-git-fork" />
                         My room
                       </a>
