@@ -13,10 +13,10 @@ const Header: React.FC = () => {
   const [menu, setMenu] = useRecoilState(menuState);
   const setAboutRes = useSetRecoilState(aboutStateRes);
   const setLinksRes = useSetRecoilState(linksStateRes);
-  const A = () => setAbout(!about);
-  const B = () => setLinks(!links);
-  const [aboutBorder, setAboutBorder] = useState(false);
-  const [linkBorder, setLinkBorder] = useState(false);
+  // const A = () => setAbout(!about);
+  // const B = () => setLinks(!links);
+  // const [aboutBorder, setAboutBorder] = useState(false);
+  // const [linkBorder, setLinkBorder] = useState(false);
   const [mail, setMail] = useState(false);
   const [room, setRoom] = useState(false);
 
