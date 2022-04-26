@@ -25,6 +25,8 @@ const Header: React.FC = () => {
           className="bgg"
           onClick={() => {
             menu ? setMenu(false) : null;
+            about ? setAbout(false) : null;
+            links ? setLinks(false) : null;
             setAboutRes(false);
             setLinksRes(false);
           }}
