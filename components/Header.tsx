@@ -1,6 +1,6 @@
 import ActiveLink from "./Sys/ActiveLink";
 import { useRouter } from "next/router";
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import { useRecoilState, useSetRecoilState } from "recoil";
 import { aboutState, linksState, menuState, aboutStateRes, linksStateRes } from "libs/unique";
 import ToggleDarkMode from "components/DarkToggle";
