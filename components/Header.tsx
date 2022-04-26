@@ -13,10 +13,8 @@ const Header: React.FC = () => {
   const [menu, setMenu] = useRecoilState(menuState);
   const setAboutRes = useSetRecoilState(aboutStateRes);
   const setLinksRes = useSetRecoilState(linksStateRes);
-  // const A = () => setAbout(!about);
-  // const B = () => setLinks(!links);
-  // const [aboutBorder, setAboutBorder] = useState(false);
-  // const [linkBorder, setLinkBorder] = useState(false);
+  const [aboutBorder, setAboutBorder] = useState(false);
+  const [linksBorder, setLinksBorder] = useState(false);
   const [mail, setMail] = useState(false);
   const [room, setRoom] = useState(false);
 
@@ -37,15 +35,19 @@ const Header: React.FC = () => {
             <nav>
               <ul className="nav1-left">
                 <li>
-                  <div onMouseEnter={() => setAbout(true)} onMouseLeave={() => setAbout(false)}>
-                    <a className={about ? "underline Block point" : "underline2 Block"} tabIndex={0}>
+                  <div
+                    onClick={() => setAbout(!about)}
+                    onMouseEnter={() => setAboutBorder(true)}
+                    onMouseLeave={() => setAboutBorder(false)}
+                  >
+                    <a className={about || aboutBorder ? "underline Block point" : "underline2 Block"} tabIndex={0}>
                       <div className="gg-details-more" />
                       About
                       <div className="SankakuBlack" />
                     </a>
                   </div>
                   <div className="NavDrop">
-                    <div aria-expanded={about} onMouseEnter={() => setAbout(true)} onMouseLeave={() => setAbout(false)}>
+                    <div aria-expanded={about}>
                       <ul className="White menu">
                         <li>
                           <ActiveLink href="/overview" activeClassName="headerState">
@@ -80,15 +82,19 @@ const Header: React.FC = () => {
                   </div>
                 </li>
                 <li>
-                  <div onMouseEnter={() => setLinks(true)} onMouseLeave={() => setLinks(false)}>
-                    <a className={links ? "underline Block point" : "underline2 Block"} tabIndex={0}>
+                  <div
+                    onClick={() => setLinks(!links)}
+                    onMouseEnter={() => setLinksBorder(true)}
+                    onMouseLeave={() => setLinksBorder(false)}
+                  >
+                    <a className={links || linksBorder ? "underline Block point" : "underline2 Block"} tabIndex={0}>
                       <div className="gg-style" />
                       Link
                       <div className="SankakuBlack" />
                     </a>
                   </div>
                   <div className="NavDrop HeadMenu">
-                    <div aria-expanded={links} onMouseEnter={() => setLinks(true)} onMouseLeave={() => setLinks(false)}>
+                    <div aria-expanded={links}>
                       <ul className="White menu">
                         <li>
                           <a href="https://github.com/opepelab" target="_blank">
