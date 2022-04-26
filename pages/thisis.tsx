@@ -12,10 +12,18 @@ const Thisblog: React.FC = () => {
         <p>CMS: Contentful</p>
         <p>Host: Vercel etc.</p>
         <li>記事一覧</li>
-        まず、マークダウンにも挑戦しましたがTypeScriptAPIを使いました。
+        <p>まず、マークダウンにも挑戦しましたがTypeScriptでの実装が難しかったためHeadlessCMSのAPIを使いました。</p>
+        Next.jsの場合CMS APIファイルを作りgetStaticPropsを叩くだけで一覧ページは作ることができます。
         <li>記事詳細</li>
+        <p>
+          getStaticPathsが登場します。
+          <br />
+          Pathsを指定することによってダイナミックルーティングとしてブラケット[slug]のような動的に変更されるページを実現します。
+        </p>
         <li>ページネーション</li>
+        <p>map関数を用いてページの総数を1ページに表示したい数字で割ります。</p>
         <li>ハンバーガーメニューボタン</li>
+        <p>useStateを使用します。aria-expandでscssでのtrue/falseでトグルとして発火させます。</p>
         <li>モバイルメニュー展開</li>
         <li>レスポンシブ対応</li>
         <li>ダークモード(ローカルストレージ)</li>
