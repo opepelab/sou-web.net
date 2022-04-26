@@ -11,8 +11,8 @@ const Thisblog: React.FC = () => {
         <p>State management: Recoil</p>
         <p>CMS: Contentful</p>
         <p>Host: Vercel etc.</p>
-
         <li>記事一覧</li>
+        まず、マークダウンにも挑戦しましたがTypeScriptAPIを使いました。
         <li>記事詳細</li>
         <li>ページネーション</li>
         <li>ハンバーガーメニューボタン</li>
@@ -24,7 +24,6 @@ const Thisblog: React.FC = () => {
         <li>発火管理ができる透明なフィルターコンポーネント</li>
         <li>フレームモーションコンポーネント</li>
         <li>ダイナミックOGP(VercelAPIを使用)</li>
-
         <p>
           Zenn.devやQiitaを使うことも考えたのですがあちらはコード専用な感じな気がしたので
           <br />
