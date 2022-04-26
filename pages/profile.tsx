@@ -18,7 +18,7 @@ const About: React.FC = () => {
           <dd>Dog/犬</dd>
           <dt>Location</dt>
           <dd>Kokura and Tokyo/小倉と東京</dd>
-          <img className="PM margin10 point " src="/picture/0068.png" width={190} height={260} />
+          <img className="PM margin10 point " src="/picture/IMG_0495.jpg" width={190} height={260} />
           <dt>Merci papa mama.</dt>
           <dd>私を作ってくれた生んでくれた母と父に感謝しています。</dd>
         </dl>
