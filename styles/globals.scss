@@ -95,9 +95,14 @@ a {
   text-decoration: none;
 }
 
-.resizeimage img {
+.resizeimageSlug img {
   width: 65%;
   height: 65%;
+}
+
+.resizeimage img {
+  transform: scale(0.95);
+  width: 100%;
 }
 
 ul {

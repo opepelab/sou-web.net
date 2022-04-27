@@ -64,7 +64,7 @@ const Slug: React.FC<Content> = ({ blog }) => {
   return (
     <Freya>
       <OG title={blog.fields.title} description={blog.fields.description} />
-      <main className="Alink list textLeft resizeimage">
+      <main className="Alink list textLeft resizeimageSlug">
         <div className={styles.Time2}>
           <Date dateString={blog.fields.date} />
         </div>
