@@ -9,7 +9,9 @@ const Feature: React.FC = () => {
       <main className="inblo resizeimage">
         <Heading as="h1" m="0" fontWeight="200" fontSize="24">
           My room
-        </Heading>
+        </Heading>{" "}
+        <br />
+        <br />
         <img src="/picture/IMG_0618.jpeg" height="40%" width="40%" />
         <dl>
           <p>test</p>
