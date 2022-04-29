@@ -1,5 +1,4 @@
 import { useState, ReactNode } from "react";
-// import "./Tooltip.css";
 
 type RNode = {
   children: ReactNode;
