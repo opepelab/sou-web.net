@@ -14,8 +14,8 @@ const About: React.FC = () => {
           <dd>Scorpio/さそり座</dd>
           <dt>Type</dt>
           <dd>INTJ/コンセプチュアリプランナー</dd>
-          <dt>Eto</dt>
-          <dd>Dog/犬</dd>
+          <dt>干支</dt>
+          <dd>戌</dd>
           <dt>Location</dt>
           <dd>Kokura and Tokyo/小倉と東京</dd>
           <img className="PM margin10 point " src="/picture/IMG_0495.jpg" width={190} height={260} />
