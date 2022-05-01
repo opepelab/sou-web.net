@@ -20,7 +20,7 @@ const Feature: React.FC = () => {
           <dt>IDE</dt>
           <dd>Visual Studio Code</dd>
           <dt>Language</dt>
-          <dd>TypeScript / Scss / Dart</dd>
+          <dd>TypeScript / Scss</dd>
           <dt>Framework</dt>
           <dd>Next.js / Flutter</dd>
           <dt>Browser</dt>

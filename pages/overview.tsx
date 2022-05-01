@@ -8,13 +8,11 @@ const Overview: React.FC = () => {
       <main className="list inblo textLeft">
         <h1>Overview</h1>
         <p>渡邊 蒼(Sou Watanabe)と申します。1994年生まれ現27歳です。</p>
-        <p>アプリケーションを開発しています。</p>
-        <p>趣味で個人開発していてモバイルアプリも作っています。</p>
-        <p>他には基本的にゲームは得意です。</p>
-        <h1>好きな言語(得意とは言っていない)</h1>
+        <p>React系のアプリケーションを開発しています。</p>
+        <p>モバイルアプリを作るのにも挑戦しています。</p>
+        <h1>好き(得意とは言っていない)</h1>
         <ul>
           <li>TypeScript</li>
-          <li>Golang</li>
           <li>Dart</li>
         </ul>
         <h1>クラン歴</h1>
