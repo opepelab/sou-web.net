@@ -1,7 +1,7 @@
 import client from "libs/contentful";
 import { GetStaticProps } from "next";
 import OG from "components/Sys/OG";
-import Freya from "components/Sys/Freya";
+import Framer from "components/Sys/Framer";
 import { Text, Heading } from "@chakra-ui/react";
 import { Entry, EntryCollection } from "contentful";
 import { IPostFields } from "libs/types";
@@ -18,7 +18,7 @@ type Map = {
 
 const Index: React.FC<Map> = ({ blog }) => {
   return (
-    <Freya>
+    <Framer>
       <OG title="Sou Watanabe - Homepage" description="Index Top Page" />
       <main className="inblo textLeft">
         <Heading as="h1" m="0" fontWeight="200" fontSize="32">
@@ -49,7 +49,7 @@ const Index: React.FC<Map> = ({ blog }) => {
           </a>
         </Link>
       </main>
-    </Freya>
+    </Framer>
   );
 };
 

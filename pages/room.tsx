@@ -1,10 +1,10 @@
 import OG from "components/Sys/OG";
-import Freya from "components/Sys/Freya";
+import Framer from "components/Sys/Framer";
 import { Heading } from "@chakra-ui/react";
 
 const Feature: React.FC = () => {
   return (
-    <Freya>
+    <Framer>
       <OG title="Feature - Sou Watanabe" description="My Compurter" />
       <main className="inblo resizeimage">
         <Heading as="h1" m="0" fontWeight="200" fontSize="24">
@@ -29,7 +29,7 @@ const Feature: React.FC = () => {
           <dd>Azure / Vercel / Cloudflare</dd>
         </dl>
       </main>
-    </Freya>
+    </Framer>
   );
 };
 

@@ -1,7 +1,7 @@
 import client from "libs/contentful";
 import { GetStaticPaths } from "next";
 import OG from "components/Sys/OG";
-import Freya from "components/Sys/Freya";
+import Framer from "components/Sys/Framer";
 import Link from "next/link";
 import { Entry, EntryCollection } from "contentful";
 import { IPostFields } from "libs/types";
@@ -24,7 +24,7 @@ const Limit = 30;
 const range = (start: number, end: number) => [...Array(end - start + 1)].map((_, i) => start + i);
 const Id: React.FC<Map> = ({ blog, total }) => {
   return (
-    <Freya>
+    <Framer>
       <OG title="Page List - Sou Watanabe" description="Page Lists" />
       <main className="HeadMenu inblo textLeft">
         <h5>記事一覧</h5>
@@ -57,7 +57,7 @@ const Id: React.FC<Map> = ({ blog, total }) => {
           </a>
         </Link>
       </main>
-    </Freya>
+    </Framer>
   );
 };
 export const getStaticPaths: GetStaticPaths = async () => {

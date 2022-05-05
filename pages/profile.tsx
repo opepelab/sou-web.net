@@ -1,9 +1,9 @@
 import OG from "components/Sys/OG";
-import Freya from "components/Sys/Freya";
+import Framer from "components/Sys/Framer";
 
 const About: React.FC = () => {
   return (
-    <Freya>
+    <Framer>
       <OG title="Profile - Sou Watanabe" description="My Profile" />
       <main className="inblo">
         <h1>Profile</h1>
@@ -23,7 +23,7 @@ const About: React.FC = () => {
           <dd>私を作ってくれた生んでくれた母と父に感謝しています。</dd>
         </dl>
       </main>
-    </Freya>
+    </Framer>
   );
 };
 

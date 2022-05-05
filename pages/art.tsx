@@ -1,9 +1,9 @@
 import OG from "components/Sys/OG";
-import Freya from "components/Sys/Freya";
+import Framer from "components/Sys/Framer";
 
 const Picture: React.FC = () => {
   return (
-    <Freya>
+    <Framer>
       <OG title="Art - Sou Watanabe" description="My Arts" />
       <main className="inblo">
         <h1>Art</h1>
@@ -49,7 +49,7 @@ const Picture: React.FC = () => {
           <dd>16GB</dd>
         </dl>
       </main>
-    </Freya>
+    </Framer>
   );
 };
 

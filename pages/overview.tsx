@@ -1,9 +1,9 @@
 import OG from "components/Sys/OG";
-import Freya from "components/Sys/Freya";
+import Framer from "components/Sys/Framer";
 
 const Overview: React.FC = () => {
   return (
-    <Freya>
+    <Framer>
       <OG title="Overview - Sou Watanabe" description="My Overview" />
       <main className="list inblo textLeft">
         <h1>Overview</h1>
@@ -69,7 +69,7 @@ const Overview: React.FC = () => {
           Challenging change the everytime The goal is to sleep like dead every day.
         </p>
       </main>
-    </Freya>
+    </Framer>
   );
 };
 

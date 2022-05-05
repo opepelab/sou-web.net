@@ -1,10 +1,10 @@
 import OG from "components/Sys/OG";
-import Freya from "components/Sys/Freya";
+import Framer from "components/Sys/Framer";
 import Link from "next/link";
 
 const NotFound: React.FC = () => {
   return (
-    <Freya>
+    <Framer>
       <OG title="404 - Sou Watanabe" description="Erorr URL" />
       <main className="inblo">
         <h1>Does not don't sync</h1>
@@ -14,7 +14,7 @@ const NotFound: React.FC = () => {
           </Link>
         </dl>
       </main>
-    </Freya>
+    </Framer>
   );
 };
 

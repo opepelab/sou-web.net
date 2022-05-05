@@ -1,9 +1,9 @@
-import Freya from "components/Sys/Freya";
+import Framer from "components/Sys/Framer";
 import OG from "components/Sys/OG";
 
 const Webclip: React.FC = () => {
   return (
-    <Freya>
+    <Framer>
       <OG title="Webclip - Sou Watanabe" description="My Web Clip" />
       <main className="Alink list inblo textLeft resizeimage">
         <h1>これだと思った重要なウェブページを公開クリップしています</h1>
@@ -36,7 +36,7 @@ const Webclip: React.FC = () => {
           </li>
         </ul>
       </main>
-    </Freya>
+    </Framer>
   );
 };
 

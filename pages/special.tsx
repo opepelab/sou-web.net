@@ -1,9 +1,9 @@
 import OG from "components/Sys/OG";
-import Freya from "components/Sys/Freya";
+import Framer from "components/Sys/Framer";
 
 const Special: React.FC = () => {
   return (
-    <Freya>
+    <Framer>
       <OG title="Special - Sou Watanabe" description="Give Thanks" />
       <main className="inblo textLeft">
         <h1 className="Special">Special Thanks</h1>
@@ -36,7 +36,7 @@ const Special: React.FC = () => {
           Central Processing Unit : Intel @メモリさえあればなんでもいい
         </p>
       </main>
-    </Freya>
+    </Framer>
   );
 };
 

@@ -2,7 +2,7 @@ import client from "libs/contentful";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { ParsedUrlQuery } from "querystring";
 import OG from "components/Sys/OG";
-import Freya from "components/Sys/Freya";
+import Framer from "components/Sys/Framer";
 import styles from "./midasi.module.scss";
 import { EntryCollection } from "contentful";
 import { IPostFields } from "libs/types";
@@ -62,7 +62,7 @@ const Slug: React.FC<Content> = ({ blog }) => {
   };
 
   return (
-    <Freya>
+    <Framer>
       <OG title={blog.fields.title} description={blog.fields.description} />
       <main className="Alink list textLeft resizeimageSlug">
         <div className={styles.Time2}>
@@ -73,7 +73,7 @@ const Slug: React.FC<Content> = ({ blog }) => {
         </div>
         <div>{documentToReactComponents(blog.fields.body, options)}</div>
       </main>
-    </Freya>
+    </Framer>
   );
 };
 

@@ -1,9 +1,9 @@
 import OG from "components/Sys/OG";
-import Freya from "components/Sys/Freya";
+import Framer from "components/Sys/Framer";
 
 const Thisblog: React.FC = () => {
   return (
-    <Freya>
+    <Framer>
       <OG title="Thisis - Sou Watanabe" description="This Site is" />
       <main className="inblo textLeft">
         <h1>What is this blog Read me?</h1>
@@ -41,7 +41,7 @@ const Thisblog: React.FC = () => {
         </p>
         <p>普段はプログラミング以外はねこと遊んだりもしているので気軽に話しかけたりコンタクト送ってくださいね。</p>
       </main>
-    </Freya>
+    </Framer>
   );
 };
 

@@ -1,9 +1,9 @@
 import OG from "components/Sys/OG";
-import Freya from "components/Sys/Freya";
+import Framer from "components/Sys/Framer";
 
 const Privacy: React.FC = () => {
   return (
-    <Freya>
+    <Framer>
       <OG title="Privacy Policy - Sou Watanabe" description="My Policy" />
       <main className="inblo textLeft">
         <h1>
@@ -23,7 +23,7 @@ const Privacy: React.FC = () => {
         <p>トラフィックデータは匿名で収集されており、個人を特定するものではありません。</p>
         <br />
       </main>
-    </Freya>
+    </Framer>
   );
 };
 
