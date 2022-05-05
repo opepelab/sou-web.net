@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { useRouter } from "next/router";
-import Link from "next/link";
+import ActiveLink from "components/Sys/ActiveLink";
 
 type RNode = {
   children: ReactNode;
@@ -8,14 +8,15 @@ type RNode = {
   state: boolean | null;
   on: string;
   off: string;
+  mount: string;
 };
 
-const Reactive: React.FC<RNode> = ({ children, url, state, on, off }) => {
+const Reactive: React.FC<RNode> = ({ children, url, state, on, off, mount }) => {
   const router = useRouter();
   return (
-    <Link href={url}>
+    <ActiveLink href={url} activeClassName={mount}>
       <a className={router.asPath === url || state ? on : off}>{children}</a>
-    </Link>
+    </ActiveLink>
   );
 };
 

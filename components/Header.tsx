@@ -103,7 +103,13 @@ const Header: React.FC = () => {
               <ul className="nav1-right">
                 <div onMouseEnter={() => setHome(true)} onMouseLeave={() => setHome(false)}>
                   <li>
-                    <Reactive url={"/"} state={home} on={"underlineDuo Block"} off={"underlineNormal Block"}>
+                    <Reactive
+                      url={"/"}
+                      state={home}
+                      on={"underlineDuo Block"}
+                      off={"underlineNormal Block"}
+                      mount={"Done"}
+                    >
                       <div className="gg-home-alt" />
                       Home
                     </Reactive>
@@ -111,7 +117,13 @@ const Header: React.FC = () => {
                 </div>
                 <div onMouseEnter={() => setMail(true)} onMouseLeave={() => setMail(false)}>
                   <li>
-                    <Reactive url={"/mail"} state={mail} on={"underlineDuo Block"} off={"underlineNormal Block"}>
+                    <Reactive
+                      url={"/mail"}
+                      state={mail}
+                      on={"underlineDuo Block"}
+                      off={"underlineNormal Block"}
+                      mount={"Done"}
+                    >
                       <div className="gg-mail" />
                       Mail
                     </Reactive>
@@ -119,7 +131,13 @@ const Header: React.FC = () => {
                 </div>
                 <div onMouseEnter={() => setRoom(true)} onMouseLeave={() => setRoom(false)}>
                   <li>
-                    <Reactive url={"/room"} state={room} on={"underlineDuo Block"} off={"underlineNormal Block"}>
+                    <Reactive
+                      url={"/room"}
+                      state={room}
+                      on={"underlineDuo Block"}
+                      off={"underlineNormal Block"}
+                      mount={"Done"}
+                    >
                       <div className="gg-git-fork" />
                       My room
                     </Reactive>
