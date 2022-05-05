@@ -179,18 +179,18 @@ a dt .dateST {
 }
 
 .underline::after {
-  @include Underline;
+  @include UnderlineLeft;
 
   width: 265px;
   transition: 0.3s all;
 }
 
-.underline2 {
+.underLess {
   position: relative;
 }
 
-.underline2::after {
-  @include Underline;
+.underLess::after {
+  @include UnderlineLeft;
 
   width: 0;
   transition: 0.1s all;

@@ -176,6 +176,16 @@ $ME: rgb(0 0 0 / 75%);
   border-radius: 4px;
 }
 
+@mixin UnderlineLeft {
+  content: "";
+  position: absolute;
+  background-color: var(--color-pink);
+  height: 3px;
+  bottom: 0;
+  right: 0;
+  border-radius: 4px;
+}
+
 @mixin Tool {
   position: absolute;
   width: max-content;

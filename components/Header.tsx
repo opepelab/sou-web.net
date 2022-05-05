@@ -42,7 +42,7 @@ const Header: React.FC = () => {
                     onMouseEnter={() => setAboutBorder(true)}
                     onMouseLeave={() => setAboutBorder(false)}
                   >
-                    <a className={about || aboutBorder ? "underline Block point" : "underline2 Block"} tabIndex={0}>
+                    <a className={about || aboutBorder ? "underline Block point" : "underLess Block"} tabIndex={0}>
                       <div className="gg-style" />
                       About
                       <div className="SankakuBlack" />

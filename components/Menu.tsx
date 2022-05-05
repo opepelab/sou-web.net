@@ -98,39 +98,12 @@ const Menu: React.FC = () => {
                 </div>
               </li>
               <li className="Links">
-                <div
-                  onClick={() => {
-                    setLinksRes(!linksRes);
-                    setAboutRes(false);
-                  }}
-                >
-                  <a className="right3p">
-                    <div className="gg-style" />
+                <ActiveLink href="/" activeClassName="headerState">
+                  <a onClick={() => setMenu(false)}>
+                    <div className="gg-home-alt" />
                     Home
-                    <div className="SankakuBlack" />
                   </a>
-                </div>
-                <div className="LinksState">
-                  <div aria-expanded={linksRes}>
-                    <ul>
-                      <li>
-                        <a href="https://github.com/opepelab" target="_blank">
-                          GitHub
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.linkedin.com/in/s-watanabe-a25157205" target="_blank">
-                          LinkdIn
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.instagram.com/sou_watana/" target="_blank">
-                          Instagram
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+                </ActiveLink>
               </li>
               <li>
                 <ActiveLink href="/mail" activeClassName="headerState">
