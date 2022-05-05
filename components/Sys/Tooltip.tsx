@@ -8,7 +8,7 @@ type RNode = {
 const Tooltip: React.FC<RNode> = ({ children, content }) => {
   const [show, setShow] = useState(false);
   return (
-    <div onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)} onBlur={() => setShow(false)}>
+    <div onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)}>
       {children}
       <div className={show ? "bottom" : "bottomLess"}>{content}</div>
     </div>

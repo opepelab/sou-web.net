@@ -8,6 +8,7 @@
     "no-descending-specificity": null,
     "scss/dollar-variable-pattern": null,
     "scss/at-mixin-pattern": null,
-    "custom-property-pattern": null
+    "custom-property-pattern": null,
+    "declaration-block-no-shorthand-property-overrides": null
   }
 }

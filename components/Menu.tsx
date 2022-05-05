@@ -37,7 +37,7 @@ const Menu: React.FC = () => {
                   }}
                 >
                   <a className="left2p">
-                    <div className="gg-details-more" />
+                    <div className="gg-style" />
                     About
                     <div className="SankakuBlack" />
                   </a>
@@ -78,6 +78,21 @@ const Menu: React.FC = () => {
                           </a>
                         </ActiveLink>
                       </li>
+                      <li>
+                        <a href="https://github.com/opepelab" target="_blank">
+                          GitHub
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.linkedin.com/in/s-watanabe-a25157205" target="_blank">
+                          LinkdIn
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/sou_watana/" target="_blank">
+                          Instagram
+                        </a>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -91,7 +106,7 @@ const Menu: React.FC = () => {
                 >
                   <a className="right3p">
                     <div className="gg-style" />
-                    Link
+                    Home
                     <div className="SankakuBlack" />
                   </a>
                 </div>
