@@ -5,6 +5,7 @@ import { useRecoilState, useSetRecoilState } from "recoil";
 import { aboutState, linksState, menuState, aboutStateRes, linksStateRes } from "libs/unique";
 import ToggleDarkMode from "components/DarkToggle";
 import Text from "components/Text";
+import Border from "components/Sys/BorderLine";
 
 const Header: React.FC = () => {
   const router = useRouter();
@@ -129,12 +130,10 @@ const Header: React.FC = () => {
                 </div>
                 <div onMouseEnter={() => setRoom(true)} onMouseLeave={() => setRoom(false)}>
                   <li>
-                    <ActiveLink href="/room" activeClassName="cursorDefault">
-                      <a className={router.asPath === "/room" || room ? "underlineDuo Block" : "underlineNormal Block"}>
-                        <div className="gg-git-fork" />
-                        My room
-                      </a>
-                    </ActiveLink>
+                    <Border url={"/room"} state={room} on={"underlineDuo Block"} off={"underlineNormal Block"}>
+                      <div className="gg-git-fork" />
+                      My room
+                    </Border>
                   </li>
                 </div>
               </ul>
