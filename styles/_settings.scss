@@ -168,7 +168,7 @@ $ME: rgb(0 0 0 / 75%);
 @mixin Underline {
   content: "";
   position: absolute;
-  background-color: var(--color-pink);
+  background-color: var(--color-icon);
   height: 3px;
   bottom: 0;
   left: 50%;
@@ -179,7 +179,7 @@ $ME: rgb(0 0 0 / 75%);
 @mixin UnderlineLeft {
   content: "";
   position: absolute;
-  background-color: var(--color-pink);
+  background-color: var(--color-icon);
   height: 3px;
   bottom: 0;
   right: 0;
