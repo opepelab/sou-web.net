@@ -1,4 +1,4 @@
-import { useState, ReactNode } from "react";
+import { ReactNode } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
@@ -10,7 +10,7 @@ type RNode = {
   off: string;
 };
 
-const Border: React.FC<RNode> = ({ children, url, state, on, off }) => {
+const Reactive: React.FC<RNode> = ({ children, url, state, on, off }) => {
   const router = useRouter();
   return (
     <Link href={url}>
@@ -19,4 +19,4 @@ const Border: React.FC<RNode> = ({ children, url, state, on, off }) => {
   );
 };
 
-export default Border;
+export default Reactive;

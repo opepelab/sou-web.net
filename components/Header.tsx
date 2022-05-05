@@ -1,14 +1,12 @@
 import ActiveLink from "./Sys/ActiveLink";
-import { useRouter } from "next/router";
 import { useState } from "react";
 import { useRecoilState, useSetRecoilState } from "recoil";
 import { aboutState, linksState, menuState, aboutStateRes, linksStateRes } from "libs/unique";
 import ToggleDarkMode from "components/DarkToggle";
 import Text from "components/Text";
-import Border from "components/Sys/BorderLine";
+import Reactive from "components/Sys/Reactive";
 
 const Header: React.FC = () => {
-  const router = useRouter();
   const [about, setAbout] = useRecoilState(aboutState);
   const [links, setLinks] = useRecoilState(linksState);
   const [menu, setMenu] = useRecoilState(menuState);
@@ -40,6 +38,7 @@ const Header: React.FC = () => {
                 <li>
                   <div
                     onClick={() => setAbout(!about)}
+                    onKeyPress={() => setAbout(!about)}
                     onMouseEnter={() => setAboutBorder(true)}
                     onMouseLeave={() => setAboutBorder(false)}
                   >
@@ -87,6 +86,7 @@ const Header: React.FC = () => {
                 <li>
                   <div
                     onClick={() => setLinks(!links)}
+                    onKeyPress={() => setLinks(!links)}
                     onMouseEnter={() => setLinksBorder(true)}
                     onMouseLeave={() => setLinksBorder(false)}
                   >
@@ -120,20 +120,18 @@ const Header: React.FC = () => {
                 </li>
                 <div onMouseEnter={() => setMail(true)} onMouseLeave={() => setMail(false)}>
                   <li>
-                    <ActiveLink href="/mail" activeClassName="cursorDefault">
-                      <a className={router.asPath === "/mail" || mail ? "underlineDuo Block" : "underlineNormal Block"}>
-                        <div className="gg-mail" />
-                        Mail
-                      </a>
-                    </ActiveLink>
+                    <Reactive url={"/mail"} state={mail} on={"underlineDuo Block"} off={"underlineNormal Block"}>
+                      <div className="gg-mail" />
+                      Mail
+                    </Reactive>
                   </li>
                 </div>
                 <div onMouseEnter={() => setRoom(true)} onMouseLeave={() => setRoom(false)}>
                   <li>
-                    <Border url={"/room"} state={room} on={"underlineDuo Block"} off={"underlineNormal Block"}>
+                    <Reactive url={"/room"} state={room} on={"underlineDuo Block"} off={"underlineNormal Block"}>
                       <div className="gg-git-fork" />
                       My room
-                    </Border>
+                    </Reactive>
                   </li>
                 </div>
               </ul>
