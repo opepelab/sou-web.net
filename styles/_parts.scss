@@ -160,33 +160,15 @@ a dt .dateST {
 }
 
 .bottom {
-  z-index: 4;
-  position: absolute;
-  width: max-content;
-  top: 50px;
-  right: -56px;
-  background-color: var(--color-bg);
-  border: solid 1px var(--color-menuBorder);
-  color: var(--color-text);
-  transition: all 0.4s;
-  transform-origin: center;
-  padding: 12px;
+  @include Tool;
+
   border-radius: 4px;
   visibility: visible;
 }
 
 .bottomLess {
-  position: absolute;
-  width: max-content;
-  top: 50px;
-  right: -56px;
-  background-color: var(--color-bg);
-  border: solid 1px var(--color-menuBorder);
-  color: var(--color-text);
-  transition: all 0.4s;
-  transform-origin: center;
-  padding: 12px;
-  border-radius: 4px;
+  @include Tool;
+
   opacity: 0;
   transform: scale(0);
   visibility: hidden;

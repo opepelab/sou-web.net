@@ -175,3 +175,17 @@ $ME: rgb(0 0 0 / 75%);
   transform: translateX(-50%);
   border-radius: 4px;
 }
+
+@mixin Tool {
+  position: absolute;
+  width: max-content;
+  top: 50px;
+  right: -56px;
+  background-color: var(--color-bg);
+  border: solid 1px var(--color-menuBorder);
+  color: var(--color-text);
+  transition: all 0.4s;
+  transform-origin: center;
+  padding: 12px;
+  border-radius: 4px;
+}
