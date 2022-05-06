@@ -30,7 +30,7 @@ const Menu: React.FC = () => {
           <nav>
             <ul className="nav2">
               <li>
-                <ActiveLink href="/" activeClassName="blockState headerState">
+                <ActiveLink href="/" activeClassName="Done blockState headerState">
                   <a onClick={() => setMenu(false)}>
                     <div className="gg-home-alt" />
                     Home
@@ -38,7 +38,7 @@ const Menu: React.FC = () => {
                 </ActiveLink>
               </li>
               <li>
-                <ActiveLink href="/profile" activeClassName="blockState headerState">
+                <ActiveLink href="/profile" activeClassName="Done blockState headerState">
                   <a onClick={() => setMenu(false)}>
                     <div className="gg-pin" />
                     Profile
@@ -46,7 +46,7 @@ const Menu: React.FC = () => {
                 </ActiveLink>
               </li>
               <li>
-                <ActiveLink href="/mail" activeClassName="blockState headerState">
+                <ActiveLink href="/mail" activeClassName="Done blockState headerState">
                   <a onClick={() => setMenu(false)}>
                     <div className="gg-mail" />
                     Email
@@ -69,21 +69,21 @@ const Menu: React.FC = () => {
                   <div aria-expanded={aboutRes} className="About">
                     <ul>
                       <li>
-                        <ActiveLink href="/room" activeClassName="headerState">
+                        <ActiveLink href="/room" activeClassName="Done headerState">
                           <a className="right1p" onClick={() => setMenu(false)}>
                             MyRoom
                           </a>
                         </ActiveLink>
                       </li>
                       <li>
-                        <ActiveLink href="/art" activeClassName="headerState">
+                        <ActiveLink href="/art" activeClassName="Done headerState">
                           <a className="right1p" onClick={() => setMenu(false)}>
                             MyArt
                           </a>
                         </ActiveLink>
                       </li>
                       <li>
-                        <ActiveLink href="/webclip" activeClassName="headerState">
+                        <ActiveLink href="/webclip" activeClassName="Done headerState">
                           <a
                             onClick={() => {
                               setMenu(false);
