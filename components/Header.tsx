@@ -14,10 +14,9 @@ const Header: React.FC = () => {
   const setLinksRes = useSetRecoilState(linksStateRes);
   const [aboutBorder, setAboutBorder] = useState(false);
   const [linksBorder, setLinksBorder] = useState(false);
-  const [home, setHome] = useState(false);
-  const [profile, setProfile] = useState(false);
-  const [mail, setMail] = useState(false);
-  const [room, setRoom] = useState(false);
+  const [home] = useState(false);
+  const [profile] = useState(false);
+  const [mail] = useState(false);
 
   return (
     <div>
@@ -85,8 +84,7 @@ const Header: React.FC = () => {
                       className={about || aboutBorder ? "underlineDuo Block point" : "underlineNormal Block"}
                       tabIndex={0}
                     >
-                      <div className="gg-style" />
-                      About
+                      .... About
                       <div className="SankakuBlack" />
                     </a>
                   </div>
@@ -125,8 +123,6 @@ const Header: React.FC = () => {
                     </div>
                   </div>
                 </li>
-              </ul>
-              <ul className="nav1-left">
                 <li>
                   <div
                     onClick={() => setLinks(!links)}

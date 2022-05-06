@@ -61,11 +61,8 @@ const Menu: React.FC = () => {
                   }}
                 >
                   <a className={aboutRes === true ? "blockLight" : "blockLightNormal"}>
-                    <div className="left2p ">
-                      <div className="gg-style" />
-                      About
-                      <div className="SankakuBlack" />
-                    </div>
+                    .... About
+                    <div className="SankakuBlack" />
                   </a>
                 </div>
                 <div className="AboutState">
