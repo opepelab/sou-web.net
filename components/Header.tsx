@@ -112,13 +112,6 @@ const Header: React.FC = () => {
                             </a>
                           </ActiveLink>
                         </li>
-                        <li>
-                          <ActiveLink href="/special" activeClassName="headerState">
-                            <a onClick={() => setAbout(false)}>
-                              <div className="hoverBG BlockM">Special X</div>
-                            </a>
-                          </ActiveLink>
-                        </li>
                       </ul>
                     </div>
                   </div>
