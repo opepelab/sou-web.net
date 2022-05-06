@@ -7,7 +7,6 @@ const Special: React.FC = () => {
       <OG title="Special - Sou Watanabe" description="Give Thanks" />
       <main className="inblo textLeft">
         <h1 className="Special">Special Thanks</h1>
-        <div className="triangle-bottom" />
         <p></p>
         <h2>思い出をくれたゲームたち</h2>
         <p>スマブラ64 DX X SP</p>

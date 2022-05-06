@@ -29,41 +29,59 @@ const Menu: React.FC = () => {
         <div aria-expanded={menu}>
           <nav>
             <ul className="nav2">
-              <li className="About">
+              <li>
+                <ActiveLink href="/" activeClassName="blockState headerState">
+                  <a onClick={() => setMenu(false)}>
+                    <div className="gg-home-alt" />
+                    Home
+                  </a>
+                </ActiveLink>
+              </li>
+              <li>
+                <ActiveLink href="/profile" activeClassName="blockState headerState">
+                  <a onClick={() => setMenu(false)}>
+                    <div className="gg-pin" />
+                    Profile
+                  </a>
+                </ActiveLink>
+              </li>
+              <li>
+                <ActiveLink href="/mail" activeClassName="blockState headerState">
+                  <a onClick={() => setMenu(false)}>
+                    <div className="gg-mail" />
+                    Email
+                  </a>
+                </ActiveLink>
+              </li>
+              <li>
                 <div
                   onClick={() => {
                     setAboutRes(!aboutRes);
                     setLinksRes(false);
                   }}
                 >
-                  <a className="left2p">
-                    <div className="gg-style" />
-                    About
-                    <div className="SankakuBlack" />
+                  <a className={aboutRes === true ? "blockLight" : "blockLightNormal"}>
+                    <div className="left2p ">
+                      <div className="gg-style" />
+                      About
+                      <div className="SankakuBlack" />
+                    </div>
                   </a>
                 </div>
                 <div className="AboutState">
-                  <div aria-expanded={aboutRes}>
+                  <div aria-expanded={aboutRes} className="About">
                     <ul>
                       <li>
-                        <ActiveLink href="/overview" activeClassName="headerState">
-                          <a
-                            onClick={() => {
-                              setMenu(false);
-                            }}
-                          >
-                            Overview
+                        <ActiveLink href="/room" activeClassName="headerState">
+                          <a className="right1p" onClick={() => setMenu(false)}>
+                            MyRoom
                           </a>
                         </ActiveLink>
                       </li>
                       <li>
-                        <ActiveLink href="/profile" activeClassName="headerState">
-                          <a
-                            onClick={() => {
-                              setMenu(false);
-                            }}
-                          >
-                            Profile
+                        <ActiveLink href="/art" activeClassName="headerState">
+                          <a className="right1p" onClick={() => setMenu(false)}>
+                            MyArt
                           </a>
                         </ActiveLink>
                       </li>
@@ -78,6 +96,28 @@ const Menu: React.FC = () => {
                           </a>
                         </ActiveLink>
                       </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li className="Link">
+                <div
+                  onClick={() => {
+                    setLinksRes(!linksRes);
+                    setAboutRes(false);
+                  }}
+                >
+                  <a className={linksRes === true ? "blockLight" : "blockLightNormal"}>
+                    <div className="left2p">
+                      <div className="gg-style" />
+                      Link
+                      <div className="SankakuBlack" />
+                    </div>
+                  </a>
+                </div>
+                <div className="AboutState">
+                  <div aria-expanded={linksRes}>
+                    <ul>
                       <li>
                         <a href="https://github.com/opepelab" target="_blank">
                           GitHub
@@ -96,30 +136,6 @@ const Menu: React.FC = () => {
                     </ul>
                   </div>
                 </div>
-              </li>
-              <li className="Links">
-                <ActiveLink href="/" activeClassName="headerState">
-                  <a onClick={() => setMenu(false)}>
-                    <div className="gg-home-alt" />
-                    Home
-                  </a>
-                </ActiveLink>
-              </li>
-              <li>
-                <ActiveLink href="/mail" activeClassName="headerState">
-                  <a onClick={() => setMenu(false)}>
-                    <div className="gg-mail" />
-                    Email
-                  </a>
-                </ActiveLink>
-              </li>
-              <li>
-                <ActiveLink href="/room" activeClassName="headerState">
-                  <a className="right1p" onClick={() => setMenu(false)}>
-                    <div className="gg-git-fork" />
-                    My room
-                  </a>
-                </ActiveLink>
               </li>
             </ul>
           </nav>

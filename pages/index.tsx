@@ -36,14 +36,14 @@ const Index: React.FC<Map> = ({ blog }) => {
             <dt className="dateST">
               <Date dateString={blog.fields.date} />
             </dt>
-            <Link href={`/docs/${blog.fields.slug}`}>
+            <Link href={`/docs/url/${blog.fields.slug}`}>
               <a>
                 <div className="PPx scaleLinks pinkLinks">{blog.fields.title}</div>
               </a>
             </Link>
           </dl>
         ))}
-        <Link href="/list/1">
+        <Link href="/docs/1">
           <a>
             <h5>リストを見に行く →</h5>
           </a>

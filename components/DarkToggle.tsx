@@ -30,7 +30,7 @@ export const ToggleDarkMode: React.FC = () => {
 
   return (
     <div className="togglePosition">
-      <Tooltip content="Dark or Light Toggle">
+      <Tooltip content="push Dark or Light">
         <div
           className="iconButton scaleLinks"
           onClick={handleChangeDarkMode}

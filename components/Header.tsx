@@ -1,5 +1,5 @@
 import ActiveLink from "./Sys/ActiveLink";
-import { useState } from "react";
+import { useState, ReactElement } from "react";
 import { useRecoilState, useSetRecoilState } from "recoil";
 import { aboutState, linksState, menuState, aboutStateRes, linksStateRes } from "libs/unique";
 import ToggleDarkMode from "components/DarkToggle";
@@ -13,7 +13,9 @@ const Header: React.FC = () => {
   const setAboutRes = useSetRecoilState(aboutStateRes);
   const setLinksRes = useSetRecoilState(linksStateRes);
   const [aboutBorder, setAboutBorder] = useState(false);
+  const [linksBorder, setLinksBorder] = useState(false);
   const [home, setHome] = useState(false);
+  const [profile, setProfile] = useState(false);
   const [mail, setMail] = useState(false);
   const [room, setRoom] = useState(false);
 
@@ -34,7 +36,44 @@ const Header: React.FC = () => {
           <ToggleDarkMode />
           <div className="disableN">
             <nav>
-              <ul className="nav1-left">
+              <ul className="nav1-right">
+                <li>
+                  <Reactive
+                    url={"/"}
+                    state={home}
+                    on={"underlineDuo Block"}
+                    off={"underlineNormal Block"}
+                    mount={"Done"}
+                  >
+                    <div className="gg-home-alt" />
+                    Home
+                  </Reactive>
+                </li>
+                <li>
+                  <Reactive
+                    url={"/profile"}
+                    state={profile}
+                    on={"underlineDuo Block"}
+                    off={"underlineNormal Block"}
+                    mount={"Done"}
+                  >
+                    <div className="gg-pin" />
+                    Profile
+                  </Reactive>
+                </li>
+
+                <li>
+                  <Reactive
+                    url={"/mail"}
+                    state={mail}
+                    on={"underlineDuo Block"}
+                    off={"underlineNormal Block"}
+                    mount={"Done"}
+                  >
+                    <div className="gg-mail" />
+                    Mail
+                  </Reactive>
+                </li>
                 <li>
                   <div
                     onClick={() => setAbout(!about)}
@@ -42,7 +81,10 @@ const Header: React.FC = () => {
                     onMouseEnter={() => setAboutBorder(true)}
                     onMouseLeave={() => setAboutBorder(false)}
                   >
-                    <a className={about || aboutBorder ? "underline Block point" : "underLess Block"} tabIndex={0}>
+                    <a
+                      className={about || aboutBorder ? "underlineDuo Block point" : "underlineNormal Block"}
+                      tabIndex={0}
+                    >
                       <div className="gg-style" />
                       About
                       <div className="SankakuBlack" />
@@ -52,26 +94,19 @@ const Header: React.FC = () => {
                     <div aria-expanded={about}>
                       <ul className="White menu">
                         <li>
-                          <ActiveLink href="/overview" activeClassName="headerState">
+                          <ActiveLink href="/room" activeClassName="headerState">
                             <a onClick={() => setAbout(false)}>
-                              <div className="hoverBG BlockM">Overview</div>
+                              <div className="hoverBG BlockM">MyRoom</div>
                             </a>
                           </ActiveLink>
                         </li>
                         <li>
-                          <ActiveLink href="/profile" activeClassName="headerState">
+                          <ActiveLink href="/art" activeClassName="blockState headerState">
                             <a onClick={() => setAbout(false)}>
-                              <div className="hoverBG BlockM">Profile</div>
+                              <div className="hoverBG BlockM">MyArt</div>
                             </a>
                           </ActiveLink>
                         </li>
-                        {/* <li>
-                          <ActiveLink href="/thisis" activeClassName="headerState">
-                            <a>
-                              <div className="hoverBG BlockM">Thisis</div>
-                            </a>
-                          </ActiveLink>
-                        </li> */}
                         <li>
                           <ActiveLink href="/webclip" activeClassName="headerState">
                             <a onClick={() => setAbout(false)}>
@@ -79,7 +114,38 @@ const Header: React.FC = () => {
                             </a>
                           </ActiveLink>
                         </li>
-                        <br />
+                        <li>
+                          <ActiveLink href="/special" activeClassName="headerState">
+                            <a onClick={() => setAbout(false)}>
+                              <div className="hoverBG BlockM">Special X</div>
+                            </a>
+                          </ActiveLink>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul className="nav1-left">
+                <li>
+                  <div
+                    onClick={() => setLinks(!links)}
+                    onKeyPress={() => setLinks(!links)}
+                    onMouseEnter={() => setLinksBorder(true)}
+                    onMouseLeave={() => setLinksBorder(false)}
+                  >
+                    <a
+                      className={links || linksBorder ? "underlineDuo Block point" : "underlineNormal Block"}
+                      tabIndex={0}
+                    >
+                      <div className="gg-style" />
+                      Link
+                      <div className="SankakuBlack" />
+                    </a>
+                  </div>
+                  <div className="NavDrop">
+                    <div aria-expanded={links}>
+                      <ul className="White menu">
                         <li>
                           <a href="https://github.com/opepelab" target="_blank">
                             <div className="hoverBG BlockM">GitHub</div>
@@ -99,50 +165,6 @@ const Header: React.FC = () => {
                     </div>
                   </div>
                 </li>
-              </ul>
-              <ul className="nav1-right">
-                <div onMouseEnter={() => setHome(true)} onMouseLeave={() => setHome(false)}>
-                  <li>
-                    <Reactive
-                      url={"/"}
-                      state={home}
-                      on={"underlineDuo Block"}
-                      off={"underlineNormal Block"}
-                      mount={"Done"}
-                    >
-                      <div className="gg-home-alt" />
-                      Home
-                    </Reactive>
-                  </li>
-                </div>
-                <div onMouseEnter={() => setMail(true)} onMouseLeave={() => setMail(false)}>
-                  <li>
-                    <Reactive
-                      url={"/mail"}
-                      state={mail}
-                      on={"underlineDuo Block"}
-                      off={"underlineNormal Block"}
-                      mount={"Done"}
-                    >
-                      <div className="gg-mail" />
-                      Mail
-                    </Reactive>
-                  </li>
-                </div>
-                <div onMouseEnter={() => setRoom(true)} onMouseLeave={() => setRoom(false)}>
-                  <li>
-                    <Reactive
-                      url={"/room"}
-                      state={room}
-                      on={"underlineDuo Block"}
-                      off={"underlineNormal Block"}
-                      mount={"Done"}
-                    >
-                      <div className="gg-git-fork" />
-                      My room
-                    </Reactive>
-                  </li>
-                </div>
               </ul>
             </nav>
           </div>

@@ -61,6 +61,24 @@ a dt .dateST {
   cursor: default;
 }
 
+.blockState {
+  background: var(--color-icon);
+  border-radius: 4px;
+}
+
+.blockLight {
+  transform: rotateX(360deg);
+  background: var(--color-state);
+  border-radius: 4px;
+  transition: 1s;
+}
+
+.blockLightNormal {
+  transform: rotateX(-360deg);
+  border-radius: 4px;
+  transition: 1s;
+}
+
 .Done {
   display: block;
   pointer-events: none;
@@ -204,8 +222,9 @@ a dt .dateST {
 .underlineDuo::after {
   @include Underline;
 
-  width: 100%;
-  transition: 0.3s all;
+  width: 75%;
+  transition: 0.4s all;
+  transition-delay: 0.2s;
 }
 
 .underlineNormal {
@@ -215,12 +234,17 @@ a dt .dateST {
 .underlineNormal::after {
   @include Underline;
 
-  width: 0;
+  width: 200%;
+  opacity: 0;
   transition: 0.2s all;
 }
 
-.navigation-underline {
-  border-bottom: solid 4px red;
+.border-bottom {
+  background-color: var(--color-icon);
+  margin-top: 14px;
+  height: 3px;
+  bottom: 0;
+  border-radius: 4px;
 }
 
 // GraphicsとAbout以外位置を修正してる

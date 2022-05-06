@@ -24,7 +24,7 @@ const Blog: React.FC<Map> = ({ blog }) => {
             <dt className="dateST">
               <Date dateString={props.fields.date} />
             </dt>
-            <Link href={`/docs/${props.fields.slug}`}>
+            <Link href={`/docs/url/${props.fields.slug}`}>
               <a>
                 <div className="PPx hoverbob pinkLinks">{props.fields.title}</div>
               </a>

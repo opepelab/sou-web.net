@@ -33,7 +33,7 @@ const Id: React.FC<Map> = ({ blog, total }) => {
             <dt className="dateST">
               <Date dateString={props.fields.date} />
             </dt>
-            <Link href={`/docs/${props.fields.slug}`}>
+            <Link href={`/docs/url/${props.fields.slug}`}>
               <a>
                 <div className="PPx scaleLinks pinkLinks">{props.fields.title}</div>
               </a>
@@ -44,7 +44,7 @@ const Id: React.FC<Map> = ({ blog, total }) => {
           <ul className="ListNum">
             {range(1, Math.ceil(total / Limit)).map((id) => (
               <li key={id}>
-                <ActiveLink href={`/list/${id}`} activeClassName="listState">
+                <ActiveLink href={`/docs/${id}`} activeClassName="listState">
                   <a className="Pagi">{id}</a>
                 </ActiveLink>
               </li>
@@ -66,7 +66,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     order: "-fields.date",
   });
 
-  const paths = range(1, Math.ceil(entries.total / Limit)).map((id) => `/list/${id}`);
+  const paths = range(1, Math.ceil(entries.total / Limit)).map((id) => `/docs/${id}`);
 
   return { paths, fallback: false };
 };
