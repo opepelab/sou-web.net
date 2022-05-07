@@ -15,7 +15,7 @@ const Reactive: React.FC<RNode> = ({ children, url, state, on, off, mount }) => 
   const router = useRouter();
   return (
     <ActiveLink href={url} activeClassName={mount}>
-      <a className={`scaleLinks ${router.asPath === url || state ? on : off}`}>{children}</a>
+      <a className={router.asPath === url || state ? on : off}>{children}</a>
     </ActiveLink>
   );
 };
