@@ -97,7 +97,7 @@ const Header: React.FC = () => {
                     <div aria-expanded={about}>
                       <ul className="White menu">
                         <li>
-                          <ActiveLink href="/room" activeClassName="headerState">
+                          <ActiveLink href="/room" activeClassName="blockState headerState">
                             <a onClick={() => setAbout(false)}>
                               <div className="hoverBG BlockM">MyRoom</div>
                             </a>
@@ -111,7 +111,7 @@ const Header: React.FC = () => {
                           </ActiveLink>
                         </li>
                         <li>
-                          <ActiveLink href="/webclip" activeClassName="headerState">
+                          <ActiveLink href="/webclip" activeClassName="blockState headerState">
                             <a onClick={() => setAbout(false)}>
                               <div className="hoverBG BlockM">WebClip</div>
                             </a>
