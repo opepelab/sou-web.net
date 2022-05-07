@@ -14,9 +14,9 @@ const Header: React.FC = () => {
   const setLinksRes = useSetRecoilState(linksStateRes);
   const [aboutBorder, setAboutBorder] = useState(false);
   const [linksBorder, setLinksBorder] = useState(false);
-  const [home] = useState(false);
-  const [profile] = useState(false);
-  const [mail] = useState(false);
+  const [home, setHome] = useState(false);
+  const [profile, setProfile] = useState(false);
+  const [mail, setMail] = useState(false);
 
   return (
     <div>
@@ -37,41 +37,46 @@ const Header: React.FC = () => {
             <nav>
               <ul className="nav1-right">
                 <li>
-                  <Reactive
-                    url={"/"}
-                    state={home}
-                    on={"underlineDuo Block"}
-                    off={"underlineNormal Block"}
-                    mount={"Done"}
-                  >
-                    <div className="gg-home-alt" />
-                    Home
-                  </Reactive>
+                  <div onMouseEnter={() => setHome(true)} onMouseLeave={() => setHome(false)}>
+                    <Reactive
+                      url={"/"}
+                      state={home}
+                      on={"underlineDuo Block"}
+                      off={"underlineNormal Block"}
+                      mount={"Done"}
+                    >
+                      <div className="gg-home-alt" />
+                      Home
+                    </Reactive>
+                  </div>
                 </li>
                 <li>
-                  <Reactive
-                    url={"/profile"}
-                    state={profile}
-                    on={"underlineDuo Block"}
-                    off={"underlineNormal Block"}
-                    mount={"Done"}
-                  >
-                    <div className="gg-pin" />
-                    Profile
-                  </Reactive>
+                  <div onMouseEnter={() => setProfile(true)} onMouseLeave={() => setProfile(false)}>
+                    <Reactive
+                      url={"/profile"}
+                      state={profile}
+                      on={"underlineDuo Block"}
+                      off={"underlineNormal Block"}
+                      mount={"Done"}
+                    >
+                      <div className="gg-pin" />
+                      Profile
+                    </Reactive>
+                  </div>
                 </li>
-
                 <li>
-                  <Reactive
-                    url={"/mail"}
-                    state={mail}
-                    on={"underlineDuo Block"}
-                    off={"underlineNormal Block"}
-                    mount={"Done"}
-                  >
-                    <div className="gg-mail" />
-                    Mail
-                  </Reactive>
+                  <div onMouseEnter={() => setMail(true)} onMouseLeave={() => setMail(false)}>
+                    <Reactive
+                      url={"/mail"}
+                      state={mail}
+                      on={"underlineDuo Block"}
+                      off={"underlineNormal Block"}
+                      mount={"Done"}
+                    >
+                      <div className="gg-mail" />
+                      Mail
+                    </Reactive>
+                  </div>
                 </li>
                 <li>
                   <div
