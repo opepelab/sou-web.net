@@ -1,4 +1,4 @@
-import { useState, ReactNode } from "react";
+import { useState, ReactNode } from 'react';
 
 type RNode = {
   children: ReactNode;
@@ -10,7 +10,7 @@ const Tooltip: React.FC<RNode> = ({ children, content }) => {
   return (
     <div onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)}>
       {children}
-      <div className={show ? "bottom" : "bottomLess"}>{content}</div>
+      <div className={show ? 'bottom' : 'bottomLess'}>{content}</div>
     </div>
   );
 };

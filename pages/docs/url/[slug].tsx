@@ -1,18 +1,18 @@
-import client from "libs/contentful";
-import { GetStaticPaths, GetStaticProps } from "next";
-import { ParsedUrlQuery } from "querystring";
-import OG from "components/Sys/OG";
-import Framer from "components/Sys/Framer";
-import styles from "./midasi.module.scss";
-import { EntryCollection } from "contentful";
-import { IPostFields } from "libs/types";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import { Document } from "@contentful/rich-text-types";
-import Date from "components/Sys/date";
-import * as TYPES from "@contentful/rich-text-types";
-import { Options } from "@contentful/rich-text-react-renderer";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { vscDarkPlus } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import client from 'libs/contentful';
+import { GetStaticPaths, GetStaticProps } from 'next';
+import { ParsedUrlQuery } from 'querystring';
+import OG from 'components/Sys/OG';
+import Framer from 'components/Sys/Framer';
+import styles from './midasi.module.scss';
+import { EntryCollection } from 'contentful';
+import { IPostFields } from 'libs/types';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { Document } from '@contentful/rich-text-types';
+import Date from 'components/Sys/date';
+import * as TYPES from '@contentful/rich-text-types';
+import { Options } from '@contentful/rich-text-react-renderer';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
 interface IParams extends ParsedUrlQuery {
   slug: string;
@@ -37,14 +37,14 @@ const Slug: React.FC<Content> = ({ blog }) => {
         if (
           node.content.length === 1 &&
           TYPES.helpers.isText(node.content[0]) &&
-          node.content[0].marks.find((x) => x.type == "code")
+          node.content[0].marks.find((x) => x.type == 'code')
         ) {
           return <>{children}</>;
         }
         return <p>{children}</p>;
       },
       [TYPES.BLOCKS.EMBEDDED_ASSET]: (node) => {
-        const src = "https://" + node.data.target.fields.file.url;
+        const src = 'https://' + node.data.target.fields.file.url;
         const height = node.data.target.fields.file.details.height;
         const width = node.data.target.fields.file.details.width;
         return <img src={src} width={width} height={height} />;
@@ -79,7 +79,7 @@ const Slug: React.FC<Content> = ({ blog }) => {
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const entries: EntryCollection<IPostFields> = await client.getEntries({
-    content_type: "blog",
+    content_type: 'blog',
     limit: 1000,
   });
   const paths = entries.items.map((item) => ({
@@ -91,9 +91,9 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async (context) => {
   const { slug } = context.params as IParams;
   const entries = await client.getEntries({
-    content_type: "blog",
+    content_type: 'blog',
     limit: 1000,
-    "fields.slug": slug,
+    'fields.slug': slug,
   });
 
   return {

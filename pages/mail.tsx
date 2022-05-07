@@ -1,6 +1,6 @@
-import { useMail } from "hooks/useMail";
-import OG from "components/Sys/OG";
-import Framer from "components/Sys/Framer";
+import { useMail } from 'hooks/useMail';
+import OG from 'components/Sys/OG';
+import Framer from 'components/Sys/Framer';
 
 export const Mail: React.FC<HTMLTextAreaElement> = () => {
   const { setName, setMail, setMessage, send } = useMail();

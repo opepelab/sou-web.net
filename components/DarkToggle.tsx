@@ -1,30 +1,30 @@
-import { useState, useEffect } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import { HiOutlineMoon, HiOutlineSun } from "react-icons/hi";
-import Tooltip from "components/Sys/Tooltip";
+import { useState, useEffect } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
+import { HiOutlineMoon, HiOutlineSun } from 'react-icons/hi';
+import Tooltip from 'components/Sys/Tooltip';
 export const ToggleDarkMode: React.FC = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     if (
-      localStorage.theme === "dark" ||
-      (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+      localStorage.theme === 'dark' ||
+      (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
     ) {
       setDarkMode(true);
-      document.documentElement.setAttribute("data-theme", "dark");
+      document.documentElement.setAttribute('data-theme', 'dark');
     } else {
       setDarkMode(false);
-      document.documentElement.setAttribute("data-theme", "light");
+      document.documentElement.setAttribute('data-theme', 'light');
     }
   }, [darkMode]);
 
   const handleChangeDarkMode = () => {
     if (!darkMode) {
       setDarkMode(true);
-      localStorage.theme = "dark";
+      localStorage.theme = 'dark';
     } else {
       setDarkMode(false);
-      localStorage.theme = "light";
+      localStorage.theme = 'light';
     }
   };
 
@@ -41,7 +41,7 @@ export const ToggleDarkMode: React.FC = () => {
             <motion.div
               className="flex"
               onClick={handleChangeDarkMode}
-              key={darkMode ? "dark" : "light"}
+              key={darkMode ? 'dark' : 'light'}
               initial={{ rotate: -90, opacity: 0, scale: 0 }}
               animate={{ rotate: 0, opacity: 1, scale: 1 }}
               exit={{ y: 20, opacity: 0 }}

@@ -1,6 +1,6 @@
-import OG from "components/Sys/OG";
-import Framer from "components/Sys/Framer";
-import Link from "next/link";
+import OG from 'components/Sys/OG';
+import Framer from 'components/Sys/Framer';
+import Link from 'next/link';
 
 const NotFound: React.FC = () => {
   return (

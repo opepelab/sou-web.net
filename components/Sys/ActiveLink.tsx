@@ -1,6 +1,6 @@
-import { withRouter, NextRouter } from "next/router";
-import React, { ReactElement } from "react";
-import Link from "next/link";
+import { withRouter, NextRouter } from 'next/router';
+import React, { ReactElement } from 'react';
+import Link from 'next/link';
 
 type Props = {
   router: NextRouter;

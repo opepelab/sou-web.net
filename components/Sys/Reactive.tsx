@@ -1,6 +1,6 @@
-import { ReactNode } from "react";
-import { useRouter } from "next/router";
-import ActiveLink from "components/Sys/ActiveLink";
+import { ReactNode } from 'react';
+import { useRouter } from 'next/router';
+import ActiveLink from 'components/Sys/ActiveLink';
 
 type RNode = {
   children: ReactNode;

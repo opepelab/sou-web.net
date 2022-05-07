@@ -1,5 +1,5 @@
-import Framer from "components/Sys/Framer";
-import OG from "components/Sys/OG";
+import Framer from 'components/Sys/Framer';
+import OG from 'components/Sys/OG';
 
 const Webclip: React.FC = () => {
   return (

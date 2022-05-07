@@ -1,5 +1,5 @@
 export const Current = (href: string, currentPath: string) => {
-  if (href === "/") {
+  if (href === '/') {
     return href === currentPath;
   }
 

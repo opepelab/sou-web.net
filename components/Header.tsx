@@ -1,10 +1,10 @@
-import ActiveLink from "./Sys/ActiveLink";
-import { useState } from "react";
-import { useRecoilState, useSetRecoilState } from "recoil";
-import { aboutState, linksState, menuState, aboutStateRes, linksStateRes } from "libs/unique";
-import ToggleDarkMode from "components/DarkToggle";
-import Text from "components/Text";
-import Reactive from "components/Sys/Reactive";
+import ActiveLink from './Sys/ActiveLink';
+import { useState } from 'react';
+import { useRecoilState, useSetRecoilState } from 'recoil';
+import { aboutState, linksState, menuState, aboutStateRes, linksStateRes } from 'libs/unique';
+import ToggleDarkMode from 'components/DarkToggle';
+import Text from 'components/Text';
+import Reactive from 'components/Sys/Reactive';
 
 const Header: React.FC = () => {
   const [about, setAbout] = useRecoilState(aboutState);
@@ -39,11 +39,11 @@ const Header: React.FC = () => {
                 <li>
                   <div onMouseEnter={() => setHome(true)} onMouseLeave={() => setHome(false)}>
                     <Reactive
-                      url={"/"}
+                      url={'/'}
                       state={home}
-                      on={"underlineDuo Block"}
-                      off={"underlineNormal Block"}
-                      mount={"Done"}
+                      on={'underlineDuo Block'}
+                      off={'underlineNormal Block'}
+                      mount={'Done'}
                     >
                       <div className="gg-home-alt" />
                       Home
@@ -53,11 +53,11 @@ const Header: React.FC = () => {
                 <li>
                   <div onMouseEnter={() => setProfile(true)} onMouseLeave={() => setProfile(false)}>
                     <Reactive
-                      url={"/profile"}
+                      url={'/profile'}
                       state={profile}
-                      on={"underlineDuo Block"}
-                      off={"underlineNormal Block"}
-                      mount={"Done"}
+                      on={'underlineDuo Block'}
+                      off={'underlineNormal Block'}
+                      mount={'Done'}
                     >
                       <div className="gg-pin" />
                       Profile
@@ -67,11 +67,11 @@ const Header: React.FC = () => {
                 <li>
                   <div onMouseEnter={() => setMail(true)} onMouseLeave={() => setMail(false)}>
                     <Reactive
-                      url={"/mail"}
+                      url={'/mail'}
                       state={mail}
-                      on={"underlineDuo Block"}
-                      off={"underlineNormal Block"}
-                      mount={"Done"}
+                      on={'underlineDuo Block'}
+                      off={'underlineNormal Block'}
+                      mount={'Done'}
                     >
                       <div className="gg-mail" />
                       Mail
@@ -86,7 +86,7 @@ const Header: React.FC = () => {
                     onMouseLeave={() => setAboutBorder(false)}
                   >
                     <a
-                      className={about || aboutBorder ? "underlineDuo Block point" : "underlineNormal Block"}
+                      className={about || aboutBorder ? 'underlineDuo Block point' : 'underlineNormal Block'}
                       tabIndex={0}
                     >
                       .... About
@@ -129,7 +129,7 @@ const Header: React.FC = () => {
                     onMouseLeave={() => setLinksBorder(false)}
                   >
                     <a
-                      className={links || linksBorder ? "underlineDuo Block point" : "underlineNormal Block"}
+                      className={links || linksBorder ? 'underlineDuo Block point' : 'underlineNormal Block'}
                       tabIndex={0}
                     >
                       <div className="gg-style" />

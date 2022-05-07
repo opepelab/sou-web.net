@@ -1,37 +1,37 @@
-import { atom } from "recoil";
+import { atom } from 'recoil';
 
-export type Theme = "light" | "dark" | "systemUI";
+export type Theme = 'light' | 'dark' | 'systemUI';
 export const themeState = atom<Theme>({
-  key: "themeKey",
-  default: "systemUI",
+  key: 'themeKey',
+  default: 'systemUI',
 });
 
 export type About = false | true;
 export const aboutState = atom<About>({
-  key: "aboutKey",
+  key: 'aboutKey',
   default: false,
 });
 
 export type Links = false | true;
 export const linksState = atom<Links>({
-  key: "linksKey",
+  key: 'linksKey',
   default: false,
 });
 
 export type Menu = false | true;
 export const menuState = atom<Menu>({
-  key: "menuKey",
+  key: 'menuKey',
   default: false,
 });
 
 export type AboutRes = false | true;
 export const aboutStateRes = atom<AboutRes>({
-  key: "aboutResKey",
+  key: 'aboutResKey',
   default: false,
 });
 
 export type LinksRes = false | true;
 export const linksStateRes = atom<LinksRes>({
-  key: "linksResKey",
+  key: 'linksResKey',
   default: false,
 });

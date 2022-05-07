@@ -1,6 +1,6 @@
-import { useEffect, ReactNode } from "react";
-import { Theme, themeState } from "libs/unique";
-import { useSetRecoilState } from "recoil";
+import { useEffect, ReactNode } from 'react';
+import { Theme, themeState } from 'libs/unique';
+import { useSetRecoilState } from 'recoil';
 
 type RNode = {
   children: ReactNode;
@@ -10,7 +10,7 @@ const DarkState: React.FC<RNode> = ({ children }): JSX.Element => {
   const setTheme = useSetRecoilState(themeState);
 
   useEffect(() => {
-    const initialColorValue = window.document.documentElement.getAttribute("data-theme");
+    const initialColorValue = window.document.documentElement.getAttribute('data-theme');
     setTheme(initialColorValue as Theme);
   }, [setTheme]);
 

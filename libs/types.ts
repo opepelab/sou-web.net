@@ -1,4 +1,4 @@
-import { EntryCollection } from "contentful";
+import { EntryCollection } from 'contentful';
 
 export interface IPostFields {
   title: string;
@@ -17,9 +17,9 @@ export interface IPost extends EntryCollection<IPostFields> {
     locale: string;
     contentType: {
       sys: {
-        id: "blog";
-        linkType: "ContentType";
-        type: "Link";
+        id: 'blog';
+        linkType: 'ContentType';
+        type: 'Link';
       };
     };
   };

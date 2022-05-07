@@ -1,11 +1,11 @@
-import client from "libs/contentful";
-import { GetStaticProps } from "next";
-import OG from "components/Sys/OG";
-import Framer from "components/Sys/Framer";
-import { Entry, EntryCollection } from "contentful";
-import { IPostFields } from "libs/types";
-import Date from "components/Sys/date";
-import Link from "next/link";
+import client from 'libs/contentful';
+import { GetStaticProps } from 'next';
+import OG from 'components/Sys/OG';
+import Framer from 'components/Sys/Framer';
+import { Entry, EntryCollection } from 'contentful';
+import { IPostFields } from 'libs/types';
+import Date from 'components/Sys/date';
+import Link from 'next/link';
 
 type Map = {
   blog: {
@@ -38,8 +38,8 @@ const Blog: React.FC<Map> = ({ blog }) => {
 
 export const getStaticProps: GetStaticProps = async () => {
   const entries: EntryCollection<IPostFields> = await client.getEntries({
-    content_type: "blog",
-    order: "-fields.date",
+    content_type: 'blog',
+    order: '-fields.date',
     limit: 100,
   });
   return {

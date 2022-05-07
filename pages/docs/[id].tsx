@@ -1,12 +1,12 @@
-import client from "libs/contentful";
-import { GetStaticPaths } from "next";
-import OG from "components/Sys/OG";
-import Framer from "components/Sys/Framer";
-import Link from "next/link";
-import { Entry, EntryCollection } from "contentful";
-import { IPostFields } from "libs/types";
-import Date from "components/Sys/date";
-import ActiveLink from "components/Sys/ActiveLink";
+import client from 'libs/contentful';
+import { GetStaticPaths } from 'next';
+import OG from 'components/Sys/OG';
+import Framer from 'components/Sys/Framer';
+import Link from 'next/link';
+import { Entry, EntryCollection } from 'contentful';
+import { IPostFields } from 'libs/types';
+import Date from 'components/Sys/date';
+import ActiveLink from 'components/Sys/ActiveLink';
 
 // interface IParams extends ParsedUrlQuery {
 //   [key: string]: any;
@@ -62,8 +62,8 @@ const Id: React.FC<Map> = ({ blog, total }) => {
 };
 export const getStaticPaths: GetStaticPaths = async () => {
   const entries: EntryCollection<IPostFields> = await client.getEntries({
-    content_type: "blog",
-    order: "-fields.date",
+    content_type: 'blog',
+    order: '-fields.date',
   });
 
   const paths = range(1, Math.ceil(entries.total / Limit)).map((id) => `/docs/${id}`);
@@ -75,8 +75,8 @@ export const getStaticProps = async (context: { params: { id: number } }) => {
   const id = context.params.id;
 
   const entries: EntryCollection<IPostFields> = await client.getEntries({
-    content_type: "blog",
-    order: "-fields.date",
+    content_type: 'blog',
+    order: '-fields.date',
     limit: Limit,
     skip: (id - 1) * Limit,
   });

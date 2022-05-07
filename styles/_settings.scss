@@ -18,10 +18,10 @@ $r100: $r50 * 2;
 
 @font-face {
   font-family: Rationale;
-  src: url("./font/Rationale-Regular.ttf") format("TrueType");
+  src: url('./font/Rationale-Regular.ttf') format('TrueType');
 }
 
-$Google0: "Rationale";
+$Google0: 'Rationale';
 $Google: -apple-system, blinkmacsystemfont, segoe ui, roboto, oxygen, ubuntu, cantarell, fira sans, droid sans,
   helvetica neue, sans-serif;
 $IB: inline-block;
@@ -166,7 +166,7 @@ $ME: rgb(0 0 0 / 75%);
 }
 
 @mixin Underline {
-  content: "";
+  content: '';
   position: absolute;
   background-color: var(--color-icon);
   height: 3px;
@@ -177,7 +177,7 @@ $ME: rgb(0 0 0 / 75%);
 }
 
 @mixin UnderlineLeft {
-  content: "";
+  content: '';
   position: absolute;
   background-color: var(--color-icon);
   height: 3px;

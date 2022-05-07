@@ -16,7 +16,7 @@
 
 .gg-style::after,
 .gg-style::before {
-  content: "";
+  content: '';
   position: absolute;
   border: 2px solid;
 }
@@ -50,7 +50,7 @@
 }
 
 .gg-mail::after {
-  content: "";
+  content: '';
   position: absolute;
   border-radius: 3px;
   width: 14px;
@@ -78,7 +78,7 @@
 
 .gg-home-alt::after,
 .gg-home-alt::before {
-  content: "";
+  content: '';
   display: block;
   box-sizing: border-box;
   position: absolute;
@@ -120,7 +120,7 @@
 }
 
 .gg-format-text::after {
-  content: "";
+  content: '';
   display: block;
   box-sizing: border-box;
   position: absolute;
@@ -150,7 +150,7 @@
 }
 
 .gg-format-justify::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 4px;
   left: 0;
@@ -171,7 +171,7 @@
 }
 
 .gg-pin::before {
-  content: "";
+  content: '';
   display: block;
   box-sizing: border-box;
   position: absolute;
@@ -197,7 +197,7 @@
 
 .gg-git-fork::after,
 .gg-git-fork::before {
-  content: "";
+  content: '';
   display: block;
   box-sizing: border-box;
   position: absolute;
@@ -234,7 +234,7 @@
 
 .heart::before,
 .heart::after {
-  content: ""; /* 疑似要素に必須 */
+  content: ''; /* 疑似要素に必須 */
   width: 50%; /* ハートの丸い部分の大きさにかかわる */
   height: 80%; /* ハートの高さにかかわる */
   background: rgb(94 234 212); /* ハートの色 */

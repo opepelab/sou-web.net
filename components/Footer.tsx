@@ -1,11 +1,11 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 const Footer: React.FC = () => {
   return (
     <div className="Alink">
       <footer className="Footer">
         <div className="inblo C">
-          <a href="https://github.com/opepelab/sou-web.net">github/sou-web.net</a> Written by{" "}
+          <a href="https://github.com/opepelab/sou-web.net">github/sou-web.net</a> Written by{' '}
           <a href="https://nextjs.org/">
             <u>Next.js</u>
           </a>
@@ -15,10 +15,10 @@ const Footer: React.FC = () => {
           <a className="inblo C">
             <u>Privacy Policy</u>
           </a>
-        </Link>{" "}
+        </Link>{' '}
         <Link href="/">
           <a className="inblo C">© sou-web.net 2022</a>
-        </Link>{" "}
+        </Link>{' '}
         <Link href="/rss/atom.xml">
           <a className="inblo C">
             <u>RSS</u>

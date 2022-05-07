@@ -1,8 +1,8 @@
-@import "settings";
-@import "parts";
-@import "./PT/scrollbar";
+@import 'settings';
+@import 'parts';
+@import './PT/scrollbar';
 
-:root[data-theme="light"] {
+:root[data-theme='light'] {
   color-scheme: light;
 
   --color-text: rgb(55 65 81);
@@ -16,7 +16,7 @@
   --color-state: rgb(0 0 0 / 3%);
 }
 
-:root[data-theme="dark"] {
+:root[data-theme='dark'] {
   color-scheme: dark;
 
   --color-text: rgb(209 213 219);
@@ -129,12 +129,12 @@ nav ul li {
   transition-duration: 3s;
 }
 
-.NavDrop [aria-expanded="true"] {
+.NavDrop [aria-expanded='true'] {
   visibility: visible;
   transition-duration: 0.3s;
 }
 
-.NavDrop [aria-expanded="false"] {
+.NavDrop [aria-expanded='false'] {
   visibility: hidden;
   transform: translateY(-70px) scaleY(0);
   transition-duration: 0.1s;
@@ -372,7 +372,7 @@ button {
   background: transparent;
 }
 
-.Filter [aria-expanded="true"] {
+.Filter [aria-expanded='true'] {
   @include FilterAtom;
 
   touch-action: none;
@@ -380,7 +380,7 @@ button {
   visibility: visible;
 }
 
-.Filter [aria-expanded="false"] {
+.Filter [aria-expanded='false'] {
   @include FilterAtom;
 
   opacity: 0;

@@ -1,6 +1,6 @@
-import ActiveLink from "./Sys/ActiveLink";
-import { useRecoilState } from "recoil";
-import { menuState, aboutStateRes, linksStateRes } from "libs/unique";
+import ActiveLink from './Sys/ActiveLink';
+import { useRecoilState } from 'recoil';
+import { menuState, aboutStateRes, linksStateRes } from 'libs/unique';
 
 const Menu: React.FC = () => {
   const [menu, setMenu] = useRecoilState(menuState);
@@ -60,7 +60,7 @@ const Menu: React.FC = () => {
                     setLinksRes(false);
                   }}
                 >
-                  <a className={aboutRes === true ? "blockLight" : "blockLightNormal"}>
+                  <a className={aboutRes === true ? 'blockLight' : 'blockLightNormal'}>
                     .... About
                     <div className="SankakuBlack" />
                   </a>
@@ -104,7 +104,7 @@ const Menu: React.FC = () => {
                     setAboutRes(false);
                   }}
                 >
-                  <a className={linksRes === true ? "blockLight" : "blockLightNormal"}>
+                  <a className={linksRes === true ? 'blockLight' : 'blockLightNormal'}>
                     <div className="left2p">
                       <div className="gg-style" />
                       Link

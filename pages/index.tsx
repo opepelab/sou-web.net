@@ -1,14 +1,14 @@
-import client from "libs/contentful";
-import { GetStaticProps } from "next";
-import OG from "components/Sys/OG";
-import Framer from "components/Sys/Framer";
-import { Text, Heading } from "@chakra-ui/react";
-import { Entry, EntryCollection } from "contentful";
-import { IPostFields } from "libs/types";
-import Date from "components/Sys/date";
-import Link from "next/link";
-import generateRssFeed from "../libs/feed";
-import { MoonIcon } from "@chakra-ui/icons";
+import client from 'libs/contentful';
+import { GetStaticProps } from 'next';
+import OG from 'components/Sys/OG';
+import Framer from 'components/Sys/Framer';
+import { Text, Heading } from '@chakra-ui/react';
+import { Entry, EntryCollection } from 'contentful';
+import { IPostFields } from 'libs/types';
+import Date from 'components/Sys/date';
+import Link from 'next/link';
+import generateRssFeed from '../libs/feed';
+import { MoonIcon } from '@chakra-ui/icons';
 
 type Map = {
   blog: {
@@ -56,8 +56,8 @@ const Index: React.FC<Map> = ({ blog }) => {
 export const getStaticProps: GetStaticProps = async () => {
   await generateRssFeed();
   const data: EntryCollection<IPostFields> = await client.getEntries({
-    content_type: "blog",
-    order: "-fields.date",
+    content_type: 'blog',
+    order: '-fields.date',
     limit: 15,
   });
   return {

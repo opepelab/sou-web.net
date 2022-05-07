@@ -1,6 +1,6 @@
-import OG from "components/Sys/OG";
-import Framer from "components/Sys/Framer";
-import { Heading } from "@chakra-ui/react";
+import OG from 'components/Sys/OG';
+import Framer from 'components/Sys/Framer';
+import { Heading } from '@chakra-ui/react';
 
 const Feature: React.FC = () => {
   return (

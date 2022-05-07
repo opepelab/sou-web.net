@@ -1,5 +1,5 @@
-import Head from "next/head";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import { useRouter } from 'next/router';
 type StProp = {
   title: string;
   description: string;

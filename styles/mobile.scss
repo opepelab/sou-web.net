@@ -1,4 +1,4 @@
-@import "settings";
+@import 'settings';
 
 @media screen and (max-width: 739.98px) {
   html {
@@ -69,40 +69,40 @@
     bottom: 5px;
   }
 
-  .Line [aria-expanded="true"] span:nth-of-type(1) {
+  .Line [aria-expanded='true'] span:nth-of-type(1) {
     transform: rotate(45deg) translateY(4px) translateX(4px) scale(0.8);
     transition-duration: 0.1s;
   }
 
-  .Line [aria-expanded="true"] span:nth-of-type(2) {
+  .Line [aria-expanded='true'] span:nth-of-type(2) {
     opacity: 0;
     transition-duration: 0.25s;
   }
 
-  .Line [aria-expanded="true"] span:nth-of-type(3) {
+  .Line [aria-expanded='true'] span:nth-of-type(3) {
     transform: rotate(-45deg) translateY(-4.5px) translateX(4.5px) scale(0.8);
     transition-duration: 0.1s;
   }
 
-  .Line [aria-expanded="false"] span:nth-of-type(1) {
+  .Line [aria-expanded='false'] span:nth-of-type(1) {
     transition-duration: 0.1s;
   }
 
-  .Line [aria-expanded="false"] span:nth-of-type(2) {
+  .Line [aria-expanded='false'] span:nth-of-type(2) {
     transition-duration: 0.1s;
   }
 
-  .Line [aria-expanded="false"] span:nth-of-type(3) {
+  .Line [aria-expanded='false'] span:nth-of-type(3) {
     transition-duration: 0.1s;
   }
 
-  .MenuList [aria-expanded="true"] {
+  .MenuList [aria-expanded='true'] {
     @include Menu;
 
     visibility: visible;
   }
 
-  .MenuList [aria-expanded="false"] {
+  .MenuList [aria-expanded='false'] {
     @include Menu;
 
     visibility: hidden;
@@ -121,7 +121,7 @@
     display: none;
   }
 
-  .AboutState [aria-expanded="true"] {
+  .AboutState [aria-expanded='true'] {
     @include State-true;
 
     div {
@@ -129,15 +129,15 @@
     }
   }
 
-  .AboutState [aria-expanded="false"] {
+  .AboutState [aria-expanded='false'] {
     @include State-false;
   }
 
-  .LinksState [aria-expanded="true"] {
+  .LinksState [aria-expanded='true'] {
     @include State-true;
   }
 
-  .LinksState [aria-expanded="false"] {
+  .LinksState [aria-expanded='false'] {
     @include State-false;
   }
 
