@@ -74,7 +74,7 @@ const Header: React.FC = () => {
                       mount={'Done'}
                     >
                       <div className="gg-mail" />
-                      Mail
+                      Dev
                     </Reactive>
                   </div>
                 </li>
