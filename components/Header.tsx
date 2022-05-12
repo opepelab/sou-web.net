@@ -22,9 +22,9 @@ const Header: React.FC = () => {
 
   return (
     <div>
-      <header className={isHeaderActive ? 'NoActive' : 'Active'}>
+      <header>
         <div
-          className="bgg"
+          className={`bgg ${isHeaderActive ? 'NoActive' : 'Active'}`}
           onClick={() => {
             menu ? setMenu(false) : null;
             about ? setAbout(false) : null;

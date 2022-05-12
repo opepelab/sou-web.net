@@ -249,12 +249,13 @@ a dt .dateST {
 
 .NoActive {
   opacity: 1;
-  transition-duration: 0.2s;
+  transition-duration: 0.5s;
 }
 
 .Active {
-  opacity: 0.2;
-  transition-duration: 0.2s;
+  opacity: 0;
+  transform: translateY(-58px);
+  transition-duration: 0.5s;
 }
 
 // GraphicsとAbout以外位置を修正してる
