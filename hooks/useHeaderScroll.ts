@@ -5,10 +5,9 @@ const useHeaderScroll = (activePoint: number) => {
 
   useEffect(() => {
     const scrollWindow = () => {
-      const ap = activePoint;
       let scroll = 0;
       scroll = window.scrollY;
-      if (ap <= scroll) {
+      if (activePoint <= scroll) {
         setIsHeaderActive(true);
       } else {
         setIsHeaderActive(false);
