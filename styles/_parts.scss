@@ -247,4 +247,14 @@ a dt .dateST {
   border-radius: 4px;
 }
 
+.NoActive {
+  opacity: 1;
+  transition-duration: 0.2s;
+}
+
+.Active {
+  opacity: 0.2;
+  transition-duration: 0.2s;
+}
+
 // GraphicsとAbout以外位置を修正してる

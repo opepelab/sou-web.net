@@ -7,7 +7,7 @@ const useHeaderScroll = (activePoint: number) => {
     const scrollWindow = () => {
       let scroll = 0;
       scroll = window.scrollY;
-      if (activePoint <= scroll) {
+      if (activePoint >= scroll) {
         setIsHeaderActive(true);
       } else {
         setIsHeaderActive(false);

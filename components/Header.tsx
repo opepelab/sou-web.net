@@ -5,6 +5,7 @@ import { aboutState, linksState, menuState, aboutStateRes, linksStateRes } from 
 import ToggleDarkMode from 'components/DarkToggle';
 import Text from 'components/Text';
 import Reactive from 'components/Sys/Reactive';
+import useHeaderScroll from 'hooks/useHeaderScroll';
 
 const Header: React.FC = () => {
   const [about, setAbout] = useRecoilState(aboutState);
@@ -17,10 +18,11 @@ const Header: React.FC = () => {
   const [home, setHome] = useState(false);
   const [profile, setProfile] = useState(false);
   const [mail, setMail] = useState(false);
+  const { isHeaderActive } = useHeaderScroll(0);
 
   return (
     <div>
-      <header>
+      <header className={isHeaderActive ? 'NoActive' : 'Active'}>
         <div
           className="bgg"
           onClick={() => {
