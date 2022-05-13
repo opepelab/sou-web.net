@@ -18,13 +18,13 @@ const Header: React.FC = () => {
   const [home, setHome] = useState(false);
   const [profile, setProfile] = useState(false);
   const [mail, setMail] = useState(false);
-  const { isHeaderActive } = useHeaderScroll(0);
+  const { isHeaderActive } = useHeaderScroll(1);
 
   return (
     <div>
       <header>
         <div
-          className={`bgg ${isHeaderActive ? 'NoActive' : 'Active'}`}
+          className={`bgg ${isHeaderActive ? 'Active' : 'NoActive'}`}
           onClick={() => {
             menu ? setMenu(false) : null;
             about ? setAbout(false) : null;

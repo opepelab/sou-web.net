@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 
 const useHeaderScroll = (activePoint: number) => {
-  const [isHeaderActive, setIsHeaderActive] = useState(false);
+  const [isHeaderActive, setIsHeaderActive] = useState(true);
 
   useEffect(() => {
     const scrollWindow = () => {
       let scroll = 0;
       scroll = window.scrollY;
-      if (activePoint >= scroll) {
+      if (activePoint > scroll) {
         setIsHeaderActive(true);
       } else {
         setIsHeaderActive(false);

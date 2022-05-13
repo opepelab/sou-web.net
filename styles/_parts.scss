@@ -247,13 +247,13 @@ a dt .dateST {
   border-radius: 4px;
 }
 
-.NoActive {
+.Active {
   opacity: 1;
   transition-duration: 0.5s;
 }
 
-.Active {
-  opacity: 0;
+.NoActive {
+  opacity: 0.5;
   transform: translateY(-58px);
   transition-duration: 0.5s;
 }
