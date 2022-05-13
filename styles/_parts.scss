@@ -247,14 +247,14 @@ a dt .dateST {
   border-radius: 4px;
 }
 
-.Active {
+.NoActive {
   opacity: 1;
   transition-duration: 0.5s;
 }
 
-.NoActive {
-  opacity: 0.5;
-  transform: translateY(-58px);
+.Active {
+  opacity: 0;
+  transform: rotateX(360deg) scale(1.5);
   transition-duration: 0.5s;
 }
 
