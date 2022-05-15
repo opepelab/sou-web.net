@@ -33,6 +33,10 @@ const Header: React.FC = () => {
             setAboutRes(false);
             setLinksRes(false);
           }}
+          onKeyPress={() => {
+            about ? setAbout(false) : null;
+            links ? setLinks(false) : null;
+          }}
         >
           <Text />
           <ToggleDarkMode />
