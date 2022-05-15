@@ -70,6 +70,13 @@ const Menu: React.FC = () => {
                   <div aria-expanded={aboutRes} className="About">
                     <ul>
                       <li>
+                        <ActiveLink href="/rss/atom.xml" activeClassName="Done headerState">
+                          <a className="right1p" onClick={() => setMenu(false)}>
+                            RSS
+                          </a>
+                        </ActiveLink>
+                      </li>
+                      <li>
                         <ActiveLink href="/art" activeClassName="Done headerState">
                           <a className="right1p" onClick={() => setMenu(false)}>
                             MyArt

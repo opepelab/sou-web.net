@@ -100,7 +100,7 @@ const Header: React.FC = () => {
                     <div aria-expanded={about}>
                       <ul className="White menu">
                         <li>
-                          <ActiveLink href="//rss/atom.xml" activeClassName="blockState headerState">
+                          <ActiveLink href="/rss/atom.xml" activeClassName="blockState headerState">
                             <a onClick={() => setAbout(false)}>
                               <div className="hoverBG BlockM">RSS</div>
                             </a>
