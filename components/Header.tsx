@@ -6,6 +6,7 @@ import ToggleDarkMode from 'components/DarkToggle';
 import Text from 'components/Text';
 import Reactive from 'components/Sys/Reactive';
 import useHeaderScroll from 'hooks/useHeaderScroll';
+import { CgProfile } from 'react-icons/cg';
 
 const Header: React.FC = () => {
   const [about, setAbout] = useRecoilState(aboutState);
@@ -61,7 +62,7 @@ const Header: React.FC = () => {
                       off={'underlineNormal Block'}
                       mount={'Done'}
                     >
-                      <div className="gg-pin" />
+                      <CgProfile className="Top-2px" />
                       Profile
                     </Reactive>
                   </div>
@@ -69,14 +70,14 @@ const Header: React.FC = () => {
                 <li>
                   <div onMouseEnter={() => setMail(true)} onMouseLeave={() => setMail(false)}>
                     <Reactive
-                      url={'/mail'}
+                      url={'/room'}
                       state={mail}
                       on={'underlineDuo Block'}
                       off={'underlineNormal Block'}
                       mount={'Done'}
                     >
-                      <div className="gg-mail" />
-                      Mail
+                      <div className="gg-pin" />
+                      Room
                     </Reactive>
                   </div>
                 </li>
@@ -99,9 +100,9 @@ const Header: React.FC = () => {
                     <div aria-expanded={about}>
                       <ul className="White menu">
                         <li>
-                          <ActiveLink href="/room" activeClassName="blockState headerState">
+                          <ActiveLink href="//rss/atom.xml" activeClassName="blockState headerState">
                             <a onClick={() => setAbout(false)}>
-                              <div className="hoverBG BlockM">MyRoom</div>
+                              <div className="hoverBG BlockM">RSS</div>
                             </a>
                           </ActiveLink>
                         </li>

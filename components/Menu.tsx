@@ -1,6 +1,7 @@
 import ActiveLink from './Sys/ActiveLink';
 import { useRecoilState } from 'recoil';
 import { menuState, aboutStateRes, linksStateRes } from 'libs/unique';
+import { CgProfile } from 'react-icons/cg';
 
 const Menu: React.FC = () => {
   const [menu, setMenu] = useRecoilState(menuState);
@@ -40,16 +41,16 @@ const Menu: React.FC = () => {
               <li>
                 <ActiveLink href="/profile" activeClassName="Done blockState headerState">
                   <a onClick={() => setMenu(false)}>
-                    <div className="gg-pin" />
+                    <CgProfile className="Top-2px" />
                     Profile
                   </a>
                 </ActiveLink>
               </li>
               <li>
-                <ActiveLink href="/mail" activeClassName="Done blockState headerState">
+                <ActiveLink href="/room" activeClassName="Done blockState headerState">
                   <a onClick={() => setMenu(false)}>
-                    <div className="gg-mail" />
-                    Email
+                    <div className="gg-pin" />
+                    Room
                   </a>
                 </ActiveLink>
               </li>
@@ -68,13 +69,6 @@ const Menu: React.FC = () => {
                 <div className="AboutState">
                   <div aria-expanded={aboutRes} className="About">
                     <ul>
-                      <li>
-                        <ActiveLink href="/room" activeClassName="Done headerState">
-                          <a className="right1p" onClick={() => setMenu(false)}>
-                            MyRoom
-                          </a>
-                        </ActiveLink>
-                      </li>
                       <li>
                         <ActiveLink href="/art" activeClassName="Done headerState">
                           <a className="right1p" onClick={() => setMenu(false)}>

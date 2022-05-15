@@ -123,10 +123,6 @@
 
   .AboutState [aria-expanded='true'] {
     @include State-true;
-
-    div {
-      background-color: orange;
-    }
   }
 
   .AboutState [aria-expanded='false'] {
