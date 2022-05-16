@@ -8,7 +8,7 @@ const Special: React.FC = () => {
       <main className="inblo textLeft">
         <h1 className="Special">Special Thanks</h1>
         <p></p>
-        <h2>思い出をくれたゲームたち</h2>
+        <h2>思い出をくれたゲームたちtest</h2>
         <p>スマブラ64 DX X SP</p>
         <p>Gunz/ゴールデンアイ007/SuddonAttack/Valorant</p>
         <p>Phantasy Star Online episode1＆2</p>
