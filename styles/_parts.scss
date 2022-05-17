@@ -249,12 +249,12 @@ a dt .dateST {
 
 .NoActive {
   opacity: 1;
+  transition-duration: 2s;
 }
 
 .Active {
-  opacity: 0;
-  visibility: hidden;
-  transform: rotateX(360deg) scale(1.5);
+  opacity: 0.5;
+  transition-duration: 2s;
 }
 
 .Top-2px {
