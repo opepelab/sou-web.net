@@ -10,6 +10,7 @@ import Link from 'next/link';
 import generateRssFeed from '../libs/feed';
 import { MoonIcon } from '@chakra-ui/icons';
 import { HiRss, HiOutlineMail } from 'react-icons/hi';
+import { RiGithubFill } from 'react-icons/ri';
 
 type Map = {
   blog: {
@@ -25,22 +26,24 @@ const Index: React.FC<Map> = ({ blog }) => {
         <Heading as="h1" m="0" fontWeight="200" fontSize="32">
           Hello? My name is Sou🖐
         </Heading>
+        <Text fontSize="12px">猫飼っています</Text>
         <Text fontWeight="200" fontSize="20px">
           I am Software contributor,
           <br />
           from JAPAN Tokyo.
         </Text>
         <div className="Flex">
+          <a href="https://github.com/opepelab" target="_blank">
+            <RiGithubFill size={30} />
+          </a>
           <Link href="mail">
             <a>
               <HiOutlineMail size={30} />
             </a>
           </Link>
-          <Link href="/rss/atom.xml">
-            <a>
-              <HiRss size={30} />
-            </a>
-          </Link>
+          <a href="/rss/atom.xml" target="_blank">
+            <HiRss size={30} />
+          </a>
         </div>
         <br />
         <MoonIcon />

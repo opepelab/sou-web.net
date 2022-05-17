@@ -16,8 +16,8 @@ const Special: React.FC = () => {
         <h2>ブログの人とエンジニアさん</h2>
         <p>/ pechorinさん/ konokeyさん/ コマツさん/ マナブさん/ マコなり社長さん/</p>
         <p>
-          / T.Furukawaさん/ Ryusouさん/ piro(kk-web)さん/ Irisawaさん/ ncaqさん/ かみむらさん/ セイトさん / しまぶーさん
-          / おさないさん /
+          / T.Furukawaさん/ Ryusouさん/ piro(kk-web)さん/ ncaqさん/ かみむらさん/ セイトさん / しまぶーさん /
+          おさないさん /
         </p>
         <h2>読んだ本</h2>
         <p>/ フリーズする脳 / 脳が冴える15の習慣 / 脳と気持ちの整理術 /</p>
