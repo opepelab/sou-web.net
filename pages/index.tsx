@@ -9,8 +9,7 @@ import Date from 'components/Sys/date';
 import Link from 'next/link';
 import generateRssFeed from '../libs/feed';
 import { MoonIcon } from '@chakra-ui/icons';
-import { AiFillMail } from 'react-icons/ai';
-import { AiOutlineTwitter } from 'react-icons/ai';
+import { HiRss, HiOutlineMail } from 'react-icons/hi';
 
 type Map = {
   blog: {
@@ -31,16 +30,18 @@ const Index: React.FC<Map> = ({ blog }) => {
           <br />
           from JAPAN Tokyo.
         </Text>
-        <Link href="mail">
-          <a>
-            <AiFillMail size={35} />
-          </a>
-        </Link>
-        <Link href="mail">
-          <a>
-            <AiOutlineTwitter size={35} />
-          </a>
-        </Link>
+        <div className="Flex">
+          <Link href="mail">
+            <a>
+              <HiOutlineMail size={30} />
+            </a>
+          </Link>
+          <Link href="/rss/atom.xml">
+            <a>
+              <HiRss size={30} />
+            </a>
+          </Link>
+        </div>
         <br />
         <MoonIcon />
         <h5>最新記事</h5>

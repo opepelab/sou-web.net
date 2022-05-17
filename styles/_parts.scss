@@ -249,18 +249,21 @@ a dt .dateST {
 
 .NoActive {
   opacity: 1;
-  transition-duration: 2s;
 }
 
 .Active {
   opacity: 0.5;
-  transition-duration: 2s;
 }
 
 .Top-2px {
   position: relative;
   top: 2px;
   margin-right: 6px;
+}
+
+.Flex {
+  display: flex;
+  gap: 5px;
 }
 
 // GraphicsとAbout以外位置を修正してる
