@@ -1,7 +1,5 @@
 import { AppProps } from 'next/app';
 import { RecoilRoot } from 'recoil';
-// import { Provider } from "react-redux";
-// import { store } from "redux/store";
 import DarkState from 'components/Sys/DarkState';
 import LayoutProvider from 'components/Layout/layout';
 import { AnimatePresence } from 'framer-motion';
@@ -15,7 +13,6 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
   usePageView();
   return (
     <>
-      {/* <Provider store={store}> */}
       <RecoilRoot>
         <DarkState>
           <LayoutProvider>
@@ -25,7 +22,6 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
           </LayoutProvider>
         </DarkState>
       </RecoilRoot>
-      {/* </Provider> */}
     </>
   );
 };
