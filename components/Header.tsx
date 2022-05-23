@@ -7,7 +7,6 @@ import Text from 'components/Text';
 import Reactive from 'components/Sys/Reactive';
 import useHeaderScroll from 'hooks/useHeaderScroll';
 import { CgProfile } from 'react-icons/cg';
-import { FiExternalLink } from 'react-icons/fi';
 
 const Header: React.FC = () => {
   const [about, setAbout] = useRecoilState(aboutState);
