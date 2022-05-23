@@ -9,6 +9,11 @@ const Webclip: React.FC = () => {
         <h1>これだと思った重要なウェブページを公開クリップしています</h1>
         <ul>
           <li>
+            <a href="https://engineering.mercari.com/blog/entry/2018-12-12-090156/">
+              Chrome DevToolsを用いたメルカリWebのパフォーマンス計測
+            </a>
+          </li>
+          <li>
             <a href="https://nico0927.hatenablog.com/entry/2017/10/31/221613">
               クリエイターとデザイナーとアーティストの違い
             </a>
