@@ -21,29 +21,23 @@ spec:
     spec:
       containerConcurrency: 80
       containers:
-      - env:
-        - name: CONTENTFUL_DELIVERY_TOKEN
-          value: ecdbUvIW570_3LibjtoBT1WNzwh95f43NvGQ1iNDtWg
-        - name: CONTENTFUL_SPACE_ID
-          value: ylsv6wx8208j
-        - name: NEXT_PUBLIC_GA
-          value: G-NW5896JRGJ
-        - name: MAIL_USER
-          value: ocelot2828
-        - name: MAIL_PASS
-          value: yklcmvhkexzfqgbj
-        - name: MAIL_TO
-          value: '"ocelot2828@gmail.com"'
-        image: gcr.io/cloudrun/placeholder
-        ports:
-        - containerPort: 3000
-          name: http1
-        resources:
-          limits:
-            cpu: 1000m
-            memory: 128Mi
+        - env:
+            CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
+            CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
+            MAIL_USER: ${{ secrets.MAIL_USER }}
+            MAIL_PASS: ${{ secrets.MAIL_PASS }}
+            MAIL_TO: ${{ secrets.MAIL_TO }}
+            NEXT_PUBLIC_GA_ID: ${{ secrets.NEXT_PUBLIC_GA_ID }}
+          image: gcr.io/cloudrun/placeholder
+          ports:
+            - containerPort: 3000
+              name: http1
+          resources:
+            limits:
+              cpu: 1000m
+              memory: 128Mi
       serviceAccountName: 756030835970-compute@developer.gserviceaccount.com
       timeoutSeconds: 10
   traffic:
-  - latestRevision: true
-    percent: 100
+    - latestRevision: true
+      percent: 100
