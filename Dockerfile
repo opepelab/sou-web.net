@@ -11,6 +11,9 @@ WORKDIR /app
 COPY package.json package-lock.json ./ 
 RUN npm ci
 
+FROM gcr.io/cloud-builders/gcloud
+RUN git config --system credential.helper gcloud.sh
+
 # Rebuild the source code only when needed
 FROM node:alpine AS builder
 WORKDIR /app
