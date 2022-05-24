@@ -9,7 +9,7 @@ WORKDIR /app
 
 # If using npm with a `package-lock.json` comment out above and use below instead
 COPY package.json package-lock.json ./ 
-RUN npm i
+RUN npm ci
 
 FROM gcr.io/cloud-builders/docker
 RUN git config --system credential.helper gcloud.sh
@@ -28,7 +28,6 @@ COPY . .
 # RUN yarn build
 
 # If using npm comment out above and use below instead
-COPY .env.local .env.production
 RUN npm run build
 
 # Production image, copy all the files and run next
@@ -52,6 +51,7 @@ COPY --from=builder /app/package.json ./package.json
 # https://nextjs.org/docs/advanced-features/output-file-tracing
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+COPY .env.local .env.production
 
 USER nextjs
 
