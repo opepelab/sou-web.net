@@ -9,7 +9,7 @@ WORKDIR /app
 
 # If using npm with a `package-lock.json` comment out above and use below instead
 COPY package.json package-lock.json ./ 
-RUN npm ci
+RUN npm i
 
 FROM gcr.io/cloud-builders/docker
 RUN git config --system credential.helper gcloud.sh
@@ -28,7 +28,7 @@ COPY . .
 # RUN yarn build
 
 # If using npm comment out above and use below instead
-COPY .env.staging.sample .env.production
+COPY .env.local .env.production
 RUN npm run build
 
 # Production image, copy all the files and run next
