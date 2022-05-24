@@ -28,6 +28,7 @@ const Overview: React.FC = () => {
         <ul>
           <li>静的型付け</li>
           <li>TypeScript</li>
+          <li>Rust</li>
           <li>Dart</li>
         </ul>
         <h1>クラン歴</h1>
