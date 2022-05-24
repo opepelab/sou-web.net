@@ -62,4 +62,4 @@ EXPOSE 3000
 # ENV MAIL_PASS=$MAIL_PASS
 # ENV MAIL_TO=$MAIL_TO
 
-CMD ["npm", "start"]
+CMD ["node", "server.js"]
