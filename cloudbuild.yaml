@@ -1,0 +1,21 @@
+steps:
+  # Uses the ubuntu build step:
+  # to run a shell script; and
+  # set env variables for its execution
+  - name: 'ubuntu'
+    args: ['bash', './myscript.sh']
+    env:
+      - 'CONTENTFUL_SPACE_ID=$CONTENTFUL_SPACE_ID'
+      - 'CONTENTFUL_DELIVERY_TOKEN=$CONTENTFUL_DELIVERY_TOKEN'
+      - 'NEXT_PUBLIC_GA_ID=$NEXT_PUBLIC_GA_ID'
+      - 'MAIL_USER=$MAIL_USER'
+      - 'MAIL_PASS=$MAIL_PASS'
+      - 'MAIL_TO=$MAIL_TO'
+
+  # Uses the docker build step to build an image called my-image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/inductive-gift-351105/sou-web.net', '.']
+
+# my-image is pushed to Container Registry
+images:
+  - 'gcr.io/gcr.io/inductive-gift-351105/sou-web.net'
