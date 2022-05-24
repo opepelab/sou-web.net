@@ -11,7 +11,7 @@ WORKDIR /app
 COPY package.json package-lock.json ./ 
 RUN npm ci
 
-FROM gcr.io/cloud-builders/gcloud
+FROM gcr.io/cloud-builders/docker
 RUN git config --system credential.helper gcloud.sh
 
 # Rebuild the source code only when needed
