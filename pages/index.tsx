@@ -47,7 +47,7 @@ const Index: React.FC<Map> = ({ blog }) => {
         </div>
         <br />
         <MoonIcon />
-        <h5>最新記事</h5>
+        <h5>最新記事.</h5>
         {blog.map((blog: Entry<IPostFields>) => (
           <dl key={blog.sys.id}>
             <dt className="dateST">
