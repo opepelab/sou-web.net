@@ -43,26 +43,15 @@ RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 
 # You only need to copy next.config.js if you are NOT using the default configuration
-COPY --from=builder /app/next.config.js ./
+# COPY --from=builder /app/next.config.js ./
 # COPY --from=builder /app/.env.production ./
 COPY --from=builder /app/public ./public
+COPY --from=builder /app/.next ./.next
+COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./package.json
-
-# Automatically leverage output traces to reduce image size 
-# https://nextjs.org/docs/advanced-features/output-file-tracing
-COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
-COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
 USER nextjs
 
 EXPOSE 3000
 
-# ENV PORT 3000
-# ENV CONTENTFUL_SPACE_ID=$CONTENTFUL_SPACE_ID
-# ENV CONTENTFUL_DELIVERY_TOKEN=$CONTENTFUL_DELIVERY_TOKEN
-# ENV NEXT_PUBLIC_GA_ID=$NEXT_PUBLIC_GA_ID
-# ENV MAIL_USER=$MAIL_USER
-# ENV MAIL_PASS=$MAIL_PASS
-# ENV MAIL_TO=$MAIL_TO
-
-CMD ["node", "server.js"]
+CMD ["npm", "start"]
