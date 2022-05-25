@@ -18,6 +18,10 @@ jobs:
       MAIL_PASS: ${{ secrets.MAIL_PASS }}
       MAIL_TO: ${{ secrets.MAIL_TO }}
       NEXT_PUBLIC_GA_ID: ${{ secrets.NEXT_PUBLIC_GA_ID }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
+      ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
+      SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
 
     steps:
       - name: Checkout
@@ -35,13 +39,6 @@ jobs:
         run: npm run build
 
       - name: Deploy
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
-          ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
-          SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
-          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-          AWS_CF_ID: ${{ secrets.AWS_CF_ID }}
         run: |
           echo "AWS s3 sync"
           aws s3 sync --region ap-northeast-1 ./out s3://${{ secrets.AWS_S3_BUCKET}} --delete
