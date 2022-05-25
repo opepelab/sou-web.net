@@ -22,10 +22,29 @@ COPY . .
 # Uncomment the following line in case you want to disable telemetry during the build.
 # ENV NEXT_TELEMETRY_DISABLED 1
 
+FROM gcr.io/inductive-gift-351105/sou-web-net
+
+ARG CONTENTFUL_SPACE_ID
+ENV CONTENTFUL_SPACE_ID ${CONTENTFUL_SPACE_ID}
+
+ARG CONTENTFUL_DELIVERY_TOKEN
+ENV CONTENTFUL_DELIVERY_TOKEN ${CONTENTFUL_DELIVERY_TOKEN}
+
+ARG NEXT_PUBLIC_GA_ID
+ENV NEXT_PUBLIC_GA_ID ${NEXT_PUBLIC_GA_ID}
+
+ARG MAIL_USER
+ENV MAIL_USER ${MAIL_USER}
+
+ARG MAIL_PASS
+ENV MAIL_PASS ${MAIL_PASS}
+
+ARG MAIL_TO
+ENV MAIL_TO ${MAIL_TO}
+
 # RUN yarn build
 
 # If using npm comment out above and use below instead
-COPY .env.local .env.production
 RUN npm run build
 
 # Production image, copy all the files and run next
@@ -40,8 +59,7 @@ RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 
 # You only need to copy next.config.js if you are NOT using the default configuration
-# COPY --from=builder /app/next.config.js ./
-# COPY --from=builder /app/.env.production ./
+COPY --from=builder /app/next.config.js ./
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/node_modules ./node_modules

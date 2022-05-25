@@ -1,20 +1,21 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/$PROJECT_ID/inductive-gift-351105:$COMMIT_SHA', '.']
-    timeout: 1200s
+    args: ['build', '-t', 'gcr.io/inductive-gift-351105/sou-web-net:$COMMIT_SHA',
+    "--build-arg", "CONTENTFUL_SPACE_ID=$CONTENTFUL_SPACE_ID", "CONTENTFUL_DELIVERY_TOKEN=$CONTENTFUL_DELIVERY_TOKEN",
+    "NEXT_PUBLIC_GA_ID=$NEXT_PUBLIC_GA_ID", "MAIL_USER=$MAIL_USER", "MAIL_PASS=$MAIL_PASS", "MAIL_TO=$MAIL_TO", '.']
+
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/inductive-gift-351105/sou-web-net:$COMMIT_SHA']
-    timeout: 1200s
+
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
     args:
       - 'run'
       - 'deploy'
-      - 'API-Server'
       - '--image'
       - 'gcr.io/inductive-gift-351105/sou-web-net:$COMMIT_SHA'
       - '--region'
-      - 'us-central1'
+      - 'asia-northeast1'
       - '--platform'
       - 'managed'
 images:
