@@ -1,12 +1,13 @@
 steps:
+  # Build the container image
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/inductive-gift-351105/sou-web-net/manifests:$_TAG',
+    args: ['build', '-t', 'gcr.io/inductive-gift-351105/sou-web-net',
     "--build-arg", "_CONTENTFUL_SPACE_ID=$_CONTENTFUL_SPACE_ID", "_CONTENTFUL_DELIVERY_TOKEN=$_CONTENTFUL_DELIVERY_TOKEN",
     "_NEXT_PUBLIC_GA_ID=$_NEXT_PUBLIC_GA_ID", "_MAIL_USER=$_MAIL_USER", "_MAIL_PASS=$_MAIL_PASS", "_MAIL_TO=$_MAIL_TO", '.']
-
+  # Push the container image to Container Registry
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/inductive-gift-351105/sou-web-net/manifests:$_TAG']
-
+    args: ['push', 'gcr.io/inductive-gift-351105/sou-web-net']
+  # Deploy container image to Cloud Run
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
     args:
@@ -14,10 +15,10 @@ steps:
       - 'deploy'
       - 'sou-web-net'
       - '--image'
-      - 'gcr.io/inductive-gift-351105/sou-web-net/manifests:$_TAG'
+      - 'gcr.io/inductive-gift-351105/sou-web-net'
       - '--region'
       - 'asia-northeast1'
       - '--platform'
       - 'managed'
 images:
-  - 'gcr.io/inductive-gift-351105/sou-web-net/manifests:$_TAG'
+  - 'gcr.io/inductive-gift-351105/sou-web-net'
