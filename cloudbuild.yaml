@@ -12,7 +12,7 @@ steps:
     args:
       - 'run'
       - 'deploy'
-      - 'sou-web-net'
+      - 'inductive-gift-351105'
       - '--image'
       - 'gcr.io/inductive-gift-351105/sou-web-net'
       - '--region'
