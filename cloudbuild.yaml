@@ -1,11 +1,11 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/inductive-gift-351105/sou-web-net',
+    args: ['build', '-t', 'gcr.io/inductive-gift-351105/sou-web-net:latest',
     "--build-arg", "_CONTENTFUL_SPACE_ID=$_CONTENTFUL_SPACE_ID", "_CONTENTFUL_DELIVERY_TOKEN=$_CONTENTFUL_DELIVERY_TOKEN",
     "_NEXT_PUBLIC_GA_ID=$_NEXT_PUBLIC_GA_ID", "_MAIL_USER=$_MAIL_USER", "_MAIL_PASS=$_MAIL_PASS", "_MAIL_TO=$_MAIL_TO", '.']
 
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/inductive-gift-351105/sou-web-net']
+    args: ['push', 'gcr.io/inductive-gift-351105/sou-web-net:latest']
 
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
@@ -14,7 +14,7 @@ steps:
       - 'deploy'
       - 'inductive-gift-351105'
       - '--image'
-      - 'gcr.io/inductive-gift-351105/sou-web-net'
+      - 'gcr.io/inductive-gift-351105/sou-web-net:latest'
       - '--region'
       - 'asia-northeast1'
       - '--platform'
