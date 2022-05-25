@@ -6,7 +6,6 @@ RUN apk add --no-cache libc6-compat
 WORKDIR /app
 # COPY package.json yarn.lock ./
 # RUN yarn install --frozen-lockfile
-WORKDIR /code/
 
 #mapping environment path for node modules
 ENV PATH="./node_modules/.bin:$PATH"
