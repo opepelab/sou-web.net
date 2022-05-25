@@ -22,7 +22,8 @@ COPY . .
 # Uncomment the following line in case you want to disable telemetry during the build.
 # ENV NEXT_TELEMETRY_DISABLED 1
 
-# FROM gcr.io/inductive-gift-351105/sou-web-net
+FROM gcr.io/inductive-gift-351105/sou-web-net
+FROM --platform=linux/arm64 torizon/debian:2-bullseye
 
 ARG _CONTENTFUL_SPACE_ID
 ENV CONTENTFUL_SPACE_ID ${_CONTENTFUL_SPACE_ID}
