@@ -1,8 +1,8 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/inductive-gift-351105/sou-web-net:$COMMIT_SHA',
-    "--build-arg", "CONTENTFUL_SPACE_ID=$CONTENTFUL_SPACE_ID", "CONTENTFUL_DELIVERY_TOKEN=$CONTENTFUL_DELIVERY_TOKEN",
-    "NEXT_PUBLIC_GA_ID=$NEXT_PUBLIC_GA_ID", "MAIL_USER=$MAIL_USER", "MAIL_PASS=$MAIL_PASS", "MAIL_TO=$MAIL_TO", '.']
+    "--build-arg", "_CONTENTFUL_SPACE_ID=$_CONTENTFUL_SPACE_ID", "_CONTENTFUL_DELIVERY_TOKEN=$_CONTENTFUL_DELIVERY_TOKEN",
+    "_NEXT_PUBLIC_GA_ID=$_NEXT_PUBLIC_GA_ID", "_MAIL_USER=$_MAIL_USER", "_MAIL_PASS=$_MAIL_PASS", "_MAIL_TO=$_MAIL_TO", '.']
 
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/inductive-gift-351105/sou-web-net:$COMMIT_SHA']
