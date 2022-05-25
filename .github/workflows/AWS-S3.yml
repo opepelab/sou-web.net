@@ -36,7 +36,7 @@ jobs:
         run: npm i
 
       - name: Build
-        run: npm run build
+        run: npm run build && npm run export
 
       - name: Deploy
         run: |
