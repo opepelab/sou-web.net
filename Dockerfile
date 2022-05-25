@@ -23,7 +23,6 @@ COPY . .
 # ENV NEXT_TELEMETRY_DISABLED 1
 
 FROM gcr.io/inductive-gift-351105/sou-web-net
-FROM --platform=linux/arm64 torizon/debian:2-bullseye
 
 ARG _CONTENTFUL_SPACE_ID
 ENV CONTENTFUL_SPACE_ID ${_CONTENTFUL_SPACE_ID}
@@ -60,7 +59,7 @@ RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 
 # You only need to copy next.config.js if you are NOT using the default configuration
-COPY --from=builder /app/next.config.js ./
+# COPY --from=builder /app/next.config.js ./
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/node_modules ./node_modules
