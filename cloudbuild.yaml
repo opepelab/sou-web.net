@@ -14,6 +14,7 @@ steps:
       - 'deploy'
       - '--image'
       - 'gcr.io/inductive-gift-351105/sou-web-net:$COMMIT_SHA'
+      - 'sou-web-net'
       - '--region'
       - 'asia-northeast1'
       - '--platform'
