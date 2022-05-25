@@ -32,6 +32,7 @@ const securityHeaders = [
 
 module.exports = {
   swcMinify: true,
+  trailingSlash: true,
   async headers() {
     return [
       {
