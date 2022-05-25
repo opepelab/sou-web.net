@@ -1,4 +1,4 @@
-name: Manually deploy reduxsu
+name: Manually deploy sou-web.net
 on: workflow_dispatch
 
 jobs:
