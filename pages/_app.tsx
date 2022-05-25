@@ -8,7 +8,7 @@ import 'styles/globals.scss';
 import 'styles/mobile.scss';
 import 'styles/icons.scss';
 import 'styles/img.scss';
-// && next-sitemap --config sitemap.config.js
+
 const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
   usePageView();
   return (
