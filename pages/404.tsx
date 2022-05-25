@@ -1,7 +1,7 @@
 import OG from 'components/Sys/OG';
 import Framer from 'components/Sys/Framer';
 import Link from 'next/link';
-// && next-sitemap --config sitemap.config.js
+
 const NotFound: React.FC = () => {
   return (
     <Framer>
