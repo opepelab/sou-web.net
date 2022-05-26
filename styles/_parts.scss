@@ -108,8 +108,7 @@ a dt .dateST {
   position: fixed;
   width: 100%;
   height: 58px;
-
-  // backdrop-filter: blur(10px);
+  box-shadow: 0 2px 5px rgb(0 0 0 / 20%);
   background: var(--color-bg);
   top: $p0;
   left: $p0;
@@ -192,29 +191,6 @@ a dt .dateST {
   visibility: hidden;
 }
 
-.underline {
-  position: relative;
-}
-
-.underline::after {
-  @include UnderlineLeft;
-
-  width: 265px;
-  transition: 0.3s all;
-}
-
-.underLess {
-  position: relative;
-}
-
-.underLess::after {
-  @include UnderlineLeft;
-
-  width: 0;
-  transition: 0.1s all;
-  transition-delay: 0.2s;
-}
-
 .underlineDuo {
   position: relative;
 }
@@ -223,8 +199,7 @@ a dt .dateST {
   @include Underline;
 
   width: 75%;
-  transition: 0.4s all;
-  transition-delay: 0.2s;
+  transition: 0.34s all;
 }
 
 .underlineNormal {
@@ -234,17 +209,9 @@ a dt .dateST {
 .underlineNormal::after {
   @include Underline;
 
-  width: 200%;
+  width: 150%;
   opacity: 0;
   transition: 0.2s all;
-}
-
-.border-bottom {
-  background-color: var(--color-icon);
-  margin-top: 14px;
-  height: 3px;
-  bottom: 0;
-  border-radius: 4px;
 }
 
 .NoActive {

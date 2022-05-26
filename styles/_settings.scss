@@ -170,19 +170,10 @@ $ME: rgb(0 0 0 / 75%);
   position: absolute;
   background-color: var(--color-icon);
   height: 3px;
+  pointer-events: none;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  border-radius: 4px;
-}
-
-@mixin UnderlineLeft {
-  content: '';
-  position: absolute;
-  background-color: var(--color-icon);
-  height: 3px;
-  bottom: 0;
-  right: 0;
   border-radius: 4px;
 }
 
