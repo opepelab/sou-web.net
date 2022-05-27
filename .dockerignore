@@ -2,4 +2,3 @@ DockerFile
 .dockerignore
 npm-debug.log
 node_modules
-.next
