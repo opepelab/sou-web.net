@@ -7,12 +7,12 @@ steps:
         '-t',
         'gcr.io/inductive-gift-351105/sou-web-net',
         '--build-arg',
-        '_CONTENTFUL_SPACE_ID=$_CONTENTFUL_SPACE_ID',
-        '_CONTENTFUL_DELIVERY_TOKEN=$_CONTENTFUL_DELIVERY_TOKEN',
-        '_NEXT_PUBLIC_GA_ID=$_NEXT_PUBLIC_GA_ID',
-        '_MAIL_USER=$_MAIL_USER',
-        '_MAIL_PASS=$_MAIL_PASS',
-        '_MAIL_TO=$_MAIL_TO',
+        '_CONTENTFUL_SPACE_ID=${_CONTENTFUL_SPACE_ID}',
+        '_CONTENTFUL_DELIVERY_TOKEN=${_CONTENTFUL_DELIVERY_TOKEN}',
+        '_NEXT_PUBLIC_GA_ID=${_NEXT_PUBLIC_GA_ID}',
+        '_MAIL_USER=${_MAIL_USER}',
+        '_MAIL_PASS=${_MAIL_PASS}',
+        '_MAIL_TO=${_MAIL_TO}',
         '.',
       ]
   # Push the container image to Container Registry
