@@ -28,6 +28,10 @@ const securityHeaders = [
     key: 'Content-Security-Policy',
     value: 'self',
   },
+  {
+    key: 'Cache-Control',
+    value: 'max-age=0',
+  },
 ];
 
 module.exports = {
