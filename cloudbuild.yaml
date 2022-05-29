@@ -15,6 +15,12 @@ steps:
         '_MAIL_TO=$_MAIL_TO',
         '.',
       ]
+    secretEnv:
+      ['CONTENTFUL_DELIVERY_TOKEN', 'CONTENTFUL_SPACE_ID', 'MAIL_PASS', 'MAIL_TO', 'MAIL_USER', 'NEXT_PUBLIC_GA_ID']
+    availableSecrets:
+    secretManager:
+    versionName: projects/sou-web-net/secrets/CONTENTFUL_DELIVERY_TOKEN, CONTENTFUL_SPACE_ID, MAIL_PASS, MAIL_TO, MAIL_USER, NEXT_PUBLIC_GA_ID/versions/1
+    env: CONTENTFUL_DELIVERY_TOKEN, CONTENTFUL_SPACE_ID, MAIL_PASS, MAIL_TO, MAIL_USER, NEXT_PUBLIC_GA_ID
   # Push the container image to Container Registry
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/inductive-gift-351105/sou-web-net']
