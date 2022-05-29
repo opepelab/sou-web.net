@@ -13,9 +13,9 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
     }
   };
 
-  const validateEmail = (mail: string) => {
+  const validateEmail = (checkStr: string) => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
-    if (regex.test(mail)) {
+    if (regex.test(checkStr)) {
       setError(false);
       return true;
     } else {
@@ -29,7 +29,7 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
       <OG title="Mail - Sou Watanabe" description="My Mail" />
       <main className="Mail inblo">
         <form>
-          <h1>Are you sure?</h1>
+          {error ? <h1>Are you sure?</h1> : <h1>Thank you so much.</h1>}
           <dl>
             <dt>
               <label htmlFor="name">Name*</label>
@@ -68,7 +68,7 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
               />
             </dd>
             <dd>
-              <div className="massageButton" onClick={Send}>
+              <div onClick={Send} className="massageButton">
                 {error ? <div>Submit</div> : <div className="Spinner">Success !</div>}
               </div>
             </dd>
