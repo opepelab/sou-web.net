@@ -5,7 +5,7 @@ export const useMail = () => {
   const [mail, setMail] = useState('');
   const [message, setMessage] = useState('');
 
-  const send = async (): Promise<void> => {
+  const Submit = async (): Promise<void> => {
     await fetch('/api/mail', {
       method: 'POST',
       body: `
@@ -23,8 +23,9 @@ ${message}
 
   return {
     setName,
+    mail,
     setMail,
     setMessage,
-    send,
+    Submit,
   };
 };

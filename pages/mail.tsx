@@ -1,9 +1,30 @@
+import { useState } from 'react';
 import { useMail } from 'hooks/useMail';
 import OG from 'components/Sys/OG';
 import Framer from 'components/Sys/Framer';
+import Link from 'next/link';
 
 export const Mail: React.FC<HTMLTextAreaElement> = () => {
-  const { setName, setMail, setMessage, send } = useMail();
+  const { mail, setMail, setName, setMessage, Submit } = useMail();
+  const [error, setError] = useState(true);
+
+  const Send = () => {
+    if (validateEmail(mail)) {
+      Submit();
+    }
+  };
+
+  const validateEmail = (mail: string) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+    if (regex.test(mail)) {
+      setError(false);
+      return true;
+    } else {
+      setError(true);
+      return false;
+    }
+  };
+
   return (
     <Framer>
       <OG title="Mail - Sou Watanabe" description="My Mail" />
@@ -36,7 +57,6 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
                 required
               />
             </dd>
-
             <dt>
               <label htmlFor="massage">Message</label>
             </dt>
@@ -49,10 +69,11 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
               />
             </dd>
             <dd>
-              <button className="massageButton" type="submit" onClick={send}>
+              <div className="massageButton" onClick={Send}>
                 Let's send.
-              </button>
+              </div>
             </dd>
+            {error ? null : 'ありがとう！'}
           </dl>
         </form>
       </main>
