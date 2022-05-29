@@ -27,6 +27,7 @@ RUN npm run build
 # ENV NEXT_TELEMETRY_DISABLED 1
 
 FROM gcr.io/inductive-gift-351105/sou-web-net
+FROM node:alpine AS runner
 
 ARG _CONTENTFUL_SPACE_ID
 ENV CONTENTFUL_SPACE_ID ${_CONTENTFUL_SPACE_ID}
@@ -51,7 +52,7 @@ ENV MAIL_TO ${_MAIL_TO}
 # If using npm comment out above and use below instead
 
 # Production image, copy all the files and run next
-FROM node:alpine AS runner
+
 WORKDIR /app
 ENV NODE_ENV production
 # Uncomment the following line in case you want to disable telemetry during runtime.
