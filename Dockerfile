@@ -12,12 +12,12 @@ WORKDIR /app
 ENV PATH="./node_modules/.bin:$PATH"
 # If using npm with a `package-lock.json` comment out above and use below instead
 COPY package.json package-lock.json ./ 
-RUN npm install
+RUN npm install --frozen-lockfile
 
 # Rebuild the source code only when needed
 FROM node:alpine AS builder
 
-ENV NODE_ENV production
+# ENV NODE_ENV production
 WORKDIR /app
 COPY . .
 COPY --from=deps /app/node_modules ./node_modules
@@ -39,6 +39,9 @@ FROM gcr.io/inductive-gift-351105/sou-web-net
 # Production image, copy all the files and run next
 FROM node:alpine AS runner
 
+
+
+WORKDIR /app
 ARG _CONTENTFUL_SPACE_ID
 ENV CONTENTFUL_SPACE_ID ${_CONTENTFUL_SPACE_ID}
 
@@ -56,9 +59,6 @@ ENV MAIL_PASS ${_MAIL_PASS}
 
 ARG _MAIL_TO
 ENV MAIL_TO ${_MAIL_TO}
-
-WORKDIR /app
-ENV NODE_ENV production
 # Uncomment the following line in case you want to disable telemetry during runtime.
 # ENV NEXT_TELEMETRY_DISABLED 1
 
