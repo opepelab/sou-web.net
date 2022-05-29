@@ -9,7 +9,7 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
 
   const Send = () => {
     if (validateEmail(mail)) {
-      Submit();
+      Submit;
     }
   };
 
@@ -69,7 +69,7 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
             </dd>
             <dd>
               <div className="massageButton" onClick={Send}>
-                {error ? <div>Submit</div> : <div className="Spinner">Success</div>}
+                {error ? <div>Submit</div> : <div className="Spinner">Success !</div>}
               </div>
             </dd>
           </dl>
