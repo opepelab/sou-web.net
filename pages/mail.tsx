@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { useMail } from 'hooks/useMail';
 import OG from 'components/Sys/OG';
 import Framer from 'components/Sys/Framer';
-import Link from 'next/link';
 
 export const Mail: React.FC<HTMLTextAreaElement> = () => {
   const { mail, setMail, setName, setMessage, Submit } = useMail();
@@ -70,7 +69,7 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
             </dd>
             <dd>
               <div className="massageButton" onClick={Send}>
-                {error ? <div>Submit</div> : <div className="Spinner">Successful</div>}
+                {error ? <div>Submit</div> : <div className="Spinner">Success</div>}
               </div>
             </dd>
           </dl>
