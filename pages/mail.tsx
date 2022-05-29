@@ -9,7 +9,7 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
 
   const Send = () => {
     if (validateEmail(mail)) {
-      Submit;
+      Submit();
     }
   };
 
