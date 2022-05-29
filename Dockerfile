@@ -12,13 +12,14 @@ WORKDIR /app
 ENV PATH="./node_modules/.bin:$PATH"
 # If using npm with a `package-lock.json` comment out above and use below instead
 COPY package.json package-lock.json ./ 
-RUN npm ci
+RUN npm install
 
 # Rebuild the source code only when needed
 FROM node:alpine AS builder
 WORKDIR /app
-COPY --from=deps /app/node_modules ./node_modules
 COPY . .
+COPY --from=deps /app/node_modules ./node_modules
+RUN npm run build
 
 # Next.js collects completely anonymous telemetry data about general usage.
 # Learn more here: https://nextjs.org/telemetry
@@ -48,13 +49,10 @@ ENV MAIL_TO ${_MAIL_TO}
 # RUN yarn build
 
 # If using npm comment out above and use below instead
-RUN npm run build
 
 # Production image, copy all the files and run next
 FROM node:alpine AS runner
 WORKDIR /app
-
-
 ENV NODE_ENV production
 # Uncomment the following line in case you want to disable telemetry during runtime.
 # ENV NEXT_TELEMETRY_DISABLED 1
@@ -63,7 +61,7 @@ RUN addgroup -g 1001 -S nodejs
 RUN adduser -S nextjs -u 1001
 
 # You only need to copy next.config.js if you are NOT using the default configuration
-COPY --from=builder /app/next.config.js ./
+# COPY --from=builder /app/next.config.js ./
 COPY --from=builder /app/public ./public
 COPY --from=builder --chown=node:node /app/.next ./.next
 COPY --from=builder /app/node_modules ./node_modules
@@ -73,4 +71,5 @@ USER nextjs
 
 EXPOSE 3000
 
-CMD ["npm", "start"]
+# CMD ["npm", "start"]
+CMD ["node_modules/.bin/next", "start"]
