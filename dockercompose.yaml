@@ -1,0 +1,14 @@
+version: '3.9'
+service:
+
+    build: .
+    volumes:
+    secrets:
+      - CONTENTFUL_SPACE_ID
+
+secrets:
+  CONTENTFUL_SPACE_ID:
+    file: CONTENTFUL_SPACE_ID.txt
+  ports:
+    - '3000:3000'
+  entrypoint: "/bin/sh -c 'npm install && npm run start'"

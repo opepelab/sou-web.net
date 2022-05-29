@@ -36,6 +36,9 @@ const securityHeaders = [
 
 module.exports = {
   swcMinify: true,
+  experimental: {
+    outputStandalone: true,
+  },
   async headers() {
     return [
       {
