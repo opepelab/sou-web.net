@@ -234,4 +234,9 @@ a dt .dateST {
   gap: 10px;
 }
 
+.Spinner {
+  transform: rotateX(1080deg);
+  transition-duration: 1s;
+}
+
 // GraphicsとAbout以外位置を修正してる

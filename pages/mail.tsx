@@ -70,10 +70,9 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
             </dd>
             <dd>
               <div className="massageButton" onClick={Send}>
-                Let's send.
+                {error ? <div>Submit</div> : <div className="Spinner">Successful</div>}
               </div>
             </dd>
-            {error ? null : 'ありがとう！'}
           </dl>
         </form>
       </main>
