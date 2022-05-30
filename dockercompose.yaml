@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  nextjs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      env_file:
+        - .env.local
+    ports:
+      - '3000:3000'
+    container_name: sou-web-net
+    volumes:
+      - ./reduxsu:/usr/src/app/next
+    command: npm run dev
