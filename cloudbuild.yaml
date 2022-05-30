@@ -6,7 +6,6 @@ steps:
         'build',
         '-t',
         'gcr.io/inductive-gift-351105/sou-web-net',
-        arg: 
         '--build-arg',
         '_CONTENTFUL_SPACE_ID=$_CONTENTFUL_SPACE_ID',
         '--build-arg',
