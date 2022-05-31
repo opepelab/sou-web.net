@@ -21,7 +21,7 @@ steps:
         '.',
       ]
       env:
-        - 'CONTENTFUL_SPACE_ID=${_CONTENTFUL_SPACE_ID}'
+        - 'CONTENTFUL_SPACE_ID=${_CONTENTFUL_SPACE_ID}',
         - 'CONTENTFUL_DELIVERY_TOKEN=${_CONTENTFUL_DELIVERY_TOKEN}',
         - 'NEXT_PUBLIC_GA_ID=${_NEXT_PUBLIC_GA_ID}',
         - 'MAIL_USER=${_MAIL_USER}',
