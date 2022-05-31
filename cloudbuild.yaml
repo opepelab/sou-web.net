@@ -21,14 +21,19 @@ steps:
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
     args:
-      - 'run'
-      - 'deploy'
-      - 'sou-web-net'
-      - '--image'
-      - 'gcr.io/inductive-gift-351105/sou-web-net'
-      - '--region'
-      - 'asia-northeast1'
-      - '--platform'
-      - 'managed'
+      [
+        'run',
+        'deploy',
+        'sou-web-net',
+        '--image',
+        'gcr.io/inductive-gift-351105/sou-web-net',
+        '--region',
+        'asia-northeast1',
+        '--platform',
+        'managed',
+        '--allow-unauthenticated',
+        '--update-env-vars',
+        'NODE_ENV=production,CONTENTFUL_SPACE_ID=${_CONTENTFUL_SPACE_ID},CONTENTFUL_DELIVERY_TOKEN=${_CONTENTFUL_DELIVERY_TOKEN},NEXT_PUBLIC_GA_ID=${_NEXT_PUBLIC_GA_ID},MAIL_USER=${_MAIL_USER},MAIL_PASS=${_MAIL_PASS},MAIL_TO=${_MAIL_TO}',
+      ]
 images:
   - 'gcr.io/inductive-gift-351105/sou-web-net'
