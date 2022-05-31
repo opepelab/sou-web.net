@@ -26,7 +26,7 @@ const Index: React.FC<Map> = ({ blog }) => {
         <Heading as="h1" m="0" fontWeight="200" fontSize="32">
           Hello? My name is Sou🖐
         </Heading>
-        <Text fontSize="12px">猫飼っていますし</Text>
+        <Text fontSize="12px">猫飼っていますよ！</Text>
         <Text fontWeight="200" fontSize="20px">
           I am Software contributor,
           <br />
