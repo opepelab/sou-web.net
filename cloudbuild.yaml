@@ -7,7 +7,7 @@ steps:
         '-t',
         'gcr.io/inductive-gift-351105/sou-web-net',
         '--build-arg',
-        '_CONTENTFUL_SPACE_ID=${_CONTENTFUL_SPACE_ID}',
+        'CONTENTFUL_SPACE_ID=${_CONTENTFUL_SPACE_ID}',
         '--build-arg',
         'CONTENTFUL_DELIVERY_TOKEN=${_CONTENTFUL_DELIVERY_TOKEN}',
         '--build-arg',
@@ -20,13 +20,6 @@ steps:
         'MAIL_TO=${_MAIL_TO}',
         '.',
       ]
-      env:
-        - 'CONTENTFUL_SPACE_ID=${_CONTENTFUL_SPACE_ID}',
-        - 'CONTENTFUL_DELIVERY_TOKEN=${_CONTENTFUL_DELIVERY_TOKEN}',
-        - 'NEXT_PUBLIC_GA_ID=${_NEXT_PUBLIC_GA_ID}',
-        - 'MAIL_USER=${_MAIL_USER}',
-        - 'MAIL_PASS=${_MAIL_PASS}',
-        - 'MAIL_TO=${_MAIL_TO}',
   # Push the container image to Container Registry
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/inductive-gift-351105/sou-web-net']
