@@ -113,7 +113,8 @@ $ME: rgb(0 0 0 / 75%);
 @mixin State-true {
   transition-duration: 0.4s;
   visibility: visible;
-  height: 125px;
+  height: auto;
+  padding: 15px 0 5px;
   transition-timing-function: steps(2, start);
 }
 

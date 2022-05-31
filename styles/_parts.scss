@@ -66,14 +66,14 @@ a dt .dateST {
   border-radius: 4px;
 }
 
-.blockLight {
+.blockSecond {
   transform: rotateX(360deg);
   background: var(--color-state);
   border-radius: 4px;
   transition: 1s;
 }
 
-.blockLightNormal {
+.blockSecondDis {
   transform: rotateX(-360deg);
   border-radius: 4px;
   transition: 1s;
@@ -108,7 +108,8 @@ a dt .dateST {
   position: fixed;
   width: 100%;
   height: 58px;
-  box-shadow: 0 2px 5px rgb(0 0 0 / 20%);
+
+  // box-shadow: 0 2px 5px rgb(0 0 0 / 20%);
   background: var(--color-bg);
   top: $p0;
   left: $p0;

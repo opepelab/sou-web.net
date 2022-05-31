@@ -13,7 +13,7 @@
   --color-link: #3297fd;
   --color-menuBorder: darkgray;
   --color-headBorder: rgb(94 234 212);
-  --color-state: rgb(0 0 0 / 3%);
+  --color-state: rgb(255 220 206);
 }
 
 :root[data-theme='dark'] {
@@ -27,7 +27,7 @@
   --color-link: #7bf;
   --color-menuBorder: dimgray;
   --color-headBorder: orangered;
-  --color-state: rgb(0 0 0 / 10%);
+  --color-state: rgb(135 0 85);
 }
 
 // --color-pink: rgb(13 148 136);
@@ -241,7 +241,7 @@ nav ul li {
   display: $IB;
   padding: 14px;
   width: 62px;
-  height: 27px;
+  height: 20px;
 }
 
 .BlockM {

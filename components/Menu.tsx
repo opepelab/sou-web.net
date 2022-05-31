@@ -47,10 +47,10 @@ const Menu: React.FC = () => {
                 </ActiveLink>
               </li>
               <li>
-                <ActiveLink href="/room" activeClassName="Done blockState headerState">
+                <ActiveLink href="/mail" activeClassName="Done blockState headerState">
                   <a onClick={() => setMenu(false)}>
-                    <div className="gg-pin" />
-                    Room
+                    <div className="gg-mail" />
+                    Mail
                   </a>
                 </ActiveLink>
               </li>
@@ -61,7 +61,7 @@ const Menu: React.FC = () => {
                     setLinksRes(false);
                   }}
                 >
-                  <a className={aboutRes === true ? 'blockLight' : 'blockLightNormal'}>
+                  <a className={aboutRes === true ? 'blockSecond' : 'blockSecondDis'}>
                     .... About
                     <div className="SankakuBlack" />
                   </a>
@@ -94,6 +94,17 @@ const Menu: React.FC = () => {
                           </a>
                         </ActiveLink>
                       </li>
+                      <li>
+                        <ActiveLink href="/room" activeClassName="Done headerState">
+                          <a
+                            onClick={() => {
+                              setMenu(false);
+                            }}
+                          >
+                            Room
+                          </a>
+                        </ActiveLink>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -105,7 +116,7 @@ const Menu: React.FC = () => {
                     setAboutRes(false);
                   }}
                 >
-                  <a className={linksRes === true ? 'blockLight' : 'blockLightNormal'}>
+                  <a className={linksRes === true ? 'blockSecond' : 'blockSecondDis'}>
                     <div className="left2p">
                       <div className="gg-style" />
                       Link

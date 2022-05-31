@@ -74,14 +74,14 @@ const Header: React.FC = () => {
                 <li>
                   <div onMouseEnter={() => setMail(true)} onMouseLeave={() => setMail(false)}>
                     <Reactive
-                      url={'/room'}
+                      url={'/mail'}
                       state={mail}
                       on={'underlineDuo Block'}
                       off={'underlineNormal Block'}
                       mount={'Done'}
                     >
-                      <div className="gg-pin" />
-                      Room
+                      <div className="gg-mail" />
+                      Mail
                     </Reactive>
                   </div>
                 </li>
@@ -121,6 +121,13 @@ const Header: React.FC = () => {
                           <ActiveLink href="/webclip" activeClassName="blockState headerState">
                             <a onClick={() => setAbout(false)}>
                               <div className="hoverBG BlockM">WebClip</div>
+                            </a>
+                          </ActiveLink>
+                        </li>
+                        <li>
+                          <ActiveLink href="/room" activeClassName="blockState headerState">
+                            <a onClick={() => setAbout(false)}>
+                              <div className="hoverBG BlockM">Room</div>
                             </a>
                           </ActiveLink>
                         </li>
