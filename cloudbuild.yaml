@@ -5,31 +5,28 @@ steps:
       [
         'build',
         '--build-arg',
-        '_CONTENTFUL_SPACE_ID=$_CONTENTFUL_SPACE_ID',
+        '_CONTENTFUL_SPACE_ID=${_CONTENTFUL_SPACE_ID}',
         '--build-arg',
-        '_CONTENTFUL_DELIVERY_TOKEN=$_CONTENTFUL_DELIVERY_TOKEN',
+        '_CONTENTFUL_DELIVERY_TOKEN=${_CONTENTFUL_DELIVERY_TOKEN}',
         '--build-arg',
-        '_NEXT_PUBLIC_GA_ID=$_NEXT_PUBLIC_GA_ID',
+        '_NEXT_PUBLIC_GA_ID=${_NEXT_PUBLIC_GA_ID}',
         '--build-arg',
-        '_MAIL_USER=$_MAIL_USER',
+        '_MAIL_USER=${_MAIL_USER}',
         '--build-arg',
-        '_MAIL_PASS=$_MAIL_PASS',
+        '_MAIL_PASS=${_MAIL_PASS}',
         '--build-arg',
-        '_MAIL_TO=$_MAIL_TO',
+        '_MAIL_TO=${_MAIL_TO}',
         '-t',
-        'gcr.io/inductive-gift-351105/sou-web-net',
+        'gcr.io/inductive-gift-351105/sou-web-net-${_CONTENTFUL_SPACE_ID}-${_CONTENTFUL_DELIVERY_TOKEN}-${_NEXT_PUBLIC_GA_ID}-${_MAIL_USER}-${_MAIL_PASS}-${_MAIL_TO}',
         '.',
       ]
-substitutions:
-  _CONTENTFUL_SPACE_ID: '$_CONTENTFUL_SPACE_ID'
-  _CONTENTFUL_DELIVERY_TOKEN: '$_CONTENTFUL_DELIVERY_TOKEN'
-  _NEXT_PUBLIC_GA_ID: '$_NEXT_PUBLIC_GA_ID'
-  _MAIL_USER: '$_MAIL_USER'
-  _MAIL_PASS: '$_MAIL_PASS'
-  _MAIL_TO: '$_MAIL_TO'
   # Push the container image to Container Registry
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/inductive-gift-351105/sou-web-net']
+    args:
+      [
+        'push',
+        'gcr.io/inductive-gift-351105/sou-web-net-${_CONTENTFUL_SPACE_ID}-${_CONTENTFUL_DELIVERY_TOKEN}-${_NEXT_PUBLIC_GA_ID}-${_MAIL_USER}-${_MAIL_PASS}-${_MAIL_TO}',
+      ]
   # Deploy container image to Cloud Run
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
@@ -38,7 +35,7 @@ substitutions:
         'deploy',
         'sou-web-net',
         '--image',
-        'gcr.io/inductive-gift-351105/sou-web-net',
+        'gcr.io/inductive-gift-351105/sou-web-net-${_CONTENTFUL_SPACE_ID}-${_CONTENTFUL_DELIVERY_TOKEN}-${_NEXT_PUBLIC_GA_ID}-${_MAIL_USER}-${_MAIL_PASS}-${_MAIL_TO}',
         '--region',
         'asia-northeast1',
         '--platform',
@@ -48,4 +45,15 @@ substitutions:
         # 'NODE_ENV=production,CONTENTFUL_SPACE_ID=${_CONTENTFUL_SPACE_ID},CONTENTFUL_DELIVERY_TOKEN=${_CONTENTFUL_DELIVERY_TOKEN},NEXT_PUBLIC_GA_ID=${_NEXT_PUBLIC_GA_ID},MAIL_USER=${_MAIL_USER},MAIL_PASS=${_MAIL_PASS,MAIL_TO=$_MAIL_TO',
       ]
 images:
-  - 'gcr.io/inductive-gift-351105/sou-web-net'
+  - 'gcr.io/inductive-gift-351105/sou-web-net-${_CONTENTFUL_SPACE_ID}-${_CONTENTFUL_DELIVERY_TOKEN}-${_NEXT_PUBLIC_GA_ID}-${_MAIL_USER}-${_MAIL_PASS}-${_MAIL_TO}'
+substitutions:
+  _CONTENTFUL_SPACE_ID: '$_CONTENTFUL_SPACE_ID'
+  _CONTENTFUL_DELIVERY_TOKEN: '$_CONTENTFUL_DELIVERY_TOKEN'
+  _NEXT_PUBLIC_GA_ID: '$_NEXT_PUBLIC_GA_ID'
+  _MAIL_USER: '$_MAIL_USER'
+  _MAIL_PASS: '$_MAIL_PASS'
+  _MAIL_TO: '$_MAIL_TO'
+
+options:
+  substitution_option: 'ALLOW_LOOSE'
+  dynamic_substitutions: true
