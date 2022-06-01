@@ -17,16 +17,12 @@ steps:
         '--build-arg',
         '_MAIL_TO=${_MAIL_TO}',
         '-t',
-        'gcr.io/inductive-gift-351105/sou-web-net-${_CONTENTFUL_SPACE_ID}-${_CONTENTFUL_DELIVERY_TOKEN}-${_NEXT_PUBLIC_GA_ID}-${_MAIL_USER}-${_MAIL_PASS}-${_MAIL_TO}',
+        'gcr.io/inductive-gift-351105/sou-web-net',
         '.',
       ]
   # Push the container image to Container Registry
   - name: 'gcr.io/cloud-builders/docker'
-    args:
-      [
-        'push',
-        'gcr.io/inductive-gift-351105/sou-web-net-${_CONTENTFUL_SPACE_ID}-${_CONTENTFUL_DELIVERY_TOKEN}-${_NEXT_PUBLIC_GA_ID}-${_MAIL_USER}-${_MAIL_PASS}-${_MAIL_TO}',
-      ]
+    args: ['push', 'gcr.io/inductive-gift-351105/sou-web-net']
   # Deploy container image to Cloud Run
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
@@ -35,7 +31,7 @@ steps:
         'deploy',
         'sou-web-net',
         '--image',
-        'gcr.io/inductive-gift-351105/sou-web-net-${_CONTENTFUL_SPACE_ID}-${_CONTENTFUL_DELIVERY_TOKEN}-${_NEXT_PUBLIC_GA_ID}-${_MAIL_USER}-${_MAIL_PASS}-${_MAIL_TO}',
+        'gcr.io/inductive-gift-351105/sou-web-net',
         '--region',
         'asia-northeast1',
         '--platform',
@@ -45,7 +41,7 @@ steps:
         # 'NODE_ENV=production,CONTENTFUL_SPACE_ID=${_CONTENTFUL_SPACE_ID},CONTENTFUL_DELIVERY_TOKEN=${_CONTENTFUL_DELIVERY_TOKEN},NEXT_PUBLIC_GA_ID=${_NEXT_PUBLIC_GA_ID},MAIL_USER=${_MAIL_USER},MAIL_PASS=${_MAIL_PASS,MAIL_TO=$_MAIL_TO',
       ]
 images:
-  - 'gcr.io/inductive-gift-351105/sou-web-net-${_CONTENTFUL_SPACE_ID}-${_CONTENTFUL_DELIVERY_TOKEN}-${_NEXT_PUBLIC_GA_ID}-${_MAIL_USER}-${_MAIL_PASS}-${_MAIL_TO}'
+  - 'gcr.io/inductive-gift-351105/sou-web-net'
 substitutions:
   _CONTENTFUL_SPACE_ID: '$_CONTENTFUL_SPACE_ID'
   _CONTENTFUL_DELIVERY_TOKEN: '$_CONTENTFUL_DELIVERY_TOKEN'
