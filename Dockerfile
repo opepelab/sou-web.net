@@ -22,7 +22,23 @@ RUN npm run build
 # Next.js collects completely anonymous telemetry data about general usage.
 # Learn more here: https://nextjs.org/telemetry
 # Uncomment the following line in case you want to disable telemetry during the build.
-# ENV NEXT_TELEMETRY_DISABLED 1
+ARG _CONTENTFUL_SPACE_ID
+ENV CONTENTFUL_SPACE_ID ${_CONTENTFUL_SPACE_ID}
+
+ARG _CONTENTFUL_DELIVERY_TOKEN
+ENV CONTENTFUL_DELIVERY_TOKEN ${_CONTENTFUL_DELIVERY_TOKEN}
+
+ARG _NEXT_PUBLIC_GA_ID
+ENV NEXT_PUBLIC_GA_ID ${_NEXT_PUBLIC_GA_ID}
+
+ARG _MAIL_USER
+ENV MAIL_USER ${_MAIL_USER}
+
+ARG _MAIL_PASS
+ENV MAIL_PASS ${_MAIL_PASS}
+
+ARG _MAIL_TO
+ENV MAIL_TO ${_MAIL_TO}
 
 FROM gcr.io/inductive-gift-351105/sou-web-net
 
@@ -56,26 +72,6 @@ COPY --from=builder /app/package.json ./package.json
 USER nextjs
 
 EXPOSE 3000
-
-
-ARG _CONTENTFUL_SPACE_ID
-ENV CONTENTFUL_SPACE_ID ${_CONTENTFUL_SPACE_ID}
-
-ARG _CONTENTFUL_DELIVERY_TOKEN
-ENV CONTENTFUL_DELIVERY_TOKEN ${_CONTENTFUL_DELIVERY_TOKEN}
-
-ARG _NEXT_PUBLIC_GA_ID
-ENV NEXT_PUBLIC_GA_ID ${_NEXT_PUBLIC_GA_ID}
-
-ARG _MAIL_USER
-ENV MAIL_USER ${_MAIL_USER}
-
-ARG _MAIL_PASS
-ENV MAIL_PASS ${_MAIL_PASS}
-
-ARG _MAIL_TO
-ENV MAIL_TO ${_MAIL_TO}
-
 
 # CMD ["npm", "start"]
 CMD ["node_modules/.bin/next", "start"]
