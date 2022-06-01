@@ -20,13 +20,13 @@ steps:
         'gcr.io/inductive-gift-351105/sou-web-net',
         '.',
       ]
-      substitutions:
-        - _CONTENTFUL_SPACE_ID=$_CONTENTFUL_SPACE_ID
-        - _CONTENTFUL_DELIVERY_TOKEN=$_CONTENTFUL_DELIVERY_TOKEN
-        - _NEXT_PUBLIC_GA_ID=$_NEXT_PUBLIC_GA_ID
-        - _MAIL_USER=$_MAIL_USER
-        - _MAIL_PASS=$_MAIL_PASS
-        - _MAIL_TO=$_MAIL_TO
+    substitutions:
+      - _CONTENTFUL_SPACE_ID=$_CONTENTFUL_SPACE_ID
+      - _CONTENTFUL_DELIVERY_TOKEN=$_CONTENTFUL_DELIVERY_TOKEN
+      - _NEXT_PUBLIC_GA_ID=$_NEXT_PUBLIC_GA_ID
+      - _MAIL_USER=$_MAIL_USER
+      - _MAIL_PASS=$_MAIL_PASS
+      - _MAIL_TO=$_MAIL_TO
 
   # Push the container image to Container Registry
   - name: 'gcr.io/cloud-builders/docker'
@@ -34,8 +34,7 @@ steps:
   # Deploy container image to Cloud Run
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
-    args:
-      [
+    args: [
         'run',
         'deploy',
         'sou-web-net',
