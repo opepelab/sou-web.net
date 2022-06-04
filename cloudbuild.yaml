@@ -18,7 +18,7 @@ steps:
         '_MAIL_TO=${_MAIL_TO}',
         '-t',
         'gcr.io/inductive-gift-351105/sou-web-net',
-        '.',
+        './',
       ]
     # env:
     #   - NEXT_PUBLIC_CONTENTFUL_SPACE_ID=$_CONTENTFUL_SPACE_ID
