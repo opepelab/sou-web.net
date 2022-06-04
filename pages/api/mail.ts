@@ -7,12 +7,12 @@ export default async (req: NextApiRequest, res: NextApiResponse): Promise<void> 
     port: 465,
     secure: true,
     auth: {
-      user: process.env.MAIL_USER,
-      pass: process.env.MAIL_PASS,
+      user: process.env.NEXT_PUBLIC_MAIL_USER,
+      pass: process.env.NEXT_PUBLIC_MAIL_PASS,
     },
   });
   await transporter.sendMail({
-    to: process.env.MAIL_TO,
+    to: process.env.NEXT_PUBLIC_MAIL_TO,
     subject: 'お問い合わせ',
     text: req.body,
   });
