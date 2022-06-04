@@ -5,7 +5,7 @@ FROM node:lts-alpine AS deps
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 COPY package.json package-lock.json ./ 
-RUN npm install --frozen-lockfile
+RUN npm ci
 
 # Rebuild the source code only when needed
 FROM node:lts-alpine AS builder
@@ -31,6 +31,9 @@ ARG _MAIL_TO
 ENV MAIL_TO ${_MAIL_TO}
 WORKDIR /app
 ENV NODE_ENV production
+RUN addgroup -g 1001 -S nodejs
+RUN adduser -S nextjs -u 1001
+
 COPY --from=builder /app/next.config.js ./
 COPY --from=builder /app/public ./public
 COPY --from=builder --chown=node:node /app/.next ./.next
