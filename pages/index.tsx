@@ -26,12 +26,12 @@ const Index: React.FC<Map> = ({ blog }) => {
         <Heading as="h1" m="0" fontWeight="200" fontSize="32">
           Hello? My name is Sou🖐
         </Heading>
-        <Text fontSize="12px">15才くらいの猫を飼っています。</Text>
         <Text fontWeight="200" fontSize="20px">
           I am Software contributor,
           <br />
           from JAPAN Tokyo.
         </Text>
+        <Text fontSize="12px">15才くらいの猫を飼っています。よろしくお願いします。</Text>
         <div className="Flex">
           <a href="https://github.com/opepelab" target="_blank">
             <RiGithubFill size={30} />
