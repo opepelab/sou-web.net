@@ -3,18 +3,18 @@ steps:
 
   - name: 'gcr.io/cloud-builders/docker'
     entrypoint: 'bash'
-    args: 
-        - -c
-        - >-
-          docker build
-          --file=Dockerfile
-          --build-arg=_CONTENTFUL_SPACE_ID=${_CONTENTFUL_SPACE_ID}
-          --build-arg=_CONTENTFUL_DELIVERY_TOKEN=${_CONTENTFUL_DELIVERY_TOKEN}
-          --build-arg=_NEXT_PUBLIC_GA_ID=${_NEXT_PUBLIC_GA_ID}
-          --build-arg=_MAIL_USER=${_MAIL_USER}
-          --build-arg=_MAIL_PASS=${_MAIL_PASS}
-          --build-arg=_MAIL_TO=${_MAIL_TO}
-          --tag=gcr.io/inductive-gift-351105/sou-web-net
+    args:
+      - -c
+      - >-
+        docker build
+        --file=Dockerfile
+        --build-arg=_CONTENTFUL_SPACE_ID=${_CONTENTFUL_SPACE_ID}
+        --build-arg=_CONTENTFUL_DELIVERY_TOKEN=${_CONTENTFUL_DELIVERY_TOKEN}
+        --build-arg=_NEXT_PUBLIC_GA_ID=${_NEXT_PUBLIC_GA_ID}
+        --build-arg=_MAIL_USER=${_MAIL_USER}
+        --build-arg=_MAIL_PASS=${_MAIL_PASS}
+        --build-arg=_MAIL_TO=${_MAIL_TO}
+        --tag=gcr.io/inductive-gift-351105/sou-web-net
         .
     env:
       - 'NEXT_PUBLIC_CONTENTFUL_SPACE_ID=$_CONTENTFUL_SPACE_ID'
