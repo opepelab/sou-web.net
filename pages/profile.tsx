@@ -1,5 +1,7 @@
 import OG from 'components/Sys/OG';
 import Framer from 'components/Sys/Framer';
+import { Box } from '@chakra-ui/react';
+import { FiExternalLink } from 'react-icons/fi';
 
 const Overview: React.FC = () => {
   return (
@@ -57,31 +59,24 @@ const Overview: React.FC = () => {
         <hr />
         <p>中学と高校時代は学校にあまり行かなかったため社会人経験をした後に少し勉強しました。</p>
         <p>引きこもり不登校, 親の歪んだ愛情などを経験し心理学の本「 自分に気づく心理学 」を読みました。</p>
-        <p>デザイン ゲーム WEB開発の分野でなら多少詳しいかと思います。</p>
-        {/* <h2>強記憶症</h2>
-        <p>物心ついた時からいじめられたトラウマが忘れたいのに忘れられない状態でした。</p>
-        <p>この特質でPTSD気味でした。</p>
-        <h2>統合失調症</h2>
-        <p>八ヶ岳旅行中に遭難し強制入院した時に認定されました。</p>
-        <p>幻覚が見えたこと自体をはっきりと覚えています。</p>
-        <p>国家医師より認定を受けています。</p> */}
+        <p>デザイン ゲーム WEB開発の分野でならほんの少し詳しいレベルだと思います。</p>
+        <h2>体調について</h2>
+        <p>20歳の時に統合失調症と診断されました。</p>
+        <p>入院し内服治療にて寛解していて、現在は月に一度予防のため通院しています。</p>
+        <Box fontSize="16px">
+          <a href="https://kokoro-hc.com/schizophrenia" target="_blank" className="scaleLinks">
+            「 <FiExternalLink className="Top-2px" />
+            統合失調症とは 」
+          </a>
+        </Box>
+        <br />
+        <p>薬を飲むと自然と疲れを認識しやすくなります。</p>
         <hr />
         <br />
-        <p>
-          Welcome to my home page,
-          <br />
-          refresh and swich your identitiy.
-        </p>
-        <p>Let's enjoy the code architect and programing, my application contribute.</p>
-        <p>
-          I think always the better and..
-          <br />I keep in mind to beautiful and pretty, simple is coding.
-        </p>
-        <p>
-          Because never mind is it there don't talking,
-          <br />
-          Challenging change the everytime The goal is to sleep like dead every day.
-        </p>
+        <p>Welcome to my home page!! refresh and swich your identitiy.</p>
+        <p>let's enjoy the code architect and programing, application contribute.</p>
+        <p>I keep in mind simple is the best code and always the better.</p>
+        <p>you can always trying the first, see you.</p>
       </main>
     </Framer>
   );
