@@ -51,7 +51,9 @@ steps:
         '_NODE_ENV=production',
         '_NEXT_MAIL_USER=${_MAIL_USER}',
         '_NODE_ENV=production',
-        '_NEXT_MAIL_PASS=${_MAIL_PASS,NEXT_MAIL_TO=$_MAIL_TO}',
+        '_NEXT_MAIL_PASS=${_MAIL_PASS,NEXT_MAIL_TO}',
+        '_NODE_ENV=production',
+        '_NEXT_MAIL_TO=${_MAIL_TO}',
       ]
 images:
   - 'gcr.io/inductive-gift-351105/sou-web-net'
