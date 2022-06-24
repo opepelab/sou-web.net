@@ -7,7 +7,7 @@
   }
 
   footer {
-    padding-bottom: 40px;
+    // padding-bottom: 40px;
   }
 
   div {
@@ -19,7 +19,7 @@
   }
 
   article {
-    padding: 16px;
+    padding: 16px 16px 80px;
   }
 
   .Text {
@@ -44,8 +44,8 @@
     z-index: 4;
     position: fixed;
     display: inline-block;
-    right: 6px;
-    top: 6px;
+    right: 12px;
+    bottom: 8px;
   }
 
   .Line span {
@@ -109,7 +109,7 @@
 
     .nav2 {
       opacity: 0;
-      transform: translateY(-100px) translateX(80px) scale(0);
+      transform: translateY(100px) translateX(80px) scale(0);
     }
   }
 
@@ -156,7 +156,7 @@
     z-index: 4;
     position: absolute;
     top: 8px;
-    right: 54px;
+    right: 8px;
   }
 
   .none {

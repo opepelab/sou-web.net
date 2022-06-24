@@ -39,6 +39,9 @@ const Webclip: React.FC = () => {
           <li>
             <a href="https://os0x.hatenablog.com/entry/20110617/1308280740">君は3つのリロードを知っているか？</a>
           </li>
+          <li>
+            <a href="https://yutaro-blog.net/2021/10/16/typescript-type-assertion-as/">【TypeScript】型アサーション（as）について</a>
+          </li>
         </ul>
       </main>
     </Framer>
