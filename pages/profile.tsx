@@ -24,14 +24,15 @@ const Overview: React.FC = () => {
           <img className="PM margin10 point " src="/picture/IMG_0495.jpg" width={190} height={260} />
         </dl>
         <p>渡邊 蒼(Sou Watanabe)と申します。1994年生まれ現27歳です。</p>
-        <p>React系のアプリケーションを開発しています。</p>
-        <p>モバイルアプリを作るのにも挑戦しています。</p>
+        <p>
+          RustでAPI作ろうとしています。開発に夢中です。
+          <p>趣味でブログ書いています。</p>
+        </p>
         <h1>好き(得意とは言っていない)</h1>
         <ul>
           <li>静的型付け</li>
           <li>TypeScript</li>
           <li>Rust</li>
-          <li>Dart</li>
         </ul>
         <h1>クラン歴</h1>
         <ul>
