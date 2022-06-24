@@ -11,6 +11,7 @@ const Menu: React.FC = () => {
   return (
     <div className="none">
       <div className="Line">
+        <div className="gg-arrow-long-up-r" />
         <button
           aria-expanded={menu}
           onClick={() => {

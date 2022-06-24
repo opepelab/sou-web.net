@@ -44,8 +44,8 @@
     z-index: 4;
     position: fixed;
     display: inline-block;
-    right: 12px;
-    bottom: 8px;
+    right: 6px;
+    top: 6px;
     cursor: pointer;
   }
 
@@ -110,7 +110,7 @@
 
     .nav2 {
       opacity: 0;
-      transform: translateY(100px) translateX(80px) scale(0);
+      transform: translateY(-100px) translateX(80px) scale(0);
     }
   }
 
@@ -157,7 +157,7 @@
     z-index: 4;
     position: absolute;
     top: 8px;
-    right: 8px;
+    right: 64px;
   }
 
   .none {
