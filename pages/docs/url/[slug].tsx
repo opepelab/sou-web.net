@@ -15,7 +15,7 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
 interface slugParameter extends ParsedUrlQuery {
-  slug: string;
+  slug: string | undefined;
 }
 
 type Content = {
@@ -89,7 +89,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const slug = context.params?.slug;
+  const { slug } = context.params as slugParameter
   const entries = await client.getEntries({
     content_type: 'blog',
     limit: 1000,
