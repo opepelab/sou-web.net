@@ -14,7 +14,7 @@ import { Options } from '@contentful/rich-text-react-renderer';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
-interface IParams extends ParsedUrlQuery {
+interface slugParameter extends ParsedUrlQuery {
   slug: string;
 }
 
@@ -89,7 +89,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const  slug  = context.params?.slug;
+  const slug  = context.params?.slug
   const entries = await client.getEntries({
     content_type: 'blog',
     limit: 1000,

@@ -8,10 +8,6 @@ import { IPostFields } from 'libs/types';
 import Date from 'components/Sys/date';
 import ActiveLink from 'components/Sys/ActiveLink';
 
-// interface IParams extends ParsedUrlQuery {
-//   [key: string]: any;
-// }
-
 type Map = {
   total: number;
   blog: {
