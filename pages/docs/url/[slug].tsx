@@ -89,7 +89,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const { slug } = context.params as slugParameter;
+  const slug = context.params?.slug;
   const entries = await client.getEntries({
     content_type: 'blog',
     limit: 1000,
