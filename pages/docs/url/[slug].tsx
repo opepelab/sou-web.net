@@ -85,6 +85,9 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const slug = context.params?.slug;
+  if (typeof slug !== 'string') {
+    return { notFound: true };
+  }
   const entries = await client.getEntries({
     content_type: 'blog',
     limit: 1000,
