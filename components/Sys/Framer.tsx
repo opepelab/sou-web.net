@@ -13,7 +13,13 @@ const variants = {
 
 const Framer: React.FC<RNode> = ({ children }) => {
   return (
-    <motion.article initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ duration: 0.5 }}>
+    <motion.article
+      initial="hidden"
+      animate="enter"
+      exit="exit"
+      variants={variants}
+      transition={{ type: 'spring', mass: 0.2, stiffness: 90 }}
+    >
       {children}
     </motion.article>
   );
