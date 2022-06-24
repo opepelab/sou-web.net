@@ -23,7 +23,7 @@ const LayoutProvider: React.FC<RNode> = ({ children }) => {
       <Filter />
       <Header />
       <Menu />
-      <div className="footerFix">{children}</div>
+      {children}
       <Footer />
     </>
   );
