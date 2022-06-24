@@ -1,5 +1,5 @@
 import client from 'libs/contentful';
-import { GetStaticPaths } from 'next';
+import { GetStaticPaths, GetStaticProps } from 'next';
 import OG from 'components/Sys/OG';
 import Framer from 'components/Sys/Framer';
 import Link from 'next/link';
@@ -71,14 +71,13 @@ export const getStaticPaths: GetStaticPaths = async () => {
   return { paths, fallback: false };
 };
 
-export const getStaticProps = async (context: { params: { id: number } }) => {
-  const id = context.params.id;
-
+export const getStaticProps: GetStaticProps = async (context) => {
+  const id = context.params?.id;
   const entries: EntryCollection<IPostFields> = await client.getEntries({
     content_type: 'blog',
     order: '-fields.date',
     limit: Limit,
-    skip: (id - 1) * Limit,
+    skip: (Number(id) - 1) * Limit,
   });
 
   return {
