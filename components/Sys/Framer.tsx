@@ -18,7 +18,7 @@ const Framer: React.FC<RNode> = ({ children }) => {
       animate="enter"
       exit="exit"
       variants={variants}
-      transition={{ type: 'spring', mass: 0.2, stiffness: 90 }}
+      transition={{ type: 'spring', mass: 0.2 }}
     >
       {children}
     </motion.article>
