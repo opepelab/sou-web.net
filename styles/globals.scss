@@ -290,29 +290,14 @@ i {
   }
 }
 
-// .footerFix {
-//   display: flex;
-//   flex-direction: column;
-//   min-height: 80vh;
-// }
-
-.Footerbgg {
-  // padding-top: 40px;
-  z-index: 1;
-  position: fixed;
-  width: 100%;
-  height: 58px;
-  box-shadow: 0 2px 5px rgb(0 0 0 / 20%);
-  backdrop-filter: blur(5px);
-
-  // background: var(--color-bg);
-  bottom: $p0;
-  left: $p0;
-  transition: all 1s;
+.footerFix {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
 }
 
-.FooterText {
-  margin-top: 10px;
+footer {
+  padding-top: 40px;
 }
 
 input {

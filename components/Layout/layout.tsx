@@ -16,14 +16,14 @@ const LayoutProvider: React.FC<RNode> = ({ children }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="Sou Watanabe" />
         <meta name="color-scheme" content="light dark" />
-        <meta property="og:site_name" content="Sou Document" />
+        <meta property="og:site_name" content="Sou Documents" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="ja_JP" />
       </Head>
       <Filter />
       <Header />
       <Menu />
-      {children}
+      <div className="footerFix">{children}</div>
       <Footer />
     </>
   );
