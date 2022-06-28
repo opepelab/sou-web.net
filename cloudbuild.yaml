@@ -3,10 +3,11 @@ steps:
 
   - name: 'gcr.io/cloud-builders/docker'
     entrypoint: 'bash'
-    args: [
+    args:
+      [
         '-c',
         'docker build',
-        '--'build-arg',
+        '--build-arg',
         '_CONTENTFUL_SPACE_ID=$_CONTENTFUL_SPACE_ID',
         '--build-arg',
         '_CONTENTFUL_DELIVERY_TOKEN=$_CONTENTFUL_DELIVERY_TOKEN',
