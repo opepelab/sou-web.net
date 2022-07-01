@@ -5,7 +5,7 @@ steps:
     args:
       [
         'build',
-        '--tag',
+        '-t',
         'gcr.io/inductive-gift-351105/sou-web-net:$COMMIT_SHA',
         '--build-arg',
         '_CONTENTFUL_SPACE_ID=$_CONTENTFUL_SPACE_ID',
