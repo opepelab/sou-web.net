@@ -5,6 +5,8 @@ steps:
     args:
       [
         'build',
+        '-t',
+        'gcr.io/inductive-gift-351105/sou-web-net',
         '--build-arg',
         '_CONTENTFUL_SPACE_ID=$_CONTENTFUL_SPACE_ID',
         '--build-arg',
@@ -17,8 +19,6 @@ steps:
         '_MAIL_PASS=$_MAIL_PASS',
         '--build-arg',
         '_MAIL_TO=$_MAIL_TO',
-        't',
-        'gcr.io/inductive-gift-351105/sou-web-net',
         '.',
       ]
   # Push the container image to Container Registry
