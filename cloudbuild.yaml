@@ -6,7 +6,7 @@ steps:
       [
         'build',
         '-t',
-        'gcr.io/inductive-gift-351105/sou-web-net',
+        'gcr.io/inductive-gift-351105/sou-web-net:$COMMIT_SHA',
         '--build-arg',
         '_CONTENTFUL_SPACE_ID=$_CONTENTFUL_SPACE_ID',
         '--build-arg',
@@ -23,7 +23,7 @@ steps:
       ]
   # Push the container image to Container Registry
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/inductive-gift-351105/sou-web-net']
+    args: ['push', 'gcr.io/inductive-gift-351105/sou-web-net:$COMMIT_SHA']
   # Deploy container image to Cloud Run
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
@@ -33,7 +33,7 @@ steps:
         'deploy',
         'sou-web-net',
         '--image',
-        'gcr.io/inductive-gift-351105/sou-web-net',
+        'gcr.io/inductive-gift-351105/sou-web-net:$COMMIT_SHA',
         '--region',
         'asia-northeast1',
         '--platform',
