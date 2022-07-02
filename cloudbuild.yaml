@@ -2,12 +2,13 @@ steps:
   # Build the container image
 
   - name: 'gcr.io/cloud-builders/docker'
-    args: [
+    args:
+      [
         'build',
-        # '--build-arg',
-        # '_CONTENTFUL_SPACE_ID=$_CONTENTFUL_SPACE_ID',
-        # '--build-arg',
-        # '_CONTENTFUL_DELIVERY_TOKEN=$_CONTENTFUL_DELIVERY_TOKEN',
+        '--build-arg',
+        '_CONTENTFUL_SPACE_ID=$_CONTENTFUL_SPACE_ID',
+        '--build-arg',
+        '_CONTENTFUL_DELIVERY_TOKEN=$_CONTENTFUL_DELIVERY_TOKEN',
         '--build-arg',
         '_NEXT_PUBLIC_GA_ID=$_NEXT_PUBLIC_GA_ID',
         '--build-arg',

@@ -7,7 +7,8 @@ const NotFound: React.FC = () => {
     <Framer>
       <OG title="404 - Sou Watanabe" description="Erorr URL" />
       <main className="inblo">
-        <h1>Does not don't sync test GCP Cloud Run できたよーん</h1>
+        <h1>Does not don't sync test</h1>
+        <h1>存在しないか削除されたページの可能性があります。</h1>
         <dl>
           <Link href="/">
             <a className="redLinks scale">Return 404 to TOP</a>
