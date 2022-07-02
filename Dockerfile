@@ -18,8 +18,6 @@ ARG _MAIL_USER
 ARG _MAIL_PASS
 ARG _MAIL_TO
 
-# ENV NODE_ENV development
-
 ENV NEXT_PUBLIC_CONTENTFUL_SPACE_ID=$_CONTENTFUL_SPACE_ID \
     NEXT_PUBLIC_CONTENTFUL_DELIVERY_TOKEN=$_CONTENTFUL_DELIVERY_TOKEN \
     NEXT_PUBLIC_GA_ID=$_NEXT_PUBLIC_GA_ID \
@@ -47,4 +45,6 @@ COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./package.json
 USER nextjs
 EXPOSE 3000
-CMD ["node_modules/.bin/next", "start"]
+CMD ["npm", "start"]
+
+# node_modules/.bin/next
