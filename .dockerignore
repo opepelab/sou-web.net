@@ -1,5 +1,4 @@
 Dockerfile
 .dockerignore
-.env.local
 npm-debug.log
 node_modules
