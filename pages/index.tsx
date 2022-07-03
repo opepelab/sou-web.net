@@ -24,12 +24,10 @@ const Index: React.FC<Map> = ({ blog }) => {
       <OG title="Sou Watanabe - Homepage" description="Index Top Page" />
       <main className="inblo textLeft">
         <Heading as="h1" m="0" fontWeight="200" fontSize="32">
-          Hello? My name is Sou🖐
+          Hello?, My name is Sou😼
         </Heading>
         <Text fontWeight="200" fontSize="20px">
-          I am Software contributor,
-          <br />
-          from JAPAN Tokyo.
+          Software contributor, from JPN Tokyo.
         </Text>
         <Text fontSize="12px">15才くらいの猫を飼っています。よろしくお願いします.</Text>
         <div className="Flex">

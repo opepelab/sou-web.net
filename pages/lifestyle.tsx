@@ -12,7 +12,6 @@ const Feature: React.FC = () => {
         </Heading>
         <img src="/picture/IMG_0618.jpeg" height="40%" width="40%" />
         <dl>
-          <p>test</p>
           <dt>OS</dt>
           <dd>Windows / Mac</dd>
           <dt>Version</dt>
@@ -22,11 +21,11 @@ const Feature: React.FC = () => {
           <dt>Language</dt>
           <dd>TypeScript / Scss</dd>
           <dt>Framework</dt>
-          <dd>Next.js / Flutter</dd>
+          <dd>Next.js / Chakra-UI</dd>
           <dt>Browser</dt>
           <dd>Edge / Chrome / Safari</dd>
           <dt>Host</dt>
-          <dd>Azure / Vercel / Cloudflare</dd>
+          <dd>Google Cloud Platform</dd>
         </dl>
       </main>
     </Framer>

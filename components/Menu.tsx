@@ -70,16 +70,20 @@ const Menu: React.FC = () => {
                   <div aria-expanded={aboutRes} className="About">
                     <ul>
                       <li>
-                        <ActiveLink href="/rss/atom.xml" activeClassName="Done headerState">
-                          <a className="right1p" onClick={() => setMenu(false)}>
-                            RSS
+                        <ActiveLink href="/lifestyle" activeClassName="Done headerState">
+                          <a
+                            onClick={() => {
+                              setMenu(false);
+                            }}
+                          >
+                            Lifestyle
                           </a>
                         </ActiveLink>
                       </li>
                       <li>
-                        <ActiveLink href="/art" activeClassName="Done headerState">
+                        <ActiveLink href="/artwork" activeClassName="Done headerState">
                           <a className="right1p" onClick={() => setMenu(false)}>
-                            MyArt
+                            Artwork
                           </a>
                         </ActiveLink>
                       </li>
@@ -95,13 +99,9 @@ const Menu: React.FC = () => {
                         </ActiveLink>
                       </li>
                       <li>
-                        <ActiveLink href="/room" activeClassName="Done headerState">
-                          <a
-                            onClick={() => {
-                              setMenu(false);
-                            }}
-                          >
-                            Room
+                        <ActiveLink href="/rss/atom.xml" activeClassName="Done headerState">
+                          <a className="right1p" onClick={() => setMenu(false)}>
+                            RSS.xml
                           </a>
                         </ActiveLink>
                       </li>

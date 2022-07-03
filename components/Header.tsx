@@ -104,16 +104,16 @@ const Header: React.FC = () => {
                     <div aria-expanded={about}>
                       <ul className="White menu">
                         <li>
-                          <ActiveLink href="/rss/atom.xml" activeClassName="blockState headerState">
+                          <ActiveLink href="/lifestyle" activeClassName="blockState headerState">
                             <a onClick={() => setAbout(false)}>
-                              <div className="hoverBG BlockM">RSS</div>
+                              <div className="hoverBG BlockM">Lifestyle</div>
                             </a>
                           </ActiveLink>
                         </li>
                         <li>
-                          <ActiveLink href="/art" activeClassName="blockState headerState">
+                          <ActiveLink href="/artwork" activeClassName="blockState headerState">
                             <a onClick={() => setAbout(false)}>
-                              <div className="hoverBG BlockM">MyArt</div>
+                              <div className="hoverBG BlockM">Artwork</div>
                             </a>
                           </ActiveLink>
                         </li>
@@ -125,9 +125,9 @@ const Header: React.FC = () => {
                           </ActiveLink>
                         </li>
                         <li>
-                          <ActiveLink href="/room" activeClassName="blockState headerState">
+                          <ActiveLink href="/rss/atom.xml" activeClassName="blockState headerState">
                             <a onClick={() => setAbout(false)}>
-                              <div className="hoverBG BlockM">Room</div>
+                              <div className="hoverBG BlockM">RSS.xml</div>
                             </a>
                           </ActiveLink>
                         </li>

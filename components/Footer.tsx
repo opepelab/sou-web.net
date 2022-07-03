@@ -13,12 +13,17 @@ const Footer: React.FC = () => {
           </div>
           <br />
           <Link href="/privacy">
-            <a className="inblo C">
+            <a className=" C">
               <u>Privacy Policy</u>
             </a>
           </Link>{' '}
+          <Link href="/technology">
+            <a className="C">
+              <u>Technology</u>
+            </a>
+          </Link>{' '}
           <Link href="/">
-            <a className="inblo C">© sou-web.net 2022</a>
+            <a className="C">© sou-web.net 2022</a>
           </Link>{' '}
         </div>
       </footer>
