@@ -46,5 +46,3 @@ COPY --from=builder /app/package.json ./package.json
 USER nextjs
 EXPOSE 3000
 CMD ["npm", "start"]
-
-# node_modules/.bin/next
