@@ -58,11 +58,19 @@ $ME: rgb(0 0 0 / 75%);
   margin-left: auto;
 }
 
-@mixin H1H2 {
+@mixin H1 {
   display: $IB;
   font-size: $p20;
   border-bottom: 1px solid gray;
   margin-top: 0;
+  @include LRauto;
+}
+
+@mixin H2 {
+  display: $IB;
+  font-size: 18px;
+  border-bottom: 1px solid gray;
+  margin-top: 20px;
   @include LRauto;
 }
 

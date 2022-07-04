@@ -60,7 +60,7 @@ body {
 }
 
 article {
-  padding: 100px;
+  padding: 50px 100px;
 }
 
 pre {
@@ -259,11 +259,11 @@ p {
 }
 
 h1 {
-  @include H1H2;
+  @include H1;
 }
 
 h2 {
-  @include H1H2;
+  @include H2;
 }
 
 h3 {
