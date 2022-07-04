@@ -47,7 +47,7 @@ const Id: React.FC<Map> = ({ blog, total }) => {
             ))}
           </ul>
         </nav>
-        <Link href="/blog">
+        <Link href="/docs">
           <a>
             <h5>全部見る →</h5>
           </a>
