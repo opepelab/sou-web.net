@@ -17,14 +17,14 @@ steps:
         '--build-arg',
         '_MAIL_TO=$_MAIL_TO',
         '-t',
-        'asia.gcr.io/$PROJECT_ID/$_SERVICE_NAME',
+        '$_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME',
         '.',
       ]
   # Push the container image to Container Registry
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'asia.gcr.io/$PROJECT_ID/$_SERVICE_NAME']
+    args: ['push', '$_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME']
   # Deploy container image to Cloud Run
-  - name: 'asia.gcr.io/google.com/cloudsdktool/cloud-sdk'
+  - name: '$_GCR_HOSTNAME/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
     args:
       [
@@ -32,11 +32,11 @@ steps:
         'deploy',
         '$_SERVICE_NAME',
         '--image',
-        'asia.gcr.io/$PROJECT_ID/$_SERVICE_NAME',
+        '$_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME',
         '--region',
         'asia-northeast1',
         '--platform',
         'managed',
       ]
 images:
-  - 'asia.gcr.io/$PROJECT_ID/$_SERVICE_NAME'
+  - '$_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME'
