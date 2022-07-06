@@ -1,5 +1,4 @@
-FROM gcr.io/inductive-gift-351105/sou-web-net
-
+# FROM gcr.io/inductive-gift-351105/sou-web-net
 # Install dependencies only when needed
 FROM node:lts-alpine AS deps
 

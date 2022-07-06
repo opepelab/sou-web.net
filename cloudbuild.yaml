@@ -1,6 +1,5 @@
 steps:
   # Build the container image
-
   - name: 'gcr.io/cloud-builders/docker'
     args:
       [
@@ -41,9 +40,3 @@ steps:
       ]
 images:
   - 'gcr.io/inductive-gift-351105/sou-web-net'
-    # entrypoint: 'bash'
-    # args:
-    # [
-    #   '-c',
-    #   'docker build --build-arg _CONTENTFUL_SPACE_ID=$_CONTENTFUL_SPACE_ID --build-arg _CONTENTFUL_DELIVERY_TOKEN=$_CONTENTFUL_DELIVERY_TOKEN --build-arg _NEXT_PUBLIC_GA_ID=$_NEXT_PUBLIC_GA_ID --build-arg _MAIL_USER=$_MAIL_USER --build-arg _MAIL_PASS=$_MAIL_PASS --build-arg _MAIL_TO=$_MAIL_TO -t gcr.io/inductive-gift-351105/sou-web-net .',
-    # ]
