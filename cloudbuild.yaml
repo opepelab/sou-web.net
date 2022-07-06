@@ -34,9 +34,9 @@ steps:
         '--image',
         '$_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME',
         '--region',
-        'asia-northeast1',
+        '$_DEPLOY_REGION',
         '--platform',
-        'managed',
+        '$_PLATFORM',
       ]
 images:
   - '$_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME'
