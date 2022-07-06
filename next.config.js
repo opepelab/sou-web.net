@@ -26,7 +26,7 @@ const securityHeaders = [
 
   {
     key: 'Cache-Control',
-    value: 'no-cache',
+    value: 'private',
   },
 ];
 
