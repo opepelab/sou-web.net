@@ -40,7 +40,18 @@ const Webclip: React.FC = () => {
             <a href="https://os0x.hatenablog.com/entry/20110617/1308280740">君は3つのリロードを知っているか？</a>
           </li>
           <li>
-            <a href="https://yutaro-blog.net/2021/10/16/typescript-type-assertion-as/">【TypeScript】型アサーション（as）について</a>
+            <a href="https://typescriptbook.jp/reference/values-types-variables/type-assertion-as">
+              サバイバルTypeScript 型アサーション「as」(type assertion)
+            </a>
+          </li>
+          <li>
+            <a href="https://typescript-jp.gitbook.io/deep-dive/type-system/typeguard">
+              TypeScript Deep Dive 日本語版 型ガード
+            </a>
+          </li>
+
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Code_refactoring">Code refactoring</a>
           </li>
         </ul>
       </main>
