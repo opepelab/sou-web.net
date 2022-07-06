@@ -65,7 +65,6 @@ const Overview: React.FC = () => {
         <p>20歳の時に統合失調症と診断されました。</p>
         <p></p>
         <p>入院し内服治療にて寛解していて、現在は月に一度予防のため通院しています。</p>
-        <p>認定医師より仕事することに関して「いいですよ」と言われています。</p>
         <Box fontSize="16px">
           <a href="https://kokoro-hc.com/schizophrenia" target="_blank" className="scaleLinks">
             「 <FiExternalLink className="Top-2px" />
