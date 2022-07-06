@@ -1,6 +1,6 @@
 steps:
   # Build the container image
-  - name: 'gcr.io/cloud-builders/docker'
+  - name: 'asia.gcr.io/cloud-builders/docker'
     args:
       [
         'build',
@@ -17,26 +17,26 @@ steps:
         '--build-arg',
         '_MAIL_TO=$_MAIL_TO',
         '-t',
-        'gcr.io/inductive-gift-351105/sou-web-net',
+        'asia.gcr.io/$PROJECT_ID/$_SERVICE_NAME',
         '.',
       ]
   # Push the container image to Container Registry
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/inductive-gift-351105/sou-web-net']
+  - name: 'asia.gcr.io/cloud-builders/docker'
+    args: ['push', 'asia.gcr.io/$PROJECT_ID/$_SERVICE_NAME']
   # Deploy container image to Cloud Run
-  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  - name: 'asia.gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
     args:
       [
         'run',
         'deploy',
-        'sou-web-net',
+        '$_SERVICE_NAME',
         '--image',
-        'gcr.io/inductive-gift-351105/sou-web-net',
+        'asia.gcr.io/$PROJECT_ID/$_SERVICE_NAME',
         '--region',
         'asia-northeast1',
         '--platform',
         'managed',
       ]
 images:
-  - 'gcr.io/inductive-gift-351105/sou-web-net'
+  - 'asia.gcr.io/$PROJECT_ID/$_SERVICE_NAME'
