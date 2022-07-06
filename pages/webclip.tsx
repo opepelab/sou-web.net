@@ -49,9 +49,13 @@ const Webclip: React.FC = () => {
               TypeScript Deep Dive 日本語版 型ガード
             </a>
           </li>
-
           <li>
             <a href="https://en.wikipedia.org/wiki/Code_refactoring">Code refactoring</a>
+          </li>
+          <li>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control">
+              mdn web docs_ キャッシュ制御
+            </a>
           </li>
         </ul>
       </main>
