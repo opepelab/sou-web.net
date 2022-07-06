@@ -6,7 +6,7 @@ const Text: React.FC = () => {
       <ActiveLink href="/" activeClassName="headerState">
         <a>
           <div className="heart" />
-          Sou WataNa
+          Sou-web.net
         </a>
       </ActiveLink>
     </div>
