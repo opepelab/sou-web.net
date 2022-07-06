@@ -29,7 +29,7 @@ const Index: React.FC<Map> = ({ blog }) => {
         <Text fontWeight="200" fontSize="20px">
           Software contributor, from JPN Tokyo.
         </Text>
-        <Text fontSize="12px">15才くらいの猫を飼っています。よろしくお願いします.</Text>
+        {/* <Text fontSize="12px">15才くらいの猫を飼っています。よろしくお願いします.</Text> */}
         <div className="Flex">
           <a href="https://github.com/opepelab" target="_blank">
             <RiGithubFill size={30} />
