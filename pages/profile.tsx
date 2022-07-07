@@ -11,7 +11,7 @@ const Overview: React.FC = () => {
         <h1>About: [Profile, Overview, Readme]</h1>
         <dl>
           <dt>Name</dt>
-          <dd>sou Watanabe/蒼 渡邊</dd>
+          <dd>Sou Watanabe/蒼 渡邊</dd>
           <dt>Sign</dt>
           <dd>さそり座</dd>
           <dt>干支</dt>
@@ -21,20 +21,14 @@ const Overview: React.FC = () => {
 
           <dt>Merci papa mama.</dt>
           <dd>私の生みの親である母と父に感謝します。</dd>
-          {/* <img className="PM margin10 point " src="/picture/IMG_0495.jpg" width={190} height={260} /> */}
+          <img className="PM margin10 point " src="/picture/IMG_0503.jpeg" width={190} height={260} />
         </dl>
-        <p>渡邊 蒼(Sou Watanabe)と申します。1994年生まれ現27歳です。</p>
+        <p>渡邊 蒼(Sou Watanabe)1994年生まれ現27歳。</p>
         <p>動かしたり勉強したり実装したりする範囲です。</p>
         <p>
-          TypeScript Vue React Next.js JSON クラウドはAzure
-          GCPなどを少し触ったことがあり現在もこのブログもGCPを使っています。
+          実務というよりは個人プロダクトを持っていてNPOのページを手伝ったり身内から業務委託依頼をされ手伝ったりした経験はあります。
         </p>
-        <p>
-          APIと連携することが必然のため、API設計の本などで勉強しています。
-          現在のブログに至るまで勉強と調査の繰り返しで1年半勉強しています。
-        </p>
-        <p>実務にアサインできるタイミングを求めています。</p>
-        <p>コンタクトフォーム、LinkedIn,Lapras,Findy,Wantedlyよりお待ちしております。</p>
+
         <h1>好き(得意とは言っていない)</h1>
         <ul>
           <li>TypeScript</li>
@@ -58,7 +52,7 @@ const Overview: React.FC = () => {
         <ul>
           <li>1994年 福岡県北九州市生まれ</li>
           <li>2014年 アメリカ シアトル カナダに行きました</li>
-          <li>2015年 統合失調症診断になり入院しました</li>
+          <li>2015年 統合失調症診断と認定され入院しました</li>
           <li>2016年 株式会社 PC DEPOT入社</li>
           <li>2017年 株式会社 PC DEPOT退社</li>
           <li>2018年 高等学校卒業程度認定試験合格</li>
@@ -69,7 +63,7 @@ const Overview: React.FC = () => {
         <hr />
         <p>中学と高校時代は学校にあまり行かなかったため社会人経験をした後に少し勉強しました。</p>
         <p>引きこもり不登校, 親の歪んだ愛情などを経験し心理学の本「 自分に気づく心理学 」を読みました。</p>
-        <p>デザイン ゲーム WEB開発の分野でならほんの少し詳しいレベルだと思います。</p>
+
         <h1>体調について</h1>
         <br />
         <h2>精神疾患: 統合失調症認定「寛解済み」</h2>
@@ -84,7 +78,7 @@ const Overview: React.FC = () => {
           </a>
         </Box>
         <br />
-        <p>原因不明の病気のため完治の定義がが存在しないらしく「寛解」が最大の完治レベルみたいです。</p>
+        <h2>原因不明の病気のため完治の定義が存在しないらしく「寛解」が最大の完治レベルみたいです。</h2>
         <p>薬を飲むと自然と疲れを認識しやすくなります。</p>
         <hr />
         <br />
