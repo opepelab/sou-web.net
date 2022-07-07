@@ -21,29 +21,38 @@ const Overview: React.FC = () => {
 
           <dt>Merci papa mama.</dt>
           <dd>私の生みの親である母と父に感謝します。</dd>
-          <img className="PM margin10 point " src="/picture/IMG_0495.jpg" width={190} height={260} />
+          {/* <img className="PM margin10 point " src="/picture/IMG_0495.jpg" width={190} height={260} /> */}
         </dl>
         <p>渡邊 蒼(Sou Watanabe)と申します。1994年生まれ現27歳です。</p>
+        <p>動かしたり勉強したり実装したりする範囲です。</p>
         <p>
-          RustでAPI作ろうとしています。開発に夢中です。
-          <p>趣味でブログ書いています。</p>
+          TypeScript Vue React Next.js JSON クラウドはAzure
+          GCPなどを少し触ったことがあり現在もこのブログもGCPを使っています。
         </p>
+        <p>
+          APIと連携することが必然のため、API設計の本などで勉強しています。
+          現在のブログに至るまで勉強と調査の繰り返しで1年半勉強しています。
+        </p>
+        <p>実務にアサインできるタイミングを求めています。</p>
+        <p>コンタクトフォーム、LinkedIn,Lapras,Findy,Wantedlyよりお待ちしております。</p>
         <h1>好き(得意とは言っていない)</h1>
         <ul>
-          <li>静的型付け</li>
           <li>TypeScript</li>
-          <li>Rust</li>
-        </ul>
-        <h1>クラン歴</h1>
-        <ul>
-          <li>不死鳥</li>
+          <li>Rust(習得中)</li>
+          <li>Java文法(習得中)</li>
         </ul>
         <h1>派閥</h1>
         <ul>
-          <li>Windows</li>
-          <li>npm</li>
-          <li>json</li>
-          <li>ANSI</li>
+          <li>
+            <u>npm</u> : yarn
+          </li>
+          <li>
+            <u>JSON</u> : yaml
+          </li>
+          <li>
+            <u>ANSI</u> : JIS
+          </li>
+          正統派、王道、純粋、関数型が好きです。
         </ul>
         <h1>経歴</h1>
         <ul>
@@ -55,13 +64,16 @@ const Overview: React.FC = () => {
           <li>2018年 高等学校卒業程度認定試験合格</li>
           <li>2019年 デザインの勉強を独学で始めました</li>
           <li>2020年 イラストで仕事し始めました</li>
-          <li>2021年 TypeScriptを書き始めました</li>
+          <li>2021年 プログラミング言語を勉強し始めTypeScriptを書き始めました</li>
         </ul>
         <hr />
         <p>中学と高校時代は学校にあまり行かなかったため社会人経験をした後に少し勉強しました。</p>
         <p>引きこもり不登校, 親の歪んだ愛情などを経験し心理学の本「 自分に気づく心理学 」を読みました。</p>
         <p>デザイン ゲーム WEB開発の分野でならほんの少し詳しいレベルだと思います。</p>
-        <h2>体調について</h2>
+        <h1>体調について</h1>
+        <br />
+        <h2>精神疾患: 統合失調症認定「寛解済み」</h2>
+
         <p>20歳の時に統合失調症と診断されました。</p>
         <p></p>
         <p>入院し内服治療にて寛解していて、現在は月に一度予防のため通院しています。</p>
@@ -72,6 +84,7 @@ const Overview: React.FC = () => {
           </a>
         </Box>
         <br />
+        <p>原因不明の病気のため完治の定義がが存在しないらしく「寛解」が最大の完治レベルみたいです。</p>
         <p>薬を飲むと自然と疲れを認識しやすくなります。</p>
         <hr />
         <br />
