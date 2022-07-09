@@ -29,7 +29,7 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
       <OG title="Mail - Sou Watanabe" description="My Mail" />
       <main className="Mail inblo">
         <form>
-          {error ? <h1>""</h1> : <h1>Thank you so much.</h1>}
+          {error ? <h1>"'any'"</h1> : <h1>Thank you so much.</h1>}
           <dl>
             <dt>
               <label htmlFor="name">Name*</label>
