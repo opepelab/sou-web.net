@@ -88,7 +88,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   if (typeof slug !== 'string') {
     return { notFound: true };
   }
-  const entries = await client.getEntries({
+  const entries: EntryCollection<IPostFields> = await client.getEntries({
     content_type: 'blog',
     limit: 1000,
     'fields.slug': slug,
