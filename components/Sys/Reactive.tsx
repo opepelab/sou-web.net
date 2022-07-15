@@ -5,7 +5,7 @@ import ActiveLink from 'components/Sys/ActiveLink';
 type RNode = {
   children: ReactNode;
   url: string;
-  state: boolean | null;
+  state?: boolean;
   on: string;
   off: string;
   mount: string;
