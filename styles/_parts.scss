@@ -239,4 +239,10 @@ a dt .dateST {
   transition-duration: 1s;
 }
 
+.waku {
+  border: solid 2px var(--color-icon);
+  border-radius: 20px;
+  padding: 40px;
+}
+
 // GraphicsとAbout以外位置を修正してる

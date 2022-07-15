@@ -8,8 +8,7 @@ const Overview: React.FC = () => {
     <Framer>
       <OG title="Overview - Sou Watanabe" description="My Overview" />
       <main className="list inblo textLeft">
-        <div className="textCenter">
-          <h1>About: [Profile, Overview, Readme]</h1>
+        <div className="textCenter waku">
           <dl>
             <dt>Name</dt>
             <dd>Sou Watanabe/蒼 渡邊</dd>
@@ -19,7 +18,6 @@ const Overview: React.FC = () => {
             <dd>戌</dd>
             <dt>Location</dt>
             <dd>Kokura and Tokyo/小倉と東京</dd>
-
             <dt>Merci papa mama.</dt>
             <dd>私の生みの親である母と父に感謝します。</dd>
             <img className="PM margin10 point " src="/picture/IMG_0503.jpeg" width={190} height={260} />
