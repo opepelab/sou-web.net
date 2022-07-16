@@ -68,12 +68,12 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const id = context.params?.id;
+  const id = Number(context.params?.id);
   const entries: EntryCollection<IPostFields> = await client.getEntries({
     content_type: 'blog',
     order: '-fields.date',
     limit: Limit,
-    skip: (Number(id) - 1) * Limit,
+    skip: (id - 1) * Limit,
   });
 
   return {

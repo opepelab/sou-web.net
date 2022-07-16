@@ -1,4 +1,4 @@
-import { EntryCollection } from 'contentful';
+// import { EntryCollection } from 'contentful';
 
 export interface IPostFields {
   title: string;
@@ -8,19 +8,19 @@ export interface IPostFields {
   body: string;
 }
 
-export interface IPost extends EntryCollection<IPostFields> {
-  sys: {
-    id: string;
-    type: string;
-    createdAt: string;
-    updatedAt: string;
-    locale: string;
-    contentType: {
-      sys: {
-        id: 'blog';
-        linkType: 'ContentType';
-        type: 'Link';
-      };
-    };
-  };
-}
+// export interface IPost extends EntryCollection<IPostFields> {
+//   sys: {
+//     id: string;
+//     type: string;
+//     createdAt: string;
+//     updatedAt: string;
+//     locale: string;
+//     contentType: {
+//       sys: {
+//         id: 'blog';
+//         linkType: 'ContentType';
+//         type: 'Link';
+//       };
+//     };
+//   };
+// }
