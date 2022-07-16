@@ -6,7 +6,6 @@
     "dev": "next dev",
     "build": "next build && next-sitemap --config sitemap.config.js",
     "start": "next start -p $PORT",
-    "export": "next export",
     "eslint": "eslint --ext .js,.npjsx,.ts,.tsx --fix .",
     "prettier": "prettier --write .",
     "lint-staged": "lint-staged",
