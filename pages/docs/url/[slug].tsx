@@ -88,8 +88,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const slug = context.params?.slug;
   const entries: EntryCollection<IPostFields> = await client.getEntries({
     content_type: 'blog',
-    limit: 150,
-    'fields.slug': slug,
+    limit: 150, //StringArray
+    'fields.slug': slug, //String
   });
 
   return {
