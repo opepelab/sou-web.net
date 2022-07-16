@@ -75,7 +75,7 @@ const Slug: React.FC<Content> = ({ blog }) => {
 export const getStaticPaths: GetStaticPaths = async () => {
   const entries: EntryCollection<IPostFields> = await client.getEntries({
     content_type: 'blog',
-    limit: 1000,
+    limit: 150,
   });
   const paths = entries.items.map((item) => ({
     params: { slug: item.fields.slug },
@@ -84,10 +84,11 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const slug = context.params?.slug as string;
+  // stringもstring[]もundefinedも使う
+  const slug = context.params?.slug;
   const entries: EntryCollection<IPostFields> = await client.getEntries({
     content_type: 'blog',
-    limit: 1000,
+    limit: 150,
     'fields.slug': slug,
   });
 

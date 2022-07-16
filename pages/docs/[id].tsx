@@ -93,11 +93,6 @@ export default Id;
 // }
 // const slug = context.params.slug;
 
-// if (typeof slug !== "string") {
-//   return {
-//     notFound: true,
-//   };
-// }
 // if (typeof slug !== 'string') {
 //   return { notFound: true };
 // }
