@@ -98,3 +98,6 @@ export default Id;
 //     notFound: true,
 //   };
 // }
+// if (typeof slug !== 'string') {
+//   return { notFound: true };
+// }
