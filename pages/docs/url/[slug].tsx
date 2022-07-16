@@ -84,7 +84,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  // stringもstring[]もundefinedも使う
   const slug = String(context.params?.slug);
   const entries: EntryCollection<IPostFields> = await client.getEntries({
     content_type: 'blog',
