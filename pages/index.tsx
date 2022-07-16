@@ -18,8 +18,6 @@ type Map = {
   };
 };
 
-// ドメインを変える?
-
 const Index: React.FC<Map> = ({ blog }) => {
   return (
     <Framer>
