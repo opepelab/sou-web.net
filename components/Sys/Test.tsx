@@ -1,4 +1,5 @@
 import { useState, useMemo, useEffect, createContext, ReactNode } from 'react';
+import { Script } from 'next';
 
 type RNode = {
   children: ReactNode;
@@ -19,36 +20,11 @@ export const ThemeProvider: React.FC<RNode> = ({ children }) => {
     rawSetColorMode(initialColorValue as never);
   }, [colorMode]);
 
-  const contextValue = useMemo(() => {
-    function setColorMode(newValue: any) {
-      window.localStorage.setItem('theme', newValue);
-      if (newValue !== null) newValue;
-      else {
-        newValue = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      }
-      document.documentElement.setAttribute('data-theme', newValue);
-
-      // const root = window.document.documentElement;
-      // localStorage.setItem(COLOR_MODE_KEY, );
-      //   root.style.setProperty(cssVarName, colorByTheme[]);
-      // ;
-      rawSetColorMode(newValue);
-    }
-// test
-    return {
-      colorMode,
-      setColorMode,
-    };
-  }, [colorMode, rawSetColorMode]);
-
+  const contextValue = `!function(){let e;const t=window.localStorage.getItem("theme");if(null!==t)e=t;else{e=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}document.documentElement.setAttribute("data-theme",e)}();`;
   return (
-    <ThemeContext.Provider value={contextValue}>
-      {/* <script
-        dangerouslySetInnerHTML={{
-          __html: `!function(){let e;const t=window.localStorage.getItem("theme");if(null!==t)e=t;else{e=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}document.documentElement.setAttribute("data-theme",e)}();`,
-        }}
-      /> */}
+    <>
+      <Script script={contextValue} />
       {children}
-    </ThemeContext.Provider>
+    </>
   );
 };

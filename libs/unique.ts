@@ -1,6 +1,6 @@
 import { atom } from 'recoil';
 
-export type Theme = 'light' | 'dark' | 'systemUI';
+export type Theme = string | null;
 export const themeState = atom<Theme>({
   key: 'themeKey',
   default: 'systemUI',
