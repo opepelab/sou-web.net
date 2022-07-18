@@ -9,7 +9,7 @@ type ContextType = {
   colorMode: undefined;
 };
 
-export const ThemeContext = createContext<undefined | ContextType>(undefined);
+export const ThemeContext = createContext<null | ContextType>(null);
 
 export const ThemeProvider: React.FC<RNode> = ({ children }) => {
   const [colorMode, rawSetColorMode] = useState<undefined>(undefined);
