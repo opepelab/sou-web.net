@@ -15,8 +15,9 @@ export const ThemeProvider: React.FC<RNode> = ({ children }) => {
   const [colorMode, rawSetColorMode] = useState<undefined>(undefined);
 
   useEffect(() => {
-    window.document.documentElement.getAttribute('data-theme');
-  }, []);
+    const initialCOlorValue = window.document.documentElement.getAttribute('data-theme');
+    rawSetColorMode(initialCOlorValue as any);
+  }, [rawSetColorMode]);
 
   const contextValue = useMemo(() => {
     function setColorMode() {
