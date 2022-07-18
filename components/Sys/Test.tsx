@@ -9,7 +9,7 @@ type ContextType = {
   colorMode: undefined;
 };
 
-export const ThemeContext = createContext<null | ContextType>(null);
+export const ThemeContext = createContext<undefined | ContextType>(undefined);
 
 export const ThemeProvider: React.FC<RNode> = ({ children }) => {
   const [colorMode, rawSetColorMode] = useState<undefined>(undefined);
@@ -22,7 +22,7 @@ export const ThemeProvider: React.FC<RNode> = ({ children }) => {
   const contextValue = useMemo(() => {
     function setColorMode(newValue: any) {
       if (
-        localStorage.theme === 'dark' ||
+        localStorage.theme === undefined ||
         (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
       ) {
         document.documentElement.setAttribute('data-theme', 'dark');
