@@ -20,23 +20,19 @@ export const ThemeProvider: React.FC<RNode> = ({ children }) => {
   }, [colorMode]);
 
   const contextValue = useMemo(() => {
-    function setColorMode() {
+    function setColorMode(newValue: any) {
       const Color = window.localStorage.getItem('theme');
-      if (Color !== null) {
-        Color;
-      } else if (
-        localStorage.theme === 'dark' ||
-        (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-      ) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-      } else {
-        document.documentElement.setAttribute('data-theme', 'light');
+      if (Color !== null) newValue = Color;
+      else {
+        newValue = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
       }
+      document.documentElement.setAttribute('data-theme', newValue);
 
       // const root = window.document.documentElement;
       // localStorage.setItem(COLOR_MODE_KEY, );
       //   root.style.setProperty(cssVarName, colorByTheme[]);
       // ;
+      rawSetColorMode(newValue);
     }
 
     return {
