@@ -5,7 +5,6 @@ type RNode = {
 };
 
 type ContextType = {
-  setColorMode: (value: string) => void;
   colorMode: undefined;
 };
 
@@ -20,7 +19,7 @@ export const ThemeProvider: React.FC<RNode> = ({ children }) => {
   }, [rawSetColorMode]);
 
   const contextValue = useMemo(() => {
-    function setColorMode() {
+    (function () {
       let theme;
       const storageTheme = window.localStorage.getItem('theme');
       if (storageTheme !== null) {
@@ -32,10 +31,9 @@ export const ThemeProvider: React.FC<RNode> = ({ children }) => {
 
       const root = document.documentElement;
       root.setAttribute('data-theme', theme);
-    }
+    });
     return {
       colorMode,
-      setColorMode,
     };
   }, [colorMode, rawSetColorMode]);
 
