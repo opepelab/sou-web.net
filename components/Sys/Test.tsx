@@ -9,7 +9,7 @@ type ContextType = {
   colorMode: undefined;
 };
 
-export const ThemeContext = createContext<null | ContextType>(null);
+export const ThemeContext = createContext<undefined | ContextType>(undefined);
 
 export const ThemeProvider: React.FC<RNode> = ({ children }) => {
   const [colorMode, rawSetColorMode] = useState<undefined>(undefined);
@@ -21,10 +21,8 @@ export const ThemeProvider: React.FC<RNode> = ({ children }) => {
 
   const contextValue = useMemo(() => {
     function setColorMode(newValue: any) {
-      const root = window.document.documentElement;
+      window.document.documentElement;
       localStorage.setItem('theme', newValue);
-
-      root.setAttribute('data-theme', newValue);
 
       rawSetColorMode(newValue);
     }
