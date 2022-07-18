@@ -1,5 +1,4 @@
-import { useState, useMemo, useEffect, createContext, ReactNode } from 'react';
-import Script from 'next/script';
+import { useState, useEffect, createContext, ReactNode } from 'react';
 
 type RNode = {
   children: ReactNode;
@@ -20,10 +19,13 @@ export const ThemeProvider: React.FC<RNode> = ({ children }) => {
     rawSetColorMode(initialColorValue as never);
   }, [colorMode]);
 
-  const contextValue = `!function(){let e;const t=window.localStorage.getItem("theme");if(null!==t)e=t;else{e=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}document.documentElement.setAttribute("data-theme",e)}();`;
   return (
     <>
-      <Script src={contextValue} />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `!function(){let e;const t=window.localStorage.getItem("theme");if(null!==t)e=t;else{e=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}document.documentElement.setAttribute("data-theme",e)}();`,
+        }}
+      />
       {children}
     </>
   );

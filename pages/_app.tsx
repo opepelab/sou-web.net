@@ -1,7 +1,7 @@
 import { AppProps } from 'next/app';
 import { RecoilRoot } from 'recoil';
 import DarkState from 'components/Sys/DarkState';
-import { ThemeProvider } from 'components/Sys/Test';
+// import { ThemeProvider } from 'components/Sys/Test';
 import LayoutProvider from 'components/Layout/layout';
 import { AnimatePresence } from 'framer-motion';
 import usePageView from 'hooks/usePageView';
@@ -15,13 +15,13 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
   return (
     <>
       <RecoilRoot>
-        <ThemeProvider>
+        <DarkState>
           <LayoutProvider>
             <AnimatePresence exitBeforeEnter initial={true}>
               <Component {...pageProps} key={router.asPath} />
             </AnimatePresence>
           </LayoutProvider>
-        </ThemeProvider>
+        </DarkState>
       </RecoilRoot>
     </>
   );
