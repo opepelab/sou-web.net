@@ -4,11 +4,11 @@ type RNode = {
   children: ReactNode;
 };
 
-type ContextType = {
-  colorMode: undefined;
-};
+// type ContextType = {
+//   colorMode: undefined;
+// };
 
-export const ThemeContext = createContext<undefined | ContextType>(undefined);
+export const ThemeContext = createContext<undefined>(undefined);
 
 export const ThemeProvider: React.FC<RNode> = ({ children }) => {
   const [colorMode, rawSetColorMode] = useState<undefined>(undefined);
@@ -16,9 +16,9 @@ export const ThemeProvider: React.FC<RNode> = ({ children }) => {
   useEffect(() => {
     const initialCOlorValue = window.document.documentElement.getAttribute('data-theme');
     rawSetColorMode(initialCOlorValue as any);
-  }, [rawSetColorMode]);
+  }, [colorMode, rawSetColorMode]);
 
-  const contextValue = useMemo(() => {
+  const contextValue = `
     (function () {
       let theme;
       const storageTheme = window.localStorage.getItem('theme');
@@ -31,11 +31,16 @@ export const ThemeProvider: React.FC<RNode> = ({ children }) => {
 
       const root = document.documentElement;
       root.setAttribute('data-theme', theme);
-    });
-    return {
-      colorMode,
-    };
-  }, [colorMode, rawSetColorMode]);
+    });`;
 
-  return <ThemeContext.Provider value={contextValue}>{children}</ThemeContext.Provider>;
+  return (
+    <ThemeContext.Provider value={undefined}>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: contextValue,
+        }}
+      />
+      {children}
+    </ThemeContext.Provider>
+  );
 };
