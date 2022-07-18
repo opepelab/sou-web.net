@@ -4,43 +4,34 @@ type RNode = {
   children: ReactNode;
 };
 
-// type ContextType = {
-//   colorMode: undefined;
-// };
+type ContextType = {
+  setColorMode: (value: string) => void;
+  colorMode: undefined;
+};
 
-export const ThemeContext = createContext<undefined>(undefined);
+export const ThemeContext = createContext<null | ContextType>(null);
 
 export const ThemeProvider: React.FC<RNode> = ({ children }) => {
   const [colorMode, rawSetColorMode] = useState<undefined>(undefined);
 
   useEffect(() => {
-    const initialCOlorValue = window.document.documentElement.getAttribute('data-theme');
-    rawSetColorMode(initialCOlorValue as any);
+    const initialColorValue = window.document.documentElement.getAttribute('data-theme');
+    rawSetColorMode(initialColorValue as any);
+  }, []);
+
+  const contextValue = useMemo(() => {
+    function setColorMode(newValue: any) {
+      window.localStorage.getItem('theme');
+      // localStorage.setItem('theme', newValue)
+      localStorage.setAttribute('data-theme', newValue);
+
+      rawSetColorMode(newValue);
+    }
+    return {
+      colorMode,
+      setColorMode,
+    };
   }, [colorMode, rawSetColorMode]);
 
-  const contextValue = `
-    (function () {
-      let theme;
-      const storageTheme = window.localStorage.getItem('theme');
-      if (storageTheme !== null) {
-        theme = storageTheme;
-      } else {
-        const mql = window.matchMedia('(prefers-color-scheme: dark)');
-        theme = mql.matches ? 'dark' : 'light';
-      }
-
-      const root = document.documentElement;
-      root.setAttribute('data-theme', theme);
-    });`;
-
-  return (
-    <ThemeContext.Provider value={undefined}>
-      <script
-        dangerouslySetInnerHTML={{
-          __html: contextValue,
-        }}
-      />
-      {children}
-    </ThemeContext.Provider>
-  );
+  return <ThemeContext.Provider value={contextValue}>{children}</ThemeContext.Provider>;
 };
