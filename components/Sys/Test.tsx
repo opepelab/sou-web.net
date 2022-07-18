@@ -17,25 +17,16 @@ export const ThemeProvider: React.FC<RNode> = ({ children }) => {
   useEffect(() => {
     const initialColorValue = window.document.documentElement.getAttribute('data-theme');
     rawSetColorMode(initialColorValue as any);
-  }, []);
+  }, [colorMode]);
 
-  const contextValue = useMemo(() => {
-    function setColorMode(newValue: any) {
-      if (
-        localStorage.theme === undefined ||
-        (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-      ) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-      } else {
-        document.documentElement.setAttribute('data-theme', 'light');
-      }
-      rawSetColorMode(newValue);
-    }
-    return {
-      colorMode,
-      setColorMode,
-    };
-  }, [colorMode, rawSetColorMode]);
-
-  return <ThemeContext.Provider value={contextValue}>{children}</ThemeContext.Provider>;
+  return (
+    <ThemeContext.Provider value={colorMode}>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `!function(){let e;const t=window.localStorage.getItem("theme");if(null!==t)e=t;else{e=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}document.documentElement.setAttribute("data-theme",e)}();`,
+        }}
+      />
+      {children}
+    </ThemeContext.Provider>
+  );
 };
