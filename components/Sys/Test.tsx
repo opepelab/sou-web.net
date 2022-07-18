@@ -21,10 +21,14 @@ export const ThemeProvider: React.FC<RNode> = ({ children }) => {
 
   const contextValue = useMemo(() => {
     function setColorMode(newValue: any) {
-      window.localStorage.getItem('theme');
-      // localStorage.setItem('theme', newValue)
-      localStorage.setAttribute('data-theme', newValue);
-
+      if (
+        localStorage.theme === 'dark' ||
+        (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+      ) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
       rawSetColorMode(newValue);
     }
     return {
