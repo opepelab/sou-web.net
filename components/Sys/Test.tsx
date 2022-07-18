@@ -21,6 +21,13 @@ export const ThemeProvider: React.FC<RNode> = ({ children }) => {
 
   const contextValue = useMemo(() => {
     function setColorMode(newValue: any) {
+      if (setColorMode !== null) {
+        setColorMode;
+      } else {
+        const mql = window.matchMedia('(prefers-color-scheme: dark)');
+        mql.matches ? 'dark' : 'light';
+      }
+
       window.document.documentElement.setAttribute('data-theme', newValue);
 
       rawSetColorMode(newValue);
