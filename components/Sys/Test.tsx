@@ -21,8 +21,9 @@ export const ThemeProvider: React.FC<RNode> = ({ children }) => {
 
   const contextValue = useMemo(() => {
     function setColorMode() {
-      if (localStorage.theme !== null) {
-        window.localStorage.getItem('theme');
+      const Color = window.localStorage.getItem('theme');
+      if (Color !== null) {
+        Color;
       } else if (
         localStorage.theme === 'dark' ||
         (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
