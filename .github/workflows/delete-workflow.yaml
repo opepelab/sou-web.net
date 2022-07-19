@@ -21,6 +21,6 @@ jobs:
       - run: gh workflow view "${delete-workflow.yaml}"
       - run: |
           gh run list --workflow "${WORKFLOW}" --limit 1000 --json databaseId,status --jq '.[] | select(.status == "completed") | .databaseId' \
-            | xargs -n 1 -I {} gh api -X DELETE repos/${REPOSITORY}/actions/runs/{}
+            | xargs -n 1 -I {} gh api -X DELETE repos/${opepelab/sou-web.net}/actions/runs/{}
         env:
           REPOSITORY: ${{ github.repository }}
