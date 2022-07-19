@@ -21,7 +21,6 @@ const Overview: React.FC = () => {
             <dt>Merci papa mama.</dt>
             <dd>私の生みの親である母と父に感謝します。</dd>
             <img className="PM margin10 point " src="/picture/IMG_0503.jpeg" width={190} height={260} />
-            <p>数年イラストをやっていたこともあってデザイン寄りの駆け出しエンジニアだと思います。</p>
           </dl>
         </div>
         <p>渡邊 蒼(Sou Watanabe)1994年生まれ現27歳。</p>
