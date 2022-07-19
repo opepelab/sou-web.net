@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build && next-sitemap --config sitemap.config.js",
     "start": "next start -p $PORT",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
     "eslint": "eslint --ext .js,.npjsx,.ts,.tsx --fix .",
     "prettier": "prettier --write .",
     "lint-staged": "lint-staged",
@@ -14,6 +15,8 @@
   "dependencies": {
     "@chakra-ui/icons": "1.1.7",
     "@chakra-ui/react": "1.8.6",
+    "@commitlint/cli": "17.0.3",
+    "@commitlint/config-conventional": "17.0.3",
     "@contentful/rich-text-react-renderer": "^15.11.1",
     "@emotion/react": "11.8.2",
     "@emotion/styled": "11.8.1",
