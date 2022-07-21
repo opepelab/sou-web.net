@@ -39,8 +39,7 @@
 html {
   overflow: scroll;
   padding: 58px 58px $p40 58px;
-
-  // text-size-adjust: $r100;
+  text-size-adjust: $r100;
 }
 
 body {
@@ -173,8 +172,7 @@ nav ul li {
   grid-gap: 40px;
   white-space: nowrap;
   z-index: 2;
-
-  // font-size: $p14;
+  font-size: $p14;
 }
 
 .ListNum {
@@ -225,8 +223,7 @@ nav ul li {
 p {
   line-height: 175%;
   white-space: pre-wrap;
-
-  // font-size: $p14;
+  font-size: $p14;
 }
 
 h1 {
