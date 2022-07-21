@@ -10,6 +10,7 @@ import Link from 'next/link';
 import generateRssFeed from '../libs/feed';
 import { HiRss, HiOutlineMail } from 'react-icons/hi';
 import { RiGithubFill } from 'react-icons/ri';
+import { IoMdMoon } from 'react-icons/io';
 
 type Map = {
   blog: {
@@ -42,6 +43,7 @@ const Index: React.FC<Map> = ({ blog }) => {
           </a>
         </div>
         <br />
+        <IoMdMoon className="Top-2px" />
         <h5>最新記事</h5>
         {blog.map((blog: Entry<IPostFields>) => (
           <dl key={blog.sys.id}>
