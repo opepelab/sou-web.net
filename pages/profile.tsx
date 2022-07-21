@@ -56,7 +56,6 @@ const Overview: React.FC = () => {
           <li>2021年 プログラミング言語を勉強し始めTypeScriptを書き始めました</li>
         </ul>
         <hr />
-        <br />
         <p>Welcome to my home page!! refresh and swich your identitiy.</p>
         <p>let's enjoy the code architect and programing, application contribute.</p>
         <p>I keep in mind simple is the best code and always the better.</p>

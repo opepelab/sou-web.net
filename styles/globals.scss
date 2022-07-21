@@ -83,11 +83,16 @@ blockquote {
   border-left: solid 6px gray;
 }
 
+hr {
+  margin-bottom: 40px;
+}
+
 dt {
   font-size: $p10;
 }
 
 dd {
+  font-size: $p14;
   margin-bottom: $p20;
   margin-left: $p0;
 }

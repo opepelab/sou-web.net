@@ -42,7 +42,7 @@ const Index: React.FC<Map> = ({ blog }) => {
             <HiRss size={30} />
           </a>
         </div>
-        <br />
+        <p />
         <IoMdMoon className="Top-2px" />
         <h5>最新記事</h5>
         {blog.map((blog: Entry<IPostFields>) => (
