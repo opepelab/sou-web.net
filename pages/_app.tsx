@@ -1,8 +1,9 @@
 import { AppProps } from 'next/app';
 import { RecoilRoot } from 'recoil';
 import DarkState from 'components/Sys/DarkState';
+import { ChakraProvider } from '@chakra-ui/react';
 // import { ThemeProvider } from 'components/Sys/Test';
-import LayoutProvider from 'components/Layout/layout';
+import Layout from 'components/Layout/layout';
 import { AnimatePresence } from 'framer-motion';
 import usePageView from 'hooks/usePageView';
 import 'styles/globals.scss';
@@ -15,11 +16,13 @@ const MyApp = ({ Component, pageProps, router }: AppProps): JSX.Element => {
   return (
     <RecoilRoot>
       <DarkState>
-        <LayoutProvider>
-          <AnimatePresence exitBeforeEnter initial={true}>
-            <Component {...pageProps} key={router.asPath} />
-          </AnimatePresence>
-        </LayoutProvider>
+        <ChakraProvider resetCSS={false}>
+          <Layout>
+            <AnimatePresence exitBeforeEnter initial={false}>
+              <Component {...pageProps} key={router.asPath} />
+            </AnimatePresence>
+          </Layout>
+        </ChakraProvider>
       </DarkState>
     </RecoilRoot>
   );

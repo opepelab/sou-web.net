@@ -9,7 +9,7 @@ type RNode = {
   children: ReactNode;
 };
 
-const LayoutProvider: React.FC<RNode> = ({ children }) => {
+const Layout: React.FC<RNode> = ({ children }): JSX.Element => {
   return (
     <>
       <Head>
@@ -29,4 +29,4 @@ const LayoutProvider: React.FC<RNode> = ({ children }) => {
   );
 };
 
-export default LayoutProvider;
+export default Layout;
