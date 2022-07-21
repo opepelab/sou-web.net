@@ -62,23 +62,6 @@ const Overview: React.FC = () => {
         <hr />
         <p>中学と高校時代は学校にあまり行かなかったため社会人経験をした後に少し勉強しました。</p>
         <p>引きこもり不登校, 親の歪んだ愛情などを経験し心理学の本「 自分に気づく心理学 」を読みました。</p>
-
-        <h1>体調について</h1>
-        <br />
-        <h2>精神疾患: 統合失調症認定「寛解済み」</h2>
-
-        <p>20歳の時に統合失調症と診断されました。</p>
-        <p></p>
-        <p>入院し内服治療にて寛解していて、現在は月に一度予防のため通院しています。</p>
-        <Box fontSize="16px">
-          <a href="https://kokoro-hc.com/schizophrenia" target="_blank" className="scaleLinks">
-            「 <FiExternalLink className="Top-2px" />
-            統合失調症とは 」
-          </a>
-        </Box>
-        <br />
-        <h2>原因不明の病気のため完治の定義が存在しないらしく「寛解」が最大の完治レベルみたいです。</h2>
-        <p>薬を飲むと自然と疲れを認識しやすくなります。</p>
         <hr />
         <br />
         <p>Welcome to my home page!! refresh and swich your identitiy.</p>
