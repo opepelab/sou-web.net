@@ -8,7 +8,6 @@ import { IPostFields } from 'libs/types';
 import Date from 'components/Sys/date';
 import Link from 'next/link';
 import generateRssFeed from '../libs/feed';
-import { MoonIcon } from '@chakra-ui/icons';
 import { HiRss, HiOutlineMail } from 'react-icons/hi';
 import { RiGithubFill } from 'react-icons/ri';
 
@@ -43,7 +42,6 @@ const Index: React.FC<Map> = ({ blog }) => {
           </a>
         </div>
         <br />
-        <MoonIcon />
         <h5>最新記事</h5>
         {blog.map((blog: Entry<IPostFields>) => (
           <dl key={blog.sys.id}>
