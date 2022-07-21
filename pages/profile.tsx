@@ -1,7 +1,5 @@
 import OG from 'components/Sys/OG';
 import Framer from 'components/Sys/Framer';
-import { Box } from '@chakra-ui/react';
-import { FiExternalLink } from 'react-icons/fi';
 
 const Overview: React.FC = () => {
   return (
@@ -51,7 +49,6 @@ const Overview: React.FC = () => {
         <ul>
           <li>1994年 福岡県北九州市生まれ</li>
           <li>2014年 アメリカ シアトル カナダに行きました</li>
-          <li>2015年 統合失調症診断と認定され入院しました</li>
           <li>2016年 株式会社 PC DEPOT入社</li>
           <li>2017年 株式会社 PC DEPOT退社</li>
           <li>2018年 高等学校卒業程度認定試験合格</li>
@@ -59,9 +56,6 @@ const Overview: React.FC = () => {
           <li>2020年 イラストで仕事し始めました</li>
           <li>2021年 プログラミング言語を勉強し始めTypeScriptを書き始めました</li>
         </ul>
-        <hr />
-        <p>中学と高校時代は学校にあまり行かなかったため社会人経験をした後に少し勉強しました。</p>
-        <p>引きこもり不登校, 親の歪んだ愛情などを経験し心理学の本「 自分に気づく心理学 」を読みました。</p>
         <hr />
         <br />
         <p>Welcome to my home page!! refresh and swich your identitiy.</p>
