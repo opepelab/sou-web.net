@@ -159,17 +159,6 @@ nav ul li {
   color: var(--color-text);
 }
 
-.nav1-left {
-  position: relative;
-  display: inline-flex;
-  margin: 0;
-  top: -9px;
-  left: 200px;
-  grid-gap: 40px;
-  white-space: nowrap;
-  z-index: 2;
-}
-
 .nav1-right {
   position: relative;
   display: inline-flex;
@@ -180,6 +169,7 @@ nav ul li {
   grid-gap: 40px;
   white-space: nowrap;
   z-index: 2;
+  font-size: $p14;
 }
 
 .ListNum {
