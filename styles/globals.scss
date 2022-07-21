@@ -182,32 +182,6 @@ nav ul li {
   z-index: 2;
 }
 
-.nav2 {
-  z-index: 1;
-  position: fixed;
-  background: var(--color-bg);
-  width: 50%;
-  right: 0;
-  margin: -8px 8px 0 0;
-  padding: 8px 20px 8px 0;
-  row-gap: 0;
-  text-align: left;
-  white-space: nowrap;
-  border: solid 1px var(--color-menuBorder);
-  border-radius: 4px;
-  transition-duration: 0.4s;
-}
-
-.nav2 a {
-  position: relative;
-  display: block;
-  left: -1px;
-  height: 20px;
-  padding: 10px 0 10px 20px;
-  width: 190px;
-  font-size: $p16;
-}
-
 .ListNum {
   display: flex;
   flex-direction: row;
