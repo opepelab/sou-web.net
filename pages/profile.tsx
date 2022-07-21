@@ -41,9 +41,8 @@ const Overview: React.FC = () => {
             <u>JSON</u> : yaml
           </li>
           <li>
-            <u>ANSI</u> : JIS
+            <u>ANSI</u> : <s>JIS</s>
           </li>
-          正統派、王道、純粋、関数型が比較的好きです。
         </ul>
         <h1>経歴</h1>
         <ul>
