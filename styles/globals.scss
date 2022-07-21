@@ -55,8 +55,6 @@ body {
     size: $p14;
     weight: normal;
   }
-
-  // transform: rotateX(30deg);
 }
 
 article {
@@ -220,6 +218,7 @@ nav ul li {
 p {
   line-height: 175%;
   white-space: pre-wrap;
+  font-size: $p14;
 }
 
 h1 {
@@ -285,7 +284,7 @@ textarea {
   position: relative;
   display: inline-flex;
   font-family: $Google0;
-  font-size: 20px;
+  font-size: 24px;
   top: 2px;
   left: -212px;
 }
