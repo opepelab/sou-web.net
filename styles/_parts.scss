@@ -253,13 +253,23 @@ a dt .dateST {
   transition-duration: 1s;
 }
 
-.Hidden {
+@mixin Centering {
   z-index: 0;
   position: absolute;
   inset: 0%;
   margin: auto;
   width: fit-content;
   height: fit-content;
+}
+
+.Hidden {
+  @include Centering;
+}
+
+@media screen and (min-width: 739.98px) {
+  .CenterHeight {
+    @include Centering;
+  }
 }
 
 .loader {

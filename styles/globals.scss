@@ -269,16 +269,6 @@ i {
   }
 }
 
-// .footerFix {
-//   display: flex;
-//   flex-direction: column;
-//   min-height: 80vh;
-// }
-
-footer {
-  padding-top: 40px;
-}
-
 input {
   @include Input;
   @include LRauto;
@@ -326,7 +316,7 @@ textarea {
 }
 
 form {
-  z-index: 2;
+  z-index: 1;
   position: relative;
   background: skyblue;
   color: black;
