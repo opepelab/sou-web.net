@@ -23,7 +23,7 @@ const Layout: React.FC<RNode> = ({ children }): JSX.Element => {
       <Filter />
       <Header />
       <Menu />
-      <div className="footerFix">{children}</div>
+      {children}
       <Footer />
     </>
   );
