@@ -30,7 +30,7 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
   };
   const MailFormDom = (
     <form>
-      <Heading as="h1" m="0" fontWeight="200" fontSize="32" border="0">
+      <Heading as="h1" mt="5" mb="0" fontWeight="200" fontSize="32" border="0">
         {error === null ? '' : error === false ? 'Thank you so much.' : 'error'}
       </Heading>
       <dl>
