@@ -316,6 +316,13 @@ textarea {
   @include Back;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
 form {
   z-index: 1;
   position: relative;

@@ -30,7 +30,7 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
   };
   const MailFormDom = (
     <form>
-      <Heading as="h1" mt="5" mb="0" fontWeight="200" fontSize="32" border="0">
+      <Heading as="h1" mt="5" mb="0" fontWeight="200" fontSize="24" border="0">
         {error === null ? '' : error === false ? 'Thank you so much.' : 'error'}
       </Heading>
       <dl>
@@ -86,8 +86,8 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
   return (
     <Framer>
       <OG title="Mail - Sou Watanabe" description="My Mail" />
-      <main className="Mail inblo CenterHeight">
-        <div className="Hidden">
+      <main className="Mail wrapper inblo">
+        <div className="Centering">
           <a href="https://twitter.com/pull1102" target="_blank">
             <img className="Circle" src="/picture/Nanamin240.png" width={80} height={80} />
           </a>
