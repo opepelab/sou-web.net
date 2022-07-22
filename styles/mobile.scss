@@ -1,6 +1,10 @@
 @import 'settings';
 
 @media screen and (max-width: 739.98px) {
+  video {
+    width: 100%;
+  }
+
   .resizeimageProf img {
     width: 65%;
     height: 65%;

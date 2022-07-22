@@ -58,6 +58,9 @@ const Overview: React.FC = () => {
         <p>let's enjoy the code architect and programing, application contribute.</p>
         <p>I keep in mind simple is the best code and always the better.</p>
         <p>you can always trying the first, see you.</p>
+        <video controls width="800">
+          <source src="/media/mail.mp4" type="video/mp4" />
+        </video>
       </main>
     </Framer>
   );
