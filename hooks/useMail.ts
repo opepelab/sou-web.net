@@ -22,9 +22,11 @@ ${message}
   };
 
   return {
+    name,
     setName,
     mail,
     setMail,
+    message,
     setMessage,
     Submit,
   };
