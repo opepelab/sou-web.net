@@ -173,6 +173,15 @@
 
   /* ブログとコンタクトのスケール再定義 */
 
+  .loader {
+    bottom: 260px;
+  }
+
+  .Mail {
+    z-index: 0;
+    position: relative;
+  }
+
   .Mail form input {
     width: 240px;
   }

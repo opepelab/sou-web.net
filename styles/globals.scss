@@ -49,6 +49,7 @@ body {
   font-weight: normal;
   text-align: center;
   width: 1000px;
+  height: 100%;
   @include LRauto;
   font: {
     family: $Google;
