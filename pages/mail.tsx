@@ -31,7 +31,7 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
   const MailFormDom = (
     <form>
       <Heading as="h1" m="0" fontWeight="200" fontSize="32" border="0">
-        {error === null ? 'null' : error === false ? 'Thank you so much.' : 'error'}
+        {error === null ? '' : error === false ? 'Thank you so much.' : 'error'}
       </Heading>
       <dl>
         <dt>
@@ -75,7 +75,7 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
         </dd>
         <dd>
           <div onClick={Send} className="massageButton">
-            {error === null ? 'Submit' : error === false ? 'Success !' : 'Missing...'}
+            {error === false ? 'Success !' : 'Submit'}
             {error === false ? <div className="loader" /> : null}
           </div>
         </dd>
@@ -88,9 +88,7 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
       <OG title="Mail - Sou Watanabe" description="My Mail" />
       <main className="Mail inblo Hidden">
         <div className="Hidden">Thanks Using Contact form</div>
-        {error === null ? (
-          MailFormDom
-        ) : error === false ? (
+        {error === false ? (
           <AnimatePresence exitBeforeEnter>
             <motion.div
               initial={{ opacity: 1, scale: 1 }}
