@@ -88,7 +88,7 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
       <OG title="Mail - Sou Watanabe" description="My Mail" />
       <main className="Mail inblo CenterHeight">
         <div className="Hidden">
-          <a href="https://twitter.com/pull1102">
+          <a href="https://twitter.com/pull1102" target="_blank">
             <img className="Circle" src="/picture/Nanamin240.png" width={80} height={80} />
           </a>
           Thanks Using Contact form
