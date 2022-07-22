@@ -76,7 +76,7 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
         <dd>
           <div onClick={Send} className="massageButton">
             {error === null ? 'Submit' : error === false ? 'Success !' : 'Missing...'}
-            {error === false ? <div className="loader">Loading...</div> : null}
+            {error === false ? <div className="loader" /> : null}
           </div>
         </dd>
       </dl>
