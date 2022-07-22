@@ -59,6 +59,7 @@ body {
 
 article {
   padding: 50px 100px;
+  min-height: 80vh;
 }
 
 pre {
@@ -263,11 +264,11 @@ i {
   }
 }
 
-.footerFix {
-  display: flex;
-  flex-direction: column;
-  min-height: 80vh;
-}
+// .footerFix {
+//   display: flex;
+//   flex-direction: column;
+//   min-height: 80vh;
+// }
 
 footer {
   padding-top: 40px;
@@ -333,6 +334,8 @@ textarea {
 }
 
 form {
+  z-index: 2;
+  position: relative;
   background: skyblue;
   color: black;
   border-radius: 12px;

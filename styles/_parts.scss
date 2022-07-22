@@ -240,10 +240,74 @@ a dt .dateST {
   transition-duration: 1s;
 }
 
-.waku {
-  border: solid 2px var(--color-icon);
-  border-radius: 20px;
-  padding: 40px;
+.Hidden {
+  z-index: 0;
+  position: absolute;
+  inset: 0%;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+}
+
+.loader {
+  color: skyblue;
+  font-size: 20px;
+  margin: 100px auto;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  bottom: 300px;
+  text-indent: -9999em;
+  animation: load4 1.5s ease-out;
+  transform: translateZ(0);
+}
+
+@keyframes load4 {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em,
+      -3em 0 0 -1em, -2em -2em 0 0;
+    opacity: 0;
+  }
+
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em,
+      -2em -2em 0 -1em;
+  }
+
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em,
+      -2em -2em 0 -1em;
+  }
+
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 0, 2em 2em 0 0.2em, 0 3em 0 0, -2em 2em 0 -1em,
+      -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0, 0 3em 0 0.2em, -2em 2em 0 0,
+      -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0,
+      -2em -2em 0 -1em;
+  }
+
+  75% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0,
+      -3em 0 0 0.2em, -2em -2em 0 0;
+  }
+
+  87.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0 0 0,
+      -2em -2em 0 0.2em;
+  }
 }
 
 // GraphicsとAbout以外位置を修正してる
