@@ -178,6 +178,10 @@
     bottom: 260px;
   }
 
+  .CardBox {
+    transform: scale(0.96);
+  }
+
   .Mail {
     z-index: 0;
     position: relative;
@@ -188,7 +192,7 @@
   }
 
   .Mail form textarea {
-    width: 300px;
+    width: 305px;
     height: 220px;
   }
 

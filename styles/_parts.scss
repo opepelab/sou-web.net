@@ -236,11 +236,12 @@ a dt .dateST {
 }
 
 .Circle {
+  z-index: 1;
   position: relative;
   border-radius: 50%;
   border: solid 1px gray;
-  top: 30px;
-  right: 30px;
+  left: 30px;
+  transition-duration: 0.8s;
 }
 
 .Circle:hover {
@@ -248,18 +249,42 @@ a dt .dateST {
   transition-duration: 0.3s;
 }
 
+.Card {
+  position: absolute;
+}
+
+.Texts {
+  position: relative;
+  color: white;
+}
+
+.TwitterTexts {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  color: var(--color-TwitterCards);
+}
+
+.CardBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 180px;
+  background: var(--color-TwitterBg);
+  border: solid 1px var(--color-TwitterCards);
+  border-radius: 25px;
+  transition-duration: 0.8s;
+}
+
+.CardBox:hover {
+  transform: scale(1.2);
+  transition-duration: 0.8s;
+}
+
 .Spinner {
   transform: rotateX(1080deg);
   transition-duration: 1s;
-}
-
-.Centering {
-  z-index: 0;
-  position: absolute;
-  inset: 0%;
-  margin: auto;
-  width: fit-content;
-  height: fit-content;
 }
 
 .loader {
