@@ -45,7 +45,7 @@ export const ToggleDarkMode: React.FC = () => {
               initial={{ rotate: -90, opacity: 0, scale: 0 }}
               animate={{ rotate: 0, opacity: 1, scale: 1 }}
               exit={{ y: 20, opacity: 0 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.4, delay: 0.2 }}
             >
               {darkMode ? <HiOutlineMoon size={24} color="skyblue" /> : <HiOutlineSun size={24} color="lightsalmon" />}
             </motion.div>

@@ -93,9 +93,9 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
         ) : error === false ? (
           <AnimatePresence exitBeforeEnter>
             <motion.div
-              initial={{ scale: 1 }}
-              animate={{ scale: 0 }}
-              exit={{ y: 0 }}
+              initial={{ opacity: 1, scale: 1 }}
+              animate={{ opacity: 0, scale: 0 }}
+              exit={{ opacity: 0 }}
               transition={{ duration: 0.8, delay: 1 }}
             >
               {MailFormDom}
