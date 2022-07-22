@@ -43,7 +43,7 @@ html {
 }
 
 body {
-  transition: all 1s;
+  transition-duration: 0.8s;
   background-color: var(--color-bg);
   color: var(--color-text);
   font-weight: normal;
@@ -110,6 +110,11 @@ a {
 .resizeimageSlug img {
   width: 65%;
   height: 65%;
+}
+
+.resizeimageProf img {
+  width: 45%;
+  height: 45%;
 }
 
 .resizeimage img {
@@ -318,19 +323,6 @@ textarea {
 
 .iconButton {
   @include Back;
-}
-
-.About a {
-  display: block;
-  height: 20px;
-  padding: 10px 0 10px 60px;
-  margin: 0;
-  width: 138px;
-}
-
-.Link ul li {
-  height: 40px;
-  padding: 0 0 0 40px;
 }
 
 form {

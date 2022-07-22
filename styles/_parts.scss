@@ -114,7 +114,7 @@ a dt .dateST {
   background: var(--color-bg);
   top: $p0;
   left: $p0;
-  transition: all 1s;
+  transition-duration: 0.8s;
 }
 
 .none {
@@ -269,8 +269,8 @@ a dt .dateST {
   }
 
   100% {
-    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em,
-      -3em 0 0 -1em, -2em -2em 0 0;
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em,
+      -2em -2em 0 0;
     opacity: 0;
   }
 
@@ -285,13 +285,13 @@ a dt .dateST {
   }
 
   37.5% {
-    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 0, 2em 2em 0 0.2em, 0 3em 0 0, -2em 2em 0 -1em,
-      -3em 0 0 -1em, -2em -2em 0 -1em;
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 0, 2em 2em 0 0.2em, 0 3em 0 0, -2em 2em 0 -1em, -3em 0 0 -1em,
+      -2em -2em 0 -1em;
   }
 
   50% {
-    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0, 0 3em 0 0.2em, -2em 2em 0 0,
-      -3em 0 0 -1em, -2em -2em 0 -1em;
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0 0 -1em,
+      -2em -2em 0 -1em;
   }
 
   62.5% {
@@ -300,8 +300,8 @@ a dt .dateST {
   }
 
   75% {
-    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0,
-      -3em 0 0 0.2em, -2em -2em 0 0;
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0 0 0.2em,
+      -2em -2em 0 0;
   }
 
   87.5% {
