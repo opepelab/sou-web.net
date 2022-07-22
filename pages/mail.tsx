@@ -87,11 +87,14 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
     <Framer>
       <OG title="Mail - Sou Watanabe" description="My Mail" />
       <main className="Mail wrapper inblo">
-        <div className="Centering">
-          <a href="https://twitter.com/pull1102" target="_blank">
-            <img className="Circle" src="/picture/Nanamin240.png" width={80} height={80} />
-          </a>
-          Thanks Using Contact form
+        <div className="wrapper Card">
+          <div className="Card CardBox">
+            <div className="TwitterTexts">Twitter Cards</div>
+            <div className="Texts">Thanks Using Contact form</div>
+            <a href="https://twitter.com/pull1102" target="_blank">
+              <img className="Circle" src="/picture/Nanamin240.png" width={80} height={80} />
+            </a>
+          </div>
         </div>
         {error === false ? (
           <AnimatePresence exitBeforeEnter>
