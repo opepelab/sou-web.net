@@ -9,18 +9,18 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
   const { mail, setMail, name, setName, message, setMessage, Submit } = useMail();
   const [error, setError] = useState<null | boolean>(null);
 
-  const Send = () => {
+  const Send = (): void => {
     if (validateEmail(mail) === true) {
       Submit();
       setMail('');
       setName('');
       setMessage('');
-    } else error;
+    } else false;
   };
 
-  const validateEmail = (checkString: string) => {
+  const validateEmail = (checkString: string): boolean => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
-    if (regex.test(checkString)) {
+    if (regex.test(checkString) === true) {
       setError(false);
       return true;
     } else {
