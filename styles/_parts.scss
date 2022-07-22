@@ -235,6 +235,18 @@ a dt .dateST {
   gap: 10px;
 }
 
+.Circle {
+  position: relative;
+  border-radius: 50%;
+  top: 30px;
+  right: 30px;
+}
+
+.Circle:hover {
+  transform: scale(1.2);
+  transition-duration: 0.3s;
+}
+
 .Spinner {
   transform: rotateX(1080deg);
   transition-duration: 1s;
