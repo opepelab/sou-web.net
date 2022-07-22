@@ -86,7 +86,7 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
   return (
     <Framer>
       <OG title="Mail - Sou Watanabe" description="My Mail" />
-      <main className="Mail inblo Hidden">
+      <main className="Mail inblo CenterHeight">
         <div className="Hidden">
           <a href="https://twitter.com/pull1102">
             <img className="Circle" src="/picture/Nanamin240.png" width={80} height={80} />
