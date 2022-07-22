@@ -54,7 +54,7 @@ const Menu: React.FC = () => {
                   </a>
                 </ActiveLink>
               </li>
-              <li>
+              <li className="LinePadd">
                 <div
                   onClick={() => {
                     setAboutRes(!aboutRes);
@@ -66,8 +66,8 @@ const Menu: React.FC = () => {
                     <div className="SankakuBlack" />
                   </a>
                 </div>
-                <div className="AboutState">
-                  <div aria-expanded={aboutRes} className="About">
+                <div className="LineBlock">
+                  <div aria-expanded={aboutRes}>
                     <ul>
                       <li>
                         <ActiveLink href="/lifestyle" activeClassName="Done headerState">
@@ -82,9 +82,7 @@ const Menu: React.FC = () => {
                       </li>
                       <li>
                         <ActiveLink href="/artwork" activeClassName="Done headerState">
-                          <a className="right1p" onClick={() => setMenu(false)}>
-                            Artwork
-                          </a>
+                          <a onClick={() => setMenu(false)}>Artwork</a>
                         </ActiveLink>
                       </li>
                       <li>
@@ -100,16 +98,14 @@ const Menu: React.FC = () => {
                       </li>
                       <li>
                         <ActiveLink href="/rss/atom.xml" activeClassName="Done headerState">
-                          <a className="right1p" onClick={() => setMenu(false)}>
-                            RSS.xml
-                          </a>
+                          <a onClick={() => setMenu(false)}>RSS.xml</a>
                         </ActiveLink>
                       </li>
                     </ul>
                   </div>
                 </div>
               </li>
-              <li className="Link">
+              <li className="LinePadd">
                 <div
                   onClick={() => {
                     setLinksRes(!linksRes);
@@ -124,7 +120,7 @@ const Menu: React.FC = () => {
                     </div>
                   </a>
                 </div>
-                <div className="AboutState">
+                <div className="LineBlock">
                   <div aria-expanded={linksRes}>
                     <ul>
                       <li>

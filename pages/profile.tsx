@@ -5,22 +5,20 @@ const Overview: React.FC = () => {
   return (
     <Framer>
       <OG title="Overview - Sou Watanabe" description="My Overview" />
-      <main className="list inblo textLeft">
-        <div className="textCenter waku">
-          <dl>
-            <dt>Name</dt>
-            <dd>Sou Watanabe/蒼 渡邊</dd>
-            <dt>Sign</dt>
-            <dd>さそり座</dd>
-            <dt>干支</dt>
-            <dd>戌</dd>
-            <dt>Location</dt>
-            <dd>Kokura and Tokyo/小倉と東京</dd>
-            <dt>Merci papa mama.</dt>
-            <dd>私の生みの親である母と父に感謝します。</dd>
-            <img className="PM margin10 point " src="/picture/IMG_0503.jpeg" width={190} height={260} />
-          </dl>
-        </div>
+      <main className="list inblo textLeft resizeimageProf">
+        <dl>
+          <dt>Name</dt>
+          <dd>Sou Watanabe/蒼 渡邊</dd>
+          <dt>Sign</dt>
+          <dd>さそり座</dd>
+          <dt>干支</dt>
+          <dd>戌</dd>
+          <dt>Location</dt>
+          <dd>Kokura and Tokyo/小倉と東京</dd>
+          <dt>Merci papa mama.</dt>
+          <dd>私の生みの親である母と父に感謝します。</dd>
+          <img src="/picture/IMG_0503.jpeg" width={190} height={260} />
+        </dl>
         <p>渡邊 蒼(Sou Watanabe)1994年生まれ現27歳。</p>
         <p>動かしたり勉強したり実装したりする範囲です。</p>
         <p>
