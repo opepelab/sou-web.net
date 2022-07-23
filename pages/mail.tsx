@@ -4,6 +4,7 @@ import { useMail } from 'hooks/useMail';
 import OG from 'components/Sys/OG';
 import Framer from 'components/Sys/Framer';
 import { Heading } from '@chakra-ui/react';
+import { ClassNames } from '@emotion/react';
 
 export const Mail: React.FC<HTMLTextAreaElement> = () => {
   const { mail, setMail, name, setName, message, setMessage, Submit } = useMail();
@@ -28,6 +29,7 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
       return false;
     }
   };
+
   const MailFormDom = (
     <form>
       <Heading as="h1" mt="5" mb="0" fontWeight="200" fontSize="24" border="0">
@@ -74,7 +76,7 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
           />
         </dd>
         <dd>
-          <div onClick={Send} className="massageButton">
+          <div onClick={Send} className={`massageButton ${error === false ? 'noAction' : null}`}>
             {error === false ? 'Success !' : 'Submit'}
             {error === false ? <div className="loader" /> : null}
           </div>
@@ -90,10 +92,10 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
         <div className="wrapper Card">
           <div className="Card CardBox">
             <div className="TwitterTexts">Twitter Cards</div>
-            <div className="Texts">Thanks Using Contact form</div>
             <a href="https://twitter.com/pull1102" target="_blank">
               <img className="Circle" src="/picture/Nanamin240.png" width={80} height={80} />
             </a>
+            <div className="Texts">Thanks Using Contact form</div>
           </div>
         </div>
         {error === false ? (
