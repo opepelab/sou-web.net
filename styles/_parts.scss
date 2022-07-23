@@ -240,7 +240,7 @@ a dt .dateST {
   position: relative;
   border-radius: 50%;
   border: solid 1px gray;
-  left: 30px;
+  right: 25px;
   transition-duration: 0.8s;
 }
 
@@ -282,9 +282,8 @@ a dt .dateST {
   transition-duration: 0.8s;
 }
 
-.Spinner {
-  transform: rotateX(1080deg);
-  transition-duration: 1s;
+.noAction {
+  pointer-events: none;
 }
 
 .loader {

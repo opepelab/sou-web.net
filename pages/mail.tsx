@@ -4,7 +4,6 @@ import { useMail } from 'hooks/useMail';
 import OG from 'components/Sys/OG';
 import Framer from 'components/Sys/Framer';
 import { Heading } from '@chakra-ui/react';
-import { ClassNames } from '@emotion/react';
 
 export const Mail: React.FC<HTMLTextAreaElement> = () => {
   const { mail, setMail, name, setName, message, setMessage, Submit } = useMail();
@@ -103,7 +102,7 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
             <motion.div
               initial={{ opacity: 1, scale: 1 }}
               animate={{ opacity: 0, scale: 0 }}
-              exit={{ opacity: 0 }}
+              exit={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 1 }}
             >
               {MailFormDom}
