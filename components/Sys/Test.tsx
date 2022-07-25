@@ -9,7 +9,7 @@ type ContextType = {
   colorMode: undefined;
 };
 
-export const ThemeContext = createContext<undefined | ContextType>(undefined);
+export const ThemeContext = createContext<undefined>(undefined);
 
 export const ThemeProvider: React.FC<RNode> = ({ children }) => {
   const [colorMode, rawSetColorMode] = useState<undefined>(undefined);
@@ -19,11 +19,13 @@ export const ThemeProvider: React.FC<RNode> = ({ children }) => {
     rawSetColorMode(initialColorValue as never);
   }, [colorMode]);
 
+  const NoFlashScript = `!function(){let e;const t=window.localStorage.getItem("theme");if(null!==t)e=t;else{e=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}document.documentElement.setAttribute("data-theme",e)}();`;
+
   return (
     <>
       <script
         dangerouslySetInnerHTML={{
-          __html: `!function(){let e;const t=window.localStorage.getItem("theme");if(null!==t)e=t;else{e=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}document.documentElement.setAttribute("data-theme",e)}();`,
+          __html: NoFlashScript,
         }}
       />
       {children}
