@@ -3,7 +3,7 @@ import { atom } from 'recoil';
 export type Theme = string | null;
 export const themeState = atom<Theme>({
   key: 'themeKey',
-  default: 'systemUI',
+  default: null,
 });
 
 export type About = false | true;
