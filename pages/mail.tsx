@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useMail } from 'hooks/useMail';
 import OG from 'components/Sys/OG';
 import Framer from 'components/Sys/Framer';
@@ -8,6 +8,7 @@ import { Heading } from '@chakra-ui/react';
 export const Mail: React.FC<HTMLTextAreaElement> = () => {
   const { mail, setMail, name, setName, message, setMessage, Submit } = useMail();
   const [error, setError] = useState<null | boolean>(null);
+  const [useInitialize, setInitialize] = useState(true);
 
   const Send = (): void => {
     if (validateEmail(mail) === true) {
@@ -28,6 +29,10 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
       return false;
     }
   };
+
+  useEffect(() => {
+    setError(null);
+  }, [useInitialize]);
 
   const MailFormDom = (
     <form>
@@ -76,8 +81,7 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
         </dd>
         <dd>
           <div onClick={Send} className={`massageButton ${error === false ? 'noAction' : null}`}>
-            {error === false ? 'Success !' : 'Submit'}
-            {error === false ? <div className="loader" /> : null}
+            {error === null ? 'Submit' : error === false ? [<div className="loader" />, 'Success !'] : 'Retry!'}
           </div>
         </dd>
       </dl>
@@ -89,15 +93,15 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
       <OG title="Mail - Sou Watanabe" description="My Mail" />
       <main className="Mail wrapper inblo">
         <div className="wrapper Card">
-          <div className="Card CardBox">
+          <a className="Card CardBox" href="https://twitter.com/pull1102" target="_blank">
             <div className="TwitterTexts">Twitter Cards</div>
-            <a href="https://twitter.com/pull1102" target="_blank">
-              <img className="Circle" src="/picture/Nanamin240.png" width={80} height={80} />
-            </a>
+            <img className="Circle" src="/picture/Nanamin240.png" width={80} height={80} />
             <div className="Texts">Thanks Using Contact form</div>
-          </div>
+          </a>
         </div>
-        {error === false ? (
+        {error === null ? (
+          MailFormDom
+        ) : error === false ? (
           <AnimatePresence exitBeforeEnter>
             <motion.div
               initial={{ opacity: 1, scale: 1 }}
@@ -109,7 +113,17 @@ export const Mail: React.FC<HTMLTextAreaElement> = () => {
             </motion.div>
           </AnimatePresence>
         ) : (
-          MailFormDom
+          <AnimatePresence exitBeforeEnter>
+            <motion.div
+              onClick={() => setInitialize(!useInitialize)}
+              initial={{ opacity: 1, scale: 1, y: -5 }}
+              animate={{ opacity: 1, scale: 1, y: 5 }}
+              exit={{ opacity: 1, y: 0 }}
+              transition={{ type: 'spring', duration: 1.4, bounce: 1 }}
+            >
+              {MailFormDom}
+            </motion.div>
+          </AnimatePresence>
         )}
       </main>
     </Framer>
