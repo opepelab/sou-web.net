@@ -1,5 +1,8 @@
 import client from 'libs/contentful';
 import { GetStaticProps } from 'next';
+// import axios, { AxiosResponse } from 'axios';
+import useSWR from 'swr';
+import { useEffect, useState } from 'react';
 import OG from 'components/Sys/OG';
 import Framer from 'components/Sys/Framer';
 import { Text, Heading } from '@chakra-ui/react';
@@ -11,14 +14,23 @@ import generateRssFeed from '../libs/feed';
 import { HiRss, HiOutlineMail } from 'react-icons/hi';
 import { RiGithubFill } from 'react-icons/ri';
 import { IoMdMoon } from 'react-icons/io';
-
+// -p $PORT
 type Map = {
   blog: {
     map: StringConstructor;
   };
 };
-
+const [load, setLoad] = useState(false);
+const fetcher = (url: string) => fetch(url).then((res) => res.json());
 const Index: React.FC<Map> = ({ blog }) => {
+  const { data: Set, mutate } = useSWR('http://localhost:3000', fetcher, {
+    fallback: blog,
+  });
+
+  useEffect(() => {
+    mutate();
+  }, []);
+
   return (
     <Framer>
       <OG title="Sou Watanabe - Homepage" description="Index Top Page" />
