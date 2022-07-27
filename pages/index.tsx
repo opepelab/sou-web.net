@@ -20,16 +20,15 @@ type Map = {
     map: StringConstructor;
   };
 };
-const [load, setLoad] = useState(false);
-const fetcher = (url: string) => fetch(url).then((res) => res.json());
-const Index: React.FC<Map> = ({ blog }) => {
-  const { data: Set, mutate } = useSWR('http://localhost:3000', fetcher, {
-    fallback: blog,
-  });
 
-  useEffect(() => {
-    mutate();
-  }, []);
+// const fetcher = (url: string) => fetch(url).then((res) => res.json());
+const Index: React.FC<Map> = ({ blog }) => {
+  // const { data: Set, mutate } = useSWR('http://localhost:3000', fetcher, {
+  //   fallback: blog,
+  // });
+  // const aa = () => {
+  //   mutate();
+  // };
 
   return (
     <Framer>
@@ -90,6 +89,7 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       blog: data.items,
     },
+    revalidate: 3,
   };
 };
 
