@@ -14,7 +14,7 @@ import generateRssFeed from '../libs/feed';
 import { HiRss, HiOutlineMail } from 'react-icons/hi';
 import { RiGithubFill } from 'react-icons/ri';
 import { IoMdMoon } from 'react-icons/io';
-// -p $PORT
+
 type Map = {
   blog: {
     map: StringConstructor;
