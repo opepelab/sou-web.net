@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { GA_TRACKING_ID, pageview } from '../libs/gtag';
+import { GA_TRACKING_ID, pageview } from 'libs/gtag';
 
 const usePageView = () => {
   const router = useRouter();
