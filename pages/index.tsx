@@ -23,12 +23,12 @@ type Map = {
 
 // const fetcher = (url: string) => fetch(url).then((res) => res.json());
 const Index: React.FC<Map> = ({ blog }) => {
-  // const { data: Set, mutate } = useSWR('http://localhost:3000', fetcher, {
+  // const { data: Set, mutate } = useSWR(client.getEntries(), fetcher, {
   //   fallback: blog,
   // });
-  // const aa = () => {
+  // useEffect(() => {
   //   mutate();
-  // };
+  // }, []);
 
   return (
     <Framer>
@@ -89,8 +89,9 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       blog: data.items,
     },
-    revalidate: 3,
+    // revalidate: 3,
   };
 };
 
 export default Index;
+// -p $PORT
